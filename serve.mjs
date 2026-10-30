@@ -54,18 +54,20 @@ const server = http.createServer((req, res) => {
   });
 });
 
-function listen(port) {
-  server.once('error', (e) => {
-    if (e.code === 'EADDRINUSE' && port < START_PORT + 20) listen(port + 1);
-    else throw e;
-  });
-  server.listen(port, '127.0.0.1', () => {
-    const url = `http://127.0.0.1:${port}/`;
-    console.log(`Mazda 2 service manual running at ${url}\nPress Ctrl+C to stop.`);
-    if (!process.env.NO_OPEN) {
-      const cmd = process.platform === 'win32' ? `start "" "${url}"` : process.platform === 'darwin' ? `open "${url}"` : `xdg-open "${url}"`;
-      exec(cmd);
-    }
-  });
-}
-listen(START_PORT);
+// Ports can be busy (EADDRINUSE) or reserved by Windows (EACCES); try the next
+// few, then let the OS pick any free port (0).
+let port = START_PORT;
+server.on('error', (e) => {
+  if (e.code !== 'EADDRINUSE' && e.code !== 'EACCES') throw e;
+  port = port && port < START_PORT + 20 ? port + 1 : 0;
+  server.listen(port, '127.0.0.1');
+});
+server.once('listening', () => {
+  const url = `http://127.0.0.1:${server.address().port}/`;
+  console.log(`Mazda 2 service manual running at ${url}\nPress Ctrl+C to stop.`);
+  if (!process.env.NO_OPEN) {
+    const cmd = process.platform === 'win32' ? `start "" "${url}"` : process.platform === 'darwin' ? `open "${url}"` : `xdg-open "${url}"`;
+    exec(cmd);
+  }
+});
+server.listen(port, '127.0.0.1');
