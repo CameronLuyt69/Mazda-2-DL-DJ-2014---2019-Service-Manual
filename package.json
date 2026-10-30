@@ -1,0 +1,12 @@
+{
+  "name": "mazda2-service-manual-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline modern viewer for the Mazda2 DL/DJ 2014-2019 service manual",
+  "scripts": {
+    "start": "node serve.mjs",
+    "build": "node scripts/build-data.mjs",
+    "test": "node scripts/smoke-test.mjs"
+  }
+}

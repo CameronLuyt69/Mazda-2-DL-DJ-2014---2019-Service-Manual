@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Mazda2 Service Manual</title>
+    <link rel="icon" href="app/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="app/styles.css" />
+    <script>
+      // Apply the saved theme before first paint to avoid a flash.
+      try {
+        const t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      } catch {}
+    </script>
+    <script type="module" src="app/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#view">Skip to content</a>
+    <header class="topbar">
+      <button class="icon-btn only-mobile" id="btn-menu" aria-label="Open contents" aria-controls="sidebar" aria-expanded="false">
+        <svg><use href="app/icons.svg#menu" /></svg>
+      </button>
+      <button class="icon-btn only-desktop" id="btn-toc" aria-label="Toggle contents (T)" title="Toggle contents (T)">
+        <svg><use href="app/icons.svg#sidebar" /></svg>
+      </button>
+      <a class="brand" href="#/">
+        <svg class="brand-mark" aria-hidden="true"><use href="app/icons.svg#logo" /></svg>
+        <span class="brand-text"><strong>Mazda2</strong> <span>Service Manual</span></span>
+        <span class="brand-sub">DL/DJ · 2014–2019</span>
+      </a>
+      <button class="search-trigger" id="btn-search" aria-label="Search the manual (Ctrl+K)">
+        <svg aria-hidden="true"><use href="app/icons.svg#search" /></svg>
+        <span class="search-trigger-text">Search procedures, DTCs, connectors…</span>
+        <kbd>Ctrl K</kbd>
+      </button>
+      <div class="topbar-actions">
+        <button class="icon-btn" id="btn-theme" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="if-light"><use href="app/icons.svg#moon" /></svg>
+          <svg class="if-dark"><use href="app/icons.svg#sun" /></svg>
+        </button>
+        <button class="icon-btn" id="btn-help" aria-label="Keyboard shortcuts (?)" title="Keyboard shortcuts (?)">
+          <svg><use href="app/icons.svg#keyboard" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar" aria-label="Contents">
+        <div class="sidebar-head">
+          <label class="visually-hidden" for="section-select">Manual section</label>
+          <div class="select-wrap">
+            <select id="section-select"></select>
+            <svg aria-hidden="true"><use href="app/icons.svg#chevron-down" /></svg>
+          </div>
+          <div class="filter-wrap">
+            <svg aria-hidden="true"><use href="app/icons.svg#filter" /></svg>
+            <input id="toc-filter" type="search" placeholder="Filter contents" autocomplete="off" aria-label="Filter contents" />
+          </div>
+        </div>
+        <nav id="toc" class="toc" role="tree" aria-label="Table of contents"></nav>
+        <div class="sidebar-foot">
+          <a href="Start%20here.htm" target="_blank" rel="noopener">Open legacy viewer</a>
+        </div>
+      </aside>
+      <div class="scrim" id="scrim" hidden></div>
+
+      <main class="main" id="main">
+        <div class="viewbar" id="viewbar">
+          <nav class="crumbs" id="crumbs" aria-label="Breadcrumb"></nav>
+          <div class="viewbar-actions" id="viewbar-actions"></div>
+        </div>
+        <div class="view" id="view" tabindex="-1"></div>
+      </main>
+    </div>
+
+    <dialog class="palette" id="palette" aria-label="Search">
+      <div class="palette-input">
+        <svg aria-hidden="true"><use href="app/icons.svg#search" /></svg>
+        <input id="palette-q" type="search" placeholder="Search procedures, DTC codes, connectors, specs…" autocomplete="off" spellcheck="false" aria-controls="palette-results" />
+        <kbd>Esc</kbd>
+      </div>
+      <div class="palette-filters" id="palette-filters"></div>
+      <div class="palette-results" id="palette-results" role="listbox"></div>
+      <div class="palette-foot">
+        <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>Enter</kbd> open</span><span><kbd>Shift Enter</kbd> all results</span>
+        <span class="palette-status" id="palette-status"></span>
+      </div>
+    </dialog>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+      <div class="lightbox-bar">
+        <span id="lightbox-count"></span>
+        <div class="lightbox-tools">
+          <button class="icon-btn" data-lb="out" aria-label="Zoom out"><svg><use href="app/icons.svg#zoom-out" /></svg></button>
+          <button class="icon-btn" data-lb="fit" aria-label="Fit"><svg><use href="app/icons.svg#fit" /></svg></button>
+          <button class="icon-btn" data-lb="in" aria-label="Zoom in"><svg><use href="app/icons.svg#zoom-in" /></svg></button>
+          <button class="icon-btn" data-lb="close" aria-label="Close"><svg><use href="app/icons.svg#x" /></svg></button>
+        </div>
+      </div>
+      <div class="lightbox-stage" id="lightbox-stage"><img id="lightbox-img" alt="" /></div>
+      <button class="lightbox-nav prev" data-lb="prev" aria-label="Previous image"><svg><use href="app/icons.svg#chevron-left" /></svg></button>
+      <button class="lightbox-nav next" data-lb="next" aria-label="Next image"><svg><use href="app/icons.svg#chevron-right" /></svg></button>
+    </dialog>
+
+    <dialog class="help" id="help" aria-labelledby="help-title">
+      <h2 id="help-title">Keyboard shortcuts</h2>
+      <dl class="shortcuts">
+        <dt><kbd>Ctrl K</kbd> or <kbd>/</kbd></dt><dd>Search</dd>
+        <dt><kbd>[</kbd> <kbd>]</kbd></dt><dd>Previous / next page in contents</dd>
+        <dt><kbd>T</kbd></dt><dd>Show or hide contents</dd>
+        <dt><kbd>F</kbd></dt><dd>Add or remove favourite</dd>
+        <dt><kbd>D</kbd></dt><dd>Toggle dark mode</dd>
+        <dt><kbd>G</kbd> <kbd>H</kbd></dt><dd>Go home</dd>
+        <dt><kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd></dt><dd>Move through contents tree</dd>
+        <dt><kbd>+</kbd> <kbd>−</kbd> <kbd>0</kbd></dt><dd>Diagram zoom in / out / fit</dd>
+        <dt><kbd>?</kbd></dt><dd>This help</dd>
+      </dl>
+      <form method="dialog"><button class="btn">Close</button></form>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
