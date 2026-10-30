@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ENGINE OIL CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0140q1004200"></a><p class="servinfo-title"><span class="servinfo-head"></span>ENGINE OIL CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140q1004200</p><br clear="all"><a name="id0140q100420001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>SKYACTIV-G 1.5 (With 4-2-1 Exhaust System)</p><br clear="all"><p><a name="id0140q100420002"></a><p class="topic-title"><span class="topic-head"></span>Outline</p>
+<dl>
+<dd>
+<div class="list">•  The PCM reduces the oil pump load applied to the engine by controlling the appropriate engine hydraulic pressure (according to the engine operation conditions).</div>
+<div class="list">•  The engine hydraulic pressure switches in two steps. When hydraulic pressure is not needed, the oil pump discharge amount is reduced by the operation of the engine oil solenoid valve.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q100420003"></a><p class="topic-title"><span class="topic-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003363.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003363</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0140q100420004"></a><p class="topic-title"><span class="topic-head"></span>Operation</p>
+<dl>
+<dd>
+<div class="list">•  The PCM switches the engine oil pressure (which lubricates the engine) in two steps. It does this by driving the engine oil solenoid valve according to the engine operation conditions.</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzn00003589.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzn00003589</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0140q100420005"></a><p class="topic-title"><span class="topic-head"></span>Output duty value determination</p>
+<dl>
+<dd>
+<div class="list">•  The PCM controls the operational voltage energized to the engine oil solenoid according to the duty signal. After opening the engine oil solenoid valve at the output duty ratio of 100%, load applied to the parts is reduced by lowering the duty value to the output duty value at which the open valve condition can be maintained. The output duty value for maintaining the opening value changes according to the battery voltage.</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzn00003590.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzn00003590</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0140q100420006"></a><p class="topic-title"><span class="topic-head"></span>Engine oil solenoid valve operation conditions</p>
+<dl>
+<dd>
+<div class="list">•  The operation conditions for the engine hydraulic pressure switching control vary according to the vehicle conditions.</div>
+<dl>
+<div class="list-title">Normal control</div>
+<dd class="list">
+<div class="list">―  The PCM operates the engine oil solenoid valve when all of the following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Engine speed: <span>Less than 4,000 rpm</span></div>
+<div class="list">•  Engine coolant temperature: <span>Less than 98 °C {208 °F}</span></div>
+<div class="list">•  Charging efficiency: Less than specification (varies according to engine speed.)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Air bleeding control</div>
+<dd class="list">
+<div class="list">―  If all of the following conditions are met, the PCM operates the engine oil solenoid valve several times to bleed air from inside the hydraulic circuit. (Engine oil solenoid operation amount varies depending on engine speed and engine coolant temperature.)</div>
+<dl>
+<dd class="list">
+<div class="list">•  Engine speed: <span>500—900 rpm</span></div>
+<div class="list">•  Engine coolant temperature: <span>50—70 °C {122—158 °F}</span></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  For details on the engine oil solenoid valve, refer to the LUBRICATION SYSTEM. (See <font class="extxref-label"><a href="id0111q30027q5.html">ENGINE OIL SOLENOID VALVE [SKYACTIV-G 1.5 (WITH 4-2-1 EXHAUST SYSTEM)]</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q100420007"></a><p class="topic-title"><span class="topic-head"></span>Hydraulic pressure switching mechanism</p>
+<dl>
+<dd>
+<div class="list">•  When the engine oil solenoid valve operates, the hydraulic circuit changes according to the following. The engine oil supply amount is controlled by changing the hydraulic circuit.</div>
+<dl>
+<div class="list-title">Engine oil flow during low hydraulic pressure setting (engine oil solenoid valve ON)</div>
+<dd class="list">
+<div class="list">a.  When the engine oil solenoid valve turns on, hydraulic pressure is also applied to the top of the pilot valve. The pilot valve presses downward by spring force because the hydraulic pressure applied to the top and bottom of the pilot valve is nearly equal.</div>
+<div class="list">b.  Hydraulic pressure is applied to the top of the relief valve.</div>
+<div class="list">c.  When the hydraulic pressure exceeds the relief valve opening pressure, the relief valve is pressed downward and engine oil flows out (hydraulic pressure decrease).</div>
+<div class="list">d.  When the hydraulic pressure is less than the relief valve opening pressure, the relief valve closes. As a result, engine oil outflow stops (hydraulic pressure increase).</div>
+<div class="list">e.  (c)-(d) is performed repeatedly to adjust the hydraulic pressure.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzn00003591.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzn00003591</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Engine oil flow during high hydraulic pressure setting (engine oil solenoid valve OFF)</div>
+<dd class="list">
+<div class="list">a.  When the hydraulic pressure exceeds the pilot valve opening pressure, the pilot valve is pressed upward and hydraulic pressure is applied.</div>
+<div class="list">b.  Because the hydraulic pressure exceeds the relief valve opening pressure by the hydraulic pressure applied to the top of the relief valve, the relief valve is pressed downward and engine oil flows out (hydraulic pressure decrease).</div>
+<div class="list">c.  When the hydraulic pressure is less than the pilot valve opening pressure, the pilot valve closes. As a result, the relief valve is closed and engine oil outflow stops (hydraulic pressure increase).</div>
+<div class="list">d.  (a)-(c) is performed repeatedly to adjust the hydraulic pressure.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzn00003592.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzn00003592</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</body>
+</html>

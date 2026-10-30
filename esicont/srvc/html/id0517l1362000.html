@@ -1,0 +1,184 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>TCM [CW6A-EL]</title>
+</head>
+<body><a name="id0517l1362000"></a><p class="servinfo-title"><span class="servinfo-head"></span>TCM [CW6A-EL]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0517l1362000</p><br clear="all"><a name="id0517l136200001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose/Function</p>
+<div class="list">•  The TCM detects the vehicle conditions and performs calculations and processing based on input information from each type of sensor and switch.</div>
+<div class="list">•  Outputs control signals to each solenoid valve so that each type of control is optimally implemented according to the vehicle conditions.</div><br clear="all"><p><a name="id0517l136200002"></a><p class="topic-title"><span class="topic-head"></span>Function Table</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="4">
+<p class="thead">Control item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Main control content</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="5">
+<div class="tbody">Shift point control</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Automatic shift control</div>
+<div class="tbody">(D position)</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Driving mode</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Normal mode</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Mode selection during normal driving (without drive selection switch)</div>
+<div class="list">•  Normal mode selected using drive selection (with drive selection switch)</div>
+<div class="list">•  Performs automatic shift corresponding to vehicle speed and accelerator pedal depression amount</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SPORT mode</div>
+<div class="tbody">(with drive selection switch)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  SPORT mode selected using drive selection</div>
+<div class="list">•  Performs automatic shifting corresponding to vehicle speed and accelerator pedal depression amount</div>
+<div class="list">•  Lower gear is selected than while in the Normal mode</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Active Adaptive Shift (AAS) mode</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Unnecessary shift up is suppressed for several seconds by maintaining the gear corresponding to the operation speed at which the accelerator pedal is released</div>
+<div class="list">•  The optimum gear on the low vehicle-speed side is selected and shift down is executed corresponding to the operation force at which the brake pedal is depressed</div>
+<div class="list">•  During cornering, shift up is suppressed in preparation for acceleration after cornering</div>
+<div class="list">•  In regions of high elevation, the optimum gear is selected corresponding to the environment</div>
+<div class="list">•  The slope is estimated in the TCM to select the appropriate gear for ascent and descent</div>
+<div class="list">•  When SPORT mode is selected, the AAS selects a lower gear compared to when normal mode is selected, and maintains it for a longer period of time (with drive selection switch)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">High ATF temperature mode</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Controls engine torque when the ATF temperature is high</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="3">
+<div class="tbody">Manual shift control</div>
+<div class="tbody">(M position)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When M position is selected, manual shifting is prioritized according to the driver’s shift up/shift down operation.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="3">
+<div class="tbody">Shift pressure control</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Line pressure control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Controls line pressure with high accuracy and fine control corresponding to engine load conditions and vehicle driving conditions</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="3">
+<div class="tbody">Direct electric shift control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Performs direct, electronic control of clutch engagement pressure appropriate to engine load conditions and vehicle driving conditions</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="3">
+<div class="tbody">Learning control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Learns engine performance changes and transaxle deterioration over time to optimally correct clutch engagement pressure</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="4">
+<div class="tbody">Torque converter clutch (TCC) control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Based on adoption of full range TCC control, active TCC control directly after acceleration from stop</div>
+<div class="list">•  By gradually engaging/disengaging TCC piston, shock during operation is reduced</div>
+<div class="list">•  Implements TCC control when accelerator pedal is fully closed for improved fuel economy and emission performance</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="4">
+<div class="tbody">Engine-transaxle integration control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Optimally controls engine output torque when shifting</div>
+<div class="list">•  Calculates optimum clutch engagement pressure according to engine output torque</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="4">
+<div class="tbody">On-board diagnostic system</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Main part of transaxle control includes self-diagnosis function. In case of malfunction, automatic transmission warning light illuminates to alert driver, and DTC is stored in TCM</div>
+<div class="list">•  When transaxle malfunction is determined resulting from on-board diagnostic test, system control is switched to prevent any dangerous situation while driving</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><a name="id0517l136200003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002250.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002250</div>
+</td>
+</tr>
+</table>
+<p class="figure-title">Block diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002251.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002251</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0517l136200004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<p class="figure-title">Correlation between control and input/output parts</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002252.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002252</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

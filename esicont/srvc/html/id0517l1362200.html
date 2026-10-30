@@ -1,0 +1,259 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>SHIFT POINT CONTROL (MANUAL SHIFT CONTROL) [CW6A-EL]</title>
+</head>
+<body><a name="id0517l1362200"></a><p class="servinfo-title"><span class="servinfo-head"></span>SHIFT POINT CONTROL (MANUAL SHIFT CONTROL) [CW6A-EL]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0517l1362200</p><br clear="all"><a name="id0517l136220001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The TCM operates the manual shift control when the M position is selected.</div>
+<div class="list">•  If the M position is selected, manual shifting is prioritized according to the driver’s shift up/shift down operation. However, to assure driving safety and protect the ATX, minimum automatic shifting may occur.</div><br clear="all"><a name="id0517l136220002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am6zzn00002704.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am6zzn00002704</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0517l136220003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  Gears can be selected by moving the selector lever back and forth while driving in the M position.</div>
+<div class="list">•  When shifting the selector lever from the D to M position while driving, the gear being used while driving in the D position is maintained. For driving in D position 6th gear, however, when shifting the selector lever from the D to M position with the accelerator pedal not depressed, the gear shifts from 6th to 5th gear. For driving in 5th gear, when shifting the selector lever from the D to M position with the accelerator pedal not depressed, the gear shifts from 5th to 4th gear.</div>
+<div class="list">•  When a shift down is performed using the selector lever with the accelerator pedal not depressed and the selector lever in the M position, blipping control (synchronization to engine speed) is performed.</div>
+<div class="list">•  When the accelerator pedal is fully depressed while driving in the M position, kickdown shifting is performed.</div>
+<div class="list">•  If the ATF temperature exceeds the specified temperature while in manual mode, the TCM switches control to automatic shift control and turns the gear position indicator off to reduce the transaxle load. When the ATF temperature decreases to the appropriate temperature, the TCM enables driving in manual mode and re-illuminates the gear position indicator.</div>
+<div class="list">•  During manual shift control, in every gear speed, engine brake force can be obtained corresponding to the gear ratio. In addition, if the vehicle speed reaches a constant speed or less, shift-down is performed automatically.</div>
+<p clear="all">
+<p class="table-title">Shifting operation and manual transmission</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="2">
+<p class="thead">Shift operation</p>
+</th>
+<th id="" align="center">
+<p class="thead">Gear</p>
+</th>
+<th id="" align="center">
+<p class="thead">Gear shift enabled/disabled</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="14">
+<div class="tbody">Shift-up operation</div>
+</td>
+<td id="" align="left" rowspan="5">
+<div class="tbody">Operates once</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1GR to 2GR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Enabled when both driving and stopped</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2GR to 3GR</div>
+</td>
+<td id="" align="left" rowspan="13">
+<div class="tbody">Enabled when driving at specified vehicle speed or more</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3GR to 4GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4GR to 5GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">5GR to 6GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Operates 2 times consecutively</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1GR to 3GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2GR to 4GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3GR to 5GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4GR to 6GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="3">
+<div class="tbody">Operates 3 times consecutively</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1GR to 4GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2GR to 5GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3GR to 6GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Operates 4 times consecutively</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1GR to 5GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2GR to 6GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="14">
+<div class="tbody">Shift-down operation</div>
+</td>
+<td id="" align="left" rowspan="5">
+<div class="tbody">Operates once</div>
+</td>
+<td id="" align="center">
+<div class="tbody">6GR to 5GR</div>
+</td>
+<td id="" align="left" rowspan="14">
+<div class="tbody">Enabled when driving at specified vehicle speed or less</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">5GR to 4GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4GR to 3GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3GR to 2GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2GR to 1GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Operates 2 times consecutively</div>
+</td>
+<td id="" align="center">
+<div class="tbody">6GR to 4GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">5GR to 3GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4GR to 2GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3GR to 1GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="3">
+<div class="tbody">Operates 3 times consecutively</div>
+</td>
+<td id="" align="center">
+<div class="tbody">6GR to 3GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">5GR to 2GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4GR to 1GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Operates 4 times consecutively</div>
+</td>
+<td id="" align="center">
+<div class="tbody">6GR to 2GR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">5GR to 1GR</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="list">•  The gear shifting operation may cancel depending on the vehicle speed. If a shift-down operation is canceled, the gear position indicator illuminates to alert the driver.</div>
+<div class="list">•  If the engine reaches a high engine speed, the following controls are performed to protect the engine:</div>
+<dl>
+<dd class="list">
+<div class="list">1.  The throttle valve is squeezed so that the engine speed does not exceed the excess speed range and the engine speed is stabilized at a lower speed than the excess speed range.</div>
+<div class="list">2.  If the high engine speed condition continues, the engine speed is lowered by a forced shift-up of the gears.</div>
+</dd>
+</dl><br clear="all"><p><a name="id0517l136220004"></a><p class="topic-title"><span class="topic-head"></span>2nd gear fixed mode</p>
+<dl>
+<dd>
+<div class="list">•  When the vehicle is stopped or the vehicle speed is extremely low, the selector lever is moved to the + side and the transaxle is in 2nd gear.</div>
+<div class="list">•  On slippery surfaces such as snow-bound roads, forward acceleration and driving is facilitated. While in 2nd gear fixed mode and the selector lever is shifted to gears other than 2nd gear, the 2nd gear fixed mode is canceled.</div>
+<div class="list">•  If the accelerator pedal is fully depressed in 2nd gear fixed mode, kickdown shifting is performed and the 2nd gear fixed mode is cancelled.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0517l136220005"></a><p class="topic-title"><span class="topic-head"></span>Direct mode (with steering shift switch)</p>
+<dl>
+<dd>
+<div class="list">•  When the steering shift switch is operated while driving with the selector lever in the D position, the gear position may temporarily switch. While in the direct mode, D and M illuminate in the indicator light and the operating gear position is displayed. The direct mode is canceled under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Specified time has elapsed while driving at constant speed</div>
+<div class="list">―  Vehicle stopped or driving at low speed</div>
+<div class="list">―  Up switch for steering shift switch is pulled for certain period of time or more</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</body>
+</html>

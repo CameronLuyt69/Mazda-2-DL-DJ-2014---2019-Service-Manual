@@ -1,0 +1,368 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC U0338:00 [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0102q2901600"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC U0338:00 [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q2901600</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC U0338:00</p>
+</th>
+<th id="" align="left">
+<p class="thead">Start stop unit error</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  If any of the following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  With the battery voltage <span>10 V or more</span>, any of the following conditions is continuously met for <span>3.5 s</span>.</div>
+<dl>
+<dd class="list">
+<div class="list">•  Check sum error in signal from start stop unit</div>
+<div class="list">•  Counter error in signal from start stop unit</div>
+</dd>
+</dl>
+<div class="list">―  PCM receives error signal from start stop unit for <span>1 s</span>.</div>
+</dd>
+</dl>
+<div class="list-title">Diagnostic support note</div>
+<div class="list">•  This is an intermittent monitor (other).</div>
+<div class="list">•  The check engine light does not illuminate.</div>
+<div class="list">•  FREEZE FRAME DATA/Snapshot data is not available.</div>
+<div class="list">•  DTC is not stored in the PCM memory.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  CAN drive error (instrument cluster or PCM)</div>
+<div class="list">•  CAN communication line malfunction between start stop unit and PCM</div>
+<dl>
+<dd class="list">
+<div class="list">―  Start stop unit terminal 2M—BCM terminal 2D</div>
+<div class="list">―  Start stop unit terminal 2O—BCM terminal 2C</div>
+<div class="list">―  BCM terminal 3C—PCM terminal 2C</div>
+<div class="list">―  BCM terminal 3D—PCM terminal 2D</div>
+</dd>
+</dl>
+<div class="list">•  BCM malfunction</div>
+<div class="list">•  Start stop unit connector or terminals malfunction</div>
+<div class="list">•  PCM connector or terminals malfunction</div>
+<div class="list">•  Start stop unit malfunction</div>
+<div class="list">•  PCM malfunction</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2"><img src="images/am2zzw00012592.png"></td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic Procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY DTC FOR MODULE COMMUNICATION</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure and DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any other PENDING CODEs and/or DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable PENDING CODE or DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">CONFIRM BCM DTC</div>
+<div class="list">•  Perform the BCM DTC inspection using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902f5067300.html">DTC INSPECTION [BCM]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0902f5067500.html">DTC TABLE [BCM]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">CONFIRM START STOP UNIT DTC</div>
+<div class="list">•  Perform the start stop unit DTC inspection using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902p6018800.html">DTC INSPECTION [START STOP UNIT]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0902p6019000.html">DTC TABLE [START STOP UNIT]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">CONFIRM INSTRUMENT CLUSTER DTC</div>
+<div class="list">•  Perform the instrument cluster DTC inspection using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902e8960300.html">DTC INSPECTION [INSTRUMENT CLUSTER]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0902e8960500.html">DTC TABLE [INSTRUMENT CLUSTER]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT START STOP UNIT CONNECTOR CONDITION</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Disconnect the start stop unit connector.</div>
+<div class="list">•  Inspect for poor connection (such as damaged/pulled-out pins, corrosion).</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector and/or terminals, then go to Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT PCM CONNECTOR CONDITION</div>
+<div class="list">•  Disconnect the PCM connector.</div>
+<div class="list">•  Inspect for poor connection (such as damaged/pulled-out pins, corrosion).</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector and/or terminals, then go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication line can be considered the cause.</div>
+<div class="list">•  Refer to the wiring diagram and verify whether or not there is a common connector between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Start stop unit terminal 2M—BCM terminal 2D</div>
+<div class="list">―  Start stop unit terminal 2O—BCM terminal 2C</div>
+<div class="list">―  BCM terminal 3C—PCM terminal 2C</div>
+<div class="list">―  BCM terminal 3D—PCM terminal 2D</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">If there is a common connector:</div>
+<dd class="list">
+<div class="list">―  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for a malfunction.</div>
+<div class="list">―  Repair or replace the malfunctioning part.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">If there is no common connector:</div>
+<dd class="list">
+<div class="list">―  Repair or replace the wiring harness.</div>
+</dd>
+</dl>
+<div class="tbody">If the malfunction recurs, replace the start stop unit.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091400110300.html">START STOP UNIT REMOVAL/INSTALLATION</a></font>.)</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY DTC TROUBLESHOOTING COMPLETED</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2801100.html">AFTER REPAIR PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Perform the DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q2113800.html">PCM REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY AFTER REPAIR PROCEDURE</div>
+<div class="list">•  Perform the “AFTER REPAIR PROCEDURE”.<div>(See <font class="extxref-label"><a href="id0102q2801100.html">AFTER REPAIR PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

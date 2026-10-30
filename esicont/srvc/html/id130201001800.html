@@ -1,0 +1,555 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P0A12:00 [i-ELOOP]</title>
+</head>
+<body><a name="id130201001800"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P0A12:00 [i-ELOOP]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id130201001800</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  To determine the malfunctioning part, proceed with the diagnostics from "Function Inspection Using M-MDS".</div>
+<div class="list">•  If the capacitor (i-ELOOP) voltage is low after replacing the DC-DC converter (i-ELOOP), the i-ELOOP indicator light (green) flashes until the capacitor (i-ELOOP) voltage is <span>approx. 9.5 V</span>.</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id13020100180001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Details On DTCs</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DESCRIPTION</p>
+</th>
+<th id="" align="left" colspan="2">
+<p class="thead">DC-DC converter (i-ELOOP): low input</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="6">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Determination conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  DC-DC converter (i-ELOOP) terminal 2A voltage is specified value or less.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Preconditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Ignition switched ON</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Malfunction determination period</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>5 s</span> period</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Drive cycle</div>
+</td>
+<td id="" align="left">
+<div class="list">•  1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Self test type</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CMDTC self test</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Sensor used</div>
+</td>
+<td id="" align="left">
+<div class="list">•  DC-DC converter (i-ELOOP)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Inhibits engine-stop by operating the i-stop function. (With i-stop)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>VEHICLE STATUS WHEN DTCs ARE OUTPUT</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Flashes i-stop warning light (amber). (With i-stop)</div>
+<div class="list">•  A warning message is displayed on the center display. (With center display)</div>
+<div class="list">•  Illuminates charging system warning light.</div>
+<div class="list">•  If the vehicle continues to be driven while the DTC is detected the battery will be depleted.</div>
+<dl>
+<dd class="list">
+<div class="list">―  A malfunction occurs with an electrical device and the vehicle stops.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Connector or terminal malfunction of the following parts:</div>
+<dl>
+<dd class="list">
+<div class="list">―  PCM (PCM DTC may be detected simultaneously)</div>
+<div class="list">―  Generator</div>
+<div class="list">―  Capacitor (i-ELOOP)</div>
+<div class="list">―  DC-DC converter (i-ELOOP)</div>
+<div class="list">―  Electrical load part which is connected to DC-DC converter (i-ELOOP) terminal 4A</div>
+</dd>
+</dl>
+<div class="list">•  Short to ground in wiring harness between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Capacitor (i-ELOOP) terminal 2A—Generator terminal 1A</div>
+<div class="list">―  Capacitor (i-ELOOP) terminal 3A—DC-DC converter (i-ELOOP) terminal 2A</div>
+<div class="list">―  IG1 relay terminal C—Generator terminal 2C (PCM DTC P2503:00 may be detected simultaneously) (SKYACTIV-G 1.5)</div>
+<div class="list">―  Main relay terminal C—Generator terminal 2C (PCM DTC P2503:00 may be detected simultaneously) (SKYACTIV-D 1.5)</div>
+</dd>
+</dl>
+<div class="list">•  Open circuit in wiring harness between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  IG1 relay terminal C—Generator terminal 2C (PCM DTC P2503:00 may be detected simultaneously) (SKYACTIV-G 1.5)</div>
+<div class="list">―  Main relay terminal C—Generator terminal 2C (PCM DTC P2503:00 may be detected simultaneously) (SKYACTIV-D 1.5)</div>
+</dd>
+</dl>
+<div class="list">•  DC-DC converter (i-ELOOP) malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id13020100180002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00012600.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00012600</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id13020100180003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Explanation (DTC Detection Outline)</p>
+<div class="list">•  With this diagnosis, a voltage of nearly <span>0 V</span> at the DC-DC converter (i-ELOOP) terminal 2A is detected for verification of vehicle malfunctions/safety assurance.</div><br clear="all"><a name="id13020100180004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Repeatability Verification Procedure</p>
+<div class="list">1.  Clear the DTC for the DC-DC converter (i-ELOOP) using the M-MDS. (See <font class="extxref-label"><a href="id130201000300.html">CLEARING DTC [i-ELOOP]</a></font>.)</div>
+<div class="list">2.  Start the engine.</div>
+<div class="list">3.  Leave for <span>180 s</span> while idling with no electrical load.</div>
+<div class="list">4.  Leave for <span>30 s</span> while idling with high electrical load.</div><br clear="all"><a name="id13020100180005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID Item/Simulation Item Used In Diagnosis</p>
+<div class="list">•  Not applicable</div><br clear="all"><a name="id13020100180006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Inspection Using M-MDS</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF POWER SUPPLY IS AFFECTED BY DTC RELATED TO DC-DC CONVERTER (i-ELOOP)</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Perform the DC-DC converter (i-ELOOP) DTC inspection using the M-MDS.<div>(See <font class="extxref-label"><a href="id130201000200.html">DTC INSPECTION [i-ELOOP]</a></font>.)</div>
+</div>
+<div class="list">•  Is the DTC P1628:11 or U3000:49 also present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id130201000900.html">DTC P1628:11 [i-ELOOP]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id130201001500.html">DTC U3000:49 [i-ELOOP]</a></font>.)</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF POWER SUPPLY IS AFFECTED BY DTC RELATED TO PCM</div>
+<div class="list">•  Perform the PCM DTC inspection using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the DTC P0A94:00 or P2503:00 also present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1004400.html">DTC P0A94:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2004400.html">DTC P0A94:00 [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1709600.html">DTC P2503:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2709600.html">DTC P2503:00 [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id13020100180007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Troubleshooting Diagnostic Procedure</p>
+<div class="list-title">Intention of troubleshooting procedure</div>
+<div class="list">•  Step 1—3</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verifying malfunction related to DC-DC converter (i-ELOOP) 2A terminal</div>
+</dd>
+</dl>
+<div class="list">•  Step 4—5</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verifying/replacing malfunctioning part</div>
+</dd>
+</dl>
+<div class="list">•  Step 6—7</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verify that primary malfunction is resolved and there are no other malfunctions.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF CONNECTOR DAMAGE OF EACH PART AFFECTS DIAGNOSTIC RESULTS</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Disconnect the negative battery cable.<div>(See <font class="extxref-label"><a href="id011700800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION</a></font>.)</div>
+</div>
+<div class="list">•  Remove the service plug.<div>(See <font class="extxref-label"><a href="id131704002000.html">SERVICE PLUG DISCONNECTION/CONNECTION [i-ELOOP]</a></font>.)</div>
+</div>
+<div class="list">•  Disconnect the connector of the following parts.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Generator</div>
+<div class="list">―  Capacitor (i-ELOOP)</div>
+<div class="list">―  DC-DC converter (i-ELOOP)</div>
+</dd>
+</dl>
+<div class="list">•  Inspect for poor connection (such as damaged/pulled-out pins, corrosion).</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector and/or terminals, then go to Step 3.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF SHORT TO GROUND IN EACH WIRING HARNESS AFFECTS DIAGNOSTIC RESULTS</div>
+<div class="list">•  Verify that the generator, capacitor (i-ELOOP), and DC-DC converter (i-ELOOP) connectors are disconnected.</div>
+<div class="list">•  Inspect for continuity between the following terminals (wiring harness-side) and body ground:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Capacitor (i-ELOOP) terminal 2A</div>
+<div class="list">―  Capacitor (i-ELOOP) terminal 3A</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refer to the wiring diagram and verify whether or not there is a common connector between the following terminals:</div>
+<div class="list">•  Capacitor (i-ELOOP) terminal 2A—Generator terminal 1A</div>
+<div class="list">•  Capacitor (i-ELOOP) terminal 3A—DC-DC converter (i-ELOOP) terminal 2A</div>
+<div class="list-title">If there is a common connector:</div>
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for a short to ground.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+<div class="list-title">If there is no common connector:</div>
+<div class="list">•  Repair or replace the wiring harness which has a short to ground.</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 4.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFICATION OF VEHICLE REPAIR COMPLETION</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Reinstall the service plug.<div>(See <font class="extxref-label"><a href="id131704002000.html">SERVICE PLUG DISCONNECTION/CONNECTION [i-ELOOP]</a></font>.)</div>
+</div>
+<div class="list">•  Reconnect the negative battery cable.<div>(See <font class="extxref-label"><a href="id011700800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION</a></font>.)</div>
+</div>
+<div class="list">•  Clear the DTC for the DC-DC converter (i-ELOOP) using the M-MDS.<div>(See <font class="extxref-label"><a href="id130201000300.html">CLEARING DTC [i-ELOOP]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id13020100180004">Repeatability Verification Procedure</a></font>.)</div>
+</div>
+<div class="list">•  Retrieve the DC-DC converter (i-ELOOP) DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id130201000200.html">DTC INSPECTION [i-ELOOP]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  A fuse is blown in the capacitor (i-ELOOP) due to excess current can be considered.</div>
+</div>
+</dd>
+</dl>
+<div class="tbody">Replace the capacitor (i-ELOOP).</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id131704006000.html">CAPACITOR (i-ELOOP) REMOVAL/INSTALLATION [i-ELOOP]</a></font>.)</div>
+<div class="tbody">Go to Step 6.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 7.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF MALFUNCTION OCCURRING IS CAUSED BY WIRING HARNESS/CONNECTOR LOSS</div>
+<div class="list">•  Have all the wiring harnesses/connectors which can be considered the cause of DTC P0A12:00 been inspected?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect all the related wiring harnesses/connectors.</div>
+<div class="list">•  If there is any malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Repair or replace the malfunctioning part according to the inspection results, then go to Step 6.</div>
+</dd>
+</dl>
+<div class="list">•  If there is no malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Go to the next step.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY DC-DC CONVERTER (i-ELOOP) REPLACEMENT RECORD</div>
+<div class="list">•  Is the DC-DC converter (i-ELOOP) being replaced within the troubleshooting diagnostic procedure this time?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the DC-DC converter (i-ELOOP).</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id1317040090q9.html">DC-DC CONVERTER (i-ELOOP) REMOVAL/INSTALLATION [WITH i-ELOOP (SKYACTIV-G 1.3, SKYACTIV-G 1.5)]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id1317040090q8.html">DC-DC CONVERTER (i-ELOOP) REMOVAL/INSTALLATION [WITH i-ELOOP (SKYACTIV-D 1.5)]</a></font>.)</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFICATION OF VEHICLE REPAIR COMPLETION</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Reinstall the service plug.<div>(See <font class="extxref-label"><a href="id131704002000.html">SERVICE PLUG DISCONNECTION/CONNECTION [i-ELOOP]</a></font>.)</div>
+</div>
+<div class="list">•  Reconnect the negative battery cable.<div>(See <font class="extxref-label"><a href="id011700800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION</a></font>.)</div>
+</div>
+<div class="list">•  Start the engine and leave for <span>100 s or more</span>.</div>
+<div class="list">•  Clear the DTC for the DC-DC converter (i-ELOOP) using the M-MDS.<div>(See <font class="extxref-label"><a href="id130201000300.html">CLEARING DTC [i-ELOOP]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id13020100180004">Repeatability Verification Procedure</a></font>.)</div>
+</div>
+<div class="list">•  Retrieve the DC-DC converter (i-ELOOP) DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id130201000200.html">DTC INSPECTION [i-ELOOP]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 4.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF THERE IS ANY OTHER MALFUNCTION</div>
+<div class="list">•  Is any other DTC or pending code stored?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id130201000700.html">DTC TABLE [i-ELOOP]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>PID/DATA MONITOR TABLE [FORWARD SENSING CAMERA (FSC)]</title>
+</head>
+<body><a name="id0902p9032600"></a><p class="servinfo-title"><span class="servinfo-head"></span>PID/DATA MONITOR TABLE [FORWARD SENSING CAMERA (FSC)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0902p9032600</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">PID</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Operation</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Module control terminal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">A_ANG_PITCH</div>
+</td>
+<td id="" align="center">
+<div class="tbody">° (deg)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays vanishing point correction angle (pitch) corrected by forward sensing camera (FSC) when performing forward sensing camera (FSC) aiming using M-MDS.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">C, E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A_ANG_ROLL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">° (deg)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays vanishing point correction angle (roll) corrected by forward sensing camera (FSC) when performing forward sensing camera (FSC) aiming using M-MDS.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">C, E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A_ANG_YAW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">° (deg)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays vanishing point correction angle (yaw) corrected by forward sensing camera (FSC) when performing forward sensing camera (FSC) aiming using M-MDS.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">C, E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BRAKE_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Brake switch (No. 2 signal) is off. (Brake pedal is not depressed.)</div>
+<div class="list">•  On: Brake switch (No. 2 signal) is on. (Brake pedal is depressed.)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">C, E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DSP_LANE_ST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/Dash_Lane/Solid_Lane</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Lane departure warning system (LDWS) is off.</div>
+<div class="list">•  Dash_Lane: When any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Actual vehicle speed is less than vehicle speed for operation of lane departure warning system (LDWS).</div>
+<div class="list">―  Dirt or fogging of camera is detected.</div>
+<div class="list">―  Vehicle lane lines are not recognized.</div>
+</dd>
+</dl>
+<div class="list">•  Solid_Lane: Vehicle lane lines are recognized at a vehicle speed of <span>40 km/h {25 mph} or more</span>.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">C, E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DSP_WRN_ST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/LDWS_Left/LDWS_Right/LDWS_Fail/HBC_Fail/Camera_BLK/FOW Warning/Fow Fail/FSC_Fail/Camera_DRDT</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: When any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  LDWS switch is off.</div>
+<div class="list">―  Lane departure warning system (LDWS) does not determine warning.</div>
+<div class="list">―  Forward sensing camera (FSC) does not detect malfunction.</div>
+</dd>
+</dl>
+<div class="list">•  LDWS_Left: Lane departure on vehicle left side is detected.</div>
+<div class="list">•  LDWS_Right: Lane departure on vehicle right side is detected.</div>
+<div class="list">•  LDWS_Fail: Malfunction related to lane departure warning system (LDWS) is detected.</div>
+<div class="list">•  HBC_Fail: Malfunction related to HBC system is detected.</div>
+<div class="list">•  Camera_BLK: Dirt on camera is detected.</div>
+<div class="list">•  FOW_Warning: —</div>
+<div class="list">•  FOW_Fail: —</div>
+<div class="list">•  FSC_Fail: Forward sensing camera (FSC) malfunction is detected.</div>
+<div class="list">•  Camera_DRDT: Camera fogging is detected.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">C, E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">HBC_H/L_CS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Hi_Request/Low_Request/Invalid</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Hi_Request: HI beam switch signal received</div>
+<div class="list">•  Low_Request: LO beam switch signal received</div>
+<div class="list">•  Invalid: Error in HI/LO beam switch request signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">C, E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IL_ST_HBC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/Green_On/Green_Flash/Amber_On/Amber_Flash</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: HBC system indicator light (green) and HBC system warning indicator light (amber) turned off</div>
+<div class="list">•  Green_On: HBC system indicator light (green) is illuminated.</div>
+<div class="list">•  Green_Flash: HBC system indicator light (green) is flashing.</div>
+<div class="list">•  Amber_On: HBC system warning light (amber) is illuminated.</div>
+<div class="list">•  Amber_Flash: HBC system warning light (amber) is flashing.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">C, E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IL_ST_LDWS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/Green_On/Green_Flash/Amber_On/Amber_Flash</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: LDWS indicator light (green) and LDWS warning light (amber) turned off</div>
+<div class="list">•  Green_On: LDWS indicator light (green) illuminated</div>
+<div class="list">•  Green_Flash: LDWS indicator light (green) is flashing.</div>
+<div class="list">•  Amber_On: LDWS warning light (amber) is illuminated.</div>
+<div class="list">•  Amber_Flash: LDWS warning light (amber) is flashing.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">C, E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LDWS_BUZZER</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: LDWS warning alarm does not sound.</div>
+<div class="list">•  On: LDWS warning alarm sounds.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">C, E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LDWS_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: LDWS switch is off.</div>
+<div class="list">•  On: LDWS switch is on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">C, E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RS_SOUND_CS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/Left/Right</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Rumble strip sound is not heard.</div>
+<div class="list">•  Left: Left side rumble strip sound heard.</div>
+<div class="list">•  Right: Right side rumble strip sound heard.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">C, E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_IG1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays forward sensing camera (FSC) power supply voltage</div>
+</td>
+<td id="" align="left">
+<div class="tbody">I (Power supply)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VSPD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays vehicle speed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">C, E (CAN)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

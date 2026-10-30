@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DSC CONTROL</title>
+</head>
+<body><a name="id041500103900"></a><p class="servinfo-title"><span class="servinfo-head"></span>DSC CONTROL</p>
+<hr>
+<p class="servinfo-title-id" align="right">id041500103900</p><br clear="all"><a name="id04150010390001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  While a vehicle normally turns safely in response to steering operation, there are instances when the limits of tire lateral grip is surpassed due to road surface conditions or vehicle speed, and the influence of evasive steering to avoid an accident or similar situations.</div>
+<div class="list">•  Tires surpassing lateral grip exhibit one of the following conditions: Strong oversteer tendency (rear wheel grip is less than front wheels) and strong understeer tendency (front wheel grip is less than rear wheels)</div>
+<div class="list">•  DSC operates at vehicle speeds of approx. 15 km/h {9.3 mph} or more in the conditions described above, controlling engine output and wheel braking to suppress oversteer and understeer tendencies.</div><br clear="all"><a name="id04150010390002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p><br clear="all"><p><a name="id04150010390003"></a><p class="topic-title"><span class="topic-head"></span>Vehicle condition determination</p>
+<dl>
+<dd>
+<div class="list">•  The vehicle speed, steering angle, lateral-G, and yaw rate are detected by the sensors and used in calculations by the DSC HU/CM to determine the vehicle condition. Then, depending on the difference between the target yaw rate, calculated with the values input from each sensor and the value detected by the yaw rate sensor, an oversteer or understeer tendency can be determined.</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00000537.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00000537</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id04150010390004"></a><p class="topic-title"><span class="topic-head"></span>Oversteer tendency determination</p>
+<dl>
+<dd>
+<div class="list">•  When turning, if the actual vehicle yaw rate is larger than the target yaw rate (the yaw rate that should normally be formed as determined by the steering angle and vehicle speed), it means that the vehicle is in or about to be in a spin. Therefore the vehicle is determined to have an oversteer tendency.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id04150010390005"></a><p class="topic-title"><span class="topic-head"></span>Understeer tendency determination</p>
+<dl>
+<dd>
+<div class="list">•  When turning, if the actual vehicle yaw rate is less than the target yaw rate (the yaw rate that should normally be formed as determined by the steering angle and vehicle speed), it means that the vehicle is not properly turning. Therefore the vehicle is determined to have an understeer tendency.</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id04150010390006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<p class="figure-title">Block diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00001117.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00001117</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id04150010390007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  When the DSC HU/CM determines that the vehicle has a strong oversteer or understeer tendency, engine output is lowered and, at the same time, it suppresses the yaw moment by affecting the braking of the front or rear wheels to inhibit the oversteer or understeer tendency.</div><br clear="all"><p><a name="id04150010390008"></a><p class="topic-title"><span class="topic-head"></span>Oversteer tendency suppression</p>
+<dl>
+<dd>
+<div class="list">•  When a large oversteer tendency is determined, braking is applied to the outer front wheel according to the degree of the tendency. As a result, a yaw moment is formed towards the outer side of the vehicle and the oversteer tendency is suppressed.</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003874.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003874</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id04150010390009"></a><p class="topic-title"><span class="topic-head"></span>Understeer tendency suppression</p>
+<dl>
+<dd>
+<div class="list">•  When a large understeer tendency is determined, engine output is controlled and braking is applied to the inner rear wheel according to the degree of the tendency. As a result, a yaw moment is formed towards the inner side of the vehicle and the understeer tendency is suppressed.</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003875.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003875</div>
+</td>
+</tr>
+</table>
+</p>
+</body>
+</html>

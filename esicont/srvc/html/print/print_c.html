@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<script type="text/javascript" src="../plugin/jquery.min.js"></script>
+		<title>PRINT PAGE</title>
+		<script>
+			var margin = 5;
+			var padding = 5;
+			var MisalignmentFont = 7;
+			var heightMargin = 100;
+			var widthMargin = 100;
+			var maxActivePoint = 8;
+			var A_TargetPointArry = [];
+			var B_TargetPointArry = [];
+			var C_TargetPointArry = [];
+			var D_TargetPointArry = [];
+			var TargetPointArry = [maxActivePoint];
+			var index = 0;
+			var tspanId = 0;
+			var tspanIdArry = [];
+			var fontSize = 7;
+
+			function locationActivepoint(gTargetX, gTargetY, width_half, height_half, b) 
+			{
+				if(gTargetX < width_half && gTargetY < height_half)
+				{
+					A_TargetPointArry.push(b);
+				}
+				else if(gTargetX > width_half && gTargetY < height_half)
+				{
+					B_TargetPointArry.push(b);
+				}
+				else if(gTargetX < width_half && gTargetY > height_half)
+				{
+					C_TargetPointArry.push(b);
+				}
+				else if(gTargetX > width_half && gTargetY > height_half)
+				{
+					D_TargetPointArry.push(b);
+				}
+			}
+
+			function CheckDuplicationActivatePoint()
+			{
+
+				// A  E  B
+				// F     G
+				// C  H  D
+				//
+				//TargetPointArry・・決め打ちで書くエリアを指定
+				//    A   B   C   D   E   F   G   H　
+				//   ↓　↓　↓　↓　↓　↓　↓　↓
+				//   [0] [1] [2] [3] [4] [5] [6] [7] ・・・配列の要素数が、A-Hの場所に対応している。
+				//  +---+---+---+---+---+---+---+---+
+				//例| 2 | 1 | 0 | 3 | 6 | 7 | 8 | 9 | ・・・ActivePointの要素番号
+				//  +---+---+---+---+---+---+---+---+
+				
+				TargetPointArry[0] = A_TargetPointArry[0];
+				TargetPointArry[1] = B_TargetPointArry[0];
+				TargetPointArry[2] = C_TargetPointArry[0];
+				TargetPointArry[3] = D_TargetPointArry[0];
+				TargetPointArry[4] = undefined;
+				TargetPointArry[5] = undefined;
+				TargetPointArry[6] = undefined;
+				TargetPointArry[7] = undefined;
+				//重複チェック
+				var ArryCount = [4];
+				ArryCount[0] = A_TargetPointArry.length;
+				ArryCount[1] = B_TargetPointArry.length;
+				ArryCount[2] = C_TargetPointArry.length;
+				ArryCount[3] = D_TargetPointArry.length;
+
+				for(var i = 0; i < maxActivePoint; i++)
+				{
+					if(ArryCount[i] > 1)
+					{
+						//重複している個数分繰り返す
+						for( var k = 1; k < ArryCount[i]; k++ )
+						{
+							//空いているエリアを探す
+							for(var j = 0; j < TargetPointArry.length; j++)
+							{
+								if(typeof TargetPointArry[j] === "undefined")
+								{
+									if(i == 0)
+									{
+										TargetPointArry[j] = A_TargetPointArry[k];
+									}
+									else if(i == 1)
+									{
+										TargetPointArry[j] = B_TargetPointArry[k];
+									}
+									else if(i == 2)
+									{
+										TargetPointArry[j] = C_TargetPointArry[k];
+									}
+									else
+									{
+										TargetPointArry[j] = D_TargetPointArry[k];			
+									}
+
+									break;
+								}
+							}
+						}
+						
+					}
+				}
+			}
+
+			function initTargetPointArry() 
+			{
+				A_TargetPointArry = [];
+				B_TargetPointArry = [];
+				C_TargetPointArry = [];
+				D_TargetPointArry = [];
+				TargetPointArry = [];
+				index = 0;
+			}
+
+			function CheckActivePoin(parent, arrySvgProperty, svg_width, svg_height)
+			{
+				var width_half = svg_width / 2;
+				var height_half = svg_height / 2;
+
+				for( var b in arrySvgProperty )
+				{
+					//ActivePointの座標
+					var gTargetX = Number(arrySvgProperty[b][2]); 
+					var gTargetY = Number(arrySvgProperty[b][3]); 
+
+					locationActivepoint(gTargetX, gTargetY, width_half, height_half, b);
+					
+				}
+			}
+
+			function SetingParamParentSvg(childSvg, parent, heightMargin, widthMargin)
+			{
+				//widthは子svg+100*2(左右余白100)。heightは子svg+100*2(余白上下100)
+				var childtWidth = childSvg[0].getAttribute("width");
+				var childHeight = childSvg[0].getAttribute("height");
+
+				childtWidth = parseFloat(childtWidth.replace('px', ''));
+				parent[0].setAttribute("width", childtWidth + widthMargin * 2);
+
+				childHeight = parseFloat(childHeight.replace('px', ''));
+				parent[0].setAttribute("height", childHeight + heightMargin * 2);
+			}
+
+
+			function hideAllActivePoint(childSvg, terget)
+			{
+				var tergetElmCircle = terget.getElementsByTagName("circle");
+				for (var j = 0; j < tergetElmCircle.length; j++)
+				{
+					tergetElmCircle[j].setAttribute('fill-opacity', '0.0');
+				}
+
+				var tergetElmPath = terget.getElementsByTagName("path");
+				for (var j = 0; j < tergetElmPath.length; j++)
+				{
+					tergetElmPath[j].setAttribute('fill-opacity', '0.0');
+				}
+			}
+
+
+			function SettingActivePointRedCircle(reg, tergetElm)
+			{
+				for (var j = 0; j < tergetElm.length; j++)
+				{
+					var tergetParentId = tergetElm[j].parentNode.getAttribute('id');
+					
+					if(tergetParentId.match(reg))
+					{
+						//選択中。赤丸になるように属性を設定
+						tergetElm[j].setAttribute('fill-opacity', '1.0');	
+					}
+				}
+			}
+
+			
+			function CreateLabeltextNum(markerNum, parent, textContent)
+			{
+				markerNum.setAttribute("x", 10);
+				markerNum.setAttribute("y", 10);
+				markerNum.setAttribute("font-size", fontSize);
+				markerNum.setAttribute("class","labeltext");
+				markerNum.textContent = textContent; //gText														
+
+				//親svgに追加する
+				parent[0].appendChild(markerNum);
+			}
+
+
+			function CreateLabeltextStr(markerStr, parent, textArray, textContentStr)
+			{
+
+				//markerStr.setAttribute("visibility", "hidden");
+				markerStr.setAttribute("x", 10);
+				markerStr.setAttribute("y", 10);
+				markerStr.setAttribute("font-size", fontSize);
+				markerStr.setAttribute("class","labeltext");
+				
+				if(textArray.length < 2)
+				{
+					markerStr.textContent = textContentStr;
+				}
+				else
+				{
+					for(var p = 0; p < textArray.length; p++)
+					{
+						tspanId++;
+
+						var tspanObj = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+						
+						tspanObj.setAttribute("x", 10);
+						tspanObj.setAttribute("y", p * (fontSize + 3));
+						tspanObj.setAttribute("id", "tspan" + tspanId);
+					    tspanObj.textContent = textArray[p];	
+						markerStr.appendChild(tspanObj);
+						
+						tspanIdArry.push(tspanId);
+					}
+				}
+
+				parent[0].appendChild(markerStr);
+
+			}
+
+
+			function GetWideSizeCharacterPart(markerNumBox, markerStrBox )
+			{
+				var text_width;
+						
+				if(markerNumBox.width > markerStrBox.width)
+				{
+					text_width = markerNumBox.width;
+				}
+				else
+				{
+					text_width = markerStrBox.width;
+				}
+			
+				return text_width;
+			}
+
+
+			function SetXY_CharacterPart(b, svgParent_width, svgParent_heigth, markerNum, markerStr, textArray, markerNumBox, markerStrBox, text_height, text_width)
+			{
+				var textNumX;
+				var textNumY;
+				var textStrX;
+				var textStrY;
+				var targetArea;
+
+				for(var area = 0; area < maxActivePoint; area++)
+				{
+					if(TargetPointArry[area] == b)
+					{
+						targetArea = area;
+						break;
+					}
+				}
+				
+				if(targetArea == 0)
+				{
+					//A
+					textNumX = margin + padding;
+					textNumY = margin + padding + MisalignmentFont;
+					
+					textStrX = margin + padding;
+					//textStrY = textNumY + markerNumBox.height + MisalignmentFont;
+					textStrY = textNumY + markerNumBox.height ;
+					
+				}
+				else if(targetArea == 1)
+				{
+					//B
+					textNumX = svgParent_width-(margin + padding + text_width);
+					textNumY = margin + padding + MisalignmentFont;
+					
+					textStrX = svgParent_width-(margin + padding + text_width);
+					textStrY = textNumY + markerNumBox.height ;
+				}
+				else if(targetArea == 2)
+				{
+					//C
+					textNumX = margin + padding;
+					textNumY = svgParent_heigth - (margin + padding + text_height - MisalignmentFont);
+					
+					textStrX = margin + padding;
+					textStrY = textNumY + markerNumBox.height ;
+				}
+				else if(targetArea == 3)
+				{
+					//D
+					textNumX = svgParent_width - (margin + padding + text_width);
+					textNumY = svgParent_heigth - (margin + padding + text_height - MisalignmentFont);
+					
+					textStrX = svgParent_width - (margin + padding + text_width);
+					textStrY = textNumY + markerNumBox.height ;
+				}
+				else if(targetArea == 4)
+				{
+					//E
+					textNumX = svgParent_width / 2 - text_width / 2;
+					textNumY = margin + padding + MisalignmentFont;
+					
+					textStrX = svgParent_width / 2 - text_width / 2;
+					textStrY = textNumY + markerNumBox.height ;
+				}
+				else if(targetArea == 5)
+				{
+					//F
+					textNumX = margin + padding;
+					//textNumY = (svgParent_heigth / 2) - (text_height / 2) - MisalignmentFont;
+					textNumY = (svgParent_heigth / 2) - (text_height / 2);
+
+					textStrX = margin + padding;
+					textStrY = textNumY + markerNumBox.height ;
+				}
+				else if(targetArea == 6)
+				{
+					//G
+					textNumX = svgParent_width-(margin + padding + text_width);
+					//textNumY = (svgParent_heigth / 2) - (text_height / 2) - MisalignmentFont;
+					textNumY = (svgParent_heigth / 2) - (text_height / 2);
+					
+					textStrX = svgParent_width-(margin + padding + text_width);
+					textStrY = textNumY + markerNumBox.height ;
+				}
+				else if(targetArea == 7)
+				{
+					//H
+					textNumX = svgParent_width / 2 - text_width / 2;
+					textNumY = svgParent_heigth - (margin + padding + text_height - MisalignmentFont);
+					
+					textStrX = svgParent_width / 2 - text_width / 2;
+					textStrY = textNumY + markerNumBox.height ;
+				}
+				
+				//text要素のx,yを変更する
+				markerNum.setAttribute("x", textNumX);
+				markerNum.setAttribute("y", textNumY);
+				
+				if(textArray.length < 2)
+				{
+					markerStr.setAttribute("x", textStrX);
+					markerStr.setAttribute("y", textStrY);
+				}
+				else
+				{
+					//改行がある場合
+					for(var p = 0; p < textArray.length; p++)
+					{
+						var tspanObj = document.getElementById("tspan" + tspanIdArry[p]);
+						var yValue = textStrY + (fontSize + 3) * p;
+						tspanObj.setAttribute("y", yValue);
+						tspanObj.setAttribute("x", textStrX);
+					}
+
+					tspanIdArry = [];
+				}
+
+				return targetArea;
+			}
+
+			function SetX_RectPart(b, svgParent_width, targetArea, rect_width)
+			{
+				var rectX;
+
+				if(targetArea == 0)
+				{
+					//A
+					rectX = margin;
+				}
+				else if(targetArea == 1)
+				{
+					//B
+					rectX = svgParent_width-(margin + rect_width);
+				}
+				else if(targetArea == 2)
+				{
+					//C
+					rectX = margin;
+				}
+				else if(targetArea == 3)
+				{
+					//D
+					rectX = svgParent_width - (margin + rect_width);
+				}
+				else if(targetArea == 4)
+				{
+					//E
+					rectX = (svgParent_width / 2) - (rect_width / 2);
+				}
+				else if(targetArea == 5)
+				{
+					//F
+					rectX = margin;
+				}
+				else if(targetArea == 6)
+				{
+					//G
+					rectX = svgParent_width-(margin + rect_width);
+				}
+				else if(targetArea == 7)
+				{
+					//H
+					rectX = (svgParent_width / 2) - (rect_width / 2);
+				}
+				
+				return rectX;
+			}
+
+
+			function SetY_RectPart(b, svgParent_heigth, targetArea, rect_height)
+			{
+				var rectY;
+
+				if(targetArea == 0)
+				{
+					//A
+					rectY = margin;
+				}
+				else if(targetArea == 1)
+				{
+					//B
+					rectY = margin;
+				}
+				else if(targetArea == 2)
+				{
+					//C
+					rectY = svgParent_heigth - (margin + rect_height);
+				}
+				else if(targetArea == 3)
+				{
+					//D
+					rectY = svgParent_heigth - (margin + rect_height);
+				}
+				else if(targetArea == 4)
+				{
+					//E
+					rectY = margin;
+				}
+				else if(targetArea == 5)
+				{
+					//F
+					rectY = (svgParent_heigth / 2) - (rect_height / 2) - margin;
+				}
+				else if(targetArea == 6)
+				{
+					//G
+					rectY = svgParent_heigth / 2 - (rect_height / 2) - margin;
+				}
+				else if(targetArea == 7)
+				{
+					//H
+					rectY = svgParent_heigth - (margin + rect_height);
+				}
+
+				return rectY;
+			}
+
+
+			function CreateRectObject(parent, rectX, rectY, rect_width, rect_height, rect)
+			{
+				rect.setAttribute("x", rectX);
+				rect.setAttribute("y", rectY);
+				rect.setAttribute("width", rect_width);
+				rect.setAttribute("height", rect_height);
+				rect.style.stroke = "red";
+				rect.style.fill = "#ffff00";
+				rect.setAttribute("fill-opacity","0.2");
+				rect.setAttribute("class","labeltext");
+				//rect.textContent = textContentStr;
+				parent[0].appendChild(rect);
+			}
+
+
+			function CreateLineObject(line, parent, lineX1, lineY1, gTargetX, widthMargin, gTargetY, heightMargin)
+			{
+				line.setAttribute("x1", lineX1);
+				line.setAttribute("y1", lineY1);
+				line.setAttribute("x2", gTargetX + widthMargin);
+				line.setAttribute("y2", gTargetY + heightMargin);
+				line.setAttribute("stroke", "#f00");
+				line.setAttribute("class","labelline");
+				
+				parent[0].appendChild(line);
+			}
+
+			
+			function SetX_LinePart(targetArea, gTargetX, svgParent_width, rectX, rect_width, targetArea)
+			{
+				var lineX1;
+
+				if(targetArea == 0)
+				{
+				 //A							
+					lineX1 = rectX + rect_width / 2;
+
+				}							
+				else if(targetArea == 1)
+				{
+				 //B
+					lineX1 = svgParent_width-(margin + ( rect_width / 2));
+				}
+				else if(targetArea == 2)
+				{
+				 //C
+					lineX1 = margin + (rect_width / 2);
+				}
+				else if(targetArea == 3)
+				{
+				 //D
+					lineX1 = svgParent_width-(margin + rect_width / 2);
+				}
+				else if(targetArea == 4)
+				{
+				 //E
+					lineX1 = svgParent_width / 2;
+				}
+				else if(targetArea == 5)
+				{
+				 //F
+					lineX1 = rectX + rect_width;
+				}
+				else if(targetArea == 6)
+				{
+				 //G
+					lineX1 = svgParent_width - (margin + rect_width);
+				}
+				else if(targetArea == 7)
+				{
+				 //H
+					lineX1 = svgParent_width / 2;
+				}
+
+				return lineX1;
+			}
+
+
+			function SetY_LinePart(targetArea, gTargetY, svgParent_heigth, rectY, rect_width, rect_height)
+			{
+				var lineY1;
+
+				if(targetArea == 0)
+				{
+				 //A							
+					lineY1 = rectY + rect_height;
+
+				}							
+				else if(targetArea == 1)
+				{
+				 //B
+					lineY1 = margin + rect_height;
+				}
+				else if(targetArea == 2)
+				{
+				 //C
+					lineY1 = svgParent_heigth - (margin + rect_height);
+				}
+				else if(targetArea == 3)
+				{
+				 //D
+					lineY1 = svgParent_heigth - (margin + rect_height);
+				}
+				else if(targetArea == 4)
+				{
+				 //E
+					lineY1 = rectY + rect_height;
+				}
+				else if(targetArea == 5)
+				{
+				 //F
+					lineY1 = rectY + rect_height / 2;
+				}
+				else if(targetArea == 6)
+				{
+				 //G
+					lineY1 = rectY + rect_height / 2;
+				}
+				else if(targetArea == 7)
+				{
+				 //H
+					lineY1 = svgParent_heigth - (margin + rect_height);
+				}
+
+				return lineY1;
+			}
+
+
+			function ShowChildSvg(i, filepath, parent, svg_width, svg_height, arrySvgProperty)
+			{
+
+				$.ajax({
+					type: 'get',
+					url: filepath,
+					dataType: 'xml',
+					async: false,
+               		error:function() {
+					alert('ajax ERROR!');
+					}
+				})
+
+				.done(function(returnData)
+				{
+					var childSvg = $(returnData).find('svg');
+				   
+                    //親svgに子svgを追加
+					parent.append(childSvg);
+
+					//子svgのyを設定(画面の上部分に余白を設定)
+					childSvg[0].setAttribute("y", heightMargin);
+					childSvg[0].setAttribute("x", widthMargin);
+
+					//親svgのwidth, heigthを設定
+					SetingParamParentSvg(childSvg, parent, heightMargin, widthMargin);
+
+					var svgParent_width = parent[0].getAttribute("width");
+					var svgParent_heigth = parent[0].getAttribute("height");
+					var terget = childSvg[0].getElementById('HIGHLIGHT');
+
+					//最初にActivePointを全部非表示にする
+					hideAllActivePoint(childSvg, terget);						
+
+					//ActivePointは[A],[B],[C],[D]の内どこか調べる(すべて)
+					//[A] | [B]
+					//----------
+					//[C] | [D]
+					CheckActivePoin(parent, arrySvgProperty, svg_width, svg_height); 
+					
+					//テキストや線を書く位置を決める
+					CheckDuplicationActivatePoint();
+
+					//ActivePointが複数個ある場合の対応
+					for( var b in opener.arrySvgParam[i].arrySvgProperty )
+					{
+						//選択中の要素か判定する
+						var reg = new RegExp(opener.arrySvgParam[i].arrySvgProperty[b][4]);
+						
+						//circle
+						var tergetElmCircle = terget.getElementsByTagName("circle");
+						//path
+						var tergetElmPath = terget.getElementsByTagName("path");
+
+						//選択中だった場合、赤丸にする
+						SettingActivePointRedCircle(reg, tergetElmCircle);
+						SettingActivePointRedCircle(reg, tergetElmPath);
+
+						//子SVG
+						var gTargetX = Number(opener.arrySvgParam[i].arrySvgProperty[b][2]); 
+						var gTargetY = Number(opener.arrySvgParam[i].arrySvgProperty[b][3]); 
+						var textContentNum = opener.arrySvgParam[i].arrySvgProperty[b][4];
+						var textContentStr = opener.arrySvgParam[i].arrySvgProperty[b][5];
+
+//--------------------  テキスト・囲い枠・引き出し線の描画ここから--------------------------------------------------//
+
+						//テキストの数値部分を生成(x,yは後で変更する)
+						var markerNum = document.createElementNS("http://www.w3.org/2000/svg", "text");
+						CreateLabeltextNum(markerNum, parent, textContentNum);
+
+						//テキストの文字列部分の改行処理(;を区切りとして改行)
+						const textArray = opener.arrySvgParam[i].arrySvgProperty[b][5].split(";");
+
+						//文字列部分を生成(x,yは後で変更する)
+						var markerStr = document.createElementNS("http://www.w3.org/2000/svg", "text");
+						CreateLabeltextStr(markerStr, parent, textArray, textContentStr);
+						
+						//テキストのwidth, heightを取得する
+						var markerNumBox = markerNum.getBBox();
+						var markerStrBox = markerStr.getBBox();
+						var text_width = GetWideSizeCharacterPart(markerNumBox, markerStrBox); //markerNumとmarkerStrの大きい方をtext_widthに設定
+						var text_height = markerNumBox.height + markerStrBox.height;
+
+						//テキストのx,yを設定
+						var targetArea = SetXY_CharacterPart(b, svgParent_width, svgParent_heigth, markerNum, markerStr, textArray, markerNumBox, markerStrBox, text_height, text_width);
+
+						//囲い枠のwidth, heightを設定する
+						var rect_width = text_width + (padding * 2);
+						var rect_height = text_height + (padding * 2);
+						
+						//囲い枠のx,yを設定
+						var rectX = SetX_RectPart(b, svgParent_width, targetArea, rect_width);
+						var rectY = SetY_RectPart(b, svgParent_heigth, targetArea, rect_height);
+						
+						//囲い枠を生成
+						var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+						CreateRectObject(parent, rectX, rectY, rect_width, rect_height, rect);
+						
+						//引き出し線のx,yを設定
+						var lineX1 = SetX_LinePart(targetArea, gTargetX, svgParent_width, rectX, rect_width, targetArea);
+						var lineY1 = SetY_LinePart(targetArea, gTargetY, svgParent_heigth, rectY, rect_width, rect_height);
+
+						//引き出し線を生成
+						var line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+						CreateLineObject(line, parent, lineX1, lineY1, gTargetX, widthMargin, gTargetY, heightMargin);
+
+//--------------------  ここまで-------------------------------------------------------------------------------------//
+
+					} //for
+
+				});//.done(function(returnData) 
+
+			}
+
+
+			function uuid() 
+			{
+			  var uuid = "", i, random;
+			  for (i = 0; i < 32; i++) {
+			    random = Math.random() * 16 | 0;
+
+			    if (i == 8 || i == 12 || i == 16 || i == 20) {
+			      uuid += "-"
+			    }
+			    uuid += (i == 12 ? 4 : (i == 16 ? (random & 3 | 8) : random)).toString(16);
+			  }
+			  return uuid;
+			}
+
+
+			function leftLinebreak(array)
+			{
+			  let string = "";
+			  array.forEach(function(t, i){
+				value = i * 15;
+			    //string += `<tspan y="${i}em" x="0em">${t}</tspan>`;
+			    string += '<tspan y="${i}em" x="0em">${t}</tspan>';
+			  });
+			  return string;
+			}
+
+
+			window.onload = function()
+			{
+
+				if(opener.arrySvgParam.length < 1)
+				{
+					return;
+				}
+
+				//svgが複数個あった場合の対応
+				for( var i in opener.arrySvgParam )
+				{
+
+					initTargetPointArry();
+
+					//divタグ(id="svgArea")の下に、divタグ(id=svg[i])を作成
+					var devElm = document.createElement('div');
+					devElm.setAttribute('id', 'svg' + i);
+					devElm.setAttribute('style', 'display: inline-block; vertical-align: top;');
+					document.getElementById('svgArea').appendChild(devElm);
+
+					/* 親svgを作成 (width, heightは適当。後で値を変える)*/
+					//var ajaxUuid = uuid();
+					var ajaxUuid = "parentSvg" + i;
+
+					var parent = $( '<svg id="' + ajaxUuid + '" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="500" height="500" xml:space="preserve"></svg>' );
+
+					//divタグ(id=svg[i])に親svgを追加
+					document.getElementById('svg' + i).appendChild(parent[0]);
+
+					var filepath = opener.arrySvgParam[i].svgPath;
+					var svg_width = opener.arrySvgParam[i].arrySvgProperty[0][0]; 
+					var svg_height = opener.arrySvgParam[i].arrySvgProperty[0][1]; 
+					var arrySvgProperty = opener.arrySvgParam[i].arrySvgProperty;
+
+					//子svgを展開
+					ShowChildSvg(i, filepath, parent, svg_width, svg_height, arrySvgProperty, arrySvgProperty);
+					
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="svgArea"></div>
+
+	</body>
+</html>

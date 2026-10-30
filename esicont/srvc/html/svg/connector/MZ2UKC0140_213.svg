@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "../../../../../../../../../ns.adobe.com/Extensibility/1.0/default.htm">
+	<!ENTITY ns_ai "../../../../../../../../../ns.adobe.com/AdobeIllustrator/10.0/default.htm">
+	<!ENTITY ns_graphs "../../../../../../../../../ns.adobe.com/Graphs/1.0/default.htm">
+	<!ENTITY ns_vars "../../../../../../../../../ns.adobe.com/Variables/1.0/default.htm">
+	<!ENTITY ns_imrep "../../../../../../../../../ns.adobe.com/ImageReplacement/1.0/default.htm">
+	<!ENTITY ns_sfw "../../../../../../../../../ns.adobe.com/SaveForWeb/1.0/default.htm">
+	<!ENTITY ns_custom "../../../../../../../../../ns.adobe.com/GenericCustomNamespace/1.0/default.htm">
+	<!ENTITY ns_adobe_xpath "../../../../../../../../../ns.adobe.com/XPath/1.0/default.htm">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="167.919px"
+	 height="100.817px" viewBox="0 0 167.919 100.817" enable-background="new 0 0 167.919 100.817" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="SEN">
+			<rect x="82.42" y="60.433" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			<rect x="66.249" y="60.433" fill="#FFFFFF" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			<rect x="82.42" y="48.486" fill="#FF0000" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			<rect x="66.32" y="48.357" fill="#FFB3FF" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="73.335" y1="31.326" x2="73.335" y2="41.357"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="91.411" y1="31.326" x2="91.411" y2="41.357"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="91.411" y1="31.326" x2="73.335" y2="41.357"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="91.411" y1="31.326" x2="73.335" y2="31.326"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="73.335" y1="31.326" x2="91.411" y2="41.357"/>
+			
+				<circle fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" cx="82.373" cy="60.433" r="0.071"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="66.271" y1="48.357" x2="66.271" y2="72.509"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="82.373" y1="48.357" x2="82.373" y2="72.509"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="98.474" y1="60.433" x2="66.271" y2="60.433"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="98.474" y1="72.509" x2="66.271" y2="72.509"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="98.474" y1="48.357" x2="98.474" y2="72.509"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="98.474" y1="48.357" x2="66.271" y2="48.357"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M91.974,82.009
+				l-0.571,1.471c-0.566,0.943-1.93,0.715-3.029,0.814h-12c-1.1-0.1-2.463,0.129-3.029-0.814l-0.573-1.471"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M71.271,41.357
+				c-3.85,0-7,3.15-7,7l0.001,10.618h-2.998l-0.002,3h2.998h0.001v7.533c0,5.5,4.5,10,10,10h16.202c5.5,0,10-4.5,10-10v-7.533h3v-3
+				h-3V48.357c0-3.85-3.15-7-7-7H71.271z"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M96.474,48.357
+				c0-3.584-1.295-3.996-5.833-3.996l-16.907-0.004c-3.584,0-5.462,0.416-5.462,4"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M68.271,72.509
+				c0,3.584,1.541,4,5.125,4H90.89c3.584,0,5.584-0.416,5.584-4"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M103.474,66.433v1.076
+				c0,8.547-2.953,14.5-11.5,14.5H72.771c-8.547,0-11.5-5.953-11.5-14.5l0.001-1.076c-1.1,0-3-0.899-3-2v-8c0-1.1,1.9-2,3-2V43.357
+				c0-1.1,0.56-2.705,1.243-3.566l7.819-9.832c1.368-1.723,3.287-3.133,5.487-3.133h13.001c2.2,0,4.144,1.39,5.542,3.088
+				l7.838,9.899c0.699,0.849,1.271,2.444,1.271,3.544v11.076c1.1,0,3,0.9,3,2v8C106.474,65.533,104.573,66.433,103.474,66.433z"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="64.271" y1="61.976" x2="64.272" y2="58.976"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="100.474" y1="61.976" x2="100.474" y2="58.976"/>
+		</g>
+		<g id="TEXT">
+			<text transform="matrix(1 0 0 1 88.792 68.2119)" fill="#FFFFFF" font-family="'Arial'" font-size="5">B</text>
+			<text transform="matrix(1 0 0 1 71.9507 68.3018)" font-family="'Arial'" font-size="5">W</text>
+			<text transform="matrix(1 0 0 1 88.792 56.2656)" font-family="'Arial'" font-size="5">R</text>
+			<text transform="matrix(1 0 0 1 72.6914 56.1372)" font-family="'Arial'" font-size="5">P</text>
+			<text transform="matrix(1 0 0 1 70.8726 96.0342)" font-family="'Arial'" font-size="6">[BLACK]</text>
+			<text transform="matrix(1 0 0 1 2.8345 19.1997)" font-family="'Arial'" font-size="8">SPEED SENSOR ASSY (TURBOCHARGER)</text>
+			<text transform="matrix(1 0 0 1 2.8345 9.6997)" font-family="'Arial'" font-size="8">0140-213</text>
+			<text transform="matrix(1 0 0 1 108.252 56.6846)" font-family="'Arial'" font-size="6">A</text>
+			<text transform="matrix(1 0 0 1 52.8345 56.6846)" font-family="'Arial'" font-size="6">C</text>
+			<text transform="matrix(1 0 0 1 108.252 68.6846)" font-family="'Arial'" font-size="6">B</text>
+			<text transform="matrix(1 0 0 1 52.8345 68.6846)" font-family="'Arial'" font-size="6">D</text>
+		</g>
+	</g>
+</switch>
+</svg>

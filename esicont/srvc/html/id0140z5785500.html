@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>AIR FUEL RATIO (A/F) SENSOR HEATER CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5785500"></a><p class="servinfo-title"><span class="servinfo-head"></span>AIR FUEL RATIO (A/F) SENSOR HEATER CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5785500</p><br clear="all"><a name="id0140z578550001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  By activating the A/F sensor using the A/F sensor heater, stable detection of the oxygen concentration is possible even when the exhaust gas temperature is low.</div>
+<div class="list">•  When the exhaust gas temperature is high, enerzation to the A/F sensor heater is stopped to protect the A/F sensor from a rise in temperature.</div><br clear="all"><a name="id0140z578550002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003736.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003736</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z578550003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The PCM operates the A/F sensor heater when the following control conditions are met:</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Output duty value</p>
+</th>
+<th id="" align="center">
+<p class="thead">Control conditions</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>0 %</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">When any of the following conditions is met:</div>
+<div class="list">•  Ignition is switched off</div>
+<div class="list">•  Engine is stopped (excludes engine stop by i-stop control)</div>
+<div class="list">•  Engine is being started (cranking)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>0—100 %</span></div>
+<div class="tbody">(Duty ratio determined by measuring the element temperature from the A/F sensor heater element impedance)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When the following conditions are all met:</div>
+<div class="list">•  Engine is started and a certain period of time has elapsed (elapsed time after engine start is calculated based on exhaust gas temperature)</div>
+<div class="list">•  Battery voltage: <span>9—16 V</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

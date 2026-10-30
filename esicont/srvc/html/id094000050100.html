@@ -1,0 +1,4943 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC SYSTEM [BODY CONTROL MODULE (BCM)]</title>
+</head>
+<body><a name="id094000050100"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC SYSTEM [BODY CONTROL MODULE (BCM)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id094000050100</p><br clear="all"><a name="id09400005010001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The on-board diagnostic function consists of the following functions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  A malfunction detection function, which detects overall malfunctions in the BCM-related parts.</div>
+<div class="list">―  A memory function, which stores detected DTCs. </div>
+<div class="list">―  A display function, which indicates malfunction locations and status via DTC output.</div>
+<div class="list">―  A PID/data monitoring function, which reads out specific input/output signals and verifies the input/output condition.</div>
+</dd>
+</dl>
+<div class="list">•  Using the Mazda Modular Diagnostic System (M-MDS), DTCs can be read out and deleted, and the PID/data monitoring function can be activated.</div><br clear="all"><a name="id09400005010002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Malfunction detection function</p>
+<div class="list">•  Detects malfunctions in input/output signals.</div>
+<div class="list">•  If a malfunction occurs, the BCM records the malfunction as a DTC. A recorded DTC can be read by the Mazda Modular Diagnostic System (M-MDS).</div>
+<p clear="all">
+<p class="table-title">DTC table</p>
+<p>
+<div>×: Applicable</div>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Warning/indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe</p>
+</th>
+<th id="" align="center">
+<p class="thead">Drive cycle</p>
+</th>
+<th id="" align="center">
+<p class="thead">Self test type<sup>*1</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">Memory function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1048:7B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake fluid level sensor circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1079:13<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Bonnet latch switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B108F:16<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Door lock switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B109E:87</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with start stop unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B109F:49<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intruder sensor internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B109F:87<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with intruder sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10A0:64</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Wiper and washer switch error signal received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10A5:49<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Theft-deterrent siren internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10A5:87<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with theft-deterrent siren</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10A6:62</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Light switch position signal error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10A6:64</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Light switch error signal received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10AD:49<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto light sensor/rain sensor internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10AD:56<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto light sensitivity mismatch</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10AD:86<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto wiper control request signal error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B113E:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Trunk lid opener switch (exterior) circuit malfunction</div>
+<div class="list-title">5HB</div>
+<div class="list">•  Liftgate opener switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1172:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door lock-link switch (driver's side) unlock circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1172:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door lock-link switch (driver's side) unlock circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1174:11<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Door lock-link switch unlock circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1174:13<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Door lock-link switch unlock circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1175:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door latch switch (driver's side) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1176:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door latch switch (passenger's side) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1178:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Trunk lid latch switch circuit malfunction</div>
+<div class="list-title">5HB</div>
+<div class="list">•  Liftgate latch switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11DA:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door key cylinder switch (driver's side) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11DB:86</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from current sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11E9:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear door latch switch (LH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11EA:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear door latch switch (RH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1219:11<sup>*7</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Trunk lid opener switch (interior) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B126A:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door lock-link switch (driver's side) lock circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B126A:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door lock-link switch (driver's side) lock circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B12D3:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door lock-link switch (driver's side) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D06:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn light (LH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D06:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn light (LH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D07:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn light (RH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D07:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn light (RH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D35:86</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Hazard warning switch error signal received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D36:86</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn switch error signal received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0023:14<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake light circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1137:86</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Back-up light on request error signal received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:88</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module communication error (HS-CAN)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0101:00<sup>*9</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with TCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with ABS HU/CM or DSC HU/CM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0142:68</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with electrical supply unit (ESU)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with SAS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with start stop unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0231:68<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with auto light sensor/rain sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U023A:00<sup>*10</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with forward sensing camera (FSC)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0298:68<sup>*11</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with DC-DC converter</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0452:68</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel-cut error signal at time of collision received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0515:41</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from start stop unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U053B:68<sup>*10</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from forward sensing camera (FSC)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0599:86<sup>*11</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from DC-DC converter</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1007:68</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with current sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:54</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration data not received from instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:55</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration not implemented</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:56</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration data unmatched with instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:44</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BCM internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:49</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BCM internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BCM power supply voltage low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:17</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BCM power supply voltage high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :C: CMDTC self test, D: ODDTC self test</div>
+<div class="deflist">*2  :With bonnet latch switch</div>
+<div class="deflist">*3  :With door lock switch</div>
+<div class="deflist">*4  :With intruder sensor</div>
+<div class="deflist">*5  :With auto light/auto wiper system</div>
+<div class="deflist">*6  :With theft-deterrent system</div>
+<div class="deflist">*7  :With trunk lid opener switch (interior)</div>
+<div class="deflist">*8  :With smart city brake support (SCBS)</div>
+<div class="deflist">*9  :ATX</div>
+<div class="deflist">*10  :With forward sensing camera (FSC)</div>
+<div class="deflist">*11  :With i-stop, without i-ELOOP</div><br clear="all"><p><a name="id09400005010003"></a><p class="topic-title"><span class="topic-head"></span>DTC 7-digit code definition</p>
+<dl>
+<dd>
+<div class="list">•  When related systems or components have failed, the CM stores the DTC of the malfunctioning part in the CM memory, and allows for the retrieval of the store data using scanning tool when necessary. The DTCs are indicated using seven digits. Each digit indicates the following.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am6xun00000789.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am6xun00000789</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09400005010004"></a><p class="topic-title"><span class="topic-head"></span>Status byte for DTC</p>
+<dl>
+<dd>
+<div class="list">•  The two digits (two digits after hyphen (-)) after the 7-digit DTC.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00002008.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00002008</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  A code which indicates the pending code, current/past malfunction status, or warning illumination status.</div>
+<div class="list">•  Can be read by performing a CMDTC self-test using the Mazda Modular Diagnostic System (M-MDS).</div>
+<div class="list">•  For details on the status byte, refer to the explanation on the Mazda Modular Diagnostic System (M-MDS) when reading the DTC.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09400005010005"></a><p class="topic-title"><span class="topic-head"></span>Detection condition for the applicable DTC</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Detection condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1048:7B</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake fluid level sensor circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detected that the brake fluid level is less than MIN with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1079:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Bonnet latch switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects an open circuit in bonnet latch switch circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B108F:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Door lock switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  With the door lock switch off, the BCM detects a short to ground in the door lock switch circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B109E:87</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects a communication error with the start stop unit for <span>10 times continuously</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B109F:49</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intruder sensor internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects the intruder sensor internal malfunction for <span>1.5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B109F:87</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with intruder sensor</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM cannot receive the signal from the intruder sensor for <span>1.5 s or more </span>with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10A0:64</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Wiper and washer switch error signal received</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM receives error signals from the start stop unit for <span>5 s or more </span>with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10A5:49</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Theft-deterrent siren internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects the theft-deterrent siren internal malfunction for <span>1.5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10A5:87</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with theft-deterrent siren</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM cannot receive the signal from the theft-deterrent siren for <span>1.5 s or more </span>with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10A6:62</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Light switch position signal error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The BCM detected a light switch position signal error received from the start stop unit for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10A6:64</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Light switch error signal received</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM receives error signals from the start stop unit for <span>5 s or more </span>with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10AD:49</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto light sensor/rain sensor internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The BCM received auto light sensor/rain sensor error signals from the auto light sensor/rain sensor <span>ten times continuously</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10AD:56</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto light sensitivity mismatch</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The BCM received the following mismatches for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+<dl>
+<dd class="list">
+<div class="list">―  Auto light sensitivity setting required by BCM to set auto light sensor/rain sensor</div>
+<div class="list">―  Current value of auto light sensitivity setting which auto light sensor/rain sensor sends to BCM</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10AD:86</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto wiper control request signal error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM receives the error signals from the auto light sensor/rain sensor for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B113E:11</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Trunk lid opener switch (exterior) circuit malfunction</div>
+<div class="list-title">5HB</div>
+<div class="list">•  Liftgate opener switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  BCM detects a short to ground in the trunk lid opener switch (exterior) circuit.</div>
+<div class="list-title">5HB</div>
+<div class="list">•  BCM detects a short to ground in the liftgate opener switch circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1172:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door lock-link switch (driver's side) unlock circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects a short to ground in the front door lock-link switch (driver's side) unlock circuit with the front door lock-link switch (driver's side) locked.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1172:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door lock-link switch (driver's side) unlock circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects an open circuit in the front door lock-link switch (driver's side) unlock circuit with the front door lock-link switch (driver's side) unlocked.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1174:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Door lock-link switch unlock circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects a short to ground in the door lock-link switch unlock circuit with the front door lock-link switch (passenger's side)/rear door lock-link switch (LH)/(RH) not unlocked.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1174:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Door lock-link switch unlock circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects an open circuit in the door lock-link switch unlock circuit with the front door lock-link switch (passenger's side)/rear door lock-link switch (LH)/(RH) unlocked.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1175:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door latch switch (driver's side) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects a short to ground in the front door latch switch (driver's side) circuit with the front door (driver's side) closed (front door latch switch (driver's side) off).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1176:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door latch switch (passenger's side) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects a short to ground in the front door latch switch (passenger's side) circuit with the front door (passenger's side) closed (front door latch switch (passenger's side) off).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1178:11</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Trunk lid latch switch circuit malfunction</div>
+<div class="list-title">5HB</div>
+<div class="list">•  Liftgate latch switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  BCM detects short to ground in trunk lid latch switch circuit with the trunk closed (trunk lid latch switch off).</div>
+<div class="list-title">5HB</div>
+<div class="list">•  BCM detects short to ground in liftgate latch switch circuit with the liftgate closed (liftgate latch switch off).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11DA:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door key cylinder switch (driver's side) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects the front door key cylinder switch (driver's side) circuit voltage of <span>below 4 V</span> with the front door key cylinder switch (driver's side) off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11DB:86</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from current sensor</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM receives the error signals from the current sensor for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11E9:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear door latch switch (LH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects a short to ground in the rear door latch switch (LH) circuit with the rear door (LH) closed (rear door latch switch (LH) off).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11EA:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear door latch switch (RH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects a short to ground in the rear door latch switch (RH) circuit with the rear door (RH) closed (rear door latch switch (RH) off).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1219:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Trunk lid opener switch (interior) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects a short to ground in trunk lid opener switch (interior) circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B126A:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door lock-link switch (driver's side) lock circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects a short to ground in the front door lock-link switch (driver's side) lock circuit with the front door lock-link switch (driver's side) unlocked.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B126A:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door lock-link switch (driver's side) lock circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects an open circuit in the front door lock-link switch (driver's side) lock circuit with the front door lock-link switch (driver's side) locked.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B12D3:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door lock-link switch (driver's side) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Any of the following conditions is met with the ignition switched ON (engine off or on).</div>
+<dl>
+<dd class="list">
+<div class="list">―  The BCM detected a short to ground in the front door lock-link switch (driver's side) lock side circuit for <span>5 s or more</span> with the front door lock-link switch (driver's side) unlocked.</div>
+<div class="list">―  The BCM detected a short to ground in the front door lock-link switch (driver's side) unlock circuit for <span>5 s or more</span> with the front door lock-link switch (driver's side) locked.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D06:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn light (LH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects a short to ground in the turn light (LH) circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D06:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn light (LH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects an open circuit or short to power supply in the turn light (LH) circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D07:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn light (RH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects a short to ground in the turn light (RH) circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D07:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn light (RH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects an open circuit or short to power supply in the turn light (RH) circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D35:86</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Hazard warning switch error signal received</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM receives the error signals from the start stop unit for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D36:86</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn switch error signal received</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM receives the error signals from the start stop unit for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0023:14</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake light circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects any of the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Brake lights/high-mount brake light illuminated even though driver or system does not illuminate brake lights/high-mount brake lights.</div>
+<div class="list">―  Brake lights/high-mount brake light not illuminated even though driver depresses brake pedal.</div>
+<div class="list">―  Brake lights/high-mount brake light not illuminated even though system illuminates brake lights/high-mount brake light.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1137:86</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Back-up light on request error signal received</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM receives the error signals from the instrument cluster for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:88</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module communication error (HS-CAN)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects the CAN bus communication line (HS-CAN) malfunction <span>10 times</span> continuously with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM could not receive the CAN signal from the PCM for 5<span> s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0101:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with TCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM could not receive the CAN signal from the TCM for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with ABS HU/CM or DSC HU/CM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM could not receive the CAN signal from the ABS HU/CM or DSC HU/CM for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0142:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with electrical supply unit (ESU)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM could not receive the signals from the electrical supply unit (ESU) for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with SAS control module</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM could not receive the CAN signal from the SAS control module for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM could not receive the CAN signal from the instrument cluster for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM could not receive the CAN signal from the start stop unit for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0231:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with auto light sensor/rain sensor</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM could not receive the signals from the auto light sensor/rain sensor for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U023A:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with forward sensing camera (FSC)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM could not receive the CAN signal from the forward sensing camera (FSC) for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0298:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with DC-DC converter</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM could not receive the signals from the DC-DC converter for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0452:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel-cut error signal at time of collision received</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The BCM received a fuel-cut error signal at the time of a collision from the SAS control module for <span>3 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0515:41</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Check sum error occurred on communication with the BCM and the start stop unit <span>3 times continuously</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U053B:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from forward sensing camera (FSC)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM receives the error signals from the forward sensing camera (FSC) for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0599:86</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from DC-DC converter</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM receives the error signals from the DC-DC converter for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1007:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with current sensor</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM could not receive signals from the current sensor for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:54</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration data not received from instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM cannot receive the configuration data from the instrument cluster with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:55</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration not implemented</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The BCM does not perform the configuration with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:56</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration data unmatched with instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Configuration data of the BCM and instrument cluster are not matched with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:44</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BCM internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects the internal malfunction with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:49</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BCM internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects the internal malfunction with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BCM power supply voltage low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The BCM detected a BCM power supply circuit (terminals 1A and 1B) voltage of <span>less than 10 V</span> for <span>10 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:17</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BCM power supply voltage high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The BCM detected the BCM power supply circuit (terminals 1A or 1B) voltage of <span>16 V or more</span> for <span>10 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><a name="id09400005010006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Snapshot Data</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM stores the following two types of snapshot data (vehicle information) when a DTC is detected and displays them in the Mazda Modular Diagnostic System (M-MDS).</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle information detected by BCM</div>
+<div class="list">―  Vehicle information detected by instrument cluster and received by BCM via CAN communication</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<div class="list">•  The data for all DTCs currently detected is stored.</div>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Snapshot data item</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding data monitor items</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">AAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Accelerator Pedal Off/Under20%/Over20%/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CFG_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Config Complete/Not Configured/Config Error</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Under 0 degrees C/0 - Under 80 degrees C/Over 80 degrees C/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IC_VPWR</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster power supply voltage</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The BCM receives the power supply voltage value of the instrument cluster sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the BCM records the power supply voltage of the instrument cluster when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IG-ON_TIMER</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">hh:mm:ss<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Elapsed time since ignition was switched ON (engine off or on)</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The instrument cluster records the elapsed time since the ignition was switched ON (engine off or on).</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="list">•  The BCM constantly receives the elapsed time since the ignition was switched ON (engine off or on) sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the BCM records the elapsed time since the ignition was switched ON (engine off or on) when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">PWR_MODE_KEY</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Key Out/Key Recently Out (Position 0)/Accessory (Position 1)/Post Ignition (Position 2)/Ignition On (Position 2)/Running (Position 2)/Running - Starting</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Key Out: Ignition switched off</div>
+<div class="list">•  Key Recently Out (Position 0): Elapsed time <span>within 3 s</span> since ignition was switched off</div>
+<div class="list">•  Accessory (Position 1): Ignition is switched to ACC</div>
+<div class="list">•  Post Ignition (Position 2): Elapsed time <span>within 3 s</span> since ignition was switched ON (engine off or on)</div>
+<div class="list">•  Ignition On (Position 2): Ignition switched ON (engine off)</div>
+<div class="list">•  Running (Position 2): Ignition switched ON (engine on)</div>
+<div class="list">•  Running - Starting: Cranking condition</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The BCM constantly receives the ignition switch status sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the BCM records the ignition switch status when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RPM_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Engine Stop/Under1500rpm/Over1500rpm/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The BCM constantly receives the engine speed sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the BCM records the engine speed when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TACHOMTR<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SHIFT_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">P/N/D/R/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Selector lever position status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The BCM constantly receives the selector lever position sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the BCM records the selector lever position when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TOTAL_DIST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Miles</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total traveled distance from completion of vehicle until BCM detects DTC (Odometer value in instrument cluster)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The total traveled distance from which the BCM detects DTCs to the present can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the odometer value in the instrument cluster.</div>
+<div class="list">2.  Verify the snapshot data item TOTAL_DIST.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TOTAL_TIME</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">hh:mm:ss<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total elapsed time since vehicle completion until BCM detects a DTC</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  When the ROOM fuse is removed, and the ignition is switched off, the time is not included in the elapsed time.</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">The elapsed time from which the BCM detects DTCs to the present can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the instrument cluster PID item TOTAL_TIME.</div>
+<div class="list">2.  Verify the snapshot data item TOTAL_TIME.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TOTAL_TIME<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BCM power supply voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR_B</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VSPD_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Stop/0-10km/h/Over10km/h/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The BCM constantly receives the vehicle speed sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the BCM records the vehicle speed when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SPEEDOMTR<sup>*1</sup></div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :Instrument cluster PID (See <font class="extxref-label"><a href="id092200021843.html">ON-BOARD DIAGNOSTIC [INSTRUMENT CLUSTER]</a></font>.)</div>
+<div class="deflist">*2  :The seconds may be indicated after the decimal point.</div><br clear="all"><a name="id09400005010007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Data Monitor Function</p>
+<div class="list">•  With the PID/data monitor function, the input/output signal monitor items set in the BCM can be selected and read out in real-time.</div>
+<div class="list">•  The items which can be selected are as follows.</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The [Type] in the PID/data monitor table is indicated as follows.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Input: Value input to module</div>
+<div class="list">―  Conversion: Value converted into value input to module</div>
+<div class="list">―  Calculation: Value calculated for several input values in module</div>
+<div class="list">―  Output: Value output by module</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Type</p>
+</th>
+<th id="" align="center">
+<p class="thead">Content</p>
+</th>
+<th id="" align="center">
+<p class="thead">Operation status (reference)</p>
+</th>
+<th id="" align="center">
+<p class="thead">Terminal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">ABK_HD_CS_R</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">If an accessory part is installed, it cannot be used.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ABK_HN_CS_R</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">If an accessory part is installed, it cannot be used.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BG_HORN_RLY</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">If an accessory part is installed, it cannot be used.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BLWR_RLY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the blower relay operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Blower relay is off (ignition is switched off)</div>
+<div class="list">•  On: Blower relay is on (ignition is switched ON)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3E</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BRAKE_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the brake switch (No.1 signal) operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Brake switch (No. 1 signal) is off (brake pedal is not depressed)</div>
+<div class="list">•  On: Brake switch (No. 1 signal) is on (brake pedal is depressed)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Z</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BRK_F_L_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off(Normal)/On(Low)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the brake fluid level status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off (Normal): Brake fluid level is between MAX and MIN</div>
+<div class="list">•  On (Low): Brake fluid level is lower than MIN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3R</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">C_DL_SW_LK</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the door lock switch operation status (lock operation).</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: door lock switch is not in lock</div>
+<div class="list">•  On: door lock switch is in lock</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2K</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">C_DL_SW_UNL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the door lock switch operation status (unlock operation).</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: door lock switch is not in unlock</div>
+<div class="list">•  On: door lock switch is in unlock</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2K</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DOOR_ALL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Close/OPEN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays all the doors (front door, rear door) open/closed condition.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Close: All doors are closed</div>
+<div class="list">•  OPEN: Any door is open</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2H/2G/2F/2E</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DOOR_D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Close/OPEN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the front door (RH) open/closed condition.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Close: Front door (RH) is closed</div>
+<div class="list">•  OPEN: Front door (RH) is open</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2H</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DOOR_LR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Close/OPEN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the rear door (LH) open/closed condition.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Close: Rear door (LH) is closed</div>
+<div class="list">•  OPEN: Rear door (LH) is open</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2E</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DOOR_P</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Close/OPEN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the front door (LH) open/closed condition.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Close: Front door (LH) is closed</div>
+<div class="list">•  OPEN: Front door (LH) is open</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2G</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DOOR_RR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Close/OPEN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the rear door (RH) open/closed condition.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Close: Rear door (RH) is closed</div>
+<div class="list">•  OPEN: Rear door (RH) is open</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DR_LK_RY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the door lock relay operation request (lock signal) send status. The BCM sends a lock signal to the ESU via LIN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Lock signal is not sent (lock operation is not operated)</div>
+<div class="list">•  On: Lock signal is sent (lock operation is operated)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DR_UNLK_RY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the door unlock relay operation request (unlock signal) send status. The BCM sends an unlock signal to the ESU via LIN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Unlock signal is not sent (unlock operation is not operated)</div>
+<div class="list">•  On: Unlock signal is sent (unlock operation is performed)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">F_FOG_RELAY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the front fog light relay operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Front fog light relay is off (fog light switch is in OFF position)</div>
+<div class="list">•  On: Front fog light relay is on (light switch is in TNS or HEAD position and fog light switch is in F.FOG position)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3I</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">F_FOG_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the fog light switch operation status. The BCM receives a fog light switch input signal via CAN communication from the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Fog light switch OFF signal is received (fog light switch is in OFF position)</div>
+<div class="list">•  On: Fog light switch ON signal is received (fog light switch is in F.FOG position)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2C/2D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FUEL_SEN_HM</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Displayed on Mazda Modular Diagnostic System (M-MDS) but does not function.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FUEL_SEN_HS</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Displayed on Mazda Modular Diagnostic System (M-MDS) but does not function.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FUEL_SEN_HV</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Displayed on Mazda Modular Diagnostic System (M-MDS) but does not function.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FUEL_SEN_M</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Input</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the fuel gauge sender unit input voltage. If the fuel tank level is low, the BCM input voltage increases because the fuel gauge sender unit resistance increases.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the fuel gauge sender unit voltage.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Q</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FUEL_SEN_S</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Displayed on Mazda Modular Diagnostic System (M-MDS) but does not function.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FUEL_SEN_V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Input</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the fuel gauge sender unit supply voltage.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off): Approx. 4.15 V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1A/1B</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_CLN_RY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the headlight cleaner relay operation status.</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  For the specific operation condition of the PID [H/L_CLN_RY], refer to the [HEADLIGHT CLEANER SYSTEM] for new vehicle instruction.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Headlight cleaner relay is off (headlight cleaner system is not operating)</div>
+<div class="list">•  On: Headlight cleaner relay is on (headlight cleaner system is operating)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3J</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_CS_RLS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the headlight LO on request signal reception status. The BCM receives a headlight LO on request signal via LIN communication from the auto-light sensor/rain sensor.</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  When the auto-light sensor/rain sensor detects the average 400 lux or less per 1 min for upward illumination, it sends a headlight LO on request signal to the BCM.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Headlight LO on request signal is not received</div>
+<div class="list">•  On: Headlight LO on request signal is received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_DRL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the running light on request signal send status. The BCM sends a running light on request signal to the ESU via LIN communication.</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  For the specific operation condition of the PID [H/L_DRL], refer to the [RUNNING LIGHT SYSTEM] for new vehicle instruction.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Running light on request signal is not sent</div>
+<div class="list">•  On: Running light on request signal is sent</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_HI</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the headlight HI on request signal send status. The BCM sends a headlight HI on request signal to the ESU via LIN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Headlight HI on request signal is not sent (headlight high beam turns off): 0 %</div>
+<div class="list">•  Headlight HI on request signal is sent (headlight high beam turns on): 100 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_LOW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the headlight LO on request signal send status. The BCM sends a headlight LO on request signal to the ESU via LIN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Headlight LO on request signal is not sent (headlight low beam turns off): 0 %</div>
+<div class="list">•  Headlight LO on request signal is sent (headlight low beam turns on): 100 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_PASS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the headlight LO and HI on request signal send status. The BCM sends a headlight LO and HI on request signal to the ESU via LIN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Headlight LO and HI on request signal is not sent (no passing)</div>
+<div class="list">•  On: Headlight LO and HI on request signal is sent (passing)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_SW_HI</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the light switch (HI position) operation status. The BCM receives a light switch (HI position) input signal via CAN communication from the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Light switch (HI position) OFF signal is received</div>
+<div class="list">•  On: Light switch (HI position) ON signal is received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2C/2D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_SW_LOW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the light switch (LO position) operation status. The BCM receives a light switch (LO position) input signal via CAN communication from the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Light switch (LO position) off signal is received</div>
+<div class="list">•  On: Light switch (LO position) on signal is received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2C/2D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_SW_OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the light switch (OFF position) operation status. The BCM receives a light switch (OFF position) input signal via CAN communication from the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Light switch (OFF position) off signal is received</div>
+<div class="list">•  On: Light switch (OFF position) on signal is received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2C/2D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_SW_PASS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the light switch (passing position) operation status. The BCM receives a light switch (passing position) input signal via CAN communication from the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Light switch (passing position) off signal is received</div>
+<div class="list">•  On: Light switch (passing position) on signal is received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2C/2D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_SW_TNS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the light switch (TNS position) operation status. The BCM receives a light switch (TNS position) input signal via CAN communication from the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Light switch (TNS position) off signal is received</div>
+<div class="list">•  On: Light switch (TNS position) on signal is received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2C/2D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_TNS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/Right-On/Left-On/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the TNS on request signal send status. The BCM sends a TNS on request signal to the ESU via LIN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: TNS on request signal is not sent (light switch is in position other than TNS)</div>
+<div class="list">•  Right-On: Parking light (RH) is forcibly operated using simulation item</div>
+<div class="list">•  Left-On: Parking light (LH) is forcibly operated using simulation item</div>
+<div class="list">•  On: TNS on request signal is sent (light switch is in TNS position)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_TNS_RLS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the TNS on request signal reception status. The BCM receives a TNS on request signal via LIN communication from the auto-light sensor/rain sensor.</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  When the auto-light sensor/rain sensor detects the average 700 lux or less per 1 min for upward illumination, it sends a TNS on request signal to the BCM.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: TNS on request signal is not received</div>
+<div class="list">•  On: TNS on request signal is received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_TYPE</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Halogen_2Lights/Halogen_4Lights/Lo-HID&amp;Hi-Hlogen_4Lights/LED_4Lights/Bi-Xenon</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the type of headlight equipped to the vehicle. The BCM sends information concerning the type of headlight to the ESU via LIN communication.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">HAZARD_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On/Unknown</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the hazard warning operation status. The BCM receives a hazard warning switch input signal via CAN communication from the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Hazard warning switch off signal is received (hazard warning switch is not pressed)</div>
+<div class="list">•  On: Hazard warning switch on signal is received (hazard warning switch is pressed)</div>
+<div class="list">•  Unknown: Signal which hazard warning switch position is not determined is received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2C/2D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">HOOD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Close/OPEN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the hood latch switch operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Close: Hood latch switch is on (hood is closed)</div>
+<div class="list">•  OPEN: Hood latch switch is off (hood is open)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3W</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">HORN_RLY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the horn relay operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Horn relay is off (horn switch is not pressed)</div>
+<div class="list">•  On: Horn relay is on (horn switch is pressed)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3H</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IG1_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IG-Off/IG-On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the IG1 power supply input status determined in the BCM.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  IG-Off: IG1 power is not input to BCM</div>
+<div class="list">•  IG-On: IG1 power is input to BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3O</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">KC_SW_D_LK</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the front door key cylinder switch operation status (lock operation).</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Front door key cylinder switch is not in lock (lock operation is not performed using front door key cylinder)</div>
+<div class="list">•  On: Front door key cylinder switch is in lock (lock operation is performed using front door key cylinder)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2L</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">KC_SW_D_UNL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the front door key cylinder switch operation status (unlock operation).</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Front door key cylinder switch is not in unlock (unlock operation is not performed using front door key cylinder)</div>
+<div class="list">•  On: Front door key cylinder switch is in unlock (unlock operation is performed using front door key cylinder)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2L</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LL_SW_D_LK</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the front door lock-link switch operation status (lock operation).</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Front door lock-link switch is not in lock (lock operation is not performed using driver's door lock knob)</div>
+<div class="list">•  On: Front door lock-link switch is in lock (lock operation is performed using driver's door lock knob)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LL_SW_D_UNL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the front door lock-link switch operation status (unlock operation).</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Front door lock-link switch is not in unlock (unlock operation is not performed using driver's door lock knob)</div>
+<div class="list">•  On: Front door lock-link switch is in unlock (unlock operation is performed using driver's door lock knob)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2B</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LL_SW_P/R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the door lock-link switch (passenger-side/rear-side) operation status (lock operation).</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Door lock-link switch (passenger-side/rear-side) is not in lock (lock operation is not performed using door lock knob (passenger-side/rear-side))</div>
+<div class="list">•  On: Door lock-link switch (passenger-side/rear-side) is in lock (lock operation is performed using door lock knob (passenger-side/rear-side))</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2M</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PNC_HD_CS_R</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">If an accessory part is installed, it cannot be used.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PNC_HN_CS_R</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">If an accessory part is installed, it cannot be used.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PTC_HEAT_ST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the PTC heater operation status (PTC heater output value controlled by BCM).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2AA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R_DEF_RLY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the rear window defogger relay operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Rear window defogger relay is off (rear window defogger switch is not pressed)</div>
+<div class="list">•  On: Rear window defogger relay is on (rear window defogger switch is pressed)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3K</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R_FOG_LAMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the rear fog light on request signal send status. The BCM sends a rear fog light on request signal to the ESU via LIN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Rear fog light on request signal is not sent (fog light switch is in OFF position)</div>
+<div class="list">•  On: Rear fog light on request signal is sent (fog light switch is in TNS or HEAD position and fog light switch is in R.FOG position)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R_FOG_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the fog light switch operation status. The BCM receives a fog light switch input signal via CAN communication from the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Fog light switch OFF signal is received (fog light switch is in OFF position)</div>
+<div class="list">•  On: Fog light switch ON signal is received (fog light switch is in R.FOG position)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2C/2D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">REVERSE_LMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the back-up light on request signal send status. The BCM sends a back-up light on request signal to the ESU via LIN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Back-up light on request signal is not sent (MTX: shift lever is not in reverse position, ATX: selector lever is not in R position)</div>
+<div class="list">•  On: Back-up light on request signal is sent (MTX: shift lever is in reverse position, ATX: selector lever is in R position)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RLS_AAT</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Displayed on Mazda Modular Diagnostic System (M-MDS) but does not function.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RLS_WS_TEMP</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Displayed on Mazda Modular Diagnostic System (M-MDS) but does not function.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ROOM_LAMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/100%_On/60%_On/50%_On/40%_On/30%_On/20%_On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the front map light on request signal send status. The BCM sends a front map light on request signal to the ESU via LIN communication.</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  For the specific operation condition of the PID [ROOM_LAMP], refer to the [INTERIOR LIGHT CONTROL SYSTEM] for new vehicle instruction.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Front map light on request signal is not sent</div>
+<div class="list">•  100%_On: Front map light on request signal (100%) is sent</div>
+<div class="list">•  60%_On: Front map light on request signal (60%) is sent</div>
+<div class="list">•  50%_On:—</div>
+<div class="list">•  40%_On:—</div>
+<div class="list">•  30%_On:—</div>
+<div class="list">•  20%_On:—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SEAT_B_2C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Unbuckled/Buckled</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the rear center buckle switch operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Unbuckled: Rear center buckle switch is off (rear seat belt (center) is not fastened)</div>
+<div class="list">•  Buckled: Rear center buckle switch is on (rear seat belt (center) is fastened)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2O</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SEAT_B_2L</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Unbuckled/Buckled</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the rear buckle switch (LH) operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Unbuckled: Rear buckle switch (LH) is off (rear seat belt (LH) is not fastened)</div>
+<div class="list">•  Buckled: Rear buckle switch (LH) is on (rear seat belt (LH) is fastened)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2N</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SEAT_B_2R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Unbuckled/Buckled</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the rear buckle switch (RH) operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Unbuckled: Rear buckle switch (RH) is off (rear seat belt (RH) is not fastened)</div>
+<div class="list">•  Buckled: Rear buckle switch (RH) is on (rear seat belt (RH) is fastened)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2P</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SEAT_B_3C</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Displayed on Mazda Modular Diagnostic System (M-MDS) but does not function.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SEAT_B_3L</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Displayed on Mazda Modular Diagnostic System (M-MDS) but does not function.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SEAT_B_3R</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Displayed on Mazda Modular Diagnostic System (M-MDS) but does not function.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STOP_LAMP_DSC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Unknown/Off/On/Backup_On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the brake light signal reception status. The BCM receives a brake light signal via CAN communication from the DSC HU/CM.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Unknown: Brake light signal cannot be received</div>
+<div class="list">•  Off: Brake light signal (turn-off) is received (SCBS brake control is not operating)</div>
+<div class="list">•  On: Brake light signal (turn-on) is received (SCBS brake control is operating)</div>
+<div class="list">•  Backup_On: Brake light signal (turn-on) is received (malfunction is occurring in brake light switch)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3C/3D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STOP_LMP_CTL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the brake light relay operation status.</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  When the brake control (SCBS brake) is operating, the brake light relay turns on.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Brake light relay is off (brake pedal is not depressed)</div>
+<div class="list">•  On: Brake light relay is on (brake pedal is depressed)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STOP_LMP_IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the brake light operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Brake light turns off (brake pedal is not depressed)</div>
+<div class="list">•  On: Brake light turns on (brake pedal is depressed)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2AB</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TR_UNL_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Displays the trunk lid opener switch (exterior)  operation status.</div>
+<div class="list-title">5HB</div>
+<div class="list">•  Displays the liftgate opener switch operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Off: Trunk lid opener switch (exterior) is off (trunk lid opener switch (exterior) is not pressed)</div>
+<div class="list">•  On: Trunk lid opener switch (exterior) is on (trunk lid opener switch (exterior) is pressed)</div>
+<div class="list-title">5HB</div>
+<div class="list">•  Off: Liftgate opener switch is off (liftgate opener switch is not pressed)</div>
+<div class="list">•  On: Liftgate opener switch is on (liftgate opener switch is pressed)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2S</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TR_UNL_SW_IP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the trunk lid opener switch (interior) operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Trunk lid opener switch (interior) is off (trunk lid opener switch (interior) is not pressed)</div>
+<div class="list">•  On: Trunk lid opener switch (interior) is on (trunk lid opener switch (interior) is pressed)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3U</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TRUNK</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Close/OPEN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Displays the trunk lid latch switch operation status.</div>
+<div class="list-title">5HB</div>
+<div class="list">•  Displays the Liftgate latch switch operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Close: Trunk lid latch switch is off (trunk is closed)</div>
+<div class="list">•  OPEN: Trunk lid latch switch is on (trunk is open)</div>
+<div class="list-title">5HB</div>
+<div class="list">•  Close: Liftgate latch switch is off (liftgate is closed)</div>
+<div class="list">•  OPEN: Liftgate latch switch is on (liftgate is open)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2AC</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TRUNK_LAMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Displays the trunk compartment light on request signal send status. The BCM sends a trunk compartment light on request signal to the ESU via LIN communication.</div>
+<div class="list-title">5HB</div>
+<div class="list">•  Displays the cargo compartment light on request signal send status. The BCM sends a cargo compartment light on request signal to the ESU via LIN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Off: Trunk compartment light on request signal is not sent (trunk is closed)</div>
+<div class="list">•  On: Trunk compartment light on request signal is sent (trunk is open)</div>
+<div class="list-title">5HB</div>
+<div class="list">•  Off: Cargo compartment light on request signal is not sent (liftgate is closed)</div>
+<div class="list">•  On: Cargo compartment light on request signal is sent (liftgate is open)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TRUNK_MOTOR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Displays the trunk release signal send status. The BCM sends a trunk release signal to the ESU via LIN communication.</div>
+<div class="list-title">5HB</div>
+<div class="list">•  Displays the liftgate release signal send status. The BCM sends a liftgate release signal to the ESU via LIN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Off: Trunk release signal is not sent (trunk lid opener switch (interior) and trunk lid opener switch(exterior) is not pressed)</div>
+<div class="list">•  On: Trunk release signal is sent (trunk lid opener switch (interior) or trunk lid opener switch(exterior) is pressed)</div>
+<div class="list-title">5HB</div>
+<div class="list">•  Off: Liftgate release signal is not sent (liftgate opener switch is not pressed)</div>
+<div class="list">•  On: Liftgate release signal is sent (liftgate opener switch is pressed)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TURN_L_L</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the turn light (LH) operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turn light (LH) turns off (turn switch is in OFF position)</div>
+<div class="list">•  On: Turn light (LH) flashes (turn switch is in LH position)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1G/3B</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TURN_L_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the turn light (RH) operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turn light (RH) turns off (turn switch is in OFF position)</div>
+<div class="list">•  On: Turn light (RH) flashes (turn switch is in RH position)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1E/3A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TURN_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/Turn_R_On/Turn_L_On/Unknown</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the turn switch operation status. The BCM receives a turn switch input signal via CAN communication from the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turn switch off signal is received (turn switch is in OFF position)</div>
+<div class="list">•  Turn_R_On: Turn switch RH signal is received (turn switch is in RH position)</div>
+<div class="list">•  Turn_L_On: Turn switch LH signal is received (turn switch is in LH position)</div>
+<div class="list">•  Unknown: Signal which turn switch position is not determined is received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2C/2D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Input</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the BCM supply voltage.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Switch the ignition ON (engine off):Approx. 12 V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_B_H</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Input</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the BCM supply voltage.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Switch the ignition ON (engine off):Approx. 12 V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VSPD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the vehicle speed. The BCM sends a vehicle speed signal to the auto-light sensor/rain sensor via LIN communication.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WASHER_CTRL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/Front/Rear</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the washer operation request signal send status. The BCM sends a washer operation request signal to the ESU via LIN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Washer operation request signal is not sent (washer is not operating)</div>
+<div class="list">•  Front: Front washer operation request signal is sent (front washer switch is in ON position)</div>
+<div class="list">•  Rear: Rear washer operation request signal is sent (rear washer switch is in rear washer position)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WASHER_F_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the front washer switch operation status. The BCM receives a front washer switch input signal via CAN communication from the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Front washer switch off signal is received (front washer switch is in OFF position)</div>
+<div class="list">•  On: Front washer switch on signal is received (front washer switch is in ON position)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2C/2D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WASHER_FLD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off(Normal)/On(Low)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the washer fluid level status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off (Normal): Washer fluid level is normal</div>
+<div class="list">•  On (Low): Washer fluid level is low</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3Q</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WASHER_R_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the rear washer switch operation status. The BCM receives a rear washer switch input signal via CAN communication from the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Rear washer switch off signal is received (rear washer switch is in OFF position)</div>
+<div class="list">•  On: Rear washer switch on signal is received (rear washer switch is in rear washer position)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2C/2D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_CS_RLS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/Single_Wipe/SPEED_LOW/SPEED_HI/Failure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the auto wiper control request signal reception status. The BCM receives an auto wiper control request signal via LIN communication from the auto-light sensor/rain sensor.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Off signal is received</div>
+<div class="list">•  Single_Wipe: Intermittent operation signal is received</div>
+<div class="list">•  SPEED_LOW: Continuous low operation signal is received</div>
+<div class="list">•  SPEED_HI: High speed signal is received</div>
+<div class="list">•  Failure: Auto wiper control request signal cannot be received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_F_AS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">P_Posi/Not_P_Posi</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the autostop switch operation status (windshield wiper arm and blade position).</div>
+</td>
+<td id="" align="left">
+<div class="list">•  P_Posi: Windshield wipers are stopped in park position</div>
+<div class="list">•  Not_P_Posi: Windshield wipers are stopped in position other than park</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3M</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_F_INT_L</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the sensitivity adjustment volume operation status. The BCM receives a sensitivity adjustment volume input signal via CAN communication from the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The value changes according to the sensitivity adjustment volume operation.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2C/2D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_F_RY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the wiper INT relay operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Wiper INT relay is off (windshield wiper are not operating)</div>
+<div class="list">•  On: Wiper INT relay is on (windshield wipers are operating)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_F_RY_HI</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the wiper HI relay operation status.</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If the windshield wiper switch is in the INT/AUTO position, the wiper HI relay turns on depending on the amount of rainfall.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Wiper HI relay is off (windshield wiper switch is in position other than HI)</div>
+<div class="list">•  On: Wiper HI relay is on (windshield wiper switch is in HI position)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3G</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_F_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF/LOW/HI/INT / AUTO</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the windshield wiper switch operation status. The BCM receives a windshield wiper switch input signal via CAN communication from the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Windshield wiper switch off signal is received (windshield wiper switch is in OFF position)</div>
+<div class="list">•  LOW: Windshield wiper switch LOW signal is received (windshield wiper switch is in LO position)</div>
+<div class="list">•  HI: Windshield wiper switch HI signal is received (windshield wiper switch is in HI position)</div>
+<div class="list">•  INT/AUTO: Windshield wiper switch INT signal or AUTO signal is received (windshield wiper switch is in INT/AUTO position)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2C/2D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_R_CTRL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/INT/On/On_1Time/On_2Time/On_3Time/On_4Time</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the rear wiper operation request signal send status. The BCM sends a rear wiper operation request signal to the ESU via LIN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Rear wiper operation request signal is not sent (rear wiper switch is in OFF position)</div>
+<div class="list">•  INT: Rear wiper INT operation request signal is sent (rear wiper switch is in INT position)</div>
+<div class="list">•  On: Rear wiper operation request signal is sent (rear wiper switch is in ON position)</div>
+<div class="list">•  On_1Time:—</div>
+<div class="list">•  On_2Time: Rear wiper INT operation request signal is sent (during synchronized washer operation)</div>
+<div class="list">•  On_3Time:—</div>
+<div class="list">•  On_4Time:—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_R_INT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">s</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the rear wiper intermittent interval. The BCM sends a rear wiper intermittent interval to the ESU via LIN communication.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2Y</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_R_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF/LOW/INT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the rear wiper switch operation status. The BCM receives a rear wiper switch input signal via CAN communication from the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Rear wiper switch off signal is received (rear wiper switch is in OFF position)</div>
+<div class="list">•  LOW: Rear wiper switch LOW signal is received (rear wiper switch is in ON position)</div>
+<div class="list">•  INT: Rear wiper switch INT signal is received (rear wiper switch is in INT position)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2C/2D</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id09400005010008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Simulation function</p>
+<div class="list">•  The simulation function drives the output parts set in the BCM regardless of the BCM control condition.</div>
+<div class="list">•  The items which can be selected are as follows.</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Simulation items on parts which are not equipped to the vehicle do not operate.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Simulation item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Operation</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Output part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Operation condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">BG_HORN_RLY</div>
+</td>
+<td id="" align="left" colspan="4">
+<div class="tbody">If an accessory part is installed, it cannot be used.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BLWR_RLY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turns the blower relay off.</div>
+<div class="list">•  On: Turns the blower relay on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blower relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DR_LK_RY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a door lock relay operation request signal (lock signal) to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Does not lock the door.</div>
+<div class="list">•  On: Locks the door.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Door lock relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DR_UNLK_RY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a door unlock relay operation request signal (unlock signal) to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Does not unlock the door.</div>
+<div class="list">•  On: Unlocks the door.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Door unlock relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">F_FOG_RELAY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turns the front fog light off.</div>
+<div class="list">•  On: Turns the front fog light on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front fog light relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_CLN_RY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turns the headlight cleaner relay off.</div>
+<div class="list">•  On: Turns the headlight cleaner relay on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight cleaner relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_DRL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a running light on request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: The running lights are turned off.</div>
+<div class="list">•  On: The running lights are turned on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Running light</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_HI</div>
+</td>
+<td id="" align="center">
+<div class="tbody">0%/100%</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a headlight HI on request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  0%: The headlights HI are turned off.</div>
+<div class="list">•  100%: The headlights HI are turned on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight HI</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_LOW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">0%/100%</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a headlight LO on request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  0%: The headlights LO are turned off.</div>
+<div class="list">•  100%: The headlights LO are turned on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight LO</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_TNS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/Right-On/Left-On/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a TNS on request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Turns the parking lights off.</div>
+<div class="list">•  Right-On: Turns the parking light (RH) on.</div>
+<div class="list">•  Left-On: Turns the parking light (LH) on.</div>
+<div class="list">•  On: Turns the parking lights (RH/LH) on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Parking light</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">HORN_RLY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Stops the horn.</div>
+<div class="list">•  On: Sounds the horn.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Horn relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PTC_HEAT_ST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">0%/10%/20%/30%/40%/50%/60%/70%/80%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  0%: Stops PTC heater output.</div>
+<div class="list">•  10%: Controls PTC heater output level to 10%.</div>
+<div class="list">•  20%: Controls PTC heater output level to 20%.</div>
+<div class="list">•  30%: Controls PTC heater output level to 30%.</div>
+<div class="list">•  40%: Controls PTC heater output level to 40%.</div>
+<div class="list">•  50%: Controls PTC heater output level to 50%.</div>
+<div class="list">•  60%: Controls PTC heater output level to 60%.</div>
+<div class="list">•  70%: Controls PTC heater output level to 70%.</div>
+<div class="list">•  80%: Controls PTC heater output level to 80%.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PTC heater</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R_DEF_RLY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Stops the rear window defogger.</div>
+<div class="list">•  On: Operates the rear window defogger.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear window defogger relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R_FOG_LAMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turns the rear fog light off.</div>
+<div class="list">•  On: Turns the rear fog light on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear fog light relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">REVERSE_LMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a back-up light on request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Turns the back-up light off.</div>
+<div class="list">•  On: Turns the back-up light on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Back-up light</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ROOM_LAMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/100%_On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a front map light on request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Turns the front map light off.</div>
+<div class="list">•  100%_On: Turn the front map light on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front map light</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STOP_LMP_CTL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turns the brake light off.</div>
+<div class="list">•  On: Turns the brake light on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake light relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TRUNK_LAMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a cargo compartment light on request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Turns the cargo compartment light off.</div>
+<div class="list">•  On: Turns the cargo compartment light on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cargo compartment light</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TRUNK_MOTOR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a liftgate release signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Does not open the liftgate.</div>
+<div class="list">•  On: Opens the liftgate.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Liftgate release relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WASHER_CTRL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/Front_ON</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a front washer operation request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Stops the windshield washer motor.</div>
+<div class="list">•  Front_ON: Operates the windshield washer motor.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Windshield washer motor</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_R_CTRL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/INT/On/On_1Time/On_2Time/On_3Time/On_4Time</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a rear wiper operation request signal or rear wiper INT operation request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Stops the rear wiper.</div>
+<div class="list">•  INT: Operates the rear wiper intermittently.</div>
+<div class="list">•  On: Operates the rear wiper continuously.</div>
+<div class="list">•  On_1Time: —</div>
+<div class="list">•  On_2Time: Operates the rear wiper twice.</div>
+<div class="list">•  On_3Time: —</div>
+<div class="list">•  On_4Time: —</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear wiper motor</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

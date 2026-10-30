@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "../../../../../../../../../ns.adobe.com/Extensibility/1.0/default.htm">
+	<!ENTITY ns_ai "../../../../../../../../../ns.adobe.com/AdobeIllustrator/10.0/default.htm">
+	<!ENTITY ns_graphs "../../../../../../../../../ns.adobe.com/Graphs/1.0/default.htm">
+	<!ENTITY ns_vars "../../../../../../../../../ns.adobe.com/Variables/1.0/default.htm">
+	<!ENTITY ns_imrep "../../../../../../../../../ns.adobe.com/ImageReplacement/1.0/default.htm">
+	<!ENTITY ns_sfw "../../../../../../../../../ns.adobe.com/SaveForWeb/1.0/default.htm">
+	<!ENTITY ns_custom "../../../../../../../../../ns.adobe.com/GenericCustomNamespace/1.0/default.htm">
+	<!ENTITY ns_adobe_xpath "../../../../../../../../../ns.adobe.com/XPath/1.0/default.htm">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="121.673px"
+	 height="57.89px" viewBox="0 0 121.673 57.89" enable-background="new 0 0 121.673 57.89" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="SEN">
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M52.944,30.677"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="56.769" y1="26.651" x2="62.819" y2="26.651"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M52.722,30.677"/>
+			
+				<rect x="51.744" y="30.677" fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" width="16.1" height="12.075"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				51.75,30.677 50.027,30.677 50.027,32.752 51.71,32.752 			"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				51.75,40.677 50.027,40.677 50.027,42.752 51.71,42.752 			"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				51.75,35.394 50.027,35.394 50.027,38.035 51.71,38.035 			"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				68.027,30.677 69.749,30.677 69.749,32.752 68.066,32.752 			"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				68.027,40.677 69.749,40.677 69.749,42.752 68.066,42.752 			"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				68.027,35.394 69.749,35.394 69.749,38.035 68.066,38.035 			"/>
+			<polygon fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				56.769,26.651 62.819,30.677 62.819,26.651 56.769,30.677 			"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				52.678,30.677 52.678,28.702 54.605,28.702 54.605,30.677 			"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M66.831,30.677"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				66.875,30.677 66.875,28.702 64.947,28.702 64.947,30.677 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" x1="44.341" y1="33.987" x2="51.744" y2="33.987"/>
+		</g>
+		<g id="TEXT">
+			<text transform="matrix(1 0 0 1 2.8345 19.1997)" font-family="'Arial'" font-size="8">CONNECTIVITY MASTER UNIT</text>
+			<text transform="matrix(1 0 0 1 2.8345 9.6997)" font-family="'Arial'" font-size="8">0920-201E</text>
+			<text transform="matrix(1 0 0 1 56.1357 38.627)" font-family="'Arial'" font-size="6">5A</text>
+			<text transform="matrix(1 0 0 1 35.3613 36.0127)"><tspan x="0" y="0" font-family="'Arial'" font-size="6">5A</tspan><tspan x="7.339" y="0" font-family="'Arial'" font-size="6">&apos;</tspan></text>
+			<text transform="matrix(1 0 0 1 50.8027 53.1074)" font-family="'Arial'" font-size="6">[BLUE]</text>
+		</g>
+	</g>
+</switch>
+</svg>

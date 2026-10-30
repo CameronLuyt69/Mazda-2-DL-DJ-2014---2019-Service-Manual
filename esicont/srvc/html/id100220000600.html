@@ -1,0 +1,1162 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DETERMINING SHORT TO GROUND LOCATION (HS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</title>
+</head>
+<body><a name="id100220000600"></a><p class="servinfo-title"><span class="servinfo-head"></span>DETERMINING SHORT TO GROUND LOCATION (HS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id100220000600</p>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  Perform the following malfunction diagnosis only when it is diagnosed with a short to ground by CONTROLLER AREA NETWORK (CAN) MALFUNCTION DIAGNOSIS FLOW. (See <font class="extxref-label"><a href="id100220000100.html">CONTROLLER AREA NETWORK (CAN) MALFUNCTION DIAGNOSIS FLOW [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id10022000060001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00008217.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00008217</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id10022000060002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Determination Procedure</p>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  When disconnecting the connector, verify that there is no looseness, damage, deformation, corrosion, or poor connection of the connector terminals.</div>
+<div class="list">•  When inspecting the DLC-2, touch it with a paper clip or similar thin pin without directly inserting a tester into the terminals.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Inspection</p>
+</th>
+<th id="" align="center">
+<p class="thead">Action</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN BCM AND INSTRUMENT CLUSTER</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  DISCONNECT the Negative battery cable.<div>(See <font class="extxref-label"><a href="id011700800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION</a></font>)</div>
+</div>
+<div class="list">•  Disconnect the connector 2 and 3 which has BCM terminals 3C,3D and 2D,2C.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal F and body ground</div>
+<div class="list">―  Between DLC-2 terminal E and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 15.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN LINE IN BCM FOR SHORT TO GROUND</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between BCM terminal 3C and body ground</div>
+<div class="list">―  Between BCM terminal 3D and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the BCM because there is a short to ground in the BCM.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id094000003800.html">BODY CONTROL MODULE (BCM) REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN CONNECTORS C-28 AND C-29 AND BCM</div>
+<div class="list">•  Connect the connector 2 and 3 which has BCM terminals 3C,3D and 2D,2C.</div>
+<div class="list">•  Disconnect the connectors C-28 and C-29.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal F and body ground</div>
+<div class="list">―  Between DLC-2 terminal E and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the connectors C-28 and C-29 and BCM because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN AUTO LEVELING CONTROL MODULE AND CONNECTORS C-28 AND C-29</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between auto leveling control module terminal AB and body ground</div>
+<div class="list">―  Between auto leveling control module terminal AD and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 6.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN LINE IN AUTO LEVELING CONTROL MODULE FOR SHORT TO GROUND</div>
+<div class="list">•  Disconnect the auto leveling control module connector.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between auto leveling control module terminal AB (wiring harness side) and body ground</div>
+<div class="list">―  Between auto leveling control module terminal AD (wiring harness side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the auto leveling control module and connectors C-28 and C-29 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the auto leveling control module because there is a short to ground in the auto leveling control module.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091800805500.html">AUTO LEVELING CONTROL MODULE REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN CONNECTOR C-02 AND CONNECTORS C-28 AND C-29</div>
+<div class="list">•  Disconnect the connector C-02.</div>
+<div class="list">•  Connect the connectors C-28 and C-29.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal F and body ground</div>
+<div class="list">―  Between DLC-2 terminal E and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the connector C-02 and connectors C-28 and C-29 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN CONNECTOR C-01 AND CONNECTOR C-02</div>
+<div class="list">•  Disconnect the connector C-01.</div>
+<div class="list">•  Connect the connector C-02.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal F and body ground</div>
+<div class="list">―  Between DLC-2 terminal E and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 9.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN LINE IN TCM FOR SHORT TO GROUND</div>
+<div class="list">•  Disconnect the TCM connector.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between TCM terminal E (wiring harness side) and body ground</div>
+<div class="list">―  Between TCM terminal F (wiring harness side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the TCM and connector C-01,C-02 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the TCM because there is a short to ground in the TCM.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0517l1118000.html">CONTROL VALVE BODY REMOVAL/INSTALLATION [CW6A-EL]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0517l2118000.html">CONTROL VALVE BODY REMOVAL/INSTALLATION [EW6A-EL]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN CONNECTORS C-26 AND C-27 AND CONNECTOR C-01</div>
+<div class="list">•  Disconnect the connectors C-26 and C-27.</div>
+<div class="list">•  Connect the connector C-01.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal F and body ground</div>
+<div class="list">―  Between DLC-2 terminal E and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the connectors C-26 and C-27 and connector C-01 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">10</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN DSC HU/CM OR ABS HU/CM AND CONNECTORS C-26 AND C-27</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DSC HU/CM or ABS HU/CM terminal AF and body ground</div>
+<div class="list">―  Between DSC HU/CM or ABS HU/CM terminal AC and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Go to Step 12.(SKYACTIV-G 1.5)</div>
+<div class="list">•  Go to Step 14.(SKYACTIV-G 1.3)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN LINE IN DSC HU/CM OR ABS HU/CM FOR SHORT TO GROUND</div>
+<div class="list">•  Disconnect the DSC HU/CM or ABS HU/CM connector.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DSC HU/CM or ABS HU/CM terminal AF (wiring harness side) and body ground</div>
+<div class="list">―  Between DSC HU/CM or ABS HU/CM terminal AC (wiring harness side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the DSC HU/CM or ABS HU/CM and connectors C-26 and C-27 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the DSC HU/CM or ABS HU/CM because there is a short to ground in the DSC HU/CM or ABS HU/CM.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0415008010b5.html">DSC HU/CM REMOVAL/INSTALLATION [R.H.D.]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0413008014d2.html">ABS HU/CM REMOVAL/INSTALLATION [R.H.D.]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">12</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN DC-DC CONVERTER (i-ELOOP) AND CONNECTORS C-26 AND C-27</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DC-DC converter (i-ELOOP) terminal 1M and body ground</div>
+<div class="list">―  Between DC-DC converter (i-ELOOP) terminal 1N and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 14.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">13</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN LINE IN DC-DC CONVERTER (i-ELOOP) FOR SHORT TO GROUND</div>
+<div class="list">•  Disconnect the DC-DC converter (i-ELOOP) connector.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DC-DC converter (i-ELOOP) terminal 1M (wiring harness side) and body ground</div>
+<div class="list">―  Between DC-DC converter (i-ELOOP) terminal 1N (wiring harness side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the DC-DC converter (i-ELOOP) and connectors C-26 and C-27 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the DC-DC converter (i-ELOOP) because there is a short to ground in the DC-DC converter (i-ELOOP).</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id1317040090q9.html">DC-DC CONVERTER (i-ELOOP) REMOVAL/INSTALLATION [WITH i-ELOOP (SKYACTIV-G 1.3, SKYACTIV-G 1.5)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">14</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN LINE IN PCM FOR SHORT TO GROUND</div>
+<div class="list">•  Disconnect the PCM connector.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between PCM terminal 2AK (wiring harness side) and body ground</div>
+<div class="list">―  Between PCM terminal 2AL (wiring harness side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the PCM and connectors C-26 and C-27 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the PCM because there is a short to ground in the PCM.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q1802400.html">PCM REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">15</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN CONNECTOR C-07 AND INSTRUMENT CLUSTER</div>
+<div class="list">•  Disconnect the connector C-07.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal F and body ground</div>
+<div class="list">―  Between DLC-2 terminal E and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the connector C-07 and BCM because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">16</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN CONNECTOR C-07 AND CONNECTOR C-11</div>
+<div class="list">•  Connect the connector C-07.</div>
+<div class="list">•  Disconnect the connector C-11.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between BCM terminal 2D and body ground</div>
+<div class="list">―  Between BCM terminal 2C and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the connector C-07 and connector C-11 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">17</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN CONNECTOR C-11 AND INSTRUMENT CLUSTER</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal F and body ground</div>
+<div class="list">―  Between DLC-2 terminal E and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 24.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">18</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN CONNECTORS C-51 AND C-52 AND CONNECTOR C-11</div>
+<div class="list">•  Connect the connector C-11.</div>
+<div class="list">•  Disconnect the connectors C-51 and C-52.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal F and body ground</div>
+<div class="list">―  Between DLC-2 terminal E and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the connectors C-51 and C-52 and connector C-11 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">19</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN LASER SENSOR AND CONNECTORS C-51 AND C-52</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between laser sensor terminal D and body ground</div>
+<div class="list">―  Between laser sensor terminal C and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 21.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">20</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN LINE IN LASER SENSOR FOR SHORT TO GROUND</div>
+<div class="list">•  Disconnect the laser sensor connector.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between laser sensor terminal D (wiring harness side) and body ground</div>
+<div class="list">―  Between laser sensor terminal C (wiring harness side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the laser sensor and connectors C-51 and C-52 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the laser sensor because there is a short to ground in the laser sensor.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id041500802600.html">LASER SENSOR REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">21</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN FORWARD SENSING CAMERA (FSC) AND CONNECTORS C-51 AND C-52</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between forward sensing camera (FSC) terminal E and body ground</div>
+<div class="list">―  Between forward sensing camera (FSC) terminal C and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the connector C-11 and connectors C-51 and C-52 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">22</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN CONNECTORS C-51 AND C-52 AND CONNECTOR C-23</div>
+<div class="list">•  Disconnect the connector C-23.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between forward sensing camera (FSC) terminal E and body ground</div>
+<div class="list">―  Between forward sensing camera (FSC) terminal C and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the connectors C-51 and C-52 and connector C-23 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">23</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN LINE IN FORWARD SENSING CAMERA (FSC) FOR SHORT TO GROUND</div>
+<div class="list">•  Disconnect the forward sensing camera (FSC) connector.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between forward sensing camera (FSC) terminal E (wiring harness side) and body ground</div>
+<div class="list">―  Between forward sensing camera (FSC) terminal C (wiring harness side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the forward sensing camera (FSC) and connector C-23 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the forward sensing camera (FSC) because there is a short to ground in the forward sensing camera (FSC).</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id092200028600.html">FORWARD SENSING CAMERA (FSC) REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">24</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN CONNECTOR C-36 AND INSTRUMENT CLUSTER</div>
+<div class="list">•  Disconnect the connector C-36.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal F and body ground</div>
+<div class="list">―  Between DLC-2 terminal E and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 31.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">25</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN SAS CONTROL MODULE AND CONNECTOR C-36</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between SAS control module terminal 3Q and body ground</div>
+<div class="list">―  Between SAS control module terminal 3S and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 27.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">26</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN LINE IN SAS CONTROL MODULE FOR SHORT TO GROUND</div>
+<div class="list">•  Disconnect the SAS control module connector.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between SAS control module terminal 3Q (wiring harness side) and body ground</div>
+<div class="list">―  Between SAS control module terminal 3S (wiring harness side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the SAS control module and connector C-36 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the SAS control module because there is a short to ground in the SAS control module.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0810b1801400.html">SAS CONTROL MODULE REMOVAL/INSTALLATION [TWO-STEP DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0810b2801400.html">SAS CONTROL MODULE REMOVAL/INSTALLATION [STANDARD DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">27</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN CONNECTIVITY MASTER UNIT (CMU) AND CONNECTOR C-36</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between connectivity master unit (CMU) terminal 2E and body ground</div>
+<div class="list">―  Between connectivity master unit (CMU) terminal 2F and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 29.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">28</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN LINE IN CONNECTIVITY MASTER UNIT(CMU) FOR SHORT TO GROUND</div>
+<div class="list">•  Disconnect the connectivity master unit (CMU) connector.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between connectivity master unit (CMU) terminal 2E (wiring harness side) and body ground</div>
+<div class="list">―  Between connectivity master unit (CMU) terminal 2F (wiring harness side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the connectivity master unit (CMU) and connector C-36 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the connectivity master unit (CMU) because there is a short to ground in the connectivity master unit (CMU).</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id092000031100.html">CONNECTIVITY MASTER UNIT (CMU) REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">29</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN EPS CONTROL MODULE AND CONNECTOR C-36</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between EPS control module terminal 1G and body ground</div>
+<div class="list">―  Between EPS control module terminal 1H and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the connector C-11 and connector C-36 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">30</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN LINE IN EPS CONTROL MODULE FOR SHORT TO GROUND</div>
+<div class="list">•  Disconnect the EPS control module connector.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between EPS control module terminal 1G (wiring harness side) and body ground</div>
+<div class="list">―  Between EPS control module terminal 1H (wiring harness side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the EPS control module and connector C-36 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the EPS control module because there is a short to ground in the EPS control module.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id061300801400.html">STEERING WHEEL AND COLUMN REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">31</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN CONNECTOR C-37 AND DLC-2</div>
+<div class="list">•  Disconnect the connector C-37.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal F and body ground</div>
+<div class="list">―  Between DLC-2 terminal E and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the connector C-37 and DLC-2 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">32</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN START STOP UNIT AND CONNECTOR C-37</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between start stop unit terminal 2M and body ground</div>
+<div class="list">―  Between start stop unit terminal 2O and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 34.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">33</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN LINE IN START STOP UNIT FOR SHORT TO GROUND</div>
+<div class="list">•  Disconnect the start stop unit connector.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between start stop unit terminal 2M (wiring harness side) and body ground</div>
+<div class="list">―  Between start stop unit terminal 2O (wiring harness side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the start stop unit and connector C-37 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the start stop unit because there is a short to ground in the start stop unit.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091400110300.html">START STOP UNIT REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">34</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND BETWEEN INSTRUMENT CLUSTER AND CONNECTOR C-37</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between instrument cluster terminal 1B and body ground</div>
+<div class="list">―  Between instrument cluster terminal 1D and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the connector C-36 and connector C-37 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">35</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN LINE IN INSTRUMENT CLUSTER FOR SHORT TO GROUND</div>
+<div class="list">•  Disconnect the instrument cluster connector.</div>
+<div class="list">•  Inspect for continuity at the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between instrument cluster terminal 1B (wiring harness side) and body ground</div>
+<div class="list">―  Between instrument cluster terminal 1D (wiring harness side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness between the instrument cluster and connector C-37 because the wiring harness is shorted to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the instrument cluster because there is a short to ground in the instrument cluster.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id092200010300.html">INSTRUMENT CLUSTER REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>RUN DRY PREVENTION (RDP) CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5018400"></a><p class="servinfo-title"><span class="servinfo-head"></span>RUN DRY PREVENTION (RDP) CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5018400</p><br clear="all"><a name="id0140z501840001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  To prevent air from flowing into the fuel line when fuel in the fuel tank decreases, the output is intentionally controlled to warn the driver to supply fuel.</div><br clear="all"><a name="id0140z501840002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003647.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003647</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z501840003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The PCM controls the engine output according to the fuel consumption amount after turning fuel gauge segments off (point E).</div>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center" colspan="4">
+<p class="thead">Behavior for remaining fuel level</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">Fuel consumption amount from fuel gauge point E<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>0.0―1.0 L {0.0―1.0 US qt, 0.00―0.87 Imp qt}</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>1.0—2.0 L {1.1―2.1 US qt, 0.9―1.7 Imp qt}</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>2.0—2.1 L {2.12―2.21 US qt, 1.76―1.84 Imp qt}</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>2.1 L {2.2 US qt, 1.8 Imp qt} or more</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Output restriction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">―</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Fuel injection amount control (Small<sup>*2</sup>)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Fuel injection amount control (Large<sup>*3</sup>)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Engine stall<sup>*4</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DTC recorded in PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">―</div>
+</td>
+<td id="" align="center">
+<div class="tbody">P115A:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">P0313:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">P115B:00</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :For fuel gauge point E, refer to the [FUEL GAUGE]. (See <font class="extxref-label"><a href="id092200032700.html">FUEL GAUGE</a></font>.)</div>
+<div class="deflist">*2  :When accelerating, the engine output is suppressed by controlling the fuel injection amount.</div>
+<div class="deflist">*3  :Vibration of the vehicle body occurs due to the intermittent fuel cut.</div>
+<div class="deflist">*4  :If the engine is restarted, driving is possible after <span>approx. 20 s</span> have elapsed.</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "../../../../../../../../../ns.adobe.com/Extensibility/1.0/default.htm">
+	<!ENTITY ns_ai "../../../../../../../../../ns.adobe.com/AdobeIllustrator/10.0/default.htm">
+	<!ENTITY ns_graphs "../../../../../../../../../ns.adobe.com/Graphs/1.0/default.htm">
+	<!ENTITY ns_vars "../../../../../../../../../ns.adobe.com/Variables/1.0/default.htm">
+	<!ENTITY ns_imrep "../../../../../../../../../ns.adobe.com/ImageReplacement/1.0/default.htm">
+	<!ENTITY ns_sfw "../../../../../../../../../ns.adobe.com/SaveForWeb/1.0/default.htm">
+	<!ENTITY ns_custom "../../../../../../../../../ns.adobe.com/GenericCustomNamespace/1.0/default.htm">
+	<!ENTITY ns_adobe_xpath "../../../../../../../../../ns.adobe.com/XPath/1.0/default.htm">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.571px"
+	 height="76.394px" viewBox="0 0 98.571 76.394" enable-background="new 0 0 98.571 76.394" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="SEN">
+			<rect x="41.619" y="36.795" fill="#33FF00" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M49.655,42.705"/>
+			
+				<rect x="41.571" y="36.668" fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" width="16.101" height="12.074"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M49.655,42.705"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="52.82" y1="32.642" x2="46.77" y2="32.642"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				52.82,36.668 52.82,32.642 46.77,36.668 			"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				46.77,36.668 46.77,32.642 52.82,36.668 			"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M55.655,28.305
+				c3.86,0,7,3.14,7,7v13c0,3.859-3.141,7-7,7h-12c-3.86,0-7-3.141-7-7v-13c0-3.86,3.14-7,7-7H55.655z"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M39.655,48.305
+				c0,2.209,1.791,4,4,4h12c2.208,0,4-1.791,4-4v-13c0-2.209-1.792-4-4-4h-12c-2.209,0-4,1.791-4,4V48.305z"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				59.655,44.912 61.524,44.912 61.524,47.009 59.655,47.009 			"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				39.655,38.459 37.786,38.459 37.786,36.362 39.655,36.362 			"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				39.655,48.783 37.786,48.783 37.786,46.686 39.655,46.686 			"/>
+		</g>
+		<g id="TEXT">
+			<text transform="matrix(1 0 0 1 2.8345 19.1997)" font-family="'Arial'" font-size="8">OIL PRESSURE SWITCH</text>
+			<text transform="matrix(1 0 0 1 2.8345 9.6997)" font-family="'Arial'" font-size="8">0140-123</text>
+			<text transform="matrix(1 0 0 1 48.0352 61.8311)" font-family="'Arial'" font-size="6">A</text>
+			<text transform="matrix(1 0 0 1 30.5347 71.6104)" font-family="'Arial'" font-size="6">[DARK GRAY]</text>
+			<text transform="matrix(1 0 0 1 47.79 44.5752)" font-family="'Arial'" font-size="5">G</text>
+		</g>
+	</g>
+</switch>
+</svg>

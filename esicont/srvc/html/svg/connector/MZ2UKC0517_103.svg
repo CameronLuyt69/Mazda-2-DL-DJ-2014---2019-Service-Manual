@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "../../../../../../../../../ns.adobe.com/Extensibility/1.0/default.htm">
+	<!ENTITY ns_ai "../../../../../../../../../ns.adobe.com/AdobeIllustrator/10.0/default.htm">
+	<!ENTITY ns_graphs "../../../../../../../../../ns.adobe.com/Graphs/1.0/default.htm">
+	<!ENTITY ns_vars "../../../../../../../../../ns.adobe.com/Variables/1.0/default.htm">
+	<!ENTITY ns_imrep "../../../../../../../../../ns.adobe.com/ImageReplacement/1.0/default.htm">
+	<!ENTITY ns_sfw "../../../../../../../../../ns.adobe.com/SaveForWeb/1.0/default.htm">
+	<!ENTITY ns_custom "../../../../../../../../../ns.adobe.com/GenericCustomNamespace/1.0/default.htm">
+	<!ENTITY ns_adobe_xpath "../../../../../../../../../ns.adobe.com/XPath/1.0/default.htm">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="131.47px"
+	 height="89.813px" viewBox="0 0 131.47 89.813" enable-background="new 0 0 131.47 89.813" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="SEN">
+			<rect x="32.822" y="55.233" stroke="#000000" stroke-width="0.1" width="16.053" height="11.948"/>
+			<rect x="32.822" y="43.158" stroke="#000000" stroke-width="0.1" width="16.053" height="11.946"/>
+			<rect x="48.923" y="43.158" fill="#FF0000" stroke="#000000" stroke-width="0.1" width="16.053" height="11.946"/>
+			<rect x="48.923" y="55.233" fill="#99FF7F" stroke="#000000" stroke-width="0.1" width="16.053" height="11.948"/>
+			<rect x="65.023" y="43.157" fill="#999999" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			<rect x="65.023" y="55.234" fill="#6D4C33" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			<rect x="81.125" y="43.159" fill="#7F1AFF" stroke="#000000" stroke-width="0.1" width="16.053" height="11.945"/>
+			<rect x="81.125" y="55.234" fill="#33FF00" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="97.178" y1="43.028" x2="32.774" y2="43.028"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="32.774" y1="55.104" x2="97.178" y2="55.104"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="97.178" y1="67.181" x2="97.178" y2="43.028"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="32.774" y1="43.028" x2="32.774" y2="67.181"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="32.774" y1="67.181" x2="97.178" y2="67.181"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="48.875" y1="43.028" x2="48.875" y2="67.181"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="81.076" y1="43.028" x2="81.076" y2="67.181"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="64.977" y1="43.028" x2="64.977" y2="67.181"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				40.825,43.028 40.825,36.028 89.127,36.028 89.127,43.028 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="89.127" y1="36.028" x2="40.825" y2="43.028"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="40.825" y1="36.028" x2="89.127" y2="43.028"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M33.774,73.181
+				c0,2.2,1.8,4,4,4h54.403c2.2,0,4-1.8,4-4"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="33.775" y1="73.181" x2="96.178" y2="73.181"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="96.178" y1="73.181" x2="101.178" y2="70.181"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M28.774,70.181V39.029
+				c0-0.55,0.318-1.318,0.707-1.707l4.587-4.587c0.389-0.389,1.157-0.707,1.707-0.707h58.401c0.55,0,1.319,0.318,1.708,0.707
+				l4.586,4.586c0.389,0.389,0.707,1.157,0.707,1.707v31.152"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M101.178,70.181v3
+				c0,2.2-1.8,4-4,4H32.774c-2.2,0-4-1.8-4-4v-3"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="33.775" y1="73.181" x2="28.774" y2="70.181"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="97.178" y1="52.104" x2="101.178" y2="52.104"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="97.178" y1="48.104" x2="101.178" y2="48.104"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="97.178" y1="62.104" x2="101.178" y2="62.104"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="97.178" y1="58.104" x2="101.178" y2="58.104"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="28.774" y1="52.104" x2="32.774" y2="52.104"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="28.774" y1="48.104" x2="32.774" y2="48.104"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="28.774" y1="62.104" x2="32.774" y2="62.104"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="28.774" y1="58.104" x2="32.774" y2="58.104"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="21.904" y1="48.89" x2="21.904" y2="61.093"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="21.903" y1="47.481" x2="21.903" y2="50.298"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="22.306" y1="47.541" x2="22.306" y2="50.24"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="22.708" y1="47.734" x2="22.708" y2="50.046"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="23.11" y1="48.165" x2="23.11" y2="49.616"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="21.5" y1="47.541" x2="21.5" y2="50.24"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="21.099" y1="47.734" x2="21.099" y2="50.046"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="20.696" y1="48.165" x2="20.696" y2="49.616"/>
+			
+				<circle fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" cx="21.903" cy="48.89" r="1.409"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="21.903" y1="59.684" x2="21.903" y2="62.502"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="22.306" y1="59.743" x2="22.306" y2="62.443"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="22.708" y1="59.937" x2="22.708" y2="62.249"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="23.11" y1="60.368" x2="23.11" y2="61.818"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="21.5" y1="59.743" x2="21.5" y2="62.443"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="21.099" y1="59.937" x2="21.099" y2="62.249"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="20.696" y1="60.368" x2="20.696" y2="61.818"/>
+			
+				<circle fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" cx="21.903" cy="61.093" r="1.409"/>
+		</g>
+		<g id="TEXT">
+			<text transform="matrix(1 0 0 1 38.9932 63.0127)" fill="#FFFFFF" font-family="'Arial'" font-size="5">B</text>
+			<text transform="matrix(1 0 0 1 38.9932 50.937)" fill="#FFFFFF" font-family="'Arial'" font-size="5">B</text>
+			<text transform="matrix(1 0 0 1 55.0947 50.938)" font-family="'Arial'" font-size="5">R</text>
+			<text transform="matrix(1 0 0 1 53.9028 63.0127)" font-family="'Arial'" font-size="5">LG</text>
+			<text transform="matrix(1 0 0 1 69.876 50.936)" font-family="'Arial'" font-size="5">GY</text>
+			<text transform="matrix(1 0 0 1 69.895 63.0146)" fill="#FFFFFF" font-family="'Arial'" font-size="5">BR</text>
+			<text transform="matrix(1 0 0 1 87.2959 50.938)" font-family="'Arial'" font-size="5">V</text>
+			<text transform="matrix(1 0 0 1 87.2959 63.0127)" font-family="'Arial'" font-size="5">G</text>
+			<text transform="matrix(1 0 0 1 2.8345 19.1997)" font-family="'Arial'" font-size="8">SELECTOR LEVER COMPONENT</text>
+			<text transform="matrix(1 0 0 1 2.8345 9.6997)" font-family="'Arial'" font-size="8">0517-103</text>
+			<text transform="matrix(1 0 0 1 87.3506 28.3291)" font-family="'Arial'" font-size="6">A</text>
+			<text transform="matrix(1 0 0 1 71.25 28.3291)" font-family="'Arial'" font-size="6">C</text>
+			<text transform="matrix(1 0 0 1 55.1494 28.3291)" font-family="'Arial'" font-size="6">E</text>
+			<text transform="matrix(1 0 0 1 39.0483 28.3291)" font-family="'Arial'" font-size="6">G</text>
+			<text transform="matrix(1 0 0 1 87.3506 85.0303)" font-family="'Arial'" font-size="6">B</text>
+			<text transform="matrix(1 0 0 1 71.25 85.0303)" font-family="'Arial'" font-size="6">D</text>
+			<text transform="matrix(1 0 0 1 55.1494 85.0303)" font-family="'Arial'" font-size="6">F</text>
+			<text transform="matrix(1 0 0 1 39.0483 85.0303)" font-family="'Arial'" font-size="6">H</text>
+			<text transform="matrix(1 0 0 1 19.5703 45.9282)" font-family="'Arial'" font-size="6">G</text>
+			<text transform="matrix(1 0 0 1 19.7373 68.9287)" font-family="'Arial'" font-size="6">H</text>
+		</g>
+	</g>
+</switch>
+</svg>

@@ -1,0 +1,470 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DETERMINING OPEN CIRCUIT LOCATION (MS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</title>
+</head>
+<body><a name="id100220000500"></a><p class="servinfo-title"><span class="servinfo-head"></span>DETERMINING OPEN CIRCUIT LOCATION (MS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id100220000500</p>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  Perform the following malfunction diagnosis only when it is diagnosed with a open circuit by CONTROLLER AREA NETWORK (CAN) MALFUNCTION DIAGNOSIS FLOW. (See <font class="extxref-label"><a href="id100220000100.html">CONTROLLER AREA NETWORK (CAN) MALFUNCTION DIAGNOSIS FLOW [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>)</div>
+<div class="list">•  If the malfunctioning part is detected in the communication line, before disconnecting the related connector for inspection, press the connector in the connection direction to verify that there is no looseness or disconnection.</div>
+<div class="list">•  When disconnecting the connector, verify that there is no damage, deformation, or corrosion of the connector terminals.</div>
+</div>
+</dd>
+</dl>
+<p class="list">1.  Verify DTCs of the modules related to the CAN system.</p>
+<p class="list"></p>
+<p class="list">2.  Apply the communication error DTC and the failed module to DTC output pattern and malfunctioning location, and select the possible cause for the diagnostic result and the reference for the inspection item. (See <font class="intxref-label"><a href="#id10022000050001">DTC Output Pattern And Malfunctioning Location</a></font>.)</p>
+<p class="list">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The open circuit location can be determined by the DTC indicated in the DTC output pattern and malfunctioning location chart. DTCs not listed in the chart are not used for the determination of the open circuit location. (See <font class="intxref-label"><a href="#id10022000050001">DTC Output Pattern And Malfunctioning Location</a></font>.)</div>
+</div>
+</dd>
+</dl>
+</p>
+<p class="list">3.  Inspect the possible cause and inspection item of the applicable malfunctioning part.</p>
+<p class="list"></p>
+<p class="list">4.  After repairs, return to CONTROLLER AREA NETWORK (CAN) MALFUNCTION DIAGNOSIS FLOW, and verify that the repairs have been completed.(See <font class="extxref-label"><a href="id100220000100.html">CONTROLLER AREA NETWORK (CAN) MALFUNCTION DIAGNOSIS FLOW [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>)</p>
+<p class="list"></p><br clear="all"><a name="id10022000050001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>DTC Output Pattern And Malfunctioning Location</p>
+<p clear="all">
+<p>
+<div>Cross (×): Communication error-related DTC and failed module</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="2">
+<p class="thead"><span>M-MDS display</span></p>
+</th>
+<th id="" align="center" colspan="4" rowspan="2">
+<p class="thead"><span>DTC output pattern and malfunctioning location</span></p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead"><span>DTC output module</span></p>
+</th>
+<th id="" align="center">
+<p class="thead"><span>DTC</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">IC</div>
+<div class="tbody">(Instrument cluster)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0232:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="4">
+<div class="tbody">BSM<sup>*1</sup></div>
+<div class="tbody">(Blind spot monitoring (BSM) control module (LH))</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EATC<sup>*2</sup></div>
+<div class="tbody">(Climate control unit)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody"><span>M-MDS display module</span></div>
+</td>
+<td id="" align="center" colspan="4">
+<div class="tbody"><span>[Fail] display pattern</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">IC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">BSM<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">EATC<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="6">
+<div class="tbody"><span>Diagnostic result</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Possible cause and inspection item</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10022000050002">A</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10022000050006">B</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10022000050009">C</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10022000050013">D</a></font>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :With blind spot monitoring (BSM) system</div>
+<div class="deflist">*2  :With full-auto air conditioner</div><br clear="all"><a name="id10022000050002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>A</p><br clear="all"><p><a name="id10022000050003"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Instrument cluster power supply voltage or body ground malfunction</div>
+<div class="list">•  Open circuit in wiring harness between instrument cluster and connector C-37</div>
+<div class="list">•  Connector C-37 malfunction</div>
+<div class="list">•  Instrument cluster malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10022000050004"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00008538.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00008538</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10022000050005"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  Instrument cluster power supply voltage-related wiring harness and fuse</div>
+<div class="list">•  Instrument cluster body ground related wiring harness</div>
+<div class="list">•  Instrument cluster connector</div>
+<div class="list">•  Connector C-37</div>
+<div class="list">•  Wiring harness between instrument cluster terminal 1C and connector C-37</div>
+<div class="list">•  Wiring harness between instrument cluster terminal 1E and connector C-37</div>
+<div class="list">•  Instrument cluster</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10022000050006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>B</p><br clear="all"><p><a name="id10022000050007"></a><p class="topic-title"><span class="topic-head"></span>With blind spot monitoring (BSM) system</p>
+<dl>
+<dd>
+<div class="list-title">Possible cause</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Open circuit in wiring harness between connector C-37 and connector C-07</div>
+<div class="list">•  Open circuit in wiring harness between connector C-07 and connectors C-48 and C-49</div>
+<div class="list">•  Connector C-37 malfunction</div>
+<div class="list">•  Connector C-07 malfunction</div>
+<div class="list">•  Connectors C-48 and C-49 malfunction</div>
+</dd>
+</dl>
+<p class="figure-title">System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00008539.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00008539</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="list-title">Inspection item</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Connector C-37</div>
+<div class="list">•  Connector C-07</div>
+<div class="list">•  Connectors C-48 and C-49</div>
+<div class="list">•  Wiring harness between connector C-37 and connector C-07</div>
+<div class="list">•  Wiring harness between connector C-07 and connectors C-48 and C-49</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10022000050008"></a><p class="topic-title"><span class="topic-head"></span>Without blind spot monitoring (BSM) system</p>
+<dl>
+<dd>
+<div class="list-title">Possible cause</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Climate control unit power supply voltage or body ground malfunction</div>
+<div class="list">•  Open circuit in wiring harness between connector C-37 and connector C-07</div>
+<div class="list">•  Open circuit in wiring harness between connector C-07 and connector C-08</div>
+<div class="list">•  Open circuit in wiring harness between climate control unit and connector C-08</div>
+<div class="list">•  Connector C-37 malfunction</div>
+<div class="list">•  Connector C-07 malfunction</div>
+<div class="list">•  Connector C-08 malfunction</div>
+<div class="list">•  Climate control unit malfunction</div>
+</dd>
+</dl>
+<p class="figure-title">System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00008540.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00008540</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="list-title">Inspection item</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Climate control unit power supply voltage-related wiring harness and fuse</div>
+<div class="list">•  Climate control unit body ground related wiring harness</div>
+<div class="list">•  Climate control unit connector</div>
+<div class="list">•  Connector C-37</div>
+<div class="list">•  Connector C-07</div>
+<div class="list">•  Connector C-08</div>
+<div class="list">•  Wiring harness between connector C-37 and connector C-07</div>
+<div class="list">•  Wiring harness between connector C-07 and connector C-08</div>
+<div class="list">•  Wiring harness between climate control unit terminal D and connector C-08</div>
+<div class="list">•  Wiring harness between climate control unit terminal B and connector C-08</div>
+<div class="list">•  Climate control unit</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10022000050009"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>C</p><br clear="all"><p><a name="id10022000050010"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) power supply voltage or body ground malfunction</div>
+<div class="list">•  Open circuit in wiring harness between blind spot monitoring (BSM) control module (LH) and connectors C-48 and C-49</div>
+<div class="list">•  Connectors C-48 and C-49 malfunction</div>
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10022000050011"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00008541.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00008541</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10022000050012"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) power supply voltage-related wiring harness and fuse</div>
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) body ground related wiring harness</div>
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) connector</div>
+<div class="list">•  Connectors C-48 and C-49</div>
+<div class="list">•  Wiring harness between blind spot monitoring (BSM) control module (LH) terminal D and connector C-48</div>
+<div class="list">•  Wiring harness between blind spot monitoring (BSM) control module (LH) terminal E and connector C-49</div>
+<div class="list">•  Blind spot monitoring (BSM) control module (LH)</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10022000050013"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>D</p><br clear="all"><p><a name="id10022000050014"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Climate control unit power supply voltage or body ground malfunction</div>
+<div class="list">•  Open circuit in wiring harness between connectors C-48 and C-49 and connector C-08</div>
+<div class="list">•  Open circuit in wiring harness between connector C-08 and climate control unit</div>
+<div class="list">•  Connectors C-48 and C-49 malfunction</div>
+<div class="list">•  Connector C-08 malfunction</div>
+<div class="list">•  Climate control unit malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10022000050015"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00008542.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00008542</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10022000050016"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  Climate control unit power supply voltage-related wiring harness and fuse</div>
+<div class="list">•  Climate control unit body ground related wiring harness</div>
+<div class="list">•  Climate control unit connector</div>
+<div class="list">•  Connector C-08</div>
+<div class="list">•  Connectors C-48 and C-49</div>
+<div class="list">•  Wiring harness between connectors C-48 and C-49 and connector C-08</div>
+<div class="list">•  Wiring harness between climate control unit terminal D and connector C-08</div>
+<div class="list">•  Wiring harness between climate control unit terminal B and connector C-08</div>
+<div class="list">•  Climate control unit</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

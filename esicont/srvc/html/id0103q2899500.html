@@ -1,0 +1,318 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>NO.28 A/C DOES NOT WORK SUFFICIENTLY [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0103q2899500"></a><p class="servinfo-title"><span class="servinfo-head"></span>NO.28 A/C DOES NOT WORK SUFFICIENTLY [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0103q2899500</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">28</p>
+</th>
+<th id="" align="left">
+<p class="thead">A/C DOES NOT WORK SUFFICIENTLY</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>DESCRIPTION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  A/C compressor magnetic clutch does not engage when A/C switch is turned on.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM DTC is stored.</div>
+<div class="list">•  Instrument cluster malfunction (Does not receive A/C request signal from climate control unit or transmit it to PCM)</div>
+<div class="list">•  Refrigerant pressure sensor malfunction</div>
+<div class="list">•  Improper refrigerant charging amount</div>
+<div class="list">•  Seized A/C compressor</div>
+<div class="list">•  Climate control unit malfunction (A/C switch malfunction or climate control unit does not determine A/C request or transmit A/C request signal)</div>
+<div class="list">•  Open circuit in wiring harness between magnetic clutch terminal A and body ground</div>
+<div class="list">•  A/C relay malfunction</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2"><img src="images/am2zzw00012638.png"></td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0103q289950001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Diagnostic Procedure</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY DTC</div>
+<div class="list">•  Retrieve the PCM, instrument cluster and climate control unit DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0902e8960300.html">DTC INSPECTION [INSTRUMENT CLUSTER]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0702c1801500.html">DTC DISPLAY [FULL-AUTO AIR CONDITIONER]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0902e8960500.html">DTC TABLE [INSTRUMENT CLUSTER]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0702c1801700.html">DTC TABLE [FULL-AUTO AIR CONDITIONER]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE IF MALFUNCTION CAUSE IS A/C RELAY CONTROL SIGNAL OR A/C REQUEST SIGNAL</div>
+<div class="list">•  Access the PCM simulation item ACCS using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Start the engine and idle it.</div>
+<div class="list">•  Turn the ACCS PID to ON from OFF using the M-MDS simulation function.</div>
+<div class="list">•  Is the magnetic clutch engaged?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 6.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE IF MALFUNCTION CAUSE IS REFRIGERANT PRESSURE SENSOR OR OTHER</div>
+<div class="list">•  Access the PCM PID AC_REQ using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Start the engine and idle it.</div>
+<div class="list">•  Monitor the AC_REQ PID while turning on and off the air conditioner with switch on the control panel.</div>
+<div class="list">•  Is the AC_REQ PID value normal?<div>(See <font class="extxref-label"><a href="id0140q2113900.html">PCM INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 5.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT REFRIGERANT PRESSURE SENSOR</div>
+<div class="list">•  Inspect the refrigerant pressure sensor.<div>(See <font class="extxref-label"><a href="id0740a2817400.html">REFRIGERANT PRESSURE SENSOR INSPECTION [MANUAL AIR CONDITIONER]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0740a1817400.html">REFRIGERANT PRESSURE SENSOR INSPECTION [FULL-AUTO AIR CONDITIONER]</a></font>.)</div>
+</div>
+<div class="list">•  Is the refrigerant pressure sensor normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect the following:</div>
+<div class="list">•  Refrigerant charging amount</div>
+<div class="list">•  A/C compressor seized</div>
+<dl>
+<dd class="list">
+<div class="list">―  If there is any malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Repair or replace the malfunctioning part according to the inspection results, then go to Step 8.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the refrigerant pressure sensor, then go to Step 8.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0740a2817300.html">REFRIGERANT PRESSURE SENSOR REMOVAL/INSTALLATION [MANUAL AIR CONDITIONER]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0740a1817300.html">REFRIGERANT PRESSURE SENSOR REMOVAL/INSTALLATION [FULL-AUTO AIR CONDITIONER]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE IF MALFUNCTION CAUSE IS A/C RELAY CONTROL SIGNAL OR MAGNETIC CLUTCH</div>
+<div class="list">•  Start the engine and idle it.</div>
+<div class="list">•  Access the PCM simulation item ACCS using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Turn the ACCS PID to ON from OFF using the M-MDS simulation function.</div>
+<div class="list">•  Measure the voltage at the magnetic clutch terminal A (wiring harness-side).</div>
+<div class="list">•  Is the voltage <span>10.5 V or more</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 7.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT IF MALFUNCTION CAUSE IS MAGNETIC CLUTCH OR MAGNETIC CLUTCH GROUND CIRCUIT</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Disconnect the magnetic clutch connector.</div>
+<div class="list">•  Inspect for continuity between magnetic clutch terminal A (part-side) and body ground.</div>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect the magnetic clutch.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0711000065l2.html">MAGNETIC CLUTCH INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="list">•  If there is any malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Replace the magnetic clutch, then go to Step 8.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect the A/C compressor. (poor contact to ground)</div>
+<div class="list">•  If there is any malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Repair or replace the malfunctioning part according to the inspection results, then go to Step 8.</div>
+</dd>
+</dl>
+<div class="list">•  If there is no malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Replace the A/C compressor, then go to Step 8. (internal circuit open)</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT A/C RELAY</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Remove the A/C relay.</div>
+<div class="list">•  Inspect the A/C relay.<div>(See <font class="extxref-label"><a href="id092100800300.html">RELAY INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is the A/C relay normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the A/C relay, then go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Verify the test results.</div>
+<div class="list">•  If normal, return to the diagnostic index to service any additional symptoms.<div>(See <font class="extxref-label"><a href="id0103q2052700.html">SYMPTOM DIAGNOSTIC INDEX [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  If a malfunction remains, inspect the related Service Information and perform the repair or diagnosis.</div>
+<dl>
+<dd class="list">
+<div class="list">―  If the vehicle is repaired, troubleshooting is completed.</div>
+<div class="list">―  If the vehicle is not repaired or additional diagnostic information is not available, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q2113800.html">PCM REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

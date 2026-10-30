@@ -1,0 +1,499 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P0101:00 [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0102q2700800"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P0101:00 [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q2700800</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC P0101:00</p>
+</th>
+<th id="" align="left">
+<p class="thead">MAF sensor circuit range/performance problem</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the following conditions are met, the intake air amount is out of the specification (fluctuates with engine speed) for a continuous <span>5.2 s</span>.</div>
+<dl>
+<div class="list-title">MONITORING CONDITIONS</div>
+<dd class="list">
+<div class="list">―  Battery voltage: <span>8—20 V</span></div>
+<div class="list">―  <span>60 s </span>have elapsed after enigine was started.</div>
+<div class="list">―  Engine speed: <span>1,000—3,500 rpm</span></div>
+<div class="list">―  Fuel injection amount: <span>0 mm<sup>3</sup>/st</span></div>
+<div class="list">―  Charge air temperature: <span>below 65 °C {149 °F}</span></div>
+<div class="list">―  Desired HP-EGR valve position: <span>below 1 %</span></div>
+<div class="list">―  Desired intake shutter valve position: <span>80 °</span></div>
+<div class="list">―  Intake manifold pressure: <span>below 200 kPa {2.03 kgf/cm<sup>2</sup>, 29.0 psi}</span></div>
+<div class="list">―  Duty value of the suction  control valve: <span>above 32 %</span></div>
+<div class="list">―  IAT sensor No.2: Normal</div>
+<div class="list">―  BARO sensor: Normal</div>
+<div class="list">―  The following DTCs are not detected:</div>
+<dl>
+<dd class="list">
+<div class="list">•  HP-EGR control valve position sensor: P0405:00, P0406:00</div>
+<div class="list">•  HP-EGR control valve DC motor control system: P0404:00, P0488:00</div>
+<div class="list">•  Intake shutter valve control: P2101:00ÅAP2118:00ÅAP1589:00</div>
+<div class="list">•  MAF sensor: P0102:00, P0103:00</div>
+<div class="list">•  IAT sensor No.2: P007C:00, P007D:00</div>
+<div class="list">•  MAP sensor: P0107:00, P0108:00</div>
+<div class="list">•  Intake sutter valve position sensor: P0122:00, P0123:00</div>
+<div class="list">•  BARO sensor: P2228:00, P2229:00</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list-title">Diagnostic support note</div>
+<div class="list">•  This is a continuous monitor (CCM).</div>
+<div class="list">•  The check engine light illuminates if the PCM detects the above malfunction condition during the first drive cycle.</div>
+<div class="list">•  FREEZE FRAME DATA/Snapshot data is available.</div>
+<div class="list">•  DTC is stored in the PCM memory.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM restricts engine torque.</div>
+<div class="list">•  Inhibits the EGR control.</div>
+<div class="list">•  Inhibits the auto DPF regeneration control.</div>
+<div class="list">•  Inhibits the compulsory DPF regeneration control.</div>
+<div class="list">•  Inhibits engine-stop by operating the i-stop function.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  MAF sensor/IAT sensor No.1 connector or terminals malfunction</div>
+<div class="list">•  MAF sensor/IAT sensor No.1 loose</div>
+<div class="list">•  PCM connector or terminals malfunction</div>
+<div class="list">•  Air suction or restriction in intake-air system</div>
+<div class="list">•  Exhaust gas leakage from exhaust system or clogging (high pressure EGR)</div>
+<div class="list">•  Exhaust gas leakage from exhaust system or clogging (low pressure EGR)</div>
+<div class="list">•  MAF sensor malfunction</div>
+<div class="list">•  Turbocharger malfunction (turbine wheel and/or compressor wheel damaged, stuck)</div>
+<div class="list">•  PCM malfunction</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>SYSTEM WIRING DIAGRAM</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic Procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">RECORD VEHICLE STATUS WHEN DTC WAS DETECTED TO UTILIZE WITH REPEATABILITY VERIFICATION</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Recording can be facilitated using the screen capture of the PC function.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Record the freeze frame data/snap shot data.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY RELATED REPAIR INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY RELATED PENDING CODE AND/OR DTC</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure and DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any other PENDING CODEs and/or DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable PENDING CODE or DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT MAF SENSOR/IAT SENSOR NO.1 CONNECTOR CONDITION</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Disconnect the MAF sensor/IAT sensor No.1 connector.</div>
+<div class="list">•  Inspect for poor connection (such as damaged/pulled-out pins, corrosion).</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector and/or terminals, then go to Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT INSTALLATION OF MAF SENSOR/IAT SENSOR NO.1</div>
+<div class="list">•  Inspect installation of MAF sensor/IAT sensor No.1.<div>(See <font class="extxref-label"><a href="id0140q2900300.html">MASS AIR FLOW (MAF) SENSOR/INTAKE AIR TEMPERATURE (IAT) SENSOR NO.1 REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the MAF sensor/IAT sensor No.1 installed securely?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Retighten the MAF sensor/IAT sensor No.1, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q2900300.html">MASS AIR FLOW (MAF) SENSOR/INTAKE AIR TEMPERATURE (IAT) SENSOR NO.1 REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT PCM CONNECTOR CONDITION</div>
+<div class="list">•  Disconnect the PCM connector.</div>
+<div class="list">•  Inspect for poor connection (such as damaged/pulled-out pins, corrosion).</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector and/or terminals, then go to Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT INTAKE AIR SYSTEM FOR EXCESSIVE AIR SUCTION</div>
+<div class="list">•  Visually inspect for loose, cracked or damaged hoses on intake air system.</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Engine speed may change when rust penetrating agent is sprayed on the air suction area.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR RESTRICTION IN INTAKE AIR SYSTEM</div>
+<div class="list">•  Verify if there is restriction into the intake air system (such as between MAF sensor and intake manifold).</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT EXHAUST SYSTEM (HIGH PRESSURE EGR) RELATED PIPE</div>
+<div class="list">•  Visually inspect the exhaust system (high pressure EGR) related pipe for restriction and damaged.<div>(See <font class="extxref-label"><a href="id0116q2803700.html">EMISSION SYSTEM LOCATION INDEX [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">10</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT EXHAUST SYSTEM (LOW PRESSURE EGR) RELATED PIPE</div>
+<div class="list">•  Visually inspect the exhaust system (low pressure EGR) related pipe for restriction and damaged.<div>(See <font class="extxref-label"><a href="id0116q2803700.html">EMISSION SYSTEM LOCATION INDEX [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT MAF SENSOR</div>
+<div class="list">•  Reconnect all disconnected connectors.</div>
+<div class="list">•  Inspect the MAF sensor.<div>(See <font class="extxref-label"><a href="id0140q2107200.html">MASS AIR FLOW (MAF) SENSOR INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the MAF sensor/IAT sensor No.1, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q2900300.html">MASS AIR FLOW (MAF) SENSOR/INTAKE AIR TEMPERATURE (IAT) SENSOR NO.1 REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">12</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT TURBOCHARGER</div>
+<div class="list">•  Inspect the turbocharger.<div>(See <font class="extxref-label"><a href="id0113q2707600.html">TURBOCHARGER WITH VARIABLE TURBINE GEOMETRY INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the turbocharger normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the turbocharger, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0113q2707500.html">TURBOCHARGER WITH VARIABLE TURBINE GEOMETRY REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">13</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY DTC TROUBLESHOOTING COMPLETED</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2865400.html">CLEARING DTC [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Start the engine.</div>
+<div class="list">•  Repeat deceleration 10 times using engine braking after accelerating the vehicle speed to <span>60 km/h {37 mph}</span>.</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the PENDING CODE for this DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q2113800.html">PCM REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">14</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY AFTER REPAIR PROCEDURE</div>
+<div class="list">•  Perform the “AFTER REPAIR PROCEDURE”.<div>(See <font class="extxref-label"><a href="id0102q2801100.html">AFTER REPAIR PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

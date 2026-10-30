@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ODOMETER/TRIPMETER</title>
+</head>
+<body><a name="id092200032900"></a><p class="servinfo-title"><span class="servinfo-head"></span>ODOMETER/TRIPMETER</p>
+<hr>
+<p class="servinfo-title-id" align="right">id092200032900</p><br clear="all"><a name="id09220003290001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The odometer/tripmeter notifies the driver of the total travel distance or the traveled distance over a specific interval.</div><br clear="all"><a name="id09220003290002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The instrument cluster calculates the traveled distance based on the traveled distance signal from the PCM and displays it.</div>
+<div class="list">•  The instrument cluster stores the calculated travel distance in its microcomputer.</div><br clear="all"><p><a name="id09220003290003"></a><p class="topic-title"><span class="topic-head"></span>Odometer calculation function</p>
+<dl>
+<dd>
+<div class="list">•  The instrument cluster calculates the total traveled distance based on the traveled distance signal from the PCM and the stored traveled distance, and displays it.</div>
+<div class="list">•  The total traveled distance which can be displayed is from 0 to 999999.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220003290004"></a><p class="topic-title"><span class="topic-head"></span>Tripmeter A/B calculation function</p>
+<dl>
+<dd>
+<div class="list">•  The instrument cluster calculates the traveled distance based on the traveled distance signal from the PCM and the traveled distance from when the tripmeter is reset, and displays it.</div>
+<div class="list">•  There are A and B tripmeters and the display for each can be switched with each press of the tripmeter switch.</div>
+<div class="list">•  If the tripmeter switch is continuously pressed for <span>approx. 1 s or more</span>, the tripmeter traveled distance is reset (0.0)</div>
+<div class="list">•  The traveled distance which can be displayed is from 0.0 to 99999.9. After 99999.9, it returns to 0.0.</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09220003290005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The odometer/tripmeter is displayed in the LCD of the instrument cluster.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002932.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002932</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The tripmeter switch is positioned in the instrument cluster.</div>
+<div class="list">•  The calculation for the odometer/tripmeter display and the traveled distance is performed by the instrument cluster microcomputer.</div><br clear="all"><a name="id09220003290006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">1.  When the ignition is switched ON (engine on), the instrument cluster receives (1) the traveled distance signal from the PCM.</div>
+<div class="list">2.  The instrument cluster adds up (2) the total traveled distance (odometer) data which is recorded based on the traveled distance signal, traveled distance over a specific interval (tripmeter), and the traveled distance.</div>
+<div class="list">3.  The instrument cluster displays (3) the calculated travel distance in the LCD.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002933.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002933</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><p><a name="id09220003290007"></a><p class="topic-title"><span class="topic-head"></span>Odometer/tripmeter switching operation</p>
+<dl>
+<dd>
+<div class="list">•  The instrument cluster switches the odometer/tripmeter display when a tripmeter switch on is detected.</div>
+<div class="list">•  The instrument cluster returns the traveled distance display to 0.0 when a tripmeter switch on is detected for <span>approx. 1 s or more</span> while tripmeter A or B is displayed.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002934.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002934</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09220003290008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  Not applicable</div>
+</body>
+</html>

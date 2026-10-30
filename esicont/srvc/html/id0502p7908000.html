@@ -1,0 +1,224 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC U0074:00 [TCM (EW6A-EL)]</title>
+</head>
+<body><a name="id0502p7908000"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC U0074:00 [TCM (EW6A-EL)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0502p7908000</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC U0074:00</p>
+</th>
+<th id="" align="left">
+<p class="thead">CAN system communication error (local CAN between TCM and PCM)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, a communication error (local CAN between TCM and PCM) occurs:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Set to TCC control.</div>
+<div class="list">•  Inhibits learning control.</div>
+<div class="list">•  Inhibits manual mode.</div>
+<div class="list">•  Inhibits neutral idle control.</div>
+<div class="list">•  Inhibits i-stop control.</div>
+<div class="list">•  Inhibits AAS.</div>
+<div class="list">•  Inhibits 5GR and 6GR.</div>
+<div class="list">•  Inhibits shift down when the accelerator pedal is depressed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  CAN communication line malfunction between TCM and PCM (local CAN between TCM and PCM)</div>
+<div class="list">•  PCM DTC is stored.</div>
+<div class="list">•  TCM malfunction</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>SYSTEM WIRING DIAGRAM</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY PCM DTC</div>
+<div class="list">•  Perform the PCM DTC inspection using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC U0074:00 is displayed:</div>
+<div class="list">•  CAN communication line can be considered the cause.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Refer to the wiring diagram and verify whether or not there is a common connector between TCM and PCM.</div>
+<dl>
+<div class="list-title">If there is a common connector:</div>
+<dd class="list">
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for a malfunction.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">If there is no common connector:</div>
+<dd class="list">
+<div class="list">•  Repair or replace the wiring harness.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  Go to the next step.</div>
+<div class="tbody">DTC other than U0074:00 is displayed:</div>
+<div class="list">•  Go to the applicable DTC inspection.<div>(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY DTC TROUBLESHOOTING COMPLETED</div>
+<div class="list">•  Clear the DTC using the M-MDS.<div>(See <font class="extxref-label"><a href="id0502p7290100.html">ON-BOARD DIAGNOSTIC SYSTEM DTC INSPECTION [TCM (EW6A-EL)]</a></font>.)</div>
+</div>
+<div class="list">•  Perform the following procedure to ensure that the DTC has been resolved:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Switch the ignition ON (engine off or on).</div>
+</dd>
+</dl>
+<div class="list">•  Perform the DTC inspection using the M-MDS.<div>(See <font class="extxref-label"><a href="id0502p7290100.html">ON-BOARD DIAGNOSTIC SYSTEM DTC INSPECTION [TCM (EW6A-EL)]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the control valve body, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0517l2118000.html">CONTROL VALVE BODY REMOVAL/INSTALLATION [EW6A-EL]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY NO DTC IS PRESENT</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0502p7290200.html">ON-BOARD DIAGNOSTIC SYSTEM DTC TABLE [TCM (EW6A-EL)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

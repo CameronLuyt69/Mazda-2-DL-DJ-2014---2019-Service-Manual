@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>PTC HEATER</title>
+</head>
+<body><a name="id071100002700"></a><p class="servinfo-title"><span class="servinfo-head"></span>PTC HEATER</p>
+<hr>
+<p class="servinfo-title-id" align="right">id071100002700</p><br clear="all"><a name="id07110000270001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The PTC heater is a supplementary heater which uses electricity as the heat source to improve the heating performance of the A/C unit temporarily when the diesel engine is cold.</div><br clear="all"><a name="id07110000270002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The PTC heater performs operation necessity determination of the heater control unit (full-auto air conditioner)/instrument cluster (manual air conditioner), and the BCM performs operation permission determination and controls the PTC heater.</div>
+<div class="list">•  The PTC heater warms the air passing through the A/C unit by generating heat.</div><br clear="all"><p><a name="id07110000270003"></a><p class="topic-title"><span class="topic-head"></span>PTC heater operation necessity determination</p>
+<dl>
+<dd>
+<div class="list-title">Full-auto air conditioner</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When the airflow volume control dial is set to 1 or higher, the heater control unit determines the necessity of operating the PTC heater based on the ambient temperature, setting temperature, cabin temperature, and the engine coolant temperature.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Manual air conditioner</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When the temperature control dial of the heater control unit is in the MAX HOT position and the airflow volume control dial is set to 1 or higher, the instrument cluster determines the necessity of operating the PTC heater based on the ambient temperature and the engine coolant temperature.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id07110000270004"></a><p class="topic-title"><span class="topic-head"></span>PTC heater operation permission determination</p>
+<dl>
+<dd>
+<div class="list">•  The BCM determines the necessity of operating the PTC heater according to the vehicle conditions when the PTC heater operation request signal is received from the heater control unit (full-auto air conditioner)/instrument cluster (manual air conditioner), and it calculates the output value based on the ambient temperature and engine coolant temperature to operate the PTC heater.</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id07110000270005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The PTC heater consists of the heater element (PTC element), fins, and the case, and it generates heat by passing electric current to the heater element.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002123.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002123</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The electrical resistance of the PTC heater has a tendency to increase in proportion to the heat generation of the heater element (PTC element).</div><br clear="all"><a name="id07110000270006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id07110000270007"></a><p class="topic-title"><span class="topic-head"></span>Full-auto air conditioner</p>
+<p class="list">1.  When the ignition is switched ON (engine on), the heater control unit receives (1) the ambient temperature signal and the engine coolant temperature signal from the PCM.</p>
+<p class="list"></p>
+<p class="list">2.  When the air volume control dial is set to 1 or higher, the heater control unit determines (2) the necessity of operating the PTC heater based on the ambient temperature and the engine coolant temperature.</p>
+<p class="list"></p>
+<p class="list">3.  When the heater control unit determines the necessity of operating the PTC heater, it sends (3) the PTC heater operation request signal to the BCM.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac3wzn00000161.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac3wzn00000161</div>
+</td>
+</tr>
+</table>
+<p class="list">4.  When the PTC operation request signal from the heater control unit is received and all of the following conditions (4) are met, the BCM permits (5) the operation of the PTC heater.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">―  Receives engine speed of <span>400 rpm</span> or more signal</div>
+<div class="list">―  Receives ambient temperature signal of less than <span>16 °C {61 °F}</span></div>
+<div class="list">―  Receives engine coolant temperature signal of less than <span>71 °C {160 °F}</span></div>
+<div class="list">―  PTC heater operation request signal is received</div>
+<div class="list">―  Charging system warning light illumination request signal is not received</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac3wzn00000162.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac3wzn00000162</div>
+</td>
+</tr>
+</table>
+</p>
+<p class="list">5.  When the PTC heater operation permission is determined, the BCM calculates (6) the PTC heater output based on the ambient temperature and engine coolant temperature.</p>
+<p class="list"></p>
+<p class="list">6.  The BCM compares (7) each calculated PTC heater output from the ambient temperature and engine coolant temperature, and determines (8) the lower PTC heater output value as the PTC heater output value.</p>
+<p class="list"></p>
+<p class="list">7.  The BCM outputs (9) a PTC heater operation signal based on the determined PTC heater output value.</p>
+<p class="list">
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac3wzn00000163.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac3wzn00000163</div>
+</td>
+</tr>
+</table>
+</p>
+</p><br clear="all"><p><a name="id07110000270008"></a><p class="topic-title"><span class="topic-head"></span>Manual air conditioner</p>
+<p class="list">1.  When the ignition is switched ON (engine on), the instrument cluster receives (1) the ambient temperature signal and engine coolant temperature signal from the PCM.</p>
+<p class="list"></p>
+<p class="list">2.  When the air volume control dial of the heater control unit is set a 1 or higher and the temperature control dial is in the MAX HOT position, the instrument cluster determines (2) the necessity of operating the PTC heater based on the ambient temperature and the engine coolant temperature.</p>
+<p class="list"></p>
+<p class="list">3.  When the instrument cluster determines the necessity of operating the PTC heater, it sends (3) a PTC heater operation request signal to the BCM.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00002832.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00002832</div>
+</td>
+</tr>
+</table>
+<p class="list">4.  When the BCM receives the PTC heater operation request signal from the instrument cluster and all of the following conditions (4) have been met, it permits the operation of the PTC heater.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">―  Receives engine speed of <span>400 rpm</span> or more signal</div>
+<div class="list">―  Receives ambient temperature signal of less than <span>16 °C {61 °F}</span></div>
+<div class="list">―  Receives engine coolant temperature signal of less than <span>71 °C {160 °F}</span></div>
+<div class="list">―  PTC heater operation request signal is received</div>
+<div class="list">―  Charging system warning light illumination request signal is not received</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac3wzn00000162.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac3wzn00000162</div>
+</td>
+</tr>
+</table>
+</p>
+<p class="list">5.  When PTC heater operation permission is determined, the BCM calculates (6) the PTC heater output value based on the ambient temperature and the engine coolant temperature.</p>
+<p class="list"></p>
+<p class="list">6.  The BCM compares (7) each calculated PTC heater output value from the ambient temperature and engine coolant temperature, and determines (8) the lower PTC heater output value as the PTC heater output value.</p>
+<p class="list"></p>
+<p class="list">7.  The BCM outputs (9) the PTC heater operation signal based on the determined PTC heater output value.</p>
+<p class="list">
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac3wzn00000163.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac3wzn00000163</div>
+</td>
+</tr>
+</table>
+</p>
+</p><br clear="all"><a name="id07110000270009"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  The BCM inhibits the PTC heater operation if each of the signals cannot be received.</div>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>LF CONTROL UNIT INSPECTION</title>
+</head>
+<body><a name="id091400110600"></a><p class="servinfo-title"><span class="servinfo-head"></span>LF CONTROL UNIT INSPECTION</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091400110600</p>
+<p class="list">1.  Remove the front scuff plate (RH). (See <font class="extxref-label"><a href="id091700604000.html">FRONT SCUFF PLATE REMOVAL/INSTALLATION</a></font>.)</p>
+<p class="list"></p>
+<p class="list">2.  Remove the front side trim (RH). (See <font class="extxref-label"><a href="id091700603200.html">FRONT SIDE TRIM REMOVAL/INSTALLATION</a></font>.)</p>
+<p class="list"></p>
+<p class="list">3.  Verify that the voltages of each of the terminals are as indicated in the terminal voltage table (reference).</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">•  If the voltage is not as specified in the terminal voltage table (reference), inspect the parts under Inspection item(s) and related wiring harnesses.</div>
+<dl>
+<dd class="list">
+<div class="list">―  If the system does not work normally even though the inspection items or related wiring harnesses do not have any malfunction, replace the LF control unit. (See <font class="extxref-label"><a href="id091400110500.html">LF CONTROL UNIT REMOVAL/INSTALLATION</a></font>.)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09140011060001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Terminal Voltage Table (Reference)</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00008325.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00008325</div>
+</td>
+</tr>
+</table>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Terminal</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Signal name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Connected to</p>
+</th>
+<th id="" align="center" colspan="3">
+<p class="thead">Measurement conditions</p>
+</th>
+<th id="" align="center">
+<p class="thead">Voltage (V)</p>
+</th>
+<th id="" align="center">
+<p class="thead">Inspection item (s)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left" colspan="2" rowspan="2">
+<div class="tbody">Request switch signal (RF)</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Request switch (RF)</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">When request switch (RF) is pressed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1.0 or less</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="list">•  Request switch (RF)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="3">
+<div class="tbody">When request switch (RF) is not pressed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">5.0</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Power supply</div>
+</td>
+<td id="" align="left">
+<div class="tbody">INTERIOR 15 A fuse</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Under any condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">B+</div>
+</td>
+<td id="" align="left">
+<div class="list">•  ROOM 25A fuse</div>
+<div class="list">•  INTERIOR 15 A fuse</div>
+<div class="list">•  Battery</div>
+<div class="list">•  DC-DC converter<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C</div>
+</td>
+<td id="" align="left" colspan="2" rowspan="2">
+<div class="tbody">Request switch signal (LF)</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Request switch (LF)</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">When request switch (LF) is pressed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1.0 or less</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="list">•  Request switch (LF)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="3">
+<div class="tbody">When request switch (LF) is not pressed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">5.0</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G<sup></sup></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Start stop unit signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Because this terminal is for communication, integrity determination using terminal voltage inspection is not possible.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">H</div>
+</td>
+<td id="" align="left" colspan="2" rowspan="2">
+<div class="tbody">Keyless beeper power supply</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Keyless beeper</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">When lock button on remote transmitter is pressed or front door request switch is pressed to lock</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Wave pattern (See <font class="intxref-label"><a href="#id09140011060003">Pattern 1</a></font>.)</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="list">•  Keyless beeper</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="3">
+<div class="tbody">Except above</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1.0 or less</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">I<sup></sup></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Start stop unit signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Because this terminal is for communication, integrity determination using terminal voltage inspection is not possible.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">J</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">GROUND</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless beeper</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Under any condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1.0 or less</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Keyless beeper</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">K<sup></sup></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Keyless antenna (interior, front)<sup></sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (interior, front)</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Because this terminal is for communication, integrity determination using terminal voltage inspection is not possible.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">L<sup></sup></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">GROUND</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Body ground</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Under any condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1.0 or less</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Body ground</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">M<sup></sup></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Keyless antenna (interior, front)<sup></sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (interior, front)</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Because this terminal is for communication, integrity determination using terminal voltage inspection is not possible.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">O</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Keyless antenna (exterior, LF)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (exterior, LF)</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Because this terminal is for communication, integrity determination using terminal voltage inspection is not possible.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Q</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Keyless antenna (exterior, LF)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (exterior, LF)</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Because this terminal is for communication, integrity determination using terminal voltage inspection is not possible.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">S</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Keyless antenna (exterior, RF)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (exterior, RF)</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Because this terminal is for communication, integrity determination using terminal voltage inspection is not possible.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">T</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Keyless antenna (interior, rear)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (interior, rear)</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Because this terminal is for communication, integrity determination using terminal voltage inspection is not possible.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Keyless antenna (exterior, RF)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (exterior, RF)</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Because this terminal is for communication, integrity determination using terminal voltage inspection is not possible.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Keyless antenna (interior, rear)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (interior, rear)</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Because this terminal is for communication, integrity determination using terminal voltage inspection is not possible.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">W</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Keyless antenna (exterior, rear)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (exterior, rear)</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Because this terminal is for communication, integrity determination using terminal voltage inspection is not possible.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Keyless antenna (exterior, rear)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (exterior, rear)</div>
+</td>
+<td id="" align="left" colspan="5">
+<div class="tbody">Because this terminal is for communication, integrity determination using terminal voltage inspection is not possible.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :WIth i-ELOOP</div><br clear="all"><a name="id09140011060002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Inspection Using an Oscilloscope (Reference)</p><br clear="all"><p><a name="id09140011060003"></a><p class="topic-title"><span class="topic-head"></span>Pattern 1</p>
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5jjw00000788.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5jjw00000788</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="list">•  LF control unit: H (+) ↔ body ground (-)</div>
+<div class="list">•  Oscilloscope setting: 2 V/DIV (Y), 100 ms/DIV (X), DC range</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

@@ -1,0 +1,1142 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC [HEADLIGHT AUTO LEVELING SYSTEM]</title>
+</head>
+<body><a name="id091800905500"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC [HEADLIGHT AUTO LEVELING SYSTEM]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091800905500</p><br clear="all"><a name="id09180090550001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The on-board diagnostic function consists of the following functions.</div>
+<dl>
+<dd class="list">
+<div class="list">―  A malfunction detection function, which detects overall malfunctions in the auto leveling control module-related parts.</div>
+<div class="list">―  A memory function, which stores detected DTCs.</div>
+<div class="list">―  A display function, which indicates malfunction locations and status via DTC output.</div>
+<div class="list">―  A PID/data monitor function, which reads out specific input/output signals and verifies the input/output condition.</div>
+</dd>
+</dl>
+<div class="list">•  Using the Mazda Modular Diagnostic System (M-MDS), DTCs can be read out and deleted, and the PID/data monitor function can be activated.</div><br clear="all"><a name="id09180090550002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Malfunction Detection Function</p>
+<div class="list">•  Detects malfunctions in input/output signals.</div>
+<div class="list">•  If a malfunction occurs, the auto leveling control module records the malfunction as a DTC. A recorded DTC can be read by the Mazda Modular Diagnostic System (M-MDS).</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Auto leveling control module flashes the LED headlight warning light as follows if there is a malfunction in the system.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00009059.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00009059</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</dd>
+</dl><br clear="all"><p><a name="id09180090550003"></a><p class="topic-title"><span class="topic-head"></span>DTC table</p>
+<div class="ptxt">×: Applicable</div>
+<div class="ptxt">—: Not applicable</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">LED headlight warning light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe</p>
+</th>
+<th id="" align="center">
+<p class="thead">Drive cycle</p>
+</th>
+<th id="" align="center">
+<p class="thead">Self test type<sup>*1</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">Memory function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1041:54</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash (Pattern 2)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight auto leveling system initialization error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1044:01</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash (Pattern 1)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto leveling sensor circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D00:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash (Pattern 1)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight (LH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D01:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash (Pattern 1)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight (RH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:88</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash (Pattern 1)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Unit communication error (HS-CAN)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash (Pattern 1)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash (Pattern 1)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash (Pattern 1)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0423:68</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2005:86</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash (Pattern 1)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:54</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash (Pattern 1)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error configuration data received from instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:55</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash (Pattern 1)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration not implemented</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:56</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash (Pattern 1)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration data unmatched with instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:42</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash (Pattern 1)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto leveling control module internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:49</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash (Pattern 1)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto leveling control module internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto leveling control module low power supply voltage input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:17</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto leveling control module high power supply voltage input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id09180090550004"></a><p class="topic-title"><span class="topic-head"></span>DTC 7-digit code definition</p>
+<dl>
+<dd>
+<div class="list">•  When related systems or components have failed, the CM stores the DTC of the malfunctioning part in the CM memory, and allows for the retrieval of the store data using scanning tool when necessary. The DTCs are indicated using seven digits. Each digit indicates the following.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5uun00001106.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5uun00001106</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09180090550005"></a><p class="topic-title"><span class="topic-head"></span>Status byte for DTC</p>
+<dl>
+<dd>
+<div class="list">•  The two digits (two digits after hyphen (-)) after the 7-digit DTC.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00002013.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00002013</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  A code which indicates the pending code, current/past malfunction status, or warning illumination status.</div>
+<div class="list">•  Can be read by performing a CMDTC self-test using the Mazda Modular Diagnostic System (M-MDS).</div>
+<div class="list">•  For details on the status byte, refer to the explanation on the Mazda Modular Diagnostic System (M-MDS) when reading the DTC.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09180090550006"></a><p class="topic-title"><span class="topic-head"></span>Detection condition for the applicable DTC</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Detection condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1041:54</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight auto leveling system initialization error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Headlight auto leveling system initialization is not performed with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1044:01</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto leveling sensor circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Auto leveling control module detected the auto leveling sensor circuit voltage of <span>0.25 V or less</span> or <span>4.75 V or more</span> for <span>10 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D00:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight (LH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The auto leveling control module detected an open circuit in the headlight (LH) circuit during the headlight LO on control with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D01:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight (RH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The auto leveling control module detected an open circuit in the headlight (RH) circuit during the headlight LO on control with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:88</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Unit communication error (HS-CAN)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Auto leveling control module detected the CAN bus communication line (HS-CAN) malfunction <span>10 times</span> continuously.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Auto leveling control module could not receive the CAN signal from the PCM for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with BCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Auto leveling control module could not receive the CAN signal from the BCM for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Auto leveling control module could not receive the CAN signal from the instrument cluster for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0423:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Auto leveling control module received headlight illumination state signal which undefined for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2005:86</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from PCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Auto leveling control module received the vehicle speed signal error from the PCM for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:54</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error configuration data received from instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Auto leveling control module received a signal which indicates the instrument cluster configuration is not performed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:55</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration not implemented</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Auto leveling control module received a signal which indicates the instrument cluster configuration is not performed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:56</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration data unmatched with instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Configuration data of the auto leveling control module and instrument cluster are not matched.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:42</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto leveling control module internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Auto leveling control module detects the internal EEPROM malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:49</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto leveling control module internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Watchdog timer overflow inside the auto leveling control module detected.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto leveling control module low power supply voltage input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Auto leveling control module power supply circuit voltage of <span>9.0 V or less</span> is detected for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:17</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto leveling control module high power supply voltage input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Auto leveling control module power supply circuit voltage of <span>18.1 V or more</span> is detected for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id09180090550007"></a><p class="topic-title"><span class="topic-head"></span>Snapshot data</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The auto leveling control module stores the following two types of snapshot data (vehicle information) when a DTC is detected and displays them in the Mazda Modular Diagnostic System (M-MDS).</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle information detected by auto leveling control module</div>
+<div class="list">―  Vehicle information detected by instrument cluster and received by auto leveling control module via CAN communication</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The data for all DTCs currently detected is stored.</div>
+</dd>
+</dl>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Snapshot data item</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding data monitor items</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">AAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Accelerator Pedal Off/Under20%/Over20%/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CFG_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Config Complete/Not Configured/Config Error</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Under 0 degrees C/0 - Under 80 degrees C/Over 80 degrees C/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IC_VPWR</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster power supply voltage</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The auto leveling control module constantly receives the power supply voltage value of the instrument cluster sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the auto leveling control module records the power supply voltage of the instrument cluster when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IG-ON_TIMER</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">hh:mm:ss<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Elapsed time since ignition was switched ON (engine off or on)</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The instrument cluster records the elapsed time since the ignition was switched ON (engine off or on).</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="list">•  The auto leveling control module constantly receives the elapsed time since the ignition was switched ON (engine off or on) sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the auto leveling control module records the elapsed time since the ignition was switched ON (engine off or on) when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">PWR_MODE_KEY</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Key Out/Key Recently Out (Position 0)/Accessory (Position 1)/Post Ignition (Position 2)/Ignition On (Position 2)/Running (Position 2)/Running - Starting</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Key Out: Ignition switched off</div>
+<div class="list">•  Key Recently Out (Position 0): Elapsed time <span>within 3 s</span> since ignition was switched off</div>
+<div class="list">•  Accessory (Position 1): Ignition is switched to ACC</div>
+<div class="list">•  Post Ignition (Position 2): Elapsed time <span>within 3 s</span> since ignition was switched ON (engine off or on)</div>
+<div class="list">•  Ignition On (Position 2): Ignition switched ON (engine off)</div>
+<div class="list">•  Running (Position 2): Ignition switched ON (engine on)</div>
+<div class="list">•  Running - Starting: Cranking condition</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The auto leveling control module constantly receives the ignition switch status sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the auto leveling control module records the ignition switch status when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RPM_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Engine Stop/Under1500rpm/Over1500rpm/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The auto leveling control module constantly receives the engine speed sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the auto leveling control module records the engine speed when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TACHOMTR<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SHIFT_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">P/N/D/R/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Selector lever position status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The auto leveling control module constantly receives the selector lever position sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the auto leveling control module records the selector lever position when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TOTAL_DIST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Miles</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total traveled distance from completion of vehicle until auto leveling control module detects DTC (Odometer value in instrument cluster)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The total traveled distance from which the auto leveling control module detects DTCs to the present can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the odometer value in the instrument cluster.</div>
+<div class="list">2.  Verify the snapshot data item TOTAL_DIST.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TOTAL_TIME</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">hh:mm:ss<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total elapsed time since vehicle completion until auto leveling control module detects a DTC</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  When the ROOM fuse is removed, and the ignition is switched off, the time is not included in the elapsed time.</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">The elapsed time from which the auto leveling control module detects DTCs to the present can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the instrument cluster PID item TOTAL_TIME.</div>
+<div class="list">2.  Verify the snapshot data item TOTAL_TIME.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TOTAL_TIME<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Auto leveling control module power supply voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR_IG</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VSPD_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Stop/0-10km/h/Over10km/h/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The auto leveling control module constantly receives the vehicle speed sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the auto leveling control module records the vehicle speed when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SPEEDOMTR<sup>*1</sup></div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :Instrument cluster PID (See <font class="extxref-label"><a href="id092200021843.html">ON-BOARD DIAGNOSTIC [INSTRUMENT CLUSTER]</a></font>.)</div>
+<div class="deflist">*2  :The seconds may be indicated after the decimal point.</div>
+</p><br clear="all"><a name="id09180090550008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID/Data Monitor Function</p>
+<div class="list">•  With the PID/data monitor function, input/output signal monitor items set in the auto leveling control module can be selected and read out in real-time.</div>
+<div class="list">•  The items which can select are as follows:</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">PID</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Operation</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Module control terminal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_BO_L</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OK/NG</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the headlight LO (LH) open circuit detection status. (Detects during low beam on)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">I</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_BO_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OK/NG</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the headlight LO (RH) open circuit detection status. (Detects during low beam on)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Z</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R_HGT_S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays voltage at auto leveling sensor</div>
+</td>
+<td id="" align="left">
+<div class="tbody">F, J, T</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R_HGT_S_INI</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays voltage at headlight auto leveling system initial setting</div>
+</td>
+<td id="" align="left">
+<div class="tbody">F, J, T</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_IG</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays auto leveling control module power supply voltage</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A, C</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VSPD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays vehicle speed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">AB, AD</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

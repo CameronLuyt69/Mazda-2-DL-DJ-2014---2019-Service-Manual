@@ -1,0 +1,548 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ACTIVE COMMAND MODES TABLE [BCM]</title>
+</head>
+<body><a name="id0902f5200200"></a><p class="servinfo-title"><span class="servinfo-head"></span>ACTIVE COMMAND MODES TABLE [BCM]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0902f5200200</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Simulation items on parts which are not equipped to the vehicle do not operate.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Simulation item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Operation</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Output part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Operation condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">BG_HORN_RLY</div>
+</td>
+<td id="" align="left" colspan="4">
+<div class="tbody">If an accessory part is installed, it cannot be used.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BLWR_RLY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turns the blower relay off.</div>
+<div class="list">•  On: Turns the blower relay on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blower relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DR_LK_RY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a door lock relay operation request signal (lock signal) to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Does not lock the door.</div>
+<div class="list">•  On: Locks the door.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Door lock relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DR_UNLK_RY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a door unlock relay operation request signal (unlock signal) to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Does not unlock the door.</div>
+<div class="list">•  On: Unlocks the door.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Door unlock relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">F_FOG_RELAY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turns the front fog light off.</div>
+<div class="list">•  On: Turns the front fog light on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front fog light relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_CLN_RY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turns the headlight cleaner relay off.</div>
+<div class="list">•  On: Turns the headlight cleaner relay on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight cleaner relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_DRL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a running light on request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: The running lights are turned off.</div>
+<div class="list">•  On: The running lights are turned on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Running light</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_HI</div>
+</td>
+<td id="" align="center">
+<div class="tbody">0%/100%</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a headlight HI on request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  0%: The headlights HI are turned off.</div>
+<div class="list">•  100%: The headlights HI are turned on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight HI</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_LOW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">0%/100%</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a headlight LO on request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  0%: The headlights LO are turned off.</div>
+<div class="list">•  100%: The headlights LO are turned on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight LO</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_TNS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/Right-On/Left-On/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a TNS on request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Turns the parking lights off.</div>
+<div class="list">•  Right-On: Turns the parking light (RH) on.</div>
+<div class="list">•  Left-On: Turns the parking light (LH) on.</div>
+<div class="list">•  On: Turns the parking lights (RH/LH) on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Parking light</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">HORN_RLY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Stops the horn.</div>
+<div class="list">•  On: Sounds the horn.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Horn relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PTC_HEAT_ST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">0%/10%/20%/30%/40%/50%/60%/70%/80%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  0%: Stops PTC heater output.</div>
+<div class="list">•  10%: Controls PTC heater output level to 10%.</div>
+<div class="list">•  20%: Controls PTC heater output level to 20%.</div>
+<div class="list">•  30%: Controls PTC heater output level to 30%.</div>
+<div class="list">•  40%: Controls PTC heater output level to 40%.</div>
+<div class="list">•  50%: Controls PTC heater output level to 50%.</div>
+<div class="list">•  60%: Controls PTC heater output level to 60%.</div>
+<div class="list">•  70%: Controls PTC heater output level to 70%.</div>
+<div class="list">•  80%: Controls PTC heater output level to 80%.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PTC heater</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R_DEF_RLY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Stops the rear window defogger.</div>
+<div class="list">•  On: Operates the rear window defogger.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear window defogger relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R_FOG_LAMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turns the rear fog light off.</div>
+<div class="list">•  On: Turns the rear fog light on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear fog light relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">REVERSE_LMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a back-up light on request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Turns the back-up light off.</div>
+<div class="list">•  On: Turns the back-up light on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Back-up light</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ROOM_LAMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/100%_On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a front map light on request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Turns the front map light off.</div>
+<div class="list">•  100%_On: Turn the front map light on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front map light</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STOP_LMP_CTL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turns the brake light off.</div>
+<div class="list">•  On: Turns the brake light on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake light relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TRUNK_LAMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a cargo compartment light on request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Turns the cargo compartment light off.</div>
+<div class="list">•  On: Turns the cargo compartment light on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cargo compartment light</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TRUNK_MOTOR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a liftgate release signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Does not open the liftgate.</div>
+<div class="list">•  On: Opens the liftgate.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Liftgate release relay</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WASHER_CTRL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/Front_ON</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a front washer operation request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Stops the windshield washer motor.</div>
+<div class="list">•  Front_ON: Operates the windshield washer motor.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Windshield washer motor</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_R_CTRL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/INT/On/On_1Time/On_2Time/On_3Time/On_4Time</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The BCM sends a rear wiper operation request signal or rear wiper INT operation request signal to the ESU via LIN communication.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Off: Stops the rear wiper.</div>
+<div class="list">•  INT: Operates the rear wiper intermittently.</div>
+<div class="list">•  On: Operates the rear wiper continuously.</div>
+<div class="list">•  On_1Time: —</div>
+<div class="list">•  On_2Time: Operates the rear wiper twice.</div>
+<div class="list">•  On_3Time: —</div>
+<div class="list">•  On_4Time: —</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear wiper motor</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>GENERATOR CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5208900"></a><p class="servinfo-title"><span class="servinfo-head"></span>GENERATOR CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5208900</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The generator output control is different whether the i-ELOOP is equipped or not. (See <font class="intxref-label"><a href="#id0140z520890001">Without i-ELOOP</a></font>.)(See <font class="intxref-label"><a href="#id0140z520890005">With i-ELOOP</a></font>.)</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0140z520890001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Without i-ELOOP</p><br clear="all"><p><a name="id0140z520890002"></a><p class="topic-title"><span class="topic-head"></span>Outline</p>
+<dl>
+<dd>
+<div class="list">•  Idling stability has been improved by optimum control of the generator voltage according to the engine operation and electrical load conditions.</div>
+<div class="list">•  The PCM determines the engine operation and electrical load conditions based on the input signals from each control part to control the energization time of the generator field coils.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140z520890003"></a><p class="topic-title"><span class="topic-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003662.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003662</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0140z520890004"></a><p class="topic-title"><span class="topic-head"></span>Operation</p>
+<dl>
+<dd>
+<div class="list-title">Determination method for target excitation current</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The battery condition is determined based on the current sensor signal, and the target excitation current is calculated according to the battery condition.</div>
+<div class="list">•  If the current sensor is malfunctioning, the target excitation current is calculated from the generator target output amount (determined by battery fluid temperature, engine speed, and vehicle speed), and the actual generator rotation speed.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Determination method for field coil excitation time</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The field coil excitation current is increased and decreased by sending a duty signal to the power transistor built into the generator.</div>
+<div class="list">•  The field coil energization current changes according to changes in the power transistor excitation time by changing the duty signal duty ratio. For example, when the battery positive voltage drops, the duty ratio of the duty signal sent to the power transistor is larger, increasing the field coil excitation current.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003663.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003663</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  During deceleration fuel-cut, the PCM increases the generator voltage and stores electricity in the battery. At times other than deceleration, the PCM enables electric discharge from the battery to reduce the generator load.</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id0140z520890005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>With i-ELOOP</p><br clear="all"><p><a name="id0140z520890006"></a><p class="topic-title"><span class="topic-head"></span>Outline</p>
+<dl>
+<dd>
+<div class="list">•  Idling stability has been improved by optimum control of the generator voltage according to the engine operation and electrical load conditions.</div>
+<div class="list">•  The PCM controls the variable voltage type generator so that the driver does not sense strangeness in the deceleration from the power generation torque produced during deceleration.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140z520890007"></a><p class="topic-title"><span class="topic-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003855.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003855</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0140z520890008"></a><p class="topic-title"><span class="topic-head"></span>Operation</p>
+<dl>
+<dd>
+<div class="list">•  The PCM increases/decreases the field coil excitation current and controls the power generation amount of the generator by calculating the target excitation current and sending a power generation amount signal (duty signal) to the IC regulator.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Determination method for target excitation current</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The PCM determines the generator target power generation amount based on the vehicle conditions (such as the running resistance) and the result of the estimated target deceleration<sup>*1</sup>.</div>
+<div class="list">•  Calculates the target excitation current based on the target power generation amount and the generator rotation speed.</div>
+</dd>
+</dl>
+<div class="deflist">*1  :The PCM calculates the target deceleration during regenerative braking according to the vehicle speed and acceleration and brake operations so that the driver does not sense strangeness in the deceleration from the power generation torque produced during deceleration.</div>
+<dl>
+<dd>
+<div class="list">•  The PCM gradually increases the generator output voltage considering the actual power generation amount of the generator, and controls the generator at the specified value during regenerative deceleration. It performs feedback of the actual power generation amount of the generator to control the excitation current precisely.</div>
+<div class="list">•  For details on the i-ELOOP operation, refer to [i-ELOOP]. (See <font class="extxref-label"><a href="id131704500000.html">i-ELOOP [i-ELOOP]</a></font>.)</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

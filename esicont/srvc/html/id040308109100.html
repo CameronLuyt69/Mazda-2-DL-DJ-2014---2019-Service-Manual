@@ -1,0 +1,305 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>NO.2 ABS WARNING LIGHT REMAINS ILLUMINATED [ANTILOCK BRAKE SYSTEM (ABS)]</title>
+</head>
+<body><a name="id040308109100"></a><p class="servinfo-title"><span class="servinfo-head"></span>NO.2 ABS WARNING LIGHT REMAINS ILLUMINATED [ANTILOCK BRAKE SYSTEM (ABS)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id040308109100</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">2</p>
+</th>
+<th id="" align="left">
+<p class="thead">ABS warning light remains illuminated</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  No connection at ABS HU/CM connector (When ABS HU/CM connector is removed, ABS warning light and brake system warning light are illuminated.)</div>
+<div class="list">•  ABS HU/CM detected malfunction (Input and output device malfunction).</div>
+<div class="list">•  ABS HU/CM detects low voltage in power supply.</div>
+<div class="list">•  ABS HU/CM ground malfunction (When ABS HU/CM ground is not securely connected, ABS warning light and brake system warning light are illuminated but DTCs are not displayed.)</div>
+<div class="list">•  ABS HU/CM does not operate.</div>
+<div class="list">•  After replacing SAS control module the low-G sensor and yaw rate sensor initialization have not been performed.</div>
+<div class="list">•  Non-completion of module configuration (When module configuration is not performed after replacing ABS HU/CM, ABS warning light remains illuminated.)</div>
+<div class="list">•  ABS HU/CM internal malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">CONFIRM ABS HU/CM DTC</div>
+<div class="list">•  Retrieve the ABS HU/CM DTC using the M-MDS.<div>(See <font class="extxref-label"><a href="id040260985000.html">DTC INSPECTION [ABS HU/CM]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id040260985200.html">DTC TABLE [ABS HU/CM]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If a communication error message is displayed on the M-MDS screen:</div>
+<div class="list">•  Go to the next step.</div>
+<div class="tbody">If a communication error message is not displayed:</div>
+<div class="list">•  Go to Step 6.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CONNECTION OF ABS HU/CM CONNECTOR</div>
+<div class="list">•  Inspect connection of the ABS HU/CM connector.</div>
+<div class="list">•  Is the ABS HU/CM connector connected securely?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Connect the ABS HU/CM connector securely, then go to Step 6.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT ABS HU/CM POWER SUPPLY FUSE</div>
+<div class="list">•  Inspect the ABS HU/CM ignition power supply fuse.</div>
+<div class="list">•  Is the fuse normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect the blown fuse’s circuit for a short to ground.</div>
+<div class="tbody">Repair or replace the wiring harness for a possible short to ground if necessary.</div>
+<div class="tbody">Install appropriate amperage fuse.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody"><sup>*</sup>4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF MALFUNCTION IS IN WIRING HARNESS (BETWEEN ABS HU/CM POWER SUPPLY AND ABS HU/CM FOR CONTINUITY) OR ELSEWHERE</div>
+<div class="list">•  Switch the ignition ON.</div>
+<div class="list">•  Measure the voltage at the ABS HU/CM terminal Q (wiring harness-side).</div>
+<div class="list">•  Is the voltage <span>approx. 12 V</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refer to the wiring diagram and verify whether or not there is a common connector between ABS HU/CM terminal Q (wiring harness-side) and ignition switch.</div>
+<div class="list-title">If there is a common connector:</div>
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for an open circuit.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+<div class="list-title">If there is no common connector:</div>
+<div class="list">•  Repair or replace the wiring harness which has an open circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody"><sup>*</sup>5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF MALFUNCTION IS IN WIRING HARNESS (BETWEEN ABS HU/CM AND GROUND FOR CONTINUITY) OR ELSEWHERE</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Disconnect the ABS HU/CM connector.</div>
+<div class="list">•  Inspect for continuity between ABS HU/CM terminal AL (wiring harness-side) and body ground.</div>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the ABS HU/CM. (open circuit in the ABS HU/CM)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0413008014d1.html">ABS HU/CM REMOVAL/INSTALLATION [L.H.D.]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0413008014d2.html">ABS HU/CM REMOVAL/INSTALLATION [R.H.D.]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness for a possible open circuit and poor contact at the ground point.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">CONFIRM PCM DTCs</div>
+<div class="list">•  Retrieve the PCM DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF MALFUNCTION CAUSED BY INITIALIZATION PROCEDURE FOR LOW-G SENSOR NOT PERFORMED</div>
+<div class="list">•  Verify if the malfunction is caused by the  initialization procedure for the low-G sensor not being performed.</div>
+<div class="list">•  Has the initial setting for the low-G sensor been performed after replacing the ABS HU/CM and the SAS control module?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform the low-G sensor initial setting.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id041300803500.html">ABS RELATED PARTS SENSOR INITIALIZATION PROCEDURE</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF MALFUNCTION CAUSED BY INITIALIZATION PROCEDURE FOR YAW RATE SENSOR NOT PERFORMED</div>
+<div class="list">•  Verify if the malfunction is caused by the initialization procedure for the yaw rate sensor not being performed.</div>
+<div class="list">•  Has the initial setting for the yaw rate sensor been performed after replacing the ABS HU/CM and the SAS control module?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform the yaw rate sensor initial setting.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id041300803500.html">ABS RELATED PARTS SENSOR INITIALIZATION PROCEDURE</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF MALFUNCTION IS IN INSTRUMENT CLUSTER OR ABS HU/CM</div>
+<div class="list">•  Connect the M-MDS to the DLC-2.</div>
+<div class="list">•  Turn off and on all warning lights and indicator lights using the instrument cluster PID WL+IL of the active command modes.<div>(See <font class="extxref-label"><a href="id0902e8960800.html">ACTIVE COMMAND MODES INSPECTION [INSTRUMENT CLUSTER]</a></font>.)</div>
+</div>
+<div class="list">•  Do the ABS warning light and brake system warning light turn on and off according to the active command modes?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the ABS HU/CM. (Internal malfunction)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0413008014d1.html">ABS HU/CM REMOVAL/INSTALLATION [L.H.D.]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0413008014d2.html">ABS HU/CM REMOVAL/INSTALLATION [R.H.D.]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the instrument cluster.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id092200010300.html">INSTRUMENT CLUSTER REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="list">•  When performing an asterisked (*) troubleshooting inspection, shake the wiring harness and connectors while doing the inspection to discover whether poor contact points are the cause of any intermittent malfunctions. If there is a problem, verify that connectors, terminals and wiring harnesses are connected correctly and undamaged.</div>
+</body>
+</html>

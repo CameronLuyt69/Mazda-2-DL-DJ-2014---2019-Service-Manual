@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>PANEL LIGHT</title>
+</head>
+<body><a name="id092200033000"></a><p class="servinfo-title"><span class="servinfo-head"></span>PANEL LIGHT</p>
+<hr>
+<p class="servinfo-title-id" align="right">id092200033000</p><br clear="all"><a name="id09220003300001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The panel light adjusts the brightness of the instrument cluster and steering switch illumination.</div><br clear="all"><a name="id09220003300002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The instrument cluster adjusts the brightness of the following illumination lights when it receives a TNS signal sent via CAN communication from the BCM.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Instrument cluster</div>
+<div class="list">―  Climate control unit</div>
+<div class="list">―  Steering switch</div>
+<div class="list">―  Cluster switch</div>
+<div class="list">―  Hazard warning switch</div>
+<div class="list">―  Shift panel (indicator)</div>
+<div class="list">―  Drive selection switch (With drive selection system)</div>
+<div class="list">―  Indicator unit</div>
+<div class="list">―  Audio unit (Without center display)</div>
+<div class="list">―  CD player (With CD player)</div>
+<div class="list">―  DVD/CD player (With DVD/CD player)</div>
+<div class="list">―  Commander switch (With center display)</div>
+</dd>
+</dl>
+<div class="list">•  The instrument cluster changes the brightness of the illumination lights according to the rotation signal of the panel light control switch.</div><br clear="all"><a name="id09220003300003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The panel light control switch is positioned in the instrument cluster.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002935.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002935</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id09220003300004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">1.  When the ignition is switched ON (engine off or on), the instrument cluster receives (1) a TNS signal from the BCM.</div>
+<div class="list">2.  The instrument cluster performs the following controls when it receives the TNS signal.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Changes (2) the brightness of the instrument cluster illumination.</div>
+<div class="list">―  Outputs (2) a panel light on request signal to the climate control unit via CAN communication.</div>
+<div class="list">―  Outputs (2) a panel light on request signal to the indicator unit via serial communication.</div>
+<div class="list">―  Turns (2) the panel light circuit transistor on.</div>
+</dd>
+</dl>
+<div class="list">3.  When the transistor turns on, a ground circuit with the panel light is established and the panel light turns on (3).<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002936.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002936</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><p><a name="id09220003300005"></a><p class="topic-title"><span class="topic-head"></span>Panel light control switch operation</p>
+<dl>
+<dd>
+<div class="list">1.  When the ignition is switched ON (engine off or on), the instrument cluster receives (1) a TNS signal from the BCM.</div>
+<div class="list">2.  When the instrument cluster detects (2) a panel light control switch rotation signal while receiving the TNS signal, it changes (3) the brightness of the panel light according to the rotation angle.</div>
+<div class="list">3.  The instrument cluster outputs (4) a panel light on request signal to the related modules.</div>
+<div class="list">4.  If the instrument cluster detects (2) that the panel light control switch is in the maximum right rotation position, it maximizes (5) the brightness of the panel light, and sends (6) a dimmer cancel signal to the related module.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002937.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002937</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09220003300006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  Not applicable</div>
+</body>
+</html>

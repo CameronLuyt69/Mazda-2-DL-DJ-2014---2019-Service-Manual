@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>A/C CUT-OFF CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0140q1206200"></a><p class="servinfo-title"><span class="servinfo-head"></span>A/C CUT-OFF CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140q1206200</p><br clear="all"><a name="id0140q120620001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  To improve drive performance and A/C compressor reliability, the A/C relay is turned off at the appropriate timing (according to the engine operation conditions), and the A/C operation is controlled.</div><br clear="all"><a name="id0140q120620002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003424.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003424</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140q120620003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The PCM stops current to the A/C relay when any of the following conditions are met:</div>
+<p clear="all">
+<p class="table-title">A/C cut-off control operation conditions</p>
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Operation condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">While A/C relay not energized</p>
+</th>
+<th id="" align="center">
+<p class="thead">Purpose</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">At engine start</div>
+</td>
+<td id="" align="left">
+<div class="tbody"><span>Approx. 4 s</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Improved startability</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">When engine is restarted by i-stop control</div>
+</td>
+<td id="" align="left">
+<div class="tbody"><span>Approx. 3 s</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Improved startability</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">When high engine speed (<span>approx. 6,700 rpm or more</span>)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/C compressor reliability assurance</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Accelerated</div>
+</td>
+<td id="" align="left">
+<div class="tbody"><span>Approx. 5 s</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Acceleration from standstill/acceleration performance improvement</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Time under i-stop control, vehicle speed of <span>1 km/h {0.6 mph} or less</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">i-stop function reliability improvement</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Refrigerant pressure <span>3.14 MPa {32.0 kgf/cm<sup>2</sup>, 455 psi} or more</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/C compressor reliability assurance</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Refrigerant pressure of <span>0.196 MPa {2.00 kgf/cm<sup>2</sup>, 28.4 psi} or less</span> continues for <span>5 s or more</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/C compressor reliability assurance</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Drive-by-wire control malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Reverse driving performance assurance</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Panic braking determined</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Load performance assurance</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ECT sensor malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine protection</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">When high engine coolant temperature (<span>approx. 113 °C {235 °F} or more</span>)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cuts off the A/C intermittently, and if the engine coolant temperature does not decrease, cuts off the A/C continuously.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine protection</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Travel on ascending road</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ascent performance improvement</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

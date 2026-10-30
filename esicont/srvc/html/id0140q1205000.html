@@ -1,0 +1,212 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ELECTRICAL FAN CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0140q1205000"></a><p class="servinfo-title"><span class="servinfo-head"></span>ELECTRICAL FAN CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140q1205000</p><br clear="all"><a name="id0140q120500001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  Through cooling of the radiator and condenser by operation of the cooling fan (according to vehicle conditions), engine reliability and cooling performance have been improved.</div>
+<div class="list">•  The PCM determines the engine operation conditions (based on the signals from each sensor), and turns cooling fan relays No.1 and No.2 on/off to control the rotation speed of the cooling fan motor.</div><br clear="all"><a name="id0140q120500002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003422.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003422</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140q120500003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The PCM controls the cooling fan motor rotation speed by turning cooling fan relays No.1 and No.2 on/off based on each demand airflow volume.</div>
+<p clear="all">
+<p class="table-title">Operation Pattern</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" rowspan="2">
+<p class="thead">Demand airflow volume</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Cooling fan relay</p>
+</th>
+<th id="" align="center" colspan="2" rowspan="2">
+<p class="thead">Cooling fan motor</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">No.1</p>
+</th>
+<th id="" align="center">
+<p class="thead">No.2</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">No airflow</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Stop</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Small</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Low-speed </div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Large</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">High-speed</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003423.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003423</div>
+</td>
+</tr>
+</table><br clear="all"><p><a name="id0140q120500004"></a><p class="topic-title"><span class="topic-head"></span>Engine coolant temperature condition</p>
+<dl>
+<dd>
+<div class="list">•  Changes the demand airflow volume according to the engine coolant temperature.</div>
+<div class="list">•  To suppress overheating, the cooling fan is operated when the engine coolant temperature is high. The demand airflow volume is large or small depending on the engine coolant temperature.</div>
+</dd>
+</dl>
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzn00003645.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzn00003645</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0140q120500005"></a><p class="topic-title"><span class="topic-head"></span>A/C operation condition (with air conditioner)</p>
+<dl>
+<dd>
+<div class="list">•  Controls the demand airflow volume depending on the refrigerant pressure and vehicle speed when the A/C switch is on.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Operation condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Demand airflow volume</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="list">•  When any of the following conditions is met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Refrigerant pressure: <span>1.3 MPa {13 kgf/cm<sup>2</sup>, 189 psi} or less</span>, vehicle speed: <span>45 km/h {28 mph} or more</span></div>
+<div class="list">―  Refrigerant pressure: <span>2.2 MPa {22 kgf/cm<sup>2</sup>, 319 psi} or less</span>, vehicle speed: <span>85 km/h {53 mph} or more</span></div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">No airflow</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="list">•  When any of the following conditions is met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Refrigerant pressure: <span>1.3 MPa {13 kgf/cm<sup>2</sup>, 189 psi} or less</span>, vehicle speed: <span>45 km/h {28 mph} or less</span></div>
+<div class="list">―  Refrigerant pressure: <span>1.3—1.5 MPa {14—15 kgf/cm<sup>2</sup>, 189—217 psi}</span>, vehicle speed: <span>85 km/h {53 mph} or less</span></div>
+<div class="list">―  Refrigerant pressure: <span>1.5—2.2 MPa {16—22 kgf/cm<sup>2</sup>, 218—319 psi}</span>, vehicle speed: <span>65—85 km/h {41—52 mph}</span></div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Small</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="list">•  When any of the following conditions is met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Refrigerant pressure: <span>1.5—2.2 MPa {16—22 kgf/cm<sup>2</sup>, 218—319 psi}</span>, vehicle speed: <span>65 km/h {40 mph} or less</span></div>
+<div class="list">―  Refrigerant pressure: <span>2.2 MPa {22 kgf/cm<sup>2</sup>, 319 psi} or more</span></div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Large</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id0140q120500006"></a><p class="topic-title"><span class="topic-head"></span>After Cooling Control</p>
+<dl>
+<dd>
+<div class="list">•  After continuous, high-load driving, the cooling fan operates (demand airflow volume: small) for up to <span>9 min</span> under the following conditions to suppress temperature increase inside the engine compartment.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Driving on ascending roads or after continuing to drive under high-load conditions</div>
+<div class="list">―  After continuous, sudden acceleration from standstill and repeated, sudden acceleration</div>
+<div class="list">―  Engine coolant temperature: <span>80 °C {176 °F} or more</span></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q120500007"></a><p class="topic-title"><span class="topic-head"></span>Conditions during collision</p>
+<dl>
+<dd>
+<div class="list">•  If a collision signal from the SAS control module is received, the PCM stops the engine cooling fan to avoid use of battery voltage.</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>SEAT BELT WARNING ALARM</title>
+</head>
+<body><a name="id092200019600"></a><p class="servinfo-title"><span class="servinfo-head"></span>SEAT BELT WARNING ALARM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id092200019600</p><br clear="all"><a name="id09220001960001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The seat belt warning alarm warns the driver that a seat belt is not fastened.</div><br clear="all"><a name="id09220001960002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The instrument cluster controls the seat belt warning alarm based on the following signals.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Signal name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Sending module/part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Communication method</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle speed signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">HS-CAN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driver's side/passenger's side buckle switch signal</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">SAS control module</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Occupancy sensor signal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Rear seat buckle switch signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BCM</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><p><a name="id09220001960003"></a><p class="topic-title"><span class="topic-head"></span>Driver's side/passenger's side seat belt warning alarm sound function</p>
+<dl>
+<dd>
+<div class="list">•  The driver's side/passenger's side seat belt warning alarm has an initial warning and subsequent warning.</div>
+<dl>
+<div class="list-title">Initial warning</div>
+<dd class="list">
+<div class="list">•  When all of the following conditions are met, the alarm sounds.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle speed is <span>approx. 20 km/h {12 mph} or more</span></div>
+<div class="list">―  Driver's side/passenger's side buckle switch on signal (seat belt unfastened) is detected</div>
+<div class="list">―  Occupancy sensor on signal (occupant in passenger seat) is detected (passenger's side seat belt warning alarm only)</div>
+</dd>
+</dl>
+<div class="list">•  The initial warning sounds in the pattern shown in the figure.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003003.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003003</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Subsequent warning</div>
+<dd class="list">
+<div class="list">•  When all of the following conditions are met, the alarm sounds.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle speed is <span>approx. 20 km/h {12 mph} or more</span></div>
+<div class="list">―  Occupancy sensor on signal (occupant in passenger seat) is detected (passenger seat belt warning alarm only)</div>
+<div class="list">―  After initial warning operates, buckle switch off signal (seat belt fastened) to on signal (seat belt unfastened) is detected</div>
+</dd>
+</dl>
+<div class="list">•  The subsequent warning sounds in the pattern shown in the figure.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003004.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003004</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220001960004"></a><p class="topic-title"><span class="topic-head"></span>Rear seat belt warning alarm sound function (with rear seat belt warning alarm)</p>
+<dl>
+<dd>
+<div class="list">•  When all of the following conditions are met, the alarm sounds.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition switch ON (engine off or on)</div>
+<div class="list">―  Rear seat buckle switch off signal (seat belt fastened) to on signal (seat belt unfastened) is detected</div>
+</dd>
+</dl>
+<div class="list">•  The alarm sounds in the pattern shown in the figure.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003005.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003005</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09220001960005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The seat belt warning alarm sounds using the buzzer built into the instrument cluster.</div><br clear="all"><a name="id09220001960006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<p class="list">1.  When the ignition is switched ON (engine off or on), the instrument cluster receives (1) a vehicle speed signal from the PCM, a driver's side/passenger's side buckle switch signal, occupancy sensor signal from the SAS control module, and rear seat buckle switch signal from the BCM via CAN communication.</p>
+<p class="list"></p>
+<p class="list">2.  The instrument cluster turns the transistor on (2) based on each signal.</p>
+<p class="list"></p>
+<p class="list">3.  When the transistor turns on, a ground circuit with the seat belt warning alarm is established and the seat belt warning alarm sounds (3).</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003024.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003024</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09220001960007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  Not applicable</div>
+</body>
+</html>

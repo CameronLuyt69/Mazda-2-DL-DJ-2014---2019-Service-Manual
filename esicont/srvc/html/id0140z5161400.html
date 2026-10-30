@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>EGR CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5161400"></a><p class="servinfo-title"><span class="servinfo-head"></span>EGR CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5161400</p><br clear="all"><a name="id0140z516140001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  To recirculate an optimum amount of exhaust gas to the combustion chamber according to engine operation conditions, the PCM performs duty control of the HP-EGR control valve and LP-EGR control valve to open/closed the valve.</div>
+<div class="list">•  During EGR control, the intake air temperature increases by the recirculated exhaust gas which affects the combustion temperature. To maintain an appropriate intake air temperature, the opening angle of the HP-EGR control valve and LP-EGR control valve is controlled according to the driving environment/engine conditions.</div>
+<div class="list">•  During fast idle increase and DPF regeneration control, the HP-EGR control valve is controlled so that it does not operate to prevent the post-injected fuel from circulating to the intake side.</div><br clear="all"><a name="id0140z516140002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003656.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003656</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z516140003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  Based on the input signal, the PCM calculates the required intake air amount and the EGR amount to achieve the oxygen concentration.</div>
+<div class="list">•  The HP-EGR control valve and LP-EGR control valve is duty-controlled to open/close so that the EGR amount follows the targeted amount.</div>
+<dl>
+<div class="list-title">Target oxygen concentration</div>
+<dd class="list">
+<div class="list">―  The target oxygen concentration is calculated by adding corrections to the basic target oxygen concentration which is calculated based on the fuel injection amount.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Target EGR amount</div>
+<dd class="list">
+<div class="list">―  The target EGR amount is calculated by target intake air oxygen concentration, exhaust gas oxygen concentration, and charging efficiency.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Actual EGR amount</div>
+<dd class="list">
+<div class="list">―  Calculated by the MAF sensor, HP-EGR control valve, and the charging efficiency.</div>
+</dd>
+</dl><br clear="all"><p><a name="id0140z516140004"></a><p class="topic-title"><span class="topic-head"></span>Valve open/close operation overview during vehicle travel</p>
+<dl>
+<dd>
+<div class="list">•  The PCM controls each valve during vehicle travel, while at the specified ambient temperature, complete engine warm-up, and stable driving conditions, as follows.<sup>*</sup></div>
+</dd>
+</dl>
+<div class="deflist">*  :The valve open/close condition varies depending on the engine operation conditions.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003884.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003884</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="list">•  If the ambient and engine coolant temperatures are low, an increase correction in the EGR amount of the HP-EGR system (HP-EGR control valve and intake shutter valve) is made, and a decrease correction in the EGR amount of the LP-EGR system (LP-EGR control valve and exhaust shutter valve) is made to increase the intake manifold intake air temperature (intake air temperature sensor No.2).</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140z516140005"></a><p class="topic-title"><span class="topic-head"></span>Operation during DPF regeneration</p>
+<dl>
+<dd>
+<div class="list">•  The PCM controls the LP-EGR control valve and intake shutter valve duty ratios according to the DPF regeneration conditions.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Intake shutter valve: Duty control</div>
+<div class="list">―  HP-EGR control valve: Maintained at fully closed</div>
+<div class="list">―  LP-EGR control valve: Duty control<sup>*1</sup></div>
+<div class="list">―  Exhaust shutter valve: Maintained at fully open</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="deflist">*1  :Because the exhaust gas temperature is high during compulsory DPF regeneration, the LP-EGR control valve is fully closed to prevent combustion difficulties caused by the exhaust gas being recirculated.</div>
+</p>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC STORE RECORD [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0102q1162200"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC STORE RECORD [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q1162200</p><br clear="all"><a name="id0102q116220001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  When an engine control malfunction is detected, the PCM stores a DTC.<div>For the DTC store record, the DTC recorded by the PCM can be displayed in chronological order using the Mazda Modular Diagnostic System (M-MDS), and it can be used during malfunction diagnosis when several DTCs are recorded.</div>
+</div><br clear="all"><a name="id0102q116220002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function/display</p>
+<div class="list">•  The PCM stores the following information as the DTC storage record.</div>
+<dl>
+<dd class="list">
+<div class="list">―  DTC</div>
+<div class="list">―  DTC type (CMDTC/pending code)</div>
+<div class="list">―  Odometer value</div>
+</dd>
+</dl>
+<div class="list">•  The Mazda Modular Diagnostic System (M-MDS) reads out the DTC storage record and indicates it as shown in the figure below.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003554.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003554</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id0102q116220003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Difference Between DTC Storage Record and Self-test</p>
+<div class="list">•  The DTC storage record and the self-test differ as shown in table 1:</div>
+<p clear="all">
+<p class="table-title">Table 1: Difference between DTC storage record and self-test</p>
+<p>
+<div>×: Displayed</div>
+<div>—: Not displayed</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">DTC storage record</p>
+</th>
+<th id="" align="center">
+<p class="thead">Self-test</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Display of currently recorded DTCs (CMDTC/pending code)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Display of DTC in recorded order</div>
+<div class="tbody">(See <font class="intxref-label"><a href="#id0102q116220004">Display DTC in recorded order</a></font>.)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Display of previously recorded DTC (CMDTC/pending code)</div>
+<div class="tbody">(See <font class="intxref-label"><a href="#id0102q116220005">Display of previously recorded DTC (CMDTC/pending code)</a></font>.)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Display of freeze frame data and snapshot data</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><p><a name="id0102q116220004"></a><p class="topic-title"><span class="topic-head"></span>Display DTC in recorded order</p>
+<dl>
+<dd>
+<div class="list">•  The Mazda Modular Diagnostic System (M-MDS) displays the DTC storage record in chronological order.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0102q116220005"></a><p class="topic-title"><span class="topic-head"></span>Display of previously recorded DTC (CMDTC/pending code)</p>
+<dl>
+<dd>
+<div class="list">•  DTCs for the two-drive cycle type are recorded in two steps. (As indicated in figures (1), (2) below)<div>In addition, if no malfunction is determined in one drive cycle, the PCM clears the pending code in the next drive cycle. (As indicated in figure (3) below)</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzn00004783.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzn00004783</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  As indicated in figure A below, if a DTC is also currently stored in the PCM, the DTC (CMDTC/pending code) is displayed in the self-test and the DTC storage record.</div>
+<div class="list">•  As indicated in figure B below, if only one drive cycle malfunction is detected in the DTC for the two-drive cycle type, the pending code is only displayed in the DTC storage record.</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003555.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003555</div>
+</td>
+</tr>
+</table>
+</p>
+</body>
+</html>

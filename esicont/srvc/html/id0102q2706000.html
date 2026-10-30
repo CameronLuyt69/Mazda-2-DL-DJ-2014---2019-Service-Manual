@@ -1,0 +1,231 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P0610:00 [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0102q2706000"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P0610:00 [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q2706000</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC P0610:00</p>
+</th>
+<th id="" align="left">
+<p class="thead">PCM vehicle configuration error</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  The vehicle model information is not recorded correctly in the PCM for a continuous <span>1 s</span> when the following condition is met.</div>
+<dl>
+<div class="list-title">MONITORING CONDITIONS</div>
+<dd class="list">
+<div class="list">―  Ignition switched ON (engine off or on)</div>
+</dd>
+</dl>
+<div class="list-title">Diagnostic support note</div>
+<div class="list">•  This is a continuous monitor (CCM).</div>
+<div class="list">•  The check engine light does not illuminate.</div>
+<div class="list">•  FREEZE FRAME DATA is not available.</div>
+<div class="list">•  DTC is not stored in the PCM memory.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Inhibits engine-stop by operating the i-stop function.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Configuration procedure has not been completed</div>
+<div class="list">•  PCM connector or terminals malfunction</div>
+<div class="list">•  PCM malfunction</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>SYSTEM WIRING DIAGRAM</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic Procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PERFORM PCM CONFIGURATION</div>
+<div class="list">•  Perform the PCM configuration (using read/write function).<div>(See <font class="extxref-label"><a href="id0140q2816500.html">PCM CONFIGURATION (USING READ/WRITE FUNCTION) [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2801100.html">AFTER REPAIR PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Perform the DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 5.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT PCM CONNECTOR CONDITION</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Disconnect the PCM connector.</div>
+<div class="list">•  Inspect for poor connection (such as damaged/pulled-out pins, corrosion).</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector and/or terminals, then go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform the PCM configuration (using read/write function) again.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q2816500.html">PCM CONFIGURATION (USING READ/WRITE FUNCTION) [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="list">•  If the malfunction recurs, perform the PCM configuration (using as-built data).<div>(See <font class="extxref-label"><a href="id0140q2816600.html">PCM CONFIGURATION (USING AS-BUILT DATA) [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY DTC TROUBLESHOOTING COMPLETED</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2801100.html">AFTER REPAIR PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Perform the DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the PCM, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q2113800.html">PCM REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY AFTER REPAIR PROCEDURE</div>
+<div class="list">•  Perform the “AFTER REPAIR PROCEDURE”.<div>(See <font class="extxref-label"><a href="id0102q2801100.html">AFTER REPAIR PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

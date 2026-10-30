@@ -1,0 +1,217 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ESS (EMERGENCY STOP SIGNAL SYSTEM) OPERATES WHILE NOT UNDER OPERATION CONDITIONS [EMERGENCY STOP SIGNAL SYSTEM (ESS)]</title>
+</head>
+<body><a name="id0903j7014900"></a><p class="servinfo-title"><span class="servinfo-head"></span>ESS (EMERGENCY STOP SIGNAL SYSTEM) OPERATES WHILE NOT UNDER OPERATION CONDITIONS [EMERGENCY STOP SIGNAL SYSTEM (ESS)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0903j7014900</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If there is any vehicle malfunction complaint lodged by a customer, perform FOREWORD [EMERGENCY STOP SIGNAL SYSTEM (ESS)] malfunction diagnosis according to the troubleshooting procedure. (See <font class="extxref-label"><a href="id0903j7004300.html">FOREWORD [EMERGENCY STOP SIGNAL SYSTEM (ESS)]</a></font>.)</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0903j701490001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Description</p>
+<div class="list">•  Hazard warning lights flash while driving.</div>
+<div class="list">•  Hazard warning lights flash even though deceleration is done without decelerating rapidly.</div><br clear="all"><a name="id0903j701490002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Possible Cause</p>
+<div class="list-title">Hazard warning light flash malfunction</div>
+<div class="list">•  Hazard warning switch malfunction (temporary short circuit caused by shock from road surface)</div>
+<dl>
+<dd class="list">
+<div class="list">―  Hazard warning switch malfunction</div>
+<div class="list">―  Short to ground in wiring harness between hazard warning switch terminal C and start stop unit terminal 1G</div>
+</dd>
+</dl>
+<div class="list-title">Sudden deceleration wheel speed is detected</div>
+<div class="list">•  Grip level of tires is low</div>
+<dl>
+<dd class="list">
+<div class="list">―  Driving on a low-traction surface</div>
+<div class="list">―  Tire wear (hydroplaning)</div>
+</dd>
+</dl>
+<div class="list">•  Start stop unit malfunction</div>
+<div class="list">•  BCM malfunction</div><br clear="all"><a name="id0903j701490003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00011353.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00011353</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0903j701490004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Diagnostic Procedure</p>
+<div class="list">•  *When performing an asterisked(*) troubleshooting inspection, first verify the damage and connection status of the connectors and terminals, then perform the inspection while shaking the wiring harness to discover whether poor contact points are the cause of an intermittent malfunction. If there is a malfunction in the connectors or terminals, securely connect, repair, or perform replacement.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Inspection</p>
+</th>
+<th id="" align="center">
+<p class="thead">Action</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1<sup>*</sup></div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE IF MALFUNCTION CAUSED BY HAZARD WARNING SWITCH SIGNAL ERROR</div>
+<div class="list">•  Display the start stop unit PID HAZARD_SW item using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902p6025400.html">PID/DATA MONITOR INSPECTION [START STOP UNIT]</a></font>.)</div>
+</div>
+<div class="list">•  Verify the PID/data monitor display while operating the hazard warning switch.</div>
+<div class="list">•  Does the PID/data monitor display switch?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 4.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT HAZARD WARNING SWITCH FOR MALFUNCTION</div>
+<div class="list">•  Remove the hazard warning switch.<div>(See <font class="extxref-label"><a href="id091800803000.html">HAZARD WARNING SWITCH REMOVAL/INSTALLATION</a></font>.)</div>
+</div>
+<div class="list">•  Inspect the hazard warning switch.<div>(See <font class="extxref-label"><a href="id091800803100.html">HAZARD WARNING SWITCH INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is the hazard warning switch normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the hazard warning switch.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091800803000.html">HAZARD WARNING SWITCH REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3<sup>*</sup></div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND IN WIRING HARNESS BETWEEN HAZARD WARNING SWITCH AND START STOP UNIT</div>
+<div class="list">•  Inspect for continuity between hazard warning switch terminal C and body ground.</div>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refer to the wiring diagram and verify whether or not there is a common connector between hazard warning switch terminal C and body ground.</div>
+<div class="list-title">If there is a common connector:</div>
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for an open circuit.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+<div class="list-title">If there is no common connector:</div>
+<div class="list">•  Repair or replace the wiring harness which has an open circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the start stop unit.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091400110300.html">START STOP UNIT REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4<sup></sup><sup>*</sup></div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT BCM FOR MALFUNCTION</div>
+<div class="list">•  Display the BCM PID HAZARD_SW item using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902f5996400.html">PID/DATA MONITOR INSPECTION [BCM]</a></font>.)</div>
+</div>
+<div class="list">•  Verify the PID/data monitor while operating the hazard warning switch.</div>
+<div class="list">•  Does the PID/data monitor display switch?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the BCM.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id094000003800.html">BODY CONTROL MODULE (BCM) REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5<sup></sup></div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT TIRES FOR MALFUNCTION</div>
+<div class="list">•  Inspect the tires for the following:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Tire air pressure (are all four tires at recommended pressure?)</div>
+<div class="list">―  Tire wear condition (is tire wear uniform on all four tires, or is it different?)</div>
+<div class="list">―  Tire size</div>
+</dd>
+</dl>
+<div class="list">•  Are the tires normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Phenomenon occurring due to effect of road surface can be considered. (Emergency Signal System (ESS) normal)</div>
+<div class="tbody">If the malfunction recurs, replace the BCM.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id094000003800.html">BODY CONTROL MODULE (BCM) REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Adjust the malfunctioning tire or replace the tire.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

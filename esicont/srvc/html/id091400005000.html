@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DOOR LOCK SYSTEM OPERATION RECORD</title>
+</head>
+<body><a name="id091400005000"></a><p class="servinfo-title"><span class="servinfo-head"></span>DOOR LOCK SYSTEM OPERATION RECORD</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091400005000</p><br clear="all"><a name="id09140000500001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  Stores the record of the user's operation and the door lock system operation corresponding to the user's operation.</div><br clear="all"><a name="id09140000500002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The door lock system operation record is stored by the BCM and displayed using the Mazda Modular Diagnostic System (M-MDS).</div>
+<div class="list">•  The BCM stores the following when the front/rear door lock actuator operates.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Time and date</div>
+<div class="list">―  Part or function which output unlock signal</div>
+<div class="list">―  Part or function which output lock signal</div>
+<div class="list">―  Operated actuator</div>
+<div class="list">―  Vehicle condition</div>
+</dd>
+</dl><br clear="all"><a name="id09140000500003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  Based on the stored record, the BCM displays the following operation record on the M-MDS screen.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001672.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001672</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id09140000500004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  Based on the lock/unlock signal, the BCM sends an operation signal to the front/rear door lock actuator motor, and stores the operation record at the same time.</div>
+<div class="list">•  Because it takes time from when the front/rear door lock actuator motor operates until the lock/unlock is switched, the BCM may store the operation record before the lock/unlock switching is completed.</div><br clear="all"><a name="id09140000500005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  Not applicable</div>
+</body>
+</html>

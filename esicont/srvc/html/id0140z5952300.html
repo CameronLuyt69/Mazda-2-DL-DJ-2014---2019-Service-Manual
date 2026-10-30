@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>IDLE SPEED CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5952300"></a><p class="servinfo-title"><span class="servinfo-head"></span>IDLE SPEED CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5952300</p><br clear="all"><a name="id0140z595230001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The PCM controls the fuel injection amount so that the target idle speed according to the engine operation conditions is obtained.</div><br clear="all"><a name="id0140z595230002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003737.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003737</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z595230003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The fuel injection amount is controlled so that the actual idle speed is close to the target idle speed.</div>
+<div class="list">•  The target idle speed is set under various conditions and consists mainly of the following control items.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Control description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Target idle speed</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">Engine speed control during normal operation</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The actual idle speed conforms to the target idle speed during normal idling.</div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>775 rpm</span> (ATX)/<span>800 rpm</span> (MTX)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Engine speed control during warm-up</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Approaches the target engine speed during warm-up based on the input signal from ECT sensor and IAT sensor.</div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>775—1,500 rpm</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Engine speed control during fuel injection amount learning</div>
+</td>
+<td id="" align="left">
+<div class="tbody">During fuel injection amount learning, the engine speed is controlled so that it matches the target engine speed.</div>
+</td>
+<td id="" align="center">
+<div class="list-title">During auto-learning control</div>
+<div class="list"><span>800 rpm</span></div>
+<div class="list-title">During manual learning control</div>
+<div class="list"><span>800—1,500 rpm</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DPF regeneration control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Controls the engine speed during DPF regeneration control so that it matches the target engine speed.</div>
+</td>
+<td id="" align="center">
+<div class="list-title">Auto DPF regeneration control</div>
+<div class="list"><span>800—925 rpm</span></div>
+<div class="list-title">Compulsory DPF regeneration control</div>
+<div class="list"><span>1,750 rpm</span><sup>*</sup></div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*  :If there is incorrect combustion of soot during diesel particulate filter regeneration, the exhaust gas temperature increases which may cause damage to the diesel particulate filter. In this case, post injection is stopped and the engine speed increases to <span>2,500 rpm</span>. Due to this, low temperature exhaust gas is sent to the oxidation catalytic converter at high speed and the diesel particulate filter is cooled to prevent damage.</div>
+<div class="list">•  The A/C operation information from the A/C pressure sensor is input to prevent the idle speed from decreasing by A/C load. The fuel injection amount is corrected to maintain idle speed when the A/C load is applied.<div>In addition, the fuel injection amount is corrected to prevent a decrease in speed when the electrical load is applied.</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,717 @@
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+svg {
+	-webkit-backface-visibility: initial !important;
+	-webkit-transform-origin: 50% 50%;
+}
+
+#display_a_svg, #display_b_svg, #display_c_svg {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+input, select {
+	margin: 0;
+	padding: 0;
+	
+	-webkit-appearance: none;
+	border-radius: 0;
+	border-style: none;
+	
+	background-color: transparent;
+}
+
+input:focus {
+	outline: 0;
+}
+
+/************* split pane start **************/
+#top-component {
+	height: 70px;
+	min-height: 70px;
+	max-height: 70px;
+}
+
+#horizontal-divider {
+	top: 60px;
+	height: 5px;
+}
+
+#bottom-component {
+	top: 70px;
+	/*margin-top: 5px;*/
+}
+
+#left-component {
+	//width: 240px;
+	left: 0px;
+	width: 30px;
+	min-width: 30em;
+}
+
+#vertical-divider {
+	//left: 240px;
+	left: -5px;
+	width: 1px;
+}
+
+#right-component {
+	min-width: 15em;
+	//left: 240px;
+	left: 30px;
+	//margin-left: 5px;
+}
+
+#inner-left-component {
+	min-width: 10em;
+	//right: 10em;
+	right: 30%;
+	margin-right: 5px;
+}
+
+#inner-my-divider {
+	//right: 10em;
+	right: 30%;
+	width: 5px;
+}
+
+#inner-right-component {
+	//width: 10em;
+	width: 30%;
+}
+
+#top-component2 {
+	bottom: 50%;
+	margin-bottom: 5px;
+}
+
+#horizontal-divider2 {
+	bottom: 50%;
+}
+
+#bottom-component2 {
+	height: 50%;
+}
+
+/************* split pane end **************/
+
+/************* Link dialog start **************/
+.lock {
+	overflow:hidden;
+}
+
+.modal-content {
+	overflow:auto;
+	position:relative;
+	display:none;
+	width:50%;
+	max-height:50%;
+	margin:30px;
+	padding:10px 10px;
+	background: #34495e;
+	border-radius: 3px;
+	color: #1a0dab;
+}
+
+.modal-content div {  
+	background: #ecf0f1;
+	padding: 10px 80px;
+	margin: 1px;
+	cursor: pointer;
+
+}
+
+.modal-content div:hover {  
+	background: #7c9ae2;
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.modal-overlay {
+	z-index:1;
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:120%;
+	background-color:rgba(0,0,0,0.75);
+}
+
+.modal-wrap {
+	z-index:2;
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	overflow:auto;
+}
+
+
+.modal-open {
+	color:#00f;
+	text-decoration:underline;
+}
+
+.modal-open:hover {
+	cursor:pointer;
+	color:#f00;
+}
+
+.modal-close {
+	color:#00f;
+	text-decoration:underline;
+}
+
+.modal-close:hover {
+	cursor:pointer;
+	color:#f00;
+}
+
+/************* Link dialog end **************/
+
+/************* section title start **************/
+
+#sectionTitle {  
+	position: absolute;
+	border-radius: 3px;
+	font-family : Arial;
+	font-size: 16px;
+	top: 1px;
+     	left: 0;
+}
+
+.title{
+	background-color:#FFFFC8;
+	border: 1px solid #000000;
+	margin : 3px ;
+	font-size: 80%;
+	font-weight: bold;
+}
+
+/************* Link dialog end **************/
+
+/************* Header start **************/
+#header-main {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+#header-sub {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.header-logo-left{
+	position:absolute;
+	top:2px;
+	left:0px;
+}
+
+.header-button-leftP {
+	position:absolute;
+	top:-5px;
+	left:100px;
+}
+
+.header-button-leftN {
+	position:absolute;
+	top:-5px;
+	left:150px;
+}
+
+.header-button-leftP.deactive {
+	cursor: not-allowed;
+	opacity: 0.2;
+	top:-5px;
+}
+
+.header-button-leftN.deactive {
+	cursor: not-allowed;
+	opacity: 0.2;
+	top:-5px;
+}
+
+.header-button-right {
+	float: right;
+	margin: -5px 0px 0px -10px;
+}
+
+.header-button-right.currentFlow.deactive {
+	cursor: not-allowed;
+}
+
+.header-button-right.terminal-voltage.deactive {
+	cursor: not-allowed;
+}
+
+hr.stripe-top {
+	clear:both;
+	height: 10px;
+	background: linear-gradient(65deg, transparent 30%, #404040 30%, #404040 70%, transparent 70%);
+	background-size: 10px 10px;
+	border: none;
+	margin-top : 2px;
+	margin-bottom : 0px;	
+}
+
+
+/************* Header end **************/
+
+/************* multiSelect start **************/
+#btn_MultiSelect {
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	/*
+	border: 1px solid #888888;
+	padding: 2pt;
+	background-color: #ffffff;
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+	
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px;
+	*/
+	 
+	border:none;
+	background-color: transparent;
+	filter:alpha(opacity=56);
+	-moz-opacity: 0.56;
+	-khtml-opacity: 0.56;
+	opacity: 0.56;
+	
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px;
+}
+
+/*
+#multiSelectBody.active {
+    background-color: #FF1744;
+}
+*/
+
+/************* multiSelect end **************/
+
+/************* 回路図プリントボタン start **************/
+#display_a_btn_Print {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	 
+	border:none;
+	padding: 2pt;
+	background-color: transparent;
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+	
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px;
+}
+/************* 回路図プリントボタン end **************/
+
+/************* 回路図矢印ボタン start **************/
+.connectorArrowA {
+	position: absolute;
+	top: -25px;
+	right: -15px;
+	 
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+}
+
+.header-button-leftP2 {
+	position:absolute;
+	top:20px;
+	right:70px;
+}
+
+.header-button-leftN2 {
+	position:absolute;
+	top:20px;
+	right:20px;
+}
+
+/************* 回路図矢印ボタン end **************/
+
+/************* AreaChange start **************/
+.areaChangeBody {
+	position: absolute;
+	bottom: 0px;
+	right: 10px;
+	 
+	filter:alpha(opacity=56);
+	-moz-opacity: 0.56;
+	-khtml-opacity: 0.56;
+	opacity: 0.56;
+}
+
+/************* AreaChange end **************/
+
+/************* ConnectorChange start **************/
+#btn_connectorChange {
+	position: absolute;
+	top: 0px;
+	left: 65px;
+	
+/*
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+*/
+	border:none;
+	background-color: transparent;
+	filter:alpha(opacity=56);
+	-moz-opacity: 0.56;
+	-khtml-opacity: 0.56;
+	opacity: 0.56;
+	
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px;
+}
+
+/************* ConnectorChange end **************/
+
+/************* 使用している回路へのリンクボタン start **************/
+#btn_LinkCircuitUse {
+	position: absolute;
+	top: 0px;
+	right: 65px;
+	
+/*
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+*/
+
+	border:none;
+	padding: 0pt;
+	background-color: transparent;
+	filter:alpha(opacity=56);
+	-moz-opacity: 0.56;
+	-khtml-opacity: 0.56;
+	opacity: 0.56;
+}
+
+/************* 使用している回路へのリンクボタン end **************/
+
+/************* コネクタPRINT start **************/
+.connectorPrintA {
+	position: absolute;
+	top: -25px;
+	right: -15px;
+	 
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+}
+
+.connectorPrintB {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	 
+	filter:alpha(opacity=56);
+	-moz-opacity: 0.56;
+	-khtml-opacity: 0.56;
+	opacity: 0.56;
+}
+
+.connectorPrintC {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	 
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+}
+
+/************* コネクタPRINT end **************/
+
+/************* circuitList start **************/
+#circuitListBody {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	width: 70%;
+	height: 36px;
+	display: table;
+	
+	border: solid 1px #000;
+	border-radius: 3px;
+	
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+	
+	visibility: hidden;
+}
+
+#circuitListBodyLeft {
+	height: 100%;
+	width: auto;
+	display: table-cell;
+}
+
+#circuitListBodyRight {
+	height: 100%;
+	width: 68px;
+	display: table-cell;
+}
+
+#btn_JumpToCircuit {
+	height: 100%;
+	width: 100%;
+	
+	border: 0;
+	color: #fff;
+	background: #000;
+	
+	cursor: pointer;
+}
+
+#selectboxCircuitList {
+	border: 0;
+	background: #fff;
+	
+	height: 100%;
+	width: 100%;
+}
+
+
+/************* circuitList end **************/
+
+/************* ロケーションPRINT start **************/
+#display_c_btn_Print {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	 
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+}
+
+/************* ロケーションPRINT end **************/
+
+/************* Slide Menu start **************/
+#slideMenu {
+	position: absolute;
+    	top: 0px;
+	left: -240px;
+	width: 240px;
+	height: 100%;
+	background:#FFFFC8
+}
+
+#slideMenuTab {
+	padding: 5px 0px;
+	position: absolute;
+	top: -5px;
+	left: 242px;
+	width: 27px;
+	height: 216px;
+}
+
+#slideMenuTabMark {
+}
+
+#slideMenuContents {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#slideMenuContents div {
+	padding: 5px 20px;
+	//border-bottom: 1px solid #9bb1e9;
+	border-bottom: 1px solid #e23718;
+	
+	cursor: pointer;
+}
+
+#slideMenuContents div:hover {
+	background: #5b7fdb;
+	color: #ffffff;
+}
+
+p { 
+	line-height: 1.1;
+	margin: 0.1em; 
+}
+
+/************* Slide Menu end **************/
+
+/************* SVG start **************/
+text {
+	pointer-events: none;
+}
+
+
+#display_a_svg .circuitConnector {
+	cursor: pointer;
+	-webkit-transition: all, 0.3s;
+	-moz-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+	fill: #fff;
+	fill-opacity: 0.0;
+}
+
+#display_a_svg .circuitConnectorGroup.active .circuitConnector {
+	fill: #ff4081;
+	fill-opacity: 0.5;
+
+}
+
+#display_a_svg .circuitConnector {
+	fill: #f50057;
+	fill-opacity: 0.1;
+	opacity: 1;
+}
+
+#display_a_svg g[id*="CR-G"] .circuitConnector {
+	fill: #f0d4d4;
+	fill-opacity: 1.0;
+	
+}
+
+#display_a_svg g[id*="CR-G"].circuitConnectorGroup.active .circuitConnector {
+	fill: #F775a1;
+	fill-opacity: 1.0;
+}
+
+
+#display_a_svg .circuitHilightCables {
+	opacity: 0.7;
+	stroke: #ff0;
+	stroke-opacity: 1.0;
+	stroke-width: 13;
+}
+
+#display_a_svg .circuitCircuitText {
+
+	fill: #000000;
+	fill-opacity: 1;
+}
+
+#display_a_svg .circuitCircuit {
+	cursor: pointer;
+	-webkit-transition: all, 0.3s;
+	-moz-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+	fill: #fff;
+	fill-opacity: 0.0;
+}
+
+/*#display_a_svg .circuitCircuitGroup:hover > .circuitCircuit {*/
+#display_a_svg .circuitCircuit {
+
+	fill: #91a6f9;
+	fill-opacity: 0.4;
+	opacity : 1;
+}
+
+
+#display_b_svg .connectorList {
+	cursor: pointer;
+}
+
+.svgBackground {
+	fill: rgba(0, 0, 0, 0);
+}
+
+#display_b_svg .active .svgBackground {
+	fill: rgba(227, 242, 253, 1.0);
+}
+
+#display_b_svg .connectorList:hover .svgBackground {
+	fill: rgba(255, 237, 179, 1.0);
+}
+
+#display_c_svg .locationCircleGroupNon {
+	fill-opacity: 0.0;
+	stroke-opacity: 0.0;
+}
+
+#display_c_svg .locationCircleGroup {
+	fill-opacity: 0.2;
+	stroke-opacity: 0.2;
+}
+
+#display_c_svg .locationCircleGroup.active {
+	fill-opacity: 0.8;
+	stroke-opacity: 0.8;
+}
+
+#display_c_svg .locationPoint {
+	opacity: 1.0;
+	cursor: pointer;
+	-webkit-transition: all, 0.3s;
+	-moz-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+	fill: #f00;
+	stroke: #f00;
+	stroke-width: 0;
+}
+
+#display_c_svg .locationPoint:hover {
+	fill-opacity: 0.8;
+	stroke-width: 5.0;
+	stroke-opacity: 0.8;
+}
+
+#display_c_svg g.active .locationPoint {
+	fill: #f00;
+	stroke: #f00;
+}
+
+#display_c_svg g.active .label {
+	stroke: #f00;
+	visibility: visible;
+}
+
+#display_c_svg g.active .labelline {
+	stroke: #f00;
+	visibility: hidden;
+	//visibility: visible;
+}
+
+#display_c_svg g.active .labeltext {
+	visibility: hidden;
+	//visibility: visible;
+}
+
+#display_c_svg g.active .labeltextRect {
+	visibility: hidden;
+	//visibility: visible;
+
+}
+
+/************* SVG end **************/
+
+

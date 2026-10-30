@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ENGINE OIL CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5004200"></a><p class="servinfo-title"><span class="servinfo-head"></span>ENGINE OIL CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5004200</p><br clear="all"><a name="id0140z500420001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The PCM reduces the oil pump load applied to the engine by controlling the appropriate engine hydraulic pressure according to the engine operation conditions.</div>
+<div class="list">•  The engine hydraulic pressure in two steps. When hydraulic pressure is not needed, the oil pump discharge amount is reduced by the operation of the engine oil solenoid valve.</div><br clear="all"><a name="id0140z500420002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003594.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003594</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z500420003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The PCM switches the engine oil pressure which lubricates the engine in two steps by driving the engine oil solenoid valve according to the engine operation conditions.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5uun00001149.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5uun00001149</div>
+</td>
+</tr>
+</table><br clear="all"><p><a name="id0140z500420004"></a><p class="topic-title"><span class="topic-head"></span>Output duty value determination</p>
+<dl>
+<dd>
+<div class="list">•  The PCM controls the operational voltage energizing the engine oil solenoid according to the duty signal. After opening the engine oil solenoid valve at the output duty ratio of 100%, load applied to the parts is reduced by lowering the duty value to the output duty value at which the open valve condition can be maintained. The output duty value for maintaining the opening value changes according to the battery voltage.</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5uun00001150.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5uun00001150</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0140z500420005"></a><p class="topic-title"><span class="topic-head"></span>Engine oil solenoid valve operation conditions</p>
+<dl>
+<dd>
+<div class="list">•  The PCM operates the engine oil solenoid valve when all of the following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine speed: Less than 2,100 rpm</div>
+<div class="list">―  Engine oil temperature: Less than 100 °C {212 °F}</div>
+<div class="list">―  Charging efficiency: Less than specification (varies according to engine speed.)</div>
+</dd>
+</dl>
+<div class="list">•  For details on the engine oil solenoid valve, refer to the [ENGINE OIL SOLENOID VALVE]. (See <font class="extxref-label"><a href="id0111q2002700.html">ENGINE OIL SOLENOID VALVE [SKYACTIV-D 1.5]</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140z500420006"></a><p class="topic-title"><span class="topic-head"></span>Hydraulic pressure switching mechanism</p>
+<dl>
+<dd>
+<div class="list">•  When the engine oil solenoid valve operates, the hydraulic circuit changes according to the following. The engine oil supply amount is controlled by changing the hydraulic circuit.</div>
+<dl>
+<div class="list-title">Engine oil flow when setting low oil pressure (engine oil solenoid valve ON)</div>
+<dd class="list">
+<div class="list">a.  When the engine oil solenoid valve is turned ON, oil pressure is also applied to the upper part of the pilot valve. Because the oil pressure applied to the upper and lower parts of the pilot valve is almost same, the pilot valve is pressed down by the spring force.</div>
+<div class="list">b.  Oil pressure is applied to the upper part of the relief valve.</div>
+<div class="list">c.  When oil pressure exceeds the relief valve opening pressure, the relief valve is pressed down and engine oil flows.</div>
+<div class="list">d.  When oil pressure is less than the relief valve opening pressure, the relief valve closes. As a result, engine oil flowing stops (oil pressure increase).</div>
+<div class="list">e.  Oil pressure is adjusted by repeating Step (c) to (d).<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003852.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003852</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Engine oil flow when setting high oil pressure (engine oil solenoid valve OFF)</div>
+<dd class="list">
+<div class="list">a.  When oil pressure exceeds the pilot valve opening pressure, the pilot valve is pressed up and oil pressure is applied to the upper part of the relief valve.</div>
+<div class="list">b.  Because the relief valve opening pressure is exceeded by applying oil pressure to the upper part of the relief valve, the relief valve is pressed down and engine oil flows (oil pressure decrease).</div>
+<div class="list">c.  When oil pressure is less than the pilot valve opening pressure, the pilot valve closes. As a result, the relief valve closes and engine oil flow stops (oil pressure increase).</div>
+<div class="list">d.  Oil pressure is adjusted by repeating Step (c) to (d).<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003853.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003853</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</body>
+</html>

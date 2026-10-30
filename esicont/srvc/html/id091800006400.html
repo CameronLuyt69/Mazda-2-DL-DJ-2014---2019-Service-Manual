@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>LEAVING HOME LIGHT SYSTEM</title>
+</head>
+<body><a name="id091800006400"></a><p class="servinfo-title"><span class="servinfo-head"></span>LEAVING HOME LIGHT SYSTEM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091800006400</p><br clear="all"><a name="id09180000640001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  When the door unlock operation is performed using the remote transmitter with the ignition switched off and the light switch in the HEAD or TNS position<sup>*1</sup>, the leaving home light system turns on the headlights LO and TNS for a specified time.</div>
+<div class="list">•  When approaching the vehicle in a parking lot where the area surrounding the vehicle is dark, the system is used for assuring visibility at the front of the vehicle by turning the headlights LO and TNS on.</div>
+<div class="deflist">*1  :For the headlight LO and TNS illumination conditions with the ignition switched off, refer to the [EXTERIOR LIGHTING SYSTEM]. (See <font class="extxref-label"><a href="id091800400500.html">EXTERIOR LIGHTING SYSTEM</a></font>.)</div><br clear="all"><a name="id09180000640002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p><br clear="all"><p><a name="id09180000640003"></a><p class="topic-title"><span class="topic-head"></span>Leaving home light off timer function</p>
+<dl>
+<dd>
+<div class="list">•  When the BCM receives a door unlock request signal from the remote transmitter with the light switch in the TNS or HEAD position and the ignition switched off, it turns the headlights LO and the TNS on and operates the leaving home light off timer.</div>
+<div class="list">•  When the time on the leaving home light off timer (<span>30 s</span>) has elapsed, the BCM turns the headlights LO and the TNS off.<sup>*2</sup></div>
+<div class="list">•  When the BCM receives a door lock request signal from the remote transmitter during leaving home light off timer operation, it turns the headlights LO and the TNS off.<sup>*2</sup></div>
+</dd>
+</dl>
+<div class="deflist">*2  :If the light switch is in the TNS position, the TNS is not turned off.</div>
+</p><br clear="all"><p><a name="id09180000640004"></a><p class="topic-title"><span class="topic-head"></span>Personalization features</p>
+<dl>
+<dd>
+<div class="list">•  The leaving home light system can be switched between operable and inoperable (initial setting is On<sup>*3</sup>/Off<sup>*4</sup>). For details on the personalization features, refer to the [LIGHTING SYSTEM PERSONALIZATION]. (See <font class="extxref-label"><a href="id091800013300.html">LIGHTING SYSTEM PERSONALIZATION</a></font>.)</div>
+</dd>
+</dl>
+<div class="deflist">*3  :European (L.H.D. U.K.) specs.</div>
+<div class="deflist">*4  :Except European (L.H.D. U.K.) specs.</div>
+</p><br clear="all"><a name="id09180000640005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003869.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003869</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180000640006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003778.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003778</div>
+</td>
+</tr>
+</table>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003779.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003779</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180000640007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Timing chart</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003780.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003780</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180000640008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The leaving home light function operates when all of the following conditions are met.</div>
+<dl>
+<div class="list-title">Leaving home light operation conditions</div>
+<dd class="list">
+<div class="list">―  IG1 relay is off (ignition is switched off)</div>
+<div class="list">―  Light switch at TNS or HEAD position</div>
+<div class="list">―  Door unlock request signal is received by remote transmitter</div>
+</dd>
+</dl>
+<div class="list-title">Light switch at HEAD position</div>
+<div class="list">1.  When the unlock button on the remote transmitter is pressed, the start stop unit detects (1) a door unlock request signal. For details on the door lock/unlock operation using the remote transmitter, refer to the [KEYLESS ENTRY SYSTEM]/[ADVANCED KEYLESS ENTRY SYSTEM]. (See <font class="extxref-label"><a href="id091400109400.html">KEYLESS ENTRY SYSTEM</a></font>.) (See <font class="extxref-label"><a href="id091400107400.html">ADVANCED KEYLESS ENTRY SYSTEM</a></font>.))</div>
+<div class="list">2.  The start stop unit sends (2) the door unlock request signal and the light switch signal to the BCM via CAN communication.</div>
+<div class="list">3.  When all of the operation conditions are met, the BCM sends (3) the TNS and headlight LO on request signals to the electrical supply unit (ESU) and operates the leaving home light off timer.</div>
+<div class="list">4.  When the electrical supply unit (ESU) receives the TNS and headlight LO on request signals, it turns the TNS and headlights LO on (4).</div>
+<div class="list">5.  After the time on the leaving home light off timer has elapsed, the BCM stops the TNS and headlight LO on request signals.</div>
+<div class="list">6.  When the electrical supply unit (ESU) no longer receives the TNS and headlight LO on request signals, it turns the TNS and headlights LO off.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003781.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003781</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list-title">Light switch at TNS position</div>
+<div class="list">1.  When the unlock button on the remote transmitter is pressed, the start stop unit detects (1) a door unlock request signal. For details on the door lock/unlock operation using the remote transmitter, refer to the [KEYLESS ENTRY SYSTEM]/[ADVANCED KEYLESS ENTRY SYSTEM]. (See <font class="extxref-label"><a href="id091400109400.html">KEYLESS ENTRY SYSTEM</a></font>.) (See <font class="extxref-label"><a href="id091400107400.html">ADVANCED KEYLESS ENTRY SYSTEM</a></font>.)</div>
+<div class="list">2.  The start stop unit sends (2) the door unlock request signal and the light switch signal to the BCM via CAN communication. </div>
+<div class="list">3.  When all of the operation conditions are met, the BCM sends (3) a headlight LO on request signal to the electrical supply unit (ESU) and operates the leaving home light off timer.</div>
+<div class="list">4.  When the electrical supply unit (ESU) receives the headlight LO on request signal, it turns the headlights LO on (4).</div>
+<div class="list">5.  After the time on the leaving home light off timer has elapsed, the BCM stops the headlight LO on request signal.</div>
+<div class="list">6.  When the electrical supply unit (ESU) no longer receives the headlight LO on request signal, it turns the headlights LO off.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003782.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003782</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

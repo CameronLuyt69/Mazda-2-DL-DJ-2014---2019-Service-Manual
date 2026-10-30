@@ -1,0 +1,360 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>POWER DOOR LOCK SYSTEM</title>
+</head>
+<body><a name="id091400108200"></a><p class="servinfo-title"><span class="servinfo-head"></span>POWER DOOR LOCK SYSTEM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091400108200</p><br clear="all"><a name="id09140010820001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  All doors lock/unlock when locking/unlocking is performed using the driver's door lock knob or the front door key cylinder.</div><br clear="all"><a name="id09140010820002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p><br clear="all"><p><a name="id09140010820003"></a><p class="topic-title"><span class="topic-head"></span>Door lock-link switch interlock function</p>
+<dl>
+<dd>
+<div class="list">•  All doors lock/unlock when locking/unlocking is performed using the driver's door lock knob with all doors closed.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140010820004"></a><p class="topic-title"><span class="topic-head"></span>Door key interlock function</p>
+<dl>
+<dd>
+<div class="list">•  When the front door key cylinder is operated to lock/unlock, all the doors lock/unlock.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140010820005"></a><p class="topic-title"><span class="topic-head"></span>Double locking function (With double locking)</p>
+<dl>
+<dd>
+<div class="list">•  When the BCM receives the door lock signal two times continuously with all doors closed, it inhibits the lock/unlock operation using the door lock knob.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140010820006"></a><p class="topic-title"><span class="topic-head"></span>Collision detection unlock function (With collision detection unlock function)</p>
+<dl>
+<dd>
+<div class="list">•  All doors unlock if the vehicle has a collision.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140010820007"></a><p class="topic-title"><span class="topic-head"></span>Auto door lock function (With auto door lock function)</p>
+<dl>
+<dd>
+<div class="list">•  Doors lock/unlock according to the selector lever position (ATX), vehicle speed, or ignition switch position. The auto door lock function settings can be changed using the personalization feature. For details on the personalization setting, refer to [SECURITY AND LOCKS PERSONALIZATION]. (See <font class="extxref-label"><a href="id091400111100.html">SECURITY AND LOCKS PERSONALIZATION</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09140010820008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001888.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001888</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09140010820009"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<p class="figure-title">Without double locking</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001889.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001889</div>
+</td>
+</tr>
+</table>
+<p class="figure-title">With double locking</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002481.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002481</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09140010820010"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id09140010820011"></a><p class="topic-title"><span class="topic-head"></span>Operation Conditions</p>
+<dl>
+<dd>
+<div class="list">•  When the door lock and link switch lock/unlock signal (operation of front door key cylinder or driver's door lock knob) is detected while all the door latch switches and liftgate latch switch off signals (all doors and liftgate closed) are detected, the power door lock system operates.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140010820012"></a><p class="topic-title"><span class="topic-head"></span>Lock operation using front door key cylinder</p>
+<p class="list">1.  When the key is inserted in the front door key cylinder and a lock operation is performed, the front door key cylinder switch switches to the lock side.</p>
+<p class="list"></p>
+<p class="list">2.  When the BCM detects a front door key cylinder switch lock signal (1), it sends a front door key cylinder switch lock signal (2) to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the electrical supply unit (ESU) receives the front door key cylinder switch lock signal, it turns the transistor on (3) and the door lock relay on (4).</p>
+<p class="list"></p>
+<p class="list">4.  When the door lock relay turns on, the front and rear door lock actuator motors perform a lock operation (5), and the front and rear doors lock.</p>
+<p class="list">
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001891.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001891</div>
+</td>
+</tr>
+</table>
+</p>
+</p><br clear="all"><p><a name="id09140010820013"></a><p class="topic-title"><span class="topic-head"></span>Lock operation using driver's door lock knob</p>
+<p class="list">1.  When the driver's door lock knob is locked, the door lock-link switch switches to the lock side.</p>
+<p class="list"></p>
+<p class="list">2.  When the BCM detects the door lock link switch lock signal (1), it sends the door lock link switch lock signal (2) to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the electrical supply unit (ESU) receives the door lock link switch lock signal, it turns the transistor on (3) and the door lock relay on (4).</p>
+<p class="list"></p>
+<p class="list">4.  When the door lock relay turns on, the front and rear door lock actuator motors perform a lock operation (5), and the front and rear doors lock.</p>
+<p class="list">
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001892.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001892</div>
+</td>
+</tr>
+</table>
+</p>
+</p><br clear="all"><p><a name="id09140010820014"></a><p class="topic-title"><span class="topic-head"></span>Lock operation using door lock switch</p>
+<p class="list">1.  When the door lock switch is operated to lock, the door lock switch switches to the lock side.</p>
+<p class="list"></p>
+<p class="list">2.  When the BCM detects the door lock switch lock signal (1), it sends the door lock switch lock signal (2) to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the electrical supply unit (ESU) receives the door lock switch lock signal, it turns the transistor on (3) and the door lock relay on (4).</p>
+<p class="list"></p>
+<p class="list">4.  When the door lock relay turns on, the front and rear door lock actuator motors perform a lock operation (5), and the front and rear doors lock.</p>
+<p class="list">
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001893.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001893</div>
+</td>
+</tr>
+</table>
+</p>
+</p><br clear="all"><p><a name="id09140010820015"></a><p class="topic-title"><span class="topic-head"></span>Unlock operation using front door key cylinder</p>
+<p class="list">1.  When the key is inserted in the front door key cylinder and an unlock operation is performed, the front door key cylinder switch switches to the unlock side.</p>
+<p class="list"></p>
+<p class="list">2.  When the BCM detects the front door key cylinder switch unlock signal (1), it sends the front door key cylinder switch unlock signal (2) to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the electrical supply unit (ESU) receives the front door key cylinder switch unlock signal, it turns the transistor on (3) and the door unlock relay on (4).</p>
+<p class="list"></p>
+<p class="list">4.  When the door unlock relay turns on, the front and rear door lock actuator motors perform an unlock operation (5), and the front and rear doors unlock.</p>
+<p class="list">
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001894.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001894</div>
+</td>
+</tr>
+</table>
+</p>
+</p><br clear="all"><p><a name="id09140010820016"></a><p class="topic-title"><span class="topic-head"></span>Unlock operation using the driver's door lock knob</p>
+<p class="list">1.  When the driver's door lock knob is unlocked, the door lock-link switch switches to the unlock side.</p>
+<p class="list"></p>
+<p class="list">2.  When the BCM detects the door lock link switch unlock signal (1), it sends the door lock link switch unlock signal (2) to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the electrical supply unit (ESU) receives the door lock link switch unlock signal, it turns the transistor on (3) and the door unlock relay on (4).</p>
+<p class="list"></p>
+<p class="list">4.  When the door unlock relay turns on, the front and rear door lock actuator motors perform an unlock operation (5), and the front and rear doors unlock.</p>
+<p class="list">
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001895.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001895</div>
+</td>
+</tr>
+</table>
+</p>
+</p><br clear="all"><p><a name="id09140010820017"></a><p class="topic-title"><span class="topic-head"></span>Unlock operation using door lock switch</p>
+<p class="list">1.  When the door lock switch is operated to unlock, the door lock switch switches to the unlock side.</p>
+<p class="list"></p>
+<p class="list">2.  When the BCM detects the door lock switch unlock signal (1), it sends the door lock switch unlock signal (2) to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the electrical supply unit (ESU) receives the door lock switch unlock signal, it turns the transistor on (3) and the door unlock relay on (4).</p>
+<p class="list"></p>
+<p class="list">4.  When the door unlock relay turns on, the front and rear door lock actuator motors perform an unlock operation (5), and the front and rear doors unlock.</p>
+<p class="list">
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001896.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001896</div>
+</td>
+</tr>
+</table>
+</p>
+</p><br clear="all"><p><a name="id09140010820018"></a><p class="topic-title"><span class="topic-head"></span>Double locking function (With double locking)</p>
+<p class="list">1.  When the key is inserted in the front door key cylinder and a lock operation is performed, the front door key cylinder switch switches to the lock side.</p>
+<p class="list"></p>
+<p class="list">2.  When the BCM detects a front door key cylinder switch lock signal (1), it sends a front door key cylinder switch lock signal (2) to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the electrical supply unit (ESU) receives the front door key cylinder switch lock signal, it turns the transistor on (3) and the door lock relay on (4).</p>
+<p class="list"></p>
+<p class="list">4.  When the door lock relay turns on, the front and rear door lock actuator motors perform a lock operation (5), and the front and rear doors lock.</p>
+<p class="list">
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001897.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001897</div>
+</td>
+</tr>
+</table>
+</p>
+<p class="list">5.  When lock operation is performed <span>within 3 s</span> after the door lock operation, the front door key cylinder switch switches to the lock side.</p>
+<p class="list"></p>
+<p class="list">6.  When the BCM detects a front door key cylinder switch lock signal (6), it sends a double-locking signal (7) to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">7.  When the electrical supply unit (ESU) receives the double-locking signal, it turns the transistor on (8) and the door double-locking relay on (9).</p>
+<p class="list"></p>
+<p class="list">8.  When the door double-locking relay turns on, the front and rear door lock actuator motors perform a double-locking operation (10), and the front and rear doors lock/unlock operation using door lock knob is inhibited..</p>
+<p class="list">
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001898.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001898</div>
+</td>
+</tr>
+</table>
+</p>
+</p><br clear="all"><p><a name="id09140010820019"></a><p class="topic-title"><span class="topic-head"></span>Collision detection unlock function operation (With collision detection unlock function)</p>
+<p class="list">1.  If the vehicle is involved in a collision, the SAS control module sends (1) a collision detection door unlock signal to the BCM via CAN communication and it sends (2) the signal to the electrical supply unit (ESU) via hard wire.</p>
+<p class="list"></p>
+<p class="list">2.  The BCM sends (3) the received collision detection door unlock signal to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">3.  The electrical supply unit (ESU) unlocks all the doors after <span>approx. 6 s</span> it received the collision detection door unlock signal (4). </p>
+<p class="list">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The collision detection unlock function will operate even if only one of the signals is sent.</div>
+</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003103.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003103</div>
+</td>
+</tr>
+</table>
+</p>
+</p><br clear="all"><p><a name="id09140010820020"></a><p class="topic-title"><span class="topic-head"></span>Auto door lock function (With auto door lock function)</p>
+<dl>
+<dd>
+<div class="list-title">Selector lever interlock door lock/unlock control (ATX)</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The doors lock when the selector lever is shifted to a position other than the P position with all the following conditions met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Theft-deterrent system in operation stop-mode, initial mode, or stand-by preparatory mode<div>(See <font class="extxref-label"><a href="id091400003700.html">THEFT-DETERRENT SYSTEM</a></font>.)</div>
+</div>
+<div class="list">―  Ignition switch ON (engine off or on) is detected</div>
+<div class="list">―  All door latch switch OFF (all doors closed condition) is detected</div>
+<div class="list">―  Liftgate latch switch OFF (liftgate closed condition) is detected (5HB)</div>
+<div class="list">―  Vehicle is determined to be driven.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The doors unlock when the selector lever is shifted to the P position with all the following conditions met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Theft-deterrent system in operation stop-mode, initial mode, or stand-by preparatory mode<div>(See <font class="extxref-label"><a href="id091400003700.html">THEFT-DETERRENT SYSTEM</a></font>.)</div>
+</div>
+<div class="list">―  Ignition switch ON (engine off or on) is detected</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Vehicle speed interlock door lock control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The doors unlock when the vehicle speed of <span>20 km/h {12 mph} or more</span> is detected with all the following conditions met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Theft-deterrent system in operation stop-mode, initial mode, or stand-by preparatory mode<div>(See <font class="extxref-label"><a href="id091400003700.html">THEFT-DETERRENT SYSTEM</a></font>.)</div>
+</div>
+<div class="list">―  Ignition switch ON (engine on) is detected</div>
+<div class="list">―  All door latch switch OFF (all doors closed condition) is detected</div>
+<div class="list">―  Liftgate latch switch OFF (liftgate closed condition) is detected (5HB)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">IG interlock door unlock control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The doors unlock when the ignition is switched to ACC or OFF from ON (engine on) with all the following conditions met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Theft-deterrent system in operation stop-mode, initial mode, or stand-by preparatory mode<div>(See <font class="extxref-label"><a href="id091400003700.html">THEFT-DETERRENT SYSTEM</a></font>.)</div>
+</div>
+<div class="list">―  Doors locked by selector lever interlock door lock control or vehicle interlock door lock control</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</body>
+</html>

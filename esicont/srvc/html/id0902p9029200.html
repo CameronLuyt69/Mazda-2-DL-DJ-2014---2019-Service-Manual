@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC INSPECTION [FORWARD SENSING CAMERA (FSC)]</title>
+</head>
+<body><a name="id0902p9029200"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC INSPECTION [FORWARD SENSING CAMERA (FSC)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0902p9029200</p><br clear="all"><a name="id0902p902920001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>CMDTC Self Test</p>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list"></p>
+<p class="list">2.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “Self Test”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “All CMDTCs”.</dd>
+<dd></dd>
+</dl>
+</p>
+<p class="list">3.  Verify the DTC according to the directions on the screen.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">•  If any DTCs are displayed, perform troubleshooting according to the corresponding DTC inspection after recording the snapshot data.</div>
+</dd>
+</dl>
+</p>
+<p class="list">4.  After completion of repairs, clear all DTCs stored in the forward sensing camera (FSC). (See <font class="extxref-label"><a href="id0902p9029300.html">CLEARING DTC [FORWARD SENSING CAMERA (FSC)]</a></font>.)</p>
+<p class="list"></p><br clear="all"><a name="id0902p902920002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>ODDTC Self Test</p>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list"></p>
+<p class="list">2.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “Self Test”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “Modules”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(3)  Select “FSC”.</dd>
+<dd></dd>
+</dl>
+</p>
+<p class="list">3.  Verify the DTC according to the directions on the screen.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">•  If any DTCs are displayed, perform troubleshooting according to the corresponding DTC inspection after recording the snapshot data.</div>
+</dd>
+</dl>
+</p>
+<p class="list">4.  After completion of repairs, clear all DTCs stored in the forward sensing camera (FSC). (See <font class="extxref-label"><a href="id0902p9029300.html">CLEARING DTC [FORWARD SENSING CAMERA (FSC)]</a></font>.)</p>
+<p class="list"></p><br clear="all"><a name="id0902p902920003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Snapshot Data</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The forward sensing camera (FSC) stores the following two types of snapshot data (vehicle information) when a DTC is detected and displays them in the M-MDS.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle information detected by forward sensing camera (FSC)</div>
+<div class="list">―  Vehicle information detected by instrument cluster and received by forward sensing camera (FSC) via CAN communication</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<div class="list">•  The data for all DTCs currently detected is stored.</div>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Snapshot data item</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding data monitor items</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECU_IN_TMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECU Internal Temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IG-ON_TIMER</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">hh:mm:ss<sup>*1</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Elapsed time since ignition was switched ON (engine off or on)</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The instrument cluster records the elapsed time since the ignition was switched ON (engine off or on).</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="list">•  The forward sensing camera (FSC) constantly receives the elapsed time since the ignition was switched ON (engine off or on) sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the forward sensing camera (FSC) records the elapsed time since the ignition was switched ON (engine off or on) when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OPE_MODE</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Normal/CALIBRATION/EMERGENCY</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Operation Mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VSPD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH</div>
+</td>
+<td id="" align="center">
+<div class="tbody">MPH</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :The seconds may be indicated after the decimal point.</div>
+</body>
+</html>

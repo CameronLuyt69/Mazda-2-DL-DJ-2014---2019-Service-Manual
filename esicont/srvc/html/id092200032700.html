@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>FUEL GAUGE</title>
+</head>
+<body><a name="id092200032700"></a><p class="servinfo-title"><span class="servinfo-head"></span>FUEL GAUGE</p>
+<hr>
+<p class="servinfo-title-id" align="right">id092200032700</p><br clear="all"><a name="id09220003270001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The fuel gauge notifies the driver of the fuel tank level.</div><br clear="all"><a name="id09220003270002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The instrument cluster calculates the amount of fuel in the fuel tank based on the following signals and displays the fuel gauge segments.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Signal name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Sending module/part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Communication method</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel gauge sender unit voltage signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BCM</div>
+</td>
+<td id="" align="left" rowspan="3">
+<div class="tbody">HS-CAN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel injection amount signal</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">PCM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle speed signal</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><p><a name="id09220003270003"></a><p class="topic-title"><span class="topic-head"></span>Fuel gauge flicker prevention function</p>
+<dl>
+<dd>
+<div class="list">•  When the instrument cluster determines that the vehicle is being driven, it retards the response with which the calculated fuel tank level is reflected to the fuel gauge. As a result, fuel gauge flicker caused by the variation of fuel surface during driving is prevented.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220003270004"></a><p class="topic-title"><span class="topic-head"></span>Refuel determination function</p>
+<dl>
+<dd>
+<div class="list-title">Analog speedometer type</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If the fuel tank level changes by <span>3 L {0.8 US gal, 0.7 Imp gal}</span> or <span>2 L {0.5 US gal, 0.4 Imp gal}</span><sup>*1</sup><span>or more</span> while the vehicle is stopped, the instrument cluster determines that the vehicle is refueled.</div>
+</dd>
+</dl>
+<div class="deflist"> *1   :<span>3 L {0.8 US gal, 0.7 Imp gal}</span> when the number of fuel gauge segments is <span>14 or less</span>, <span>2 L {0.5 US gal, 0.4 Imp gal}</span> when the number of fuel gauge segments is <span>15 or more</span></div>
+<dl>
+<dd>
+<div class="list-title">Digital speedometer type</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If the fuel tank level changes by <span>5 L {1 US gal, 1 Imp gal}</span> or <span>2 L {0.5 US gal, 0.4 Imp gal}</span><sup>*1</sup><span>or more</span> while the vehicle is stopped, the instrument cluster determines that the vehicle is refueled.</div>
+</dd>
+</dl>
+<div class="deflist"> *1   :<span>5 L {1 US gal, 1 Imp gal}</span> when the number of fuel gauge segments is <span>13 or less</span>, <span>2 L {0.5 US gal, 0.4 Imp gal}</span> when the number of fuel gauge segments is <span>14 or more</span></div>
+</p><br clear="all"><a name="id09220003270005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The fuel gauge is displayed in the LCD of the instrument cluster.</div>
+<div class="list">•  The fuel gauge consists of <span>15</span> segments.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002930.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002930</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id09220003270006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<p class="list">1.  When the ignition is switched ON (engine off or on), the instrument cluster receives (1) the fuel gauge sender unit voltage signal from the BCM, and the fuel injection amount signal and vehicle speed signal from the PCM via CAN communication.</p>
+<p class="list">
+</p>
+<p class="list">2.  The instrument cluster calculates the fuel tank level based on each signal (2).</p>
+<p class="list">
+</p>
+<p class="list">3.  The instrument cluster displays/turns off the fuel gauge segments according to the calculation result (3).</p>
+<p class="list">
+</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002931.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002931</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09220003270007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  Not applicable</div>
+</body>
+</html>

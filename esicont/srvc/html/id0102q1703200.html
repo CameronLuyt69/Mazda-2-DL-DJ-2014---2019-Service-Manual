@@ -1,0 +1,1384 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P0300:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0102q1703200"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P0300:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q1703200</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  To determine the malfunctioning part, proceed with the diagnostics from "Function Inspection Using M-MDS".</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0102q170320001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Details On DTCs</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DESCRIPTION</p>
+</th>
+<th id="" align="left" colspan="2">
+<p class="thead">Random misfire detected</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="6">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Determination conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  The misfire rate for <span>every 200 rotations</span> of the crankshaft exceeds the specified value (misfire which may damage catalytic converter).</div>
+<div class="list">―  The misfire rate for <span>every 1,000 rotations</span> of the crankshaft exceeds the specified value (misfire going against emission regulations).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Preconditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Battery voltage: <span>9—18 V</span><sup>*1</sup></div>
+<div class="list">•  Engine speed: <span>500—4,500 rpm<sup>*1</sup></span></div>
+<div class="list">•  Engine coolant temperature: <span>20 °C {68 °F} or more</span><sup>*1</sup></div>
+<div class="list">•  Fuel-cut control not implemented</div>
+<div class="list">•  Crankshaft installation tolerance learning completed</div>
+<div class="list">•  Engine condition is stabilized (not directly after gear change)</div>
+<div class="list"><sup>*1</sup>: Value can be verified by displaying PIDs using the M-MDS.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Malfunction determination period</div>
+</td>
+<td id="" align="left">
+<div class="list">•  200 rotations of crankshaft (misfire which may damage catalytic converter)</div>
+<div class="list">•  1,000 rotations of crankshaft (misfire going against emission regulations)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Drive cycle</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>2</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Self test type</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CMDTC self test</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Sensor used</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CKP sensor</div>
+<div class="list">•  MAF sensor</div>
+<div class="list">•  MAP sensor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Limits intake air amount</div>
+<div class="list">•  Implement fuel-cut control (if the catalytic converter may be damaged, perform fuel-cut on cylinder misfiring the most).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>VEHICLE STATUS WHEN DTCs ARE OUTPUT</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Misfiring which may damage catalytic converter (number of drive cycles: 1):</div>
+<dl>
+<dd class="list">
+<div class="list">―  Check engine light flashes and pending code is recorded</div>
+</dd>
+</dl>
+<div class="list">•  Drive cycle directly after above drive cycle (number of drive cycles: 2):</div>
+<dl>
+<dd class="list">
+<div class="list">―  Malfunction determined: check engine light is illuminated</div>
+<div class="list">―  Normal is determined: Pending code cleared</div>
+</dd>
+</dl>
+<div class="list">•  Rough idling, poor acceleration, stalling</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Improper operation of ignition system</div>
+<dl>
+<dd class="list">
+<div class="list">―  Spark plug malfunction</div>
+<div class="list">―  Ignition coil related wiring harness or connector malfunction</div>
+<div class="list">―  Ignition coil malfunction</div>
+</dd>
+</dl>
+<div class="list">•  Fuel injector malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  Improper operation of fuel injector</div>
+<div class="list">―  Fuel injector related wiring harness malfunction</div>
+</dd>
+</dl>
+<div class="list">•  Erratic signal to PCM</div>
+<dl>
+<dd class="list">
+<div class="list">―  CKP sensor signal malfunction</div>
+<div class="list">―  ECT sensor signal malfunction</div>
+<div class="list">―  MAF sensor signal malfunction</div>
+<div class="list">―  MAP sensor signal malfunction</div>
+<div class="list">―  IAT sensor No.1 signal malfunction</div>
+<div class="list">―  APP sensor signal malfunction</div>
+<div class="list">―  TP sensor signal malfunction</div>
+<div class="list">―  VSS signal malfunction</div>
+<div class="list">―  Related connector or terminals malfunction</div>
+<div class="list">―  Related wiring harness malfunction</div>
+</dd>
+</dl>
+<div class="list">•  Poor drive belt assembly or adhesion of oil</div>
+<div class="list">•  Drive belt auto tensioner malfunction</div>
+<div class="list">•  Air leakage from intake air system (between intake manifold and cylinder head)</div>
+<div class="list">•  Engine malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  Insufficient engine compression</div>
+<div class="list">―  Engine coolant leakage to combustion chamber</div>
+</dd>
+</dl>
+<div class="list">•  PCM malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q170320002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<div class="list">•  Not applicable.</div><br clear="all"><a name="id0102q170320003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Explanation (DTC Detection Outline)</p>
+<div class="list">•  The PCM detects the crankshaft rotation speed based on the crankshaft position sensor signal. If there is a small amount of fluctuation in crankshaft rotation speed due to the effect of combustion of each cylinder while the engine is rotating and a misfire occurs in any of the pistons, the crankshaft rotation speed will change suddenly. The PCM adds the number of changes in sudden rotation speed (misfire rate) to each specified crankshaft rotation speed, and if the misfire rate exceeds a certain value, a DTC is recorded.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am6zzw00011822.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am6zzw00011822</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id0102q170320004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Repeatability Verification Procedure</p>
+<div class="list">1.  Drive the vehicle at a speed of <span>40 km/h {25 mph} or more</span>.</div>
+<div class="list">2.  Shift to 3rd gear and rapidly accelerate the vehicle to <span>60 km/h {37 mph}</span> (to execute misfire monitor).</div>
+<div class="list">3.  Release the accelerator pedal and decelerate the vehicle to <span>40 km/h {25 mph}</span>.</div>
+<div class="list">4.  Repeat Step 1 to 3 operations <span>above 5 times</span>.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Match the engine coolant temperature in the recorded FREEZE FRAME DATA/snapshot data, the vehicle speed, and engine speed values to the best extent possible while driving the vehicle.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">5.  Try to reproduce the malfunction by driving the vehicle for <span>5 min</span> based on the values in the FREEZE FRAME DATA/snapshot data.</div><br clear="all"><a name="id0102q170320005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID Item/Simulation Item Used In Diagnosis</p>
+<p clear="all">
+<p class="table-title">PID/DATA monitor item table</p>
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Condition/Specification</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">APP1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal opening angle (absolute value) input from APP sensor No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Accelerator pedal released: Approx. 16%</div>
+<div class="list">•  Accelerator pedal fully depressed: Approx. 91%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">APP sensor No.1 voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Accelerator pedal released: Approx. 0.78 V</div>
+<div class="list">•  Accelerator pedal fully depressed: Approx. 4.54 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">APP2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal opening angle (absolute value) input from APP sensor No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Accelerator pedal released: Approx. 7.84%</div>
+<div class="list">•  Accelerator pedal fully depressed: Approx. 45.49%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">APP sensor No.2 voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Accelerator pedal released: Approx. 0.39 V</div>
+<div class="list">•  Accelerator pedal fully depressed: Approx. 2.27 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">ECT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature input from ECT sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays ECT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ECT sensor voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Ignition switched ON (engine off)</div>
+<div class="list">•  ECT is 29 °C {84 °F}: Approx. 2.65 V</div>
+<div class="list-title">Idle (after warm up)</div>
+<div class="list">•  ECT is 88 °C {190 °F}: Approx. 0.71 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">IAT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature (No.1) input from IAT sensor No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays IAT (No.1)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.1 voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="list">•  IAT is 20 °C {68 °F}: Approx. 2.70 V</div>
+<div class="list">•  IAT is 40 °C {104 °F}: Approx. 1.80 V</div>
+<div class="list">•  IAT is 60 °C {140 °F}: Approx. 1.20 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">MAF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Mass air flow input from MAF sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">g/Sec</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays MAF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAF sensor voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Ignition switched ON (engine off) (MAF: 0.59 g/s {0.078 lb/min}): Approx. 0.72 V</div>
+<div class="list">•  Idle (after warm up) (MAF: 2.17 g/s {0.287 lb/min}): Approx. 0.97 V</div>
+<div class="list">•  Racing (engine speed is 2,000 rpm) (MAF: 4.73 g/s {0.626 lb/min}): Approx. 1.26 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manifold absolute pressure input from MAP sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays MAP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAP_V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">MAP sensor voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Ignition switched ON (engine off) (MAP:101 kPa {1.03 kgf/cm<sup>2</sup>, 14.6 psi}): Approx. 4.12 V</div>
+<div class="list">•  Idle (after warm up) (MAP: 33 kPa {0.34 kgf/cm<sup>2</sup>, 4.8 psi}): Approx. 1.9 V</div>
+<div class="list">•  Racing (engine speed is 2,000 rpm) (MAP: 26 kPa {0.27 kgf/cm<sup>2</sup>, 3.8 psi}): Approx. 1.23 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_CAT1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.1 cylinder leading to catalytic converter temperature increase (catalytic converter temperature increases due to fuel combustion around catalytic converter after misfire)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays number of misfires corresponding to possible catalytic converter damage (No.1 cylinder)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_CAT_2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.2 cylinder leading to catalytic converter temperature increase (catalytic converter temperature increases due to fuel combustion around catalytic converter after misfire)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays number of misfires corresponding to possible catalytic converter damage (No.2 cylinder)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_CAT_3</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.3 cylinder leading to catalytic converter temperature increase (catalytic converter temperature increases due to fuel combustion around catalytic converter after misfire)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays number of misfires corresponding to possible catalytic converter damage (No.3 cylinder)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_CAT_4</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.4 cylinder leading to catalytic converter temperature increase (catalytic converter temperature increases due to fuel combustion around catalytic converter after misfire)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays number of misfires corresponding to possible catalytic converter damage (No.4 cylinder)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_EMI1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.1 cylinder under conditions required by emission regulations</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays number of misfires possibly affecting emission (No.1 cylinder)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_EMI_2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.2 cylinder under conditions required by emission regulations</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays number of misfires possibly affecting emission (No.2 cylinder)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_EMI_3</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.3 cylinder under conditions required by emission regulations</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays number of misfires possibly affecting emission (No.3 cylinder)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_EMI_4</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.4 cylinder under conditions required by emission regulations</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays number of misfires possibly affecting emission (No.4 cylinder)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays engine speed</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TP_REL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve opening angle (relative value) with value at throttle valve fully close timing as the start point</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Accelerator pedal released: Approx. 12%</div>
+<div class="list">•  Accelerator pedal fully depressed: Approx. 82%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VSS</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays vehicle speed</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q170320006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Inspection Using M-MDS</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: IDENTIFY TRIGGER DTC FOR FREEZE FRAME DATA</div>
+<div class="list">•  Is the DTC P0300:00 on FREEZE FRAME DATA?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure for DTC on FREEZE FRAME DATA.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">PURPOSE: RECORD FREEZE FRAME DATA/SNAPSHOT DATA AND DIAGNOSTIC MONITORING TEST RESULTS TO UTILIZE WITH REPEATABILITY VERIFICATION</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Recording can be facilitated using the screen capture function of the PC.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Record the FREEZE FRAME DATA/snapshot data and DIAGNOSTIC MONITORING TEST RESULTS (misfire related) on the repair order.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY RELATED PENDING CODE AND/OR DTC</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure and DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any other PENDING CODEs and/or DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable PENDING CODE or DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF THERE IS PID ITEM CAUSING DRASTIC CHANGES OF ACCELERATION FLUCTUATION BY INPUT SIGNAL TO PCM</div>
+<div class="list">•  Start the engine.</div>
+<div class="list">•  Access the following PIDs using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  APP1</div>
+<div class="list">―  APP2</div>
+<div class="list">―  ECT</div>
+<div class="list">―  IAT</div>
+<div class="list">―  MAF</div>
+<div class="list">―  MAP</div>
+<div class="list">―  MAP_V</div>
+<div class="list">―  RPM</div>
+<div class="list">―  TP_REL</div>
+<div class="list">―  VSS</div>
+</dd>
+</dl>
+<div class="list">•  Is there a PID item affected by acceleration fluctuation?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect the suspected sensor and related wiring harness.</div>
+<div class="list">•  If there is any malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Repair or replace the malfunctioning part.</div>
+<div class="list">―  Go to the troubleshooting procedure to perform the procedure from Step 10.</div>
+</dd>
+</dl>
+<div class="list">•  If there is no malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Go to the next step.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: RECORD NUMBER OF CURRENT MISFIRES DURING NO LOAD TO SPECIFY MISFIRING CYLINDER</div>
+<div class="list">•  Start the engine.</div>
+<div class="list">•  Verify all accessory loads (A/C, headlights, blower fan, rear window defroster) are off.</div>
+<div class="list">•  Under no-load conditions (P or N position (ATX)/neutral (MTX)), increase the engine speed to <span>3,000 rpm</span> and hold for <span>30 s</span>.</div>
+<div class="list">•  Verify the number of misfires.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Access the following PIDs using the M-MDS<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0140q1802500.html">PCM INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">•  MF_CAT1</div>
+<div class="list">•  MF_CAT_2</div>
+<div class="list">•  MF_CAT_3</div>
+<div class="list">•  MF_CAT_4</div>
+<div class="list">•  MF_EMI1</div>
+<div class="list">•  MF_EMI_2</div>
+<div class="list">•  MF_EMI_3</div>
+<div class="list">•  MF_EMI_4</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  Can a misfire be verified?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Record each of the verified values, then go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to step 9.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF MISFIRE CAUSE IS BAD SPARK PLUGS</div>
+<div class="list">•  Switch the spark plugs on a cylinder that is misfiring and a cylinder that is not misfiring.<div>(See <font class="extxref-label"><a href="id0118i4800400.html">SPARK PLUG REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Start the engine.</div>
+<div class="list">•  Verify all accessory loads (A/C, headlights, blower fan, rear window defroster) are off.</div>
+<div class="list">•  Under no-load conditions (P or N position (ATX)/neutral (MTX)), increase the engine speed to <span>3,000 rpm</span> and hold for <span>30 s</span>.</div>
+<div class="list">•  Verify the number of misfires.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Access the following PIDs using the M-MDS<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0140q1802500.html">PCM INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">•  MF_CAT1</div>
+<div class="list">•  MF_CAT_2</div>
+<div class="list">•  MF_CAT_3</div>
+<div class="list">•  MF_CAT_4</div>
+<div class="list">•  MF_EMI1</div>
+<div class="list">•  MF_EMI_2</div>
+<div class="list">•  MF_EMI_3</div>
+<div class="list">•  MF_EMI_4</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  Is there a change from the recorded number of misfires in Step 6?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF MISFIRE CAUSE IS BAD IGNITION COIL</div>
+<div class="list">•  Switch the ignition coils on a cylinder that is misfiring and a cylinder that is not misfiring.<div>(See <font class="extxref-label"><a href="id0118i4811200.html">IGNITION COIL/ION SENSOR REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Start the engine.</div>
+<div class="list">•  Verify all accessory loads (A/C, headlights, blower fan, rear window defroster) are off.</div>
+<div class="list">•  Under no-load conditions (P or N position (ATX)/neutral (MTX)), increase the engine speed to <span>3,000 rpm</span> and hold for <span>30 s</span>.</div>
+<div class="list">•  Verify the number of misfires.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Access the following PIDs using the M-MDS<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0140q1802500.html">PCM INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">•  MF_CAT1</div>
+<div class="list">•  MF_CAT_2</div>
+<div class="list">•  MF_CAT_3</div>
+<div class="list">•  MF_CAT_4</div>
+<div class="list">•  MF_EMI1</div>
+<div class="list">•  MF_EMI_2</div>
+<div class="list">•  MF_EMI_3</div>
+<div class="list">•  MF_EMI_4</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  Is there a change from the recorded number of misfires in Step 6?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 2.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 3.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: RECORD NUMBER OF CURRENT MISFIRES WHILE DRIVING UNDER LOAD TO SPECIFY MISFIRING CYLINDER</div>
+<div class="list">•  Start the engine.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The fuel injection control enters the deceleration fuel cut zone when the accelerator pedal is fully released while the vehicle is being driven. At this time, the count for the number of misfires is stopped.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">•  Verify the number of misfires while the vehicle is being driven for 1 min under the condition of the freeze frame data (mode 2) recorded in Step 3.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Access the following PIDs using the M-MDS<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0140q1802500.html">PCM INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">•  MF_CAT1</div>
+<div class="list">•  MF_CAT_2</div>
+<div class="list">•  MF_CAT_3</div>
+<div class="list">•  MF_CAT_4</div>
+<div class="list">•  MF_EMI1</div>
+<div class="list">•  MF_EMI_2</div>
+<div class="list">•  MF_EMI_3</div>
+<div class="list">•  MF_EMI_4</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  Can a misfire be verified?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Record each of the verified values, then go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Referring to the service questioning results, verify the misfire rate again with the driving mode data added before recording the freeze frame data (mode 2)/snap shot data.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">10</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF MISFIRE CAUSE IS BAD SPARK PLUGS</div>
+<div class="list">•  Switch the spark plugs on a cylinder that is misfiring and a cylinder that is not misfiring.<div>(See <font class="extxref-label"><a href="id0118i4800400.html">SPARK PLUG REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Start the engine.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The fuel injection control enters the deceleration fuel cut zone when the accelerator pedal is fully released while the vehicle is being driven. At this time, the count for the number of misfires is stopped.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">•  Verify the number of misfires while the vehicle is being driven for 1 min under the condition of the freeze frame data (mode 2) recorded in Step 9.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Access the following PIDs using the M-MDS<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0140q1802500.html">PCM INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">•  MF_CAT1</div>
+<div class="list">•  MF_CAT_2</div>
+<div class="list">•  MF_CAT_3</div>
+<div class="list">•  MF_CAT_4</div>
+<div class="list">•  MF_EMI1</div>
+<div class="list">•  MF_EMI_2</div>
+<div class="list">•  MF_EMI_3</div>
+<div class="list">•  MF_EMI_4</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  Is there a change from the recorded number of misfires in Step 9?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF MISFIRE CAUSE IS BAD IGNITION COIL</div>
+<div class="list">•  Switch the ignition coils on a cylinder that is misfiring and a cylinder that is not misfiring.<div>(See <font class="extxref-label"><a href="id0118i4811200.html">IGNITION COIL/ION SENSOR REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Start the engine.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The fuel injection control enters the deceleration fuel cut zone when the accelerator pedal is fully released while the vehicle is being driven. At this time, the count for the number of misfires is stopped.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">•  Verify the number of misfires while the vehicle is being driven for 1 min under the condition of the freeze frame data (mode 2) recorded in Step 9.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Access the following PIDs using the M-MDS<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0140q1802500.html">PCM INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">•  MF_CAT1</div>
+<div class="list">•  MF_CAT_2</div>
+<div class="list">•  MF_CAT_3</div>
+<div class="list">•  MF_CAT_4</div>
+<div class="list">•  MF_EMI1</div>
+<div class="list">•  MF_EMI_2</div>
+<div class="list">•  MF_EMI_3</div>
+<div class="list">•  MF_EMI_4</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  Is there a change from the recorded number of misfires in Step 9?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 2.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 3.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q170320007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Troubleshooting Diagnostic Procedure</p>
+<div class="list-title">Intention of troubleshooting procedure</div>
+<div class="list">•  Step 1—2</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform an ignition system parts inspection.</div>
+</dd>
+</dl>
+<div class="list">•  Step 3</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform a fuel injector control system inspection.</div>
+</dd>
+</dl>
+<div class="list">•  Step 4—9</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform an inspection of parts which may be affected by misfire except for ignition-related parts and fuel injection control-related parts.</div>
+</dd>
+</dl>
+<div class="list">•  Step 10—11</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verify that primary malfunction is resolved and there are no other malfunctions.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF SPARK PLUG</div>
+<div class="list">•  Inspect the spark plug.<div>(See <font class="extxref-label"><a href="id0118i4800500.html">SPARK PLUG INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the spark plug, then go to Step 10.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0118i4800400.html">SPARK PLUG REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF IGNITION COIL</div>
+<div class="list">•  Inspect the ignition coil.<div>(See <font class="extxref-label"><a href="id0118i4800300.html">IGNITION COIL INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the ignition coil/ion sensor, then go to Step 10.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0118i4811200.html">IGNITION COIL/ION SENSOR REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF FUEL INJECTOR</div>
+<div class="list">•  Inspect the fuel injector.<div>(See <font class="extxref-label"><a href="id0114q1800700.html">FUEL INJECTOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the fuel injector, then go to Step 10.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0114q1800600.html">FUEL INJECTOR REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF MALFUNCTION RELATED TO INTAKE-AIR SYSTEM IS CAUSE OF MISFIRE</div>
+<div class="list">•  Visually inspect for loose, cracked or damaged hoses on intake air system.</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to Step 10.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF POOR DRIVE BELT ASSEMBLY IS CAUSE OF MISFIRE</div>
+<div class="list">•  Verify the condition of the drive belt assembly.<div>(See <font class="extxref-label"><a href="id0110q3801500.html">DRIVE BELT INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Assemble drive belt correctly, then go to Step 10.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0110q3801600.html">DRIVE BELT REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF FOREIGN MATTER ON DRIVE BELT IS CAUSE OF MISFIRE</div>
+<div class="list">•  Verify if oil is on the drive belt.</div>
+<div class="list">•  Is there foreign matter on the drive belt?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Remove the foreign matter on the drive belt, then go to Step 10.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF DRIVE BELT AUTO TENSIONER</div>
+<div class="list">•  Inspect the drive belt auto tensioner.<div>(See <font class="extxref-label"><a href="id0110q3801700.html">DRIVE BELT AUTO TENSIONER INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the drive belt auto tensioner, then go to Step 10.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0110q3362500.html">DRIVE BELT AUTO TENSIONER REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF MALFUNCTION RELATED TO ENGINE COMPRESSION IS CAUSE OF MISFIRE</div>
+<div class="list">•  Inspect the engine compression.<div>(See <font class="extxref-label"><a href="id0110q3800300.html">COMPRESSION INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are compression pressures within specification?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace or overhaul the engine, then go to Step 10.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF MALFUNCTION RELATED TO SEALING OF ENGINE UNIT (COMBUSTION CHAMBER AND ENGINE COOLANT PASSAGE) IS CAUSE OF MISFIRE</div>
+<div class="list">•  Perform the “ENGINE COOLANT LEAKAGE INSPECTION”.<div>(See <font class="extxref-label"><a href="id0112q3800500.html">ENGINE COOLANT LEAKAGE INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Does the radiator cap tester needle drop even though there is no engine coolant leakage from the radiator or the hoses?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant leakage from the engine (between the combustion chamber and the engine coolant passage) may have occurred.</div>
+<div class="list">•  Verify the conditions of the gasket and the cylinder head.</div>
+<dl>
+<dd class="list">
+<div class="list">―  If there is any malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Repair or replace the malfunctioning part according to the inspection results, then go to the next step.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">10</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFICATION OF VEHICLE REPAIR COMPLETION</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1865400.html">CLEARING DTC [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id0102q170320004">Repeatability Verification Procedure</a></font>.)</div>
+</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the PENDING CODE for this DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q1802400.html">PCM REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF THERE IS ANY OTHER MALFUNCTION</div>
+<div class="list">•  Is any other DTC or pending code stored?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

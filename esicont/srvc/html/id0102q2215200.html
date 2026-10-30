@@ -1,0 +1,319 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC B10A2:00 [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0102q2215200"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC B10A2:00 [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q2215200</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  To determine the malfunctioning part, proceed with the diagnostics from “Function Inspection Using M-MDS”.</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0102q221520001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Details On DTCs</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DESCRIPTION</p>
+</th>
+<th id="" align="left" colspan="2">
+<p class="thead">Vehicle collision</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="5">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Determination conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  A collision signal from the SAS control module is received.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Preconditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The following DTCs are not detected:</div>
+<dl>
+<dd class="list">
+<div class="list">―  SAS control module: U0073:00, U0151:00, U0336:00</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Drive cycle</div>
+</td>
+<td id="" align="left">
+<div class="list">•  1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Self test type</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CMDTC self test</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Sensor used</div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>VEHICLE STATUS WHEN DTCs ARE OUTPUT</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Inhibits the starter operation during cranking while a collision signal from the SAS control module is received continuously.</div>
+<div class="list">•  Stops fuel injection control</div>
+<div class="list">•  Stops engine coolant fan control</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Vehicle is involved in collision (collision signal from SAS control module is received)</div>
+<div class="list">•  SAS control module malfunction</div>
+<div class="list">•  PCM malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q221520002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<div class="list">•  Not applicable</div><br clear="all"><a name="id0102q221520003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Explanation (DTC Detection Outline)</p>
+<div class="list">•  During a collision, the SAS control module sends a collision signal to the PCM via the CAN signal. The PCM records a DTC by receiving a collision signal.</div>
+<div class="list">•  This DTC does not indicate a part malfunction. It indicates operation of fail-safe from safety assurance during a vehicle collision.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzw00014908.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzw00014908</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id0102q221520004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Repeatability Verification Procedure</p>
+<div class="list">1.  Switch the ignition ON and leave for <span>5 s or more</span>.</div>
+<div class="list">2.  Clear the DTC from the PCM memory using the M-MDS. (See <font class="extxref-label"><a href="id0102q2801100.html">AFTER REPAIR PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="list">3.  After switching the ignition off, switch the ignition back ON and leave for <span>5 s or more</span>.</div><br clear="all"><a name="id0102q221520005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID Item/Simulation Item Used In Diagnosis</p>
+<div class="list">•  Not applicable</div><br clear="all"><a name="id0102q221520006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Inspection Using M-MDS</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF OPERATION IS NORMAL AFTER VEHICLE COLLISION</div>
+<div class="list">•  Ask customer about vehicle collision experience.</div>
+<div class="list">•  Has the vehicle in for servicing been involved in a collision in which the air bag is deployed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Explain to the customer that the DTC is recorded as a result of a vehicle collision.</div>
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF DIAGNOSTIC RESULT IS AFFECTED BY DTC RELATED TO SAS CONTROL MODULE</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Perform the SAS control module DTC inspection using the M-MDS.<div>(See <font class="extxref-label"><a href="id0802b1080500.html">DTC INSPECTION [STANDARD DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0802b2080500.html">DTC INSPECTION [TWO-STEP DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0802b1080700.html">DTC TABLE [STANDARD DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0802b2080700.html">DTC TABLE [TWO-STEP DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q221520007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Troubleshooting Diagnostic Procedure</p>
+<div class="list-title">Intention of troubleshooting procedure</div>
+<div class="list">•  Step 1—2</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verify that the primary malfunction is resolved and there are no other malfunctions.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: PERFORM DTC INSPECTION AND VERIFY IF MALFUNCTIONING PART IS PCM</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2801100.html">AFTER REPAIR PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id0102q221520004">Repeatability Verification Procedure</a></font>.)</div>
+</div>
+<div class="list">•  Perform the DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q2113800.html">PCM REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF THERE IS ANY OTHER MALFUNCTION</div>
+<div class="list">•  Is any other DTC or pending code stored?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

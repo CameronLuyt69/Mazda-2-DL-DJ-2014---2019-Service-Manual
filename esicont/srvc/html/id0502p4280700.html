@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC SYSTEM SIMULATION FUNCTION [TCM (CW6A-EL)]</title>
+</head>
+<body><a name="id0502p4280700"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC SYSTEM SIMULATION FUNCTION [TCM (CW6A-EL)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0502p4280700</p><br clear="all"><a name="id0502p428070001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose/Function</p>
+<div class="list">•  The simulation function can drive output parts based on use of the M-MDS.</div>
+<div class="list">•  Inspection of an individual output part is facilitated by the simulation function because the output part is driven forcibly.</div><br clear="all"><a name="id0502p428070002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction/Operation</p>
+<p clear="all">
+<p class="table-title">Simulation item table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Output part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Operation condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">EOP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Engine stopped</div>
+<div class="list">•  Accelerator pedal fully closed</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EOP_DUTY</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump duty cycle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Engine stopped</div>
+<div class="list">•  Accelerator pedal fully closed</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EOP_RLY</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump relay condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Engine stopped</div>
+<div class="list">•  Accelerator pedal fully closed</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SS_ON-OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">On/off solenoid condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Vehicle stopped</div>
+<div class="list">•  Idling at P or N position</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SS1_C</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.1 target current</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Vehicle stopped</div>
+<div class="list">•  Idling at P or N position</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SS2_C</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.2 target current</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Vehicle stopped</div>
+<div class="list">•  Idling at P or N position</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SS3_C</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.3 target current</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Vehicle stopped</div>
+<div class="list">•  Idling at P or N position</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SS4_C</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.4 target current</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Vehicle stopped</div>
+<div class="list">•  Idling at P or N position</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SSLU_C</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCC control solenoid target current</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  ATF temperature (PID: TFT) is 20 °C {68 °F} or more.</div>
+<div class="list">•  Output shaft rotation speed (PID: OSS) is 10 rpm or more.</div>
+<div class="list">•  Turbine shaft rotation speed (PID: TSS) is 1,000 rpm or more.</div>
+<div class="list">•  Brake pedal released</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SSP_C</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Pressure control solenoid target current</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Idling at P or N position</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

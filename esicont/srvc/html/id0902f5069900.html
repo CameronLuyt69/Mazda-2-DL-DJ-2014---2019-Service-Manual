@@ -1,0 +1,406 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC B12D3:11 [BCM]</title>
+</head>
+<body><a name="id0902f5069900"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC B12D3:11 [BCM]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0902f5069900</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead"><span>Description</span></p>
+</th>
+<th id="" align="left">
+<p class="thead">Front door lock-link switch (driver's side) circuit malfunction</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Detection condition</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Any of the following conditions is met with the ignition switched ON (engine off or on).</div>
+<dl>
+<dd class="list">
+<div class="list">―  The BCM detected a short to ground in the front door lock-link switch (driver's side) lock side circuit for <span>5 s or more</span> with the front door lock-link switch (driver's side) unlocked.</div>
+<div class="list">―  The BCM detected a short to ground in the front door lock-link switch (driver's side) unlock circuit for <span>5 s or more</span> with the front door lock-link switch (driver's side) locked.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Fail-safe</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Possible cause</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Front door latch and lock actuator (driver's side) connector or terminal malfunction</div>
+<div class="list">•  Front door lock-link switch (driver's side) malfunction</div>
+<div class="list">•  Start stop unit connector or terminal malfunction</div>
+<div class="list">•  BCM connector or terminal malfunction</div>
+<div class="list">•  Short to ground in wiring harness between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  L.H.D.:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Front door latch and lock actuator (LH) terminal B—BCM terminal 2B</div>
+<div class="list">•  Front door latch and lock actuator (LH) terminal D—BCM terminal 2A</div>
+<div class="list">•  Start stop unit terminal 1P—Front door latch and lock actuator (LH) terminal D</div>
+</dd>
+</dl>
+<div class="list">―  R.H.D.:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Front door latch and lock actuator (RH) terminal L—BCM terminal 2B</div>
+<div class="list">•  Front door latch and lock actuator (RH) terminal J—BCM terminal 2A</div>
+<div class="list">•  Start stop unit terminal 1P—Front door latch and lock actuator (RH) terminal J</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  Start stop unit malfunction</div>
+<div class="list">•  BCM malfunction</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2"><img src="images/am2zzw00010994.png"></td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic Procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Inspection</p>
+</th>
+<th id="" align="center">
+<p class="thead">Action</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY BCM DTCs AGAIN</div>
+<div class="list">•  Clear the DTC for the BCM using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902f5067400.html">CLEARING DTC [BCM]</a></font>.)</div>
+</div>
+<div class="list">•  Perform the following work:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Lock all the doors by operating the driver’s door lock knob.</div>
+<div class="list">―  Wait for <span>5 s or more</span>.</div>
+<div class="list">―  Unlock all the doors by operating the driver’s door lock knob.</div>
+<div class="list">―  Wait for <span>5 s or more</span>.</div>
+</dd>
+</dl>
+<div class="list">•  Retrieve the BCM DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902f5067300.html">DTC INSPECTION [BCM]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC displayed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 9.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FRONT DOOR LATCH AND LOCK ACTUATOR (DRIVER'S SIDE) CONNECTOR CONDITION</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Disconnect the negative battery cable.<div>(See <font class="extxref-label"><a href="id011700800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION</a></font>.)</div>
+</div>
+<div class="list">•  Disconnect the front door latch and lock actuator (driver's side) connector.</div>
+<div class="list">•  Inspect the connector engagement and connection condition and inspect the terminals for damage, deformation, corrosion, or disconnection.</div>
+<div class="list">•  Is the connector normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector, then go to Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FRONT DOOR LOCK-LINK SWITCH (DRIVER'S SIDE)</div>
+<div class="list">•  Inspect the front door lock-link switch (driver's side).<div>(See <font class="extxref-label"><a href="id091400005700.html">FRONT DOOR LOCK-LINK SWITCH INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is the front door lock-link switch (driver's side) normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the front door latch and lock actuator (driver's side), then go to Step 8.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091400511100.html">FRONT DOOR LATCH AND LOCK ACTUATOR REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT START STOP UNIT CONNECTOR CONDITION</div>
+<div class="list">•  Disconnect the start stop unit connector.</div>
+<div class="list">•  Inspect the connector engagement and connection condition and inspect the terminals for damage, deformation, corrosion, or disconnection.</div>
+<div class="list">•  Is the connector normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector, then go to Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT BCM CONNECTOR CONDITION</div>
+<div class="list">•  Disconnect the BCM connector.</div>
+<div class="list">•  Inspect the connector engagement and connection condition and inspect the terminals for damage, deformation, corrosion, or disconnection.</div>
+<div class="list">•  Is the connector normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector, then go to Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FRONT DOOR LOCK-LINK SWITCH (DRIVER'S SIDE) LOCK CIRCUIT FOR SHORT TO GROUND</div>
+<div class="list">•  Verify that the front door latch and lock actuator (driver's side), start stop unit and BCM connectors are disconnected.</div>
+<div class="list">•  Inspect for continuity between the following terminals (wiring harness-side) and body ground:</div>
+<dl>
+<dd class="list">
+<div class="list">―  L.H.D:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Front door latch and lock actuator (LH) terminal B</div>
+<div class="list">•  Front door latch and lock actuator (LH) terminal D</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">―  R.H.D:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Front door latch and lock actuator (RH) terminal L</div>
+<div class="list">•  Front door latch and lock actuator (RH) terminal J</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refer to the wiring diagram and verify whether or not there is a common connector between the following terminals:</div>
+<div class="list">•  L.H.D.:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Front door latch and lock actuator (LH) terminal B—BCM terminal 2B</div>
+<div class="list">―  Front door latch and lock actuator (LH) terminal D—BCM terminal 2A</div>
+<div class="list">―  Start stop unit terminal 1P—Front door latch and lock actuator (LH) terminal D</div>
+</dd>
+</dl>
+<div class="list">•  R.H.D.:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Front door latch and lock actuator (RH) terminal L—BCM terminal 2B</div>
+<div class="list">―  Front door latch and lock actuator (RH) terminal J—BCM terminal 2A</div>
+<div class="list">―  Start stop unit terminal 1P—Front door latch and lock actuator (RH) terminal J</div>
+</dd>
+</dl>
+<div class="list-title">If there is a common connector:</div>
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for a short to ground.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+<div class="list-title">If there is no common connector:</div>
+<div class="list">•  Repair or replace the wiring harness which has a short to ground.</div>
+<div class="tbody">Go to Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT START STOP UNIT</div>
+<div class="list">•  Inspect the start stop unit.<div>(See <font class="extxref-label"><a href="id091400110400.html">START STOP UNIT INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is the start stop unit normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the start stop unit, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091400110300.html">START STOP UNIT REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY THAT REPAIRS HAVE BEEN COMPLETED</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Connect the negative battery cable.<div>(See <font class="extxref-label"><a href="id011700800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION</a></font>.)</div>
+</div>
+<div class="list">•  Clear the DTC for the BCM using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902f5067400.html">CLEARING DTC [BCM]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  Lock all the doors by operating the driver’s door lock knob.</div>
+<div class="list">―  Wait for <span>5 s or more</span>.</div>
+<div class="list">―  Unlock all the doors by operating the driver’s door lock knob.</div>
+<div class="list">―  Wait for <span>5 s or more</span>.</div>
+</dd>
+</dl>
+<div class="list">•  Retrieve the BCM DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902f5067300.html">DTC INSPECTION [BCM]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC displayed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the BCM.<div>(See <font class="extxref-label"><a href="id094000003800.html">BODY CONTROL MODULE (BCM) REMOVAL/INSTALLATION</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF OTHER DTCs DISPLAYED</div>
+<div class="list">•  Are any other DTCs displayed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the applicable DTC troubleshooting.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0902f5067500.html">DTC TABLE [BCM]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

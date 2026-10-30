@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<content type="PDF">
+	<description>
+		<code>Mazda2</code>
+		<name>SRT PDF Mazda2</name>
+		<note>Mazda2のSRT-PDFコンテンツです。</note>
+	</description>
+	<source>
+		<startup>Mazda2/Top_page.pdf</startup>
+	</source>
+</content>

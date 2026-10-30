@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>PUSH BUTTON START SYSTEM [ADVANCED KEYLESS ENTRY SYSTEM]</title>
+</head>
+<body><a name="id091400111633"></a><p class="servinfo-title"><span class="servinfo-head"></span>PUSH BUTTON START SYSTEM [ADVANCED KEYLESS ENTRY SYSTEM]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091400111633</p><br clear="all"><a name="id09140011163301"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  A push button start system has been adopted that automatically performs authorization of the remote transmitter brought into the vehicle.</div>
+<div class="list">•  If the engine stalls due to incorrect operation of the clutch by the driver, an engine restarting by depressing clutch pedal function has been adopted to allow the engine to be restarted by only depressing the clutch pedal.(MTX)</div><br clear="all"><a name="id09140011163302"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  When the bush button start is pressed, the push button start system performs authorization of the remote transmitter in the vehicle.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine start: When authorization of the remote transmitter is completed with the engine-start conditions met, the engine starts.</div>
+</dd>
+</dl>
+<div class="list">•  The guidance function is indicated by the KEY warning light (red) and the keyless warning alarm if there are insufficient conditions for starting the engine, remote transmitter authorization issues, or the steering lock cannot be released.</div><br clear="all"><p><a name="id09140011163303"></a><p class="topic-title"><span class="topic-head"></span>Engine restarting function by depressing clutch pedal</p>
+<dl>
+<dd>
+<div class="list">•  If the start stop unit determines that the driver intends to restart the engine because the engine has stalled, the engine restarting by depressing clutch pedal function restarts the engine.</div>
+<div class="list">•  The start stop unit determines that the driver is seated based on the conditions that the driver's seat belt is fastened and the driver's door is closed, and it determines that the driver intends to restart the engine when the clutch pedal is depressed from a released condition <span>within 3 s</span> after the engine stalls.</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09140011163304"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002561.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002561</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09140011163305"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001833.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001833</div>
+</td>
+</tr>
+</table>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001834.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001834</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09140011163306"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id09140011163307"></a><p class="topic-title"><span class="topic-head"></span>Remote transmitter authorization, power supply switching</p>
+<p class="list">1.  When the push button start is pressed, a push button start signal is input (1) to the start stop unit.</p>
+<p class="list"></p>
+<p class="list">2.  When the start stop unit detects a push button start signal, it sends (2) a request outgoing command signal to the LF control unit.</p>
+<p class="list"></p>
+<p class="list">3.  When the LF control unit detects the request outgoing command signal, it outputs (3) a request signal using all the keyless antennas in the vehicle interior.</p>
+<p class="list"></p>
+<p class="list">4.  The remote transmitter receives the request signal from the interior keyless antennas, and sends (4) ID data to the keyless receiver.</p>
+<p class="list"></p>
+<p class="list">5.  The keyless receiver transmits (5) the received ID data to the start stop unit.</p>
+<p class="list"></p>
+<p class="list">6.  The start stop unit verifies the ID data and if it matches the steering lock in the module is released (6) and the power supply is switched simultaneously to turn the push button start indicator light (amber) on. For details on the power supply switching, refer to the [POWER SUPPLY SWITCHING]. (See <font class="extxref-label"><a href="id092100205000.html">POWER SUPPLY SWITCHING</a></font>.)</p>
+<p class="list">
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002378.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002378</div>
+</td>
+</tr>
+</table>
+</p>
+</p><br clear="all"><p><a name="id09140011163308"></a><p class="topic-title"><span class="topic-head"></span>Engine start</p>
+<dl>
+<dd>
+<div class="list">•  When all the following conditions are met, authorization of the remote transmitter which is being used to press the push button start is performed to start the engine.</div>
+<dl>
+<div class="list-title">Engine start conditions</div>
+<dd class="list">
+<div class="list">―  Clutch pedal position switch and starter interlock switch on signals (clutch pedal depressed) detected (MTX)</div>
+<div class="list">―  Brake switch on signal (brake pedal depressed) detected (ATX)</div>
+<div class="list">―  P or N position signal from selector lever (selector lever at P or N position) received (ATX)</div>
+<div class="list">―  Remote transmitter is within request signal output range of keyless antennas in vehicle interior</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140011163309"></a><p class="topic-title"><span class="topic-head"></span>Engine emergency stop</p>
+<dl>
+<dd>
+<div class="list">•  If a push button start on signal is input <span>for 3 s or more</span> (ignition switch held pressed) or a push button start on signal is input 3 times <span>within 1.5 s</span> with the engine running, the start stop unit switches the ignition to ACC or OFF according to the position of the shift lever (MTX)/selector lever (ATX).</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140011163310"></a><p class="topic-title"><span class="topic-head"></span>Back-up mode (MTX) for engine-start</p>
+<dl>
+<dd>
+<div class="list">•  If the start stop unit determines that either the clutch pedal position switch or starter interlock switch is malfunctioning, the system switches to back-up mode.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If the push button start is pressed when all the following conditions are met while in the back-up mode, the remote transmitter authorization is performed and the engine starts.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Start stop unit detects that either clutch pedal position switch or starter interlock switch is on</div>
+<div class="list">―  Neutral switch signal is received via CAN communication from PCM</div>
+<div class="list">―  Remote transmitter is within request signal output range of keyless antennas in vehicle interior</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140011163311"></a><p class="topic-title"><span class="topic-head"></span>Engine restarting function by depressing clutch pedal</p>
+<dl>
+<dd>
+<div class="list">1.  The start stop unit enables the engine restarting by depressing clutch pedal function operation when all of the following conditions are met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  <span>Within 3 s</span> after engine-stall signal is received via CAN communication from PCM (1)</div>
+<div class="list">―  Driver buckle switch off signal (seat belt fastened) is received via CAN communication from SAS control module (2)</div>
+<div class="list">―  Driver door latch off signal (door closed) is received via ISO communication from BCM (3)</div>
+</dd>
+</dl>
+<div class="list">2.  If all of the following are detected, the start stop unit sends an engine starting enabled signal (3) to the PCM via CAN communication and restarts the engine.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Clutch pedal position switch off to on detected (1)</div>
+<div class="list">―  Starter interlock switch off to on detected (2)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001836.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001836</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09140011163312"></a><p class="topic-title"><span class="topic-head"></span>Guidance function</p>
+<dl>
+<dd>
+<div class="list-title">Display of methods for resolving issues</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Under the following conditions, the start stop unit sends a warning request signal via CAN transmission to the instrument cluster. It also flashes the push button start indicator (green).</div>
+<div class="list">•  When the instrument cluster receives the warning request signal under the following conditions, it flashes the KEY warning light (red).</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" rowspan="2">
+<p class="thead">Condition</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Instrument cluster</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Push button start</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">Keyless warning alarm</p>
+</th>
+<th id="" align="center">
+<p class="thead">KEY warning light (red)</p>
+</th>
+<th id="" align="center">
+<p class="thead">Indicator light (green)</p>
+</th>
+<th id="" align="center">
+<p class="thead">Indicator light (amber)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">ID verification is not acceptable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">―</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">―</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering lock cannot be released</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Pattern C<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">―</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash <span>for 10 s</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody">―</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :For the keyless warning alarm sound pattern, refer to the [KEYLESS WARNING ALARM].(See <font class="extxref-label"><a href="id091400006100.html">KEYLESS WARNING ALARM</a></font>.)</div>
+</p>
+</body>
+</html>

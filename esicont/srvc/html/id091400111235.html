@@ -1,0 +1,5062 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSIS SYSTEM [START STOP UNIT]</title>
+</head>
+<body><a name="id091400111235"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSIS SYSTEM [START STOP UNIT]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091400111235</p><br clear="all"><a name="id09140011123501"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The on-board diagnostic function consists of the following functions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  A malfunction detection function, which detects overall malfunctions in the start stop unit-related parts.</div>
+<div class="list">―  A memory function, which stores detected DTCs.</div>
+<div class="list">―  A display function, which indicates malfunction locations and status via DTC output.</div>
+<div class="list">―  A PID/data monitoring function, which reads out specific input/output signals and verifies the input/output condition.</div>
+</dd>
+</dl>
+<div class="list">•  Using the Mazda Modular Diagnostic System (M-MDS), DTCs can be read out and deleted, and the PID/data monitoring function can be activated.</div><br clear="all"><a name="id09140011123502"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Malfunction detection function</p>
+<div class="list">•  Detects malfunctions in input/output signals.</div>
+<div class="list">•  If a malfunction occurs, the start stop unit records the malfunction as a DTC. A recorded DTC can be read by the Mazda Modular Diagnostic System (M-MDS).</div>
+<p clear="all">
+<p class="table-title">DTC table</p>
+<p>
+<div>×: Applicable</div>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">KEY warning light (red)</p>
+</th>
+<th id="" align="center">
+<p class="thead">Push button start indicator light (amber)</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe</p>
+</th>
+<th id="" align="center">
+<p class="thead">Drive cycle</p>
+</th>
+<th id="" align="center">
+<p class="thead">Self test type<sup>*1</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">Memory function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1026:49</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering lock malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1026:96</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering lock malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B108B:23</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start switch 1 circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B108B:24</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start switch 1 circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B108C:23</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start switch 2 circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B108C:24</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start switch 2 circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10AC:13<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cruise control switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10AC:23<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cruise control switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10C6:1F<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (exterior, rear) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10C7:1F<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (interior, rear) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">B10C9:1F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (interior, center) circuit malfunction (With keyless entry system)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (interior, front) circuit malfunction (With advanced keyless entry system)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10D1:23<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request switch (LF) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10D3:23<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request switch (RF) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10D9:87</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Coil antenna (built into push button start) error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10DA:51</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM (data received failure)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10DA:62</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM (code mis-matched)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10E7:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IG1 relay circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10E7:12</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IG1 relay circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10E7:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IG1 relay circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10E7:17</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IG1 relay circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B112A:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IG2 relay circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1140:29<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">i-stop control error signal received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11FD:1F<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (exterior, LF) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1210:1F<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (exterior, RF) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B124C:56</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13C3:04<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF control unit internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13C3:09<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF control unit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13C3:16<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF control unit power supply voltage low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13C3:29<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error between start stop unit and LF control unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D3:05</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Remote transmitter program error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D3:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Low remote transmitter battery voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D3:4A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Remote transmitter matching malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D3:51</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Unregistered remote transmitter is detected</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D3:94</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with remote transmitter</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D3:97</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Remote transmitter registration work not completed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D4:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Insufficient remote transmitter programming number</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1C53:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Windshield wiper switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0040:23<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake switch (No.1 signal) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0040:24<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake switch (No.1 signal) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0051:2F<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering angle sensor signal error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0051:95<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering angle sensor assembly malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0052:14<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering angle sensor A signal circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0052:2F<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering angle sensor A signal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0053:14<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering angle sensor B signal circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0053:2F<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering angle sensor B signal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C2003:13<sup>*7</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Open circuit in steering switch</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0560:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit power supply (ESCL) voltage low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0615:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter relay circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0615:12</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter relay circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0615:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter relay circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0615:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter relay circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0616:23</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Circuit malfunction on downstream side of starter relay</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0616:24</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Circuit malfunction on downstream side of starter relay</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0616:29</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Downstream side of starter relay signal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P081C:23<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">NOT P position switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P081C:24<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">NOT P position switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P081D:29<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Neutral switch error signal received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P081D:2F<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Neutral switch signal mismatch</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0830:23<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CPP switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0850:23<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transaxle range sensor circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0850:24<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transaxle range sensor circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0930:71<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift-lock solenoid circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P1708:24<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter interlock switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P1708:29<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter interlock switch circuit or CPP switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P1794:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit power supply voltage (terminal 2W) low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:88</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module communication error (HS-CAN)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0028:87</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:87</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM (no response or data mis-match)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0101:00<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with TCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with ABS HU/CM or DSC HU/CM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:87</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with ABS HU/CM or DSC HU/CM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with EPS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0146:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with SAS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0447:86</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U201F:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless receiver circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U201F:12</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless receiver circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit configuration not completed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration data not received from instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:01<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:49</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">U3000:96</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit power supply voltage (terminal 1A) low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3004:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ACC relay circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3004:12</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ACC relay circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3004:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ACC relay circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3004:17</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ACC relay circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :C: CMDTC self test, D: ODDTC self test</div>
+<div class="deflist">*2  :With cruise control system</div>
+<div class="deflist">*3  :With advanced keyless entry system</div>
+<div class="deflist">*4  :With i-stop system</div>
+<div class="deflist">*5  :ATX</div>
+<div class="deflist">*6  :With smart city brake support (SCBS)</div>
+<div class="deflist">*7  :With steering switch</div>
+<div class="deflist">*8  :MTX</div><br clear="all"><a name="id09140011123503"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Snapshot Data</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The start stop unit stores the following two types of snapshot data (vehicle information) when a DTC is detected and displays them in the Mazda Modular Diagnostic System (M-MDS).</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle information detected by start stop unit</div>
+<div class="list">―  Vehicle information detected by instrument cluster and received by start stop unit via CAN communication</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<div class="list">•  The data for all DTCs currently detected is stored.</div>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Snapshot data item</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding data monitor items</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">AAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Accelerator Pedal Off/Under20%/Over20%/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CFG_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Config Complete/Not Configured/Config Error</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Under 0 degrees C/0 - Under 80 degrees C/Over 80 degrees C/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IC_VPWR</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster power supply voltage</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The start stop unit constantly receives the power supply voltage value of the instrument cluster sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the start stop unit records the power supply voltage of the instrument cluster when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IG-ON_TIMER</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">hh:mm:ss<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Elapsed time since ignition was switched ON (engine off or on)</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The instrument cluster records the elapsed time since the ignition was switched ON (engine off or on).</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="list">•  The start stop unit constantly receives the elapsed time since the ignition was switched ON (engine off or on) sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the start stop unit records the elapsed time since the ignition was switched ON (engine off or on) when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">PWR_MODE_KEY</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Key Out/Key Recently Out (Position 0)/Accessory (Position 1)/Post Ignition (Position 2)/Ignition On (Position 2)/Running (Position 2)/Running - Starting In Progress (Position 2)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Key Out: Ignition switched off</div>
+<div class="list">•  Key Recently Out (Position 0): Elapsed time <span>within 3 s</span> since ignition was switched off</div>
+<div class="list">•  Accessory (Position 1): Ignition is switched to ACC</div>
+<div class="list">•  Post Ignition (Position 2): Elapsed time <span>within 3 s</span> since ignition was switched ON (engine off or on)</div>
+<div class="list">•  Ignition On (Position 2): Ignition switched ON (engine off)</div>
+<div class="list">•  Running (Position 2): Ignition switched ON (engine on)</div>
+<div class="list">•  Running - Starting In Progress (Position 2): Cranking condition</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The start stop unit constantly receives the ignition switch status sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the start stop unit records the ignition switch status when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RPM_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Engine Stop/Under1500rpm/Over1500rpm/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The start stop unit constantly receives the engine speed sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the start stop unit records the engine speed when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TACHOMTR<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SHIFT_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">P/N/D/R/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Selector lever position status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The start stop unit constantly receives the selector lever position sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the start stop unit records the selector lever position when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TOTAL_DIST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Miles</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total traveled distance from completion of vehicle until start stop unit detects DTC (Odometer value in instrument cluster)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The total traveled distance from which the start stop unit detects DTCs to the present can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the odometer value in the instrument cluster.</div>
+<div class="list">2.  Verify the snapshot data item TOTAL_DIST.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TOTAL_TIME</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">hh:mm:ss<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total elapsed time since vehicle completion until start stop unit detects a DTC</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  When the ROOM fuse is removed, and the ignition is switched off, the time is not included in the elapsed time.</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">The elapsed time from which the start stop unit detects DTCs to the present can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the instrument cluster PID item TOTAL_TIME.</div>
+<div class="list">2.  Verify the snapshot data item TOTAL_TIME.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TOTAL_TIME<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TRNS_NUM_L</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Initial/No.1/No.2/No.3/No.4/No.5/No.6</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Registration number of the remote transmitter</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If the start stop unit detects DTC B13D3:16 (Low remote transmitter battery voltage), inspect the remote transmitter in which the malfunction is occurring using the following procedure to display the registration number of the remote transmitter that was operated.</div>
+<div class="list">1.  Verify the registration number of the remote transmitter in the snapshot data.</div>
+<div class="list">2.  Display the start stop unit PID item RF_TRNS_NUM and inspect the battery voltage of the remote transmitter having the same registration number as the recorded remote transmitter registration number.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit power supply voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR_B2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR_B1</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit power supply voltage (ROOM fuse)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR_B1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VSPD_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Stop/0-10km/h/Over10km/h/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The start stop unit constantly receives the vehicle speed sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the start stop unit records the vehicle speed when the DTC was detected, and it is displayed in the Mazda Modular Diagnostic System (M-MDS).</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SPEEDOMTR<sup>*1</sup></div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :Instrument cluster PID (See <font class="extxref-label"><a href="id092200021843.html">ON-BOARD DIAGNOSTIC [INSTRUMENT CLUSTER]</a></font>.)</div>
+<div class="deflist">*2  :The seconds may be indicated after the decimal point.</div><br clear="all"><a name="id09140011123504"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>DTC 7-digit code definition</p>
+<div class="list">•  When related systems or components have failed, the CM stores the DTC of the malfunctioning part in the CM memory, and allows for the retrieval of the store data using scanning tool when necessary. The DTCs are indicated using seven digits. Each digit indicates the following.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzn00003780.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzn00003780</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id09140011123505"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Status byte for DTC</p>
+<div class="list">•  The two digits (two digits after hyphen (-)) after the seven-digit DTC.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00002016.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00002016</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  A code which indicates the pending code, current/past malfunction status, or warning illumination status.</div>
+<div class="list">•  Can be read by performing a CMDTC self-test using the Mazda Modular Diagnostic System (M-MDS).</div>
+<div class="list">•  For details on the status byte, refer to the explanation on the Mazda Modular Diagnostic System (M-MDS) when reading the DTC.</div><br clear="all"><a name="id09140011123506"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Detection condition for the applicable DTC</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Detection condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1026:49</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering lock malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects malfunction in the steering lock of the internal start stop unit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1026:96</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering lock malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects malfunction in the steering lock of the internal start stop unit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B108B:23</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start switch 1 circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the push button start switch 1 is stuck on for <span>120 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B108B:24</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start switch 1 circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the push button start switch 1 is kept in an off condition <span>5 times or more</span> even though the push button start switch 2 is on.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B108C:23</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start switch 2 circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects the push button start switch 2 is stuck on for <span>120 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B108C:24</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start switch 2 circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the push button start switch 2 is kept in an off condition <span>5 times or more</span> even though the push button start switch 1 is on.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10AC:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cruise control switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detected an open circuit in the cruise control switch circuit for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10AC:23</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cruise control switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects any cruise control switch stuck on for <span>120 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10C9:1F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (interior, center) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects an open circuit or short to ground in the keyless antenna (interior, center) with the ignition switched off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10E7:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IG1 relay circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects the voltage from the IG1 relay output monitor as <span>less than 2.5 V</span> for <span>0.5 s or more</span> while the engine is not being cranked with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10E7:12</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IG1 relay circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects the IG1 relay output monitor voltage of <span>2.5 V or more</span> for <span>0.5 s or more</span> with the ignition switched off or ACC.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10E7:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IG1 relay circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects the IG1 monitor voltage of <span>less than 2.5 V</span> for <span>1 s or more</span> while the engine is not being cranked with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10E7:17</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IG1 relay circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects the IG1 monitor voltage of <span>2.5 V or more</span> for <span>1 s or more</span> with the ignition switched off or ACC.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B112A:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IG2 relay circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects the IG2 relay output monitor voltage of <span>2.5 V or less</span> for <span>0.5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1140:29</div>
+</td>
+<td id="" align="left">
+<div class="tbody">i-stop control error signal received</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the starter ground circuit does not turn on or open circuit on even though the PCM detects an engine restart request while the engine is stopped under i-stop control for <span>2 s or more</span> for a total of <span>5 times or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B124C:56</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the turn switch LH and RH are turned on simultaneously for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D3:4A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Remote transmitter matching malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects a remote transmitter different from the one equipped to the vehicle.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D3:97</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Remote transmitter registration work not completed</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the registration of a remote transmitter has not been completed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1C53:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Windshield wiper switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects an open circuit, short to ground, or short to power supply in the windshield wiper switch circuit for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0040:23</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake switch (No.1 signal) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the following signals are unmatched for 0.5 s or more for a continuous 5 times.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Transaxle range sensor (ATX) or starter interlock switch (MTX) condition</div>
+<div class="list">―  Starter relay downstream circuit condition</div>
+<div class="list">―  PCM control result</div>
+<div class="list">―  CAN signal condition output from PCM</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0040:24</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake switch (No.1 signal) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The start stop unit detected the following condition <span>5 times</span> continuously with the ignition switched ON (engine off or on).</div>
+<dl>
+<dd class="list">
+<div class="list">―  The brake switch (No.1 signal) is ON for a continuous <span>3 s or more</span> even though the brake switch (No.2 signal) changes.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0051:2F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering angle sensor signal error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects the steering angle sensor signal error for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0051:95</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering angle sensor assembly malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit receives the following signals with the ignition switched ON (engine off or on).</div>
+<dl>
+<dd class="list">
+<div class="list">―  Steering angle sensor assembly malfunction from EPS control module for <span>1 s or more</span></div>
+<div class="list">―  Improper assembly of steering angle sensor at <span>360°</span></div>
+<div class="list">―  Steering wheel angle of <span>720° or more</span> for <span>0.048 s or more</span></div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0052:14</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering angle sensor A signal circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects an open circuit or short to ground in the steering angle sensor A signal circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0052:2F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering angle sensor A signal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When any of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Start stop unit detected the sudden change in steering angle sensor A signal.</div>
+<div class="list">―  Start stop unit detected that the steering angle sensor A signal is stuck with the ignition switched ON (engine off or on).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0053:14</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering angle sensor B signal circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects an open circuit or short to ground in steering angle sensor B signal circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0053:2F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering angle sensor B signal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When any of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Start stop unit detects the sudden change in steering angle sensor B signal.</div>
+<div class="list">―  Start stop unit detects that the steering angle sensor B signal is stuck with the ignition switched ON (engine off or on).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C2003:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Open circuit in steering switch</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects an open circuit in the steering switch circuit for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0560:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit power supply (ESCL) voltage low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit power supply (ESCL) circuit voltage of <span>less than 8.5 V</span> is detected for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0615:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter relay circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the starter relay monitor circuit voltage of <span>less than 2.2 V</span> for <span>0.2 s or more</span> with the ignition switched off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0615:12</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter relay circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the starter relay circuit voltage of specification or more for <span>0.1 s or more</span> with the ignition switched off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0615:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter relay circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects an open circuit in the starter relay circuit for <span>0.075 s or more</span> with the ignition switched off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0615:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter relay circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the starter relay circuit voltage that is less than the specification for <span>0.05 s or more</span> during cranking.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0616:23</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Circuit malfunction on downstream side of starter relay</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects a short to ground in the starter relay downstream circuit continuously for <span>0.5 s or more</span> for a continuous <span>5 times</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0616:24</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Circuit malfunction on downstream side of starter relay</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects an open circuit in the starter relay downstream circuit continuously for <span>0.5 s or more</span> for a continuous <span>5 times</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0616:29</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Downstream side of starter relay signal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the following signals are unmatched for <span>0.5 s or more</span> for a continuous <span>5 times</span>.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Transaxle range sensor (ATX) or starter interlock switch (MTX) condition</div>
+<div class="list">―  Starter relay downstream circuit condition</div>
+<div class="list">―  PCM control result</div>
+<div class="list">―  CAN signal condition output from PCM</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P081C:23</div>
+</td>
+<td id="" align="left">
+<div class="tbody">NOT P position switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the NOT P position switch is stuck on for <span>5 s or more</span> for a continuous <span>5 times</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P081C:24</div>
+</td>
+<td id="" align="left">
+<div class="tbody">NOT P position switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the NOT P position switch is stuck off for <span>5 s or more</span> for a continuous <span>5 times</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P081D:29</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Neutral switch error signal received</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit receives the neutral switch signal error signal from the PCM for <span>1 min or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P081D:2F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Neutral switch signal mismatch</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the vehicle speed changes from <span>0 km/h {0 mph}</span> to <span>10 km/h {6.2 mph}</span> for a continuous <span>5 times or more</span> even though the neutral signal from the PCM is being received with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0830:23</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CPP switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the CPP switch is stuck on for <span>10 min or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0850:23</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transaxle range sensor circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The start stop unit detected the following condition <span>5 times</span> continuously with the ignition switched ON (engine off or on).</div>
+<dl>
+<dd class="list">
+<div class="list">―  A transaxle range sensor signal is in the P or N position for a continuous <span>1 s or more</span> even though the TCM CAN signal is in a position other than the P and N positions.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0850:24</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transaxle range sensor circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The start stop unit detected the following condition <span>5 times</span> continuously with the ignition switched ON (engine off or on).</div>
+<dl>
+<dd class="list">
+<div class="list">―  A transaxle range sensor signal is in a position other than the P and N positions for a continuous <span>1 s or more</span> even though the TCM CAN signal is in the P or N position.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0930:71</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift-lock solenoid circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects the shift-lock solenoid is stuck on for <span>30 min or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P1708:24</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter interlock switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects an open circuit in the starter interlock switch circuit for <span>0.5 s or more</span> for a continuous <span>5 times</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P1708:29</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter interlock switch circuit or CPP switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the starter interlock switch circuit is stuck on for <span>0.2 s or more</span>, or the CPP switch circuit is stuck off for <span>0.25 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P1794:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit power supply voltage (terminal 2W) low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit power supply circuit voltage (terminal 2W) of <span>less than 6.5 V</span> is detected for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:88</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module communication error (HS-CAN)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects the CAN bus communication line (HS-CAN) malfunction <span>10 times</span> continuously with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0028:87</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with BCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects the communication error with BCM <span>10 times continuously</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit could not receive the CAN signal from the PCM for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0101:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with TCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit could not receive the CAN signal from the TCM for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with ABS HU/CM or DSC HU/CM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit could not receive the CAN signal from the ABS HU/CM or DSC HU/CM for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:87</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with ABS HU/CM or DSC HU/CM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit could not receive the CAN signal from the ABS HU/CM or DSC HU/CM for <span>10 s or more</span> with the ignition switched off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with EPS control module</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit could not receive the CAN signal from the EPS control module for <span>1.2 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with BCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit could not receive the CAN signal from the BCM for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0146:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with BCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit could not receive the CAN signal from the BCM for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with SAS control module</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit could not receive the CAN signal from the SAS control module for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit could not receive the CAN signal from the instrument cluster for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0447:86</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from BCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit receives the error signals from the BCM for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U201F:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless receiver circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the keyless receiver circuit voltage of <span>less than 3.4 V</span> for <span>0.5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U201F:12</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless receiver circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the keyless receiver circuit voltage of <span>6.2 V or more</span> for <span>0.5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2100:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit configuration not completed</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit configuration not completed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration data not received from instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit cannot receive the configuration data from the instrument cluster for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:01</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects the internal malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:49</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects the internal malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:96</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit malfunction detected.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit power supply voltage (terminal 1A) low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit power supply circuit voltage (terminal 1A) of <span>5V or more, less than 8.5 V</span> is detected for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3004:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ACC relay circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the ACC relay output monitor voltage of <span>less than specification</span> for <span>0.05 s or more</span> with the ignition switched to ACC or ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3004:12</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ACC relay circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the ACC relay output monitor voltage of <span>2.5 V or more</span> for <span>0.5 s or more</span> with the ignition switched off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3004:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ACC relay circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the ACC monitor voltage of <span>less than 2.5 V</span> for <span>1 s or more</span> with the ignition switched to ACC or ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3004:17</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ACC relay circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the ACC monitor voltage of <span>2.5 V or more</span> for <span>5 s or more</span> with the ignition switched off.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id09140011123507"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Data Monitor Function</p>
+<div class="list">•  With the PID/data monitor function, input/output signal monitor items set in the start stop unit can be selected and read out in real-time.</div>
+<div class="list">•  The items which can be selected are as follows.</div>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">PID</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Operation</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Module control terminal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">BRAKE_SW1<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake switch (No.1 signal) signal input status</div>
+<div class="list">•  Off: Brake switch (No.1 signal) is off.</div>
+<div class="list">•  On: Brake switch (No.1 signal) is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1C (Brake switch)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CLUT_CUT_SW<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter interlock switch input status</div>
+<div class="list">•  Off: Starter interlock switch is off.</div>
+<div class="list">•  On: Starter interlock switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1F (Starter interlock switch)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CLUTCH_SW<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Clutch switch input status</div>
+<div class="list">•  Off: CPP switch is off.</div>
+<div class="list">•  On: CPP switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2E (Clutch pedal position switch)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">COMM_ST_TSP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays operation condition of the immobilizer system key code read function</div>
+<div class="list">•  Off: Key code read function not performed</div>
+<div class="list">•  On: Code read function is performed and coil antenna reads key code from remote transmitter transponder.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Key code reading function of immobilizer system is performed and when a brake switch, clutch switch, or push button start signal is input, the coil antenna reads the key code from the transponder of the remote transmitter, and displays On while the key code is being sent to the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  1AC (PATS+)</div>
+<div class="list">•  1AE (PATS-)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CRU_CON_SW<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not_Pressed/On/Off/On/Off/Cancel/Resume/Fault/Set (+)/Set (-)/Distance (+)<sup></sup>/Distance (-)<sup></sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cruise control switch operation condition</div>
+<div class="list">•  Not_Pressed: Each switch of cruise control switch is not pressed or speed limiter switch is pressed.</div>
+<div class="list">•  On: Cruise ON switch is pressed.</div>
+<div class="list">•  Off: Cruise OFF switch is pressed.</div>
+<div class="list">•  On/Off: —</div>
+<div class="list">•  Cancel: CANCEL switch is pressed.</div>
+<div class="list">•  Resume: RESUME (RES) switch is pressed.</div>
+<div class="list">•  Fault: Cruise control switch has a malfunction.</div>
+<div class="list">•  Set (+): SET (+) switch is pressed.</div>
+<div class="list">•  Set (-): SET (-) switch is pressed.</div>
+<div class="list">•  Distance (+): —</div>
+<div class="list">•  Distance (-): —</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1Y (Cruise control switch signal)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ES_UL_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not_Unlock/Unlock</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering lock unlock switch condition</div>
+<div class="list">•  Not_Unlock: Steering lock unlock switch is off.</div>
+<div class="list">•  Unlock: Steering lock unlock switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ES_UL_SW_M</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not_Unlock/Unlock</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Memory value of steering lock unlock switch</div>
+<div class="list">•  Not_Unlock: Memory value of steering lock unlock switch is not unlocked.</div>
+<div class="list">•  Unlock: Memory value of steering lock unlock switch is unlocked.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ES_ULL_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering lock unlock/lock switch condition</div>
+<div class="list">•  Off: Steering lock unlock/lock switch is off.</div>
+<div class="list">•  On: Steering lock unlock/lock switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ES_ULL_SW_M</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Memory value of steering lock unlock/lock switch</div>
+<div class="list">•  Off: Memory value of steering lock unlock/lock switch is off.</div>
+<div class="list">•  On: Memory value of steering lock unlock/lock switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">F_FOG_SW<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front fog light switch operation condition</div>
+<div class="list">•  Off: Fog light switch is not in F.FOG position.</div>
+<div class="list">•  On: Fog light switch is in F.FOG position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_SW_HI</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight switch (HI) operation condition</div>
+<div class="list">•  Off: Light switch is not in HI position.</div>
+<div class="list">•  On: Light switch is in HI position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_SW_LOW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays dimmer switch position of the light switch that is being input to the start stop unit</div>
+<div class="list">•  Off: Dimmer switch of light switch is not in LO position</div>
+<div class="list">•  On: Dimmer switch of light switch is in LO position</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Verify if the monitor value switches when the dimmer switch of the light switch is switched between LO and HI positions. If the dimmer switch operation and monitor values do not match, inspect the light switch.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_SW_OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight light switch (OFF) operation condition</div>
+<div class="list">•  Off: Light switch is not in OFF position.</div>
+<div class="list">•  On: Light switch is in OFF position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_SW_PASS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight switch (PASS) operation condition</div>
+<div class="list">•  Off: Light switch is not in passing position.</div>
+<div class="list">•  On: Light switch is in passing position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_SW_TNS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight switch (TNS) operation condition</div>
+<div class="list">•  Off: Light switch is not in TNS position.</div>
+<div class="list">•  On: Light switch is in TNS position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">HAZARD_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays condition of hazard warning switch input to start stop unit</div>
+<div class="list">•  Off: Hazard warning switch is off.</div>
+<div class="list">•  On: Hazard warning switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1G (Hazard warning switch signal)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IG_POSITION</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF/ACC/ON/CRANK</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays power status controlled by the start stop unit</div>
+<div class="list">•  OFF: Start stop unit controls ignition switch off</div>
+<div class="list">•  ACC: Start stop unit controls ignition switch ACC</div>
+<div class="list">•  ON: Start stop unit controls ignition switch ON (engine off)</div>
+<div class="list">•  CRANK: Start stop unit controls cranking at ignition switch ON</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the push button start is operated, the start stop unit performs power source switching and displays the PID value of the power source position in which control was performed.</div>
+<div class="list">•  If the push button start operation and PID value do not match, and a power source status of another unit differs from the PID value, inspect the input power source of the other unit because the power source control of the start stop unit is normal.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">INFO_SW<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/SW1_On/SW2_On/SW3_On/Unknown/Invalid</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering switch operation condition</div>
+<div class="list">•  Off: Steering switch UP/DOWN/INFO switch is not pressed.</div>
+<div class="list">•  SW1_On: UP switch is pressed.</div>
+<div class="list">•  SW2_On: DOWN switch is pressed.</div>
+<div class="list">•  SW3_On: INFO switch is pressed.</div>
+<div class="list">•  Unknown: Steering switch UP/DOWN/INFO switch signal is not determined.</div>
+<div class="list">•  Invalid: Steering switch malfunction is received.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays INFO switch position of steering switch input to start stop unit. Steering switch signal is input to start stop unit via clock spring.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  1AA (Steering switch signal)</div>
+<div class="list">•  1AB (Steering switch ground)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">INHIBIT_SW<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transaxle range switch input status</div>
+<div class="list">•  Off: Selector lever is not in P and N positions.</div>
+<div class="list">•  On: Selector lever is in P or N position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1F (Selector lever position switch)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LG/T_LK_SW<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request switch (liftgate) operation condition</div>
+<div class="list">•  Off: Request switch (liftgate) is off.</div>
+<div class="list">•  On: Request switch (liftgate) is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2F (LF control unit communication)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LG/T_UNL_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Trunk lid opener switch operation condition</div>
+<dl>
+<dd class="list">
+<div class="list">―  Off: Trunk lid opener switch is off.</div>
+<div class="list">―  On: Trunk lid opener switch is on.</div>
+</dd>
+</dl>
+<div class="list-title">5HB</div>
+<div class="list">•  Liftgate opener switch operation condition</div>
+<dl>
+<dd class="list">
+<div class="list">―  Off: Liftgate opener switch is off.</div>
+<div class="list">―  On: Liftgate opener switch is on.</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1Q (BCM communication)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LL_SW_D_LK</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Driver's door lock link switch (lock side) operation condition</div>
+<div class="list">•  Off: Front door lock-link switch (driver's side) is in unlock.</div>
+<div class="list">•  On: Front door lock-link switch (driver's side) is in lock.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1P (Lock input)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">NUM_TRNSMIT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays number of the remote transmitters programmed to the start stop unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P_RANGE_SW<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not P position switch condition</div>
+<div class="list">•  Off: NOT P position switch is off.</div>
+<div class="list">•  On: NOT P position switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1J (Not P position switch)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PAD_DOWN_SW<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering shift switch (DOWN) condition</div>
+<div class="list">•  Off: DOWN switch of steering shift switch is off.</div>
+<div class="list">•  On: DOWN switch of steering shift switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1N (Steering shift switch (down))</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PAD_UP_SW<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering shift switch (UP) condition</div>
+<div class="list">•  Off: UP switch of steering shift switch is off.</div>
+<div class="list">•  On: UP switch of steering shift switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1L (Steering shift switch (up))</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R_FOG_SW<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear fog light switch condition</div>
+<div class="list">•  Off: Fog light switch is not in R.FOG position.</div>
+<div class="list">•  On: Fog light switch is in R.FOG position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RELAY_ACC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ACC relay operation condition</div>
+<div class="list">•  Off: ACC relay drive is off.</div>
+<div class="list">•  On: ACC relay drive is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2C (ACC relay control)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RELAY_IG1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IG1 relay operation condition</div>
+<div class="list">•  Off: IG1 relay drive is off.</div>
+<div class="list">•  On: IG1 relay drive is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2S (IG1 relay control)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RELAY_IG2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IG2 relay operation condition</div>
+<div class="list">•  Off: IG2 relay drive is off.</div>
+<div class="list">•  On: IG2 relay drive is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2D (IG2 relay control)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RF_RECEP_ST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Initial/Transmitter/RF_Response</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays radio reception status from the remote transmitter</div>
+<div class="list">•  Initial: Signal from remote transmitter is not received by start stop unit</div>
+<div class="list">•  Transmitter: Signal by button operation on remote transmitter is received by start stop unit</div>
+<div class="list">•  RF_Response: During remote transmitter authorization, response signal from remote transmitter is received by start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When verifying the PID value while operating the remote transmitter buttons, if “Transmitter” is displayed it can be determined that the transmission between the remote transmitter, keyless receiver, and start stop unit is normal.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2R (Keyless receiver communication)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RF_TRNS_NUM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Initial/No.1/No.2/No.3/No.4/No.5/No.6</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When pressing the unlock button of the remote transmitter, the registration number of the remote transmitter sending radio waves to the start stop unit is displayed.</div>
+<div class="list">•  Initial: Registration number of remote transmitter cannot be received</div>
+<div class="list">•  No.1: Registration number No.1 remote transmitter is received</div>
+<div class="list">•  No.2: Registration number No.2 remote transmitter is received</div>
+<div class="list">•  No.3: Registration number No.3 remote transmitter is received</div>
+<div class="list">•  No.4: Registration number No.4 remote transmitter is received</div>
+<div class="list">•  No.5: Registration number No.5 remote transmitter is received</div>
+<div class="list">•  No.6: Registration number No.6 remote transmitter is received</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When DTC B13D3:16 (Low remote transmitter battery voltage) is detected, the registration number of the remote transmitter in which the battery voltage has decreased is displayed in the snapshot data item TRNS_NUM_L. Display the registration number of the remote transmitter using the PID, verify the remote transmitter with the low battery voltage, and inspect the battery condition of the target remote transmitter.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2R (Keyless receiver communication)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RQ_SW_LF<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request switch (LF) operation condition</div>
+<div class="list">•  Off: Request switch (LF) is off.</div>
+<div class="list">•  On: Request switch (LF) is on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The signal is input to the start stop unit through the LF control unit of the request switch (LF).</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2F (LF control unit communication)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RQ_SW_RF<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request switch (RF) operation condition</div>
+<div class="list">•  Off: Request switch (RF) is off.</div>
+<div class="list">•  On: Request switch (RF) is on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The signal is input to the start stop unit through the LF control unit of the request switch (RF).</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2F (LF control unit communication)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SECURITY_I</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output condition of security indicator</div>
+<div class="list">•  Off: Security indicator light is turned off.</div>
+<div class="list">•  On: Security indicator light is illuminated.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Security indicator on request to instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2M, 2O (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SFT_LK_SOL<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off (Lock)/On (Unlock)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift lock solenoid operation condition</div>
+<div class="list">•  Off (Lock): Shift-lock is operated.</div>
+<div class="list">•  On (Unlock): Shift-lock is released.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2G (Shift lock)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SPD_LIM_SW<sup>*7</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On/Unknown</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Speed limiter switch input status</div>
+<div class="list">•  Off: Speed limiter switch is off.</div>
+<div class="list">•  On: Speed limiter switch is on.</div>
+<div class="list">•  Unknown: Speed limiter switch signal is not determined.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1Y (Cruise control switch signal)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SSB_1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start switch 1 input signal</div>
+<div class="list">•  Off: Push button start switch 1 is off.</div>
+<div class="list">•  On: Push button start switch 1 is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1H (Push button start 1)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SSB_2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start switch 2 input signal</div>
+<div class="list">•  Off: Push button start switch 2 is off.</div>
+<div class="list">•  On: Push button start switch 2 is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2J (Push button start 2)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SSB_AMBER</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start indicator light (amber) illumination request</div>
+<div class="list">•  Off: Push button start indicator light (amber) is turned off.</div>
+<div class="list">•  On: Push button start indicator light (amber) is illuminated.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1M (Push button illumination (amber))</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SSB_GREEN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start indicator light (green) illumination request</div>
+<div class="list">•  Off: Push button start indicator light (green) is turned off.</div>
+<div class="list">•  On: Push button start indicator light (green) is illuminated.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1K (Push button illumination (green))</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SSB_ILLMI</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start illumination request</div>
+<div class="list">•  Off: START/STOP/ENGINE indicator light is turned off.</div>
+<div class="list">•  On: START/STOP/ENGINE indicator light is illuminated.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1I (Push button illumination)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">START_RLY_1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays voltage at start stop unit terminal 2V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2V (Starter relay)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">START_RLY_2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays voltage at start stop unit terminal 1D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1D (Starter monitor)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_A_ANG_A<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">° (deg)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays steering angle sensor A signal aiming angle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_A_ANG_B<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">° (deg)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays steering angle sensor B signal aiming angle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_AB_ANG<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">° (deg)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays steering angle signal (absolute angle)</div>
+<div class="list">•  Steering wheel in neutral position: Near <span>0 degrees</span></div>
+<div class="list">•  Steering wheel turned to left: Changes from <span>0 degrees</span> to positive</div>
+<div class="list">•  Steering wheel turned to right: Changes from <span>0 degrees</span> to negative</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_ANG_S<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Without/With</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle with/without steering angle sensor</div>
+<div class="list">•  Without: Steering angle sensor is not equipped.</div>
+<div class="list">•  With: Steering angle sensor is equipped.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_ANG_S_A<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays voltage at the steering angle sensor A signal</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1U (Steering angle sensor (signal A/D1))</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Refer to the [STEERING ANGLE SENSOR INSPECTION] in the workshop manual.</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_ANG_S_B<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays voltage at the steering angle sensor B signal</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1W (Steering angle sensor (signal A/D1))</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Refer to the [STEERING ANGLE SENSOR INSPECTION] in the workshop manual.</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_ANG_S_V<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays steering angle sensor power supply voltage</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  “5 V” is displayed even if the voltage is <span>5 V or more</span>.</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1S (Steering angle sensor power supply)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">T_SEN_LF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Displays in the Mazda Modular Diagnostic System (M-MDS) but it does not operate.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">T_SEN_RF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Displays in the Mazda Modular Diagnostic System (M-MDS) but it does not operate.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TURN_SW_L</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn switch (LH) input</div>
+<div class="list">•  Off: Turn switch is in position other than LH.</div>
+<div class="list">•  On: Turn switch is in LH position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TURN_SW_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn switch (RH) input</div>
+<div class="list">•  Off: Turn switch is in position other than RH.</div>
+<div class="list">•  On: Turn switch is in RH position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_ACC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays ACC power supply voltage input to start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If there is a malfunction in the ACC power supply voltage input to the start stop unit, the keyless entry system and push button start system do not operate normally because PID item VPWR_ACC is used for ACC power on/off determination.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1E (ACC monitor)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_B1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays B+ power supply (ROOM fuse) voltage input to start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If there is a malfunction in the B+ power supply (ROOM fuse) voltage input to the start stop unit, the keyless entry system does not operate normally because PID item VPWR_B1 is used for determining whether or not there is a ROOM fuse inserted.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1A (Power supply)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_B2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays B+ power supply (AT fuse) voltage input to start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When the ROOM fuse is removed, the B+ power supply (AT fuse) is the start stop unit power supply. If there is a malfunction in the B+ power supply (AT fuse) voltage input to the start stop unit when the ROOM fuse is removed, the push button start system does not operate normally.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2W (Power supply)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_B3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays B+ power supply (SRS2/ESCL fuse) input to start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If there is a malfunction in the B+ power supply (SRS2/ESCL fuse) voltage input to the start stop unit, the steering lock and the push button start system do not operate normally because PID item VPWR_B3 is used as the steering lock power supply built into the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2X (Power supply)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_IG1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays IG1 power supply voltage input to start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If there is a malfunction in the IG1 power supply voltage input to the start stop unit, the keyless entry system and the push button start system do not operate normally because PID item VPWR_IG1 is used for IG1 power on/off determination.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1B (Power supply)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WASHER_F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Windshield washer switch signal input status</div>
+<div class="list">•  Off: Windshield washer switch is in OFF position.</div>
+<div class="list">•  On: Windshield washer switch is in ON position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WASHER_R<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear washer switch signal input status</div>
+<div class="list">•  Off: Rear washer switch is not in ON position.</div>
+<div class="list">•  On: Rear washer switch is in ON position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_F_INT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Windshield wiper switch (INT) signal input status</div>
+<div class="list">•  Off: Windshield wiper switch is in  MIST, OFF or LO position.</div>
+<div class="list">•  On: Windshield wiper switch is in AUTO<sup>*9</sup>/INT<sup>*10</sup> or HI position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_F_LOW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Windshield wiper switch (LO) signal input status</div>
+<div class="list">•  Off: Windshield wiper switch is in OFF or AUTO<sup>*9</sup>/INT<sup>*10</sup> position.</div>
+<div class="list">•  On: Windshield wiper switch is in MIST, LO or HI position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_INT_E_A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Low/High</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Wiper INT encoder A signal input status</div>
+<div class="list">•  Low: Windshield wiper switch INT encoder A value is low.</div>
+<div class="list">•  High: Windshield wiper switch INT encoder A value is high.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_INT_E_B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Low/High</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Wiper INT encoder B signal input status</div>
+<div class="list">•  Low: Windshield wiper switch INT encoder B value is low.</div>
+<div class="list">•  High: Windshield wiper switch INT encoder B value is high.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_INT_E_C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Low/High</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Wiper INT encoder C signal input status</div>
+<div class="list">•  Low: Windshield wiper switch INT encoder C value is low.</div>
+<div class="list">•  High: Windshield wiper switch INT encoder C value is high.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_R_INT<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear wiper switch (INT) signal input status</div>
+<div class="list">•  Off: Rear wiper switch is not in INT position.</div>
+<div class="list">•  On: Rear wiper switch is in INT position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_R_ON<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear wiper switch (ON) signal input status</div>
+<div class="list">•  Off: Rear wiper switch is not in ON position.</div>
+<div class="list">•  On: Rear wiper switch is in ON position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :ATX</div>
+<div class="deflist">*2  :MTX</div>
+<div class="deflist">*3  :With cruise control system</div>
+<div class="deflist">*4  :With steering switch</div>
+<div class="deflist">*5  :With advanced keyless entry system</div>
+<div class="deflist">*6  :With steering shift switch</div>
+<div class="deflist">*7  :With adjustable speed limiter (ASL)</div>
+<div class="deflist">*8  :With smart city brake support (SCBS)</div>
+<div class="deflist">*9  :With auto wiper system</div>
+<div class="deflist">*10  :Without auto wiper system </div>
+</body>
+</html>

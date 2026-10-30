@@ -1,0 +1,1306 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>FULL-AUTO AIR CONDITIONER SYSTEM [FULL-AUTO AIR CONDITIONER]</title>
+</head>
+<body><a name="id0740a1004000"></a><p class="servinfo-title"><span class="servinfo-head"></span>FULL-AUTO AIR CONDITIONER SYSTEM [FULL-AUTO AIR CONDITIONER]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0740a1004000</p><br clear="all"><a name="id0740a100400001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The climate control unit performs the following controls based on the input signals from the each dial/switch and each sensor.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Control item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Control description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">Airflow temperature control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Airflow temperature automatic control</div>
+<dl>
+<dd class="list">
+<div class="list">―  MAX HOT and MAX COLD correction</div>
+<div class="list">―  Engine coolant temperature correction</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Airflow volume control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Airflow volume automatic control</div>
+<div class="list">•  Airflow volume manual control</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine coolant temperature correction (warm-up correction)</div>
+<div class="list">―  Mild start correction</div>
+<div class="list">―  MAX HOT and MAX COLD correction</div>
+<div class="list">―  Start-up window fogging prevention correction</div>
+<div class="list">―  Defroster correction</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Airflow mode control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Airflow mode automatic control</div>
+<div class="list">•  Airflow mode manual control</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine coolant temperature correction (warm-up correction)</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Air intake control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Air intake manual control</div>
+<dl>
+<dd class="list">
+<div class="list">―  Air intake actuator motor protection function</div>
+<div class="list">―  RECIRCULATE mode control under severe heat</div>
+<div class="list">―  FRESH control in defroster mode</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">A/C compressor control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  A/C compressor automatic control</div>
+<div class="list">•  A/C compressor manual control</div>
+<dl>
+<dd class="list">
+<div class="list">―  Defroster correction</div>
+</dd>
+</dl>
+<div class="list">•  A/C cut-off control</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Supplementary function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">Sensor signal delay function</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Air conditioner i-stop control (With i-stop)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Fail-safe</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">On-board diagnostic function (See <font class="extxref-label"><a href="id070200126600.html">ON-BOARD DIAGNOSTIC</a></font>.)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0740a100400002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p><br clear="all"><p><a name="id0740a100400003"></a><p class="topic-title"><span class="topic-head"></span>Airflow temperature control</p>
+<dl>
+<dd>
+<div class="list">•  The airflow temperature control operates the air mix actuator in conjunction with the set temperature and vehicle conditions, and switches the air mix door position.</div>
+<div class="list">•  The climate control unit calculates the opening angle characteristic of the air mix actuator based on the set temperature, solar radiation amount, and the airflow mode.</div>
+<div class="list">•  The air mix actuator opening angle characteristic decreases as the sunlight intensity increases.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00000699.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00000699</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The airflow temperature is automatically controlled continuously.</div>
+<div class="list">•  The following are the airflow temperature control corrections.</div>
+<dl>
+<dd class="list">
+<div class="list">―  MAX HOT and MAX COLD correction</div>
+<div class="list">―  Engine coolant temperature correction</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">MAX HOT and MAX COLD correction</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When the temperature is set to <span>29/84</span>, the air mix actuator opening angle is fixed at fully open, and when set to <span>15/59</span>, it is fixed at fully closed (European (L.H.D. U.K.) specs.).</div>
+<div class="list">•  When the temperature is set to <span>32/90</span>, the air mix actuator opening angle is fixed at fully open, and when set to <span>18/64</span>, it is fixed at fully closed (except European (L.H.D. U.K.) specs.).</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Engine coolant temperature correction</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The engine coolant temperature correction (warm-up correction) sets the opening angle of the air mix actuator more to the HOT side than during normal control when the engine coolant temperature is lower than the specified value to prevent discomfort caused by a high volume of cold air blown from the vents after the engine is started in winter.</div>
+<div class="list">•  The engine coolant temperature correction is not performed when the ambient temperature is <span>15 °C {59 °F} or more</span>.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0740a100400004"></a><p class="topic-title"><span class="topic-head"></span>Airflow volume control</p>
+<dl>
+<dd>
+<div class="list">•  The airflow volume control changes the operation of the blower motor according to the operations of the airflow volume control dial or temperature setting dial and the vehicle environment to change the airflow volume.</div>
+<div class="list">•  The airflow volume control has automatic and manual controls.</div>
+<div class="list">•  The airflow volume automatic control performs the following corrections:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine coolant temperature correction (warm-up correction)</div>
+<div class="list">―  Mild start correction</div>
+<div class="list">―  MAX HOT and MAX COLD correction</div>
+<div class="list">―  Start-up window fogging prevention correction</div>
+<div class="list">―  Defroster correction</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Airflow volume automatic control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The climate control unit calculates the blower motor applied voltage characteristic based on the set temperature and ambient temperature.</div>
+<div class="list">•  The climate control unit compares the blower motor applied voltage characteristic with the target temperature (calculated control value T3) and then determines the blower motor applied voltage (AUTO voltage).</div>
+<div class="list">•  The calculated control value T3 is the target cabin temperature as set by the climate control unit based on the difference between the set temperatures and temperatures input from the sensors.</div>
+<div class="list">•  The calculated control value T3 is constantly calculated according to the changes in the set temperature and the signals input from the sensors.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002127.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002127</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Airflow volume manual control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The climate control unit changes the blower motor applied voltage in seven steps according to the operation of the airflow volume control dial.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Airflow volume setting</p>
+</th>
+<th id="" align="center">
+<p class="thead">Blower motor applied voltage (reference)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">1st</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3.8 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2nd</div>
+</td>
+<td id="" align="center">
+<div class="tbody">5.1V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3rd</div>
+</td>
+<td id="" align="center">
+<div class="tbody">6.7 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4th</div>
+</td>
+<td id="" align="center">
+<div class="tbody">8.4 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">5th</div>
+</td>
+<td id="" align="center">
+<div class="tbody">10.1 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">6th</div>
+</td>
+<td id="" align="center">
+<div class="tbody">12.0 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">7th</div>
+</td>
+<td id="" align="center">
+<div class="tbody">14.6 V<sup></sup></div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="list-title">Engine coolant temperature correction (warm-up correction)</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The engine coolant temperature correction (warm-up correction) controls the blower motor applied voltage in conjunction with the increase in the engine coolant temperature to prevent a high volume of cold air from flowing out of the air vents after starting the engine in the winter.</div>
+<div class="list">•  The engine coolant temperature correction (warm-up correction) is not performed during defroster correction, or when the cabin temperature is <span>20 °C {68 °F}</span> or more and the airflow mode is in VENT mode.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002128.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002128</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Mild start correction</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The mild start correction prevents a high volume of warm air from blowing out of the air vents when the blower motor is started.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">MAX HOT and MAX COLD correction</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The MAX HOT and MAX COLD correction fixes the blower motor applied voltage as indicated in the table when the temperature is set to MAX HOT or MAX COLD.</div>
+<div class="list">•  The MAX HOT correction is not performed during engine coolant temperature correction (warm-up correction).</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">European (L.H.D. U.K.) specs.</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Correction</p>
+</th>
+<th id="" align="center">
+<p class="thead">Set temperature</p>
+</th>
+<th id="" align="center">
+<p class="thead">Blower motor applied voltage</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAX HOT correction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">29/84</div>
+</td>
+<td id="" align="center">
+<div class="tbody">12.1 (V): AUTO-HI</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAX COLD correction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">15/59</div>
+</td>
+<td id="" align="center">
+<div class="tbody">+B: MAX-HI</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Except European (L.H.D. U.K.) specs.</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Correction</p>
+</th>
+<th id="" align="center">
+<p class="thead">Set temperature</p>
+</th>
+<th id="" align="center">
+<p class="thead">Blower motor applied voltage</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAX HOT correction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">32/90</div>
+</td>
+<td id="" align="center">
+<div class="tbody">12.1 (V): AUTO-HI</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAX COLD correction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">18/64</div>
+</td>
+<td id="" align="center">
+<div class="tbody">+B: MAX-HI</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="list-title">Start-up window fogging prevention correction</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The start-up window fogging prevention correction prevents the windows from fogging when all of the following conditions are met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Right after engine start</div>
+<div class="list">―  Heater is operated</div>
+<div class="list">―  Air is blowing from vents for defrosting</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Defroster correction</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When the airflow mode is set to the defroster, the defroster correction adds a correction <span>+2 V</span> to the blower motor applied voltage to increase airflow volume.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0740a100400005"></a><p class="topic-title"><span class="topic-head"></span>Airflow mode control</p>
+<dl>
+<dd>
+<div class="list">•  The airflow mode control drives the airflow mode actuator in conjunction with the MODE dial and the vehicle conditions, and switches the position of the airflow mode door.</div>
+<div class="list">•  The airflow mode control has automatic and manual controls.</div>
+<div class="list">•  The airflow mode automatic control performs the following correction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine coolant temperature correction (warm-up correction)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Airflow mode automatic control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The climate control unit determines the airflow mode based on the current air mix actuator opening angle,<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002129.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002129</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Airflow mode manual control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The climate control unit switches the airflow mode by the operation of the MODE dial.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Airflow mode</p>
+</th>
+<th id="" align="center">
+<p class="thead">Air vent</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">VENT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Center vent, side vent</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BI-LEVEL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Center vent, side vent, front heat</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">HEAT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Side vent (low volume), front heat, side demister (low volume), defroster (low volume)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DEF/HEAT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Side vent (low volume), front heat, side demister, defroster</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DEFROSTER</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Side vent (low volume), side demister, defroster</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="list-title">Engine coolant temperature correction (warm-up correction)</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The engine coolant temperature correction (warm-up correction) prevents cold air from coming out of the lower vents after engine start in winter</div>
+<div class="list">•  The engine coolant temperature correction (warm-up correction) switches the airflow mode in conjunction with the increase in the engine coolant temperature.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002130.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002130</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0740a100400006"></a><p class="topic-title"><span class="topic-head"></span>Air intake control</p>
+<dl>
+<dd>
+<div class="list">•  The air intake control drives the air intake actuator and switches the air intake door position in conjunction with the operation of the MODE dial and the vehicle conditions.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The air intake control performs the following control:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Air intake manual control</div>
+<div class="list">―  Air intake actuator motor protection function</div>
+<div class="list">―  RECIRCULATE mode control under severe heat</div>
+<div class="list">―  FRESH control in defroster mode</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Air intake manual control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The climate control unit switches the air intake mode by the operation of the RECIRCULATE switch.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Air intake mode (RECIRCULATE switch operation)</p>
+</th>
+<th id="" align="center">
+<p class="thead">RECIRCULATE indicator light</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">FRESH → RECIRCULATE</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RECIRCULATE → FRESH</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="list-title">Air intake actuator motor protection function</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  For the air intake actuator motor protection function, if the climate control unit detects an excessive load on the motor while the air intake actuator is operating, it stops the air intake actuator motor.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">RECIRCULATE mode control under severe heat</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When the vehicle is driven at a very low speed with the A/C on under severe heat conditions, the climate control unit may change the air intake mode from FRESH to RECIRCULATE automatically.</div>
+<div class="list">•  Due to this, load on the A/C compressor is reduced.</div>
+<div class="list">•  When the air intake mode is switched to RECIRCULATE, the indicator on the RECIRCULATE switch turns on.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">FRESH control in defroster mode</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The FRESH control in the defroster mode switches the intake mode to FRESH when the airflow mode is set to the defroster.</div>
+<div class="list">•  The FRESH control in the defroster mode improves the effect of defrosting by switching the air intake mode to FRESH.</div>
+<div class="list">•  The FRESH control in the defroster mode switches the air intake mode to FRESH even if the system was set manually to RECIRCULATE.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0740a100400007"></a><p class="topic-title"><span class="topic-head"></span>A/C compressor control</p>
+<dl>
+<dd>
+<div class="list">•  The A/C compressor control turns the A/C compressor on/off based on the climate control unit operation and signals from each sensor.</div>
+<div class="list">•  The A/C compressor control has automatic and manual controls.</div>
+<div class="list">•  The A/C compressor automatic control performs the following correction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Defroster correction</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">A/C compressor automatic control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The climate control unit determines the A/C compressor mode on or off based on the ambient temperature.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002131.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002131</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The climate control unit determines the A/C signal on or off in conjunction with the air conditioner operation such as A/C on mode (A/C switch on) or AUTO mode (AUTO switch on).</div>
+<div class="list">•  In the A/C compressor on mode, the A/C signal (magnetic clutch) on/off is determined based on the ambient temperature and the temperature of the air passing through the evaporator.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00003887.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00003887</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  In AUTO mode, the A/C signal (magnetic clutch on or off) on or off is determined based on the ambient temperature calculation value and the temperature of the air passing through the evaporator.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002132.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002132</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The ambient temperature calculation value is calculated based on the ambient temperature, set temperature, and the cabin temperature.</div>
+<div class="list">•  When the ambient temperature is low, the A/C signal (magnetic clutch) off temperature is set lower to prevent window fogging.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">A/C compressor manual control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The climate control unit switches the A/C compressor mode on or off according to the operation of the A/C switch.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">A/C mode (A/C switch operation)</p>
+</th>
+<th id="" align="center">
+<p class="thead">A/C indicator light</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">OFF→ ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ON → OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="list-title">Defroster correction</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The defroster correction turns the A/C compressor mode on to prevent window fogging when the airflow mode is set to the defroster.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">A/C cut-off control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The PCM performs A/C cut-off control based on the input signal from the climate control unit and outputs an operation signal to the A/C relay (magnetic clutch). (See <font class="extxref-label"><a href="id0140q1206200.html">A/C CUT-OFF CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)(See <font class="extxref-label"><a href="id0140z5206200.html">A/C CUT-OFF CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0740a100400008"></a><p class="topic-title"><span class="topic-head"></span>Sensor signal delay function </p>
+<dl>
+<dd>
+<div class="list">•  The amount of solar radiation, and the ambient and cabin temperatures may change due to factors such as direct and intermittent sunlight (traveling through a city or a highway tunnel), or radiant heat from the ground under parked vehicles as well as the opening and closing of doors.</div>
+<div class="list">•  If control was performed based exactly on these variations, the air conditioning function would be negatively affected and smooth control could not occur.</div>
+<div class="list">•  In order to prevent this, the climate control unit delays and smooths the input signals for solar radiation, and the ambient and cabin temperature as shown in the following figure, realizing stable control.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002133.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002133</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  When the engine is restarted after being temporarily stopped, the ambient temperature sensor may detect a temperature higher than the actual ambient temperature.</div>
+<div class="list">•  To prevent this, if the engine coolant temperature is <span>55 °C {131 °F} or more</span>, each control is performed based on the data for the ambient temperature before the engine was stopped that was stored in the climate control unit.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0740a100400009"></a><p class="topic-title"><span class="topic-head"></span>Air conditioner i-stop control (With i-stop)</p>
+<dl>
+<dd>
+<div class="list">•  The climate control unit determines i-stop control (engine stop control) according to the operation condition of the air conditioner system and sends i-stop (engine stop control) request signals to the PCM.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002134.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002134</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The climate control unit controls the air mix actuator according to the change in the airflow temperature passing through the heater core or the evaporator during i-stop operation (engine stop control) as follows and corrects the airflow temperature.</div>
+<dl>
+<dd class="list">
+<div class="list">―  If airflow temperature passing through heater core decreases, air mix actuator is opened in HOT direction</div>
+<div class="list">―  If airflow temperature passing through evaporator increases, air mix actuator is opened in COLD direction</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  Occupants may hear the sound of the air mix actuator operating because there is no engine sound during the i-stop operation (engine stop control). The airflow temperature control is performed even during i-stop operation (engine stop control), therefore, it does not indicate a system malfunction even if the operation sound of the air mix actuator is heard.</div>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0740a100400010"></a><p class="topic-title"><span class="topic-head"></span>Fail-safe</p>
+<dl>
+<dd>
+<div class="list">•  If a malfunction is detected by the malfunction detection function, the fail-safe function performs the following controls to prevent an operation malfunction of the auto air conditioner and malfunction of output devices.</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">Fail-safe function table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Part where malfunction is determined</p>
+</th>
+<th id="" align="center">
+<p class="thead">Malfunction determined when ignition is switched ON</p>
+</th>
+<th id="" align="center">
+<p class="thead">Ignition switched ON under malfunction condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">Ambient temperature sensor</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient temperature sensor input value is fixed at value right before malfunction</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient temperature sensor input value is fixed at <span>15 °C {59 °F}.</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Cabin temperature sensor</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cabin temperature sensor input value is fixed at the value right before the malfunction.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cabin temperature sensor input value is fixed at <span>25 °C {77 °F}.</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Evaporator temperature sensor</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Evaporator temperature sensor input value fixed at <span>0 °C {32 °F}</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Solar radiation sensor</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Solar radiation sensor input value fixed at value right before the malfunction</div>
+<div class="tbody">(Solar radiation sensor input value <span>0.25 V</span> or less or <span>4.9 V</span> or more)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Solar radiation sensor set value fixed at <span>0 W/m<sup>2</sup></span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Engine coolant temperature sensor</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature sensor input value fixed at <span>85 °C {185 °F}</span>.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Air mix actuator</div>
+<div class="tbody">(Potentiometer)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Air mix actuator drive signal is stopped right after the malfunction is determined.</div>
+<div class="list">•  However, fixed at MAX COLD when manually set temperature is at <span>15/59</span> and fixed at MAX HOT when manually set temperature is at <span>29/84</span> (European (L.H.D. U.K.) specs.)</div>
+<div class="list">•  However, fixed at MAX COLD when manually set temperature is at <span>18/64</span> and fixed at MAX HOT when manually set temperature is at <span>32/90</span> (except European (L.H.D. U.K.) specs.)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control based on ambient temperature (Reference: Graph 1)</div>
+<div class="list">•  However, fixed at MAX COLD when manually set temperature is at <span>15/59</span> and fixed at MAX HOT when manually set temperature is at <span>29/84</span> (European (L.H.D. U.K.) specs.)</div>
+<div class="list">•  However, fixed at MAX COLD when manually set temperature is at <span>18/64</span> and fixed at MAX HOT when manually set temperature is at <span>32/90</span> (except European (L.H.D. U.K.) specs.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Airflow mode actuator</div>
+<div class="tbody"> (Potentiometer)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Airflow mode actuator drive signal is stopped right when the malfunction is determined.</div>
+<div class="list">•  For manual operation, only vent or defroster mode is operable</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control based on ambient temperature (Reference: Graph 2)</div>
+<div class="list">•  For manual operation, only vent or defroster mode is operable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Air mix actuator</div>
+<div class="tbody"> (Motor lock)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Air mix actuator drive signal is stopped right after the malfunction is determined.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>20 s</span> after the ignition is switched ON (engine off or on), the normal air mix actuator drive signal is output again. After that, motor output is stopped if a malfunction is detected.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Airflow mode actuator</div>
+<div class="tbody"> (Motor lock)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Airflow mode actuator drive signal is stopped right when the malfunction is determined.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>9 s</span> after the ignition is switched ON (engine off or on), the normal mode actuator drive signal is output again. After that, motor output is stopped if a malfunction is detected.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002135.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002135</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><a name="id0740a100400011"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002136.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002136</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0740a100400012"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00004237.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00004237</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0740a100400013"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002137.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002137</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0740a100400014"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id0740a100400015"></a><p class="topic-title"><span class="topic-head"></span>Airflow temperature control</p>
+<p class="list">1.  The climate control unit performs airflow temperature determination (2) based on the signals (1) from each sensor which change according to the temperature setting dial operation and the vehicle conditions when the ignition is switched ON (engine off or on).</p>
+<p class="list"></p>
+<p class="list">2.  The climate control unit drives (3) the air mix actuator based on the results of the airflow temperature determination and corrections.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00002841.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00002841</div>
+</td>
+</tr>
+</table>
+<p class="list">3.  The climate control unit detects the current air mix actuator opening angle based on the potentiometer voltage (4).</p>
+<p class="list"></p>
+<p class="list">4.  The climate control unit compares the target actuator opening angle with the voltage from the potentiometer.</p>
+<p class="list"></p>
+<p class="list">5.  When the potentiometer voltage value differs from the target actuator opening angle, the climate control unit drives (6) the air mix actuator motor.</p>
+<p class="list"></p>
+<p class="list">6.  When the potentiometer voltage value matches (7) the target actuator opening angle, the climate control unit stops (8) the air mix actuator motor.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002138.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002138</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0740a100400016"></a><p class="topic-title"><span class="topic-head"></span>Airflow volume control</p>
+<p class="list">1.  When the ignition is switched ON (engine off or on), the BCM turns the blower relay on (1).</p>
+<p class="list"></p>
+<p class="list">2.  When the blower relay turns on, the blower fan controller goes on operation standby.</p>
+<p class="list"></p>
+<p class="list">3.  The climate control unit performs airflow volume determination (3) based on the operation of the airflow volume control dial and the temperature setting dial, the airflow mode condition, and the signals from each sensor when the ignition is switched ON (engine off or on). </p>
+<p class="list"></p>
+<p class="list">4.  The climate control unit sends a blower speed signal (4) to the blower fan controller based on the results of the airflow volume determination and the corrections.</p>
+<p class="list"></p>
+<p class="list">5.  The blower fan controller operates (5) the blower motor based on the blower speed signal.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00002842.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00002842</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0740a100400017"></a><p class="topic-title"><span class="topic-head"></span>Airflow mode control</p>
+<p class="list">1.  The climate control unit performs airflow mode determination (2) based on the signals (1) from each sensor which change according to the MODE dial operation and the vehicle conditions when the ignition is switched ON (engine off or on).</p>
+<p class="list"></p>
+<p class="list">2.  The climate control unit drives (3) the airflow mode actuator based on the results of the airflow mode determination and corrections.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00002843.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00002843</div>
+</td>
+</tr>
+</table>
+<p class="list">3.  The climate control unit detects the current airflow mode actuator opening angle based on the potentiometer voltage (4).</p>
+<p class="list"></p>
+<p class="list">4.  The climate control unit compares the target actuator voltage value with the voltage from the potentiometer.</p>
+<p class="list"></p>
+<p class="list">5.  When the potentiometer voltage value differs from the target actuator voltage value, the climate control unit drives (6) the airflow mode actuator motor.</p>
+<p class="list"></p>
+<p class="list">6.  When the potentiometer voltage value matches (7) the target actuator voltage value, the climate control unit stops (8) the airflow mode actuator motor.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002139.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002139</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0740a100400018"></a><p class="topic-title"><span class="topic-head"></span>Air intake control</p>
+<p class="list">1.  The climate control unit performs air intake mode determination (2) based on the signals (1) from the operation of the RECIRCULATE switch and the MODE dial and the PCM when the ignition is switched ON (engine off or on).</p>
+<p class="list"></p>
+<p class="list">2.  The climate control unit drives (3) the air intake actuator for a specified time based on the results of the air intake mode determination and corrections.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00002844.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00002844</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0740a100400019"></a><p class="topic-title"><span class="topic-head"></span>A/C compressor control</p>
+<p class="list">1.  The climate control unit performs A/C compressor mode determination (2) based on the signals (1) from each sensor which change according to each switch/dial operation and the vehicle conditions when the ignition is switched ON (engine off or on).</p>
+<p class="list"></p>
+<p class="list">2.  The climate control unit sends (3) the A/C signal to the PCM according to the result of the A/C compressor mode determination and corrections.</p>
+<p class="list"></p>
+<p class="list">3.  The PCM turns the A/C relay on (4) based on the signals from each sensor which change according to the A/C signal and the vehicle conditions.</p>
+<p class="list"></p>
+<p class="list">4.  When the A/C relay turns on, the magnetic clutch turns on (5).</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00002845.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00002845</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0740a100400020"></a><p class="topic-title"><span class="topic-head"></span>Air conditioner i-stop control (With i-stop)</p>
+<dl>
+<dd>
+<div class="list-title">i-stop (engine stop control) request control (i-stop inhibit/i-stop permit)</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The climate control unit sends an i-stop inhibit or permit request signal to the PCM according to the operation conditions of the air conditioner system.</div>
+<div class="list">•  If any of the following i-stop inhibit conditions is met, the climate control unit sends an i-stop inhibit request signal to the PCM.</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">i-stop inhibit conditions</p>
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Climate control unit detects DTC</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Ambient temperature is <span>-10 °C {14 °F} or less</span>, or <span>50 °C {122 °F} or more</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Blower motor is operating</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Defroster is being operated manually</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">A/C switch is ON</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Set temperature is MAX COLD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Airflow mode is vent or bi-level</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Large difference between set temperature and cabin temperature and difference between target airflow temperature and current airflow temperature</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="list">•  When all of the i-stop inhibit conditions are met, the climate control unit sends an i-stop permit request signal to the PCM.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Air conditioner system control during i-stop (engine-stop control)</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When the climate control unit determines an engine-stop condition based on the i-stop condition signal sent from the PCM, it starts the air conditioner system control when the engine is stopped.</div>
+<div class="list">•  When the engine is stopped by the i-stop control, the climate control unit stops the air intake actuator at the current position.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If the engine is stopped by the i-stop control with the A/C switch turned on, the indicator on the A/C switch is kept turned on.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">•  Based on the following signals, the climate control unit calculates the engine coolant temperature correction value for the engine-stop condition by i-stop control.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine coolant temperature signal at moment engine is stopped which is sent from PCM via CAN communication</div>
+<div class="list">―  Heater core temperature</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Recovery to normal air conditioner system control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If any of the following i-stop inhibit conditions is met during air conditioner system control when the engine is stopped, the climate control unit sends an engine re-start request signal to the PCM.</div>
+<div class="list">•  After sending an engine restart request signal, the climate control unit returns to normal air conditioner system control when the engine is restarted.</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

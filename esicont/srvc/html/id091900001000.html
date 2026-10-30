@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>RAIN SENSOR</title>
+</head>
+<body><a name="id091900001000"></a><p class="servinfo-title"><span class="servinfo-head"></span>RAIN SENSOR</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091900001000</p><br clear="all"><a name="id09190000100001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The rains sensor calculates the operation speed of the windshield wipers based on the amount of rainfall hitting the windshield, and outputs a windshield wiper operation signal to the BCM.</div><br clear="all"><a name="id09190000100002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p><br clear="all"><p><a name="id09190000100003"></a><p class="topic-title"><span class="topic-head"></span>Rainfall amount detection function</p>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  If the windshield is under any of the following conditions, the rain sensor cannot detect the amount of rainfall correctly and the windshield wipers operate incorrectly.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Stickers or labels are adhered to the rain sensor detection area in the upper part of the windshield.</div>
+<div class="list">―  The rain sensor detection area in the upper part of the windshield is dirty.</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The rain sensor detects the amount of rainfall by the rate of reflected infrared light emitted from the built-in LED.</div>
+<div class="list">•  The rain sensor calculates the windshield wiper operation signal based on the amount of detected rainfall.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09190000100004"></a><p class="topic-title"><span class="topic-head"></span>Initial setting function</p>
+<dl>
+<dd>
+<div class="list">•  When the ignition is switched ON (engine off or on), the rain sensor detects the transparency of the windshield surface which varies depending on wear and accumulation of dust.</div>
+<div class="list">•  As a result, the rain sensor determines the optimal speed (LO/HI) for the windshield wipers and sends the windshield wiper operation signal to the BCM.</div>
+<div class="list">•  The initialization setting is performed each time in conjunction with the ignition being switched ON (engine off or on).</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09190000100005"></a><p class="topic-title"><span class="topic-head"></span>Sensitivity adjustment function</p>
+<dl>
+<dd>
+<div class="list">•  While the auto wiper is operating, sensitivity of the rain sensor can be optionally adjusted by operating the sensitivity adjustment volume on the wiper and washer switch which changes the volume signal sent from the start stop unit via the BCM. The rain sensor sensitivity can be adjusted from 1 (low sensitivity) to 5 (high sensitivity) according to conditions such as intensity of the rainfall.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001911.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001911</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  While the auto wiper is operating, the sensitivity is adjusted automatically according to the vehicle speed signal sent from the PCM via the BCM.</div>
+<div class="list">•  When the rain sensor detects an illumination level higher than the level required for turning on the TNS during auto wiper operation, the sensitivity of the rain sensor increases.</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001912.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001912</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09190000100006"></a><p class="topic-title"><span class="topic-head"></span>On-board diagnostic function</p>
+<dl>
+<dd>
+<div class="list">•  When the ignition is switched ON (engine off or on), the rain sensor performs on-board diagnostics.</div>
+<div class="list">•  If a malfunction is detected in the rain sensor, the rain sensor sends an error signal to the BCM.</div>
+<div class="list">•  The BCM outputs DTCs based on error signals from the rain sensor.</div>
+<div class="list">•  For details on the DTCs, refer to the [ON-BOARD DIAGNOSTIC SYSTEM [BODY CONTROL MODULE (BCM)]] DTC table. (See <font class="extxref-label"><a href="id094000050100.html">ON-BOARD DIAGNOSTIC SYSTEM [BODY CONTROL MODULE (BCM)]</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09190000100007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The rain sensor is located on the bracket in the upper center part of the windshield.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001913.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001913</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The rain sensor is integrated with the auto light sensor.</div>
+<div class="list">•  The rain sensor consists of the lens, LED, photodiode, and microcomputer, and sends/receives signals between the BCM using LIN communication.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001914.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001914</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id09190000100008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id09190000100009"></a><p class="topic-title"><span class="topic-head"></span>Operation with no rainfall contacting windshield</p>
+<p class="list">1.  Infrared light is emitted (1) from the LED in the rain sensor towards the windshield.</p>
+<p class="list"></p>
+<p class="list">2.  The emitted infrared light reflects (2) off the windshield.</p>
+<p class="list"></p>
+<p class="list">3.  The rain sensor receives (3) the infrared light reflected off the windshield using the photodiode.</p>
+<p class="list"></p>
+<p class="list">4.  When the photodiode receives the light, the rain sensor calculates the reflection ratio at the microcomputer as the amount of rainfall, and it sends (4) the windshield wiper operation signal to the BCM by LIN communication.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001915.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001915</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09190000100010"></a><p class="topic-title"><span class="topic-head"></span>Operation with rainfall contacting windshield</p>
+<p class="list">1.  Infrared light is emitted (1) from the LED in the rain sensor towards the windshield.</p>
+<p class="list"></p>
+<p class="list">2.  Emitted infrared light goes through the windshield and penetrates (2) the rain drops on the windshield.</p>
+<p class="list"></p>
+<p class="list">3.  The infrared light which cannot penetrate is reflected (3) off the windshield and the rain sensor receives (4) the light by the photodiode.</p>
+<p class="list"></p>
+<p class="list">4.  When the photodiode receives the light, the rain sensor calculates the reflection ratio at the microcomputer as the amount of rainfall, converts it to an electrical signal, and sends (5) the windshield wiper operation signal to the BCM by LIN communication.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001916.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001916</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><a name="id09190000100011"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  If a temperature <span>-10 °C {14 °F} or less </span>is detected after the ignition is switched ON (engine off or on), a windshield wiper stop signal is sent to the BCM.</div>
+</body>
+</html>

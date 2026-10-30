@@ -1,0 +1,191 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>A/C CUT-OFF CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5206200"></a><p class="servinfo-title"><span class="servinfo-head"></span>A/C CUT-OFF CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5206200</p><br clear="all"><a name="id0140z520620001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  Controls the A/C operation by switching the A/C relay on/off at the optimal timing according to engine operation conditions. By controlling the A/C operation, acceleration performance and engine reliability have been improved.</div><br clear="all"><a name="id0140z520620002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003661.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003661</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z520620003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The PCM stops energization to the A/C relay when any of the following conditions is met:</div>
+<p clear="all">
+<p class="table-title">A/C cut-off control operation conditions</p>
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Operation condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">A/C relay non-energization time</p>
+</th>
+<th id="" align="center">
+<p class="thead">Purpose</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">At engine start</div>
+</td>
+<td id="" align="left">
+<div class="tbody"><span>Approx. 4 s</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">To improve startability</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">At engine restart by i-stop control</div>
+</td>
+<td id="" align="left">
+<div class="tbody"><span>Approx. 3 s</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">To improve startability</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Accelerator pedal opening angle <span>60 % or more</span> (at acceleration)</div>
+</td>
+<td id="" align="left">
+<div class="tbody"><span>Approx. 5 s</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">To improve acceleration performance</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">At i-stop control switching</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">To improve i-stop function reliability</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Refrigerant pressure <span>3.14 MPa {32.0 kgf/cm<sup>2</sup>, 455 psi} or more</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Until refrigerant pressure decreases to <span>2.55 MPa {26.0 kgf/cm<sup>2</sup>, 370 psi} or less</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">To assure A/C compressor reliability</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Refrigerant pressure of <span>0.196 MPa {2.00 kgf/cm<sup>2</sup>, 28.4 psi} or less</span> continues for <span>5 s or more</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Until refrigerant pressure of <span>0.226 MPa {2.30 kgf/cm<sup>2</sup>, 32.8 psi} or more</span> continues to <span>5 s or more</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">To assure A/C compressor reliability</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Refrigerant pressure sensor malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">To assure A/C compressor reliability</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Panic braking determined</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">To assure load performance</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT sensor malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine protection</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Engine coolant temperature <span>113 °C {235 °F} or more</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">ON and OFF <span>every 10 s</span> until engine coolant temperature lowers to <span>less than 110 °C {230 °F}</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine protection</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Engine coolant temperature <span>116 °C {244 °F} or more</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Until engine coolant temperature lowers to less than approx. 113 °C {235 °F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine protection</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">During DPF regeneration control (compulsory DPF regeneration control)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Until DPF regeneration control is completed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">To stabilize DPF regeneration control</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">During fuel injection amount learning (manual)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Until fuel injection amount learning is completed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">To stabilize fuel injection amount learning</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

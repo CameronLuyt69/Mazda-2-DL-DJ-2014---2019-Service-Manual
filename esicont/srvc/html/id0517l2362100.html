@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>SHIFT POINT CONTROL (AUTOMATIC SHIFT CONTROL) [EW6A-EL]</title>
+</head>
+<body><a name="id0517l2362100"></a><p class="servinfo-title"><span class="servinfo-head"></span>SHIFT POINT CONTROL (AUTOMATIC SHIFT CONTROL) [EW6A-EL]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0517l2362100</p><br clear="all"><a name="id0517l236210001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The TCM implements auto shift control according to the vehicle speed and accelerator pedal depression amount while in D position.</div>
+<div class="list">•  When the vehicle is stopped with the selector lever is in the D position and the brake pedal depressed, the neutral idle control is performed which internally controls the automatic transaxle to be in the neutral condition while the selector lever is in the D position. When the brake pedal is being released, the clutch is engaged immediately and the automatic transaxle returns to the normal D position condition.</div>
+<div class="list">•  When implementing the automatic shift control, the TCM determines the driving conditions based on each input signal and selects the drive mode appropriate to the driving conditions. In addition, information such as torque and gear changes is exchanged via PCM and CAN communication and control is performed so as to achieve optimum drive force according to the driving scenario.</div><br clear="all"><a name="id0517l236210002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003100.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003100</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0517l236210003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id0517l236210004"></a><p class="topic-title"><span class="topic-head"></span>Driving range determination</p>
+<dl>
+<dd>
+<div class="list">•  If a D position signal is input and an M position signal is not input, the TCM implements auto shift control.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0517l236210005"></a><p class="topic-title"><span class="topic-head"></span>Driving mode determination</p>
+<dl>
+<dd>
+<div class="list">•  For the auto shift control, NORMAL mode is usually selected, however it automatically switches to driving mode depending on the driving conditions.</div>
+<dl>
+<dd class="list">
+<div class="list">―  AAS (Active Adaptive Shift) mode: Automatically controls the optimum shift point according to the road conditions and the driver operation.</div>
+<div class="list">―  High ATF temperature mode: When the ATF temperature rises to a high temperature, the engine torque is restricted so that the increase in ATF temperature is suppressed to protect the transaxle.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">AAS (Active Adaptive Shift) mode operation</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Accelerator pedal fully closed suddenly and returned</div>
+<dl>
+<dd class="list">
+<div class="list">―  When the accelerator pedal is fully closed and returned at a certain speed or more, shift-up is inhibited for specified time to improve speed control and reacceleration performance.</div>
+</dd>
+</dl>
+<div class="list">•  Brake is strongly depressed</div>
+<dl>
+<dd class="list">
+<div class="list">―  When decelerating at a certain speed or more, a lower gear is selected so that re-acceleration is performed smoothly.</div>
+<div class="list">―  During a shift change with the brake pedal depressed firmly, blipping control (synchronization to engine speed) is performed to shorten the shifting time.</div>
+<div class="list">―  The shift down control using the brakes may not operate under cold temperature condition.</div>
+<div class="list">―  When driving on slippery roads such as snow covered roads, the shift down control using the brakes may not operate.</div>
+</dd>
+</dl>
+<div class="list">•  When cornering</div>
+<dl>
+<dd class="list">
+<div class="list">―  While cornering at a turn with a radius of less than a specified value, shift up is suppressed to improve vehicle speed performance while cornering and reacceleration performance after cornering.</div>
+</dd>
+</dl>
+<div class="list">•  During drive in a high-altitude area</div>
+<dl>
+<dd class="list">
+<div class="list">―  While driving in a high-altitude area, gears are selected appropriate to the driving conditions for driving comfort.</div>
+</dd>
+</dl>
+<div class="list">•  During ascent</div>
+<dl>
+<dd class="list">
+<div class="list">―  While ascending a slope of a certain grade or more, slope mode control prevents unnecessary shift-up by maintaining the appropriate gear.</div>
+</dd>
+</dl>
+<div class="list">•  During descent</div>
+<dl>
+<dd class="list">
+<div class="list">―  While descending a slope of a certain grade or more and depressing the brake pedal, the gears are appropriately shifted down according to the estimated slope angle for effective use of engine braking. As a result, frequent brake pedal operation is reduced.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">AAS (active adaptive shift) operation scenario and effect</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The AAS (active adaptive shift) is a mode which estimates the driving environment and drive’s intentions according to the vehicle driving conditions and the drive’s operations, and selects the optimum gear for driving.</div>
+<dl>
+<div class="list-title">Ex.1: Cornering</div>
+<dd class="list">
+<div class="list">―  During cornering, shift up is suppressed to improve acceleration performance after cornering.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3uun00002430.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3uun00002430</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Ex. 2) Merging onto high speed expressways</div>
+<dd class="list">
+<div class="list">―  In a scenario such as temporarily decelerating while merging onto a high speed expressway, shift up is suppressed directly afterwards to improve re-acceleration performance.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3uun00002431.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3uun00002431</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0517l236210006"></a><p class="topic-title"><span class="topic-head"></span>Automatic transaxle operation chart</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003937.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003937</div>
+</td>
+</tr>
+</table>
+</p>
+</body>
+</html>

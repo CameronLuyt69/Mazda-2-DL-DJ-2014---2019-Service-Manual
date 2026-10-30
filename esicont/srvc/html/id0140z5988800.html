@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ELECTRIC WATER PUMP CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5988800"></a><p class="servinfo-title"><span class="servinfo-head"></span>ELECTRIC WATER PUMP CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5988800</p><br clear="all"><a name="id0140z598880001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The PCM sends a duty signal to the electric water pump according to the engine operation conditions to adjust the water-cooled charge air cooler performance.</div><br clear="all"><a name="id0140z598880002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003758.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003758</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z598880003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The PCM operates the electric water pump so that the intake air temperature after passing through the water-cooled charge air cooler, detected by the boost air temperature sensor, is the target intake air temperature.</div>
+<div class="list-title">Target intake air temperature</div>
+<div class="list">•  Changes continuously according to the operation/non-operation of DPF regeneration control and the engine operation conditions (engine speed, fuel injection amount).</div>
+<div class="list">•  When all of the following conditions are met, the PCM operates the electric water pump.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage: 9―16 V</div>
+<div class="list">―  While driving vehicle (condition other than engine start)</div>
+<div class="list">―  Condition is met in which electric water pump operation/non-operation is repeated, or electric water pump operates continuously</div>
+</dd>
+</dl>
+<div class="list">•  If any one of the above conditions is met, the electric water pump drive is stopped.</div><br clear="all"><p><a name="id0140z598880004"></a><p class="topic-title"><span class="topic-head"></span>Electric water pump operation/non-operation is repeated</p>
+<dl>
+<dd>
+<div class="list">•  To prevent the water-cooled charge air cooler from over-cooling, the electric water pump operation/non-operation is repeated.</div>
+<div class="list">•  When the following condition is met, the PCM repeats transmission/non-transmission of the duty signal.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Intake air temperature after passing through water-cooled charge air cooler, detected by boost air temperature sensor, is <span>5―10 °C {41―51 °F}</span> higher than target intake air temperature</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140z598880005"></a><p class="topic-title"><span class="topic-head"></span>Electric water pump operates continuously</p>
+<dl>
+<dd>
+<div class="list">•  To cool the water-cooled charge air cooler rapidly, the electric water pump is operated continuously.</div>
+<div class="list">•  When the following condition is met, the PCM repeats transmission/non-transmission of the duty signal to the electric water pump.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Intake air temperature after passing through water-cooled charge air cooler, detected by boost air temperature sensor, is <span>10 °C {50 °F}</span> higher than target intake air temperature</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</body>
+</html>

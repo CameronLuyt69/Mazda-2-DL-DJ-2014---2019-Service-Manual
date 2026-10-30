@@ -1,0 +1,664 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P0234:00 [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0102q2148400"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P0234:00 [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q2148400</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  To determine the malfunctioning part, proceed with the diagnostics from “Function Inspection Using M-MDS”.</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0102q214840001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Details On DTCs</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DESCRIPTION</p>
+</th>
+<th id="" align="left" colspan="2">
+<p class="thead">Turbocharger overboost condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="5">
+<div class="tbody">DETECTION CONDITION</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Determination conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The difference between the actual intake air pressure and the target intake air pressure exceeds than the specified value for a continuous 7 s when the following conditions are met.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Preconditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  2 s have elapsed with all of the following conditions met when DPF regeneration control is stopped during boost control feedback</div>
+<dl>
+<dd class="list">
+<div class="list">―  Fuel injection amount: <span>20 mm<sup>3</sup>/stoke or more</span></div>
+<div class="list">―  Engine speed: <span>825 rpm or more</span></div>
+<div class="list">―  Battery voltage: <span>8 V or more</span></div>
+<div class="list">―  Time from engine start: <span>30 s or more</span></div>
+<div class="list">―  Barometric pressure: <span>70 kPa {0.72 kgf/cm<sup>2</sup>, 11 psi} or more</span></div>
+<div class="list">―  The following DTCs are not detected:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Fuel pressure sensor: P0192:00, P0193:00</div>
+<div class="list">•  IAT sensor No.1: P0112:00, P0113:00</div>
+<div class="list">•  MAP sensor: P0107:00, P0108:00</div>
+<div class="list">•  BARO sensor: P2228:00, P2229:00</div>
+<div class="list">•  Exhaust gas pressure sensor No.1: P0471:00, P0472:00, P0473:00</div>
+<div class="list">•  Intake shutter valve control: P2101:00, P2118:00, P1589:00</div>
+<div class="list">•  Intake shutter valve position sensor: P0122:00, P0123:00</div>
+<div class="list">•  Actuator position sensor (turbocharger with variable turbine geometry): P2564:00, P2565:00</div>
+<div class="list">•  Turbocharger solenoid valve:  P0047:00, P0048:00</div>
+<div class="list">•  Internal PCM malfunction: P062B:00</div>
+<div class="list">•  Fuel injector: P0201:00, P0202:00, P0203:00, P0204:00, P02EE:00, P02EF:00, P02F0:00, P02F1:00, P1378:00, P1379:00, P2146:00, P2147:00, P2148:00, P2149:00, P2150:00, P2151:00</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Drive cycle</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>2</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Self test type</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CMDTC self test</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Sensor used</div>
+</td>
+<td id="" align="left">
+<div class="list">•  MAP sensor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>VEHICLE STATUS WHEN DTCs ARE OUTPUT</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Check engine light is illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Erratic signal to PCM</div>
+<dl>
+<dd class="list">
+<div class="list">―  MAP sensor signal malfunction</div>
+<div class="list">―  Input signal part connector or terminals malfunction</div>
+<div class="list">―  Input signal part related circuit malfunction</div>
+</dd>
+</dl>
+<div class="list">•  Vacuum piping or positive pressure piping of turbocharger actuator malfunction</div>
+<div class="list">•  Turbocharger solenoid valve malfunction</div>
+<div class="list">•  Actuator position sensor (turbocharger with variable turbine geometry) malfunction</div>
+<div class="list">•  Turbocharger actuator malfunction</div>
+<div class="list">•  Turbocharger malfunction</div>
+<div class="list">•  PCM malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q214840002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00012614.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00012614</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0102q214840003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Explanation (DTC Detection Outline)</p>
+<div class="list">•  The PCM diagnoses the turbo system performance by comparing the target air charging pressure with the actual.</div>
+<div class="list">•  The PCM uses the manifold absolute pressure sensor to monitor the intake manifold pressure during boost control as the actual air charging pressure.</div>
+<div class="list">•  When the monitoring conditions are met during boost control, the PCM compares the target air charging pressure with the actual. If the actual air charging pressure is higher than the specification for the target air charging pressure, the PCM determines an excess air charging malfunction. </div>
+<div class="list">•  The PCM performs diagnosis when each of the preconditions during drive cycle is met. If a malfunction is detected, the malfunction detection counter begins counting up. The value of the malfunction detection counter is maintained while the preconditions are not being met. If the cumulative value of the malfunction detection counter exceeds the threshold during the first drive cycle, a malfunction is determined and a pending code is stored.</div>
+<div class="list">•  If the PCM determines that the malfunction recurs from the next drive cycle and thereafter, it stores a DTC and turns on the check engine light. </div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00012615.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00012615</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0102q214840004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Repeatability Verification Procedure</p>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  When the M-MDS is used to observe monitor system status while driving, be sure to have another technician with you, or record the data in the M-MDS using the PID/DATA MONITOR AND RECORD capturing function and inspect later.</div>
+<div class="list">•  While performing this step, always operate the vehicle in a safe and lawful manner.</div>
+</div>
+</dd>
+</dl>
+<div class="list">1.  Access the following PIDs using the M-MDS. (See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+<dl>
+<dd class="list">
+<div class="list">―  MAP_DSD</div>
+<div class="list">―  MAP</div>
+</dd>
+</dl>
+<div class="list">2.  Start the engine and warm it up completely. </div>
+<div class="list">3.  Shift to 2nd gear and rapidly accelerate the vehicle to 40 km/h {25 mph}.</div>
+<div class="list">4.  Accelerate in 2nd gear from 40 km/h {25 mph} to 55 km/h {35 mph} for 5 s or more. </div>
+<div class="list">5.  Verify that the difference between MAP_DSD and MAP during acceleration is less than 70 kPa {0.71 kgf/cm<sup>2</sup>, 10 psi}.</div><br clear="all"><a name="id0102q214840005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID Item/Simulation Item Used In Diagnosis</p>
+<p clear="all">
+<p class="table-title">PID/DATA monitor item table</p>
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Item</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>Definition</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>Unit</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>Condition/Specification</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAP_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manifold absolute pressure desired value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa, Bar, psi</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays the boost air pressure desired value</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manifold absolute pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa, Bar, psi</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Switch ignition ON (engine off): Approx. 100 kPa {1 bar, 14.5 psi}</div>
+<div class="list">•  Idle: Approx. 80 kPa {0.8 bar, 12 psi}</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Function Inspection Using M-MDS</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: IDENTIFY TRIGGER DTC FOR FREEZE FRAME DATA</div>
+<div class="list">•  Is the DTC P0234:00 on FREEZE FRAME DATA?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure for DTC on FREEZE FRAME DATA.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">PURPOSE: RECORD FREEZE FRAME DATA/SNAPSHOT DATA AND DIAGNOSTIC MONITORING TEST RESULTS TO UTILIZE WITH REPEATABILITY VERIFICATION</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Recording can be facilitated using the screen capture function of the PC.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Record the FREEZE FRAME DATA/snapshot data and DIAGNOSTIC MONITORING TEST RESULTS (misfire related) on the repair order.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF DIAGNOSTIC RESULT IS AFFECTED BY OTHER RELATED DTCs OCCURRING</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure and DTC Reading Procedure. <div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the other PENDING CODE/DTC also present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF THERE IS PID ITEM CAUSING DRASTIC CHANGES OF ACCELERATION FLUCTUATION BY INPUT SIGNAL TO PCM</div>
+<div class="list">•  Access the following PIDs using the M-MDS: <div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<dl>
+<div class="list-title">PCM:</div>
+<dd class="list">
+<div class="list">―  MAP_DSD</div>
+<div class="list">―  MAP</div>
+</dd>
+</dl>
+<div class="list">•  Is there any signal that is far out of specification?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY CONNECTOR CONNECTIONS</div>
+<div class="list">•  Access the following PIDs using the M-MDS: <div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<dl>
+<div class="list-title">PCM:</div>
+<dd class="list">
+<div class="list">―  MAP_DSD</div>
+<div class="list">―  MAP</div>
+</dd>
+</dl>
+<div class="list">•  When the following parts are shaken, does the PID value include a PID item which has changed?</div>
+<dl>
+<dd class="list">
+<div class="list">―  MAP sensor</div>
+<div class="list">―  PCM</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the applicable connector parts.</div>
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 5.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q214840006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Troubleshooting Diagnostic Procedure</p>
+<div class="list-title">Intention of troubleshooting procedure</div>
+<div class="list">•  Step 1—5</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform inspection of each separate part.</div>
+</dd>
+</dl>
+<div class="list">•  Step 6—7</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verify that the primary malfunction is resolved and there are no other malfunctions.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT TURBOCHARGER SOLENOID VALVE</div>
+<div class="list">•  Inspect the turbocharger solenoid valve. <div>(See <font class="extxref-label"><a href="id0113q2991900.html">TURBOCHARGER SOLENOID VALVE INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the turbocharger solenoid valve, then go to Step 6.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0113q2702700.html">TURBOCHARGER SOLENOID VALVE REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT TURBOCHARGER ACTUATOR</div>
+<div class="list">•  Inspect the turbocharger solenoid valve. <div>(See <font class="extxref-label"><a href="id0113q2707600.html">TURBOCHARGER WITH VARIABLE TURBINE GEOMETRY INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the turbocharger, then go to Step 6.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0113q2707500.html">TURBOCHARGER WITH VARIABLE TURBINE GEOMETRY REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT ACTUATOR POSITION SENSOR</div>
+<div class="list">•  Inspect the actuator position sensor (turbocharger with variable turbine geometry).<div>(See <font class="extxref-label"><a href="id0113q2707600.html">TURBOCHARGER WITH VARIABLE TURBINE GEOMETRY INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the turbocharger, then go to Step 6.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0113q2707500.html">TURBOCHARGER WITH VARIABLE TURBINE GEOMETRY REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT TURBOCHARGER</div>
+<div class="list">•  Inspect the turbocharger. <div>(See <font class="extxref-label"><a href="id0113q2707600.html">TURBOCHARGER WITH VARIABLE TURBINE GEOMETRY INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the turbocharger, then go to step 6.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0113q2707500.html">TURBOCHARGER WITH VARIABLE TURBINE GEOMETRY REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT FOR MALFUNCTION DUE TO ENGINE</div>
+<div class="list">•  Inspect the engine for followings:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine compression<div>(See <font class="extxref-label"><a href="id0110q2800300.html">COMPRESSION INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">―  Engine coolant leakage<div>(See <font class="extxref-label"><a href="id0112q2800500.html">ENGINE COOLANT LEAKAGE INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A malfunction caused by the use of inferior fuel can be considered.</div>
+<div class="tbody">Replace the fuel, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0114q2853500.html">FUEL DRAINING PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: PERFORM DTC INSPECTION AND VERIFY IF MALFUNCTIONING PART IS PCM</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2865400.html">CLEARING DTC [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id0102q214840004">Repeatability Verification Procedure</a></font>.)</div>
+</div>
+<div class="list">•  Perform the DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q2113800.html">PCM REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY AFTER REPAIR PROCEDURE</div>
+<div class="list">•  Perform the “AFTER REPAIR PROCEDURE”.<div>(See <font class="extxref-label"><a href="id0102q2801100.html">AFTER REPAIR PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

@@ -1,0 +1,576 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P1794:00 [i-ELOOP]</title>
+</head>
+<body><a name="id130201001700"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P1794:00 [i-ELOOP]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id130201001700</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  To determine the malfunctioning part, proceed with the diagnostics from "Function Inspection Using M-MDS".</div>
+<div class="list">•  If the capacitor (i-ELOOP) voltage is low after replacing the DC-DC converter (i-ELOOP), the i-ELOOP indicator light (green) flashes until the capacitor (i-ELOOP) voltage is <span>approx. 9.5 V</span>.</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id13020100170001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Details On DTCs</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DESCRIPTION</p>
+</th>
+<th id="" align="left" colspan="2">
+<p class="thead">Capacitor (i-ELOOP) system: Capacitor (i-ELOOP) malfunction</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="5">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Determination conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">Capacitor (i-ELOOP) malfunction determined</div>
+<dl>
+<dd class="list">
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Capacitor (i-ELOOP) interrupt relay has a malfunction.</div>
+<div class="list">―  Capacitor (i-ELOOP) internal resistance exceeds the specification.</div>
+<div class="list">―  Capacitor (i-ELOOP) capacitance exceeds the specification.</div>
+<div class="list">―  Capacitor (i-ELOOP) voltage exceeds the specification.</div>
+<div class="list">―  Service plug is pulled out during vehicle travel.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">Capacitor (i-ELOOP) deterioration determined</div>
+<dl>
+<dd class="list">
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Capacitor (i-ELOOP) internal resistance exceeds the specification.</div>
+<div class="list">―  Capacitor (i-ELOOP) capacitance is less than the specification.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">Over-charge determined</div>
+<dl>
+<dd class="list">
+<div class="list">•  Capacitor (i-ELOOP) voltage exceeds the specification.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Preconditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Ignition switched ON</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Drive cycle</div>
+</td>
+<td id="" align="left">
+<div class="list">•  1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Self test type</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CMDTC self test, ODDTC self test</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Sensor used</div>
+</td>
+<td id="" align="left">
+<div class="list">•  DC-DC converter (i-ELOOP)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Inhibits engine-stop by operating the i-stop function. (With i-stop)</div>
+<div class="list">•  Inhibits the i-ELOOP control.</div>
+<div class="list">•  Switches to bypass mode which shuts the capacitor (i-ELOOP) off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>VEHICLE STATUS WHEN DTCs ARE OUTPUT</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Flashes i-stop warning light (amber). (With i-stop)</div>
+<div class="list">•  Illuminates i-ELOOP warning light (amber).</div>
+<div class="list">•  The following vehicle conditions differ depending on the type of malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  Charging system warning light turns on (DC-DC converter (i-ELOOP) turns on during over-charge determination)</div>
+<div class="list">―  Master warning light turns on (illumination during bypass mode by i-ELOOP)</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Engagement malfunction in capacitor (i-ELOOP), DC-DC converter (i-ELOOP)</div>
+<div class="list">•  Capacitor (i-ELOOP) malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  Capacitor (i-ELOOP) deterioration</div>
+<div class="list">―  Capacitor (i-ELOOP) interrupt relay malfunction</div>
+</dd>
+</dl>
+<div class="list">•  Generator overcharge (in this case, PCM detects DTC P2504:00)</div>
+<div class="list">•  DC-DC converter (i-ELOOP) malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id13020100170002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<div class="list">•  Not applicable</div><br clear="all"><a name="id13020100170003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Explanation (DTC Detection Outline)</p>
+<div class="list">•  The capacitor (i-ELOOP) can store generated electrical energy from the generator efficiently.</div>
+<div class="list">•  The electrical energy stored during deceleration fuel-cut is used during driving and while the engine is stopped by i-stop, which reduces the power generating load on the generator and the amount of fuel consumption.</div>
+<div class="list">•  If a malfunction occurs with the capacitor (i-ELOOP), constant charging takes place by operation of the bypass mode which could cause the fuel economy to worsen.</div>
+<div class="list">•  In this diagnostic, the internal resistance/capacitance is calculated from the capacitor (i-ELOOP) voltage value and charge/discharge current value, and the DC-DC converter (i-ELOOP) determines that there is a malfunction in the battery-related parts by the internal resistance/capacitance/capacitor (i-ELOOP) voltage exceeding the specified value, and it stores a DTC.</div><br clear="all"><a name="id13020100170004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Repeatability Verification Procedure</p>
+<div class="list">1.  If the negative battery cable is disconnected and re-connected, perform the battery condition initial setting (i-stop setting) to complete the i-stop initial setting. (See <font class="extxref-label"><a href="id011700801000.html">BATTERY CONDITION INITIALIZATION SETTING (i-stop SETTING)</a></font>.)</div>
+<div class="list">2.  Start the engine.(no electrical load)</div>
+<div class="list">3.  Depress the accelerator pedal to increase the engine speed to <span>3,000 rpm</span>.</div>
+<div class="list">4.  Release the accelerator pedal to idle the engine.</div>
+<div class="list">5.  Stop the engine.</div>
+<div class="list">6.  Switch the ignition on and wait for <span>1 min</span>.</div>
+<div class="list">7.  Switch the ignition off and wait for <span>20 min</span>.</div>
+<div class="list">8.  Start the engine.(no electrical load)</div>
+<div class="list">9.  Verify that Power Output (Normal) is displayed for the DC-DC converter (i-ELOOP) voltage reduction circuit operation status (PID: CONV_STAT) using the M-MDS data monitor function. (See <font class="extxref-label"><a href="id130201000500.html">PID/DATA MONITOR INSPECTION [i-ELOOP]</a></font>.)</div>
+<dl>
+<dd class="list">
+<div class="list">―  If Power Output (Normal) cannot be verified, verify that DTCs related to the capacitor are detected. (See <font class="extxref-label"><a href="id130201000200.html">DTC INSPECTION [i-ELOOP]</a></font>.) (See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.) (See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+<dl>
+<dd class="list">
+<div class="list">•  If DTCs are detected, repair the malfunctioning location according to the applicable DTC troubleshooting. (See <font class="extxref-label"><a href="id130201000700.html">DTC TABLE [i-ELOOP]</a></font>.) (See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.) (See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="list">•  If DTCs are not detected, wait for 30 min or more and then implement Step 9 in the repeatability verification procedure again.</div>
+</dd>
+</dl>
+</dd>
+</dl><br clear="all"><a name="id13020100170005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID Item/Simulation Item Used In Diagnosis</p>
+<p clear="all">
+<p class="table-title">PID/DATA monitor item table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Condition/Specification</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAP_SYS_10</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Open circuit condition of the capacitor circuit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Capacitor (i-ELOOP) open circuit: On</div>
+<div class="list">•  Capacitor circuit is normal: Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAP_SYS_14</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Capacitor (i-ELOOP) capacitance deterioration</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Capacitor (i-ELOOP) capacitance status deteriorates: On</div>
+<div class="list">•  Capacitor (i-ELOOP) capacitance status is normal: Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAP_SYS_16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Capacitor (i-ELOOP) internal resistance deterioration</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Internal resistance status in capacitor (i-ELOOP) deteriorates: On</div>
+<div class="list">•  Internal resistance status in capacitor (i-ELOOP) is normal: Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAP_SYS_17</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Short circuit to ground malfunction in the capacitor (i-ELOOP)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Short circuit to ground in capacitor (i-ELOOP): On</div>
+<div class="list">•  No short circuit to ground in capacitor (i-ELOOP): Off</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id13020100170006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Inspection Using M-MDS</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF DIAGNOSTIC RESULT IS AFFECTED BY DTC RELATED TO GENERATOR OVERCHARGE</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Perform the PCM DTC inspection using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the DTC P2504:00 also present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1709700.html">DTC P2504:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2709700.html">DTC P2504:00 [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF POWER SUPPLY IS AFFECTED BY DTC RELATED TO DC-DC CONVERTER (i-ELOOP)</div>
+<div class="list">•  Perform the DC-DC converter (i-ELOOP) DTC inspection using the M-MDS.<div>(See <font class="extxref-label"><a href="id130201000200.html">DTC INSPECTION [i-ELOOP]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC U3000:49 is displayed:</div>
+<div class="list">•  Go to the next step.</div>
+<div class="tbody">Any other DTCs are displayed:</div>
+<div class="list">•  Go to the applicable DTC inspection.<div>(See <font class="extxref-label"><a href="id130201000700.html">DTC TABLE [i-ELOOP]</a></font>.)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY THE OPEN CIRCUIT CONDITION OF THE CAPACITOR CUIRCUIT</div>
+<div class="list">•  Access the CAP_SYS10 PID using the M-MDS.<div>(See <font class="extxref-label"><a href="id130201000500.html">PID/DATA MONITOR INSPECTION [i-ELOOP]</a></font>.)</div>
+</div>
+<div class="list">•  Is the CAP_SYS10 PID value off?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Reconnect the service plug, then go to the next Step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE IF THE MALFUNCTION IS CAUSED BY CAPACITOR (i-ELOOP) BY VERIFYING THE PID RELATED TO THE CAPACITOR (i-ELOOP)</div>
+<div class="list">•  Access the following DC-DC converter (i-ELOOP) PIDs using the M-MDS<div>(See <font class="extxref-label"><a href="id130201000500.html">PID/DATA MONITOR INSPECTION [i-ELOOP]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  CAP_SYS_10</div>
+<div class="list">―  CAP_SYS_14</div>
+<div class="list">―  CAP_SYS_16</div>
+<div class="list">―  CAP_SYS_17</div>
+</dd>
+</dl>
+<div class="list">•  Are all of the PID item “CAP_SYS10, CAP_SYS_14, CAP_SYS_16, CAP_SYS_17” values off?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the DC-DC converter (i-ELOOP).</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id1317040090q9.html">DC-DC CONVERTER (i-ELOOP) REMOVAL/INSTALLATION [WITH i-ELOOP (SKYACTIV-G 1.3, SKYACTIV-G 1.5)]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id1317040090q8.html">DC-DC CONVERTER (i-ELOOP) REMOVAL/INSTALLATION [WITH i-ELOOP (SKYACTIV-D 1.5)]</a></font>.)</div>
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 2.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the capacitor (i-ELOOP).</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id131704006000.html">CAPACITOR (i-ELOOP) REMOVAL/INSTALLATION [i-ELOOP]</a></font>.)</div>
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 2.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id13020100170007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Troubleshooting Diagnostic Procedure</p>
+<div class="list-title">Intention of troubleshooting procedure</div>
+<div class="list">•  Step 1</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verify the engagement condition of each part.</div>
+</dd>
+</dl>
+<div class="list">•  Step 2—3</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verify that the primary malfunction is resolved and there are no other malfunctions.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF MALFUNCTION CAUSED BY ENGAGEMENT MALFUNCTION OF EACH PART</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Disconnect the negative battery cable.<div>(See <font class="extxref-label"><a href="id011700800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION</a></font>.)</div>
+</div>
+<div class="list">•  Remove the service plug.<div>(See <font class="extxref-label"><a href="id131704002000.html">SERVICE PLUG DISCONNECTION/CONNECTION [i-ELOOP]</a></font>.)</div>
+</div>
+<div class="list">•  Verify that the following parts are engaged correctly.</div>
+<dl>
+<dd class="list">
+<div class="list">―  DC-DC converter (i-ELOOP)<div>(See <font class="extxref-label"><a href="id1317040090q9.html">DC-DC CONVERTER (i-ELOOP) REMOVAL/INSTALLATION [WITH i-ELOOP (SKYACTIV-G 1.3, SKYACTIV-G 1.5)]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id1317040090q8.html">DC-DC CONVERTER (i-ELOOP) REMOVAL/INSTALLATION [WITH i-ELOOP (SKYACTIV-D 1.5)]</a></font>.)</div>
+</div>
+<div class="list">―  Capacitor (i-ELOOP)<div>(See <font class="extxref-label"><a href="id131704006000.html">CAPACITOR (i-ELOOP) REMOVAL/INSTALLATION [i-ELOOP]</a></font>.)</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Is the engagement condition of each part normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Tighten the DC-DC converter (i-ELOOP) or capacitor (i-ELOOP) properly, then go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFICATION OF VEHICLE REPAIR COMPLETION</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Reinstall the service plug.<div>(See <font class="extxref-label"><a href="id131704002000.html">SERVICE PLUG DISCONNECTION/CONNECTION [i-ELOOP]</a></font>.)</div>
+</div>
+<div class="list">•  Reconnect the negative battery cable.<div>(See <font class="extxref-label"><a href="id011700800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION</a></font>.)</div>
+</div>
+<div class="list">•  Start the engine and leave for <span>100 s or more</span>.</div>
+<div class="list">•  Clear the DTC for the DC-DC converter (i-ELOOP) using the M-MDS.<div>(See <font class="extxref-label"><a href="id130201000300.html">CLEARING DTC [i-ELOOP]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id13020100170004">Repeatability Verification Procedure</a></font>.)</div>
+</div>
+<div class="list">•  Retrieve the DC-DC converter (i-ELOOP) DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id130201000200.html">DTC INSPECTION [i-ELOOP]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the capacitor (i-ELOOP) and verify that the repairs have been completed in Step 2.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id131704006000.html">CAPACITOR (i-ELOOP) REMOVAL/INSTALLATION [i-ELOOP]</a></font>.)</div>
+<div class="list">•  If the malfunction recurs, replace the DC-DC converter (i-ELOOP).<div>(See <font class="extxref-label"><a href="id1317040090q9.html">DC-DC CONVERTER (i-ELOOP) REMOVAL/INSTALLATION [WITH i-ELOOP (SKYACTIV-G 1.3, SKYACTIV-G 1.5)]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id1317040090q8.html">DC-DC CONVERTER (i-ELOOP) REMOVAL/INSTALLATION [WITH i-ELOOP (SKYACTIV-D 1.5)]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  Start the engine and leave for <span>100 s or more</span>.</div>
+<div class="list">―  Clear the DTC for the DC-DC converter (i-ELOOP) using the M-MDS.<div>(See <font class="extxref-label"><a href="id130201000300.html">CLEARING DTC [i-ELOOP]</a></font>.)</div>
+</div>
+</dd>
+</dl>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF THERE IS ANY OTHER MALFUNCTION</div>
+<div class="list">•  Is any other DTC or pending code stored?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id130201000700.html">DTC TABLE [i-ELOOP]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

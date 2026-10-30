@@ -1,0 +1,2736 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC SYSTEM PID/DATA MONITOR INSPECTION [TCM (EW6A-EL)]</title>
+</head>
+<body><a name="id0502p7290300"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC SYSTEM PID/DATA MONITOR INSPECTION [TCM (EW6A-EL)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0502p7290300</p>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list"></p>
+<p class="list">2.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “Data Logger”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “Modules”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(3)  Select “TCM”.</dd>
+<dd></dd>
+</dl>
+</p>
+<p class="list">3.  Select the applicable PID from the PID table.</p>
+<p class="list"></p>
+<p class="list">4.  Verify the PID data according to the directions on the screen.</p>
+<p class="list"></p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The PID data screen function is used for monitoring the calculated value of input/output signals in the module. Therefore, if the monitored value of the output components is not within the specification, it is necessary to inspect the monitored value of input components corresponding to the applicable output component control. In addition, because the system does not display an output component malfunction as an abnormality in the monitored value, it is necessary to inspect the output components individually.</div>
+<div class="list">•  When detecting DTCs, PIDs related to a malfunctioning system may not display even if the module is normal. Therefore, if a PID is not displayed, it is necessary to verify the DTC, perform malfunction diagnosis of the DTC that was detected, and do repairs.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">PID/DATA monitor item table (Reference)</p>
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Test condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Specification (Reference)</p>
+</th>
+<th id="" align="center">
+<p class="thead">Output part name</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">APP</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal released</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 %</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="list">•  APP sensor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal fully depressed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 100 %</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">APP1</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal released</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 16 %</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="list">•  APP sensor No.1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal fully depressed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 91 %</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DGP_DIS_1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km {mile}</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays traveled distance since the differential protection control operated due to excessive rotation difference between left/right drive wheels</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DGP_DIS_2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km {mile}</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays traveled distance since the DGP_MAX_DIF is updated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DGP_MAX_DIF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays maximum rotation difference since the differential protection control operated due to excessive rotation difference between left/right drive wheels</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DGP_SPD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH {MPH}</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays vehicle speed with trailing wheels since the differential protection control operated due to excessive rotation difference between left/right drive wheels</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays ECT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECT sensor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECU_A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays ECU internal temperature A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECU internal temperature sensor A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECU_B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays ECU internal temperature B</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECU internal temperature sensor B</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECU_C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays ECU internal temperature C</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECU internal temperature sensor C</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EOP_DUTY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays drive duty ratio for electric AT oil pump</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">EOP_RLY</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump relay stopped</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Electric AT oil pump relay</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump relay operating</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="6">
+<div class="tbody">GEAR_RA</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">Ratio</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Selector lever in 1GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 3.5526</div>
+</td>
+<td id="" align="left" rowspan="6">
+<div class="list">•  Shift solenoid No.1</div>
+<div class="list">•  Shift solenoid No.2</div>
+<div class="list">•  Shift solenoid No.3</div>
+<div class="list">•  Shift solenoid No.4</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 2GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 2.0228</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 3GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1.4522</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 4GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1.0000</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 5GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0.7084</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 6GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0.5993</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="6">
+<div class="tbody">GEAR_SEL</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">1/2/3/4/5/6</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Selector lever in 1GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="6">
+<div class="list">•  Shift solenoid No.1</div>
+<div class="list">•  Shift solenoid No.2</div>
+<div class="list">•  Shift solenoid No.3</div>
+<div class="list">•  Shift solenoid No.4</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 2GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 3GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 4GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">4</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 5GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">5</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 6GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">6</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">HI_TEMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays ATF high temperature mode determination amount. (ATF temperature 132 °C {270 °F} or more)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">HTM_DIS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km {mile}</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays traveled distance after determining the ATF high temperature mode. (ATF temperature 132 °C {270 °F} or more)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">I-Stop_EST</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">i-stop permit inhibited by TCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">i-stop permitted by TCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LINEDES</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Idle at P position after warm-up</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 500 kPa {5.10 kgf/cm<sup>2</sup>, 72.5 psi}</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LN_C_CLUTCH</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays hydraulic control learning value data</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LN_O_CLUTCH</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays hydraulic control learning value data</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LN_OV_SCOPE</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays hydraulic control learning value data</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LN_T_CLUTCH</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays hydraulic control learning value data</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LOCK_UP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF/SLIP/ON</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">OFF:</div>
+<div class="list">•  Except below</div>
+<div class="tbody">SLIP:</div>
+<div class="list">•  "SLIP" is displayed during TCC control with the difference between the engine speed and turbine shaft speed less than the control value.</div>
+<div class="list">•  Resets while TCC control is stopped or if the difference between the engine speed and turbine/shaft speed is the specification or more.</div>
+<div class="tbody">ON:</div>
+<div class="list">•  "ON" is displayed during TCC control and there is almost no difference between the engine speed and turbine shaft speed<sup>*</sup>.</div>
+<div class="list">•  Resets while TCC control is stopped or if the difference between the engine speed and turbine shaft speed is the specification or more.</div>
+<div class="tbody"><sup>*</sup>: The TCC controls the TCC hydraulic pressure to suppress hydraulic pressure loss and transaxle vibration due to TCC clutch engagement. Therefore, normally, there is a difference between the engine speed and turbine shaft speed. Because the TCC hydraulic pressure is increased by the fail-safe and TCC is performed while the ATF is hot, there is almost no difference.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LONGI_ACCEL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays acceleration calculated from the drive wheels</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">OP_SW1</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Selector lever at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Oil pressure switch No.1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 1GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 2GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 3GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 4GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 5GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 6GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW1_OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">More than 50 kPa {0.51 kgf/cm<sup>2</sup>, 7.3 psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Oil pressure switch No.1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW1_ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Less than 320 kPa {3.26 kgf/cm<sup>2</sup>, 46.4 psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Oil pressure switch No.1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">OP_SW2</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Selector lever at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Oil pressure switch No.2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 1GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 2GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 3GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 4GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 5GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 6GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW2_OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">More than 50 kPa {0.51 kgf/cm<sup>2</sup>, psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Oil pressure switch No.2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW2_ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Less than 260 kPa {2.65 kgf/cm<sup>2</sup>, 37.7 psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Oil pressure switch No.2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">OP_SW3</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Selector lever at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Oil pressure switch No.3</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 1GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 2GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 3GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 4GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 5GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 6GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW3_OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">More than 50 kPa {0.51 kgf/cm<sup>2</sup>, 7.3 psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Oil pressure switch No.3</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW3_ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Less than 215 kPa {2.19 kgf/cm<sup>2</sup>, 31.2 psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Oil pressure switch No.3</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">OP_SW4</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Selector lever at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Oil pressure switch No.4</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 1GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 2GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 3GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 4GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 5GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever in 6GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW4_OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">More than 50 kPa {0.51 kgf/cm<sup>2</sup>, 7.3 psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Oil pressure switch No.4</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW4_ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Less than 260 kPa {2.65 kgf/cm<sup>2</sup>, 37.7 psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Oil pressure switch No.4</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">OSS</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped</div>
+</td>
+<td id="" align="center">
+<div class="tbody">0 RPM</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Output shaft speed sensor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle speed 30 km/h {19 mph} in 4GR at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1000 RPM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">PADDLE_DOWN<sup>*1</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Except below</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Shift down operation using steering shift switch</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">PADDLE_UP<sup>*1</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Except below</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Shift up operation using steering shift switch</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">PUMP_SPEED</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Vehicle stopped at D position</div>
+<div class="list">•  During i-stop control</div>
+</td>
+<td id="" align="center">
+<div class="tbody">200—2,000 RPM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays engine speed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SC_STATE</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not Active/Active</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">The shift control execution condition is displayed.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SE_TYPE</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No valid data/Bf_1st Af_2nd/Bf_1st Af_3rd/Bf_1st Af_4th/Bf_1st Af_5th/Bf_1st Af_6th/Bf_2nd Af_1st/Bf_2nd Af_3rd/Bf_2nd Af_4th/Bf_2nd Af_5th/Bf_2nd Af_6th/Bf_3rd Af_1st/Bf_3rd Af_2nd/Bf_3rd Af_4th/Bf_3rd Af_5th/Bf_3rd Af_6th/Bf_4th Af_1st/Bf_4th Af_2nd/Bf_4th Af_3rd/Bf_4th Af_5th/Bf_4th Af_6th/Bf_5th Af_1st/Bf_5th Af_2nd/Bf_5th Af_3rd/Bf_5th Af_4th/Bf_5th Af_6th/Bf_6th Af_1st/Bf_6th Af_2nd/Bf_6th Af_3rd/Bf_6th Af_4th/Bf_6th Af_5th</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">The gear shift position before shifting gears is displayed.</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">Bf indicates gear position before shifting</div>
+<div class="list">Af indicates gear position after shifting</div>
+<dl>
+<dd class="list">
+<div class="list">(Example of display) Bf_1st Af_2nd</div>
+<dl>
+<dd class="list">
+<div class="list">•  Bf_1st:Gear position at 1st gear before shifting</div>
+<div class="list">•  Af_2nd:Gear position at 2nd gear after shifting</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="6">
+<div class="tbody">SHIFT_CTRL</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">DEFAULT/MANUAL/C_CONTROL/HIGH_TEMP/D_MANUAL/FAIL_SAFE</div>
+</td>
+<td id="" align="left">
+<div class="tbody">D position normal mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">DEFAULT</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">M position manual mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">MANUAL</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Cruise control (cruise control system)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C_CONTROL</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Automatic transaxle protection mode (ATF high temperature mode)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">HIGH_TEMP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">D position direct mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D_MANUAL</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fail-safe mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FAIL_SAFE</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">SS_ON-OFF</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">On/off solenoid is off.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">On/off solenoid</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">On/off solenoid is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">SS1</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Shift solenoid No.1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 1GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 2GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 3GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 4GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 5GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 6GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">SS1_C</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Shift solenoid No.1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 1GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 2GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 3GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 4GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 5GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 6GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">SS2</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Shift solenoid No.2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 1GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 2GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 3GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 4GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 5GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 6GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">SS2_C</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Shift solenoid No.2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 1GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 2GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 3GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 4GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 5GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 6GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">SS3</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Shift solenoid No.3</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 1GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 2GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 3GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 4GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 5GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 6GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">SS3_C</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Shift solenoid No.3</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 1GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 2GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 3GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 4GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 5GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 6GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">SS4</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Shift solenoid No.4</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 1GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 2GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 3GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 4GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 5GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 6GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">SS4_C</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Shift solenoid No.4</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 1GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 2GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 3GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 1 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 4GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 5GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving in D position 6GR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">SSLU</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">TCC control solenoid</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 1GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 430 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 2GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 430 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 3GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 430 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 4GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 430 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 5GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 430 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 6GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 430 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">SSLU_C</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">TCC control solenoid</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 0 A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 1GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 430 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 2GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 430 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 3GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 430 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 4GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 430 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 5GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 430 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 6GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 430 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">SSLU_PRES</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">0 kPa {0 kgf/cm<sup>2</sup>, 0 psi}</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">TCC control solenoid</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">0 kPa {0 kgf/cm<sup>2</sup>, 0 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">0 kPa {0 kgf/cm<sup>2</sup>, 0 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 1GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 360 kPa {3.67 kgf/cm<sup>2</sup>, 52.2 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 2GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 360 kPa {3.67 kgf/cm<sup>2</sup>, 52.2 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 3GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 360 kPa {3.67 kgf/cm<sup>2</sup>, 52.2 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 4GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 360 kPa {3.67 kgf/cm<sup>2</sup>, 52.2 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 5GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 360 kPa {3.67 kgf/cm<sup>2</sup>, 52.2 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 6GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 360 kPa {3.67 kgf/cm<sup>2</sup>, 52.2 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">SSP</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 980 mA</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Pressure control solenoid</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 930 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 980 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 1GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 400—800 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 2GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 400—800 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 3GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 400—800 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 4GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 400—800 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 5GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 400—800 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 6GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 400—800 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">SSP_C</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 980 mA</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Pressure control solenoid</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 930 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 980 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 1GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 400—800 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 2GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 400—800 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 3GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 400—800 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 4GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 400—800 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 5GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 400—800 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 6GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 400—800 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="9">
+<div class="tbody">SSP_PRES</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 45 kPa {0.46 kgf/cm<sup>2</sup>, 6.5 psi}</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Pressure control solenoid</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 80 kPa {0.82 kgf/cm<sup>2</sup>, 12 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 45 kPa {0.46 kgf/cm<sup>2</sup>, 6.5 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 1GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">130—460 kPa {1.33—4.69 kgf/cm<sup>2</sup>, 18.9—66.7 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 2GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">130—460 kPa {1.33—4.69 kgf/cm<sup>2</sup>, 18.9—66.7 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 3GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">130—460 kPa {1.33—4.69 kgf/cm<sup>2</sup>, 18.9—66.7 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 4GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">130—460 kPa {1.33—4.69 kgf/cm<sup>2</sup>, 18.9—66.7 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 5GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">130—460 kPa {1.33—4.69 kgf/cm<sup>2</sup>, 18.9—66.7 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Under the following conditions:</div>
+<div class="list">•  Driving in D position 6GR</div>
+<div class="list">•  Accelerator pedal opening angle is approx. 10 %</div>
+</td>
+<td id="" align="center">
+<div class="tbody">130—460 kPa {1.33—4.69 kgf/cm<sup>2</sup>, 18.9—66.7 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TFT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays ATF temperature</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TFT sensor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">THOP</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal fully released</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 22 %</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">PCM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal fully depressed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Approx. 91 %</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TORQUE_ACT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Nm</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays actual engine torque</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TORQUE_DES</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Nm</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays desired engine torque</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="7">
+<div class="tbody">TR</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">P/SHIFT_DOWN/SHIFT_UP/M/D/N/R</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Selector lever at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">P</div>
+</td>
+<td id="" align="left" rowspan="7">
+<div class="tbody">Transaxle range sensor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever at M position (−) side position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SHIFT_DOWN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever at M position (+) side position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SHIFT_UP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever at M position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">M</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever at N position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">N</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Selector lever at R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">R</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TS_OD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km {mile}</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays traveled distance when AT slip occurred.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TS_SE</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No valid data/Bf_1st Af_2nd/Bf_1st Af_3rd/Bf_1st Af_4th/Bf_1st Af_5th/Bf_1st Af_6th/Bf_2nd Af_1st/Bf_2nd Af_3rd/Bf_2nd Af_4th/Bf_2nd Af_5th/Bf_2nd Af_6th/Bf_3rd Af_1st/Bf_3rd Af_2nd/Bf_3rd Af_4th/Bf_3rd Af_5th/Bf_3rd Af_6th/Bf_4th Af_1st/Bf_4th Af_2nd/Bf_4th Af_3rd/Bf_4th Af_5th/Bf_4th Af_6th/Bf_5th Af_1st/Bf_5th Af_2nd/Bf_5th Af_3rd/Bf_5th Af_4th/Bf_5th Af_6th/Bf_6th Af_1st/Bf_6th Af_2nd/Bf_6th Af_3rd/Bf_6th Af_4th/Bf_6th Af_5th</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays gear position before/after shifting when AT slip occurred.</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">Bf indicates gear position before shifting</div>
+<div class="list">Af indicates gear position after shifting</div>
+<dl>
+<dd class="list">
+<div class="list">(Example of display) Bf_1st Af_2nd</div>
+<dl>
+<dd class="list">
+<div class="list">•  Bf_1st:Gear position at 1st gear before shifting</div>
+<div class="list">•  Af_2nd:Gear position at 2nd gear after shifting</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TS_VS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH {MPH}</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays vehicle speed before/after shifting when AT slip occurred.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">TSS</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle stopped at D position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">0 RPM</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Turbine/input shaft speed sensor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine speed 1,000 rpm at P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">900—1,100 RPM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">UPSHIFT_REV</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift-up due to engine request is not recorded. (Shift up request can be reset by clearing the DTCs.)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Shift-up due to engine request is recorded.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays TCM power supply voltage</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Battery</div>
+<div class="list">•  TCM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VSS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH {MPH}</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays vehicle speed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output shaft speed sensor</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :With steering shift switch</div>
+</body>
+</html>

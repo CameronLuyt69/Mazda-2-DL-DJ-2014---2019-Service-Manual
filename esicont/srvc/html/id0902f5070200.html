@@ -1,0 +1,520 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC B1D07:11 [BCM]</title>
+</head>
+<body><a name="id0902f5070200"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC B1D07:11 [BCM]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0902f5070200</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="left">
+<p class="thead">Turn light (RH) circuit malfunction</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Detection condition</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM detects a short to ground in the turn light (RH) circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Fail-safe</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Possible cause</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM connector or terminal malfunction</div>
+<div class="list">•  Front turn light bulb (RH) malfunction</div>
+<div class="list">•  Front combination light (RH) connector or terminal malfunction</div>
+<div class="list">•  Short to ground in wiring harness between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Front combination light (RH) terminal D—BCM terminal 3A (With front combination light (bulb type) and without headlight manual leveling system)</div>
+<div class="list">―  Front combination light (RH) terminal E—BCM terminal 3A (With front combination light (LED type) or headlight manual leveling system)</div>
+</dd>
+</dl>
+<div class="list">•  Rear turn light bulb (RH) malfunction</div>
+<div class="list">•  Rear turn light (RH) connector or terminal malfunction</div>
+<div class="list">•  Power outer mirror (RH) connector or terminal malfunction</div>
+<div class="list">•  Side turn light (RH) malfunction</div>
+<div class="list">•  Short to ground in wiring harness between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Rear turn light (RH) terminal A—BCM terminal 1E</div>
+<div class="list">―  Power outer mirror (RH) terminal E—BCM terminal 1E</div>
+</dd>
+</dl>
+<div class="list">•  BCM malfunction</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2"><img src="images/am2zzw00010999.png"></td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :With front combination light (bulb type) and without headlight manual leveling system</div>
+<div class="deflist">*2  :With front combination light (LED type) or headlight manual leveling system</div>
+<p clear="all">
+<p class="table-title">Diagnostic Procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Inspection</p>
+</th>
+<th id="" align="center">
+<p class="thead">Action</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY BCM DTCs AGAIN</div>
+<div class="list">•  Clear the DTC for the BCM using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902f5067400.html">CLEARING DTC [BCM]</a></font>.)</div>
+</div>
+<div class="list">•  Operate the turn switch to the RH position.</div>
+<div class="list">•  Retrieve the BCM DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902f5067300.html">DTC INSPECTION [BCM]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC displayed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 15.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE MALFUNCTIONING LIGHT</div>
+<div class="list">•  Operate the turn switch to the RH position.</div>
+<div class="list">•  Are there any lights among the following which do not flash?</div>
+<dl>
+<dd class="list">
+<div class="list">―  Front turn light (RH)</div>
+<div class="list">―  Side turn light (RH)</div>
+<div class="list">―  Rear turn light (RH)</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">All lights do not flash:</div>
+<div class="list">•  Go to the next step.</div>
+<div class="tbody">Front turn light (RH) does not flash:</div>
+<div class="list">•  Go to Step 4.</div>
+<div class="tbody">Side turn light (RH) and rear turn light (RH) do not flash:</div>
+<div class="list">•  Go to Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 14.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT BCM CONNECTOR CONDITION</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Disconnect the negative battery cable.<div>(See <font class="extxref-label"><a href="id011700800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION</a></font>.)</div>
+</div>
+<div class="list">•  Disconnect the BCM connector.</div>
+<div class="list">•  Inspect the connector engagement and connection condition and inspect the terminals for damage, deformation, corrosion, or disconnection.</div>
+<div class="list">•  Is the connector normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 14.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector, then go to Step 14.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VISUALLY INSPECTFRONT TURN LIGHT BULB (RH)</div>
+<div class="list">•  Visually Inspect the front turn light bulb (RH).</div>
+<div class="list">•  Is the front turn light bulb (RH) normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the front turn light bulb (RH), then go to Step 14.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091800805000.html">FRONT TURN LIGHT BULB REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FRONT COMBINATION LIGHT (RH) CONNECTOR CONDITION</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Disconnect the negative battery cable.<div>(See <font class="extxref-label"><a href="id011700800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION</a></font>.)</div>
+</div>
+<div class="list">•  Disconnect the front combination light (RH) connector.</div>
+<div class="list">•  Inspect the connector engagement and connection condition and inspect the terminals for damage, deformation, corrosion, or disconnection.</div>
+<div class="list">•  Is the connector normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector, then go to Step 14.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT BCM CONNECTOR CONDITION</div>
+<div class="list">•  Disconnect the BCM connector.</div>
+<div class="list">•  Inspect the connector engagement and connection condition and inspect the terminals for damage, deformation, corrosion, or disconnection.</div>
+<div class="list">•  Is the connector normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector, then go to Step 14.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FRONT TURN LIGHT (RH) CONTROL CIRCUIT FOR SHORT TO GROUND</div>
+<div class="list">•  Verify that the front combination light (RH) and BCM connectors are disconnected.</div>
+<div class="list">•  Inspect for continuity between BCM terminal 3A (wiring harness-side) and body ground.</div>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refer to the wiring diagram and verify whether or not there is a common connector between the following terminals:</div>
+<div class="list">•  Front combination light (RH) terminal D—BCM terminal 3A (With front combination light (bulb type) and without headlight manual leveling system)</div>
+<div class="list">•  Front combination light (RH) terminal E—BCM terminal 3A (With front combination light (LED type) or headlight manual leveling system)</div>
+<div class="list-title">If there is a common connector:</div>
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for a short to ground.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+<div class="list-title">If there is no common connector:</div>
+<div class="list">•  Repair or replace the wiring harness which has a short to ground.</div>
+<div class="tbody">Go to Step 14.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 14.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VISUALLY INSPETC REAR TURN LIGHT BULB (RH)</div>
+<div class="list">•  Visually inspect the rear turn light bulb (RH).</div>
+<div class="list">•  Is the rear turn light bulb (RH) normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the rear turn light bulb (RH), then go to Step 14.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091800813800.html">REAR TURN LIGHT BULB REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT REAR TURN LIGHT (RH) CONNECTOR CONDITION</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Disconnect the negative battery cable.<div>(See <font class="extxref-label"><a href="id011700800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION</a></font>.)</div>
+</div>
+<div class="list">•  Disconnect the rear turn light (RH) connector.</div>
+<div class="list">•  Inspect the connector engagement and connection condition and inspect the terminals for damage, deformation, corrosion, or disconnection.</div>
+<div class="list">•  Is the connector normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector, then go to Step 14.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">10</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT POWER OUTER MIRROR (RH) CONNECTOR CONDITION</div>
+<div class="list">•  Disconnect the power outer mirror (RH) connector.</div>
+<div class="list">•  Inspect the connector engagement and connection condition and inspect the terminals for damage, deformation, corrosion, or disconnection.</div>
+<div class="list">•  Is the connector normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector, then go to Step 14.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT SIDE TURN LIGHT (RH)</div>
+<div class="list">•  Inspect the side turn light (RH).<div>(See <font class="extxref-label"><a href="id091800811600.html">SIDE TURN LIGHT INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is the side turn light (RH) normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the side turn light (RH), then go to Step 14.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091800811500.html">SIDE TURN LIGHT REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">12</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT BCM CONNECTOR CONDITION</div>
+<div class="list">•  Disconnect the BCM connector.</div>
+<div class="list">•  Inspect the connector engagement and connection condition and inspect the terminals for damage, deformation, corrosion, or disconnection.</div>
+<div class="list">•  Is the connector normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector, then go to Step 14.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">13</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT TURN LIGHT (RH) CONTROL CIRCUIT FOR SHORT TO GROUND</div>
+<div class="list">•  Verify that the power outer mirror (RH), rear turn light (RH) and BCM connectors are disconnected.</div>
+<div class="list">•  Inspect for continuity between BCM terminal 1E (wiring harness-side) and body ground.</div>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refer to the wiring diagram and verify whether or not there is a common connector between the following terminals:</div>
+<div class="list">•  Rear turn light (RH) terminal A—BCM terminal 1E</div>
+<div class="list">•  Power outer mirror (RH) terminal E—BCM terminal 1E</div>
+<div class="list-title">If there is a common connector:</div>
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for a short to ground.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+<div class="list-title">If there is no common connector:</div>
+<div class="list">•  Repair or replace the wiring harness which has a short to ground.</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">14</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY THAT REPAIRS HAVE BEEN COMPLETED</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Connect the negative battery cable.<div>(See <font class="extxref-label"><a href="id011700800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION</a></font>.)</div>
+</div>
+<div class="list">•  Clear the DTC for the BCM using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902f5067400.html">CLEARING DTC [BCM]</a></font>.)</div>
+</div>
+<div class="list">•  Operate the turn switch to the RH position.</div>
+<div class="list">•  Retrieve the BCM DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902f5067300.html">DTC INSPECTION [BCM]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC displayed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the BCM.<div>(See <font class="extxref-label"><a href="id094000003800.html">BODY CONTROL MODULE (BCM) REMOVAL/INSTALLATION</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">15</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF OTHER DTCs DISPLAYED</div>
+<div class="list">•  Are any other DTCs displayed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the applicable DTC troubleshooting.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0902f5067500.html">DTC TABLE [BCM]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

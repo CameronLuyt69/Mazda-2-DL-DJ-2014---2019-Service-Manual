@@ -1,0 +1,249 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ABS WHEEL-SPEED SENSOR AND ABS SENSOR ROTOR</title>
+</head>
+<body><a name="id041300186900"></a><p class="servinfo-title"><span class="servinfo-head"></span>ABS WHEEL-SPEED SENSOR AND ABS SENSOR ROTOR</p>
+<hr>
+<p class="servinfo-title-id" align="right">id041300186900</p><br clear="all"><a name="id04130018690001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose/Function</p>
+<div class="list">•  The ABS wheel-speed sensor and ABS sensor rotor detect the rotation condition of each wheel and transmit this information to the ABS HU/CM.</div>
+<div class="list">•  The signal from the ABS wheel-speed sensor is the primary signal that the ABS HU/CM uses when carrying out control.</div><br clear="all"><a name="id04130018690002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p><br clear="all"><p><a name="id04130018690003"></a><p class="topic-title"><span class="topic-head"></span>Front ABS wheel-speed sensor and sensor rotor</p>
+<dl>
+<dd>
+<div class="list">•  The front ABS wheel-speed sensor utilizes a semi-conductor element that contains an active drive circuit (MR element*).  The front sensor is installed on the steering knuckle.</div>
+<div class="list">•  The front ABS sensor rotor utilizes a magnetic encoder system that functions with magnetic rubber, and is integrated into the front wheel hub. Therefore, if there is any malfunction of the front ABS sensor rotor, replace the front wheel hub.</div>
+</dd>
+</dl>
+</p>
+<div class="deflist">*  :A magneto-resistive force means that an exterior magnetic field acts on the element, changing the resistance of the element.</div>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  When inspecting the ABS wheel-speed sensor, do not use a tester to inspect resistance. It is possible that the voltage from the tester could damage the semiconductor inside the ABS wheel-speed sensor. Inspect using the PID data monitor of the Mazda Modular Diagnostic System (M-MDS).</div>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Magnetic encoder: A plate that has positive and negative poles (marked out) in a continuous, alternating line.</div>
+</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002569.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002569</div>
+</td>
+</tr>
+</table><br clear="all"><p><a name="id04130018690004"></a><p class="topic-title"><span class="topic-head"></span>Rear ABS wheel-speed sensor and sensor rotor</p>
+<dl>
+<dd>
+<div class="list">•  The rear ABS wheel-speed sensor utilizes a semi-conductor element that contains an active drive circuit (hall element). The rear sensor is installed on the wheel hub.</div>
+<div class="list">•  The rear ABS sensor rotor utilizes a magnetic encoder system that functions with magnetic rubber, and is integrated into the rear wheel hub. Therefore, if there is any malfunction of the rear ABS sensor rotor, replace the rear wheel hub.</div>
+</dd>
+</dl>
+</p>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  When inspecting the ABS wheel-speed sensor, do not use a tester to inspect resistance. It is possible that the voltage from the tester could damage the semiconductor inside the ABS wheel-speed sensor. Inspect using the PID data monitor of the Mazda Modular Diagnostic System (M-MDS).</div>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Magnetic encoder: A plate that has positive and negative poles (marked out) in a continuous, alternating line.</div>
+</div>
+</dd>
+</dl>
+<div class="deflist">*  :A hall effect means that an exterior magnetic field acts on the element, changing the voltage of the element.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002570.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002570</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id04130018690005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  As the ABS sensor rotor rotates, the magnetic flux between the ABS wheel-speed sensor and the ABS sensor rotor change periodically. This periodic change is in proportion to the rotation speed.</div>
+<div class="list">•  The semiconductor element in the wheel speed sensor detects the change in magnetic flux, and the active drive circuit converts it to a rectangular wave signal for the current, which is transmitted to the ABS HU/CM.</div>
+<div class="list">•  For every single rotation of the ABS sensor rotor, 48 rectangular wave pulse signals are output. The CM in the ABS HU/CM calculates the wheel speed from the periodicity of these pulses.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzn00004722.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzn00004722</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id04130018690006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0030:07</div>
+</td>
+<td id="" align="left" rowspan="24">
+<div class="list">•  Illuminates the ABS warning light.</div>
+<div class="list">•  Inhibits the ABS control.<div>(Additionally, when any malfunction is detected in two wheels or more, EBD control is inhibited and the brake system warning light is illuminated.)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:11</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:15</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:29</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:2F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0033:07</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:11</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:15</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:29</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:2F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0036:07</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:11</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:15</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:29</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:2F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0039:07</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:11</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:15</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:29</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:2F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:64</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

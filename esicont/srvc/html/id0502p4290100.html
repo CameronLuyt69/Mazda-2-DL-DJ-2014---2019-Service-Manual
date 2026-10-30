@@ -1,0 +1,829 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC SYSTEM DTC INSPECTION [TCM (CW6A-EL)]</title>
+</head>
+<body><a name="id0502p4290100"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC SYSTEM DTC INSPECTION [TCM (CW6A-EL)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0502p4290100</p><br clear="all"><a name="id0502p429010001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Reading DTCs Procedure</p>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list"></p>
+<p class="list">2.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “Self Test”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “Modules”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(3)  Select “TCM”.</dd>
+<dd></dd>
+</dl>
+</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Freeze frame data/snapshot data appears at the top of the help screen when the displayed DTC is selected.</div>
+<div class="list-title">Freeze frame data</div>
+<div class="list">•  The freeze frame data consists of data for vehicle and transaxle control system operation conditions when malfunctions in the transaxle control system are detected and stored in the TCM.</div>
+<div class="list">•  Freeze frame data is stored at the instant the malfunction indicator lamp illuminates, and only a part of the DTC data is stored.</div>
+<div class="list-title">Snapshot data</div>
+<div class="list">•  The data for all DTCs currently detected is stored.</div>
+<dl>
+<div class="list-title">Recorded DTC timing</div>
+<dd class="list">
+<div class="list">―  For DTCs with one drive cycle, data is recorded during the malfunction determination period.</div>
+<div class="list">―  For DTCs with two drive cycles, data is recorded during non-determination (1st diagnosis) periods.</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<p class="list">3.  Then, select the “Retrieve CMDTCs” and perform procedures according to the directions on the M-MDS screen.</p>
+<p class="list"></p>
+<p class="list">4.  Verify the DTC according to the directions on the screen.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">•  If any DTCs are displayed, perform troubleshooting according to the corresponding DTC inspection.</div>
+</dd>
+</dl>
+</p>
+<p class="list">5.  After completion of repairs, clear all DTCs stored in the TCM. (See <font class="intxref-label"><a href="#id0502p429010002">Freeze frame data item table</a></font>.)</p>
+<p class="list"></p><br clear="all"><p><a name="id0502p429010002"></a><p class="topic-title"><span class="topic-head"></span>Freeze frame data item table</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Refer to PID/DATA monitor table for confirm the transaxle control system operation status while the TCM does not store the DTC. (See <font class="extxref-label"><a href="id0502p4290300.html">ON-BOARD DIAGNOSTIC SYSTEM PID/DATA MONITOR INSPECTION [TCM (CW6A-EL)]</a></font>.)</div>
+<div class="list">•  Freeze frame data items are not displayed, according to detected DTC.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Freeze frame data item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding PID/DATA monitor item</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">LOAD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Calculated engine load</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH {MPH}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VSS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve position No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RUNTM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">hh:mm:ss</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Time from engine start</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module supply voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP_D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id0502p429010003"></a><p class="topic-title"><span class="topic-head"></span>Snapshot data item table</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Refer to PID/DATA monitor table for confirm the transaxle control system operation status while the TCM does not store the DTC. (See <font class="extxref-label"><a href="id0502p4290300.html">ON-BOARD DIAGNOSTIC SYSTEM PID/DATA MONITOR INSPECTION [TCM (CW6A-EL)]</a></font>.)</div>
+<div class="list">•  Snapshot data items are not displayed, according to detected DTC.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Snapshot data item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding PID/DATA monitor item</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">LOAD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Calculated engine load</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VSS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH {MPH}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VSS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EG_RUN_TIME</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Time from engine start</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module supply voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">GEAR_SEL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1/2/3/4/5/6</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Gear shift position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">GEAR_SEL</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TSS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turbine/input shaft speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TSS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TFT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ATF temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TFT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OSS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output shaft speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OSS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LOCK_UP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/SLIP/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Torque converter (TCC condition)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LOCK_UP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OIL_PRES_SW2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.2 condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OP_SW2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OIL_PRES_SW1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.1 condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OP_SW1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SS_ON_OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">On/off solenoid condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SS_ON-OFF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TORQUE_DES</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Nm</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Desired engine torque</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TORQUE_DES</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_6</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">6GR is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_5</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">5GR is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_4</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">4GR is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">3GR is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2GR is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1GR is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">R position is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_N</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">N position is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OIL_PRES_SW4</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.4 condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OP_SW4</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OIL_PRES_SW3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.3 condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OP_SW3</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EOP_RLY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump relay condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EOP_RLY</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SHIFT_CTRL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">DEFAULT/MANUAL/C_CONTROL/HIGH_TEMP/D_MANUAL/FAIL_SAFE</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift control mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SHIFT_CTRL</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SLIP_VALUE</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Actual slip value between TSS and OSS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">HTM_DIS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km {mile}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Travel distance since determination of ATF high temperature mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">HTM_DIS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MST_REC_SFT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The gear shift position before shifting gears is displayed.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SFT_CTL_STS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The shift control execution condition is displayed.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SERIAL_DTC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transaxle range sensor position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">PADDLE_UP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift up operation using steering shift switch.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">PADDLE_UP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">PADDLE_DOWN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift down operation using steering shift switch.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">PADDLE_DOWN</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><a name="id0502p429010004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Clearing DTCs Procedures</p>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list"></p>
+<p class="list">2.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “Self Test”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “Modules”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(3)  Select “TCM”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(4)  Select “Retrieve CMDTCs”.</dd>
+<dd></dd>
+</dl>
+</p>
+<p class="list">3.  Verify the DTC according to the directions on the screen.</p>
+<p class="list"></p>
+<p class="list">4.  Press the clear button on the DTC screen to clear the DTC.</p>
+<p class="list"></p>
+<p class="list">5.  Switch the ignition off.</p>
+<p class="list"></p>
+<p class="list">6.  Close all of the doors, bonnet, trunk lid, and liftgate, lock the doors, and wait for <span>3 min</span>.</p>
+<p class="list"></p>
+<p class="list">7.  Switch the ignition to ON (engine off or on) and wait for <span>5 s or more</span>.</p>
+<p class="list"></p>
+<p class="list">8.  Perform DTC inspection. (See <font class="intxref-label"><a href="#id0502p429010001">Reading DTCs Procedure</a></font>.)</p>
+<p class="list"></p>
+<p class="list">9.  Verify that no DTCs are displayed.</p>
+<p class="list"></p>
+</body>
+</html>

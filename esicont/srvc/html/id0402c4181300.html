@@ -1,0 +1,1053 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC SYSTEM [LASER SENSOR]</title>
+</head>
+<body><a name="id0402c4181300"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC SYSTEM [LASER SENSOR]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0402c4181300</p><br clear="all"><a name="id0402c418130001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The on-board diagnostic system consists of the following functions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  A malfunction detection function that detects abnormalities in input/output signals when the ignition switch is at the ON position.</div>
+<div class="list">―  A PID/data monitor function that reads out specified input/output signals.</div>
+</dd>
+</dl>
+<div class="list">•  The data link connector 2 (DLC-2), which groups together all the connectors used for malfunction diagnosis into a single location, has been adopted, thereby improving serviceability. Diagnosis is performed by connecting the Mazda Modular Diagnostic System (M-MDS) to the DLC-2.</div>
+<div class="list">•  In addition to DTC read-out, the Mazda Modular Diagnostic System (M-MDS) has following functions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  PID/data monitor access</div>
+<div class="list">―  DTC clear using the display screen of the diagnostic tester</div>
+</dd>
+</dl>
+<p class="figure-title">Block diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002658.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002658</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0402c418130002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p><br clear="all"><p><a name="id0402c418130003"></a><p class="topic-title"><span class="topic-head"></span>Malfunction detection function</p>
+<dl>
+<dd>
+<div class="list">•  The malfunction detection function detects malfunctions in the input/output signal system of the laser sensor when the ignition switched ON or driving the vehicle.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0402c418130004"></a><p class="topic-title"><span class="topic-head"></span>Malfunction display function</p>
+<dl>
+<dd>
+<div class="list">•  When the malfunction detection function detects a malfunction, the Smart City Brake Support (SCBS) warning light (amber) illuminates to alert the driver.</div>
+<div class="list">•  Using the external tester communication function, DTCs can be output to the DLC-2 via the CAN line. At the same time, malfunction detection results are sent to the memory function and fail-safe function.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0402c418130005"></a><p class="topic-title"><span class="topic-head"></span>Memory function</p>
+<dl>
+<dd>
+<div class="list">•  The memory function stores DTCs of malfunctions in input/output signal systems. With this function, once a DTC is stored it is not cleared after the ignition switch has been switched OFF, even if the malfunctioning signal system has returned to normal.</div>
+<div class="list">•  Since the laser sensor has a built-in non-volatile memory, DTCs are not cleared even if the battery is removed. Therefore, it is necessary to clear the memory after performing repairs. Refer to the Workshop Manual for the DTC clearing procedure.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0402c418130006"></a><p class="topic-title"><span class="topic-head"></span>DTC table</p>
+<p clear="all">
+<p>
+<div>×: Applicable</div>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC</p>
+</th>
+<th id="" align="center">
+<p class="thead">Smart City Brake Support (SCBS) warning light (amber)</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe</p>
+</th>
+<th id="" align="center">
+<p class="thead">Drive cycle</p>
+</th>
+<th id="" align="center">
+<p class="thead">Self test type<sup>*1</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">Memory function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:00</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="5">
+<div class="tbody">CAN line</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0401:00</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Signal error from PCM</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0401:82</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0415:00</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="3">
+<div class="tbody">Signal error from DSC HU/CM</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0415:68</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0415:82</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0420:00</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Signal error from EPS control module</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0420:82</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0423:00</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Signal error from instrument cluster</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0423:82</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A14:49</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Laser sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:54</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Laser sensor configuration</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:55</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:56</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:00</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Laser sensor (internal malfunction)</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:66</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Smart City Brake Support (SCBS) system</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Battery power supply</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:17</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :C: CMDTC self test</div>
+</p><br clear="all"><p><a name="id0402c418130007"></a><p class="topic-title"><span class="topic-head"></span>Status byte for DTC</p>
+<dl>
+<dd>
+<div class="list">•  The status byte is the two-digit code (two digits after hyphen (-)) after the seven-digit DTC.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002656.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002656</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The status byte is a code which indicates the pending code, current/past malfunction status, or warning illumination status.</div>
+<div class="list">•  The status byte is a code which indicates the pending code, current/past malfunction status, or warning illumination status.</div>
+<div class="list">•  The status byte can be read by performing a CMDTC self test using the Mazda Modular Diagnostic System (M-MDS).</div>
+<div class="list">•  For details on the status byte, refer to the explanation on the M-MDS when reading the DTC.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0402c418130008"></a><p class="topic-title"><span class="topic-head"></span>Fail-safe function</p>
+<dl>
+<dd>
+<div class="list">•  When the malfunction detection function determines a malfunction, the Smart City Brake Support (SCBS) warning light (amber) illuminates to alert the driver. At this time, the fail-safe function controls as indicated in the fail-safe function table.</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">Fail-safe function table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC</p>
+</th>
+<th id="" align="center">
+<p class="thead">Smart City Brake Support (SCBS) control</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0401:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0401:82</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0415:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0415:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0415:82</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0420:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0420:82</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0423:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0423:82</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A14:49</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:54</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:55</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:56</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:64</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:64</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:66</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:17</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control disabled</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id0402c418130009"></a><p class="topic-title"><span class="topic-head"></span>Snapshot data</p>
+<dl>
+<dd>
+<div class="list">•  The snapshot data stores the currently detected DTC data.</div>
+</dd>
+</dl>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Snapshot data item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding data monitor items</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">AAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient air temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">APP_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Accelerator Pedal Off/</div>
+<div class="tbody">Under 20%/</div>
+<div class="tbody">Over 20%/</div>
+<div class="tbody">FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CFG_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Config Complete/</div>
+<div class="tbody">Not Configured/</div>
+<div class="tbody">Config Error</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ECT_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Under 0 degrees C/</div>
+<div class="tbody">0 - Under 80 degrees C/</div>
+<div class="tbody">Over 80 degrees C/</div>
+<div class="tbody">FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IC_VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster power supply</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The laser sensor constantly receives the power supply voltage value of the instrument cluster sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the laser sensor records the power supply voltage of the instrument cluster when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IG-ON_TIMER</div>
+</td>
+<td id="" align="center">
+<div class="tbody">hh:mm:ss<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Elapsed time since ignition was switched ON</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The instrument cluster records the elapsed time since the ignition was switched ON.</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="list">•  The laser sensor constantly receives the elapsed time since the ignition was switched ON sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the laser sensor records the elapsed time since the ignition was switched ON when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PWR_MODE_KEY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Key Out/Key Recently Out/Key Approved (Position 0)/Post Accessory (Position 0)/Accessory (Position 1)/Post Ignition (Position 1)/Ignition On (Position 2)/Running (Position 2)/Running - Starting In Progress (Position 2)/Crank (Position 3)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Key Out: Ignition switched off</div>
+<div class="list">•  Key Recently Out (Position 0): Elapsed time within 3 s since ignition was switched off</div>
+<div class="list">•  Accessory (Position 1): Ignition is switched to ACC</div>
+<div class="list">•  Post Ignition (Position 2): Elapsed time within 3 s since ignition was switched ON</div>
+<div class="list">•  Ignition On (Position 2): Ignition switched ON (engine off)</div>
+<div class="list">•  Running (Position 2): Ignition switched ON (engine on)</div>
+<div class="list">•  Running - Starting: Cranking condition</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The laser sensor constantly receives the ignition switch status sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the laser sensor records the ignition switch status when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RPM_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Engine Stop/</div>
+<div class="tbody">Under 1500 rpm/</div>
+<div class="tbody">Over 1500 rpm/</div>
+<div class="tbody">FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine RPM status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The laser sensor constantly receives the ignition switch status sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the laser sensor records the ignition switch status when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TACHOMTR<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SHIFT_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">P/N</div>
+<div class="tbody">D/</div>
+<div class="tbody">R/</div>
+<div class="tbody">FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift position status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The laser sensor constantly receives the selector lever position sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the laser sensor records the selector lever position when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TOTAL_DIST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km, ft, mi</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total traveled distance from completion of vehicle until laser sensor detects DTC (Odometer value in instrument cluster)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The distance traveled when the laser sensor detected a DTC can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the odometer value in the instrument cluster.</div>
+<div class="list">2.  Verify the snap shot data item TOTAL_DIST.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TOTAL_TIME</div>
+</td>
+<td id="" align="center">
+<div class="tbody">hh:mm:ss<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total elapsed time since vehicle completion until laser sensor detects a DTC</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  When the ROOM fuse is removed, and the ignition is switched off, the time is not included in the elapsed time.</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">The elapsed time when the laser sensor detected a DTC can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the PID item TOTAL_TIME of the instrument cluster.</div>
+<div class="list">2.  Verify the snap shot data item TOTAL_TIME.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TOTAL_TIME<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Power supply</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR_IG1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VSPD_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Stop/</div>
+<div class="tbody">0 - 10 km/h/</div>
+<div class="tbody">Over 10 km/h/</div>
+<div class="tbody">FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The laser sensor constantly receives the vehicle speed sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the laser sensor records the vehicle speed when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SPEEDOMTR<sup>*1</sup></div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :PID for instrument cluster</div>
+<div class="deflist">*2  :Fractions of seconds may be indicated after the decimal point</div>
+</p><br clear="all"><p><a name="id0402c418130010"></a><p class="topic-title"><span class="topic-head"></span>PID/data monitor function</p>
+<dl>
+<dd>
+<div class="list">•  The PID/data monitor function is used for optionally selecting input/output signal monitor items preset in the laser sensor and reading them out in real-time.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Monitor item (Mazda Modular Diagnostic System (M-MDS) display)</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/operation</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">DST_BMP_TGT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Distance from front bumper to target that laser sensor has detected</div>
+</td>
+<td id="" align="center">
+<div class="tbody">m, ft</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_IG1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Power supply</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VSPD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id0402c418130011"></a><p class="topic-title"><span class="topic-head"></span>External tester communication function</p>
+<dl>
+<dd>
+<div class="list">•  The external tester communication function enables communication of diagnostic data (DTC read-outs, input/output signal read-outs) between the laser sensor and an external tester.</div>
+<div class="list">•  By connecting the Mazda modular diagnostic system (M-MDS) to the DLC-2, diagnostic data can be sent and received between the Mazda modular diagnostic system (M-MDS) and the laser sensor via CAN lines.</div>
+<div class="list">•  The laser sensor receives the command signals of the malfunction detection function and PID/data monitor function from the Mazda modular diagnostic system (M-MDS), and sends DTCs and data regarding the operating status of each input/output part to the Mazda modular diagnostic system (M-MDS).</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Diagnostic function name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Signal received</p>
+</th>
+<th id="" align="center">
+<p class="thead">Signal sent</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Malfunction detection function</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC verification signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC(s)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PID/data monitor function</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Command signal to read selected monitor item</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Monitored data for requested monitor item</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+</body>
+</html>

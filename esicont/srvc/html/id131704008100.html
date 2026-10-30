@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>CAPACITOR (i-ELOOP) RECHARGING [i-ELOOP]</title>
+</head>
+<body><a name="id131704008100"></a><p class="servinfo-title"><span class="servinfo-head"></span>CAPACITOR (i-ELOOP) RECHARGING [i-ELOOP]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id131704008100</p><br clear="all"><a name="id13170400810001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Capacitor Quick Charge</p>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list">
+</p>
+<p class="list">2.  Turn the capacitor quick charge function on using the M-MDS simulation function (simulation item: CHARGE_FLG). (See <font class="extxref-label"><a href="id130201000600.html">ACTIVE COMMAND MODES INSPECTION [i-ELOOP]</a></font>.)</p>
+<p class="list">
+</p>
+<p class="list">3.  Verify the following displays.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list-title">Vehicles without center display</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Verify that the i-ELOOP indicator light (green) in the instrument cluster is flashing.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Vehicles with center display</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Verify that the i-ELOOP charging is displayed in the center display.</div>
+</dd>
+</dl>
+</p>
+<p class="list">4.  Switch the ignition OFF (LOCK).</p>
+<p class="list">
+</p>
+<p class="list">5.  Switch the ignition ON (engine off).</p>
+<p class="list">
+</p>
+<p class="list">6.  Wait until the display verified in procedure 3. disappears.</p>
+<p class="list">
+</p>
+<p class="list">7.  Turn the capacitor quick charge function (PID: CHARGE_FLG) off using the M-MDS simulation function. (See <font class="extxref-label"><a href="id130201000600.html">ACTIVE COMMAND MODES INSPECTION [i-ELOOP]</a></font>.)</p>
+<p class="list">
+</p>
+<p class="list">8.  Verify that the i-ELOOP operates normally. (See <font class="intxref-label"><a href="#id13170400810002">i-ELOOP Operation Verification</a></font>.)</p>
+<p class="list">
+</p><br clear="all"><a name="id13170400810002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>i-ELOOP Operation Verification</p>
+<p class="list">1.  Start the engine. (no electrical load)</p>
+<p class="list">
+</p>
+<p class="list">2.  Display the DC-DC converter (i-ELOOP) voltage reduction circuit operation status (PID: CONV_STAT) using the M-MDS data monitor function.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list-title">Power Output (Normal) is displayed</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The i-ELOOP operates normally therefore the procedure is completed.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Power Output (Normal) is not displayed</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Verify if any i-ELOOP related DTC is detected. (See <font class="extxref-label"><a href="id130201000200.html">DTC INSPECTION [i-ELOOP]</a></font>.)</div>
+<dl>
+<dd class="list">
+<div class="list">―  If DTCs are detected, repair the malfunctioning location according to the applicable DTC troubleshooting. (See <font class="extxref-label"><a href="id130201000700.html">DTC TABLE [i-ELOOP]</a></font>.)</div>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">―  If a DTC is not detected, verify i-ELOOP operation again after leaving the vehicle as is for approx. 30 min.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<title>PRINT PAGE</title>
+
+		<script>
+			window.onload = function()
+			{
+				var userAgent = window.navigator.userAgent.toLowerCase();
+
+				for( var i in opener.pathW )
+				{
+					var devElm = document.createElement('div');
+					devElm.setAttribute('id', 'svg' + i);
+
+					if(userAgent.indexOf('firefox') != -1) 
+					{
+						devElm.setAttribute('style', 'vertical-align: top; ');
+					}
+					else
+					{
+						devElm.setAttribute('style', 'display: inline-block; vertical-align: top; ');
+					}
+
+					document.getElementById('svgShow').appendChild(devElm);
+
+					//Wire	
+					var imgWire = document.createElement('input');
+
+					//親ウィンドウの変数pathWを取得
+					imgWire.setAttribute('src',opener.pathW[i]);
+
+					//alert(opener.pathW[i]);
+
+					imgWire.setAttribute('type', 'image');
+					imgWire.setAttribute('style', 'border-style: solid; border-width: thin; vertical-align: top; padding: 5px; margin: 5px;');
+
+					document.getElementById('svg' + i).appendChild(imgWire);
+				
+
+					if(opener.pathT[i] != null)
+					{
+						//Term
+						var imgTerm = document.createElement('input');
+
+						//親ウィンドウの変数pathTを取得
+						imgTerm.setAttribute('src',opener.pathT[i]);
+
+						//alert(opener.pathT[i]);
+
+						imgTerm.setAttribute('type', 'image');
+						imgTerm.setAttribute('style', 'border-style: solid; border-width: thin; vertical-align: top; padding: 5px; margin: 5px;');
+
+						document.getElementById('svg' + i).appendChild(imgTerm);
+					}
+				}
+			}
+		</script>
+
+	</head>
+	<body>
+		<div id = "svgShow">
+
+		</div>
+
+	</body>
+</html>

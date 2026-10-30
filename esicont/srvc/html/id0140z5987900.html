@@ -1,0 +1,481 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>FUEL INJECTION AMOUNT CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5987900"></a><p class="servinfo-title"><span class="servinfo-head"></span>FUEL INJECTION AMOUNT CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5987900</p><br clear="all"><a name="id0140z598790001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The fuel injection amount is controlled by the opening of the nozzle in the fuel injector based on the signal from the PCM.</div>
+<div class="list">•  The PCM learns and corrects the variation in the fuel injection amount of each cylinder.</div><br clear="all"><a name="id0140z598790002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003739.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003739</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z598790003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The PCM calculates the fuel injection amount according to engine operation conditions.</div>
+<div class="list">•  The fuel injection amount is determined according to the engine conditions.</div>
+<dl>
+<div class="list-title">Normal operation:</div>
+<dd class="list">
+<div class="list">•  The value determined from the accelerator pedal opening angle and the engine speed is corrected and determined according to the vehicle conditions<sup>*1</sup>.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Engine protection/fail-safe:</div>
+<dd class="list">
+<div class="list">•  Any of the following operations is determined according to the engine conditions.</div>
+<dl>
+<dd class="list">
+<div class="list">•  Decrease correction to normal fuel injection amount (such as when engine coolant temperature is high)</div>
+<div class="list">•  Fix fuel injection amount (small amount) possible for limp-home driving (such as when APP sensor is malfunctioning)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="deflist">*1  :Each type of temperature/pressure, gear position, electric power generation condition, A/C condition, and other</div><br clear="all"><p><a name="id0140z598790004"></a><p class="topic-title"><span class="topic-head"></span>Fuel cut</p>
+<dl>
+<dd>
+<div class="list">•  If any of the following conditions are met, the PCM performs fuel-cut.</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">Fuel Cut Table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Control name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Control outline</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Excessive engine speed fuel cut</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  Engine protection</div>
+<div class="list-title">Control conditions</div>
+<div class="list">•  Engine speed is <span>5,600 rpm or more under load, 4,000 rpm or more under no load</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Deceleration fuel cut</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  Improved fuel economy</div>
+<div class="list-title">Control conditions</div>
+<div class="list">•  When engine conditions are as follows:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Accelerator pedal is fully closed</div>
+<div class="list">―  Engine speed is specified value or more</div>
+<div class="list">―  Vehicle speed is specified value or more</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Sensor malfunction fuel cut</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  To prevent engine damage from abnormal combustion caused by the inability to determine the piston position correctly due to an engine speed signal input error.</div>
+<div class="list-title">Control conditions</div>
+<div class="list">•  Malfunction in the CKP sensor is detected</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Theft prevention</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  To prevent theft</div>
+<div class="list-title">Control conditions</div>
+<div class="list">•  Immobilizer system related information (engine start prohibited) received from start stop unit</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Part protection (MTX)</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  Protection of dual-mass flywheel</div>
+<div class="list-title">Control conditions</div>
+<div class="list">•  With the transaxle in gear, a condition continues for <span>2 s</span> in which the vehicle engine speed is <span>500 rpm or less</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel-cut at time of collision</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  For safety assurance</div>
+<div class="list-title">Control conditions</div>
+<div class="list">•  Fuel cut request signal received from SAS control module</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id0140z598790005"></a><p class="topic-title"><span class="topic-head"></span>Fuel injection amount learning</p>
+<dl>
+<dd>
+<div class="list">•  The PCM verifies the variation in fuel injection amount by calculating fluctuations in engine speed.</div>
+<div class="list">•  The fuel injection amount of each cylinder is increased/decreased by correcting the fuel injection amount to each cylinder according to the changes in engine speed so that the fluctuation in engine speed is reduced. </div>
+<div class="list">•  The correction amount is recorded in the PCM as a learned value, and remains recorded until it is updated.</div>
+<dl>
+<div class="list-title">Auto-learning</div>
+<dd class="list">
+<div class="list">•  The PCM periodically implements auto learning of the fuel injection. The idling sound may fluctuate due to the fuel injectors performing high/low fuel injection pressure during learning. </div>
+<div class="list">•  If all of the following conditions are met, the PCM implements the fuel injection amount learning.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Selector lever position: Either D position, N position, or P position (ATX)</div>
+<div class="list">―  Shift lever position: Neutral (MTX)</div>
+<div class="list">―  Clutch pedal: Released (MTX)</div>
+<div class="list">―  Vehicle speed: <span>0 km/h {0 mph}</span></div>
+<div class="list">―  Engine coolant temperature: <span>70—95 °C {158—203 °F}</span></div>
+<div class="list">―  Accelerator opening angle: <span>0 %</span></div>
+<div class="list">―  Engine-stop by operating the i-stop function is not implemented.</div>
+<div class="list">―  DPF regeneration control not implemented</div>
+</dd>
+</dl>
+<div class="list">•  If any of the implementation conditions is not met during the fuel injection amount learning, the fuel injection amount learning is canceled, but it will resume when the implementation conditions are met again.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Manual learning</div>
+<dd class="list">
+<div class="list">―  The fuel injection amount learning can be implemented using the Mazda Modular Diagnostic System (M-MDS) or a check connector.</div>
+<div class="list">―  It is necessary to perform the fuel injection amount learning periodically (once/year) to maintain performance.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140z598790006"></a><p class="topic-title"><span class="topic-head"></span>Cruise control system (with cruise control system)</p>
+<dl>
+<dd>
+<div class="list">•  Calculates the throttle valve opening angle based on the deviation of the actual vehicle speed from the set vehicle speed which was set with the cruise control switch and the throttle valve actuator.</div>
+<div class="list">•  The PCM controls the actual vehicle speed so that it is close to the set vehicle speed.</div>
+<div class="list">•  The cruise control includes the cruise control operation condition and the cruise control stop condition.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Cruise control operation condition</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When all of the following conditions are met, execution of the cruise control system is enabled (cruise control standby status).</div>
+<dl>
+<dd class="list">
+<div class="list">•  ON switch: ON</div>
+<div class="list">•  Vehicle speed: <span>Exceeds 25 km/h {16 mph}</span></div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Cruise control stop condition</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When any of the following conditions are met even while in cruise control, the PCM stops the cruise control and clears the set vehicle speed.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition: OFF</div>
+<div class="list">―  ON switch: OFF</div>
+<div class="list">―  Cruise control related DTCs (P0504:00) detected</div>
+</dd>
+</dl>
+<div class="list">•  When any of the following conditions are met even while in cruise control, the PCM stops the cruise control while storing the set vehicle speed.</div>
+<dl>
+<dd class="list">
+<div class="list">―  CANCEL switch: ON</div>
+<div class="list">―  Transaxle range sensor: P/N position (ATX)</div>
+<div class="list">―  CPP switch: ON (clutch pedal depressed) (MTX)</div>
+<div class="list">―  Neutral switch: ON (neutral position) (MTX)</div>
+<div class="list">―  Vehicle speed: <span>Less than 20.5 km/h {12.7 mph}</span></div>
+<div class="list">―  Brake switch: ON (brake pedal depressed)</div>
+<div class="list">―  Actual vehicle speed is <span>15 km/h {9.3 mph} or more</span> lower than the set vehicle speed during cruise control (during ascent)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Cruise control function</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The cruise control includes accelerating, coasting, resume, tap-down, tap-up and downshift functions.</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">Function List</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Function</p>
+</th>
+<th id="" align="center">
+<p class="thead">Contents</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Accelerating</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the SET (+) switch is continuously pressed while driving in cruise control, the PCM gradually increases the set vehicle speed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Coasting</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the SET (-) switch is continuously pressed while driving in cruise control, the PCM gradually decreases the set vehicle speed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Resume</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the RESUME (RES) switch signal is send to the PCM during regular driving (cruise control is stopped) and the previously set vehicle speed is stored in the PCM, the PCM sets the set vehicle speed to the previously set vehicle speed and begins control.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Tap down</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When all of the following conditions are met while driving in cruise control, the PCM decreases the set vehicle speed by <span>1.6 km/h {1.0 mph}</span>.</div>
+<dl>
+<dd class="list">
+<div class="list">―  SET (+) switch off</div>
+<div class="list">―  The SET (-) switch switches from off to on</div>
+<div class="list">―  When actual vehicle speed is lower (set vehicle speed <span>+2 km/h {+1 mph}</span>)</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Tap-up</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When all of the following conditions are met, the PCM increases the set vehicle speed by <span>1.6 km/h {1.0 mph}</span> and the throttle valve actuator is controlled so that the vehicle speed is close to the set vehicle speed.</div>
+<dl>
+<dd class="list">
+<div class="list">―  During cruise control</div>
+<div class="list">―  The SET (+) switch switches from off to on</div>
+<div class="list">―  When actual vehicle speed is lower (set vehicle speed <span>+2 km/h {+1 mph}</span>)</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Downshift</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the following conditions are met, a downshift signal is sent to the TCM (ATX) via CAN.</div>
+<dl>
+<dd class="list">
+<div class="list">―  SET (+) switch on</div>
+<div class="list">―  Target vehicle acceleration is not reached</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id0140z598790007"></a><p class="topic-title"><span class="topic-head"></span>Brake override system</p>
+<dl>
+<dd>
+<div class="list-title">Brake override system operation conditions</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  It gives priority to the brake operation if a malfunction occurs with the accelerator pedal such as if the accelerator pedal is depressed and does not return. The fuel injection amount is reduced if the brake pedal is depressed while the accelerator pedal is in a depressed condition until the vehicle is safely decelerated and comes to a complete stop.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">Operation start conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If either one of the following conditions is met with the brake pedal depressed for the specified time<sup>*1</sup> or more while the accelerator pedal is depressed, the PCM adjusts the fuel injection amount so that the engine speed is <span>1,000 rpm</span>.</div>
+<dl>
+<div class="list-title">While driving vehicle</div>
+<dd class="list">
+<div class="list">―   Accelerator pedal opening angle: <span>5% or more</span> from fully closed</div>
+<div class="list">―   Vehicle speed: <span>10 km/h {6.2 mph} or more </span></div>
+<div class="list">―  Engine speed: <span>875 rpm or more </span></div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">While vehicle is stopped</div>
+<dd class="list">
+<div class="list">―   Accelerator pedal opening angle: <span>5% or more</span> from fully closed</div>
+<div class="list">―   Selector lever position: N position (ATX)</div>
+<div class="list">―   Shift lever position: Neutral (MTX)</div>
+<div class="list">―   Engine speed: <span>875 rpm or more </span></div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Operation complete conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•   If the following conditions are met while the brake override system is operating, the PCM stops the operation of the brake override system and controls the fuel injection amount according to the accelerator pedal opening angle.</div>
+<dl>
+<dd class="list">
+<div class="list">―   Accelerator pedal not depressed</div>
+<div class="list">―   Brake pedal not depressed</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The brake override system operation stops by switching the ignition off.</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :Specified time is <span>0.6 to 10 s</span> according to braking force calculated in PCM.</div>
+<dl>
+<dd>
+<div class="list-title">Prevention of unnecessary brake override system operation</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If the servicing procedure requiring the brake pedal and the accelerator pedal to be depressed simultaneously is performed, unnecessary operation of the brake override system can be prevented, if necessary.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The operation of the emergency signal system (ESS) can be also canceled by performing the procedure for preventing unnecessary operation of the brake override system.</div>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">Cancel conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the releasing procedure is implemented  with the following conditions met <span>within 30 s</span> after switching the ignition ON (KOEO), the brake override system does not operate until the recovery condition is met.</div>
+<dl>
+<dd class="list">
+<div class="list">―   Selector lever position: N position (ATX)</div>
+<div class="list">―   Shift lever position: Neutral (MTX)</div>
+<div class="list">―  Vehicle speed: <span>0 km/h {0 mph}</span></div>
+<dl>
+<div class="list-title">Releasing procedure</div>
+<dd class="list">
+<div class="list">1.  Depress the brake pedal for <span>10 s</span> with the accelerator pedal released.</div>
+<div class="list">2.  Repeatedly depress and release the accelerator pedal fully <span>three times</span> with the brake pedal depressed.</div>
+<div class="list">3.  Release the brake pedal</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Recovery condition</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The cancel conditions are reset when the ignition is switched off while the brake override system is canceled. As a result, the brake override system can operate.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="list-title">Master warning light illumination request</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If any one of the following conditions is met, the PCM sends the master warning light illumination request signal to the instrument cluster. The master warning light illuminates to alert the driver that there is a malfunction in the brake system.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Brake switch (No.1 signal) has a malfunction</div>
+<div class="list">―  Brake switch (No.2 signal) has a malfunction</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Master warning light flash request</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If the cancel condition for preventing unnecessary operation of the brake override system is implemented, the PCM sends a master warning light flash request signal to the instrument cluster. The driver is notified that the brake override system has been cancelled by the flashing of the master warning light.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140z598790008"></a><p class="topic-title"><span class="topic-head"></span>Fail-safe</p>
+<dl>
+<dd>
+<div class="list">•  To prevent engine damage, the engine speed is restricted to <span>3,000 rpm or less</span> when the engine coolant temperature is <span>−10°C {14 °F}</span> while the ignition is switched ON (KOER). (<span>Maximum 190 s period</span>)</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

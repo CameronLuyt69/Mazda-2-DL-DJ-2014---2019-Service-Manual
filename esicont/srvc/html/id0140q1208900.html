@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>GENERATOR CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0140q1208900"></a><p class="servinfo-title"><span class="servinfo-head"></span>GENERATOR CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140q1208900</p><br clear="all"><a name="id0140q120890001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  Idling stability has been improved by optimum control of generator voltage (according to engine operation and electrical load conditions).</div>
+<div class="list">•  The PCM determines the engine operation and electrical load conditions based on the input signals from each control part. It then uses this information to control the energization time of the generator field coils.</div><br clear="all"><a name="id0140q120890002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003425.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003425</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140q120890003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id0140q120890004"></a><p class="topic-title"><span class="topic-head"></span>Determination method for target excitation current</p>
+<dl>
+<dd>
+<div class="list">•  The battery condition is determined based on the current sensor signal and the target excitation current is calculated according to the battery condition. If the current sensor is malfunctioning, the target excitation current is calculated from the generator target output amount (determined by battery fluid temperature, engine speed, and vehicle speed) and the actual generator rotation speed.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q120890005"></a><p class="topic-title"><span class="topic-head"></span>Determination method for field coil excitation time</p>
+<dl>
+<dd>
+<div class="list">•  The PCM increases or decreases the field coil excitation current by sending a duty signal to the power transistor built into the generator.</div>
+<div class="list">•  The field coil energization current changes according to changes in the power transistor excitation time. This is accomplished by changing the duty signal duty ratio. For example, when the battery positive voltage drops, the duty ratio of the duty signal sent to the power transistor is larger, increasing the field coil excitation current.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzn00003648.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzn00003648</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  During deceleration fuel-cut, the PCM increases the generator voltage and stores electricity in the battery. In conditions other than deceleration fuel-cut, only the required amount of electricity is charged (according to the battery status) to lower the load to the generator. (with i-stop system or i-ELOOP)</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

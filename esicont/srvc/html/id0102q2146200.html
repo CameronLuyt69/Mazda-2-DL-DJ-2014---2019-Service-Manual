@@ -1,0 +1,450 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P0093:00 [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0102q2146200"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P0093:00 [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q2146200</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC P0093:00</p>
+</th>
+<th id="" align="left">
+<p class="thead">Fuel leakage from fuel pressure control system</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the following conditions are met, the PCM detects the amount of fuel leakage as <span>exceeding 480 mm<sup>3</sup>/rev</span><span>3 times</span>:</div>
+<dl>
+<div class="list-title">MONITORING CONDITIONS</div>
+<dd class="list">
+<div class="list">―  Battery voltage: <span>8 V or more</span></div>
+<div class="list">―  Engine speed: <span>600 rpm or more</span></div>
+<div class="list">―  Fuel-cut control is not implemented</div>
+<div class="list">―  Fuel pressure relief valve: Closed</div>
+<div class="list">―  Fuel pressure control: Being performed</div>
+<div class="list">―  CKP sensor: Normal</div>
+<div class="list">―  The following DTCs are not detected:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Fuel pressure sensor: P0191:00, P0192:00, P0193:00</div>
+<div class="list">•  Suction control valve: P062A:00</div>
+<div class="list">•  Fuel injector: P0201:00, P0202:00, P0203:00, P0204:00, P1378:00, P1379:00, P2146:00, P2147:00, P2148:00, P2149:00, P2150:00, P2151:00</div>
+<div class="list">•  Common rail fuel pressure control system: P0089:00</div>
+<div class="list">•  Fuel injector code not programmed: P1675:00, P1676:00</div>
+<div class="list">•  PCM internal malfunction: P062B:00</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list-title">Diagnostic support note</div>
+<div class="list">•  This is an intermittent monitor (fuel system).</div>
+<div class="list">•  The check engine light illuminates if the PCM detects the above malfunction condition during the first drive cycle.</div>
+<div class="list">•  FREEZE FRAME DATA/Snapshot data is available.</div>
+<div class="list">•  DTC is stored in the PCM memory.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Limits the engine torque or the upper limit of the engine speed.</div>
+<div class="list">•  Inhibits the auto DPF regeneration control.</div>
+<div class="list">•  Inhibits the compulsory DPF regeneration control.</div>
+<div class="list">•  Inhibits the EGR control.</div>
+<div class="list">•  PCM restricts engine-transaxle integration control. (ATX)</div>
+<div class="list">•  Inhibits engine-stop by operating the i-stop function.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Fuel pressure relief valve malfunction</div>
+<div class="list">•  Suction control valve malfunction</div>
+<div class="list">•  Fuel pressure sensor malfunction</div>
+<div class="list">•  Fuel injector malfunction</div>
+<div class="list">•  Fuel pipe perforation or breakage (improper connection)</div>
+<div class="list">•  Fuel leakage from fuel line or clogging</div>
+<div class="list">•  Supply pump malfunction</div>
+<div class="list">•  PCM malfunction</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>SYSTEM WIRING DIAGRAM</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic Procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">RECORD FREEZE FRAME DATA/SNAPSHOT DATA AND DIAGNOSTIC MONITORING TEST RESULTS TO UTILIZE WITH REPEATABILITY VERIFICATION</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Recording can be facilitated using the screen capture function of the PC.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Record the FREEZE FRAME DATA/snapshot data and DIAGNOSTIC MONITORING TEST RESULTS (fuel system related) on the repair order.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY RELATED PENDING CODE AND/OR DTC</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure and DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any other PENDING CODEs and/or DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable PENDING CODE or DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FUEL PRESSURE RELIEF VALVE</div>
+<div class="list">•  Inspect the fuel pressure relief valve.<div>(See <font class="extxref-label"><a href="id0114q2706400.html">FUEL PRESSURE RELIEF VALVE INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the common rail, then go to Step 11.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0114q2803900.html">COMMON RAIL REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT SUCTION CONTROL VALVE</div>
+<div class="list">•  Inspect the suction control valve.<div>(See <font class="extxref-label"><a href="id0114q2087800.html">SUCTION CONTROL VALVE INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the suction control valve, then go to Step 11.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0114q2087900.html">SUCTION CONTROL VALVE REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FUEL PRESSURE SENSOR</div>
+<div class="list">•  Inspect the fuel pressure sensor.<div>(See <font class="extxref-label"><a href="id0140q2106100.html">FUEL PRESSURE SENSOR INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the common rail, then go to Step 11.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0114q2803900.html">COMMON RAIL REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FUEL INJECTOR</div>
+<div class="list">•  Inspect the fuel injector.<div>(See <font class="extxref-label"><a href="id0114q2800700.html">FUEL INJECTOR INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the fuel injector, then go to Step 11.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0114q2800600.html">FUEL INJECTOR REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FUEL PIPE</div>
+<div class="list">•  Inspect the fuel pipe installation condition.<div>(See <font class="extxref-label"><a href="id0114q2800100.html">FUEL SYSTEM LOCATION INDEX [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Install the fuel pipe properly, then go to Step 11.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR FUEL LEAKAGE FROM FUEL LINE OR CLOGGING</div>
+<div class="list">•  Inspect the following fuel line for fuel leakage or clogging.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between supply pump and common rail</div>
+<div class="list">―  Between common rail and fuel injector</div>
+</dd>
+</dl>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to Step 11.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">10</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT SUPPLY PUMP</div>
+<div class="list">•  Inspect the supply pump.<div>(See <font class="extxref-label"><a href="id0114q2805800.html">SUPPLY PUMP INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the supply pump, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0114q2805700.html">SUPPLY PUMP REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY DTC TROUBLESHOOTING COMPLETED</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2801100.html">AFTER REPAIR PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Start the engine and warm it up completely.<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  While performing this step, always operate the vehicle in a safe and lawful manner.</div>
+<div class="list">•  When the M-MDS is used to observe monitor system status while driving, be sure to have another technician with you, or record the data in the M-MDS using the PID/DATA MONITOR AND RECORD capturing function and inspect later.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">•  Drive the vehicle under the FREEZE FRAME DATA/snapshot data condition.</div>
+<div class="list">•  Perform the DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q2113800.html">PCM REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">12</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY AFTER REPAIR PROCEDURE</div>
+<div class="list">•  Perform the “AFTER REPAIR PROCEDURE”.<div>(See <font class="extxref-label"><a href="id0102q2801100.html">AFTER REPAIR PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

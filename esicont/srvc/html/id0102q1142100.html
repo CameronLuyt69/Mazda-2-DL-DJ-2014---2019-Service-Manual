@@ -1,0 +1,1306 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC SYSTEM PID/DATA MONITOR FUNCTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0102q1142100"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC SYSTEM PID/DATA MONITOR FUNCTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q1142100</p>
+<div class="list">•  The PID/DATA monitor items are shown below.</div>
+<p clear="all">
+<p class="table-title">PID/DATA monitor item table</p>
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">AC_PRES</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refrigerant pressure input from refrigerant pressure sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Refrigerant pressure sensor voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">AC_REQ</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/C switch status received by PCM via CAN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ACCS</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/C relay status input from A/C relay</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ALTF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Field coil current control signal output to generator</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ALTF_ACT<sup>*6</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Actually measured value of field coil current signal input from generator</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ALTT V<sup>*5</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Generator output voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">AMB_TEMP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Actually measured ambient temperature input from ambient temperature sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">APP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal opening angle (relative value) with the fully released status as 0% and fully depressed status as 100%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">APP1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal opening angle (absolute value) input from APP sensor No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">APP sensor No.1 voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">APP2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal opening angle (absolute value) input from APP sensor No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">APP sensor No.2 voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ARPMDES</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Target engine speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BARO</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Actually measured barometric pressure input from barometric pressure sensor built into PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BATT_CUR<sup>*6</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Battery charge/discharge current</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BATT_DAY<sup>*6</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of days elapsed since current sensor initialization</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BATT_RES<sup>*6</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Battery internal resistance (estimated)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BATT_SOC<sup>*6</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Battery charge condition (estimated)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BATT_TEMP<sup>*6</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Battery temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BATT_V<sup>*6</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Battery voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">BBP<sup>*3</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Power brake unit vacuum input from power brake unit vacuum sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Power brake unit vacuum sensor voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BFP<sup>*3</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Actually measured brake fluid pressure input from brake fluid pressure sensor built into DSC HU/CM via CAN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BOO</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake switch (No.1 signal) input status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">High/Low</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BPA<sup></sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake switch (No.2 signal) input status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">High/Low</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CATT11_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Estimated catalytic converter temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CHRGLP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Charging system warning light illumination status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CLU_CUT_SW<sup>*4</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter interlock switch status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CPP<sup>*1</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Clutch pedal position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CPP<sup>*4</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Clutch pedal position input from clutch stroke sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CPP/PNP<sup>*1</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift lever position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">ECT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature input from ECT sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ECT sensor voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EQ_RAT11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Excess air factor (estimated value) to theoretical air/fuel ratio (14.7) by fuel feedback control</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EQ_RAT11_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Target excess air factor (estimated value) to theoretical air/fuel ratio (14.7) by fuel feedback control</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ETC_ACT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Actual throttle valve opening angle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">ETC_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Target throttle valve opening angle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Target throttle valve opening angle (percent)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EVAPCP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purge solenoid valve control duty value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FAN1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cooling fan relay No.2 operation status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FAN3</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cooling fan relay No.1 operation status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FIA</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injection amount</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FLI</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel level</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pump relay operation status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FUEL_P_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Target fuel pressure (high pressure fuel pump)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FP_DUTY<sup>*7</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pump control module control duty value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">FUEL_PRES</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure input from fuel pressure sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel pressure sensor voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FUELPW</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injection pulse width (fuel injector energization time) output to fuel injector</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Sec</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FUELSYS</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Feedback status of fuel injection control is displayed</div>
+<div class="tbody">OL: Feedback control is disabled at cold engine start</div>
+<div class="tbody">CL: During feedback control by A/F sensor and HO2S</div>
+<div class="tbody">OL_Drive: While feedback control is stopped</div>
+<div class="tbody">OL_Fault: Feedback control is disable due to system malfunction</div>
+<div class="tbody">CL_Fault: During feedback control with either A/F sensor or HO2S having a malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OL/CL/</div>
+<div class="tbody">OL_Drive/</div>
+<div class="tbody">OL_Fault/</div>
+<div class="tbody">CL_Fault</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">GEAR<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Gear commanded</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Unknown/1st/2nd/3rd/4th/5th/6th/Not in P/Park/Neutral/Drive/Reverse</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">HTR11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor heater operation status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/F sensor heater control duty value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">HTR12</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S heater operation status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">HO2S heater control duty value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">IAT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature (No.1) input from IAT sensor No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.1 voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IAT2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.2 voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">INGEAR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Gears are engaged</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ISC_FBK</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ISC feedback value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">I-Stop_OFF<sup>*3</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">i-stop OFF mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">I-Stop_TRD<sup>*3</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">i-stop transmission D position selected status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">I-Stop_VSP<sup>*3</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">i-stop vehicle speed history flag</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">I-Stop_VST<sup>*3</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">i-stop vehicle stop flag</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IVS</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Idle flag</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off Idle/Idle</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">KNOCKR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition timing correction for suppressing engine knock (Performs retard correction (negative indication) according to the occurrence of engine knock, and it approaches approx. 0° by the advance correction due to engine knock suppression.)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LOAD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ratio of actual amount of intake air to the maximum air charging amount (mass volume) of cylinder</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LONGFT1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel learning correction amount estimated based on A/F sensor signal</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LONGFT12</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel learning correction amount estimated based on HO2S signal</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LOW_OIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine oil pressure condition</div>
+<div class="list">•  Never Detected: Engine oil pressure is high</div>
+<div class="list">•  Detected: Engine oil pressure is low</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Never Detected/Detected</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LRN_KCS</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Knock control system learning value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">M_GEAR<sup>*1</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manual gear position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Neutral/1st gear/2nd gear/3rd gear/4th gear/5th gear/6th gear/Reverse/Undefined/Auto/In_Progress/YSF/Error</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">MAF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Mass air flow input from MAF sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">g/Sec</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAF sensor voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manifold absolute pressure input from MAP sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAP_V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">MAP sensor voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_CAT1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.1 cylinder leading to catalytic converter temperature increase (catalytic converter temperature increases due to fuel combustion around catalytic converter after misfire)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_CAT_2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.2 cylinder leading to catalytic converter temperature increase (catalytic converter temperature increases due to fuel combustion around catalytic converter after misfire)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_CAT_3</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.3 cylinder leading to catalytic converter temperature increase (catalytic converter temperature increases due to fuel combustion around catalytic converter after misfire)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_CAT_4</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.4 cylinder leading to catalytic converter temperature increase (catalytic converter temperature increases due to fuel combustion around catalytic converter after misfire)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_CAT_FCC</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Threshold of malfunction determination for number of misfires (total number in all cylinders) leading to catalytic converter temperature increase</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_CAT_TTL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires (total number in all cylinders) leading to catalytic converter temperature increase</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_EMI1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.1 cylinder under conditions required by emission regulations</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_EMI_2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.2 cylinder under conditions required by emission regulations</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_EMI_3</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.3 cylinder under conditions required by emission regulations</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_EMI_4</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires in No.4 cylinder under conditions required by emission regulations</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_EMI_FCC</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Threshold of malfunction determination for number of misfires (total number in all cylinders) under conditions required by emission regulations</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MF_EMI_TTL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of misfires (total number in all cylinders) under conditions required by emission regulations</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Check engine light illumination status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MIL_DIS</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Travelled distance since check engine light illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km, ft, mi</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">NEUTRAL_SW1<sup>*4</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Neutral switch No.1 status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">NEUTRAL_SW2<sup>*4</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Neutral switch No.2 status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">O2S11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor current</div>
+</td>
+<td id="" align="center">
+<div class="tbody">µA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">O2S12</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">OIL_P_SOL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine oil solenoid valve operation status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">OIL_TEMP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Estimated engine oil temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PN_SW<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Parking/neutral</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Open/Closed</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RO2FT1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel correction amount based on HO2S signal including SHRTFT12 and LONGFT12</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SHRTFT1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel feedback correction amount estimated based on A/F sensor signal</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SHRTFT12</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel feedback correction amount estimated based on HO2S signal</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SPARKADV</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition timing</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TP_REL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve opening angle (relative value) with value at throttle valve fully close timing as the start point</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">TP1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve position No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TP sensor No.1 voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">TP2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve position No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TP sensor No.2 voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TPCT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TP sensor No.1 minimum voltage at CTP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TPCT2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TP sensor No.2 maximum voltage at CTP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Battery positive voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VSS</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VT_EX_DES</div>
+</td>
+<td id="" align="left">
+<div class="list-title">SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system)</div>
+<div class="list">•  Target Intake Variable Valve Timing Control - Advance Amount from Max Retard Position</div>
+<div class="list-title">SKYACTIV-G 1.5 (with 4-2-1 exhaust system)</div>
+<div class="list">•  Target Exhaust Variable Valve Timing Control - Retard Amount from Max Advance Position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VT_IN_ACT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Actual Intake Variable Valve Timing Control - Advance Amount from Max Retard Position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VT_IN_DES</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Target Intake Variable Valve Timing Control - Advance Amount from Max Retard Position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VT_EX_ACT</div>
+</td>
+<td id="" align="left">
+<div class="list-title">SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system)</div>
+<div class="list">•  Actual Intake Variable Valve Timing Control - Advance Amount from Max Retard Position</div>
+<div class="list-title">SKYACTIV-G 1.5 (with 4-2-1 exhaust system)</div>
+<div class="list">•  Actual Exhaust Variable Valve Timing Control - Retard Amount from Max Advance Position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VT_EX_DUTY</div>
+</td>
+<td id="" align="left">
+<div class="tbody">OCV control duty value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist"> *1   :MTX</div>
+<div class="deflist"> *2   :ATX</div>
+<div class="deflist"> *3   :With i-stop system</div>
+<div class="deflist"> *4   :With i-stop system (MTX)</div>
+<div class="deflist"> *5   :Without i-ELOOP</div>
+<div class="deflist"> *6   :With i-stop or with i-ELOOP</div>
+<div class="deflist"> *7   :With fuel pump control module</div>
+</body>
+</html>

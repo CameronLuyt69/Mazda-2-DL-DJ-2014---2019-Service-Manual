@@ -1,0 +1,216 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>TIRE PRESSURE MONITORING SYSTEM (TPMS)</title>
+</head>
+<body><a name="id021200201000"></a><p class="servinfo-title"><span class="servinfo-head"></span>TIRE PRESSURE MONITORING SYSTEM (TPMS)</p>
+<hr>
+<p class="servinfo-title-id" align="right">id021200201000</p><br clear="all"><a name="id02120020100001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose, Outline</p>
+<div class="list">•  The tire pressure monitoring system monitors the tire pressure of all 4 tires. If the tire pressure of 1 tire or more becomes excessively low, the driver is notified.</div>
+<div class="list">•  A tire pressure monitoring system has been adopted which indirectly inspects the tire pressures and warns the driver.</div>
+<div class="list">•  A switch for initializing the tire pressure monitoring system after the tire pressures have been adjusted is installed to the dashboard. (See <font class="extxref-label"><a href="id021200203000.html">TIRE PRESSURE MONITORING SYSTEM SET SWITCH</a></font>.)</div><br clear="all"><a name="id02120020100002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System structural view</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001642.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001642</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id02120020100003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003586.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003586</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id02120020100004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Detection method</p>
+<div class="list-title">Detection of the tire air pressure is performed by combining the following two methods.</div>
+<div class="list">•  Dynamic loaded radius detection<div>Detects the tire rotation speed using the ABS wheel speed sensor. The rotation speed of each of the wheels is compared to detect decreases in air pressure. Normally, the rotation speed of the 4 wheels is nearly the same, however, if a decrease in air pressure occurs in one tire, the dynamic loaded radius of the tire becomes smaller, the rotation speed of that tire increases, and a difference in rotation speed occurs. This method of detection is dynamic loaded radius detection. With the dynamic loaded radius detection method, if the tire pressure of all 4 tires decreases at the same level, a difference in tire rotation speed for each wheel does not occur and, therefore, detection is not possible.</div>
+</div>
+<div class="list">•  Torsion resonant frequency detection <div>With torsion resonant frequency detection, detection of differences in tire air pressure is possible even if the tire pressure of all 4 tires decreases at the same level. This detection method uses the ABS wheel speed sensor signal the same as the dynamic loaded radius detection method. With resonant frequency detection, the signal from the ABS wheel speed sensor is analyzed in single pulse units and various wave frequencies are detected. Among these wave frequencies, the wave frequency synchronized to the air pressure is the torsion resonant frequency. Therefore, by monitoring the torsion resonant frequency, decreases in air pressure can be detected indirectly.</div>
+</div><br clear="all"><a name="id02120020100005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The tire pressure monitoring system consists of the following parts.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="2">
+<p class="thead">Part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">DSC HU/CM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Calculates the change in tire pressure for each wheel based on the tire rotation speed signal from the ABS wheel-speed sensor and monitors the fluctuation value.</div>
+<div class="list">•  If the fluctuation value of the tire pressure decreases to the specified value, the system determines that a tire pressure has decreased and turns on the tire pressure monitoring system warning light.</div>
+<div class="list">•  The tire pressure monitoring system warning light illumination signal is sent to the instrument cluster via a CAN signal.</div>
+<div class="list">•  If a malfunction occurs in the tire pressure monitoring system, determination is made to flash the tire pressure monitoring system warning light.</div>
+<div class="list">•  The tire pressure monitoring system warning light flash signal is sent to the instrument cluster via a CAN signal.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">ABS wheel-speed sensor</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The wheel speed is sent to the DSC HU/CM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Ambient temperature sensor</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The ambient temperature is sent to the PCM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">PCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The ambient temperature is sent to the DSC HU/CM via a CAN signal.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Tire pressure monitoring system warning light</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The tire pressure monitoring system warning light illuminates by the illumination signal from the DSC HU/CM.</div>
+<div class="list">•  The tire pressure monitoring system warning light flashes for approx. 1 min by the flash signal from the DSC HU/CM, and then it illuminates.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Tire pressure monitoring system warning alarm</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The tire pressure monitoring system warning alarm sound is triggered by the warning alarm request signal from the DSC HU/CM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Tire pressure monitoring system set switch</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The initialization signal is sent to the instrument cluster.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The initialization signal is sent to the DSC HU/CM via a CAN signal.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id02120020100006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id02120020100007"></a><p class="topic-title"><span class="topic-head"></span>The tire pressure monitoring system operates as shown in the following figure.</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3uun00003557.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3uun00003557</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id02120020100008"></a><p class="topic-title"><span class="topic-head"></span>Mis-use prevention logic</p>
+<dl>
+<dd>
+<div class="list">•  The tire pressure monitoring system has a mis-use prevention logic which illuminates the tire pressure monitoring system warning light if the tire pressure monitoring system initialization is performed two times without adjusting the tire pressures even though the tire pressure monitoring system warning light was illuminated.<div>The data at the point in time that the tire pressure monitoring system warning light was illuminated is compared with the data at the point in time that the tire pressure monitoring system was initialized, and if the difference is within the specified value, the mis-use prevention logic detects and counts the number of detections.</div>
+<div>If the detection is the first time, the tire pressure monitoring system warning light is not illuminated.</div>
+<div>If the detection is the second time, the tire pressure monitoring system warning light is illuminated.</div>
+</div>
+<div class="list">•  If the M-MDS is used to initialize the tire pressure monitoring system, the mis-use prevention logic is disabled.</div>
+<div class="list">•  The mis-use prevention logic operates as shown in the following figure.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00002640.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00002640</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id02120020100009"></a><p class="topic-title"><span class="topic-head"></span>Tire pressure monitoring system warning light does not illuminate</p>
+<dl>
+<dd>
+<div class="list">•  Even if the tire pressure monitoring system is normal, if the following items apply, the tire pressure monitoring system warning light may not illuminate.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Brake pedal is depressed</div>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">―  DSC is operating</div>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">―  Sudden steering wheel maneuvering</div>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">―  Sudden acceleration/deceleration</div>
+<div class="list">―  When vehicle is parked, stopped</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id02120020100010"></a><p class="topic-title"><span class="topic-head"></span>Tire pressure monitoring system does not operate normally</p>
+<dl>
+<dd>
+<div class="list">•  If the following items apply, the tire pressure monitoring system may not operate correctly.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Initialized using tire pressure outside of tire pressure specification</div>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">―  Tire pressure suddenly decreases (Ex. tire burst)</div>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">―  During tire pressure monitoring system learning</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</body>
+</html>

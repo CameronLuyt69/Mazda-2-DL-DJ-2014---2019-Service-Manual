@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>TIRE PRESSURE MONITORING SYSTEM OPERATION RECORD</title>
+</head>
+<body><a name="id021200203500"></a><p class="servinfo-title"><span class="servinfo-head"></span>TIRE PRESSURE MONITORING SYSTEM OPERATION RECORD</p>
+<hr>
+<p class="servinfo-title-id" align="right">id021200203500</p><br clear="all"><a name="id02120020350001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  Customers can verify if they know how to correctly use the tire pressure monitoring system set switch by verifying the tire pressure monitoring system operation record.</div><br clear="all"><a name="id02120020350002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function, Display</p>
+<div class="list">•  The DSC HU/CM stores the operation records and the Mazda Modular Diagnostic System (M-MDS) reads out the operation records and indicates them as shown in the figure below:</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am6zzn00002736.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am6zzn00002736</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  M-MDS indication is indicated in brackets</div>
+</div>
+</dd>
+</dl><br clear="all"><p><a name="id02120020350003"></a><p class="topic-title"><span class="topic-head"></span>Tire pressure monitoring system set switch operation record (TPMS Learning Reset Button Record)</p>
+<dl>
+<dd>
+<div class="list">•  The DSC HU/CM implements the tire pressure monitoring system initialization by pressing the tire pressure monitoring system set switch, and it simultaneously records the following items for a maximum 3 times from the current record as the operation record.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Elapsed days (Elapsed days)<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The M-MDS displays the elapsed days from the start of initialization until the operation record verification with the M-MDS. </div>
+<div class="list">•  If the operation record has not been recorded, 65,535 days is displayed however this does not indicate a malfunction.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">―  Total traveled distance (Odometer)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id02120020350004"></a><p class="topic-title"><span class="topic-head"></span>Tire pressure monitoring system warning light illumination operation record (TPMS Warning Light illumination)</p>
+<dl>
+<dd>
+<div class="list">•  If the DSC HU/CM detects a low tire pressure, it outputs a tire pressure monitoring system warning light illumination signal, and it simultaneously records the following items for a maximum 3 times from the current record as the operation record.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Elapsed days (Elapsed days)<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The M-MDS displays the elapsed days from when the low tire pressure was detected until the operation record verification with the M-MDS. </div>
+<div class="list">•  If the operation record has not been recorded, 65,535 days is displayed however this does not indicate a malfunction.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">―  Total traveled distance (Odometer)</div>
+<div class="list">―  Vehicle speed (Speed)</div>
+<div class="list">―  Maximum vehicle speed (Maximum vehicle speed)<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Vehicle speed until the tire pressure monitoring system set switch is pressed from the illumination of the tire pressure monitoring warning light due to a low tire pressure</div>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</body>
+</html>

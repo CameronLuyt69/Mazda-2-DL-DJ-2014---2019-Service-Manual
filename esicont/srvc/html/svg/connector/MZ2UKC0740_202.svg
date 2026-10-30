@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "../../../../../../../../../ns.adobe.com/Extensibility/1.0/default.htm">
+	<!ENTITY ns_ai "../../../../../../../../../ns.adobe.com/AdobeIllustrator/10.0/default.htm">
+	<!ENTITY ns_graphs "../../../../../../../../../ns.adobe.com/Graphs/1.0/default.htm">
+	<!ENTITY ns_vars "../../../../../../../../../ns.adobe.com/Variables/1.0/default.htm">
+	<!ENTITY ns_imrep "../../../../../../../../../ns.adobe.com/ImageReplacement/1.0/default.htm">
+	<!ENTITY ns_sfw "../../../../../../../../../ns.adobe.com/SaveForWeb/1.0/default.htm">
+	<!ENTITY ns_custom "../../../../../../../../../ns.adobe.com/GenericCustomNamespace/1.0/default.htm">
+	<!ENTITY ns_adobe_xpath "../../../../../../../../../ns.adobe.com/XPath/1.0/default.htm">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72.337px"
+	 height="59.173px" viewBox="0 0 72.337 59.173" enable-background="new 0 0 72.337 59.173" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="SEN">
+			<rect x="38.127" y="36.044" fill="#FFFFFF" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			<rect x="22.026" y="35.915" fill="#33FF00" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="21.979" y1="35.915" x2="54.181" y2="35.915"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="21.979" y1="29.878" x2="21.979" y2="47.991"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="21.979" y1="47.991" x2="54.181" y2="47.991"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="54.181" y1="35.915" x2="54.181" y2="47.991"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="38.08" y1="35.915" x2="38.08" y2="47.991"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="23.992" y1="29.878" x2="23.992" y2="35.915"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="21.979" y1="29.878" x2="23.992" y2="29.878"/>
+			<polygon fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				43.111,29.878 33.048,35.915 33.048,27.866 43.111,27.866 43.111,35.915 33.048,29.878 			"/>
+		</g>
+		<g id="TEXT">
+			<text transform="matrix(1 0 0 1 43.8296 43.9131)" font-family="'Arial'" font-size="5">W</text>
+			<text transform="matrix(1 0 0 1 28.1978 43.6948)" font-family="'Arial'" font-size="5">G</text>
+			<text transform="matrix(1 0 0 1 2.8345 19.1997)" font-family="'Arial'" font-size="8">BLOWER MOTOR</text>
+			<text transform="matrix(1 0 0 1 2.8345 9.6997)" font-family="'Arial'" font-size="8">0740-202</text>
+			<text transform="matrix(1 0 0 1 44.25 54.3906)" font-family="'Arial'" font-size="6">A</text>
+			<text transform="matrix(1 0 0 1 28.2646 54.3906)" font-family="'Arial'" font-size="6">B</text>
+		</g>
+	</g>
+</switch>
+</svg>

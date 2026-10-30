@@ -1,0 +1,646 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P0421:00 [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0102q2704400"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P0421:00 [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q2704400</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  To determine the malfunctioning part, proceed with the diagnostics from “Function Inspection Using M-MDS”.</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0102q270440001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Details On DTCs</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DESCRIPTION</p>
+</th>
+<th id="" align="left" colspan="2">
+<p class="thead">Catalyst efficiency below threshold</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="5">
+<div class="tbody">DETECTION CONDITION</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Determination conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The difference between the exhaust gas temperature before and after passing the catalytic converter is specified value or less when the following conditions are met:</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Preconditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Battery voltage: <span>8 V or more</span></div>
+<div class="list">•  Engine speed: <span>1,200—2,000 rpm</span></div>
+<div class="list">•  Fuel injection amount: <span>10—25 mm<sup>3</sup>/ stroke</span></div>
+<div class="list">•  IAT (IAT sensor No.1): <span>–10 °C {14 °F} or more</span></div>
+<div class="list">•  Barometric pressure:<span> 65 kPa {0.67 kgf/cm<sup>2</sup>, 9.5 psi} or more</span></div>
+<div class="list">•  ECT: <span>58 °C {136 °F} or more</span></div>
+<div class="list">•  Vehicle speed: <span>20—140 km/h {13.0—86.9 mph}</span></div>
+<div class="list">•  Accumulated PM calculated from fuel: <span>0.8—4.0 g/l {0.05—0.25 lb/ft<sup>3</sup>}</span></div>
+<div class="list">•  Accumulated PM calculated from pressure applied to diesel particulate filter: <span>0.1—2.0 g/l {0.062—0.124 lb/ft<sup>3</sup>}</span></div>
+<div class="list">•  Traveled distance after diesel particulate filter regeneration: <span>36—400 km {23—248 mile}</span></div>
+<div class="list">•  Exhaust gas temperature before passing catalytic converter: <span>160—195 °C {320—383 °F}</span></div>
+<div class="list">•  Exhaust gas temperature after passing catalytic converter (at engine start): <span>0—200 °C {32—392 °F}</span></div>
+<div class="list">•  Exhaust gas temperature after passing catalytic converter: <span>135—250 °C {275—482 °F}</span></div>
+<div class="list">•  The following DTCs are not detected:</div>
+<dl>
+<dd class="list">
+<div class="list">―  ECT sensor: P0117:00, P0118:00</div>
+<div class="list">―  IAT sensor No.1: P0112:00, P0113:00</div>
+<div class="list">―  Fuel pressure sensor: P0192:00, P0193:00</div>
+<div class="list">―  Exhaust gas temperature sensor No.2: P2032:00, P2033:00</div>
+<div class="list">―  Exhaust gas temperature sensor No.3: P242C:00, P242D:00</div>
+<div class="list">―  Glow plug control system: P0670:00, P0671:00, P0672:00, P0673:00, P0674:00</div>
+<div class="list">―  Fuel injector: P0201:00, P0202:00, P0203:00, P0204:00, P02EE:00, P02EF:00, P02F0:00, P02F1:00, P1378:00, P1379:00, P2146:00, P2147:00, P2148:00, P2149:00, P2150:00, P2151:00</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Drive cycle</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>2</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Self test type</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CMDTC self test</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Sensor used</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Exhaust gas temperature sensor No.2</div>
+<div class="list">•  Exhaust gas temperature sensor No.3</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>VEHICLE STATUS WHEN DTCs ARE OUTPUT</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Check engine light is illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Erratic signal to PCM</div>
+<dl>
+<dd class="list">
+<div class="list">―  Exhaust gas temperature sensor No.2 signal malfunction</div>
+<div class="list">―  Exhaust gas temperature sensor No.3 signal malfunction</div>
+<div class="list">―  Input signal part connector or terminals malfunction</div>
+<div class="list">―  Input signal part related circuit malfunction</div>
+</dd>
+</dl>
+<div class="list">•  Exhaust gas leakage from exhaust system</div>
+<div class="list">•  Exhaust gas temperature sensor No.2 malfunction</div>
+<div class="list">•  Exhaust gas temperature sensor No.3 malfunction</div>
+<div class="list">•  Improper operation of fuel injector</div>
+<div class="list">•  Catalytic converter or diesel particulate filter malfunction (deformation, damage)</div>
+<div class="list">•  PCM malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q270440002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<div class="list">•  Not applicable</div><br clear="all"><a name="id0102q270440003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Explanation (DTC Detection Outline)</p>
+<div class="list">•  The PCM performs diagnosis by monitoring the reaction heat which occurs during the oxidation reaction of the catalytic converter.</div>
+<div class="list">•  The PCM monitors the exhaust gas temperature before and after the catalytic converter using exhaust gas temperature sensors No.2 and No.3.</div>
+<div class="list">•  The PCM performs post injection when the preconditions are met during a drive cycle and it effectuates the oxidation reaction of the catalytic converter. At this time, based on the No.2 and No.3 signals, the PCM detects the average and maximum values of each of the exhaust gas temperatures before and after the catalytic converter within the specified time. If the average and maximum exhaust gas temperature values after the catalytic converter are less than the average and maximum exhaust gas temperature values before the catalytic converter, the PCM determines that the performance of catalytic converter has lowered due to deterioration/damage.</div>
+<div class="list">•  If the PCM determines a malfunction, it stores a pending code.</div>
+<div class="list">•  If the PCM determines that the malfunction recurs from the next drive cycle and thereafter, it stores a DTC and turns on the check engine light.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00012613.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00012613</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0102q270440004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Repeatability Verification Procedure</p>
+<div class="list">1.  Clear the DTC from the PCM memory using the M-MDS. (See <font class="extxref-label"><a href="id0102q2865400.html">CLEARING DTC [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="list">2.  Visually inspect the exhaust gas temperature sensor No.2 and No.3 for damage.</div>
+<div class="list">3.  Perform the DTC Reading Procedure. (See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="list">4.  Perform compulsory DPF regeneration. (See <font class="extxref-label"><a href="id0140q2993400.html">COMPULSORY DIESEL PARTICULATE FILTER REGENERATION [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="list">5.  Access the following PIDs using the M-MDS. (See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+<dl>
+<dd class="list">
+<div class="list">―  EXHTEMP2</div>
+<div class="list">―  EXHTEMP3</div>
+</dd>
+</dl>
+<div class="list">6.  Drive the vehicle and put PID EXHTEMP2 and EXHTEMP3 each under the following conditions.</div>
+<dl>
+<dd class="list">
+<div class="list">―  EXHTEMP2: 300 °C {572 °F} or more</div>
+<div class="list">―  EXHTEMP3: 500 °C {932 °F} or more</div>
+</dd>
+</dl><br clear="all"><a name="id0102q270440005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID Item/Simulation Item Used In Diagnosis</p>
+<p clear="all">
+<p class="table-title">PID/DATA monitor item table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Condition/Specification</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">EXHTEMP2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust temperature sensor No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays the exhaust gas temperature before passing catalytic converter</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EXHTEMP3</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust temperature sensor No.3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays the exhaust gas temperature after passing catalytic converter</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Function Inspection Using M-MDS</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: IDENTIFY TRIGGER DTC FOR FREEZE FRAME DATA</div>
+<div class="list">•  Is the DTC P0421:00 on FREEZE FRAME DATA?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure for DTC on FREEZE FRAME DATA.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">PURPOSE: RECORD FREEZE FRAME DATA/SNAPSHOT DATA AND DIAGNOSTIC MONITORING TEST RESULTS TO UTILIZE WITH REPEATABILITY VERIFICATION</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Recording can be facilitated using the screen capture function of the PC.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Record the FREEZE FRAME DATA/snapshot data and DIAGNOSTIC MONITORING TEST RESULTS (misfire related) on the repair order.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF DIAGNOSTIC RESULT IS AFFECTED BY OTHER RELATED DTCs OCCURRING</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure and DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the other PENDING CODE/DTC also present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF THERE IS PID ITEM CAUSING DRASTIC CHANGES OF ACCELERATION FLUCTUATION BY INPUT SIGNAL TO PCM AND DSC HU/CM</div>
+<div class="list">•  Access the following PIDs using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  EXHTEMP2</div>
+<div class="list">―  EXHTEMP3</div>
+</dd>
+</dl>
+<div class="list">•  Is there any signal that is far out of specification?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect the suspected sensor and related wiring harness.</div>
+<div class="list">•  If there is any malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Repair or replace the malfunctioning part.</div>
+<div class="list">―  Go to the troubleshooting procedure to perform the procedure from Step 5.</div>
+</dd>
+</dl>
+<div class="list">•  If there is no malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Go to the next step.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY CONNECTOR CONNECTIONS</div>
+<div class="list">•  Access the following PIDs using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+<dl>
+<dd>
+<div class="attention1-label">Warning</div>
+</dd>
+<dd>
+<div class="attention1">
+<div class="list">•  A hot engine and exhaust system can cause severe burns. Turn off the engine and wait until they are cool before removing the exhaust system.</div>
+</div>
+</dd>
+</dl>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  EXHTEMP2</div>
+<div class="list">―  EXHTEMP3</div>
+</dd>
+</dl>
+<div class="list">•  When the following parts are shaken, does the PID value include a PID item which has changed?</div>
+<dl>
+<dd class="list">
+<div class="list">―  Exhaust gas temperature sensor No.2</div>
+<div class="list">―  Exhaust gas temperature sensor No.3</div>
+<div class="list">―  PCM</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the applicable connector parts.</div>
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 5.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q270440006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Troubleshooting Diagnostic Procedure</p>
+<div class="list-title">Intention of troubleshooting procedure</div>
+<div class="list">•  Step 1</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform inspection of exhaust gas leakage from exhaust system.</div>
+</dd>
+</dl>
+<div class="list">•  Step 2—4</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform inspection of each separate part.</div>
+</dd>
+</dl>
+<div class="list">•  Step 5—6</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verify that the primary malfunction is resolved and there are no other malfunctions.</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">Function Inspection Using M-MDS</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT EXHAUST SYSTEM FOR LEAKAGE</div>
+<div class="list">•  Visually inspect for exhaust gas leakage from the exhaust system.</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to Step 5.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT EXHAUST GAS TEMPERATURE SENSOR NO.2</div>
+<div class="list">•  Inspect the exhaust gas temperature sensor No.2.<div>(See <font class="extxref-label"><a href="id0140q2446300.html">EXHAUST GAS TEMPERATURE SENSOR INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the exhaust gas temperature sensor No.2, then go to Step 5.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q2446400.html">EXHAUST GAS TEMPERATURE SENSOR REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT EXHAUST GAS TEMPERATURE SENSOR NO.3</div>
+<div class="list">•  Inspect the exhaust gas temperature sensor No.3.<div>(See <font class="extxref-label"><a href="id0140q2446300.html">EXHAUST GAS TEMPERATURE SENSOR INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the exhaust gas temperature sensor No.3, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q2446400.html">EXHAUST GAS TEMPERATURE SENSOR REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT FOR MALFUNCTION FUEL INJECTOR</div>
+<div class="list">•  Inspect the fuel injector.<div>(See <font class="extxref-label"><a href="id0114q2800700.html">FUEL INJECTOR INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•   Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the suspect fuel injector, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0114q2800600.html">FUEL INJECTOR REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Catalytic converter or diesel particulate filter can be considered the cause.</div>
+<div class="list">•  Replace the catalytic converter, then go to the next step.<div>(See <font class="extxref-label"><a href="id0115q2800200.html">EXHAUST SYSTEM REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: PERFORM DTC INSPECTION AND VERIFY IF MALFUNCTIONING PART IS PCM</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2865400.html">CLEARING DTC [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id0102q270440004">Repeatability Verification Procedure</a></font>.)</div>
+</div>
+<div class="list">•  Perform the DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q2113800.html">PCM REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY AFTER REPAIR PROCEDURE</div>
+<div class="list">•  Perform the “AFTER REPAIR PROCEDURE”.<div>(See <font class="extxref-label"><a href="id0102q2801100.html">AFTER REPAIR PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

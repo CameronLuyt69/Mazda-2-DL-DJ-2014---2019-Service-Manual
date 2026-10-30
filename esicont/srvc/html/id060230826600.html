@@ -1,0 +1,210 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC C200B:2F/C200B:61/C200B:62/C200C:2F [EPS CONTROL MODULE]</title>
+</head>
+<body><a name="id060230826600"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC C200B:2F/C200B:61/C200B:62/C200C:2F [EPS CONTROL MODULE]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id060230826600</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="center" rowspan="4">
+<div class="tbody"><span>DTC</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>C200B:2F</span></div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody"><span>Torque sensor</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>C200B:61</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>C200B:62</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>C200C:2F</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  C200B:2F</div>
+<dl>
+<dd class="list">
+<div class="list">―  Signal error detected in torque sensor signal (System 1)</div>
+</dd>
+</dl>
+<div class="list">•  C200B:61</div>
+<dl>
+<dd class="list">
+<div class="list">―  Error in torque sensor calculation of steering torque</div>
+</dd>
+</dl>
+<div class="list">•  C200B:62</div>
+<dl>
+<dd class="list">
+<div class="list">―  Difference occurs between the torque sensor signal 1 and the torque sensor signal 2</div>
+</dd>
+</dl>
+<div class="list">•  C200C:2F</div>
+<dl>
+<dd class="list">
+<div class="list">―  Signal error detected in torque sensor signal (System 2)</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Power steering malfunction indicator light Illuminates</div>
+<div class="list">•  EPS motor current control disabled</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Torque sensor malfunction</div>
+<div class="list">•  EPS control module malfunction</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody"><span>SYSTEM WIRING DIAGRAM</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id06023082660001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Diagnostic Procedure</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Inspection</p>
+</th>
+<th id="" align="center">
+<p class="thead">Action</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT TORQUE SENSOR</div>
+<div class="list">•  Using the M-MDS, perform the PID inspection for torque sensor.<div>(See <font class="extxref-label"><a href="id060230813300.html">PID/DATA MONITOR INSPECTION [EPS CONTROL MODULE]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  STR_TRQ_S_M</div>
+<div class="list">―  STR_TRQ_S_S</div>
+</dd>
+</dl>
+<div class="list">•  Do the PIDs indicate as followings?</div>
+<dl>
+<dd class="list">
+<div class="list">―  Steered left: Changes to 0 Nm—positive</div>
+<div class="list">―  Steered right: Changes to 0 Nm—negative</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the steering column, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id061300801400.html">STEERING WHEEL AND COLUMN REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY DTC TROUBLESHOOTING COMPLETED</div>
+<div class="list">•  Using the M-MDS, clear the DTC from the EPS control module.<div>(See <font class="extxref-label"><a href="id060230813100.html">CLEARING DTC [EPS CONTROL MODULE]</a></font>.)</div>
+</div>
+<div class="list">•  Using the M-MDS, perform the EPS control module DTC inspection.<div>(See <font class="extxref-label"><a href="id060230813000.html">DTC INSPECTION [EPS CONTROL MODULE]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step1.</div>
+<div class="tbody">If the malfunction recurs, replace the steering column, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id061300801400.html">STEERING WHEEL AND COLUMN REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY NO DTC IS PRESENT</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id060230813200.html">DTC TABLE [EPS CONTROL MODULE]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

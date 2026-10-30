@@ -1,0 +1,5888 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC SYSTEM [DSC HU/CM]</title>
+</head>
+<body><a name="id040262181300"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC SYSTEM [DSC HU/CM]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id040262181300</p><br clear="all"><a name="id04026218130001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The on-board diagnostic system consists of the following functions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  A malfunction detection function that detects abnormalities in input/output signals when the ignition switch is at the ON position.</div>
+<div class="list">―  A PID/data monitor function that reads out specified input/output signals.</div>
+<div class="list">―  A simulation function that allows for override operation of output parts (such as solenoid valves).</div>
+</dd>
+</dl>
+<div class="list">•  The data link connector 2 (DLC-2), which groups together all the connectors used for malfunction diagnosis into a single location, has been adopted, thereby improving serviceability. Diagnosis is performed by connecting the Mazda Modular Diagnostic System (M-MDS) to the DLC-2.</div>
+<div class="list">•  In addition to DTC read-out, the Mazda Modular Diagnostic System (M-MDS) has following functions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  PID/data monitor access</div>
+<div class="list">―  DTC clear using the display screen of the diagnostic tester</div>
+</dd>
+</dl>
+<p class="figure-title">Block diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003893.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003893</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id04026218130002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p><br clear="all"><p><a name="id04026218130003"></a><p class="topic-title"><span class="topic-head"></span>Malfunction detection function</p>
+<dl>
+<dd>
+<div class="list">•  The malfunction detection function detects malfunctions in the input/output signal system of the DSC HU/CM when the ignition switched ON or driving the vehicle.</div>
+<div class="list">•  The DSC HU/CM performs the following malfunction detections:</div>
+<dl>
+<dd class="list">
+<div class="list">―  The ABS warning light, brake system warning light, TCS/DSC indicator light, DSC OFF indicator light, and Tire Pressure Monitoring System (TPMS) warning light illuminate for approx. 3.0 s when the ignition is switched ON. At the same time, the input/output signals of each part are monitored for malfunction diagnosis.</div>
+<div class="list">―  After starting to drive, the first time the vehicle speed is approx. 10 km/h {6.2 mph} or more the pump motor is operated and malfunction diagnosis is performed again. The input/output signals of each part are then constantly monitored and malfunctions are diagnosed.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The sound of the pump motor operation can be heard.</div>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id04026218130004"></a><p class="topic-title"><span class="topic-head"></span>Malfunction display function</p>
+<dl>
+<dd>
+<div class="list">•  When the malfunction detection function detects a malfunction, the corresponding lights illuminate to alert the driver.</div>
+<div class="list">•  Using the external tester communication function, DTCs can be output to the DLC-2 via the CAN line. At the same time, malfunction detection results are sent to the memory function and fail-safe function.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id04026218130005"></a><p class="topic-title"><span class="topic-head"></span>Memory function</p>
+<dl>
+<dd>
+<div class="list">•  The memory function stores DTCs of malfunctions in input/output signal systems. With this function, once a DTC is stored it is not cleared after the ignition switch has been switched OFF, even if the malfunctioning signal system has returned to normal.</div>
+<div class="list">•  Since the DSC HU/CM has a built-in non-volatile memory, DTCs are not cleared even if the battery is removed. Therefore, it is necessary to clear the memory after performing repairs. Refer to the Workshop Manual for the DTC clearing procedure.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id04026218130006"></a><p class="topic-title"><span class="topic-head"></span>DTC table</p>
+<p clear="all">
+<p>
+<div>×: Applicable</div>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC</p>
+</th>
+<th id="" align="center">
+<p class="thead">ABS warning light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Brake system warning light (when parking brake is released)</p>
+</th>
+<th id="" align="center">
+<p class="thead">TCS/DSC indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">DSC OFF indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Tire Pressure Monitoring System (TPMS) warning light<sup>*1</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">Smart City Brake Support (SCBS) warning light (amber)<sup>*2</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe</p>
+</th>
+<th id="" align="center">
+<p class="thead">Drive cycle</p>
+</th>
+<th id="" align="center">
+<p class="thead">Self test type<sup>*3</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">Memory function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10DF:46</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DSC HU/CM internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11D4:08</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Laser sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0001:01</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="12">
+<div class="tbody">DSC HU/CM internal malfunction (solenoid valve system)</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0002:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0003:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0004:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0010:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0011:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0014:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0015:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0018:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0019:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C001C:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C001D:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0020:11</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Pump motor, motor relay</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0020:12</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0020:13</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0020:71</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0023:62</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake switch</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0030:07</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate<sup>*4</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF ABS sensor rotor</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:07</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF ABS wheel-speed sensor/ABS sensor rotor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:11</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate<sup>*4</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">LF ABS wheel-speed sensor</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:15</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:29</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Not illuminate<sup>*4</sup></div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="3">
+<div class="tbody">LF ABS wheel-speed sensor/ABS sensor rotor</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:2F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0033:07</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate<sup>*4</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RF ABS sensor rotor</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:07</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RF ABS wheel-speed sensor/ABS sensor rotor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:11</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate<sup>*4</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">RF ABS wheel-speed sensor</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:15</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:29</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Not illuminate<sup>*4</sup></div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="3">
+<div class="tbody">RF ABS wheel-speed sensor/ABS sensor rotor</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:2F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0036:07</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate<sup>*4</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LR ABS sensor rotor</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:07</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LR ABS wheel-speed sensor/ABS sensor rotor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:11</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate<sup>*4</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">LR ABS wheel-speed sensor</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:15</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:29</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Not illuminate<sup>*4</sup></div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="3">
+<div class="tbody">LR ABS wheel-speed sensor/ABS sensor rotor</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:2F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0039:07</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate<sup>*4</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RR ABS sensor rotor</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:07</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RR ABS wheel-speed sensor/ABS sensor rotor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:11</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate<sup>*4</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">RR ABS wheel-speed sensor</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:15</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:29</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Not illuminate<sup>*4</sup></div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="3">
+<div class="tbody">RR ABS wheel-speed sensor/ABS sensor rotor</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:2F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0040:64</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake switch</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0044:28</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+<td id="" align="left" rowspan="7">
+<div class="tbody">Brake fluid pressure sensor</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0044:47</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0044:49</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0044:51</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0044:54</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0044:64</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0044:8F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0051:62</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">EPS control module</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0051:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0051:67</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0051:85</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0061:28</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">SAS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0061:54</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DSC HU/CM (unperformed initialization procedure)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0061:64</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">SAS control module</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0062:28</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0062:54</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DSC HU/CM (unperformed initialization procedure)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0062:64</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="left">
+<div class="tbody">SAS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0062:76</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="left">
+<div class="tbody">SAS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0063:28</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">SAS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0063:54</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DSC HU/CM (unperformed initialization procedure)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0063:64</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">SAS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C006B:00</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">TCS/DSC control</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0072:68</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1031:35</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Tire Pressure Monitoring System (TPMS) set switch</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1031:41</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="left" rowspan="3">
+<div class="tbody">Tire Pressure Monitoring System (TPMS)</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1031:54</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1031:68</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1109:64</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DSC OFF switch</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1A08:1C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DSC HU/CM internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0942:46</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">DSC HU/CM mismatched installation</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0942:49</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:88</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="7">
+<div class="tbody">CAN line</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0101:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0235:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0336:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Signal error from SAS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0401:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Signal error from PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0402:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Signal error from transmission/transaxle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0420:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Signal error from EPS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0423:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Signal error from instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0433:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Signal error from laser sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0443:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Signal error from instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0452:86</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Signal error from SAS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2007:46</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DSC HU/CM internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2007:62</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DSC HU/CM internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2101:00</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left" rowspan="6">
+<div class="tbody">DSC HU/CM configuration</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:52</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:54</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:55</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:56</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:49</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DSC HU/CM internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:08</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Battery power supply</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate<sup>*6</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Illuminates<sup>*7*8</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:17</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not illuminate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminates</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :With Tire Pressure Monitoring System (TPMS)</div>
+<div class="deflist">*2  :With Smart City Brake Support (SCBS)</div>
+<div class="deflist">*3  :C: CMDTC self test, D: ODDTC self test</div>
+<div class="deflist">*4  :Illuminates when two wheels or more have a malfunction</div>
+<div class="deflist">*5  :Not illuminate depending on malfunction content</div>
+<div class="deflist">*6  :When power supply voltage is 7.9—9.6 V for 0.7 s or more</div>
+<div class="deflist">*7  :When power supply voltage is 6.0—7.9 V for 0.8 s or more</div>
+<div class="deflist">*8  :When power supply voltage is 6 V or less for 0.05 s or more</div>
+</p><br clear="all"><p><a name="id04026218130007"></a><p class="topic-title"><span class="topic-head"></span>Status byte for DTC</p>
+<dl>
+<dd>
+<div class="list">•  The status byte is the two-digit code (two digits after hyphen (-)) after the seven-digit DTC.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002656.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002656</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The status byte is a code which indicates the pending code, current/past malfunction status, or warning illumination status.</div>
+<div class="list">•  The status byte is a code which indicates the pending code, current/past malfunction status, or warning illumination status.</div>
+<div class="list">•  The status byte can be read by performing a CMDTC self test using the Mazda Modular Diagnostic System (M-MDS).</div>
+<div class="list">•  For details on the status byte, refer to the explanation on the M-MDS when reading the DTC.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id04026218130008"></a><p class="topic-title"><span class="topic-head"></span>Fail-safe function</p>
+<dl>
+<dd>
+<div class="list">•  When the malfunction detection function determines a malfunction, the corresponding lights illuminates to alert the driver. At this time, the fail-safe function controls as indicated in the fail-safe function table.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention1-label">Warning</div>
+</dd>
+<dd>
+<div class="attention1">
+<div class="list">•  If EBD control is prohibited, the rear wheels could lock-up before the front wheels. If this occurs, the vehicle could yaw and become unstable. Therefore, always inspect the system immediately if EBD control is prohibited.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">Fail-safe function table</p>
+<p>
+<div>×: Control enabled</div>
+<div>—: Control disabled</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" rowspan="2">
+<p class="thead">DTC</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">ABS control</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">EBD control</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">TCS control</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">DSC control</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Brake assist control</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Vehicle roll prevention function control<sup>*1</sup></p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Hill Launch Assist (HLA) control</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Tire pressure monitoring system (TPMS) control<sup>*2</sup></p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Smart City Brake Support (SCBS) control<sup>*3</sup></p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Secondary Collision Reduction (SCR) control<sup>*3</sup></p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">Brake control</p>
+</th>
+<th id="" align="center">
+<p class="thead">Engine control</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10DF:46</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11D4:08</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0001:01</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" colspan="2" rowspan="12">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="12">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0002:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0003:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0004:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0010:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0011:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0014:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0015:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0018:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0019:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C001C:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C001D:01</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0020:11</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0020:12</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0020:13</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0020:71</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0023:62</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0030:07</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">×<sup>*4</sup></div>
+</td>
+<td id="" align="center" colspan="2" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:07</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:11</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:15</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:29</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:2F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0031:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0033:07</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">×<sup>*4</sup></div>
+</td>
+<td id="" align="center" colspan="2" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:07</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:11</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:15</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:29</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:2F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0034:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0036:07</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">×<sup>*4</sup></div>
+</td>
+<td id="" align="center" colspan="2" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:07</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:11</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:15</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:29</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:2F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0037:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0039:07</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">×<sup>*4</sup></div>
+</td>
+<td id="" align="center" colspan="2" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="7">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:07</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:11</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:15</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:29</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:2F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C003A:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0040:64</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0044:28</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2" rowspan="4">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0044:47</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0044:49</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0044:51</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0044:54</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0044:64</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0044:8F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0051:62</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0051:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0051:67</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0051:85</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0061:28</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0061:54</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0061:64</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0062:28</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0062:54</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0062:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0062:76</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0063:28</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0063:54</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0063:64</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C006B:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C0072:68</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1031:35</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1031:41</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1031:54</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1031:68</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1109:64</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1A08:1C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0942:46</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0942:49</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:88</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0101:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0235:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0336:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0401:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0402:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0420:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0423:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0433:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0443:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0452:86</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2007:46</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2007:62</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2101:00</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2" rowspan="6">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="6">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:52</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:54</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:55</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:56</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:49</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—<sup>*5</sup></div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:08</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×<sup>*6</sup></div>
+</td>
+<td id="" align="center" colspan="2" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">—<sup>*7*8</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:17</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :ATX</div>
+<div class="deflist">*2  :With Tire Pressure Monitoring System (TPMS)</div>
+<div class="deflist">*3  :With Smart City Brake Support (SCBS)</div>
+<div class="deflist">*4  :Control disabled when two wheels or more have a malfunction</div>
+<div class="deflist">*5  :Enabled depending on malfunction content</div>
+<div class="deflist">*6  :When power supply voltage is 7.9—9.6 V for 0.7 s or more</div>
+<div class="deflist">*7  :When power supply voltage is 6.0—7.9 V for 0.8 s or more</div>
+<div class="deflist">*8  :When power supply voltage is 6 V or less for 0.05 s or more</div>
+</p><br clear="all"><p><a name="id04026218130009"></a><p class="topic-title"><span class="topic-head"></span>Snapshot data</p>
+<dl>
+<dd>
+<div class="list">•  The snapshot data stores the currently detected DTC data.</div>
+</dd>
+</dl>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Snapshot data item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding data monitor items</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">AAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient air temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ABS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Inactive/Active</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Antilock braking system</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">APP_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Accelerator Pedal Off/</div>
+<div class="tbody">Under 20%/</div>
+<div class="tbody">Over 20%/</div>
+<div class="tbody">FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">AYC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Inactive/Active</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Active yaw control</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BRK_F_P_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Pa, psi</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake fluid line hydraulic pressure (raw value)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BRK_F_P_R</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BTCS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Inactive/Active</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake traction control system</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CFG_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Config Complete/</div>
+<div class="tbody">Not Configured/</div>
+<div class="tbody">Config Error</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ECT_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Under 0 degrees C/</div>
+<div class="tbody">0 - Under 80 degrees C/</div>
+<div class="tbody">Over 80 degrees C/</div>
+<div class="tbody">FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EDC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Inactive/Active</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine drag control</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IC_VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster power supply</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The DSC HU/CM constantly receives the power supply voltage value of the instrument cluster sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the DSC HU/CM records the power supply voltage of the instrument cluster when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IG-ON_TIMER</div>
+</td>
+<td id="" align="center">
+<div class="tbody">hh:mm:ss<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Elapsed time since ignition was switched ON</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The instrument cluster records the elapsed time since the ignition was switched ON.</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="list">•  The DSC HU/CM constantly receives the elapsed time since the ignition was switched ON sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the DSC HU/CM records the elapsed time since the ignition was switched ON when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LAT_ACCL_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">G</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Lateral acceleration (raw value)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LAT_ACCL_R</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LON_ACCL_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">G</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Longitudinal acceleration (raw value)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LON_ACCL_R</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PMP_MT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Pump motor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">PMP_MT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PWR_MODE_KEY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Key Out/Key Recently Out/Key Approved (Position 0)/Post Accessory (Position 0)/Accessory (Position 1)/Post Ignition (Position 1)/Ignition On (Position 2)/Running (Position 2)/Running - Starting In Progress (Position 2)/Crank (Position 3)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Key Out: Ignition switched off</div>
+<div class="list">•  Key Recently Out (Position 0): Elapsed time within 3 s since ignition was switched off</div>
+<div class="list">•  Accessory (Position 1): Ignition is switched to ACC</div>
+<div class="list">•  Post Ignition (Position 2): Elapsed time within 3 s since ignition was switched ON</div>
+<div class="list">•  Ignition On (Position 2): Ignition switched ON (engine off)</div>
+<div class="list">•  Running (Position 2): Ignition switched ON (engine on)</div>
+<div class="list">•  Running - Starting: Cranking condition</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The DSC HU/CM constantly receives the ignition switch status sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the DSC HU/CM records the ignition switch status when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RPM_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Engine Stop/</div>
+<div class="tbody">Under 1500 rpm/</div>
+<div class="tbody">Over 1500 rpm/</div>
+<div class="tbody">FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine RPM status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The DSC HU/CM constantly receives the ignition switch status sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the DSC HU/CM records the ignition switch status when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TACHOMTR<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SHIFT_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">P/N</div>
+<div class="tbody">D/</div>
+<div class="tbody">R/</div>
+<div class="tbody">FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift position status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The DSC HU/CM constantly receives the selector lever position sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the DSC HU/CM records the selector lever position when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_ANG_C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering wheel angle (calculated value)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">STR_ANG_C</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TCS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Inactive/Active</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Traction control system</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TOTAL_DIST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km, ft, mi</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total traveled distance from completion of vehicle until DSC HU/CM detects DTC (Odometer value in instrument cluster)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The distance traveled when the DSC HU/CM detected a DTC can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the odometer value in the instrument cluster.</div>
+<div class="list">2.  Verify the snap shot data item TOTAL_DIST.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TOTAL_TIME</div>
+</td>
+<td id="" align="center">
+<div class="tbody">hh:mm:ss<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total elapsed time since vehicle completion until DSC HU/CM detects a DTC</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  When the ROOM fuse is removed, and the ignition is switched off, the time is not included in the elapsed time.</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">The elapsed time when the DSC HU/CM detected a DTC can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the PID item TOTAL_TIME of the instrument cluster.</div>
+<div class="list">2.  Verify the snap shot data item TOTAL_TIME.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TOTAL_TIME<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Power supply</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR_B_SOL</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VSPD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VSPD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VSPD_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Stop/</div>
+<div class="tbody">0 - 10 km/h/</div>
+<div class="tbody">Over 10 km/h/</div>
+<div class="tbody">FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The DSC HU/CM constantly receives the vehicle speed sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the DSC HU/CM records the vehicle speed when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SPEEDOMTR<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">YAW_RATE_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°/s</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Yaw rate (raw value)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">YAW_RATE_R</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :PID for instrument cluster</div>
+<div class="deflist">*2  :Fractions of seconds may be indicated after the decimal point</div>
+</p><br clear="all"><p><a name="id04026218130010"></a><p class="topic-title"><span class="topic-head"></span>PID/data monitor function</p>
+<dl>
+<dd>
+<div class="list">•  The PID/data monitor function is used for optionally selecting input/output signal monitor items preset in the DSC HU/CM and reading them out in real-time.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Monitor item (Mazda Modular Diagnostic System (M-MDS) display)</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/operation</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">BRAKE_SW</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake switch signal</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BRK_F_P_C</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake fluid pressure sensor signal (calculated value)</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Pa, psi</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BRK_F_P_R</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake fluid pressure sensor signal (raw value)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DDS_MODE</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Deflation detection system mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not_Learned/Learning/Learned</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DSC_OFF_SW</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DSC OFF switch signal</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DSC_ST</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DSC status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LAT_ACCL_C</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Lateral-G value (calculated value)</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">G</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LAT_ACCL_R</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Lateral-G value (raw value)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LON_ACCL_C</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Longitudinal-G value (calculated value)</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">G</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LON_ACCL_R</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Longitudinal-G value (raw value)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P_BRAKE_SW</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Parking brake switch signal</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PMP_MT</div>
+</td>
+<td id="" align="left" colspan="2" rowspan="2">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Displays in the M-MDS but it does not operate.</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PMP_MT_SP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R_GEAR_SW</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift lever signal (R position)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_ANG_C</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering wheel angle (calculated value)</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">°</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_ANG_R</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering wheel angle (raw value)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TPMS_TYPE</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Tire Pressure Monitoring System (TPMS) type</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No_DDS/DDS/DDS+TOM_O/DDS+TOM_EU/DDS+TOM_US</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_INLET_LF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF inlet solenoid valve status</div>
+</td>
+<td id="" align="center" rowspan="8">
+<div class="tbody">Off/On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_INLET_LR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LR inlet solenoid valve status</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_INLET_RF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RF inlet solenoid valve status</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_INLET_RR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RR inlet solenoid valve status</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_OUTLET_LF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF outlet solenoid valve status</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_OUTLET_LR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LR outlet solenoid valve status</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_OUTLET_RF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RF outlet solenoid valve status</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_OUTLET_RR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RR outlet solenoid valve status</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_STB_LF/RR</div>
+</td>
+<td id="" align="left" colspan="2" rowspan="2">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Displays in the M-MDS but it does not operate.</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_STB_RF/LR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_TRC_LF/RR</div>
+</td>
+<td id="" align="left" colspan="2" rowspan="2">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Displays in the M-MDS but it does not operate.</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_TRC_RF/LR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_B_SOL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Power supply</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VSPD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WSPD_SEN_LF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF ABS wheel-speed sensor signal</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">KPH, MPH</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WSPD_SEN_LR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LR ABS wheel-speed sensor signal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WSPD_SEN_RF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RF ABS wheel-speed sensor signal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WSPD_SEN_RR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RR ABS wheel-speed sensor signal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">YAW_RATE_C</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Yaw rate value (calculated value)</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">°/s</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">YAW_RATE_R</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Yaw rate value (raw value)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id04026218130011"></a><p class="topic-title"><span class="topic-head"></span>Simulation function</p>
+<dl>
+<dd>
+<div class="list">•  The simulation function is used for optionally selecting simulation items of input/output parts preset in the DSC HU/CM, and to operate them regardless of CM control.</div>
+<div class="list">•  To protect the hydraulic unit interior, operate output related parts for only 2 s or less when using the simulation function.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Simulation item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Output part</p>
+</th>
+<th id="" align="center">
+<p class="thead">Operation</p>
+</th>
+<th id="" align="center">
+<p class="thead">Operating condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">PMP_MT_SP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Pump motor</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Switch the ignition ON</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_INLET_LF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF inlet solenoid valve</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_INLET_LR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LR inlet solenoid valve</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_INLET_RF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RF inlet solenoid valve</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_INLET_RR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RR inlet solenoid valve</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_OUTLET_LF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF outlet solenoid valve</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_OUTLET_LR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LR outlet solenoid valve</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_OUTLET_RF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RF outlet solenoid valve</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_OUTLET_RR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RR outlet solenoid valve</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_STB_LF/RR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF/RR stability control solenoid valve</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Switch the ignition ON</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_STB_RF/LR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RF/LR stability control solenoid valve</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_TRC_LF/RR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF/RR linear control solenoid valve</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Switch the ignition ON</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">V_TRC_RF/LR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RF/LR linear control solenoid valve</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id04026218130012"></a><p class="topic-title"><span class="topic-head"></span>External tester communication function</p>
+<dl>
+<dd>
+<div class="list">•  The external tester communication function enables communication of diagnostic data (DTC read-outs, input/output signal read-outs, operation of input/output parts) between the DSC HU/CM and an external tester.</div>
+<div class="list">•  By connecting the Mazda modular diagnostic system (M-MDS) to the DLC-2, diagnostic data can be sent and received between the Mazda modular diagnostic system (M-MDS) and the DSC HU/CM via CAN lines.</div>
+<div class="list">•  The DSC HU/CM receives the command signals of the malfunction detection function, PID/data monitor function, and simulation function from the Mazda modular diagnostic system (M-MDS), and sends DTCs and data regarding the operating status of each input/output part to the Mazda modular diagnostic system (M-MDS).</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Diagnostic function name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Signal received</p>
+</th>
+<th id="" align="center">
+<p class="thead">Signal sent</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Malfunction detection function</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC verification signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC(s)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PID/data monitor function</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Command signal to read selected monitor item</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Monitored data for requested monitor item</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Simulation function</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Operation command signal for selected simulation item</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output part drive signal </div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+</body>
+</html>

@@ -1,0 +1,1442 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC SYSTEM [ELECTRICAL SUPPLY UNIT (ESU)]</title>
+</head>
+<body><a name="id094000050200"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC SYSTEM [ELECTRICAL SUPPLY UNIT (ESU)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id094000050200</p><br clear="all"><a name="id09400005020001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The on-board diagnostic function consists of the following functions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  A malfunction detection function, which detects overall malfunctions in the electrical supply unit (ESU)-related parts.</div>
+<div class="list">―  A memory function, which stores detected DTCs. </div>
+<div class="list">―  A display function, which indicates malfunction locations and status via DTC output.</div>
+</dd>
+</dl>
+<div class="list">•  Using the Mazda Modular Diagnostic System (M-MDS), DTCs can be read out and deleted.</div>
+<div class="list">•  The on-board diagnostic function for the electrical supply unit (ESU) is performed via gateway communication of the LIN communication circuit between it and the body control module (BCM).</div><br clear="all"><a name="id09400005020002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Malfunction detection function</p>
+<div class="list">•  Detects malfunctions in input/output signals.</div>
+<div class="list">•  If a malfunction occurs, the electrical supply unit (ESU) records the malfunction as a DTC. A recorded DTC can be read by the Mazda Modular Diagnostic System (M-MDS).</div>
+<p clear="all">
+<p class="table-title">DTC table</p>
+<p>
+<div>×: Applicable</div>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Warning/indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe</p>
+</th>
+<th id="" align="center">
+<p class="thead">Drive cycle</p>
+</th>
+<th id="" align="center">
+<p class="thead">Self test type<sup>*1</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">Memory function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1098:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Parking light (LH) or taillight (RH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1099:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Parking light (RH), taillight (LH), or license plate light (LH)/(RH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B111E:12</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Trunk compartment light circuit malfunction</div>
+<div class="list-title">5HB</div>
+<div class="list">•  Cargo compartment light circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1142:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switch status mismatch</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1207:09<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from SAS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1207:86<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from SAS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B124A:11<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Running light circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1277:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Back-up light circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1313:12</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front map light circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B143A:00<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Collision detection unlock function operation</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1A79:11<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear fog light circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1A79:13<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear fog light circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1C79:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Washer motor circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D00:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight LO (LH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D00:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight LO (LH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D01:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight LO (RH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D01:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight LO (RH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D02:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight HI (LH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D02:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight HI (LH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D03:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight HI (RH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D03:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight HI (RH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D39:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear wiper motor circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D39:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear wiper motor circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0604:49</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0605:49</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0322:09</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0322:82</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0422:86</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2010:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Illumination output circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:09</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:44</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:47</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:49</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) power supply voltage low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:17</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) power supply voltage high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3006:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) power supply voltage low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :C: CMDTC self test, D: ODDTC self test</div>
+<div class="deflist">*2  :With collision detection unlock function</div>
+<div class="deflist">*3  :With running light system</div>
+<div class="deflist">*4  :With rear fog light system</div><br clear="all"><p><a name="id09400005020003"></a><p class="topic-title"><span class="topic-head"></span>DTC 7-digit code definition</p>
+<dl>
+<dd>
+<div class="list">•  When related systems or components have failed, the CM stores the DTC of the malfunctioning part in the CM memory, and allows for the retrieval of the store data using scanning tool when necessary. The DTCs are indicated using seven digits. Each digit indicates the following.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am6xun00000789.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am6xun00000789</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09400005020004"></a><p class="topic-title"><span class="topic-head"></span>Status byte for DTC</p>
+<dl>
+<dd>
+<div class="list">•  The two digits (two digits after hyphen (-)) after the 7-digit DTC.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00002008.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00002008</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  A code which indicates the pending code, current/past malfunction status, or warning illumination status.</div>
+<div class="list">•  Can be read by performing a CMDTC self-test using the Mazda Modular Diagnostic System (M-MDS).</div>
+<div class="list">•  For details on the status byte, refer to the explanation on the Mazda Modular Diagnostic System (M-MDS) when reading the DTC.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09400005020005"></a><p class="topic-title"><span class="topic-head"></span>Detection condition for the applicable DTC</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Detection condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1098:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Parking light (LH) or taillight (RH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The electrical supply unit (ESU) detects a short to ground in the parking light (LH) or taillight (RH) circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1099:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Parking light (RH), taillight (LH), or license plate light (LH)/(RH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The electrical supply unit (ESU) detects a short to ground in the parking light (RH), taillight (LH), or license plate light (LH)/(RH) circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B111E:12</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Trunk compartment light circuit malfunction</div>
+<div class="list-title">5HB</div>
+<div class="list">•  Cargo compartment light circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Electrical supply unit (ESU) detects a short to power supply in the trunk compartment light circuit.</div>
+<div class="list-title">5HB</div>
+<div class="list">•  Electrical supply unit (ESU) detects a short to power supply in the cargo compartment light circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1142:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switch status mismatch</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The electrical supply unit (ESU) detects the following mismatches.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition switch status determined from power supply condition in BCM received from BCM via LIN communication</div>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition switch status determined from power supply input condition of electrical supply unit (ESU) power supply circuit (IG1)</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1207:09<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from SAS control module</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The electrical supply unit (ESU) detected the following conditions for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+<dl>
+<dd class="list">
+<div class="list">―  A signal is received which cannot normally determine the collision conditions from SAS control module even though the collision detection unlock function presence signal received from the BCM determines that the function is present.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1207:86<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from SAS control module</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The electrical supply unit (ESU) detected the following conditions for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+<dl>
+<dd class="list">
+<div class="list">―  Error signal is received from SAS control module even though the collision detection unlock function presence signal received from the BCM determines that the function is present.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B124A:11<sup>*3</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Running light circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects a short to ground in the running light circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1277:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Back-up light circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects a short to ground in the back-up light circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1313:12</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front map light circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects a short to power supply in the front map light circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B143A:00<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Collision detection unlock function operation</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) operates the collision detection unlock function.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1A79:11<sup>*4</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear fog light circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects a short to ground in the rear fog light circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1A79:13<sup>*4</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear fog light circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects an open circuit in the rear fog light circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1C79:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Washer motor circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects an open circuit in the washer motor circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D00:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight LO (LH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects a short to ground in the headlight LO (LH) circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D00:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight LO (LH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects an open circuit in the headlight LO (LH) circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D01:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight LO (RH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects a short to ground in the headlight LO (RH) circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D01:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight LO (RH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects an open circuit in the headlight LO (RH) circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D02:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight HI (LH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects a short to ground in the headlight HI (LH) circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D02:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight HI (LH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects an open circuit in the headlight HI (LH) circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D03:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight HI (RH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects a short to ground in the Headlight HI (RH) circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D03:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight HI (RH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects an open circuit in the headlight HI (RH) circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D39:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear wiper motor circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects a short to ground in the rear wiper motor circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D39:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear wiper motor circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects an open circuit in the rear wiper motor circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0604:49</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  RAM malfunction in electrical supply unit (ESU) detected.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0605:49</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  ROM malfunction in electrical supply unit (ESU) detected.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with BCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) could not receive the CAN signal from the BCM for 2 s or more with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0322:09</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from BCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) receives the error signals from the BCM for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0322:82</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from BCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) receives the error signals from the BCM for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0422:86</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from BCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Any of the following conditions is met with the ignition switched ON (engine off or on):</div>
+<dl>
+<dd class="list">
+<div class="list">―  The electrical supply unit (ESU) received a headlight LO on request signal error signal from the BCM for <span>2 s or more</span>.</div>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">―  The electrical supply unit (ESU) received a headlight HI on request signal error signal from the BCM for <span>2 s or more</span>.</div>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">―  The electrical supply unit (ESU) detected a mismatch in the following signal combinations received from the BCM for <span>2 s or more</span>.</div>
+<dl>
+<dd class="list">
+<div class="list">•  Headlight variation information signal</div>
+<div class="list">•  Headlight LO on request signal</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">―  The electrical supply unit (ESU) detected a mismatch in the following signal combinations received from the BCM for <span>2 s or more</span>.</div>
+<dl>
+<dd class="list">
+<div class="list">•  Headlight variation information signal</div>
+<div class="list">•  Headlight HI on request signal</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2010:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Illumination output circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) detects a short to ground in the illumination output circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:09</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Malfunction in the electrical supply unit (ESU) internal circuit (self-protection circuit) is detected.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:44</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The electrical supply unit (ESU) detected a NVRAM malfunction in the electrical supply unit (ESU).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:47</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The electrical supply unit (ESU) detected a watchdog malfunction in the electrical supply unit (ESU).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:49</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  RAM/ROM/ALU/TIMER malfunction in the electrical supply unit (ESU) is detected.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) power supply voltage low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) power supply circuit (terminal 1H, 2P, or 2R) of <span>less than 8 V</span> is detected for <span>10 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:17</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) power supply voltage high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) power supply circuit (terminal 1H, 2P, or 2R) of <span>16 V or more</span> is detected for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3006:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electrical supply unit (ESU) power supply voltage low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU) power supply circuit voltage (terminal 2B) of <span>4 V or less</span> is detected for <span>5 s or more</span>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+</body>
+</html>

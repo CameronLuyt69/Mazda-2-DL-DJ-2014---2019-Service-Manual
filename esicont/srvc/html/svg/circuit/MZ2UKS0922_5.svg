@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "../../../../../../../../../ns.adobe.com/Extensibility/1.0/default.htm">
+	<!ENTITY ns_ai "../../../../../../../../../ns.adobe.com/AdobeIllustrator/10.0/default.htm">
+	<!ENTITY ns_graphs "../../../../../../../../../ns.adobe.com/Graphs/1.0/default.htm">
+	<!ENTITY ns_vars "../../../../../../../../../ns.adobe.com/Variables/1.0/default.htm">
+	<!ENTITY ns_imrep "../../../../../../../../../ns.adobe.com/ImageReplacement/1.0/default.htm">
+	<!ENTITY ns_sfw "../../../../../../../../../ns.adobe.com/SaveForWeb/1.0/default.htm">
+	<!ENTITY ns_custom "../../../../../../../../../ns.adobe.com/GenericCustomNamespace/1.0/default.htm">
+	<!ENTITY ns_adobe_xpath "../../../../../../../../../ns.adobe.com/XPath/1.0/default.htm">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="737.669px"
+	 height="458.657px" viewBox="0 0 737.669 458.657" enable-background="new 0 0 737.669 458.657" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="HIGHLIGHT">
+			<g id="U300316">
+				<polyline fill="none" stroke="#007FFF" stroke-width="4" points="165.06,137.498 114.14,137.498 114.14,88.082 				"/>
+				<line fill="none" stroke="#6D4C33" stroke-width="4" x1="391.641" y1="182.166" x2="391.641" y2="97.665"/>
+				<line fill="none" stroke="#6D4C33" stroke-width="4" x1="391.641" y1="242.445" x2="391.641" y2="182.166"/>
+				<polyline fill="none" stroke="#6D4C33" stroke-width="4" points="178.922,137.498 260.021,137.498 260.021,272.804 
+					391.641,272.804 391.641,242.445 				"/>
+			</g>
+		</g>
+		<g id="IRO">
+			<path fill="none" stroke="#000000" stroke-width="4" d="M485.968,215.899l23.154-5.813c3.953-0.992,5.555-3.405,3.578-5.39
+				c-0.773-0.777-2.027-1.406-3.578-1.797"/>
+			<path fill="none" stroke="#FFFFFF" stroke-width="3.6" d="M485.968,215.899l23.154-5.813c3.953-0.992,5.555-3.405,3.578-5.39
+				c-0.773-0.777-2.027-1.406-3.578-1.797"/>
+			<path fill="none" stroke="#000000" stroke-width="4" d="M481.548,245.493v-26c0-1.521,1.709-2.912,4.42-3.594"/>
+			<path fill="none" stroke="#FFFFFF" stroke-width="3.6" d="M481.548,245.493v-26c0-1.521,1.709-2.912,4.42-3.594"/>
+			<polyline fill="none" stroke="#007FFF" stroke-width="4" points="165.06,137.498 114.14,137.498 114.14,88.082 			"/>
+			<line fill="none" stroke="#000000" stroke-width="4" x1="611.546" y1="437.822" x2="611.546" y2="97.665"/>
+			<line fill="none" stroke="#6D4C33" stroke-width="4" x1="391.641" y1="182.166" x2="391.641" y2="97.665"/>
+			<line fill="none" stroke="#6D4C33" stroke-width="4" x1="391.641" y1="242.445" x2="391.641" y2="182.166"/>
+			<polyline fill="none" stroke="#6D4C33" stroke-width="4" points="178.922,137.498 260.021,137.498 260.021,272.804 
+				391.641,272.804 391.641,242.445 			"/>
+			<path fill="none" stroke="#007FFF" stroke-width="4" d="M513.548,182.749v10.744c0,1.521-1.715,2.912-4.426,3.594l-23.154,5.813
+				c-3.951,0.992-5.553,3.406-3.576,5.391c0.773,0.777,2.029,1.408,3.576,1.796l23.154,5.813c2.711,0.682,4.426,2.072,4.426,3.594
+				v26"/>
+			<line fill="none" stroke="#007FFF" stroke-width="4" x1="513.548" y1="149.493" x2="513.548" y2="182.749"/>
+			<line fill="none" stroke="#000000" stroke-width="4" x1="481.548" y1="183.081" x2="481.548" y2="149.253"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="3.6" x1="481.548" y1="183.081" x2="481.548" y2="149.253"/>
+			<path fill="none" stroke="#000000" stroke-width="4" d="M509.123,202.899l-23.154-5.813c-2.711-0.682-4.42-2.072-4.42-4.258
+				v-9.748"/>
+			<path fill="none" stroke="#FFFFFF" stroke-width="3.6" d="M509.123,202.899l-23.154-5.813c-2.711-0.682-4.42-2.072-4.42-4.258
+				v-9.748"/>
+			<path fill="none" stroke="#000000" stroke-width="4" d="M481.548,149.493c0-1.521,1.709-2.912,4.42-3.594l23.154-5.813
+				c3.953-0.992,5.555-3.405,3.578-5.39c-0.773-0.777-2.027-1.406-3.578-1.797"/>
+			<path fill="none" stroke="#FFFFFF" stroke-width="3.6" d="M481.548,149.493c0-1.521,1.709-2.912,4.42-3.594l23.154-5.813
+				c3.953-0.992,5.555-3.405,3.578-5.39c-0.773-0.777-2.027-1.406-3.578-1.797"/>
+			<path fill="none" stroke="#007FFF" stroke-width="4" d="M513.548,97.24v26.253c0,1.521-1.715,2.912-4.426,3.594l-23.154,5.813
+				c-3.951,0.992-5.553,3.406-3.576,5.391c0.773,0.777,2.029,1.408,3.576,1.796l23.154,5.813c2.711,0.682,4.426,2.072,4.426,3.594"
+				/>
+			<path fill="none" stroke="#000000" stroke-width="4" d="M509.123,132.899l-23.154-5.813c-2.711-0.682-4.42-2.072-4.42-3.594
+				V97.665"/>
+			<path fill="none" stroke="#FFFFFF" stroke-width="3.6" d="M509.123,132.899l-23.154-5.813c-2.711-0.682-4.42-2.072-4.42-3.594
+				V97.665"/>
+		</g>
+		<g id="SEN">
+			
+				<line fill="#FFFFFF" stroke="#000000" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.3,1.8" x1="478.527" y1="101.684" x2="394.664" y2="101.684"/>
+			
+				<line fill="#FFFFFF" stroke="#000000" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.3,1.8" x1="478.527" y1="99.684" x2="394.664" y2="99.684"/>
+			
+				<line fill="#FFFFFF" stroke="#000000" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.3,1.8" x1="510.527" y1="101.684" x2="484.569" y2="101.684"/>
+			
+				<line fill="#FFFFFF" stroke="#000000" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.3,1.8" x1="510.527" y1="99.684" x2="484.569" y2="99.684"/>
+			
+				<line fill="#FFFFFF" stroke="#000000" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.3,1.8" x1="608.432" y1="101.684" x2="516.569" y2="101.684"/>
+			
+				<line fill="#FFFFFF" stroke="#000000" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.3,1.8" x1="608.432" y1="99.684" x2="516.569" y2="99.684"/>
+			
+				<line fill="#FFFFFF" stroke="#000000" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.3,1.8" x1="478.527" y1="182.163" x2="394.664" y2="182.163"/>
+			
+				<line fill="#FFFFFF" stroke="#000000" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.3,1.8" x1="478.527" y1="180.163" x2="394.664" y2="180.163"/>
+			
+				<line fill="#FFFFFF" stroke="#000000" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.3,1.8" x1="510.527" y1="182.163" x2="484.569" y2="182.163"/>
+			
+				<line fill="#FFFFFF" stroke="#000000" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.3,1.8" x1="510.527" y1="180.163" x2="484.569" y2="180.163"/>
+			
+				<line fill="#FFFFFF" stroke="#000000" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.3,1.8" x1="608.432" y1="182.163" x2="516.569" y2="182.163"/>
+			
+				<line fill="#FFFFFF" stroke="#000000" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.3,1.8" x1="608.432" y1="180.163" x2="516.569" y2="180.163"/>
+			
+				<rect x="2.834" y="15.822" fill="none" stroke="#000000" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" width="732" height="440"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" x1="9.834" y1="445.822" x2="27.834" y2="445.822"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" x1="22.834" y1="451.822" x2="25.834" y2="445.822"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" x1="16.834" y1="451.822" x2="19.834" y2="445.822"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" x1="10.834" y1="451.822" x2="13.834" y2="445.822"/>
+			
+				<circle fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" cx="114.138" cy="78.889" r="5"/>
+			<polygon stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="114.14,92.889 
+				109.14,83.889 119.14,83.889 			"/>
+			
+				<circle fill="#FFFFFF" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" cx="165.101" cy="137.577" r="2"/>
+			
+				<circle fill="#FFFFFF" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" cx="179.101" cy="137.577" r="2"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M167.101,137.179
+				c0.5,0.733,1.145,1.357,1.895,1.832c0.859,0.337,1.834-0.008,2.291-0.81c0.564-0.682,1.129-1.364,1.692-2.046
+				c0.457-0.802,1.434-1.147,2.292-0.809c0.75,0.475,1.395,1.098,1.894,1.832"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				720.834,437.822 18.834,437.822 18.834,445.822 			"/>
+			<rect x="256.458" y="201.337" fill="none" width="7.188" height="5.808"/>
+			<polygon fill="#FFFFFF" points="260.021,203.815 256.458,201.462 256.458,204.792 260.021,207.145 263.646,204.667 
+				263.646,201.337 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="257" y1="204.461" x2="260.021" y2="206.464"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="260.021" y1="206.464" x2="263.042" y2="204.461"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="260.021" y1="204.461" x2="263.042" y2="202.46"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="257" y1="202.46" x2="260.021" y2="204.461"/>
+			<rect x="388.079" y="240.398" fill="none" width="7.188" height="5.808"/>
+			<polygon fill="#FFFFFF" points="391.641,243.728 388.079,246.081 388.079,242.751 391.641,240.398 395.266,242.876 
+				395.266,246.206 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="388.621" y1="243.082" x2="391.641" y2="241.079"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="391.641" y1="241.079" x2="394.663" y2="243.082"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="391.641" y1="243.082" x2="394.663" y2="245.083"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="388.621" y1="245.083" x2="391.641" y2="243.082"/>
+			<rect x="607.984" y="240.398" fill="none" width="7.188" height="5.808"/>
+			<polygon fill="#FFFFFF" points="611.546,243.728 607.984,246.081 607.984,242.751 611.546,240.398 615.171,242.876 
+				615.171,246.206 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="608.526" y1="243.082" x2="611.546" y2="241.079"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="611.546" y1="241.079" x2="614.568" y2="243.082"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="611.546" y1="243.082" x2="614.568" y2="245.083"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="608.526" y1="245.083" x2="611.546" y2="243.082"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="388.641" y1="182.164" x2="391.641" y2="184.164"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="391.641" y1="182.165" x2="388.641" y2="180.165"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="391.641" y1="184.165" x2="394.641" y2="182.165"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="394.641" y1="180.165" x2="391.641" y2="182.165"/>
+			<rect x="388.081" y="179.04" fill="none" width="7.188" height="5.808"/>
+			<polygon fill="#FFFFFF" points="391.643,181.517 388.081,179.165 388.081,182.493 391.643,184.847 395.268,182.368 
+				395.268,179.04 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="388.622" y1="182.164" x2="391.643" y2="184.167"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="391.643" y1="184.167" x2="394.664" y2="182.164"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="391.643" y1="182.164" x2="394.664" y2="180.163"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="388.622" y1="180.163" x2="391.643" y2="182.164"/>
+			<rect x="106.005" y="106.815" fill="#FFFFFF" width="16.346" height="11.516"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="608.546" y1="182.164" x2="611.546" y2="184.164"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="611.546" y1="182.165" x2="608.546" y2="180.165"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="611.546" y1="184.165" x2="614.546" y2="182.165"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="614.546" y1="180.165" x2="611.546" y2="182.165"/>
+			<rect x="607.986" y="179.04" fill="none" width="7.188" height="5.808"/>
+			<polygon fill="#FFFFFF" points="611.548,181.517 607.986,179.165 607.986,182.493 611.548,184.847 615.173,182.368 
+				615.173,179.04 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="608.527" y1="182.164" x2="611.548" y2="184.167"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="611.548" y1="184.167" x2="614.569" y2="182.164"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="611.548" y1="182.164" x2="614.569" y2="180.163"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="608.527" y1="180.163" x2="611.548" y2="182.164"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="478.546" y1="182.164" x2="481.546" y2="184.164"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="481.546" y1="182.165" x2="478.546" y2="180.165"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="481.546" y1="184.165" x2="484.546" y2="182.165"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="484.546" y1="180.165" x2="481.546" y2="182.165"/>
+			<rect x="477.986" y="179.04" fill="none" width="7.188" height="5.808"/>
+			<polygon fill="#FFFFFF" points="481.548,181.517 477.986,179.165 477.986,182.493 481.548,184.847 485.173,182.368 
+				485.173,179.04 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="478.527" y1="182.164" x2="481.548" y2="184.167"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="481.548" y1="184.167" x2="484.569" y2="182.164"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="481.548" y1="182.164" x2="484.569" y2="180.163"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="478.527" y1="180.163" x2="481.548" y2="182.164"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="510.546" y1="182.164" x2="513.546" y2="184.164"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="513.546" y1="182.165" x2="510.546" y2="180.165"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="513.546" y1="184.165" x2="516.546" y2="182.165"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="516.546" y1="180.165" x2="513.546" y2="182.165"/>
+			<rect x="509.986" y="179.04" fill="none" width="7.188" height="5.808"/>
+			<polygon fill="#FFFFFF" points="513.548,181.517 509.986,179.165 509.986,182.493 513.548,184.847 517.173,182.368 
+				517.173,179.04 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="510.527" y1="182.164" x2="513.548" y2="184.167"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="513.548" y1="184.167" x2="516.569" y2="182.164"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="513.548" y1="182.164" x2="516.569" y2="180.163"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="510.527" y1="180.163" x2="513.548" y2="182.164"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="388.641" y1="101.685" x2="391.641" y2="103.685"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="391.641" y1="101.686" x2="388.641" y2="99.686"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="391.641" y1="103.686" x2="394.641" y2="101.686"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="394.641" y1="99.686" x2="391.641" y2="101.686"/>
+			<rect x="388.081" y="98.561" fill="none" width="7.188" height="5.808"/>
+			<polygon fill="#FFFFFF" points="391.643,101.038 388.081,98.686 388.081,102.014 391.643,104.368 395.268,101.889 
+				395.268,98.561 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="388.622" y1="101.685" x2="391.643" y2="103.688"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="391.643" y1="103.688" x2="394.664" y2="101.685"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="391.643" y1="101.685" x2="394.664" y2="99.684"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="388.622" y1="99.684" x2="391.643" y2="101.685"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="608.546" y1="101.685" x2="611.546" y2="103.685"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="611.546" y1="101.686" x2="608.546" y2="99.686"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="611.546" y1="103.686" x2="614.546" y2="101.686"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="614.546" y1="99.686" x2="611.546" y2="101.686"/>
+			<rect x="607.986" y="98.561" fill="none" width="7.188" height="5.808"/>
+			<polygon fill="#FFFFFF" points="611.548,101.038 607.986,98.686 607.986,102.014 611.548,104.368 615.173,101.889 
+				615.173,98.561 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="608.527" y1="101.685" x2="611.548" y2="103.688"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="611.548" y1="103.688" x2="614.569" y2="101.685"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="611.548" y1="101.685" x2="614.569" y2="99.684"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="608.527" y1="99.684" x2="611.548" y2="101.685"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="478.546" y1="101.685" x2="481.546" y2="103.685"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="481.546" y1="101.686" x2="478.546" y2="99.686"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="481.546" y1="103.686" x2="484.546" y2="101.686"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="484.546" y1="99.686" x2="481.546" y2="101.686"/>
+			<rect x="477.986" y="98.561" fill="none" width="7.188" height="5.808"/>
+			<polygon fill="#FFFFFF" points="481.548,101.038 477.986,98.686 477.986,102.014 481.548,104.368 485.173,101.889 
+				485.173,98.561 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="478.527" y1="101.685" x2="481.548" y2="103.688"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="481.548" y1="103.688" x2="484.569" y2="101.685"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="481.548" y1="101.685" x2="484.569" y2="99.684"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="478.527" y1="99.684" x2="481.548" y2="101.685"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="510.546" y1="101.685" x2="513.546" y2="103.685"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="513.546" y1="101.686" x2="510.546" y2="99.686"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="513.546" y1="103.686" x2="516.546" y2="101.686"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="516.546" y1="99.686" x2="513.546" y2="101.686"/>
+			<rect x="509.986" y="98.561" fill="none" width="7.188" height="5.808"/>
+			<polygon fill="#FFFFFF" points="513.548,101.038 509.986,98.686 509.986,102.014 513.548,104.368 517.173,101.889 
+				517.173,98.561 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="510.527" y1="101.685" x2="513.548" y2="103.688"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="513.548" y1="103.688" x2="516.569" y2="101.685"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="513.548" y1="101.685" x2="516.569" y2="99.684"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="510.527" y1="99.684" x2="513.548" y2="101.685"/>
+			
+				<circle fill="#FFFFFF" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" cx="513.548" cy="250.493" r="5"/>
+			
+				<circle fill="#FFFFFF" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" cx="481.548" cy="250.493" r="5"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				522.324,255.88 518.324,259.88 476.324,259.88 472.324,255.88 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="478.049" y1="108.604" x2="469.625" y2="108.604"/>
+			<polyline stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="478.711,108.59 
+				477.211,107.59 477.211,109.59 478.711,108.59 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="516.874" y1="108.604" x2="525.125" y2="108.604"/>
+			<polyline stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="516.211,108.59 
+				517.711,107.59 517.711,109.59 516.211,108.59 			"/>
+			<rect x="607.494" y="133.216" fill="#FFFFFF" width="8.328" height="9.734"/>
+			<rect x="475.968" y="160.05" fill="#FFFFFF" width="11.375" height="9.734"/>
+			<rect x="509.19" y="160.05" fill="#FFFFFF" width="9.025" height="9.734"/>
+			<rect x="598.702" y="215.207" fill="#FFFFFF" width="26.23" height="11.516"/>
+			<rect x="603.775" y="334.163" fill="#FFFFFF" width="16.004" height="11.516"/>
+			<rect x="247.758" y="162.145" fill="#FFFFFF" width="24.445" height="11.516"/>
+			<rect x="249.425" y="235.354" fill="#FFFFFF" width="21.781" height="11.516"/>
+			<rect x="375.835" y="215.207" fill="#FFFFFF" width="32.008" height="11.516"/>
+			<rect x="385.186" y="133.216" fill="#FFFFFF" width="14.408" height="9.734"/>
+			<rect x="466.804" y="226.457" fill="#FFFFFF" width="28.945" height="11.516"/>
+			<rect x="501.03" y="226.457" fill="#FFFFFF" width="25.344" height="11.516"/>
+		</g>
+		<g id="TEXT">
+			<g>
+				<rect x="389.223" y="87.393" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="5.057" height="9.463"/>
+				<text transform="matrix(1 0 0 1 390.6401 94.2578)" fill="#080103" font-family="'Arial'" font-size="8">I</text>
+			</g>
+			<g>
+				<rect x="105.662" y="107.778" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="17.499" height="9.463"/>
+				<text transform="matrix(1 0 0 1 107.0791 114.6436)" fill="#080103" font-family="'Arial'" font-size="8">L(F)</text>
+			</g>
+			<g>
+				<rect x="109.386" y="75.766" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="9.509" height="7.097"/>
+				<text transform="matrix(1 0 0 1 110.8032 80.9146)" fill="#080103" font-family="'Arial'" font-size="6">81</text>
+			</g>
+			<g>
+				<rect x="150.842" y="126.569" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="42.531" height="8.28"/>
+				<text transform="matrix(1 0 0 1 152.2598 132.5762)" fill="#080103" font-family="'Arial'" font-size="7">C/U IG1 15A</text>
+			</g>
+			<g>
+				<rect x="247.747" y="163.107" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="24.163" height="9.463"/>
+				<text transform="matrix(1 0 0 1 249.1646 169.9727)" fill="#080103" font-family="'Arial'" font-size="8">BR(F)</text>
+			</g>
+			<g>
+				<rect x="249.414" y="236.317" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="21.499" height="9.463"/>
+				<text transform="matrix(1 0 0 1 250.8311 243.1821)" fill="#080103" font-family="'Arial'" font-size="8">BR(I)</text>
+			</g>
+			<g>
+				<rect x="243.578" y="201.101" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="13.062" height="9.463"/>
+				<text transform="matrix(1 0 0 1 244.9951 207.9663)" fill="#080103" font-family="'Arial'" font-size="8">1N</text>
+			</g>
+			<g>
+				<rect x="508.804" y="87.393" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="8.611" height="9.463"/>
+				<text transform="matrix(1 0 0 1 510.2212 94.2578)" fill="#080103" font-family="'Arial'" font-size="8">C</text>
+			</g>
+			<g>
+				<rect x="606.951" y="87.393" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="8.197" height="9.463"/>
+				<text transform="matrix(1 0 0 1 608.3794 94.2578)" fill="#080103" font-family="'Arial'" font-size="8">A</text>
+			</g>
+			<g>
+				<rect x="477.505" y="87.393" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="8.17" height="9.463"/>
+				<text transform="matrix(1 0 0 1 478.9224 94.2578)" fill="#080103" font-family="'Arial'" font-size="8">E</text>
+			</g>
+			<g>
+				<rect x="428.625" y="72.943" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="142.393" height="9.463"/>
+				<text transform="matrix(1 0 0 1 430.0415 79.8081)" fill="#080103" font-family="'Arial'" font-size="8">FORWARD SENSING CAMERA (FSC)</text>
+			</g>
+			<g>
+				<rect x="375.824" y="216.17" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="31.725" height="9.463"/>
+				<text transform="matrix(1 0 0 1 377.2417 223.0352)" fill="#080103" font-family="'Arial'" font-size="8">BR(IN2)</text>
+			</g>
+			<g>
+				<rect x="385.175" y="134.085" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="13.948" height="9.463"/>
+				<text transform="matrix(1 0 0 1 386.5923 140.9502)" fill="#080103" font-family="'Arial'" font-size="8">BR</text>
+			</g>
+			<g>
+				<rect x="607.573" y="134.085" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="8.17" height="9.463"/>
+				<text transform="matrix(1 0 0 1 608.9897 140.9502)" fill="#080103" font-family="'Arial'" font-size="8">B</text>
+			</g>
+			<g>
+				<rect x="603.821" y="335.126" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="15.721" height="9.463"/>
+				<text transform="matrix(1 0 0 1 605.2378 341.9912)" fill="#080103" font-family="'Arial'" font-size="8">B(I)</text>
+			</g>
+			<g>
+				<rect x="379.611" y="240.625" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="8.612" height="9.463"/>
+				<text transform="matrix(1 0 0 1 381.0288 247.4902)" fill="#080103" font-family="'Arial'" font-size="8">D</text>
+			</g>
+			<g>
+				<rect x="381.599" y="183.644" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="8.198" height="9.463"/>
+				<text transform="matrix(1 0 0 1 383.0288 190.5093)" fill="#080103" font-family="'Arial'" font-size="8">A</text>
+			</g>
+			<g>
+				<rect x="470.612" y="183.644" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="8.17" height="9.463"/>
+				<text transform="matrix(1 0 0 1 472.0288 190.5093)" fill="#080103" font-family="'Arial'" font-size="8">E</text>
+			</g>
+			<g>
+				<rect x="502.612" y="183.644" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="8.611" height="9.463"/>
+				<text transform="matrix(1 0 0 1 504.0288 190.5093)" fill="#080103" font-family="'Arial'" font-size="8">C</text>
+			</g>
+			<g>
+				<rect x="599.612" y="183.644" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="9.057" height="9.463"/>
+				<text transform="matrix(1 0 0 1 601.0288 190.5093)" fill="#080103" font-family="'Arial'" font-size="8">G</text>
+			</g>
+			<g>
+				<rect x="598.499" y="239.881" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="9.498" height="9.463"/>
+				<text transform="matrix(1 0 0 1 599.9155 246.7461)" fill="#080103" font-family="'Arial'" font-size="8">M</text>
+			</g>
+			<g>
+				<rect x="477.964" y="247.37" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="7.167" height="7.097"/>
+				<text transform="matrix(1 0 0 1 479.3813 252.5186)" fill="#080103" font-family="'Arial'" font-size="6">C</text>
+			</g>
+			<g>
+				<rect x="509.964" y="247.37" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="7.167" height="7.097"/>
+				<text transform="matrix(1 0 0 1 511.3813 252.5186)" fill="#080103" font-family="'Arial'" font-size="6">D</text>
+			</g>
+			<g>
+				<rect x="467.293" y="227.419" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="28.162" height="9.463"/>
+				<text transform="matrix(1 0 0 1 468.7104 234.2847)" fill="#080103" font-family="'Arial'" font-size="8">W(IN2)</text>
+			</g>
+			<g>
+				<rect x="501.019" y="227.419" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="25.061" height="9.463"/>
+				<text transform="matrix(1 0 0 1 502.436 234.2847)" fill="#080103" font-family="'Arial'" font-size="8">L(IN2)</text>
+			</g>
+			<g>
+				<rect x="476.463" y="160.919" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="10.385" height="9.463"/>
+				<text transform="matrix(1 0 0 1 477.8804 167.7847)" fill="#080103" font-family="'Arial'" font-size="8">W</text>
+			</g>
+			<g>
+				<rect x="510.061" y="160.919" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="7.283" height="9.463"/>
+				<text transform="matrix(1 0 0 1 511.478 167.7847)" fill="#080103" font-family="'Arial'" font-size="8">L</text>
+			</g>
+			<g>
+				<rect x="424.505" y="104.1" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="43.287" height="9.463"/>
+				<text transform="matrix(1 0 0 1 425.9224 110.9653)" fill="#080103" font-family="'Arial'" font-size="8">HS CAN_H</text>
+			</g>
+			<g>
+				<rect x="525.958" y="104.1" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="41.959" height="9.463"/>
+				<text transform="matrix(1 0 0 1 527.3755 110.9653)" fill="#080103" font-family="'Arial'" font-size="8">HS CAN_L</text>
+			</g>
+			<g>
+				<rect x="599.134" y="216.17" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="25.947" height="9.463"/>
+				<text transform="matrix(1 0 0 1 600.5513 223.0352)" fill="#080103" font-family="'Arial'" font-size="8">B(IN2)</text>
+			</g>
+		</g>
+
+		<g id="LINK">
+			<g id="circuit">
+				<g id="CR-0921-1">
+					<g>
+						<rect x="74.32" y="53.656" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="44.187" height="9.463"/>
+						<text transform="matrix(1 0 0 1 75.7373 60.521)" fill="#080103" font-family="'Arial'" font-size="8">IG1 RELAY</text>
+					</g>
+					<g>
+						<rect x="74.32" y="63.155" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="70.854" height="9.463"/>
+						<text transform="matrix(1 0 0 1 75.7373 70.0205)" fill="#080103" font-family="'Arial'" font-size="8">(SECTION 0921-1)</text>
+					</g>
+				</g>
+				<g id="CR-00F-1">
+					
+						<rect x="142.64" y="122.577" fill="none" stroke="#000000" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" width="60" height="30"/>
+					<g>
+						<rect x="141.185" y="103.602" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="19.284" height="9.463"/>
+						<text transform="matrix(1 0 0 1 142.6021 110.4673)" fill="#080103" font-family="'Arial'" font-size="8">F-01</text>
+					</g>
+					<g>
+						<rect x="141.185" y="112.35" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="101.085" height="9.463"/>
+						<text transform="matrix(1 0 0 1 142.6021 119.2153)" fill="#080103" font-family="'Arial'" font-size="8">RELAY AND FUSE BLOCK</text>
+					</g>
+				</g>
+				<g id="CR-00D-1c">
+					<g>
+						<rect x="446.435" y="262.565" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="105.068" height="9.463"/>
+						<text transform="matrix(1 0 0 1 447.8521 269.4302)" fill="#080103" font-family="'Arial'" font-size="8">DATA LINK CONNECTOR-2</text>
+					</g>
+					<g>
+						<rect x="446.435" y="272.164" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="71.732" height="9.463"/>
+						<text transform="matrix(1 0 0 1 447.8521 279.0293)" fill="#080103" font-family="'Arial'" font-size="8">(SECTION 00D-1c)</text>
+					</g>
+				</g>
+			</g>
+			<g id="connector">
+				<g id="CR-G13">
+					<path fill="#FFFFFF" stroke="#000000" stroke-width="0.6" d="M604.046,437.896c0,4.143,3.358,7.501,7.497,7.501
+						c4.145,0,7.502-3.358,7.502-7.501c0-4.141-3.357-7.499-7.502-7.499C607.405,430.396,604.046,433.755,604.046,437.896z"/>
+				</g>
+				<g id="CR-C-23">
+					<g>
+						<rect x="615.101" y="176.999" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="20.174" height="9.463"/>
+						<text transform="matrix(1 0 0 1 616.5181 183.8638)" fill="#080103" font-family="'Arial'" font-size="8">C-23</text>
+					</g>
+				</g>
+				<g id="CR-C-11">
+					<g>
+						<rect x="394.991" y="239.836" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="20.174" height="9.463"/>
+						<text transform="matrix(1 0 0 1 396.4077 246.7012)" fill="#080103" font-family="'Arial'" font-size="8">C-11</text>
+					</g>
+					<g>
+						<rect x="615.991" y="239.836" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="20.174" height="9.463"/>
+						<text transform="matrix(1 0 0 1 617.4077 246.7012)" fill="#080103" font-family="'Arial'" font-size="8">C-11</text>
+					</g>
+				</g>
+				<g id="CR-C-04">
+					<g>
+						<rect x="264.078" y="201.101" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="20.175" height="9.463"/>
+						<text transform="matrix(1 0 0 1 265.4951 207.9663)" fill="#080103" font-family="'Arial'" font-size="8">C-04</text>
+					</g>
+				</g>
+				<g id="CR-0918-1201">
+					
+						<rect x="373.546" y="62.665" fill="none" stroke="#000000" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" width="260" height="35"/>
+					
+						<rect x="616.569" y="99.684" fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" width="45" height="10"/>
+					<g>
+						<rect x="618.523" y="100.52" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="41.092" height="9.463"/>
+						<text transform="matrix(1 0 0 1 619.9399 107.3848)" fill="#080103" font-family="'Arial'" font-size="8">0918-1201</text>
+					</g>
+				</g>
+			</g>
+			<g>
+				<rect x="603.514" y="434.253" opacity="0" fill="none" stroke="#FFFFFF" stroke-width="0" width="16.065" height="8.28"/>
+				<text transform="matrix(1 0 0 1 604.9312 440.2598)" fill="#080103" font-family="'Arial'" font-size="7">G13</text>
+			</g>
+		</g>
+	</g>
+</switch>
+</svg>

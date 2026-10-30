@@ -1,0 +1,314 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DIESEL PARTICULATE FILTER REGENERATION CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5993000"></a><p class="servinfo-title"><span class="servinfo-head"></span>DIESEL PARTICULATE FILTER REGENERATION CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5993000</p><br clear="all"><a name="id0140z599300001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  When the amount of accumulated particulate matter (PM) in the diesel particulate filter exceeds a certain value, the PCM controls to combust and eliminate PM.</div>
+<div class="list">•  Two methods are available to combust and eliminate PM, one is automatic DPF regeneration control which is performed by the PCM automatically, and the other is compulsory DPF regeneration control which can be forcibly performed externally.</div><br clear="all"><a name="id0140z599300002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003752.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003752</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z599300003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The PCM estimates the PM amount accumulated in the diesel particulate filter.</div>
+<div class="list">•  Amount of accumulated PM is calculated from the difference in exhaust gas pressures and PM emission amount.</div>
+<dl>
+<div class="list-title">Estimation based on difference in exhaust gas pressures</div>
+<dd class="list">
+<div class="list">•  The amount of accumulated PM is estimated by comparing the exhaust gas pressures before and after the diesel particulate filter based on the signals from the exhaust gas pressure sensor.</div>
+</dd>
+</dl>
+<div class="list">•  The PM emission amount is calculated from the soot generation amount and the PM combustion amount.</div>
+<dl>
+<div class="list-title">Soot generation amount</div>
+<dd class="list">
+<div class="list">•  The soot generation amount is estimated based on the engine speed, intake air amount, and fuel injection amount.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">PM combustion amount</div>
+<dd class="list">
+<div class="list">•  The PM combustion amount is estimated based on signals from the exhaust gas temperature sensor.</div>
+</dd>
+</dl>
+<div class="list">•  The PCM illuminates/flashes the diesel particulate filter indicator light and check engine light according to the amount of accumulated PM to promote DPF regeneration.</div>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center" colspan="5">
+<p class="thead">PM accumulation amount</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">PM accumulation amount</div>
+</td>
+<td id="" align="center">
+<div class="tbody">0—8.0 g/L</div>
+<div class="tbody">{0—0.50 lb/ft<sup>3</sup>}</div>
+</td>
+<td id="" align="center">
+<div class="tbody">8.0—10.0 g/L</div>
+<div class="tbody">{0.50—0.62 lb/ft<sup>3</sup>}</div>
+</td>
+<td id="" align="center">
+<div class="tbody">10.0—13.0 g/L</div>
+<div class="tbody">{0.62—0.81 lb/ft<sup>3</sup>}</div>
+</td>
+<td id="" align="center">
+<div class="tbody">13.0—17.0 g/L</div>
+<div class="tbody">{0.81—1.06 lb/ft<sup>3</sup>}</div>
+</td>
+<td id="" align="center">
+<div class="tbody">17.0 g/L {1.06 lb/ft<sup>3</sup>} or more</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Diesel particulate filter indicator light</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+<div class="tbody">(Informs user)</div>
+</td>
+<td id="" align="center" colspan="3">
+<div class="tbody">Flashing</div>
+<div class="tbody">(Warns user)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Message related to accumulation condition in diesel particulate filter indicated in display.<sup>*1</sup><sup>, *2</sup></div>
+<div class="tbody">(Informs user)</div>
+</td>
+<td id="" align="center" colspan="3">
+<div class="tbody">Message related diesel particulate filter malfunction indicated in display.<sup>*2, </sup><sup>*3</sup></div>
+<div class="tbody">(Warns user)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Check engine light</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Illuminated<sup>*4</sup></div>
+<div class="tbody">(Warns user)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Output restriction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Gas temperature restriction</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Gas temperature restriction and soot emission amount restriction</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DTC recorded in PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">P2458:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">P2463:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">P242F:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Automatic DPF regeneration control range</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Automatic DPF regeneration control operable</div>
+<div class="tbody">(If the accumulated PM amount exceeds the specified value<sup>*5</sup>, auto DPF regeneration control is implemented, and operates until the accumulated PM amount is <span>approx. 0 g/L {0 lb/ft<sup>3</sup>}</span>.)</div>
+</td>
+<td id="" align="center" colspan="3">
+<div class="tbody">Automatic DPF regeneration control inoperable</div>
+<div class="tbody">(Automatic DPF regeneration control is disabled when amount of accumulated PM is <span>10.0 g/L {0.62 lb/ft<sup>3</sup>} or more</span> because output is restricted)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">User action</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Warm up the engine completely (engine coolant temperature <span>80 ° C {176 °F} or more</span>), depress the accelerator pedal and maintain a vehicle speed of <span>20 km/h {12 mph} or more</span> for <span>15—20 min</span>.</div>
+</td>
+<td id="" align="center" colspan="3">
+<div class="tbody">Bring vehicle to a Mazda dealer.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Mazda dealer action</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Compulsory DPF regeneration<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Diesel particulate filter replacement</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :Turns off when it is <span>5.0 g/L {0.34 lb/ft<sup>3</sup>} or less</span>.</div>
+<div class="deflist">*2  :For the message content, refer to the [CENTER DISPLAY]. (See <font class="extxref-label"><a href="id0920zz113600.html">CENTER DISPLAY [WITH CENTER DISPLAY]</a></font>.)</div>
+<div class="deflist">*3  :The diesel particulate filter indicator light flashes when the amount of accumulated PM is <span>10.0 g/L {0.62 lb/ft<sup>3</sup>} or more</span>. This indicates that amount of accumulated PM in the diesel particulate filter is full. Therefore, to reduce the amount of accumulated PM, the fuel injection amount is reduced and exhaust gas temperature restriction (output restriction) is performed. As a result, soot generation is reduced and the PM accumulating in the diesel particulate filter is reduced. Turns off when it is <span>5.0 g/L {0.34 lb/ft<sup>3</sup>} or less</span>.</div>
+<div class="deflist">*4  :The check engine light illuminates when the amount of accumulated PM reaches <span>13.0 g/L {0.81 lb/ft<sup>3</sup>} or more</span>. In this case, to further restrict soot generation (output restriction), exhaust gas is induced to the cylinder by EGR control to lower the combustion temperature. As a result, soot generation is further reduced, and the PM accumulating in the diesel particulate filter is reduced.</div>
+<div class="deflist">*5  :Figure fluctuates depending on distance travelled/conditions.</div>
+<div class="deflist">*6  :The PCM automatically selects normal mode or long mode for the compulsory DPF regeneration operation time according to the accumulated PM amount. If compulsory DPF regeneration is performed when the amount of accumulated PM is <span>less than 10.0 g/L {0.62 lb/ft<sup>3</sup>}</span>, normal mode is performed. If compulsory DPF regeneration is performed when the amount of accumulated PM is <span>10.0 g/L {0.62 lb/ft<sup>3</sup>} or more</span>, long mode is performed.</div><br clear="all"><p><a name="id0140z599300004"></a><p class="topic-title"><span class="topic-head"></span>Automatic DPF regeneration control</p>
+<dl>
+<dd>
+<div class="list">•  The PCM controls to combust and eliminate PM when the vehicle is driven for <span>10—20 min</span>. with all the following conditions met.</div>
+<dl>
+<div class="list-title">Automatic DPF regeneration control launch conditions</div>
+<dd class="list">
+<div class="list">―  Engine completely warmed up (engine coolant temperature: <span>80 °C {176 °F} or more</span><sup>*1</sup>)</div>
+<div class="list">―  Vehicle speed: After <span>15 km/h {9.3 mph} or more</span> reached (If traffic congestion determined, after reaching <span>5 km/h {3 mph} or more</span>)</div>
+<div class="list">―  Accumulated PM amount: Specified value<sup>*2</sup>—<span>10.0<sup>*3</sup> g/L {0.62 lb/ft<sup>3</sup>}</span></div>
+</dd>
+</dl>
+<div class="list">•  After DPF regeneration control launches, it operates until the amount of accumulated PM amount lowers to <span>approx. 0 g/L {0 lb/ft<sup>3</sup>}</span>.</div>
+</dd>
+</dl>
+</p>
+<div class="deflist">*1  :If there is little frequency of complete engine warm-up, the lowest engine coolant temperature for launch is <span>40 °C {104 °F} or more</span>.</div>
+<div class="deflist">*2  :Figure fluctuates depending on the distance traveled/conditions.</div>
+<div class="deflist">*3  :If the accumulated PM amount reaches <span>10.0 g/L {0.62 lb/ft<sup>3</sup>} or more</span>, the output control is performed (reduction of PM exhaust amount and exhaust gas temperature), and auto DPF regeneration control is inhibited.</div><br clear="all"><p><a name="id0140z599300005"></a><p class="topic-title"><span class="topic-head"></span>Compulsory DPF regeneration control</p>
+<dl>
+<dd>
+<div class="list">•  Compulsory DPF regeneration can be performed using the Mazda Modular Diagnostic System (M-MDS).</div>
+<div class="list">•  During compulsory DPF regeneration, idle speed is increased, and follow-up injection/post injection is performed to combust and to eliminate PM.</div>
+<div class="list">•  The PCM automatically selects normal mode or long mode for the compulsory DPF regeneration operation time according to the accumulated PM amount.</div>
+<dl>
+<div class="list-title">NORMAL MODE (TIME REQUIRED: <span class="entry-title">APPROX. 28 MIN</span>)</div>
+<dd class="list">
+<div class="list">
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00004228.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00004228</div>
+</td>
+</tr>
+</table>
+</div>
+<dl>
+<div class="list-title">Implementation conditions</div>
+<dd class="list">
+<div class="list">•  Compulsory DPF regeneration is performed when amount of accumulated PM is <span>less than 10.0 g/L {0.62 lb/ft<sup>3</sup>}</span></div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Execution flow</div>
+<dd class="list">
+<div class="list">1.  Idle speed is maintained at <span>1,750 rpm</span> for <span>approx. 25 min</span> to eliminate PM.</div>
+<div class="list">2.  Idle speed is decreased and maintained for <span>approx. 3 min</span> to cool the diesel particulate filter.</div>
+<div class="list">3.  Idle speed is decreased to the normal idle speed and compulsory DPF regeneration is completed.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<div class="list-title">LONG MODE (TIME REQUIRED: <span class="entry-title">APPROX. 60 MIN</span>)</div>
+<dd class="list">
+<div class="list">
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003753.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003753</div>
+</td>
+</tr>
+</table>
+</div>
+<dl>
+<div class="list-title">Implementation conditions</div>
+<dd class="list">
+<div class="list">•  Compulsory DPF regeneration is performed when amount of accumulated PM is <span>10.0 g/L {0.62 lb/ft<sup>3</sup>} or more</span></div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Execution flow</div>
+<dd class="list">
+<div class="list">1.  Idle speed is maintained at <span>1,750 rpm</span> for <span>approx. 57 min</span> to eliminate PM.</div>
+<div class="list">2.  The diesel particulate filter is cooled by inhibiting the post injection for <span>approx. 3 min</span> with the idling engine speed fixed at <span>1,750 rpm</span>.</div>
+<div class="list">3.  Idle speed is decreased to the normal idle speed and compulsory DPF regeneration is completed.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  When the compulsory DPF regeneration procedure is performed, the PCM automatically selects normal mode or long mode according to the amount of accumulated PM. However, normal mode and long mode are not performed continuously. If compulsory DPF regeneration is performed once and the PM combustion elimination is not completed, it is necessary to perform the compulsory DPF regeneration procedure again.</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

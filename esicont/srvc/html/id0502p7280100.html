@@ -1,0 +1,4108 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC SYSTEM MALFUNCTION DETECTION FUNCTION [TCM (EW6A-EL)]</title>
+</head>
+<body><a name="id0502p7280100"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC SYSTEM MALFUNCTION DETECTION FUNCTION [TCM (EW6A-EL)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0502p7280100</p><br clear="all"><a name="id0502p728010001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose/Function</p>
+<div class="list">•  The malfunction diagnostic function detects transaxle malfunctions.</div>
+<div class="list">•  Accurate and quick repair/service can be performed to facilitate malfunction cause determination using the malfunction detection function.</div><br clear="all"><a name="id0502p728010002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction/Operation</p>
+<div class="list">•  If a malfunction occurs in the transaxle, it is recorded as a DTC. A DTC can be read by the Mazda Modular Diagnostic System (M-MDS).</div><br clear="all"><p><a name="id0502p728010003"></a><p class="topic-title"><span class="topic-head"></span>DTC table</p>
+<p clear="all">
+<p>
+<div>×: Applicable</div>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Check engine light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Automatic transaxle warning light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe function</p>
+</th>
+<th id="" align="center">
+<p class="thead">Drive cycle</p>
+</th>
+<th id="" align="center">
+<p class="thead">Self test type<sup>*1</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">Memory function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0218:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Automatic transaxle protection control</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0500:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed signal circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0666:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECU internal temperature sensor circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0667:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECU internal temperature sensor/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P06B8:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">NVRAM malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0706:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transaxle range sensor range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0707:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transaxle range sensor circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0708:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transaxle range sensor circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0711:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TFT sensor range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0712:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TFT sensor circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0713:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TFT sensor circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0715:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turbine/input shaft speed sensor/sensor output range malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0716:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turbine/input shaft speed sensor range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0717:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Open circuit in turbine/input shaft speed sensor circuit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0720:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output shaft speed sensor range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0721:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output shaft speed sensor/sensor output range malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0722:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Open circuit in output shaft speed sensor circuit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0729:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">6GR incorrect ratio</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0731:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1GR incorrect ratio</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0732:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2GR incorrect ratio</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0733:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">3GR incorrect ratio</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0734:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">4GR incorrect ratio</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0735:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">5GR incorrect ratio</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0736:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Gear reverse incorrect ratio</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P073D:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Neutral incorrect ratio</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0741:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCC control solenoid stuck off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0743:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCC control solenoid circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0746:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Pressure control solenoid stuck off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0748:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Pressure control solenoid circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0751:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.1 stuck off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0752:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.1 stuck on</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0753:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.1 circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0756:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.2 stuck off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0757:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.2 stuck on</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0758:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.2 circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0761:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.3 stuck off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0762:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.3 stuck on</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0763:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.3 circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0766:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.4 stuck off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0767:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.4 stuck on</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0768:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.4 circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0771:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">On/off solenoid stuck off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0772:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">On/off solenoid stuck on</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0773:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">On/off solenoid circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0780:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Gear shifting malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0819:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">M position switch/Up switch/Down switch signal error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0842:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.1 (Oil pressure switch B) stuck on</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0843:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.1 (Oil pressure switch B) stuck off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0847:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.2 (Oil pressure switch A) stuck on</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0848:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.2 (Oil pressure switch A) stuck off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0872:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.3 (Oil pressure switch A) stuck on</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0873:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.3 (Oil pressure switch A) stuck off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0877:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.4 (Oil pressure switch B) stuck on</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0878:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.4 (Oil pressure switch B) stuck off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0882:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCM power supply voltage low</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0883:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCM power supply voltage high</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0C2C:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump mechanical malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0C2D:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump rotation malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P1728:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Clutch slippage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P1738:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Automatic transaxle internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P1784:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Hi cut valve stuck off/R-3-5 cut valve stuck on</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P181F:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump/Electric AT oil pump relay circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P2530:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switch stuck off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P2712:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pump shift valve stuck</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P2855:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Low clutch hydraulic circuit/sealing malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0073:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN system communication error (HS CAN)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0074:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN system communication error (local CAN between TCM and PCM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to PCM (HS CAN)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0115:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to PCM (local CAN between TCM and PCM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to DSC HU/CM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to EPS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to start stop unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0442:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Invalid data received from PCM (local CAN between TCM and PCM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :C: CMDTC self test, O: KOEO self test</div>
+</p><br clear="all"><p><a name="id0502p728010004"></a><p class="topic-title"><span class="topic-head"></span>DTC separate detection condition</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Detection condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0218:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Automatic transaxle protection control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, the ATF temperature is <span>135 °C {275 °F} or more</span> for <span>10 s</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  TFT sensor related DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0500:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed signal circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, the vehicle speed signal input from DSC HU/CM is incorrect:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  The vehicle is driven in D position or R position.</div>
+<div class="list">―  Output shaft speed sensor related DTC is not recorded</div>
+<div class="list">―  There is correlation between output shaft speed sensor speed and turbine/input shaft speed sensor speed.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0666:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECU internal temperature sensor circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, there is malfunction in circuit of ECU internal temperature sensor:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>8 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0667:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECU internal temperature sensor/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, the difference between ECU internal temperatures of three ECU internal temperature sensors are <span>15 °C {27 °F} or more</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  Soaked for <span>6 hours or more</span>.</div>
+<div class="list">―  No malfunction in ECU internal temperature sensor circuit</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P06B8:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">NVRAM malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, TCM internal NVRAM data retention/read/write disabled:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>8 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0706:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transaxle range sensor range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, pattern identification error in switch condition of transaxle range sensors 1 to 4:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>8 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0707:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transaxle range sensor circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, incorrect voltage in any one of transaxle range sensors 1 to 4:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>8 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0708:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transaxle range sensor circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, incorrect voltage in any one of transaxle range sensors 1 to 4:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>8 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0711:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TFT sensor range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, the ATF temperature is <span>40 °C {104 °F} or less</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Certain period has elapsed since engine start.</div>
+<div class="list">―  ECU internal temperature sensor related DTC is not recorded.</div>
+<div class="list">―  Soaked for <span>6 hours or more</span>.</div>
+<div class="list">―  The ECU internal temperature is the specified temperature or more.</div>
+<div class="list">―  The vehicle is driven at the specified speed or more.</div>
+</dd>
+</dl>
+<div class="list">•  Under the following conditions, the ATF temperature is <span>120 °C {248 °F} or more</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Certain period has elapsed since engine start.</div>
+<div class="list">―  ECU internal temperature sensor related DTC is not recorded.</div>
+<div class="list">―  Soaked for <span>6 hours or more</span>.</div>
+<div class="list">―  The ECU internal temperature is the specified temperature or less.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0712:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TFT sensor circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the TFT sensor voltage is <span>0.12 V or less</span> for <span>5 s</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>8 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0713:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TFT sensor circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, the ATF temperature is <span>−40 °C {−40 °F} or less</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>8 V or more</span>.</div>
+<div class="list">―  The ECU internal temperature is the specified temperature or more.</div>
+<div class="list">―  ECU internal temperature sensor related DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0715:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turbine/input shaft speed sensor/sensor output range malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, the difference between engine speed signal and turbine/input shaft speed signal is <span>400 rpm or more</span> for <span>1 s</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  Turbine/input shaft speed sensor is <span>9,000 rpm or less</span>.</div>
+<div class="list">―  The gear shift position is in the neutral condition.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0716:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turbine/input shaft speed sensor range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the turbine/input shaft speed is <span>9,000 rpm or more</span> for <span>1 s</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>8 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0717:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Open circuit in turbine/input shaft speed sensor circuit</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, the turbine/input shaft speed sensor signal is not input for <span>1 s</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  Vehicle speed signal related DTC is not recorded.</div>
+<div class="list">―  Vehicle speed is <span>16 km/h {9.9 mph} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  DTC U0121:00 is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0720:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output shaft speed sensor range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, there is difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  The vehicle is driven at the specified speed or more.</div>
+<div class="list">―  Vehicle speed signal related DTC is not recorded.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and turbine/input shaft speed sensor signal.</div>
+<div class="list">―  DTC P0721:00 and P0722:00 are not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0721:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output shaft speed sensor/sensor output range malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the output shaft speed is <span>13,560 rpm or more</span> in forward or <span>2,000 rpm or more</span> in reverse for a continuous <span>1 s</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>8 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0722:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Open circuit in output shaft speed sensor circuit</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, the output shaft speed sensor signal is not input:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  Vehicle speed signal related DTC is not recorded.</div>
+<div class="list">―  The vehicle is driven at the specified speed or more.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  DTC U0121:00 is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0729:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">6GR incorrect ratio</div>
+</td>
+<td id="" align="left">
+<div class="list">•  In D position, 6GR, the following phenomenon occurs:</div>
+<dl>
+<dd class="list">
+<div class="list">―  There is difference between turbine/input shaft speed and output shaft speed sensor speed for <span>230 to 1,980 ms</span> (varies with ATF temperature and ECT) during shift-up.</div>
+<div class="list">―  There is difference between turbine/input shaft speed and output shaft speed sensor speed for<span> 1,500 to 3,900 ms</span> (varies with ATF temperature) while driving without shifting.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0731:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1GR incorrect ratio</div>
+</td>
+<td id="" align="left">
+<div class="list">•  In D position, 1GR, the following phenomenon occurs:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Speed ratio is <span>0.75 to 1.2</span> for <span>2,000 ms</span> while vehicle is stopped in D position.</div>
+<div class="list">―  There is difference between turbine/input shaft speed and output shaft speed sensor speed for <span>230 to 1,980 ms</span> (varies with ATF temperature and ECT) during shift-up.</div>
+<div class="list">―  There is difference between turbine/input shaft speed and output shaft speed sensor speed for<span> 1,500 to 3,900 ms</span> (varies with ATF temperature) while driving without shifting.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0732:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2GR incorrect ratio</div>
+</td>
+<td id="" align="left">
+<div class="list">•  In D position, 2GR, the following phenomenon occurs:</div>
+<dl>
+<dd class="list">
+<div class="list">―  There is difference between turbine/input shaft speed and output shaft speed sensor speed for <span>230 to 1,980 ms</span> (varies with ATF temperature and ECT) during shift-up.</div>
+<div class="list">―  There is difference between turbine/input shaft speed and output shaft speed sensor speed for<span> 1,500 to 3,900 ms</span> (varies with ATF temperature) while driving without shifting.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0733:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">3GR incorrect ratio</div>
+</td>
+<td id="" align="left">
+<div class="list">•  In D position, 3GR, the following phenomenon occurs:</div>
+<dl>
+<dd class="list">
+<div class="list">―  There is difference between turbine/input shaft speed and output shaft speed sensor speed for <span>230 to 1,980 ms</span> (varies with ATF temperature and ECT) during shift-up.</div>
+<div class="list">―  There is difference between turbine/input shaft speed and output shaft speed sensor speed for<span> 1,500 to 3,900 ms</span> (varies with ATF temperature) while driving without shifting.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0734:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">4GR incorrect ratio</div>
+</td>
+<td id="" align="left">
+<div class="list">•  In D position, 4GR, the following phenomenon occurs:</div>
+<dl>
+<dd class="list">
+<div class="list">―  There is difference between turbine/input shaft speed and output shaft speed sensor speed for <span>230 to 1,980 ms</span> (varies with ATF temperature and ECT) during shift-up.</div>
+<div class="list">―  There is difference between turbine/input shaft speed and output shaft speed sensor speed for<span> 1,500 to 3,900 ms</span> (varies with ATF temperature) while driving without shifting.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0735:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">5GR incorrect ratio</div>
+</td>
+<td id="" align="left">
+<div class="list">•  In D position, 5GR, the following phenomenon occurs:</div>
+<dl>
+<dd class="list">
+<div class="list">―  There is difference between turbine/input shaft speed and output shaft speed sensor speed for <span>230 to 1,980 ms</span> (varies with ATF temperature and ECT) during shift-up.</div>
+<div class="list">―  There is difference between turbine/input shaft speed and output shaft speed sensor speed for<span> 1,500 to 3,900 ms</span> (varies with ATF temperature) while driving without shifting.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0736:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Gear reverse incorrect ratio</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Speed ratio is <span>0.75 to 1.2</span> for <span>2,000 ms</span> while vehicle is stopped in R position.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P073D:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Neutral incorrect ratio</div>
+</td>
+<td id="" align="left">
+<div class="list">•  In P or N position, the following phenomenon occurs:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Speed ratio is <span>0.5 or less</span> for <span>2 s</span> while vehicle is stopped in P or N position.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0741:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCC control solenoid stuck off</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, difference in slip amount <span>over 5 s</span> compared to target slip amount is <span>200 rpm or more</span>, and TCC feedback hydraulic pressure is <span>200 kPa {2.04 kgf/cm<sup>2</sup>, 29.0 psi} or more</span> occurs:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Selector lever position is D position.</div>
+<div class="list">―  No electrical malfunction in TCC control solenoid</div>
+<div class="list">―  During TCC or TCC feedback</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>−25 °C {−13 °F} or more</span>.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0743:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCC control solenoid circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the TCM detects the TCC control solenoid circuit malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10.5 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0746:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Pressure control solenoid stuck off</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, pressure control solenoid stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0748:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Pressure control solenoid circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the TCM detects the pressure control solenoid circuit malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10.5 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0751:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.1 stuck off</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, shift solenoid No.1 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0752:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.1 stuck on</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, shift solenoid No.1 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0753:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.1 circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the TCM detects the shift solenoid No.1 circuit malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10.5 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0756:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.2 stuck off</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, shift solenoid No.2 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0757:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.2 stuck on</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, shift solenoid No.2 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0758:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.2 circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the TCM detects the shift solenoid No.2 circuit malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10.5 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0761:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.3 stuck off</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, shift solenoid No.3 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0762:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.3 stuck on</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, shift solenoid No.3 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0763:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.3 circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the TCM detects the shift solenoid No.3 circuit malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10.5 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0766:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.4 stuck off</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, shift solenoid No.4 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0767:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.4 stuck on</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, shift solenoid No.4 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0768:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.4 circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the TCM detects the shift solenoid No.4 circuit malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10.5 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0771:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">On/off solenoid stuck off</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, on/off solenoid stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0772:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">On/off solenoid stuck on</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, on/off solenoid stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0773:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">On/off solenoid circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the TCM detects the on/off solenoid circuit malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10.5 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0780:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Gear shifting malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Gear ratio malfunction while in any gear 1st to 6th or clutch-slip DTC (P0729:00, P0731:00, P0732:00, P0733:00, P0734:00, P0735:00, P1728:00) occurs and vehicle is driven under gear ratio malfunction condition from fail-safe, or use of gear speeds in which clutch slip occurs is restricted.</div>
+<div class="list">•  Determined that vehicle may be in danger due to clutch not engaging by TCM direction according to signal from the oil pressure switch.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0819:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">M position switch/Up switch/Down switch signal error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, any of (1) to (4) conditions occurs for <span>1 s</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  Battery voltage is <span>8 V or more</span>.</div>
+<div class="list">―  Transaxle range sensor related DTC is not recorded.</div>
+<dl>
+<dd class="list">
+<div class="list">(1) M position switch signal is on even though forward oil pressure switch is on in any position other than D position.</div>
+<div class="list">(2) M position switch signal is off even though up or down switch signal is on in D position.</div>
+<div class="list">(3) Up switch signal is on even though M position switch signal is off in any position other than D position.</div>
+<div class="list">(4) Down switch signal is on even though M position switch signal is off in any position other than D position.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0842:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.1 (Oil pressure switch B) stuck on</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, oil pressure switch No.1 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0843:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.1 (Oil pressure switch B) stuck off</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, oil pressure switch No.1 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0847:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.2 (Oil pressure switch A) stuck on</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, oil pressure switch No.2 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0848:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.2 (Oil pressure switch A) stuck off</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, oil pressure switch No.2 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0872:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.3 (Oil pressure switch A) stuck on</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, oil pressure switch No.3 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0873:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.3 (Oil pressure switch A) stuck off</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, oil pressure switch No.3 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0877:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.4 (Oil pressure switch B) stuck on</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, oil pressure switch No.4 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0878:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.4 (Oil pressure switch B) stuck off</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, oil pressure switch No.4 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0882:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCM power supply voltage low</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, the TCM power supply voltage is <span>8—10.5 V or less</span> (varies with ATF temperature):</div>
+<dl>
+<dd class="list">
+<div class="list">―  <span>5 s or more</span> has elapsed or battery voltage exceeds <span>11 V or more</span> for <span>0.2 s</span> since engine speed increases <span>−200 rpm or more</span> of target idle speed.</div>
+<div class="list">―  Selector lever position is D or R position.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0883:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCM power supply voltage high</div>
+</td>
+<td id="" align="left">
+<div class="list">•  TCM power supply voltage is <span>18 V or more</span> for <span>5 s</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0C2C:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump mechanical malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The actual electric AT oil pump rotation speed under the following conditions is <span>100 rpm or less</span> for a continuous <span>10 s</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Electric AT oil pump rotation speed command value is <span>500 rpm or more</span>.</div>
+<div class="list">―  Electric AT oil pump relay is ON.</div>
+<div class="list">―  DTC P181F:00 and P0C2D:00 are not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0C2D:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump rotation malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The actual electric AT oil pump rotation speed under the following conditions is <span>100 rpm or less</span> for a continuous <span>10 s</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Electric AT oil pump rotation speed command value is <span>500 rpm or more</span>.</div>
+<div class="list">―  Electric AT oil pump relay is ON.</div>
+<div class="list">―  DTC P181F:00 is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P1728:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Clutch slippage</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, turbine/input shaft speed suddenly increases <span>300 rpm or more</span> for <span>1,450 ms</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  Vehicle speed is <span>5 km/h {3 mph} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Not shifting</div>
+<div class="list">―  Selector lever position is D position.</div>
+<div class="list">―  Turbine/input shaft speed is <span>1,200 rpm or more</span>.</div>
+<div class="list">―  Oil pressure switch pattern (1st—6th) is normal.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P1738:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Automatic transaxle internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Malfunction location cannot be determined based on combination of gear ratio malfunction and oil pressure switch pattern malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P1784:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Hi cut valve stuck off/R-3-5 cut valve stuck on</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, hi cut valve stuck-off or R-3-5 cut valve stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine is running.</div>
+<div class="list">―  ATF temperature is <span>20 °C {68 °F} or more</span>.</div>
+<div class="list">―  There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</div>
+<div class="list">―  Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P181F:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump/Electric AT oil pump relay circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the TCM detects any of the following conditions for a continuous <span>5 s</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Electric AT oil pump circuit has a malfunction.</div>
+<div class="list">―  Electric AT oil pump relay circuit has a malfunction.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P2530:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switch stuck off</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the IG ON time count of the instrument cluster proceeds <span>5 s</span> under the following condition:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition switch signal off</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P2712:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pump shift valve stuck</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, oil pressure switch No.1 OFF output continues for <span>10 s</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  During i-stop operation</div>
+<div class="list">―  Selector lever position is D or N position.</div>
+<div class="list">―  During electric AT oil pump operation</div>
+<div class="list">―  Oil pressure switch, low clutch and transaxle range sensor are normal.</div>
+<div class="list">―  Rate of speed change normal</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P2855:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Low clutch hydraulic circuit/sealing malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Slow engaging after operating selector lever from N to D position.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0073:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN system communication error (HS CAN)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, a communication error (HS CAN) occurs:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0074:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN system communication error (local CAN between TCM and PCM)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, a communication error (local CAN between TCM and PCM) occurs:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to PCM (HS CAN)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the TCM cannot receive the signal from PCM (HS CAN):</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0115:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to PCM (local CAN between TCM and PCM)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the TCM cannot receive the signal from PCM (local CAN between TCM and PCM):</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to DSC HU/CM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the TCM cannot receive the signal from DSC HU/CM:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to EPS control module</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the TCM cannot receive the signal from EPS control module:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the TCM cannot receive the signal from instrument cluster:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error to start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the TCM cannot receive the signal from start stop unit:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0442:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Invalid data received from PCM (local CAN between TCM and PCM)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following condition, the TCM detects the invalid PCM signal for <span>0.5 s</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>10 V or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id0502p728010005"></a><p class="topic-title"><span class="topic-head"></span>Drive cycle</p>
+<dl>
+<dd>
+<div class="list">•  The drive cycle is the period of time from when the engine is started to the next time the engine is started.</div>
+<div class="list">•  One drive cycle, as shown in the figure, indicates the period from the time engine is started to the next time the engine is started. If this period is repeated twice it then becomes two drive cycles.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3uun00002080.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3uun00002080</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  To detect DTCs, a required number of drive cycles for pre-detection has been set. For the number of drive cycles required for detection, refer to the DTC table.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0502p728010006"></a><p class="topic-title"><span class="topic-head"></span>Pending code</p>
+<dl>
+<dd>
+<div class="list">•  The pending code is temporary malfunction code which differs from DTCs which are recorded when the TCM detects a transaxle malfunction.</div>
+<div class="list">•  DTCs are recorded in the TCM according to the number of drive cycles when the TCM detects a transaxle malfunction. At the same time, pending code is recorded in the TCM regardless of the number of drive cycles.</div>
+<div class="list">•  Pending code recorded in the TCM is erased from the TCM, from the next drive cycle, when the TCM determines that the transaxle is normal.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0502p728010007"></a><p class="topic-title"><span class="topic-head"></span>Status byte for DTC</p>
+<dl>
+<dd>
+<div class="list">•  The status byte is the two-digit code (two digits after hyphen (-)) after the DTC.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am5uun00000323.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am5uun00000323</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The status byte is a code which indicates the pending code, current/past malfunction status, or warning illumination status.</div>
+<div class="list">•  The status byte can be read by performing a CMDTC self test using the M-MDS.</div>
+<div class="list">•  For details on the status byte, refer to the explanation on the M-MDS when reading the DTC.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0502p728010008"></a><p class="topic-title"><span class="topic-head"></span>Self-test function</p>
+<dl>
+<dd>
+<div class="list">•  When the self-test is implemented, the TCM performs diagnosis of the transaxle control system. If a malfunction is detected with the results of the diagnosis, an applicable DTC is recorded. A recorded DTC can be read by the M-MDS.</div>
+<div class="list">•  By implementing the self-test function, verification of the current malfunction and verification after repair is facilitated.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">CMDTC (Continuous Memory Diagnostic Trouble Code) self-test</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The CMDTC self-test is a function which reads all DTCs recorded in the TCM after the previous DTCs are erased no matter whether they are past malfunctions or current malfunctions.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">KOEO (Key On Engine Off) self-test</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The KOEO self-test can perform malfunction diagnosis of DTCs corresponding to this self-test function when the ignition is switched ON and the engine is stopped. This self-test implements based on the test implementation command signal sent to the TCM from the M-MDS.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0502p728010009"></a><p class="topic-title"><span class="topic-head"></span>Freeze frame data/Snapshot data</p>
+<dl>
+<dd>
+<div class="list-title">Freeze frame data</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The freeze frame data consists of data for vehicle and transaxle control system operation conditions when malfunctions in the transaxle control system are detected and stored in the TCM.</div>
+<div class="list">•  Freeze frame data is stored at the instant the malfunction indicator lamp illuminates, and only a part of the DTC data is stored.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Snapshot data</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The data for all DTCs currently detected is stored.</div>
+<dl>
+<div class="list-title">Recorded DTC timing</div>
+<dd class="list">
+<div class="list">―  For DTCs with one drive cycle, data is recorded during the malfunction determination period.</div>
+<div class="list">―  For DTCs with two drive cycles, data is recorded during non-determination (1st diagnosis) periods.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">Freeze frame data item table</p>
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Freeze frame data item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding PID/DATA monitor item</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">LOAD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Calculated engine load</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH {MPH}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VSS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve position No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RUNTM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">hh:mm:ss</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Time from engine start</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module supply voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP_D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Snapshot data item table</p>
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Snapshot data item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding PID/DATA monitor item</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">LOAD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Calculated engine load</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VSS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH {MPH}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VSS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EG_RUN_TIME</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Time from engine start</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module supply voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">GEAR_SEL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1/2/3/4/5/6</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Gear shift position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">GEAR_SEL</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TSS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turbine/input shaft speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TSS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TFT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ATF temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TFT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OSS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output shaft speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OSS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LOCK_UP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/SLIP/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Torque converter (TCC condition)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LOCK_UP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OIL_PRES_SW2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.2 condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OP_SW2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OIL_PRES_SW1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.1 condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OP_SW1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SS_ON_OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">On/off solenoid condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SS_ON-OFF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TORQUE_DES</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Nm</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Desired engine torque</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TORQUE_DES</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_6</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">6GR is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_5</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">5GR is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_4</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">4GR is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">3GR is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2GR is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1GR is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">R position is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">G_INHIBIT_N</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">N position is inhibited due to malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OIL_PRES_SW4</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.4 condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OP_SW4</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OIL_PRES_SW3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.3 condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OP_SW3</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EOP_RLY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump relay condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EOP_RLY</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SHIFT_CTRL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">DEFAULT/MANUAL/C_CONTROL/HIGH_TEMP/D_MANUAL/FAIL_SAFE</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift control mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SHIFT_CTRL</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SLIP_VALUE</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Actual slip value between TSS and OSS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">HTM_DIS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km {mile}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Travel distance since determination of ATF high temperature mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">HTM_DIS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MST_REC_SFT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The gear shift position before shifting gears is displayed.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SFT_CTL_STS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The shift control execution condition is displayed.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SERIAL_DTC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transaxle range sensor position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">PADDLE_UP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift up operation using steering shift switch.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">PADDLE_UP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">PADDLE_DOWN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift down operation using steering shift switch.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">PADDLE_DOWN</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+</body>
+</html>

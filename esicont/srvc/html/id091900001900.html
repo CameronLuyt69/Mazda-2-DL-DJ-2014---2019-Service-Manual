@@ -1,0 +1,209 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>WINDSHIELD WIPER/WASHER SYSTEM</title>
+</head>
+<body><a name="id091900001900"></a><p class="servinfo-title"><span class="servinfo-head"></span>WINDSHIELD WIPER/WASHER SYSTEM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091900001900</p><br clear="all"><a name="id09190000190001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The windshield wiper and washer system is equipped with continuous (low/high), auto-stop, one-touch wiper, intermittent wiper (without auto wiper system), auto wiper (with auto wiper system), windshield washer and synchronized washer.</div><br clear="all"><a name="id09190000190002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001922.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001922</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09190000190003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003920.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003920</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09190000190004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id09190000190005"></a><p class="topic-title"><span class="topic-head"></span>Continuous low operation</p>
+<p class="list">1.  When the windshield wiper switch is in the LO position (1) with the ignition switched ON (engine off or on), the start stop unit detects (2) windshield wiper switch LO signal.</p>
+<p class="list"></p>
+<p class="list">2.  When the start stop unit detects the windshield wiper switch LO signal, the windshield wiper LO operation request signal is sent (3) to the BCM by CAN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the BCM receives the windshield wiper LO operation request signal, it turns transistor A on (4).</p>
+<p class="list"></p>
+<p class="list">4.  When transistor A turns on, a ground circuit with the wiper INT relay is established (5), and the wiper INT relay turns on (6).</p>
+<p class="list"></p>
+<p class="list">5.  When the wiper INT relay turns on, the windshield wipers operate continuously at low speed (7).</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001924.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001924</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09190000190006"></a><p class="topic-title"><span class="topic-head"></span>Continuous high operation</p>
+<p class="list">1.  When the windshield wiper switch is in the HI position (1) with the ignition switched ON (engine off or on), the start stop unit detects (2) windshield wiper switch LO and HI signals.</p>
+<p class="list"></p>
+<p class="list">2.  When the start stop unit detects the windshield wiper switch LO and HI signals, the windshield wiper HI operation request signal is sent (3) to the BCM by CAN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the BCM receives the windshield wiper HI operation request signal, it turns transistors A and B on (4).</p>
+<p class="list"></p>
+<p class="list">4.  When transistors A and B turn on, a ground circuits with the wiper INT relay and the wiper HI relay are established (5), and the wiper INT relay and wiper HI relay turn on (6).</p>
+<p class="list"></p>
+<p class="list">5.  When the wiper INT relay and wiper HI relay turn on, the windshield wipers operate continuously at high speed (7).</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001925.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001925</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09190000190007"></a><p class="topic-title"><span class="topic-head"></span>Auto-stop operation</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The auto stop switch inside the windshield wiper motor operates as follows according to the operation position of the windshield wipers.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Windshield wipers stopped in park position: Off</div>
+<div class="list">―  Windshield wipers stopped in position other than park: On</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<p class="list">1.  When the windshield wiper switch is switched to the OFF position (1) during the windshield wiper operation, the BCM turns transistor A off (2).</p>
+<p class="list"></p>
+<p class="list">2.  When transistor A is turned off, current flows (3) to the auto stop switch which is on.</p>
+<p class="list"></p>
+<p class="list">3.  The windshield wipers operate to the park position by sending current to the auto stop switch.</p>
+<p class="list"></p>
+<p class="list">4.  When the windshield wipers return to the park position, the auto stop switch turns off (4).</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003916.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003916</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09190000190008"></a><p class="topic-title"><span class="topic-head"></span>One-touch wiper operation</p>
+<p class="list">1.  When the windshield wiper switch is in the MIST position (1) with the ignition switched ON (engine off or on), the start stop unit detects (2) windshield wiper switch LO signal.</p>
+<p class="list"></p>
+<p class="list">2.  When the start stop unit detects the windshield wiper switch LO signal, the windshield wiper LO operation request signal is sent (3) to the BCM by CAN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the BCM receives the windshield wiper LO operation request signal, it turns transistor A on (4).</p>
+<p class="list"></p>
+<p class="list">4.  When transistor A turns on, a ground circuit with the wiper INT relay is established (5), and the wiper INT relay turns on (6).</p>
+<p class="list"></p>
+<p class="list">5.  When the wiper INT relay turns on, the windshield wipers operate at low speed (7).</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001927.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001927</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09190000190009"></a><p class="topic-title"><span class="topic-head"></span>Intermittent wiper operation (Without auto wiper system)</p>
+<p class="list">1.  When the windshield wiper switch is in the INT position (1) with the ignition switched ON (engine off or on), the start stop unit detects (2) windshield wiper switch INT signal.</p>
+<p class="list"></p>
+<p class="list">2.  When the start stop unit detects the windshield wiper switch INT signal, the windshield wiper INT operation request signal and the INT volume signal are sent (3) to the BCM by CAN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the BCM receives the windshield wiper INT operation request signal, it turns transistor A on (4).</p>
+<p class="list"></p>
+<p class="list">4.  When transistor A turns on, a ground circuit with the wiper INT relay is established (5), and the wiper INT relay turns on (6).</p>
+<p class="list"></p>
+<p class="list">5.  When the wiper INT relay turns on, the windshield wipers operate continuously at low speed (7).</p>
+<p class="list"></p>
+<p class="list">6.  When the windshield wipers stop at the park position due to the auto stop operation and after a certain period of time has elapsed, which was calculated based on the INT volume signal, the BCM operates the windshield wipers at a low speed (8). By repeating this, the windshield wipers operate intermittently.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001928.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001928</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09190000190010"></a><p class="topic-title"><span class="topic-head"></span>Auto wiper operation</p>
+<dl>
+<dd>
+<div class="list">•  For details on the auto wiper operation, refer to the [AUTO WIPER SYSTEM]. (See <font class="extxref-label"><a href="id091900000900.html">AUTO WIPER SYSTEM</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09190000190011"></a><p class="topic-title"><span class="topic-head"></span>Synchronized washer operation</p>
+<p class="list">1.  If the windshield washer switch is turned on (1) with the ignition switched ON (engine off or on) and the windshield wipers not operating, the start stop unit detects (2) a windshield washer switch on signal.</p>
+<p class="list"></p>
+<p class="list">2.  The start stop unit sends (3) the windshield washer switch on signal to the BCM via CAN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the BCM receives the windshield washer switch on signal, it sends (4) the windshield washer operation request signal to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">4.  When the electrical supply unit (ESU) receives the windshield washer operation request signal, the washer motor is driven (5) and washer fluid is sprayed from the windshield washer nozzles.</p>
+<p class="list"></p>
+<p class="list">5.  When the BCM receives (6) the windshield washer switch on signal for a certain period of time, it operates (7) the windshield wipers at low speed.</p>
+<p class="list"></p>
+<p class="list">6.  After the windshield washer switch is turned off (8), the windshield wipers operate <span>2 times</span> at low speed and stop.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If the windshield washer switch is turned on while the windshield wipers are operating, windshield wiper operation is continued and the windshield washer operation from (3) to (5) is performed.</div>
+</div>
+</dd>
+</dl>
+</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001929.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001929</div>
+</td>
+</tr>
+</table>
+</p>
+</body>
+</html>

@@ -1,0 +1,3902 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DETERMINING OPEN CIRCUIT LOCATION (HS-CAN) [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id100218000400"></a><p class="servinfo-title"><span class="servinfo-head"></span>DETERMINING OPEN CIRCUIT LOCATION (HS-CAN) [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id100218000400</p>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  Perform the following malfunction diagnosis only when it is diagnosed with a open circuit by CONTROLLER AREA NETWORK (CAN) MALFUNCTION DIAGNOSIS FLOW. (See <font class="extxref-label"><a href="id100218000100.html">CONTROLLER AREA NETWORK (CAN) MALFUNCTION DIAGNOSIS FLOW [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="list">•  If the malfunctioning part is detected in the communication line, before disconnecting the related connector for inspection, press the connector in the connection direction to verify that there is no looseness or disconnection.</div>
+<div class="list">•  When disconnecting the connector, verify that there is no damage, deformation, or corrosion of the connector terminals.</div>
+</div>
+</dd>
+</dl>
+<p class="list">1.  Verify the CAN system-related module DTCs and the failed module on the M-MDS screen.</p>
+<p class="list"></p>
+<p class="list">2.  Apply the communication error DTC and the failed module to DTC output pattern and malfunctioning location, and select the possible cause for the diagnostic result and the reference for the inspection item. (See <font class="intxref-label"><a href="#id10021800040001">DTC Output Pattern And Malfunctioning Location</a></font>.)</p>
+<p class="list">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The open circuit location can be determined by the DTC indicated in the DTC output pattern and malfunctioning location chart. DTCs not listed in the chart are not used for the determination of the open circuit location. (See <font class="intxref-label"><a href="#id10021800040001">DTC Output Pattern And Malfunctioning Location</a></font>.)</div>
+</div>
+</dd>
+</dl>
+</p>
+<p class="list">3.  Inspect the possible cause and inspection item of the applicable malfunctioning part.</p>
+<p class="list"></p>
+<p class="list">4.  After repairs, return to CONTROLLER AREA NETWORK (CAN) MALFUNCTION DIAGNOSIS FLOW, and verify that the repairs have been completed. (See <font class="extxref-label"><a href="id100218000100.html">CONTROLLER AREA NETWORK (CAN) MALFUNCTION DIAGNOSIS FLOW [SKYACTIV-D 1.5]</a></font>.)</p>
+<p class="list"></p><br clear="all"><a name="id10021800040001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>DTC Output Pattern And Malfunctioning Location</p>
+<p clear="all">
+<p>
+<div>Cross (×): Communication error-related DTC and failed module</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="2">
+<p class="thead">M-MDS display</p>
+</th>
+<th id="" align="center" colspan="19" rowspan="2">
+<p class="thead">DTC output pattern and malfunctioning location</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC output module</p>
+</th>
+<th id="" align="center">
+<p class="thead">DTC</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="9">
+<div class="tbody">PCM</div>
+<div class="tbody">(PCM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0101:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0235:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0298:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="6">
+<div class="tbody">ABS</div>
+<div class="tbody">(DSC HU/CM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0101:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0235:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="4">
+<div class="tbody">TCM<sup>*1</sup></div>
+<div class="tbody">(TCM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="3">
+<div class="tbody">ALM<sup>*2</sup></div>
+<div class="tbody">(Auto leveling control module)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="3">
+<div class="tbody">DCDC<sup>*3</sup></div>
+<div class="tbody">(DC-DC converter (i-ELOOP))</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="7">
+<div class="tbody">BCM </div>
+<div class="tbody">(BCM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0101:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U023A:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="4">
+<div class="tbody">SCBS<sup>*4</sup></div>
+<div class="tbody">(Laser sensor)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="6">
+<div class="tbody">FSC<sup>*5</sup></div>
+<div class="tbody">(FORWARD SENSING CAMERA (FSC))</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="4">
+<div class="tbody">RCM</div>
+<div class="tbody">(SAS control module)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0101:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="11">
+<div class="tbody">CMU<sup>*6</sup></div>
+<div class="tbody">(Connectivity master unit (CMU))</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0101:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0182:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0235:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U023A:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="4">
+<div class="tbody">EPS</div>
+<div class="tbody">(EPS control module)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="10">
+<div class="tbody">SSU</div>
+<div class="tbody">(Start stop unit)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0028:87</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0101:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:87</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0146:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="11">
+<div class="tbody">IC</div>
+<div class="tbody">(Instrument cluster)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0101:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0156:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0182:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0235:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U023A:00</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody">M-MDS display module</div>
+</td>
+<td id="" align="center" colspan="19">
+<div class="tbody">[Fail] display pattern</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">ABS</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">TCM<sup>*1</sup></div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">ALM<sup>*2</sup></div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">DCDC<sup>*3</sup></div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">BCM</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">SCBS<sup>*4</sup></div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">FSC<sup>*5</sup></div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">RCM</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">CMU<sup>*6</sup></div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">EPS</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">SSU</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">IC</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="21">
+<div class="tbody">Diagnostic result</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Possible cause and inspection item</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040002">A</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040006">B</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040010">C</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040014">D</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040018">E</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040021">F</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040025">G</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040029">H</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040033">I</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040037">J</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040041">K</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040045">L</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040049">M</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040053">N</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040057">O</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040061">P</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040065">Q</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040069">R</a></font>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">
+<font class="intxref-label"><a href="#id10021800040073">S</a></font>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :ATX</div>
+<div class="deflist">*2  :With headlight auto leveling system</div>
+<div class="deflist">*3  :With i-ELOOP</div>
+<div class="deflist">*4  :With smart city brake support (SCBS)</div>
+<div class="deflist">*5  :With forward sensing camera (FSC)</div>
+<div class="deflist">*6  :With center display</div><br clear="all"><a name="id10021800040002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>A</p><br clear="all"><p><a name="id10021800040003"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  PCM power supply voltage or body ground malfunction</div>
+<div class="list">•  Open circuit in wiring harness between PCM and connector C-30</div>
+<div class="list">•  Connector C-30 malfunction</div>
+<div class="list">•  PCM malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040004"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007490.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007490</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040005"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  PCM power supply voltage or body ground malfunction</div>
+<div class="list">•  PCM body ground related wiring harness</div>
+<div class="list">•  PCM connector</div>
+<div class="list">•  Connector C-30</div>
+<div class="list">•  Wiring harness between PCM terminal 2C and connector C-30</div>
+<div class="list">•  Wiring harness between PCM terminal 2D and connector C-30</div>
+<div class="list">•  PCM</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>B</p><br clear="all"><p><a name="id10021800040007"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  DSC HU/CM power supply voltage or body ground malfunction</div>
+<div class="list">•  Open circuit in wiring harness between DSC HU/CM and connector C-30</div>
+<div class="list">•  Connector C-30 malfunction</div>
+<div class="list">•  DSC HU/CM malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040008"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007491.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007491</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040009"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  DSC HU/CM power supply voltage or body ground malfunction</div>
+<div class="list">•  DSC HU/CM body ground related wiring harness</div>
+<div class="list">•  DSC HU/CM connector</div>
+<div class="list">•  Connector C-30</div>
+<div class="list">•  Wiring harness between DSC HU/CM terminal AF and connector C-30</div>
+<div class="list">•  Wiring harness between DSC HU/CM terminal AC and connector C-30</div>
+<div class="list">•  DSC HU/CM</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040010"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>C</p><br clear="all"><p><a name="id10021800040011"></a><p class="topic-title"><span class="topic-head"></span>ATX</p>
+<dl>
+<dd>
+<div class="list-title">Possible cause</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Open circuit in wiring harness between connector C-30 and connector C-01</div>
+<div class="list">•  Open circuit in wiring harness between connector C-01 and connectors C-31,C-32</div>
+<div class="list">•  Connector C-30 malfunction</div>
+<div class="list">•  Connector C-01 malfunction</div>
+<div class="list">•  Connectors C-31,C-32 malfunction</div>
+</dd>
+</dl>
+<p class="figure-title">System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007492.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007492</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="list-title">Inspection item</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Connector C-30</div>
+<div class="list">•  Connector C-01</div>
+<div class="list">•  Connectors C-31,C-32</div>
+<div class="list">•  Wiring harness between connector C-30 and connector C-01</div>
+<div class="list">•  Wiring harness between connector C-01 and connectors C-31,C-32</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040012"></a><p class="topic-title"><span class="topic-head"></span>MTX (with headlight auto leveling system or i-ELOOP)</p>
+<dl>
+<dd>
+<div class="list-title">Possible cause</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Open circuit in wiring harness between connector C-30 and connector C-01</div>
+<div class="list">•  Open circuit in wiring harness between connector C-01 and connector C-01</div>
+<div class="list">•  Open circuit in wiring harness between connector C-01 and connectors C-28,C-29</div>
+<div class="list">•  Connector C-30 malfunction</div>
+<div class="list">•  Connector C-01 malfunction</div>
+<div class="list">•  Connectors C-28,C-29 malfunction</div>
+</dd>
+</dl>
+<p class="figure-title">System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007493.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007493</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="list-title">Inspection item</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Connector C-30</div>
+<div class="list">•  Connector C-01</div>
+<div class="list">•  Connectors C-28,C-29</div>
+<div class="list">•  Wiring harness between connector C-30 and connector C-01</div>
+<div class="list">•  Wiring harness between connector C-01 and connector C-01</div>
+<div class="list">•  Wiring harness between connector C-01 and connectors C-28,C-29</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040013"></a><p class="topic-title"><span class="topic-head"></span>MTX (without headlight auto leveling system and i-ELOOP)</p>
+<dl>
+<dd>
+<div class="list-title">Possible cause</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Open circuit in wiring harness between connector C-30 and connector C-01</div>
+<div class="list">•  Open circuit in wiring harness between connector C-01 and connector C-01</div>
+<div class="list">•  Open circuit in wiring harness between connector C-01 and BCM</div>
+<div class="list">•  Connector C-30 malfunction</div>
+<div class="list">•  Connector C-01 malfunction</div>
+<div class="list">•  CAN circuit in BCM malfunction</div>
+</dd>
+</dl>
+<p class="figure-title">System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007494.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007494</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="list-title">Inspection item</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Connector C-30</div>
+<div class="list">•  Connector C-01</div>
+<div class="list">•  BCM connector</div>
+<div class="list">•  Wiring harness between connector C-30 and connector C-01</div>
+<div class="list">•  Wiring harness between connector C-01 and connector C-01</div>
+<div class="list">•  Wiring harness between BCM terminal 3C and connector C-01</div>
+<div class="list">•  Wiring harness between BCM terminal 3D and connector C-01</div>
+<div class="list">•  BCM </div>
+<dl>
+<dd class="list">
+<div class="list">―  Between BCM terminal 3C and BCM terminal 2D</div>
+<div class="list">―  Between BCM terminal 3D and BCM terminal 2C</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040014"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>D</p><br clear="all"><p><a name="id10021800040015"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  TCM power supply voltage or body ground malfunction</div>
+<div class="list">•  Open circuit in wiring harness between TCM and connectors C-31,C-32</div>
+<div class="list">•  Connectors C-31,C-32 malfunction</div>
+<div class="list">•  TCM malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040016"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007495.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007495</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040017"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  TCM power supply voltage or body ground malfunction</div>
+<div class="list">•  TCM body ground related wiring harness</div>
+<div class="list">•  TCM connector</div>
+<div class="list">•  Connectors C-31,C-32</div>
+<div class="list">•  Wiring harness between TCM terminal E and connector C-31</div>
+<div class="list">•  Wiring harness between TCM terminal F and connector C-32</div>
+<div class="list">•  TCM</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040018"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>E</p><br clear="all"><p><a name="id10021800040019"></a><p class="topic-title"><span class="topic-head"></span>With headlight auto leveling system or i-ELOOP</p>
+<dl>
+<dd>
+<div class="list-title">Possible cause</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Open circuit in wiring harness between connectors C-31,C-32 and connector C-01</div>
+<div class="list">•  Open circuit in wiring harness between connector C-01 and connectors C-28,C-29</div>
+<div class="list">•  Connectors C-31,C-32 malfunction</div>
+<div class="list">•  Connector C-01 malfunction</div>
+<div class="list">•  Connectors C-28,C-29 malfunction</div>
+</dd>
+</dl>
+<p class="figure-title">System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007496.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007496</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="list-title">Inspection item</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Connectors C-31,C-32</div>
+<div class="list">•  Connector C-01</div>
+<div class="list">•  Connectors C-28,C-29</div>
+<div class="list">•  Wiring harness between connectors C-31,C-32 and connector C-01</div>
+<div class="list">•  Wiring harness between connector C-01 and connectors C-28,C-29</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040020"></a><p class="topic-title"><span class="topic-head"></span>Without headlight auto leveling system or i-ELOOP</p>
+<dl>
+<dd>
+<div class="list-title">Possible cause</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Open circuit in wiring harness between connectors C-31,C-32 and connector C-01</div>
+<div class="list">•  Open circuit in wiring harness between connector C-01 and BCM</div>
+<div class="list">•  Connectors C-31,C-32 malfunction</div>
+<div class="list">•  Connector C-01 malfunction</div>
+<div class="list">•  CAN circuit in BCM malfunction</div>
+</dd>
+</dl>
+<p class="figure-title">System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007497.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007497</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="list-title">Inspection item</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  BCM connector</div>
+<div class="list">•  Connector C-01</div>
+<div class="list">•  Connectors C-31,C-32</div>
+<div class="list">•  Wiring harness between connectors C-31,C-32 and connector C-01</div>
+<div class="list">•  Wiring harness between BCM terminal 3C and connector C-01</div>
+<div class="list">•  Wiring harness between BCM terminal 3D and connector C-01</div>
+<div class="list">•  BCM </div>
+<dl>
+<dd class="list">
+<div class="list">―  Between BCM terminal 3C and BCM terminal 2D</div>
+<div class="list">―  Between BCM terminal 3D and BCM terminal 2C</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040021"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>F</p><br clear="all"><p><a name="id10021800040022"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Auto leveling control module power supply voltage or body ground malfunction</div>
+<div class="list">•  Open circuit in wiring harness between auto leveling control module and connectors C-28,C-29</div>
+<div class="list">•  Connectors C-28,C-29 malfunction</div>
+<div class="list">•  Auto leveling control module malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040023"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007498.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007498</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040024"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  Auto leveling control module power supply voltage or body ground malfunction</div>
+<div class="list">•  Auto leveling control module body ground related wiring harness</div>
+<div class="list">•  Auto leveling control module connector</div>
+<div class="list">•  Connectors C-28,C-29</div>
+<div class="list">•  Wiring harness between auto leveling control module terminal AB and connector C-28</div>
+<div class="list">•  Wiring harness between auto leveling control module terminal AD and connector C-29</div>
+<div class="list">•  Auto leveling control module</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040025"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>G</p><br clear="all"><p><a name="id10021800040026"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  DC-DC converter (i-ELOOP) power supply voltage or body ground malfunction</div>
+<div class="list">•  Open circuit in wiring harness between DC-DC converter (i-ELOOP) and connectors C-28,C-29</div>
+<div class="list">•  Connectors C-28,C-29 malfunction</div>
+<div class="list">•  DC-DC converter (i-ELOOP) malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040027"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007499.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007499</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040028"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  DC-DC converter (i-ELOOP) power supply voltage or body ground malfunction</div>
+<div class="list">•  DC-DC converter (i-ELOOP) body ground related wiring harness</div>
+<div class="list">•  DC-DC converter (i-ELOOP) connector</div>
+<div class="list">•  Connectors C-28,C-29</div>
+<div class="list">•  Wiring harness between DC-DC converter (i-ELOOP) terminal 1M and connector C-28</div>
+<div class="list">•  Wiring harness between DC-DC converter (i-ELOOP) terminal 1N and connector C-29</div>
+<div class="list">•  DC-DC converter (i-ELOOP)</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040029"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>H</p><br clear="all"><p><a name="id10021800040030"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Open circuit in wiring harness between connectors C-28,C-29 and BCM</div>
+<div class="list">•  Connectors C-28,C-29 malfunction</div>
+<div class="list">•  CAN circuit in BCM malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040031"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007500.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007500</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040032"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  Connectors C-28,C-29</div>
+<div class="list">•  BCM connector</div>
+<div class="list">•  Wiring harness between BCM terminal 3C and connector C-28</div>
+<div class="list">•  Wiring harness between BCM terminal 3D and connector C-29</div>
+<div class="list">•  BCM </div>
+<dl>
+<dd class="list">
+<div class="list">―  Between BCM terminal 3C and BCM terminal 2D</div>
+<div class="list">―  Between BCM terminal 3D and BCM terminal 2C</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040033"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>I</p><br clear="all"><p><a name="id10021800040034"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  BCM power supply voltage or body ground malfunction</div>
+<div class="list">•  BCM malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040035"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007501.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007501</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040036"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  BCM power supply voltage or body ground malfunction</div>
+<div class="list">•  BCM body ground related wiring harness</div>
+<div class="list">•  BCM </div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040037"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>J</p><br clear="all"><p><a name="id10021800040038"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Open circuit in wiring harness between BCM and connector C-07</div>
+<div class="list">•  Open circuit in wiring harness between connector C-07 and connector C-11</div>
+<div class="list">•  Open circuit in wiring harness between connector C-11 and connectors C-51,C-52</div>
+<div class="list">•  Connector C-07 malfunction</div>
+<div class="list">•  Connector C-11 malfunction</div>
+<div class="list">•  Connectors C-51,C-52 malfunction</div>
+<div class="list">•  CAN circuit in BCM malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040039"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007502.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007502</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040040"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  Connector C-07</div>
+<div class="list">•  Connector C-11</div>
+<div class="list">•  Connectors C-51,C-52</div>
+<div class="list">•  BCM connector</div>
+<div class="list">•  Wiring harness between BCM terminal 2D and connector C-07</div>
+<div class="list">•  Wiring harness between BCM terminal 2C and connector C-07</div>
+<div class="list">•  Wiring harness between connector C-07 and connector C-11</div>
+<div class="list">•  Wiring harness between connector C-11 and connectors C-51,C-52</div>
+<div class="list">•  BCM </div>
+<dl>
+<dd class="list">
+<div class="list">―  Between BCM terminal 3C and BCM terminal 2D</div>
+<div class="list">―  Between BCM terminal 3D and BCM terminal 2C</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040041"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>K</p><br clear="all"><p><a name="id10021800040042"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Laser sensor power supply voltage or body ground malfunction</div>
+<div class="list">•  Open circuit in wiring harness between laser sensor and connectors C-51,C-52</div>
+<div class="list">•  Connectors C-51,C-52 malfunction</div>
+<div class="list">•  Laser sensor malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040043"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007503.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007503</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040044"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  Laser sensor power supply voltage or body ground malfunction</div>
+<div class="list">•  Laser sensor body ground related wiring harness</div>
+<div class="list">•  Laser sensor connector</div>
+<div class="list">•  Connectors C-51,C-52</div>
+<div class="list">•  Wiring harness between laser sensor terminal D and connector C-51</div>
+<div class="list">•  Wiring harness between laser sensor terminal C and connector C-52</div>
+<div class="list">•  Laser sensor</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040045"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>L</p><br clear="all"><p><a name="id10021800040046"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Forward sensing camera (FSC) power supply voltage or body ground malfunction</div>
+<div class="list">•  Open circuit in wiring harness between forward sensing camera (FSC) and connector C-23</div>
+<div class="list">•  Open circuit in wiring harness between connector C-23 and connectors C-51,C-52</div>
+<div class="list">•  Connector C-23 malfunction</div>
+<div class="list">•  Connectors C-51,C-52 malfunction</div>
+<div class="list">•  Forward sensing camera (FSC) malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040047"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007504.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007504</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040048"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  Forward sensing camera (FSC) power supply voltage or body ground malfunction</div>
+<div class="list">•  Forward sensing camera (FSC) body ground related wiring harness</div>
+<div class="list">•  Forward sensing camera (FSC) connector</div>
+<div class="list">•  Connectors C-51,C-52</div>
+<div class="list">•  Connector C-23</div>
+<div class="list">•  Wiring harness between forward sensing camera (FSC) terminal E and connector C-23</div>
+<div class="list">•  Wiring harness between forward sensing camera (FSC) terminal C and connector C-23</div>
+<div class="list">•  Wiring harness between connector C-23 and connectors C-51,C-52</div>
+<div class="list">•  Forward sensing camera (FSC)</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040049"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>M</p><br clear="all"><p><a name="id10021800040050"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Open circuit in wiring harness between connectors C-51,C-52 and connector C-11</div>
+<div class="list">•  Open circuit in wiring harness between connector C-11 and connector C-36</div>
+<div class="list">•  Connectors C-51,C-52 malfunction</div>
+<div class="list">•  Connector C-11 malfunction</div>
+<div class="list">•  Connector C-36 malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040051"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007505.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007505</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040052"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  Connectors C-51,C-52</div>
+<div class="list">•  Connector C-11</div>
+<div class="list">•  Connector C-36</div>
+<div class="list">•  Wiring harness between connectors C-51,C-52 and connector C-11</div>
+<div class="list">•  Wiring harness between connector C-11 and connector C-36</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040053"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>N</p><br clear="all"><p><a name="id10021800040054"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  SAS control module power supply voltage or body ground malfunction</div>
+<div class="list">•  Open circuit in wiring harness between SAS control module and connector C-36</div>
+<div class="list">•  Connector C-36 malfunction</div>
+<div class="list">•  SAS control module malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040055"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007506.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007506</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040056"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="attention1-label">Warning</div>
+</dd>
+<dd>
+<div class="attention1">
+<div class="list">•  Handling the component parts of the SRS air bag system improperly can accidentally operate (deploy) the air bag module, which may seriously injure you. To prevent this, always read the SRS air bag system service warnings and cautions before handling the SRS air bag system components.<div>(See <font class="extxref-label"><a href="id0810b1802400.html">AIR BAG SYSTEM SERVICE WARNINGS [TWO-STEP DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0810b2802400.html">AIR BAG SYSTEM SERVICE WARNINGS [STANDARD DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0810b1802300.html">AIR BAG SYSTEM SERVICE CAUTIONS [TWO-STEP DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0810b2802300.html">AIR BAG SYSTEM SERVICE CAUTIONS [STANDARD DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+</div>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  SAS control module power supply voltage or body ground malfunction</div>
+<div class="list">•  SAS control module body ground related wiring harness</div>
+<div class="list">•  SAS control module connector</div>
+<div class="list">•  Connector C-36</div>
+<div class="list">•  Wiring harness between SAS control module terminal 3Q and connector C-36</div>
+<div class="list">•  Wiring harness between SAS control module terminal 3S and connector C-36</div>
+<div class="list">•  SAS control module</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040057"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>O</p><br clear="all"><p><a name="id10021800040058"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Connectivity master unit (CMU) power supply voltage or body ground malfunction</div>
+<div class="list">•  Wiring harness between connectivity master unit (CMU) and connector C-36</div>
+<div class="list">•  Connector C-36 malfunction</div>
+<div class="list">•  Connectivity master unit (CMU) malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040059"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007507.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007507</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040060"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  Connectivity master unit (CMU) power supply voltage or body ground malfunction</div>
+<div class="list">•  Connectivity master unit (CMU) body ground related wiring harness</div>
+<div class="list">•  Connectivity master unit (CMU) connector</div>
+<div class="list">•  Connector C-36</div>
+<div class="list">•  Wiring harness between connectivity master unit (CMU) terminal 2E and connector C-36</div>
+<div class="list">•  Wiring harness between connectivity master unit (CMU) terminal 2F and connector C-36</div>
+<div class="list">•  Connectivity master unit (CMU)</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040061"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>P</p><br clear="all"><p><a name="id10021800040062"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  EPS control module power supply voltage or body ground malfunction</div>
+<div class="list">•  Open circuit in wiring harness between EPS control module and connector C-36</div>
+<div class="list">•  Connector C-36 malfunction</div>
+<div class="list">•  EPS control module malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040063"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007508.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007508</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040064"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  EPS control module power supply voltage or body ground malfunction</div>
+<div class="list">•  EPS control module body ground related wiring harness</div>
+<div class="list">•  EPS control module connector</div>
+<div class="list">•  Connector C-36</div>
+<div class="list">•  Wiring harness between EPS control module terminal 1G and connector C-36</div>
+<div class="list">•  Wiring harness between EPS control module terminal 1H and connector C-36</div>
+<div class="list">•  EPS control module</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040065"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Q</p><br clear="all"><p><a name="id10021800040066"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Open circuit in wiring harness between connector C-36 and connector C-37</div>
+<div class="list">•  Connector C-36 malfunction</div>
+<div class="list">•  Connector C-37 malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040067"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007509.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007509</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040068"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  Connector C-36</div>
+<div class="list">•  Connector C-37</div>
+<div class="list">•  Wiring harness between connector C-36 and connector C-37</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040069"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>R</p><br clear="all"><p><a name="id10021800040070"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Start stop unit power supply voltage or body ground malfunction</div>
+<div class="list">•  Open circuit in wiring harness between start stop unit and connector C-37</div>
+<div class="list">•  Connector C-37 malfunction</div>
+<div class="list">•  Start stop unit malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040071"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007510.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007510</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040072"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  Start stop unit power supply voltage or body ground malfunction</div>
+<div class="list">•  Start stop unit body ground related wiring harness</div>
+<div class="list">•  Start stop unit connector</div>
+<div class="list">•  Connector C-37</div>
+<div class="list">•  Wiring harness between start stop unit terminal 2M and connector C-37</div>
+<div class="list">•  Wiring harness between start stop unit terminal 2O and connector C-37</div>
+<div class="list">•  Start stop unit</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10021800040073"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>S</p><br clear="all"><p><a name="id10021800040074"></a><p class="topic-title"><span class="topic-head"></span>Possible cause</p>
+<dl>
+<dd>
+<div class="list">•  Connector terminal disconnection, poor contact, damage, deformation, corrosion</div>
+<div class="list">•  Instrument cluster power supply voltage or body ground malfunction</div>
+<div class="list">•  Open circuit in wiring harness between instrument cluster and connector C-37</div>
+<div class="list">•  Connector C-37 malfunction</div>
+<div class="list">•  Instrument cluster malfunction</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10021800040075"></a><p class="topic-title"><span class="topic-head"></span>System wiring diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00007511.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00007511</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10021800040076"></a><p class="topic-title"><span class="topic-head"></span>Inspection item</p>
+<dl>
+<dd>
+<div class="list">•  Instrument cluster power supply voltage or body ground malfunction</div>
+<div class="list">•  Instrument cluster body ground related wiring harness</div>
+<div class="list">•  Instrument cluster connector</div>
+<div class="list">•  Connector C-37</div>
+<div class="list">•  Wiring harness between instrument cluster terminal 1B and connector C-37</div>
+<div class="list">•  Wiring harness between instrument cluster terminal 1D and connector C-37</div>
+<div class="list">•  Instrument cluster</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>FUEL GAUGE READING IS NOT CORRECT [INSTRUMENT CLUSTER]</title>
+</head>
+<body><a name="id0903d5012800"></a><p class="servinfo-title"><span class="servinfo-head"></span>FUEL GAUGE READING IS NOT CORRECT [INSTRUMENT CLUSTER]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0903d5012800</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If there is any vehicle malfunction complaint lodged by a customer, perform FOREWORD [INSTRUMENT CLUSTER] malfunction diagnosis according to the troubleshooting procedure. (See <font class="extxref-label"><a href="id0903d5715000.html">FOREWORD [INSTRUMENT CLUSTER]</a></font>.)</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0903d501280001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Possible cause</p>
+<div class="list">•  Instrument cluster malfunction</div>
+<div class="list">•  BCM malfunction</div>
+<div class="list">•  Fuel gauge sender unit malfunction</div>
+<div class="list">•  Open or short circuit in wiring harness between fuel gauge sensor unit and BCM</div><br clear="all"><a name="id0903d501280002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Diagnostic Procedure</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center">
+<p class="thead">Inspection</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Action</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="list-title">PERFORM CAN MALFUNCTION DIAGNOSIS AND DTC INSPECTION</div>
+<div class="list">•  Perform the CAN malfunction diagnosis according to the recommendation of <font class="extxref-label"><a href="id0903d5715000.html">FOREWORD [INSTRUMENT CLUSTER]</a></font> malfunction diagnosis, and if there is no CAN malfunction, perform inspection for DTCs.<div>(See <font class="extxref-label"><a href="id0902e8960300.html">DTC INSPECTION [INSTRUMENT CLUSTER]</a></font>.)</div>
+</div>
+<div class="list">•  Is the DTC displayed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0902e8960500.html">DTC TABLE [INSTRUMENT CLUSTER]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="list-title">INSPECTION OF INSTRUMENT CLUSTER</div>
+<div class="list">•  Perform inspection of the fuel gauge/multi-information display referring to the instrument cluster inspection.<div>(See <font class="extxref-label"><a href="id092200010600.html">INSTRUMENT CLUSTER INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is the display normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the instrument cluster.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id092200010300.html">INSTRUMENT CLUSTER REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="list-title">DETERMINE IF MALFUNCTION CAUSE IS FUEL GAUGE SENDER</div>
+<div class="list">•  Display the following BCM PIDs using the M-MDS.</div>
+<dl>
+<dd class="list">
+<div class="list">―  FUEL_SEN_M</div>
+</dd>
+</dl>
+<div class="list">•  Verify the voltage in the display monitor while shaking the vehicle.</div>
+<div class="list">•  Does the voltage change?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 5.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="list-title">DETERMINE IF MALFUNCTION CAUSE IS BCM</div>
+<div class="list">•  Display the following instrument cluster PIDs using the M-MDS.</div>
+<dl>
+<dd class="list">
+<div class="list">―  FUEL_SEN_M</div>
+</dd>
+</dl>
+<div class="list">•  Verify the resistance in the display monitor while shaking the vehicle.</div>
+<div class="list">•  Does the resistance change?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the instrument cluster.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id092200010300.html">INSTRUMENT CLUSTER REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the BCM.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id094000003800.html">BODY CONTROL MODULE (BCM) REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="list-title">INSPECT FUEL GAUGE SENDER UNIT</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Inspect the fuel gauge sender unit.<div>(See <font class="extxref-label"><a href="id092200012100.html">FUEL GAUGE SENDER UNIT INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is the fuel gauge sender unit normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refer to the wiring diagram and verify whether or not there is a common connector between the fuel gauge sender unit and the BCM.</div>
+<div class="list-title">If there is a common connector:</div>
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the mid-wiring harness for a short to power supply.</div>
+<div class="list">•  Repair or replace the wiring harness which has a malfunction.</div>
+<div class="list-title">If there is no common connector:</div>
+<div class="list">•  Repair or replace the wiring harness which has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the fuel gauge sender unit.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id092200012000.html">FUEL GAUGE SENDER UNIT REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

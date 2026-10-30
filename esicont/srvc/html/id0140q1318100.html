@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ELECTRIC VARIABLE VALVE TIMING CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0140q1318100"></a><p class="servinfo-title"><span class="servinfo-head"></span>ELECTRIC VARIABLE VALVE TIMING CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140q1318100</p><br clear="all"><a name="id0140q131810001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>SKYACTIV-G 1.5 (With 4-2-1 Exhaust System)</p><br clear="all"><p><a name="id0140q131810002"></a><p class="topic-title"><span class="topic-head"></span>Outline</p>
+<dl>
+<dd>
+<div class="list">•  The PCM determines the optimum intake valve timing according to the engine operation conditions, and sends the motor drive signals to the electric variable valve timing driver. With the adoption of the electric drive system, variable intake valve timing can be controlled without any influence from the engine conditions, thus the fuel economy has been improved and pumping loss has been decreased.</div>
+<div class="list">•  Based on the coordination with the hydraulic variable valve timing control and by increasing the amount of overlap during high engine loads, nitrogen oxide (NOx) occurring largely at high temperatures is reduced by re-circulating exhaust gas into the combustion chamber which reduces combustion temperature.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q131810003"></a><p class="topic-title"><span class="topic-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003441.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003441</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0140q131810004"></a><p class="topic-title"><span class="topic-head"></span>Operation</p>
+<dl>
+<dd>
+<div class="list-title">Intake valve timing determination</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The PCM determines the optimum target intake valve timing according to the engine operation conditions, and controls the output duty ratio to the electric variable valve timing driver so that the actual intake valve timing approaches close to the target intake valve timing.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Target valve timing</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The target intake valve timing is determined according to the engine speed, charging efficiency, and engine coolant temperature.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Actual valve timing</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The actual intake valve timing is calculated by adding a correction, which is based on the electric variable valve timing actuator signal value, to the value calculated by subtracting the cam maximum retard learning value from the standard intake valve timing.</div>
+<div class="list">•  The standard intake valve timing is calculated based on the signals from the CKP and CMP sensors.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Cam maximum retard learning value</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The cam maximum retard learning value is determined by the maximum retard indication output from the PCM and the standard intake valve timing when the standard intake valve timing is stabilized.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Output duty ratio determination</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The PCM divides the electric variable valve timing motor drive range modes according to the engine operation conditions, and determines the output duty ratio to the electric variable valve timing actuator in each mode.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Mode name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Control description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Control conditions</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Feedback mode</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Continuously monitors the intake valve timing if it matches the target intake valve timing determined according to the engine operation condition, and controls the output duty ratio based on the result.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Except for energization cut mode and phase holding mode</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Energization cut mode</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If there is any malfunction in the electric variable valve timing driver, the intake valve timing is held at the maximum retard position to stabilize the engine speed.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electric variable valve timing driver malfunction</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Phase holding mode</div>
+</td>
+<td id="" align="left">
+<div class="list">•  To improve the startability, the phase of the electric variable valve timing actuator is held at the intermediate position after the engine is stopped.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  After the engine is stopped<div> (Depending on the engine coolant temperature, operates after a certain period has elapsed from when the engine was stopped to suppress heating of the electric variable valve timing motor.)</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+</body>
+</html>

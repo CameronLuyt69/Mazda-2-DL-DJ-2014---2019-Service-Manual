@@ -1,0 +1,252 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>AUTO LEVELING CONTROL MODULE</title>
+</head>
+<body><a name="id091800011000"></a><p class="servinfo-title"><span class="servinfo-head"></span>AUTO LEVELING CONTROL MODULE</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091800011000</p><br clear="all"><a name="id09180001100001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The auto leveling control module calculates the target optical axis based on the vehicle height signal from the auto leveling sensor and outputs the target optical axis signal to the headlight leveling actuator.</div><br clear="all"><a name="id09180001100002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The auto leveling control module controls the headlight auto leveling system and detects a malfunction in the headlight (LED type) circuit.</div><br clear="all"><p><a name="id09180001100003"></a><p class="topic-title"><span class="topic-head"></span>Vehicle height record function while vehicle is unoccupied</p>
+<dl>
+<dd>
+<div class="list">•  When the auto leveling control module performs the headlight auto leveling system initial setting, it inputs the vehicle height from the auto leveling sensor and records the vehicle height while the vehicle is unoccupied.</div>
+<div class="list">•  The vehicle height in the unloaded condition recorded by the auto leveling control module is not cleared even if the battery is disconnected.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09180001100004"></a><p class="topic-title"><span class="topic-head"></span>Automatic configuration function</p>
+<dl>
+<dd>
+<div class="list">•  When the ignition is switched ON (engine off or on) after the auto leveling control module is replaced, the auto leveling control module reads the vehicle specification information sent via CAN communication from the instrument cluster, and stores the vehicle specification information.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09180001100005"></a><p class="topic-title"><span class="topic-head"></span>On-board diagnostic function</p>
+<dl>
+<dd>
+<div class="list">•  The auto leveling control module is equipped with an on-board diagnosis function which records DTCs in the event of a malfunction.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Malfunction detection function</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The auto leveling control module detects a malfunction of the headlight auto leveling system related parts.</div>
+<div class="list">•  The auto leveling control module detects a malfunction in the headlight (LED type) circuit based on the circuit for the malfunction detection equipped in the front combination light.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00003501.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00003501</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Display function</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If any malfunction is detected, the LED headlight warning light in the instrument cluster flashes to notify the driver of a system malfunction.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Burnt out bulb check function</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When the ignition is switched ON (engine off or on), the auto leveling control module turns the LED headlight warning light on for <span>approx. 3 s</span> and performs a burnt out bulb check.</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09180001100006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The auto leveling control module is located inside the dashboard.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001719.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001719</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180001100007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id09180001100008"></a><p class="topic-title"><span class="topic-head"></span>Headlight auto leveling system</p>
+<dl>
+<dd>
+<div class="list">•  For the headlight auto leveling system operation, refer to the [HEADLIGHT AUTO LEVELING SYSTEM]. (See <font class="extxref-label"><a href="id091800010900.html">HEADLIGHT AUTO LEVELING SYSTEM</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09180001100009"></a><p class="topic-title"><span class="topic-head"></span>Headlight (LED type) circuit malfunction detection</p>
+<dl>
+<dd>
+<div class="list">•  For the operation of the headlight (LED type) circuit malfunction detection, refer to the [LED HEADLIGHT WARNING LIGHT]. (See <font class="extxref-label"><a href="id091800014700.html">LED HEADLIGHT WARNING LIGHT</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09180001100010"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1041:54</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The headlight leveling actuator is stopped at the position when the malfunction is determined.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1044:01</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The headlight leveling actuator is stopped at the position when the malfunction is determined.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D00:13</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Control of the headlight auto leveling system is continued.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1D01:13</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Control of the headlight auto leveling system is continued.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:88</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The headlight leveling actuator is stopped at the position when the malfunction is determined.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The headlight leveling actuator is stopped at the position when the malfunction is determined.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The headlight leveling actuator is stopped at the position when the malfunction is determined.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Control of the headlight auto leveling system is continued.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0423:68</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Control of the headlight auto leveling system is continued.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2005:86</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The headlight leveling actuator is stopped at the position when the malfunction is determined.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:54</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Control of the headlight auto leveling system is continued.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:55</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The headlight leveling actuator is stopped at the position when the malfunction is determined.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:56</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Control of the headlight auto leveling system is continued.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:42</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The headlight leveling actuator is stopped at the position when the malfunction is determined.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:49</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The headlight leveling actuator is stopped at the position when the malfunction is determined.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The headlight leveling actuator is stopped at the position when the malfunction is determined.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:17</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The headlight leveling actuator is stopped at the position when the malfunction is determined.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

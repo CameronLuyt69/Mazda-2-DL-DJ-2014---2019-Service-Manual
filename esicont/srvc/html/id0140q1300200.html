@@ -1,0 +1,279 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ADJUSTABLE SPEED LIMITER [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0140q1300200"></a><p class="servinfo-title"><span class="servinfo-head"></span>ADJUSTABLE SPEED LIMITER [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140q1300200</p><br clear="all"><a name="id0140q130020001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose, Outline</p>
+<div class="list">•  For the purpose of safety performance improvement, the adjustable speed limiter restricts unintended excess vehicle speed by allowing the driver to optionally set the maximum vehicle speed.</div>
+<div class="list">•  The adjustable speed limiter restricts the engine output so that the vehicle speed does not exceed the set maximum vehicle speed even if the accelerator pedal is being depressed.</div>
+<div class="list">•  The adjustable speed limiter does not operate simultaneously with the cruise control system.</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Because the brakes are not used during engine output restriction, the vehicle speed could exceed the set maximum speed limit when the vehicle is descending a slope.</div>
+<div class="list">•  If the maximum vehicle speed exceeds the specified value, the instrument cluster flashes the maximum speed indicated in the display and activates the buzzer to warn the driver.</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0140q130020002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The driver can change the adjustable speed limiter control condition by operating each type of switch on the steering wheel.</div>
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003433.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003433</div>
+</td>
+</tr>
+</table>
+<p clear="all">
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">SPEED LIMITER SWITCH</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the speed limiter switch is pressed, the adjustable speed limiter control condition goes on maximum vehicle speed setting standby.</div>
+<div class="list">•  The standby condition can be canceled by pressing the speed limiter switch while the adjustable speed limiter is on maximum vehicle speed setting standby.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SET (+)/SET (-) SWITCH</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The maximum vehicle speed can be set.</div>
+<div class="list">•  Short-pressing the SET (+)/SET (-) switch adjusts the maximum vehicle speed in <span>1 km/h {0.6 mph}</span> increments, and long-pressing it adjusts it in <span>10 km/h {6.2 mph}</span> increments. Additionally, the maximum speed limit can be set between <span>30 km/h {19 mph}</span> and <span>200 km/h {124 mph}</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RESUME SWITCH</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The maximum vehicle speed can be set to the previous maximum vehicle speed recorded by the PCM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CANCEL SWITCH</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the CANCEL button is pressed while the adjustable speed limiter control is operating, the adjustable speed limiter control is temporarily canceled.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0140q130020003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003434.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003434</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140q130020004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The adjustable speed limiter control condition switches according to the driving conditions/each type of switch operation.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003435.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003435</div>
+</td>
+</tr>
+</table>
+<div class="list">•  When the variable speed limiter control transitions to a limiter temporarily canceled condition due to kickdown, if the actual vehicle speed exceeds the maximum vehicle speed by 3 km/h or more, the maximum vehicle speed flashes.</div>
+<div class="list">•  When the CANCEL switch is pressed, the variable speed limiter control is temporarily stopped.</div>
+<div class="list">•  While the adjustable speed limiter control is operating, the PCM restricts the engine output so that the maximum vehicle speed is not exceeded even if the accelerator pedal is depressed.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="left">
+<p class="thead"> </p>
+</th>
+<th id="" align="center">
+<p class="thead">NORMAL DRIVING</p>
+</th>
+<th id="" align="center">
+<p class="thead">DURING ENGINE OUTPUT RESTRICTION</p>
+<p class="thead">(MAXIMUM VEHICLE SPEED: <span>50 km/h {31 mph}</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">ACCELERATOR PEDAL OPENING ANGLE SIGNAL</div>
+</td>
+<td id="" align="left"><img src="images/acmjjc00000079.png"></td>
+<td id="" align="left"><img src="images/acmjjc00000079.png"></td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VEHICLE SPEED</div>
+</td>
+<td id="" align="left"><img src="images/acmzzw00000192.png"></td>
+<td id="" align="left"><img src="images/am3zzn00004572.png"></td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="list">•  If the actual vehicle speed while descending a slope exceeds the maximum vehicle speed by <span>3 km/h {2 mph}</span> or more, the PCM sends a adjustable speed limiter warning alarm activation request to the instrument cluster.The PCM cancels the activation request to the instrument cluster if the actual vehicle speed is decreased <span>3 km/h {2 mph}</span> lower than the maximum vehicle speed.</div>
+<div class="list">•  The instrument cluster receives the activation request from the PCM and activates the adjustable speed limiter warning alarm.</div><br clear="all"><p><a name="id0140q130020005"></a><p class="topic-title"><span class="topic-head"></span>Engine output restriction method</p>
+<dl>
+<dd>
+<div class="list">•  The PCM restricts the engine output using the following controls.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Drive-by-wire control</div>
+<dl>
+<dd class="list">
+<div class="list">•  Engine output is restricted by adjusting the throttle valve opening angle.</div>
+</dd>
+</dl>
+<div class="list">―  Fuel injection control</div>
+<dl>
+<dd class="list">
+<div class="list">•  Engine output is restricted by performing fuel-cutting.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  The TCM shifts the gears optimally according to the control condition signal/set vehicle speed signal from the PCM.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q130020006"></a><p class="topic-title"><span class="topic-head"></span>Engine output restriction cancelation</p>
+<dl>
+<dd>
+<div class="list">•  While the adjustable speed limiter control is operating, the engine output restriction can be canceled by performing the following operations.</div>
+<dl>
+<dd class="list">
+<div class="list">―  CANCEL switch is ON</div>
+<div class="list">―  Kickdown</div>
+<div class="list">―  Speed limiter switch is OFF<sup>*</sup></div>
+<div class="list">―  Engine switch is OFF<sup>*</sup></div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="deflist">*  :The adjustable speed limiter control condition is OFF.</div>
+</p><br clear="all"><p><a name="id0140q130020007"></a><p class="topic-title"><span class="topic-head"></span>Instrument cluster display</p>
+<dl>
+<dd>
+<div class="list">•  The adjustable speed limiter control condition/maximum vehicle speed is indicated in the instrument cluster.</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzn00004393.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzn00004393</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="list">•  The content displayed in the instrument cluster based on the adjustable speed limiter control condition is as follows.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">ADJUSTABLE SPEED LIMITER CONTROL CONDITION</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSTRUMENT CLUSTER DISPLAY</p>
+</th>
+<th id="" align="center">
+<p class="thead">NOTE</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center"><img src="images/acmzzw00000199.png"></td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAXIMUM VEHICLE SPEED SETTING STANDBY</div>
+</td>
+<td id="" align="center"><img src="images/acmzzw00000195.png"></td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LIMITER STANDBY</div>
+</td>
+<td id="" align="center"><img src="images/acmzzw00000196.png"></td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LIMITER OPERATION</div>
+<div class="tbody">(ACTUAL VEHICLE SPEED &lt; MAXIMUM VEHICLE SPEED)</div>
+</td>
+<td id="" align="center"><img src="images/acmzzw00000196.png"></td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LIMITER OPERATION</div>
+<div class="tbody">(ACTUAL VEHICLE SPEED &gt; MAXIMUM VEHICLE SPEED)</div>
+</td>
+<td id="" align="center"><img src="images/acmzzw00000197.png"></td>
+<td id="" align="left">
+<div class="list">•  The maximum vehicle speed “100" flashes, and the adjustable speed limiter warning alarm activates.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LIMITER TEMPORARILY CANCELED</div>
+</td>
+<td id="" align="center"><img src="images/acmzzw00000198.png"></td>
+<td id="" align="left">
+<div class="list">•  When the variable speed limiter control transitions to a limiter temporarily canceled condition due to kickdown, if the actual vehicle speed exceeds the maximum vehicle speed by 3 km/h or more, the maximum vehicle speed “100” flashes.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+</body>
+</html>

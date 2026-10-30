@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<content type="PDF">
+	<description>
+		<code>illust_index</code>
+		<name>SRT PDF ILLUST_INDEX</name>
+		<note>ILLUSTのSRT-PDFコンテンツです。</note>
+	</description>
+	<source>
+		<startup>illust_index/Top_page.pdf</startup>
+	</source>
+</content>

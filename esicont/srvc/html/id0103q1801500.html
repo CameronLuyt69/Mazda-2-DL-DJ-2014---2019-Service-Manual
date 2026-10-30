@@ -1,0 +1,466 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>NO.9 FAST IDLE/RUNS ON [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0103q1801500"></a><p class="servinfo-title"><span class="servinfo-head"></span>NO.9 FAST IDLE/RUNS ON [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0103q1801500</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">9</p>
+</th>
+<th id="" align="left">
+<p class="thead">FAST IDLE/RUNS ON</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>DESCRIPTION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Engine speed continues at fast idle after warm-up.</div>
+<div class="list">•  Engine runs after ignition switch is turned off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Cooling system malfunction</div>
+<div class="list">•  PCM DTC is stored</div>
+<div class="list">•  Accelerator pedal stuck depressed</div>
+<div class="list">•  Erratic signal to PCM</div>
+<dl>
+<dd class="list">
+<div class="list">―  APP sensor or related circuit malfunction</div>
+<div class="list">―  CPP switch or related circuit malfunction (MTX)</div>
+<div class="list">―  Neutral switch No.1 or related circuit malfunction (MTX)</div>
+<div class="list">―  Communication error between TCM and PCM (ATX)</div>
+<div class="list">―  ECT sensor or related circuit malfunction</div>
+<div class="list">―  A/F sensor or related circuit malfunction</div>
+<div class="list">―  HO2S or related circuit malfunction</div>
+<div class="list">―  Improper air/fuel mixture ratio control operation</div>
+</dd>
+</dl>
+<div class="list">•  Improper load signal input</div>
+<dl>
+<dd class="list">
+<div class="list">―  Improper A/C request signal</div>
+</dd>
+</dl>
+<div class="list">•  Improper operation of drive-by-wire control system</div>
+<div class="list">•  Throttle body malfunction</div>
+<div class="list">•  Fuel injector malfunction</div>
+<div class="list">•  Spill valve control solenoid valve (built-into high pressure fuel pump) malfunction</div>
+<div class="list">•  Improper operation of cruise control system</div>
+<div class="list">•  Air leakage from intake-air system</div>
+<div class="list">•  Injector driver (built-into PCM) malfunction</div>
+<dl>
+<dd>
+<div class="attention1-label">Warning</div>
+</dd>
+<dd>
+<div class="attention1">
+<div>The following troubleshooting flow chart contains the fuel system diagnosis and repair procedures. Read the following warnings before performing the fuel system services:</div>
+<div class="list">•  Fuel vapor is hazardous. It can easily ignite, causing serious injury and damage. Always keep sparks and flames away from fuel.</div>
+<div class="list">•  Fuel line spills and leakage are dangerous. Fuel can ignite and cause serious injury or death and damage. Fuel can also irritate skin and eyes. To prevent this, always complete “BEFORE SERVICE PRECAUTION” and “AFTER SERVICE PRECAUTION” described in this manual. (See <font class="extxref-label"><a href="id0114q1802000.html">BEFORE SERVICE PRECAUTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.) (See <font class="extxref-label"><a href="id0114q1801900.html">AFTER SERVICE PRECAUTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  Disconnecting/connecting the quick release connector without cleaning it may possibly cause damage to the fuel pipe and quick release connector. Always clean the quick release connector joint area before disconnecting/connecting, and make sure that it is free of foreign material.</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic Procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT COOLING SYSTEM FOR MALFUNCTION</div>
+<div class="list">•  Access the ECT PID using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Start the engine and warm it up completely.</div>
+<div class="list">•  Is the ECT PID value between <span>82—112 °C {180—234 °F}</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECT PID value is <span>higher than 112 °C {234 °F}</span>:</div>
+<div class="list">•  Perform the symptom troubleshooting "NO.17 COOLING SYSTEM CONCERNS-OVERHEATING".<div>(See <font class="extxref-label"><a href="id0103q1802300.html">NO.17 COOLING SYSTEM CONCERNS-OVERHEATING [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">ECT PID value is <span>less than 82 °C {180 °F}</span>:</div>
+<div class="list">•  Perform the symptom troubleshooting "NO.18 COOLING SYSTEM CONCERNS-RUNS COLD".<div>(See <font class="extxref-label"><a href="id0103q1802400.html">NO.18 COOLING SYSTEM CONCERNS-RUNS COLD [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY PCM DTC</div>
+<div class="list">•  Retrieve any DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY CURRENT INPUT SIGNAL STATUS</div>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  While performing this step, always operate the vehicle in a safe and lawful manner.</div>
+<div class="list">•  When the M-MDS is used to observe monitor system status while driving, be sure to have another technician with you, or record the data in the M-MDS using the PID/DATA MONITOR AND RECORD capturing function and inspect later.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Access the following PIDs using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  APP1</div>
+<div class="list">―  APP2</div>
+<div class="list">―  CPP (MTX)</div>
+<div class="list">―  CPP/PNP (MTX)</div>
+<div class="list">―  ECT</div>
+<div class="list">―  O2S11</div>
+<div class="list">―  O2S12</div>
+<div class="list">―  SHRTFT1</div>
+<div class="list">―  LONGFT1</div>
+</dd>
+</dl>
+<div class="list">•  Do the PIDs indicate the correct values under the trouble condition?<div>(See <font class="extxref-label"><a href="id0140q1802500.html">PCM INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">APP1, APP2 PIDs are not as specified:</div>
+<div class="list">•  Inspect the APP sensor.<div>(See <font class="extxref-label"><a href="id0140q1803200.html">ACCELERATOR PEDAL POSITION (APP) SENSOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">CPP PID is not as specified: (MTX)</div>
+<div class="list">•  Inspect the CPP switch.<div>(See <font class="extxref-label"><a href="id0140q1801600.html">CLUTCH PEDAL POSITION (CPP) SWITCH INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">CPP/PNP PID is not as specified: (MTX)</div>
+<div class="list">•  Inspect the neutral switch No.1.<div>(See <font class="extxref-label"><a href="id0140q1800800.html">NEUTRAL SWITCH INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">ECT PID is not as specified:</div>
+<div class="list">•  Inspect the ECT sensor.<div>(See <font class="extxref-label"><a href="id0140q1802000.html">ENGINE COOLANT TEMPERATURE (ECT) SENSOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">O2S11, SHRTFT1, LONGFT1 PIDs are not as specified:</div>
+<div class="list">•  Inspect the A/F sensor.<div>(See <font class="extxref-label"><a href="id0140q1899600.html">AIR FUEL RATIO (A/F) SENSOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">O2S12 PID is not as specified:</div>
+<div class="list">•  Inspect the HO2S.<div>(See <font class="extxref-label"><a href="id0140q1802300.html">HEATED OXYGEN SENSOR (HO2S) INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results.</div>
+<div class="list">•  If the malfunction remains:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Inspect communication error between TCM and PCM. (ATX)</div>
+<dl>
+<dd class="list">
+<div class="list">•  Repair or replace the malfunctioning part according to the inspection results if necessary.</div>
+</dd>
+</dl>
+<div class="list">―  Perform the “INTERMITTENT CONCERN TROUBLESHOOTING” procedure.<div>(See <font class="extxref-label"><a href="id0103q1800400.html">INTERMITTENT CONCERN TROUBLESHOOTING [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE IF MALFUNCTION CAUSE IS A/C REQUEST SIGNAL OR OTHER</div>
+<div class="list">•  Access the AC_REQ PID using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Monitor the AC_REQ PID while turning on and off the air conditioner with switch on the control panel.</div>
+<div class="list">•  Does the AC_REQ PID value change from on to off according to switch control panel?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If the AC_REQ PID is always ON:</div>
+<div class="list">•  Perform the symptom troubleshooting “NO.24 A/C IS ALWAYS ON OR A/C COMPRESSOR RUNS CONTINUOUSLY”.<div>(See <font class="extxref-label"><a href="id0103q1803000.html">NO.24 A/C IS ALWAYS ON OR A/C COMPRESSOR RUNS CONTINUOUSLY [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">If the AC_REQ PID is always OFF:</div>
+<div class="list">•  Perform the symptom troubleshooting “NO.23 A/C DOES NOT WORK SUFFICIENTLY”.<div>(See <font class="extxref-label"><a href="id0103q1802900.html">NO.23 A/C DOES NOT WORK SUFFICIENTLY [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE IF MALFUNCTION CAUSE IS DRIVE-BY-WIRE CONTROL SYSTEM OR OTHER</div>
+<div class="list">•  Will the engine run smoothly at part throttle?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 7.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT DRIVE-BY-WIRE CONTROL SYSTEM OPERATION</div>
+<div class="list">•  Perform the Electronic Control Throttle Operation Inspection.<div>(See <font class="extxref-label"><a href="id0103q1803700.html">ENGINE CONTROL SYSTEM OPERATION INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Does the drive-by-wire control system work properly?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Visually inspect the throttle body (damage/scratching).</div>
+<div class="list">•  If there is any malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Repair or replace the malfunctioning part according to the inspection results.</div>
+</dd>
+</dl>
+<div class="list">•  If there is no malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Go to the next step.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FUEL INJECTOR OPERATION</div>
+<div class="list">•  Perform the Fuel Injector Operation Inspection.<div>(See <font class="extxref-label"><a href="id0103q1803700.html">ENGINE CONTROL SYSTEM OPERATION INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Do the fuel injectors operate properly?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT HIGH PRESSURE FUEL PUMP</div>
+<div class="list">•  Inspect the high pressure fuel pump.<div>(See <font class="extxref-label"><a href="id0114q1801500.html">HIGH PRESSURE FUEL PUMP INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the high pressure fuel pump.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0114q1801400.html">HIGH PRESSURE FUEL PUMP REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CRUISE CONTROL SYSTEM</div>
+<div class="list">•  Inspect the operation of cruise control system.</div>
+<div class="list">•  Does the cruise control system work properly?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">10</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT INTAKE-AIR SYSTEM FOR AIR LEAKAGE</div>
+<div class="list">•  Inspect for leakage in intake-air system.</div>
+<div class="list">•  Is there any leakage?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Injector driver malfunction.</div>
+<div class="list">•  Replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q1802400.html">PCM REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">If the problem remains, overhaul the engine.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Verify the test results.</div>
+<div class="list">•  If normal, return to the diagnostic index to service any additional symptoms.<div>(See <font class="extxref-label"><a href="id0103q1800500.html">SYMPTOM DIAGNOSTIC INDEX [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  If a malfunction remains, inspect the related Service Information and perform the repair or diagnosis.</div>
+<dl>
+<dd class="list">
+<div class="list">―  If the vehicle is repaired, troubleshooting is completed.</div>
+<div class="list">―  If the vehicle is not repaired or additional diagnostic information is not available, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q1802400.html">PCM REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DRIVE SELECTION SYSTEM [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0121a2000100"></a><p class="servinfo-title"><span class="servinfo-head"></span>DRIVE SELECTION SYSTEM [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0121a2000100</p><br clear="all"><a name="id0121a200010001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The drive selection system can switch the vehicle’s drive mode.</div>
+<div class="list">•  When the sport mode is selected, the drive force response corresponding to the accelerator pedal operation is enhanced.</div><br clear="all"><a name="id0121a200010002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The sport mode can be selected/canceled by operating the drive selection switch.</div><br clear="all"><a name="id0121a200010003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003577.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003577</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0121a200010004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id0121a200010005"></a><p class="topic-title"><span class="topic-head"></span>When sports mode is selected</p>
+<p class="list">1.  When the sports mode is selected using the drive selection switch (1), the instrument cluster sends a drive selection signal to the TCM and the PCM via CAN communication (2). At the same time, it turns the select mode indicator light on (3).</p>
+<p class="list"></p>
+<p class="list">2.  When the PCM sends a drive selection signal to the TCM, the TCM will change the shift points. (4)</p>
+<p class="list"></p>
+<p class="list">3.  When the PCM receives the drive selection signal, it switches the control corresponding to the accelerator opening angle (5).</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00004099.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00004099</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0121a200010006"></a><p class="topic-title"><span class="topic-head"></span>Drive selection switch inhibition conditions</p>
+<dl>
+<dd>
+<div class="list">•  If any of the following conditions is met, the mode is not switched even if the drive selection switch is operated.</div>
+<dl>
+<dd class="list">
+<div class="list">―  During sudden maneuvering</div>
+<div class="list">―  During DSC control</div>
+<div class="list">―  During ABS control</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If the drive selection switch has been operated with a drive selection switching inhibition condition being met, the PCM sends a sport light flash request signal to the instrument cluster.</div>
+<div class="list">•  The instrument cluster flashes the sport lamp to notify the driver that drive selection is currently prohibited.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0121a200010007"></a><p class="topic-title"><span class="topic-head"></span>Drive selection stop conditions</p>
+<dl>
+<dd>
+<div class="list">•  If any of the following conditions is met while in sport mode, the drive mode is canceled.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition is switched off</div>
+<div class="list">―  During cruise control operation</div>
+<div class="list">―  Malfunction with PCM control-related part</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</body>
+</html>

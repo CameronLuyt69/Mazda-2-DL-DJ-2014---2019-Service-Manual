@@ -1,0 +1,40 @@
+/*****  ŒŸØ’†    ****/
+
+@page {
+	size: 297mm 210mm;
+}
+
+@media print {
+	
+	/************* split pane start **************/
+	#top-component {
+		height: 0px;
+		min-height: 0px;
+		max-height: 0px;
+	}
+
+	#horizontal-divider {
+		top: 0px;
+		height: 0px;
+	}
+
+	#bottom-component {
+		top: 0px;
+		/*margin-top: 5px;*/
+	}
+	/************* Slide Menu start **************/
+	#slideMenu {
+	    display: none;
+	}
+	
+	#display_a, #display_b, #display_c {
+	  page-break-after: always;
+	}
+	/**/
+	#left-component {
+		width: 100%;
+	}
+	#right-component {
+		display: none;
+	}
+}

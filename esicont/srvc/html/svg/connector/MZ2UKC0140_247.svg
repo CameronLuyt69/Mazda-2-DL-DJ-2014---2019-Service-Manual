@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "../../../../../../../../../ns.adobe.com/Extensibility/1.0/default.htm">
+	<!ENTITY ns_ai "../../../../../../../../../ns.adobe.com/AdobeIllustrator/10.0/default.htm">
+	<!ENTITY ns_graphs "../../../../../../../../../ns.adobe.com/Graphs/1.0/default.htm">
+	<!ENTITY ns_vars "../../../../../../../../../ns.adobe.com/Variables/1.0/default.htm">
+	<!ENTITY ns_imrep "../../../../../../../../../ns.adobe.com/ImageReplacement/1.0/default.htm">
+	<!ENTITY ns_sfw "../../../../../../../../../ns.adobe.com/SaveForWeb/1.0/default.htm">
+	<!ENTITY ns_custom "../../../../../../../../../ns.adobe.com/GenericCustomNamespace/1.0/default.htm">
+	<!ENTITY ns_adobe_xpath "../../../../../../../../../ns.adobe.com/XPath/1.0/default.htm">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="114.595px"
+	 height="59.821px" viewBox="0 0 114.595 59.821" enable-background="new 0 0 114.595 59.821" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="SEN">
+			<rect x="66.645" y="32.904" fill="#33FF00" stroke="#000000" stroke-width="0.1" width="16.053" height="11.946"/>
+			<rect x="50.547" y="32.904" fill="#FFFFFF" stroke="#000000" stroke-width="0.1" width="16.053" height="11.946"/>
+			<rect x="34.443" y="32.904" fill="#FF0000" stroke="#000000" stroke-width="0.1" width="16.053" height="11.946"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M75.212,48.851H33.397
+				c-1.1,0-2-0.9-2-2V30.774c0-1.1,0.9-2,2-2h41.815"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="85.698" y1="32.774" x2="85.698" y2="44.851"/>
+			
+				<rect x="34.397" y="32.774" fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" width="48.301" height="12.076"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M85.698,32.774
+				c-1.485-2.273-5.11-4-10.485-4"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M85.698,44.851
+				c-1.485,2.273-5.11,4-10.485,4"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M85.698,44.851h3.5
+				c1.379,0,2.5-1.121,2.5-2.5v-7.076c0-1.379-1.121-2.5-2.5-2.5h-3.5"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M85.698,34.274h3.5
+				c0.55,0,1,0.45,1,1v7.076c0,0.55-0.45,1-1,1h-3.5"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="66.6" y1="32.774" x2="66.6" y2="44.851"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="50.497" y1="32.774" x2="50.497" y2="44.851"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				89.197,41.351 85.698,36.274 89.197,36.274 89.197,41.351 85.698,41.351 89.197,36.274 			"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M31.397,32.774h-3.5
+				c-1.379,0-2.5,1.121-2.5,2.5v7.076c0,1.379,1.121,2.5,2.5,2.5h3.5"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M31.397,34.274h-3.5
+				c-0.55,0-1,0.45-1,1v7.076c0,0.55,0.45,1,1,1h3.5"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				27.897,41.351 31.397,36.274 27.897,36.274 27.897,41.351 31.397,41.351 27.897,36.274 			"/>
+		</g>
+		<g id="TEXT">
+			<text transform="matrix(1 0 0 1 2.8345 19.1997)" font-family="'Arial'" font-size="8">ENGINE OIL LEVEL SENSOR</text>
+			<text transform="matrix(1 0 0 1 2.8345 9.6997)" font-family="'Arial'" font-size="8">0140-247</text>
+			<text transform="matrix(1 0 0 1 72.8159 40.6836)" font-family="'Arial'" font-size="5">G</text>
+			<text transform="matrix(1 0 0 1 56.2139 40.6846)" font-family="'Arial'" font-size="5">W</text>
+			<text transform="matrix(1 0 0 1 40.6147 40.6846)" font-family="'Arial'" font-size="5">R</text>
+			<text transform="matrix(1 0 0 1 41.0347 55.0381)" font-family="'Arial'" font-size="6">C</text>
+			<text transform="matrix(1 0 0 1 57.1353 55.0381)" font-family="'Arial'" font-size="6">B</text>
+			<text transform="matrix(1 0 0 1 73.2368 55.0381)" font-family="'Arial'" font-size="6">A</text>
+		</g>
+	</g>
+</switch>
+</svg>

@@ -1,0 +1,200 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC B13D3:16 [START STOP UNIT]</title>
+</head>
+<body><a name="id0902p6050100"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC B13D3:16 [START STOP UNIT]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0902p6050100</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead"><span>Description</span></p>
+</th>
+<th id="" align="left">
+<p class="thead">Low remote transmitter battery voltage</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Detection condition</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects the low remote transmitter battery voltage in any of the programmed transmitters <span>3 times</span> continuously.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Fail-safe</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Possible cause</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Dirt around remote transmitter battery, or foreign matter adhering</div>
+<div class="list">•  Remote transmitter battery power low</div>
+<div class="list">•  Specific remote transmitter is malfunctioning.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>System wiring diagram</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0902p605010001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Diagnostic Procedure</p>
+<p class="list">1.  Verify the TRANS_NUM_L of the snapshot data item and then the registration number of the remote transmitter in which low battery voltage was detected.</p>
+<p class="list"></p>
+<p class="list">2.  Using the M-MDS, display the PID item RF_TRANS_NUM for the start stop unit.</p>
+<p class="list"></p>
+<p class="list">3.  Press the unlock button of the remote transmitter to verify the registration numbers of all the programmed remote transmitters.</p>
+<p class="list"></p>
+<p class="list">4.  Perform the remote transmitter diagnostic procedure using the remote transmitter corresponding to the registration number of the remote transmitter detected using the snapshot data. (See <font class="intxref-label"><a href="#id0902p605010002">Remote Transmitter Diagnostic Procedure</a></font>.)</p>
+<p class="list"></p><br clear="all"><a name="id0902p605010002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Remote Transmitter Diagnostic Procedure</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Inspection</p>
+</th>
+<th id="" align="center">
+<p class="thead">Action</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT AREA AROUND REMOTE TRANSMITTER BATTERY</div>
+<div class="list">•  Inspect the area around the remote transmitter battery.</div>
+<div class="list">•  Is the area around the remote transmitter battery dirty or is there foreign mattering adhering?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Remove dirt or foreign matter, then go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT REMOTE TRANSMITTER BATTERY POWER</div>
+<div class="list">•  Inspect the battery power of the remote transmitter.<div>(See <font class="extxref-label"><a href="id091400111800.html">REMOTE TRANSMITTER BATTERY VOLTAGE INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Does the KEY indicator light (green) flash for <span>approx. 30 s</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If the KEY indicator light (green) flashes for <span>approx. 30 s</span>, the battery power of the remote transmitter is low.</div>
+</div>
+</dd>
+</dl>
+<div class="tbody">Replace the remote transmitter battery and go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091400112200.html">REMOTE TRANSMITTER DISASSEMBLY/ASSEMBLY</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY THAT REPAIRS HAVE BEEN COMPLETED</div>
+<div class="list">•  Clear the DTC for the start stop unit using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902p6018900.html">CLEARING DTC [START STOP UNIT]</a></font>.)</div>
+</div>
+<div class="list">•  Retrieve the start stop unit DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902p6018800.html">DTC INSPECTION [START STOP UNIT]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC displayed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the remote transmitter, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091400514700.html">IMMOBILIZER SYSTEM-RELATED PARTS PROGRAMMING</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF OTHER DTCs DISPLAYED</div>
+<div class="list">•  Are any other DTCs displayed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the applicable DTC troubleshooting.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0902p6019000.html">DTC TABLE [START STOP UNIT]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

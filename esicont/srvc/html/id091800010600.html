@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>AUTO LIGHT SENSOR</title>
+</head>
+<body><a name="id091800010600"></a><p class="servinfo-title"><span class="servinfo-head"></span>AUTO LIGHT SENSOR</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091800010600</p><br clear="all"><a name="id09180001060001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The auto light sensor detects the illumination level above and in front of the vehicle and outputs it to the BCM.</div><br clear="all"><a name="id09180001060002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The auto light sensor uses the upward illumination level sensor to detect the illumination level above the vehicle, and uses the forward illumination level sensor to detect the illumination level in front of the vehicle.</div><br clear="all"><p><a name="id09180001060003"></a><p class="topic-title"><span class="topic-head"></span>Illumination level adjustment function</p>
+<dl>
+<dd>
+<div class="list">•  The illumination level sensitivity can be switched between 5 levels using the Mazda Modular Diagnostic System (M-MDS) or center display (with center display). (See <font class="extxref-label"><a href="id091800013300.html">LIGHTING SYSTEM PERSONALIZATION</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09180001060004"></a><p class="topic-title"><span class="topic-head"></span>On-board diagnostic function</p>
+<dl>
+<dd>
+<div class="list">•  If there is a malfunction in the auto light sensor, notifies the BCM and outputs a DTC from the BCM.</div>
+<div class="list">•  For details on DTCs, refer to the DTC table [ON-BOARD DIAGNOSTIC SYSTEM [BODY CONTROL MODULE (BCM)]]. (See <font class="extxref-label"><a href="id094000050100.html">ON-BOARD DIAGNOSTIC SYSTEM [BODY CONTROL MODULE (BCM)]</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09180001060005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The auto light sensor is integrated with the rain sensor as a single unit.</div>
+<div class="list">•  The auto light sensor consists of the lens, upward illumination level sensor (photodiode), forward illumination level sensor (photodiode), and microcomputer.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001711.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001711</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180001060006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  The auto light sensor cannot detect the illumination level correctly under the following conditions, which could cause the auto light system to operate improperly.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Stickers or labels are attached to the auto light sensor detection area on the windshield.</div>
+<div class="list">―  The auto light sensor detection area on the windshield is dirty.</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<p class="list">1.  When the ignition is switched ON (engine off or on), the auto light sensor detects (1) the illumination level above and in front of the vehicle.</p>
+<p class="list"></p>
+<p class="list">2.  The auto light sensor outputs (2) a panel light or TNS and headlight LO illumination request signal and panel light or TNS and headlight LO off request signal to the BCM via LIN communication according to the detected illumination level.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001712.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001712</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180001060007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  Not applicable</div>
+</body>
+</html>

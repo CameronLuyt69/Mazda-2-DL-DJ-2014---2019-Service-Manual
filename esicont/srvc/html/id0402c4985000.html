@@ -1,0 +1,369 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC INSPECTION [LASER SENSOR]</title>
+</head>
+<body><a name="id0402c4985000"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC INSPECTION [LASER SENSOR]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0402c4985000</p>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list"></p>
+<p class="list">2.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “Self Test”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “All CMDTCs”.</dd>
+<dd></dd>
+</dl>
+</p>
+<p class="list">3.  Verify the DTC according to the directions on the screen.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">•  If any DTCs are displayed, perform troubleshooting according to the corresponding DTC inspection. (See <font class="extxref-label"><a href="id0402c4985200.html">DTC TABLE [LASER SENSOR]</a></font>.)</div>
+</dd>
+</dl>
+</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Snapshot data appears at the top of the help screen when the displayed DTC is selected.</div>
+<div class="list">•  Snapshot data stores the currently detected DTC data.</div>
+</div>
+</dd>
+</dl>
+<p class="list">4.  After completion of repairs, clear all DTCs stored in the module. (See <font class="extxref-label"><a href="id0402c4985100.html">CLEARING DTC [LASER SENSOR]</a></font>.)</p>
+<p class="list"></p><br clear="all"><a name="id0402c498500001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Snapshot Data Table</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The laser sensor stores the following two types of information when a DTC is detected and displays snapshot data in the M-MDS</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle information detected by laser sensor</div>
+<div class="list">―  Vehicle information detected by instrument cluster and received via CAN communication</div>
+</dd>
+</dl>
+<div class="list">•  Refer to PID monitor table for confirm the laser sensor system operation status while the laser sensor does not store the DTC. (See <font class="extxref-label"><a href="id0402c4886400.html">PID/DATA MONITOR TABLE [LASER SENSOR]</a></font>.)</div>
+<div class="list">•  Snapshot data items are not displayed, according to detected DTC.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Snapshot data item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding data monitor items</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">AAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient air temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">APP_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Accelerator Pedal Off/</div>
+<div class="tbody">Under 20%/</div>
+<div class="tbody">Over 20%/</div>
+<div class="tbody">FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CFG_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Config Complete/</div>
+<div class="tbody">Not Configured/</div>
+<div class="tbody">Config Error</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ECT_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Under 0 degrees C/</div>
+<div class="tbody">0 - Under 80 degrees C/</div>
+<div class="tbody">Over 80 degrees C/</div>
+<div class="tbody">FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IC_VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster power supply</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The laser sensor constantly receives the power supply voltage value of the instrument cluster sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the laser sensor records the power supply voltage of the instrument cluster when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IG-ON_TIMER</div>
+</td>
+<td id="" align="center">
+<div class="tbody">hh:mm:ss<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Elapsed time since ignition was switched ON</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The instrument cluster records the elapsed time since the ignition was switched ON.</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="list">•  The laser sensor constantly receives the elapsed time since the ignition was switched ON sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the laser sensor records the elapsed time since the ignition was switched ON when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PWR_MODE_KEY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Key Out/Key Recently Out/Key Approved (Position 0)/Post Accessory (Position 0)/Accessory (Position 1)/Post Ignition (Position 1)/Ignition On (Position 2)/Running (Position 2)/Running - Starting In Progress (Position 2)/Crank (Position 3)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Key Out: Ignition switched off</div>
+<div class="list">•  Key Recently Out (Position 0): Elapsed time within 3 s since ignition was switched off</div>
+<div class="list">•  Accessory (Position 1): Ignition is switched to ACC</div>
+<div class="list">•  Post Ignition (Position 2): Elapsed time within 3 s since ignition was switched ON</div>
+<div class="list">•  Ignition On (Position 2): Ignition switched ON (engine off)</div>
+<div class="list">•  Running (Position 2): Ignition switched ON (engine on)</div>
+<div class="list">•  Running - Starting: Cranking condition</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The laser sensor constantly receives the ignition switch status sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the laser sensor records the ignition switch status when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RPM_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Engine Stop/</div>
+<div class="tbody">Under 1500 rpm/</div>
+<div class="tbody">Over 1500 rpm/</div>
+<div class="tbody">FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine RPM status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The laser sensor constantly receives the ignition switch status sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the laser sensor records the ignition switch status when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TACHOMTR<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SHIFT_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">P/N</div>
+<div class="tbody">D/</div>
+<div class="tbody">R/</div>
+<div class="tbody">FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift position status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The laser sensor constantly receives the selector lever position sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the laser sensor records the selector lever position when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TOTAL_DIST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km, ft, mi</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total traveled distance from completion of vehicle until laser sensor detects DTC (Odometer value in instrument cluster)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The distance traveled when the laser sensor detected a DTC can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the odometer value in the instrument cluster.</div>
+<div class="list">2.  Verify the snap shot data item TOTAL_DIST.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TOTAL_TIME</div>
+</td>
+<td id="" align="center">
+<div class="tbody">hh:mm:ss<sup>*1</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total elapsed time since vehicle completion until laser sensor detects a DTC</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  When the ROOM fuse is removed, and the ignition is switched off, the time is not included in the elapsed time.</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">The elapsed time when the laser sensor detected a DTC can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the PID item TOTAL_TIME of the instrument cluster.</div>
+<div class="list">2.  Verify the snap shot data item TOTAL_TIME.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TOTAL_TIME<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Power supply</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR_IG1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VSPD_STATUS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Stop/</div>
+<div class="tbody">0 - 10 km/h/</div>
+<div class="tbody">Over 10 km/h/</div>
+<div class="tbody">FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The laser sensor constantly receives the vehicle speed sent via CAN signal from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the laser sensor records the vehicle speed when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SPEEDOMTR<sup>*1</sup></div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :PID for instrument cluster (See .)</div>
+<div class="deflist">*2  :Fractions of seconds may be indicated after the decimal point</div>
+</body>
+</html>

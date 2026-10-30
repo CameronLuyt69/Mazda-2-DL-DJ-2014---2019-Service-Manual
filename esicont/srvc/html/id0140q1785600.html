@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>HEATED OXYGEN SENSOR (HO2S) HEATER CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0140q1785600"></a><p class="servinfo-title"><span class="servinfo-head"></span>HEATED OXYGEN SENSOR (HO2S) HEATER CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140q1785600</p><br clear="all"><a name="id0140q178560001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  Based on the control of the HO2S heater, a stabilized oxygen concentration is detected (even at low exhaust temperatures), and feedback control of fuel injection (even at cold engine start) is made possible for improved cold temperature exhaust emission performance.</div>
+<div class="list">•  Both emission performance and sensor protection have been improved by duty control of the heater (according to engine operation conditions (exhaust gas temperature)).</div><br clear="all"><a name="id0140q178560002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003449.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003449</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140q178560003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The PCM operates the HO2S heater based on the following control conditions.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Output duty ratio</p>
+</th>
+<th id="" align="center">
+<p class="thead">Control condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">0%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Engine stopped</div>
+<div class="list">•  Fuel cut injection control is in engine start zone</div>
+<div class="list">•  Engine coolant temperature is <span>−10 °C {14 °F} or less</span></div>
+<div class="list">•  Other than battery voltage of <span>10—16 V</span></div>
+<div class="list">•  Within a fixed period of time after engine start (varies according to engine coolant temperature)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">30―50%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  HO2S not activated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">30―70%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When engine is stop by i-stop control</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">0―100%</div>
+<div class="tbody">(Determined by engine speed and charging efficiency)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Other than the above</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "../../../../../../../../../ns.adobe.com/Extensibility/1.0/default.htm">
+	<!ENTITY ns_ai "../../../../../../../../../ns.adobe.com/AdobeIllustrator/10.0/default.htm">
+	<!ENTITY ns_graphs "../../../../../../../../../ns.adobe.com/Graphs/1.0/default.htm">
+	<!ENTITY ns_vars "../../../../../../../../../ns.adobe.com/Variables/1.0/default.htm">
+	<!ENTITY ns_imrep "../../../../../../../../../ns.adobe.com/ImageReplacement/1.0/default.htm">
+	<!ENTITY ns_sfw "../../../../../../../../../ns.adobe.com/SaveForWeb/1.0/default.htm">
+	<!ENTITY ns_custom "../../../../../../../../../ns.adobe.com/GenericCustomNamespace/1.0/default.htm">
+	<!ENTITY ns_adobe_xpath "../../../../../../../../../ns.adobe.com/XPath/1.0/default.htm">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="130.13px"
+	 height="105.224px" viewBox="0 0 130.13 105.224" enable-background="new 0 0 130.13 105.224" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="SEN">
+			<rect x="44.416" y="55.237" fill="#33FF00" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			<rect x="44.487" y="67.312" stroke="#000000" stroke-width="0.1" width="16.053" height="11.948"/>
+			<rect x="60.587" y="55.237" fill="#FFFFFF" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			<rect x="60.587" y="67.313" fill="#6D4C33" stroke="#000000" stroke-width="0.1" width="16.053" height="11.946"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="51.502" y1="38.077" x2="51.502" y2="48.108"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="69.578" y1="38.077" x2="69.578" y2="48.108"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="69.578" y1="38.077" x2="51.502" y2="48.108"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="69.578" y1="38.077" x2="51.502" y2="38.077"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="51.502" y1="38.077" x2="69.578" y2="48.108"/>
+			
+				<circle fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" cx="60.54" cy="67.184" r="0.071"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="44.438" y1="55.108" x2="44.438" y2="79.26"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="60.54" y1="55.108" x2="60.54" y2="79.26"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="76.641" y1="67.184" x2="44.438" y2="67.184"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="76.641" y1="79.26" x2="44.438" y2="79.26"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="76.641" y1="55.108" x2="76.641" y2="79.26"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="76.641" y1="55.108" x2="44.438" y2="55.108"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M70.141,88.76
+				l-0.571,1.471c-0.566,0.942-1.93,0.714-3.029,0.813h-12c-1.1-0.1-2.463,0.129-3.029-0.813l-0.573-1.471"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M49.438,48.108
+				c-3.85,0-7,3.15-7,7l0.001,10.619h-2.998l-0.002,3h2.998h0.001v7.533c0,5.5,4.5,10,10,10h16.202c5.5,0,10-4.5,10-10v-7.533h3v-3
+				h-3V55.108c0-3.85-3.15-7-7-7H49.438z"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M74.641,55.108
+				c0-3.584-1.295-3.996-5.833-3.996L51.9,51.108c-3.584,0-5.462,0.416-5.462,4"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M46.438,79.26
+				c0,3.583,1.541,4,5.125,4h17.493c3.584,0,5.584-0.417,5.584-4"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M81.641,73.184v1.076
+				c0,8.546-2.953,14.5-11.5,14.5H50.938c-8.547,0-11.5-5.954-11.5-14.5l0.001-1.076c-1.1,0-3-0.899-3-2v-8c0-1.1,1.9-2,3-2V50.108
+				c0-1.1,0.56-2.705,1.243-3.566l7.819-9.832c1.368-1.723,3.287-3.133,5.487-3.133h13.001c2.2,0,4.144,1.39,5.542,3.088
+				l7.838,9.899c0.699,0.849,1.271,2.444,1.271,3.544v11.076c1.1,0,3,0.9,3,2v8C84.641,72.284,82.74,73.184,81.641,73.184z"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="42.438" y1="68.727" x2="42.439" y2="65.727"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="78.641" y1="68.727" x2="78.641" y2="65.727"/>
+		</g>
+		<g id="TEXT">
+			<text transform="matrix(1 0 0 1 50.5869 63.0166)" font-family="'Arial'" font-size="5">G</text>
+			<text transform="matrix(1 0 0 1 50.6582 75.0928)" fill="#FFFFFF" font-family="'Arial'" font-size="5">B</text>
+			<text transform="matrix(1 0 0 1 66.2544 63.0166)" font-family="'Arial'" font-size="5">W</text>
+			<text transform="matrix(1 0 0 1 65.4595 75.0928)" fill="#FFFFFF" font-family="'Arial'" font-size="5">BR</text>
+			<text transform="matrix(1 0 0 1 2.8345 9.6997)" font-family="'Arial'" font-size="8">0922-106</text>
+			<text transform="matrix(1 0 0 1 2.8345 18.0508)" font-family="'Arial'" font-size="8">HEADLIGHT CLEANER MOTOR / </text>
+			<text transform="matrix(1 0 0 1 2.8345 27.5508)" font-family="'Arial'" font-size="8">WASHER FLUID-LEVEL SENSOR</text>
+			<text transform="matrix(1 0 0 1 49.8018 100.4404)" font-family="'Arial'" font-size="6">[BLACK]</text>
+			<text transform="matrix(1 0 0 1 86.8926 62.8047)" font-family="'Arial'" font-size="6">A</text>
+			<text transform="matrix(1 0 0 1 86.8926 75.1387)" font-family="'Arial'" font-size="6">B</text>
+			<text transform="matrix(1 0 0 1 30.0884 62.8047)" font-family="'Arial'" font-size="6">C</text>
+			<text transform="matrix(1 0 0 1 30.0884 75.1387)" font-family="'Arial'" font-size="6">D</text>
+		</g>
+	</g>
+</switch>
+</svg>

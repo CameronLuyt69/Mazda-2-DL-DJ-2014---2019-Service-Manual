@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="102.362px" height="101.856px" viewBox="0.021 0.321 102.362 101.856"
+	 enable-background="new 0.021 0.321 102.362 101.856" xml:space="preserve">
+<rect x="0.221" y="0.521" fill="#FFFFFF" stroke="#040000" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" width="102.161" height="101.457"/>
+<g id="WD">
+	<g>
+		<g>
+			<g id="レイヤー_1_1_">
+				<g id="IRO">
+					<g id="OTHER_5_">
+					</g>
+					<g id="WITH_i-stop_SYSTEM_2_">
+						<line fill="none" stroke="#040000" stroke-width="4" x1="50.859" y1="56.516" x2="50.859" y2="101.524"/>
+						<line fill="none" stroke="#D1C4E0" stroke-width="3.6" x1="50.859" y1="56.516" x2="50.859" y2="101.524"/>
+						<g>
+							<line fill="none" stroke="#DEB2D2" stroke-width="2" x1="50.859" y1="56.516" x2="50.859" y2="101.524"/>
+						</g>
+					</g>
+					<g id="WITHOUT_i-stop_SYSTEM_2_">
+					</g>
+				</g>
+				<g id="SEN">
+					<g id="WITH_i-stop_SYSTEM_1_">
+						<rect x="42.457" y="74.432" fill="#FFFFFF" width="17.689" height="13.477"/>
+						<path fill="none" stroke="#040000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M56.674,45.401
+							c0-3.234-2.617-5.853-5.85-5.853c-3.23,0-5.852,2.617-5.852,5.853c0,3.229,2.621,5.849,5.852,5.849
+							C54.055,51.249,56.674,48.631,56.674,45.401z"/>
+						<polygon fill="#040000" stroke="#040000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+							50.824,61.781 56.674,51.249 44.973,51.249 						"/>
+					</g>
+					<g id="WITHOUT_i-stop_SYSTEM_1_">
+						<g id="OTHER_3_">
+						</g>
+					</g>
+				</g>
+				<g id="TEXT">
+					<g id="OTHER_2_">
+					</g>
+					<g id="WITH_i-stop_SYSTEM">
+						<g id="OTHER_1_">
+							
+								<text transform="matrix(1 0 0 1 36.7363 83.6643)" fill="#040000" font-family="'KozGoPr6N-Regular-90ms-RKSJ-H'" font-size="9.3609">LA/P(I)</text>
+						</g>
+					</g>
+					<g id="WITHOUT_i-stop_SYSTEM">
+						<g id="OTHER">
+						</g>
+					</g>
+				</g>
+				<g id="LINK_5_">
+					<g id="connector">
+						<g id="CR-C-04">
+						</g>
+					</g>
+					<g id="circuit">
+						<g id="WITH_i-stop">
+							<g id="CR-0117-1:CR-0117-2">
+								<rect x="10.854" y="5.048" fill="none" width="80.349" height="23.738"/>
+								
+									<text transform="matrix(1 0 0 1 10.8535 13.0813)" fill="#040000" font-family="'KozGoPr6N-Regular-90ms-RKSJ-H'" font-size="9.3609">IGNITION RELAY </text>
+								
+									<text transform="matrix(1 0 0 1 10.8535 24.3137)" fill="#040000" font-family="'KozGoPr6N-Regular-90ms-RKSJ-H'" font-size="9.3609">(IG1_STAB)</text>
+								<rect x="10.854" y="27.533" fill="none" width="74.528" height="11.868"/>
+								
+									<text transform="matrix(1 0 0 1 10.8535 35.5676)" fill="#040000" font-family="'KozGoPr6N-Regular-90ms-RKSJ-H'" font-size="9.3609">(SECTION 0117-1)</text>
+								<rect x="44.922" y="39.549" fill="none" width="11.652" height="11.7"/>
+								
+									<text transform="matrix(1 0 0 1 46.8438 47.9114)" fill="#040000" font-family="'KozGoPr6N-Regular-90ms-RKSJ-H'" font-size="7.0207">17</text>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="枠">
+</g>
+<g id="非選択_xFF8A__xFF72__xFF97__xFF72__xFF84_">
+</g>
+<g id="選択_xFF8A__xFF72__xFF97__xFF72__xFF84_">
+</g>
+<g id="INDEX-">
+</g>
+<g id="INDEX_x2B_">
+</g>
+<g id="ボタン">
+</g>
+<g id="コネクタ反転時">
+</g>
+<g id="複数選択ON">
+</g>
+<g id="端子電圧なし">
+</g>
+<g id="端子電圧なし_1_">
+</g>
+<circle opacity="0.3" fill="#3996C9" cx="50.893" cy="45.399" r="6.05"/>
+<rect x="9.221" y="3.387" opacity="0.3" fill="#3996C9" width="79.279" height="36.014"/>
+</svg>

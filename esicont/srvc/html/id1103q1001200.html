@@ -1,0 +1,593 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>NO.7 LIMITED i-stop FUNCTION OPERATION TIME [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id1103q1001200"></a><p class="servinfo-title"><span class="servinfo-head"></span>NO.7 LIMITED i-stop FUNCTION OPERATION TIME [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id1103q1001200</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">7</p>
+</th>
+<th id="" align="left">
+<p class="thead">LIMITED i-stop FUNCTION OPERATION TIME</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>DESCRIPTION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Frequency of which i-stop function operates is low.</div>
+<div class="list">•  Frequent occurrence of engine restarting other than for driving vehicle from stop.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  To ensure electric vehicle system reliability, restart the engine regardless of the vehicle condition after <span>120 s</span> have elapsed since the i-stop function operated.</div>
+</div>
+</dd>
+</dl>
+<div class="list-title">Battery voltage low during i-stop function operation</div>
+<div class="list">•  Battery deterioration</div>
+<div class="list">•  Insufficient battery recharge while engine is running</div>
+<dl>
+<dd class="list">
+<div class="list">―  Low recharge effect</div>
+<dl>
+<dd class="list">
+<div class="list">•  Generator malfunction (part, system, control malfunction)</div>
+<div class="list">•  Large amount of vehicle power consumption</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  High electrical load from aftermarket electrical accessories</div>
+<div class="list-title">False detection of engine starting conditions</div>
+<div class="list">•  False detection of battery voltage</div>
+<div class="list">•  False detection of low power brake unit load</div>
+<dl>
+<dd class="list">
+<div class="list">―  Power brake unit vacuum sensor malfunction</div>
+<div class="list">―  Short or open circuit in wiring harness between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Power brake unit vacuum sensor terminal A—PCM terminal 2BG</div>
+<div class="list">•  Power brake unit vacuum sensor terminal C—PCM terminal 2Q</div>
+<div class="list">•  Power brake unit vacuum sensor terminal B—PCM terminal 2AH</div>
+</dd>
+</dl>
+<div class="list">―  Power brake unit malfunction (air tightness malfunction)</div>
+<div class="list">―  Malfunction in vacuum hose to power brake unit (damage, bad check valve)</div>
+</dd>
+</dl>
+<div class="list-title">False recognition of driver performing engine start operation</div>
+<div class="list">•  False detection of depressed clutch pedal (MTX)</div>
+<dl>
+<dd class="list">
+<div class="list">―  Clutch stroke sensor malfunction</div>
+<div class="list">―  Short to power supply in wiring harness between clutch stroke sensor terminal B and PCM terminal 2M</div>
+</dd>
+</dl>
+<div class="list">•  False detection of released brake pedal (ATX)</div>
+<dl>
+<dd class="list">
+<div class="list">―  Brake fluid pressure sensor (built-into DSC HU/CM) malfunction</div>
+</dd>
+</dl>
+<div class="list">•  False detection of steering wheel operation (ATX)</div>
+<dl>
+<dd class="list">
+<div class="list">―  Steering angle sensor initialization malfunction</div>
+<div class="list">―  EPS control module malfunction</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic Procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT EFFECT OF NON-GENUINE ELECTRICAL ACCESSORY FOR CAUSE OF MALFUNCTION</div>
+<div class="list">•  Remove any non-genuine electrical accessory.</div>
+<div class="list">•  Verify the malfunction symptom.</div>
+<div class="list">•  Is the frequency of the engine restarting from the i-stop off condition the same as that of another vehicle of the same model?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The system is normal.</div>
+<div class="list">•  Explain to the customer that the frequency of the engine restarting increases due to the effect of the non-genuine electrical accessory installed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY DTC</div>
+<div class="list">•  Retrieve the PCM, TCM, BCM, DSC HU/CM, instrument cluster and climate control unit DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0502p4290100.html">ON-BOARD DIAGNOSTIC SYSTEM DTC INSPECTION [TCM (CW6A-EL)]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0902f5067300.html">DTC INSPECTION [BCM]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id040262985000.html">DTC INSPECTION [DSC HU/CM]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0902e8960300.html">DTC INSPECTION [INSTRUMENT CLUSTER]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0702c1801500.html">DTC DISPLAY [FULL-AUTO AIR CONDITIONER]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0502p4290200.html">ON-BOARD DIAGNOSTIC SYSTEM DTC TABLE [TCM (CW6A-EL)]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0902f5067500.html">DTC TABLE [BCM]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id040262985200.html">DTC TABLE [DSC HU/CM]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0902e8960500.html">DTC TABLE [INSTRUMENT CLUSTER]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0702c1801700.html">DTC TABLE [FULL-AUTO AIR CONDITIONER]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY BATTERY CONDITION</div>
+<div class="list">•  Inspect the battery.<div>(See <font class="extxref-label"><a href="id011700800600.html">BATTERY INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 5.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE IF MALFUNCTION CAUSE IS BATTERY OR GENERATOR</div>
+<div class="list">•  Recharge the battery.<div>(See <font class="extxref-label"><a href="id011700800700.html">BATTERY RECHARGING</a></font>.)</div>
+</div>
+<div class="list">•  Inspect the battery again.<div>(See <font class="extxref-label"><a href="id011700800600.html">BATTERY INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the battery.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0117008005q7.html">BATTERY REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT GENERATOR</div>
+<div class="list">•  Inspect the generator.<div>(See <font class="extxref-label"><a href="id0117008003q8.html">GENERATOR INSPECTION [WITHOUT i-ELOOP (SKYACTIV-G 1.3, SKYACTIV-G 1.5)]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id1317040040q9.html">GENERATOR INSPECTION [WITH i-ELOOP (SKYACTIV-G 1.3, SKYACTIV-G 1.5)]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ATX:</div>
+<div class="list">•  Go to the next step.</div>
+<div class="tbody">MTX:</div>
+<div class="list">•  Go to Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE IF MALFUNCTION CAUSE IS STEERING ANGLE SENSOR SIGNAL OR OTHER</div>
+<div class="list">•  Start the engine and let it idle.</div>
+<div class="list">•  Access the EPS control module PID STR_ANG using the M-MDS.<div>(See <font class="extxref-label"><a href="id060230813300.html">PID/DATA MONITOR INSPECTION [EPS CONTROL MODULE]</a></font>.)</div>
+</div>
+<div class="list">•  Is the PID value normal?<div>(See <font class="extxref-label"><a href="id060230813400.html">PID/DATA MONITOR TABLE [EPS CONTROL MODULE]</a></font>.)</div>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT EPS CONTROL MODULE FOR MALFUNCTION</div>
+<div class="list">•  Inspect the EPS control module.<div>(See <font class="extxref-label"><a href="id061300802400.html">EPS CONTROL MODULE INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is the EPS control module normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform the following procedure:</div>
+<div class="list">1.  Switch the ignition off, and after <span>2 min or more</span> have elapsed, switch the ignition ON.</div>
+<div class="list">2.  Start the engine and drive the vehicle <span>10 m {33 ft} or more</span> in a straight line at a speed of <span>10 km/h {6.2 mph} or more</span>.</div>
+<div class="list">3.  Stop the vehicle with the wheels in the straight-ahead position.</div>
+<div class="list">4.  Access the EPS control module PID STR_ANG using the M-MDS.<div>(See <font class="extxref-label"><a href="id060230813300.html">PID/DATA MONITOR INSPECTION [EPS CONTROL MODULE]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id060230813400.html">PID/DATA MONITOR TABLE [EPS CONTROL MODULE]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">•  If the STR_ANG value is normal, go to Step 15. (Because the steering angle (estimated absolute angle) has returned to normal)</div>
+<div class="list">•  If the STR_ANG value is not normal, replace the EPS control module, then go to Step 15.<div>(See <font class="extxref-label"><a href="id061300801400.html">STEERING WHEEL AND COLUMN REMOVAL/INSTALLATION</a></font>.)</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the EPS control module, then go to Step 15.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id061300801400.html">STEERING WHEEL AND COLUMN REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE IF MALFUNCTION CAUSE IS POWER BRAKE UNIT VACUUM SENSOR SIGNAL OR OTHER</div>
+<div class="list">•  Put the vehicle in an i-stop condition (engine stopped).</div>
+<div class="list">•  Access the PCM PID BBP using the M-MDS with the brake pedal depressed and the engine stopped.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Does the BBP PID value remain <span>less than −47.8 kPa {−0.487 kgf/cm<sup>2</sup>, −6.93 psi}</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ATX:</div>
+<div class="list">•  Go to Step 12.</div>
+<div class="tbody">MTX:</div>
+<div class="list">•  Go to Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT POWER BRAKE UNIT VACUUM SENSOR FOR AIR TIGHTNESS MALFUNCTION</div>
+<div class="list">•  Perform the vacuum function inspection for the power brake unit and the vacuum loss inspection.<div>(See <font class="extxref-label"><a href="id041100801700.html">POWER BRAKE UNIT INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">10</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT POWER BRAKE UNIT VACUUM SENSOR</div>
+<div class="list">•  Inspect the power brake unit vacuum sensor.<div>(See <font class="extxref-label"><a href="id0140q1889400.html">POWER BRAKE UNIT VACUUM SENSOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the power brake unit vacuum sensor.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id041100801850.html">POWER BRAKE UNIT REMOVAL/INSTALLATION [L.H.D.]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0411008018u4.html">POWER BRAKE UNIT REMOVAL/INSTALLATION [R.H.D. (SKYACTIV-G 1.3, SKYACTIV-G 1.5)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT POWER BRAKE UNIT VACUUM SENSOR CIRCUIT FOR SHORT TO GROUND OR OPEN CIRCUIT</div>
+<div class="list">•  Inspect for open or short circuit between the following terminals (wiring harness-side):</div>
+<dl>
+<dd class="list">
+<div class="list">―  Power brake unit vacuum sensor terminal A—PCM terminal 2BG</div>
+<div class="list">―  Power brake unit vacuum sensor terminal C—PCM terminal 2Q</div>
+<div class="list">―  Power brake unit vacuum sensor terminal B—PCM terminal 2AH</div>
+</dd>
+</dl>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refer to the wiring diagram and verify whether or not there is a common connector between the following terminals:</div>
+<div class="list">•  Power brake unit vacuum sensor terminal A—PCM terminal 2BG</div>
+<div class="list">•  Power brake unit vacuum sensor terminal C—PCM terminal 2Q</div>
+<div class="list">•  Power brake unit vacuum sensor terminal B—PCM terminal 2AH</div>
+<div class="list-title">If there is a common connector:</div>
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for a short to ground or open circuit.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+<div class="list-title">If there is no common connector:</div>
+<div class="list">•  Repair or replace the wiring harness which has a short to ground or open circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the PCM.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q1802400.html">PCM REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">12</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE IF MALFUNCTION CAUSE IS BRAKE FLUID PRESSURE SENSOR SIGNAL OR OTHER</div>
+<div class="list">•  Put the vehicle in an i-stop condition (engine stopped).</div>
+<div class="list">•  Monitor the PCM PID BFP using the M-MDS while the brake is depressed and held with the i-stop function operating.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Does the monitoring value change?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction is not resolved, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q1802400.html">PCM REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to Step 15.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake fluid pressure sensor malfunction.</div>
+<div class="list">•  Replace the DSC HU/CM.<div>(See <font class="extxref-label"><a href="id0415008010b1.html">DSC HU/CM REMOVAL/INSTALLATION [L.H.D.]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0415008010b5.html">DSC HU/CM REMOVAL/INSTALLATION [R.H.D.]</a></font>.)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">13*</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE IF MALFUNCTION CAUSE IS CLUTCH STROKE SENSOR SIGNAL OR OTHER</div>
+<div class="list">•  Switch the ignition ON (engine off).</div>
+<div class="list">•  Access the PCM PID CPP using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Does the CPP PID value change according to the amount the clutch pedal is depressed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction is not resolved, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q1802400.html">PCM REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to Step 15.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">14</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CLUTCH STROKE SENSOR</div>
+<div class="list">•  Inspect the clutch stroke sensor.<div>(See <font class="extxref-label"><a href="id0140q1889000.html">CLUTCH STROKE SENSOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the clutch master cylinder.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0510q1156800.html">CLUTCH MASTER CYLINDER REMOVAL/INSTALLATION [F65M-R]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0510q2156800.html">CLUTCH MASTER CYLINDER REMOVAL/INSTALLATION [F66M-R]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect for short to power supply between clutch stroke sensor terminal B and PCM terminal 2M.</div>
+<div class="list">•  If there is any malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Refer to the wiring diagram and verify whether or not there is a common connector between clutch stroke sensor terminal B and PCM terminal 2M.</div>
+<dl>
+<div class="list-title">If there is a common connector:</div>
+<dd class="list">
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for a short to power supply.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">If there is no common connector:</div>
+<dd class="list">
+<div class="list">•  Repair or replace the wiring harness which has a short to power supply.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  If there is no malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q1802400.html">PCM REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">15</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Verify the test results.</div>
+<div class="list">•  If normal, return to the diagnostic index to service any additional symptoms.<div>(See <font class="extxref-label"><a href="id1103q1000300.html">SYMPTOM DIAGNOSTIC INDEX [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  If a malfunction remains, inspect the related Service Information and perform the repair or diagnosis.</div>
+<dl>
+<dd class="list">
+<div class="list">―  If the vehicle is repaired, troubleshooting is completed.</div>
+<div class="list">―  If the vehicle is not repaired or additional diagnostic information is not available, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q1802400.html">PCM REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<META name="vin12.ent" Content="VIN Data">
+		<META name="vin_attribute12.ent" content= "VIN Attribute">
+		<title>WiringDiagrams</title>
+		
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="css/print-style.css" type="text/css" />
+		
+		<link rel="stylesheet" href="plugin/split-pane/split-pane.css" type="text/css" />
+		<link rel="stylesheet" href="plugin/split-pane/pretty-split-pane.css" type="text/css" />
+		<link rel="stylesheet" href="plugin/jquery-ui/jquery-ui.min.css" type="text/css" />
+		<script type="text/javascript" src="js/connectorMAP_UK.js"></script>
+		<script type="text/javascript" src="js/locationMAP_UK.js"></script>
+		<script type="text/javascript" src="js/circuitMAP_UK.js"></script>
+		<script type="text/javascript" src="js/indexMAP_UK.js"></script>
+		<script type="text/javascript" src="js/connector2circuitMAP_UK.js"></script>
+		<script type="text/javascript" src="js/voltageMAP_UK.js"></script>
+		<script type="text/javascript" src="js/voltagelinkMAP_UK.js"></script>
+		<script type="text/javascript" src="js/currentflowMAP_UK.js"></script>
+		<script type="text/javascript" src="js/settings.js"></script>
+		<script type="text/javascript" src="plugin/jquery.min.js"></script>
+		<script type="text/javascript" src="plugin/split-pane/split-pane.js"></script>
+		<script type="text/javascript" src="plugin/jquery-color/jquery.color.js"></script>
+		<script type="text/javascript" src="plugin/jquery.panzoom/jquery.panzoom.js"></script>
+		<script type="text/javascript" src="plugin/jquery.panzoom/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="plugin/jquery.plainmodal.min.js"></script>
+		<script type="text/javascript" src="plugin/jquery-ui/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/svgClass.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		
+		<script>
+			$(function() {
+				$('div.split-pane').splitPane();
+			});
+		</script>
+		<style type="text/css">
+			body {overflow-x:hidden;overflow-y:hidden;}
+		</style>
+	</head>
+	<body>
+		<div id="dl" style="display:none;">
+		  <p id="dl-p"></p>
+		</div>
+		<div class="pretty-split-pane-frame">
+			<div class="split-pane fixed-top" id="split-pane-1">
+				<div class="split-pane-component" id="top-component">
+					<!-- ボタン類入れる -->
+					<div id="header-main">
+						<div id="header-sub">
+							<input id="EWD_logo"	type="image"	src="svg/button/EWD_logo.svg"			alt="Logo"			class="header-logo-left" title="version information" name="version information|6G-EWD conv" />
+							<input id="historyPrev"	type="image"	src="svg/button/arrow_left.svg"			alt="Prev"			class="header-button-leftP deactive" />
+							<input id="historyNext"	type="image"	src="svg/button/arrow_right.svg"		alt="Next"			class="header-button-leftN deactive" />
+							
+							<input id="btn_AllPrint"		type="image"	src="svg/button/button_ALLPRINT.svg"	alt="AllPrint"		class="header-button-right" />
+							<input id="btn_00G"			type="image"	src="svg/button/button_00G.svg"			alt="00G-1:00G-2:00G-3:00G-4:00G-5"	class="header-button-right jump_circuit" />
+							<input id="btn_00F"			type="image"	src="svg/button/button_00F.svg"			alt="00F-1:00F-2:00F-3:00F-4:00F-5"	class="header-button-right jump_circuit" />
+							<input id="btn_00E"			type="image"	src="svg/button/button_00E.svg"			alt="00E-1"											class="header-button-right jump_circuit" />
+							<input id="btn_00D"			type="image"	src="svg/button/button_00D.svg"			alt="00D-1"											class="header-button-right jump_circuit" />
+							<input id="btn_CurrentFlow"	type="image"	src="svg/button/button_CurrentFlow_disable.svg"			alt="CurrentFlow"			class="header-button-right currentFlow deactive" />
+							<input id="btn_TrmVoltage"	type="image"	src="svg/button/button_VOLTAGE_disable.svg"		alt="TerminalVoltageTable"			class="header-button-right terminal-voltage deactive" />
+							<input id="btn_GI"			type="image"	src="svg/button/button_GI.svg"			alt="GI_HOME.html"			class="header-button-right jump_otherSite deactive" />
+							<input id="btn_Reset"		type="image"	src="svg/button/button_RESET.svg"		alt="RESET"			class="header-button-right" />
+							<input id="btn_NewWindow"	type="image"	src="svg/button/button_new window.svg"	alt="NEW_WINDOW"	class="header-button-right" />
+							<hr class="stripe-top"></hr>
+						</div>
+					</div>
+				</div>
+				<div class="split-pane-divider" id="horizontal-divider"></div>
+				<div class="split-pane-component" id="bottom-component">
+					<div class="split-pane fixed-left" id="split-pane-2">
+						<div class="split-pane-component" id="left-component">
+							<!-- スライドメニュー部分-->
+							<div class="pretty-split-pane-component-inner"><!-- This div is added for styling purposes only. It's not part of the split-pane plugin. -->
+								<div id="slideMenu">
+<!--
+									<div id="slideMenuTab"><span id="slideMenuTabMark">▲</span>Index</div>
+-->
+									<div id="slideMenuTab"><input id="slideMenuTabMark" type="image"	src="svg/button/index_close.svg" alt="▲Index" class="index_open"/></div>
+									<div id="slideMenuContents">floating button</div>
+								</div>
+							</div>
+						</div>
+						<div class="split-pane-divider" id="vertical-divider"></div>
+						<div class="split-pane-component" id="right-component">
+							<div class="split-pane fixed-right">
+								<div class="split-pane-component" id="inner-left-component">				
+								<!-- 回路図表示領域 開始 -->
+								<div id="display_a" class="pretty-split-pane-component-inner">
+									<div id="display_a_svg" data-src="0140-2c_7Csvg/circuit/MZ2UKS0140_2c.svg" data-layer="#rect"></div>
+									
+									<!-- ツールアイコン部分-->
+									<div class="connectorArrowA">
+										<input id="historyPrev2"	type="image"	src="svg/button/arrow_left2.svg"		alt="Prev"			class="header-button-leftP2" />
+										<input id="historyNext2"	type="image"	src="svg/button/arrow_right2.svg"		alt="Next"			class="header-button-leftN2" />
+									</div>
+									<!-- セクションタイトル表示領域 開始 -->
+									<div id="sectionTitle" ></div>
+								</div>
+								<!-- 回路図表示領域 終了 -->
+								</div>
+								<div class="split-pane-divider" id="inner-my-divider"></div>
+								<div class="split-pane-component" id="inner-right-component">
+									<div class="split-pane horizontal-percent">
+										<div class="split-pane-component" id="top-component2">
+											<div id="display_b" class="pretty-split-pane-component-inner">
+												<div id="display_b_svg" data-src="svg/location/highlight/dummy.svg" data-layer="#rect"></div>
+												<!-- 使用している回路へのリンクボタン -->
+												<div class="LinkCircuitUseBody">
+													<input id="btn_LinkCircuitUse" data-target="multiLinkDialog" type="image" src="svg/button/disp_LinkCircuitUse.svg" alt="CHNG_L" />
+												</div>
+												<!-- 複数選択ボタン -->
+												<div id="multiSelectBody" data-status="deactive">
+													<input id="btn_MultiSelect" type="image" src="svg/button/disp_multi_select_disable.svg"  alt="AREA_B"/>
+												</div>
+												<!-- エリア入れ替えボタン -->
+												<div class="areaChangeBody anchor">
+													<input class="btn_areaChange" type="image" src="svg/button/disp_change_con.svg" alt="AREA_B" />
+												</div>
+											</div>
+										</div>
+										<div class="split-pane-divider" id="horizontal-divider2"></div>
+										<div class="split-pane-component" id="bottom-component2">
+											<div id="display_c" class="pretty-split-pane-component-inner">
+												<div id="display_c_svg" data-src="svg/location/highlight/dummy.svg" data-layer="#rect"></div>
+									  　			<!-- エリア入れ替えボタン -->
+												<div class="areaChangeBody anchor">
+													<input class="btn_areaChange" type="image" src="svg/button/disp_change_loca.svg" alt="AREA_C" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Dialog -->
+		<div id="multiLinkDialog" class="modal-content" ></div>
+<!-- search word -->
+<FONT COLOR=#FFFFFF SIZE=2px>
+** - P2148:00
+</FONT>
+	</body>
+</html>

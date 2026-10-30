@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>TCS CONTROL</title>
+</head>
+<body><a name="id041500103800"></a><p class="servinfo-title"><span class="servinfo-head"></span>TCS CONTROL</p>
+<hr>
+<p class="servinfo-title-id" align="right">id041500103800</p><br clear="all"><a name="id04150010380001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The TCS control actuates torque reduction through engine control, as well as using brake control to control traction.</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Engine control: Engine output is lowered by fuel cut and ignition timing control to reduce the traction, preventing driving wheel slip.</div>
+<div class="list">•  Brake control: Brake fluid pressure from the Hydraulic Unit (HU) to the driving wheel that is slipping is increased, operating the brake and preventing driving wheel slip.</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id04150010380002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Features</p>
+<div class="list">•  The left and right wheels are controlled at the same time by engine control. Therefore, when the road surface friction coefficients differ between the left and right wheels, proper torque reduction cannot be performed separately for each wheel. When this occurs, torque reduction is performed by independent left and right wheel brake control, providing more stable vehicle control.</div>
+<div class="list">•  The DSC OFF switch allows the driver to optionally enable/disable the TCS control at the driver's discretion.</div>
+<dl>
+<dd class="list">
+<div class="list">―  When both driving wheels are stuck, traction control according to the driver's operation can be performed by inhibiting the TCS control.</div>
+<div class="list">―  The TCS control returns to normal operation automatically at the next ignition cycle.</div>
+</dd>
+</dl><br clear="all"><a name="id04150010380003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<p class="figure-title">Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00001116.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00001116</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id04150010380004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  TCS control detects driving wheel spin based on the signals listed below, sends torque reduction request signals to the PCM, and also controls the solenoid valves and pump motor in the DSC HU/CM.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle wheel speed signals from the front and rear ABS wheel-speed sensors</div>
+<div class="list">―  Engine torque signal from the PCM</div>
+<div class="list">―  Steering angle signal from the EPS CM</div>
+<div class="list">―  Yaw rate and lateral-G signals from the SAS control module</div>
+<div class="list">―  Fluid pressure signal from the brake fluid pressure sensor (built into the DSC HU/CM)</div>
+</dd>
+</dl>
+</body>
+</html>

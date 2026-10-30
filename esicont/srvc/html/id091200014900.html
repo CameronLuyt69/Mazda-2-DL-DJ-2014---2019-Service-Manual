@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>POWER WINDOW CONTROL MODULE/POWER OUTER MIRROR CONTROL MODULE</title>
+</head>
+<body><a name="id091200014900"></a><p class="servinfo-title"><span class="servinfo-head"></span>POWER WINDOW CONTROL MODULE/POWER OUTER MIRROR CONTROL MODULE</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091200014900</p><br clear="all"><a name="id09120001490001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  Controls the driver's side power window system based on the power window main switch operation signal and power window motor (driver's side) pulse.</div>
+<div class="list">•  Controls the power outer mirror system based on the power window man switch operation signal.</div><br clear="all"><a name="id09120001490002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  When the power window control module receives a power window main switch operation signal, it turns on/off the open/close relay.</div>
+<div class="list">•  The power window control module detects the power window motor operation status based on the pulse from the power window motor (driver's side).</div><br clear="all"><a name="id09120001490003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The power window control module and the power outer mirror control module are built into the power window main switch.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002004.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002004</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id09120001490004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list-title">Power window control module</div>
+<div class="list">•  The power window control module detects the motor rotation speed and rotation direction based on pulse 1 and 2 from the power window motor (driver's side).<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002005.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002005</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list-title">Power outer mirror control module</div>
+<div class="list">•  For the power outer mirror control module operation, refer to [POWER OUTER MIRROR SYSTEM]. (See <font class="extxref-label"><a href="id091200013500.html">POWER OUTER MIRROR SYSTEM</a></font>.)</div><br clear="all"><a name="id09120001490005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  When power window control module detects a pulse (Hall effect switch) error, it switches the power window system to fail-safe mode to prevent incorrect operation.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Malfunction condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Ignition is switched ON (engine off or on)</p>
+</th>
+<th id="" align="center">
+<p class="thead">Ignition is switched off</p>
+</th>
+<th id="" align="center">
+<p class="thead">Recovery condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Power window control module detected pulse 1 error (for pinching and door glass position detection) stop malfunction</div>
+<div class="list">•  During close or open operation, pulse 1 cannot be detected while pulse 2 is detected</div>
+</td>
+<td id="" align="left" rowspan="5">
+<div class="tbody">Auto operation is prohibited (Manual operation is enabled) Operation of power window main switch except for the driver's seat is prohibited</div>
+</td>
+<td id="" align="left" rowspan="5">
+<div class="tbody">Auto and manual operations are prohibited</div>
+</td>
+<td id="" align="left" rowspan="5">
+<div class="tbody">From a close operation, the power window system returns to normal mode when pulse 1 and 2 signals are received normally, and when the window fully-closed position and the window glass lowering amount during auto reverse are detected.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Power window control module detected pulse 2 error (for door glass direction detection) stop malfunction</div>
+<div class="list">•  During close or open operation, pulse 2 cannot be detected while pulse 1 is detected</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Power window control module detected pulse signal error (inversion of pulse 1 and pulse 2 input signals or large phase deviation between pulses 1 and 2)</div>
+<div class="list">•  Difference detected between the direction detected by the signals of pulses 1 and 2, and the actual direction during close or open operation</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Power window control module detected pulse 1 error (Non-return range lowering)</div>
+<div class="list">•  During close operation, pulse 1 signal from the power window motor detected more than set times even after the window reached the fully-closed position recorded by the power window control module.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Power window control module detected pulse 1 and 2 stop malfunction</div>
+<div class="list">•  Pulse signals 1 and 2 are not detected for 1 s after the open operation is started from the fully closed position</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

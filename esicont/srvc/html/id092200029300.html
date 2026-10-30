@@ -1,0 +1,415 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>FORWARD SENSING CAMERA (FSC)</title>
+</head>
+<body><a name="id092200029300"></a><p class="servinfo-title"><span class="servinfo-head"></span>FORWARD SENSING CAMERA (FSC)</p>
+<hr>
+<p class="servinfo-title-id" align="right">id092200029300</p><br clear="all"><a name="id09220002930001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The forward sensing camera (FSC) recognizes light-emitting objects and vehicle lane lines based on the images picked up at the front of the vehicle, and controls the high beam control (HBC) system and lane departure warning system (LDWS).</div><br clear="all"><a name="id09220002930002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  In the following cases, the FSC may not be able to detect target objects correctly.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Under bad weather condition, such as rain, fog and snow.</div>
+<div class="list">―  The window washer is being used or the windshield wipers are not used when it's raining.</div>
+<div class="list">―  Ice, fog, snow, frost, rainfall, dirt, or foreign matter such as a plastic bag is stuck on the windshield.</div>
+<div class="list">―  Trucks with low loading platforms and vehicles with an extremely low or high profile.</div>
+<div class="list">―  When driving next to walls with no patterning (including fences and longitudinally striped walls).</div>
+<div class="list">―  The taillights of the vehicle ahead are turned off.</div>
+<div class="list">―  A vehicle is outside the illumination range of the headlights.</div>
+<div class="list">―  The vehicle is making a sharp turn, or ascending or descending a steep slope.</div>
+<div class="list">―  Entering or exiting a tunnel.</div>
+<div class="list">―  Heavy luggage is loaded causing the vehicle to tilt.</div>
+<div class="list">―  Strong light is shone at the front of the vehicle (back light or high-beam light from on-coming vehicles).</div>
+<div class="list">―  There are many light emitters on the vehicle ahead.</div>
+<div class="list">―  When the vehicle ahead is not equipped with taillights or the taillights are turned off at nighttime.</div>
+<div class="list">―  Elongated luggage or cargo is loaded onto installed roof rails and covers the FSC.</div>
+<div class="list">―  Exhaust gas from the vehicle in front, sand, snow, and water vapor rising from manholes and grating, and water splashed into the air.</div>
+<div class="list">―  When towing a malfunctioning vehicle.</div>
+<div class="list">―  The vehicle is driven with tires having significantly different wear.</div>
+<div class="list">―  The vehicle is driven on down slopes or bumpy roads.</div>
+<div class="list">―  There are water puddles on the road.</div>
+<div class="list">―  The surroundings are dark such as during the night, early evening, or early morning, or in a tunnel or indoor parking lot.</div>
+<div class="list">―  The illumination brightness of the headlights is reduced or the headlight illumination is weakened due to dirt or a deviated optical axis.</div>
+<div class="list">―  The target object enters the blind spot of the FSC.</div>
+<div class="list">―  A person or object bursts onto the road from the shoulder or cuts right in front of you.</div>
+<div class="list">―  You change lanes and approach a vehicle ahead.</div>
+<div class="list">―  When driving extremely close to the target object.</div>
+<div class="list">―  Tire chains or a temporary spare tire is installed.</div>
+<div class="list">―  The vehicle ahead has a special shape. For example, a vehicle towing a trailer house or a boat, or a vehicle carrier carrying a vehicle with its front pointed rearward.</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl><br clear="all"><p><a name="id09220002930003"></a><p class="topic-title"><span class="topic-head"></span>Light-emitting object (on-coming vehicle, vehicle ahead, street lights) recognition function</p>
+<dl>
+<dd>
+<div class="list">•  Analyzes the light-emitting object picked up by the camera, and recognizes it as an on-coming vehicle, vehicle ahead, or street lights (traveling on town/city streets).</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">On-coming vehicle recognition function</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The forward sensing camera (FSC) recognizes a light-emitting object which meets any of the following conditions and is at least <span>within 600 m {23,622 in}</span> from the detecting vehicle as an on-coming vehicle.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Light-emitting object approaches having brightness of specified value or more</div>
+<div class="list">―  Light-emitting object approaches having white color and certain level of brightness or more (if it approaches and brightness changes, determination made at point of image capture)<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If the on-coming vehicle and the surrounding conditions are as follows, the forward sensing camera (FSC) may require time until it recognizes an on-coming vehicle.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Poor visibility due to rain and fog</div>
+<div class="list">―  On-coming vehicle is travelling with only TNS or fog lights</div>
+<div class="list">―  Brightness of light source is low, such as a bicycle</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002904.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002904</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+<div class="list-title">Vehicle ahead recognition function</div>
+<div class="list">•  The forward sensing camera (FSC) recognizes a light-emitting object which meets any of the following conditions and is at least <span>within 500 m {19,685 in}</span> from the detecting vehicle as a vehicle ahead.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Red light emitted from light-emitting object is detected</div>
+<div class="list">―  Determines that there is a pair of light-emitting objects<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  To make the prevention of dazzling of other vehicles a priority, the system could recognize reflecting objects on the road surface or a guard rail as a vehicle ahead (switches headlights to low beams).</div>
+<div class="list">•  If visibility is poor due to rain or fog, the system may not recognize a vehicle ahead even though one may exist (maintains headlight high beams).</div>
+</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002905.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002905</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<div class="list-title">Town/city streets recognition function</div>
+<div class="list">•  In the following cases, the forward sensing camera recognizes that the vehicle is traveling on town/city streets.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Several light-emitting objects of certain height or more from road surface along same line are detected</div>
+<div class="list">―  Camera image gray color is certain level or more<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Even during travel other than on town/city streets at night, if the road surface is bright from moonlight, the system may recognize that the vehicle is traveling on town/city streets (switches headlights to low beams).</div>
+</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002906.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002906</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl><br clear="all"><p><a name="id09220002930004"></a><p class="topic-title"><span class="topic-head"></span>Vehicle lane lines and travel lane recognition function</p>
+<dl>
+<dd>
+<div class="list">•  The forward sensing camera (FSC) recognizes lineal objects which are white/yellow and paler than the surrounding color as vehicle lane lines by the contrast (color density) of the camera image.</div>
+<div class="list">•  If the vehicle lane lines are continuous they are recognized as actual lines, if discontinuous they are recognized as broken lines.</div>
+<div class="list">•  The travel lanes recognized from the vehicle lane lines on the left and right of the vehicle are used to calculate the width.</div>
+<div class="list">•  Traveling in a straight line or cornering is determined by the status of the vehicle lane lines.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00003684.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00003684</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220002930005"></a><p class="topic-title"><span class="topic-head"></span>LDWS warning-trigger line setting function</p>
+<dl>
+<dd>
+<div class="list">•  The forward sensing camera (FSC) sets the lane departure warning system (LDWS) warning-trigger lines<sup>*1</sup> at <span>approx. 5 cm {2 in}</span> inside of the recognized vehicle lane lines.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002907.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002907</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  If there is only one vehicle lane line or only one vehicle lane line can be recognized, the warning-trigger line is set to only the recognized vehicle lane line.</div>
+<div class="list">•  If a broken line and solid line are both recognized, the solid line is given priority to be set to the warning-trigger line.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002908.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002908</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<div class="deflist">*1  :The distance between the vehicle lane lines and the warning-trigger lines can be changed using the personalization feature. For details, refer to [INSTRUMENTATION/DRIVER INFO. PERSONALIZATION]. (See <font class="extxref-label"><a href="id092200018400.html">INSTRUMENTATION/DRIVER INFO. PERSONALIZATION</a></font>.)</div>
+</p><br clear="all"><p><a name="id09220002930006"></a><p class="topic-title"><span class="topic-head"></span>LDWS warning-trigger line auto-adjust function</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The LDWS warning-trigger line auto-adjust function operates when “Adaptive” is selected using the personalization feature, which can be used to change the distance between the lane departure warning system (LDWS) vehicle lane lines and the warning-trigger lines. Refer to the [INSTRUMENTATION/DRIVER INFO. PERSONALIZATION ] for details on personalization features. (See <font class="extxref-label"><a href="id092200018400.html">INSTRUMENTATION/DRIVER INFO. PERSONALIZATION</a></font>.)</div>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  After the vehicle is driven for a certain period of time or more during 1 drive-cycle<sup>*1</sup>, the forward sensing camera (FSC) automatically adjusts the lane departure warning system (LDWS) warning-trigger lines to control unnecessary warnings under the following conditions.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle is driven close to vehicle lane line for continuous period of time or longer due to particular driver characteristic.</div>
+<div class="list">―  Width of travel lane recognized by the forward sensing camera (FSC) is decreased from a constant width</div>
+<div class="list">―  The travel lane recognized by the forward sensing camera (FSC) is curved a certain value or more, and the vehicle is determined to be traveling on curved roads (out-in-out travel).</div>
+</dd>
+</dl>
+<div class="list">•  After the vehicle is driven for a certain period of time or more during 1 drive-cycle<sup>*1</sup>, the forward sensing camera (FSC) automatically adjusts the lane departure warning system (LDWS) warning-trigger lines according to the change in the width of the travel lane such that the travel lane recognized by the forward sensing camera (FSC) is wider than the certain width.</div>
+<div class="list">•  The forward sensing camera (FSC) automatically adjusts the warning-trigger line within the range between the outer side of the vehicle lane line and <span>approx. 10 cm {3.9 in}</span> inward from the warning-trigger line set prior to the adjustment.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002909.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002909</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The forward sensing camera (FSC) automatically adjusts the set warning-trigger lines within the adjustment range in the following cases:</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Detection state</p>
+</th>
+<th id="" align="center">
+<p class="thead">Adjustment</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">A condition in which distance between vehicle and vehicle lane line recognized by forward sensing camera (FSC) is closer than specified value (such as driving close to either side continuously) is continuously detected for a certain period of time.</div>
+</td>
+<td id="" align="center"><img src="images/am2zzn00002910.png"></td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Recognized travel lane width decreases to certain width or less</div>
+</td>
+<td id="" align="center"><img src="images/am2zzn00002911.png"></td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Recognized vehicle lane line is curved a certain value or more and the vehicle is determined to be traveling on curved roads (out-in-out travel)</div>
+</td>
+<td id="" align="center"><img src="images/am2zzn00002912.png"></td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Width of recognized travel lane is wider than certain width</div>
+</td>
+<td id="" align="center"><img src="images/am2zzn00002913.png"></td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :One drive cycle means the period from when the ignition is switched ON (engine on) to when the ignition is switched off.</div>
+</p><br clear="all"><p><a name="id09220002930007"></a><p class="topic-title"><span class="topic-head"></span>Aiming correction function</p>
+<dl>
+<dd>
+<div class="list">•  The forward sensing camera (FSC) adjusts the camera shot angle by aiming, and stores the vanishing point<sup>*1</sup>. The stored vanishing point and the current vanishing point are compared and if there is a deviation of a certain value or more in the vanishing point, the current vanishing point is stored as the new vanishing point.</div>
+</dd>
+</dl>
+<div class="deflist">*1  :The vehicle lane lines on the road surface are parallel and do not intersect, however, when viewed by the camera image, the lines converge in the distance and eventually cross. The point at which the lines cross is called the vanishing point.</div>
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002914.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002914</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09220002930008"></a><p class="topic-title"><span class="topic-head"></span>HBC warning light (amber), LDWS OFF indicator light, and LDWS warning light burnt out bulb check function</p>
+<dl>
+<dd>
+<div class="list">•  When the ignition is switched ON (engine off or on), the instrument cluster turns the HBC warning light (amber), LDWS OFF indicator light, and LDWS warning light on for <span>approx. 3 s</span> to check for burnt out bulb.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220002930009"></a><p class="topic-title"><span class="topic-head"></span>On-board diagnostic function</p>
+<dl>
+<dd>
+<div class="list">•  The forward sensing camera (FSC) detects dirt and fogging of the camera lens and windshield glass, forward sensing camera (FSC) communication errors, forward sensing camera (FSC) internal malfunctions, and outputs DTCs. For details on DTCs, refer to [ON-BOARD DIAGNOSTIC [FORWARD SENSING CAMERA (FSC)]]. (See <font class="extxref-label"><a href="id092200021852.html">ON-BOARD DIAGNOSTIC [FORWARD SENSING CAMERA (FSC)]</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09220002930010"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The forward sensing camera (FSC) is positioned on the windshield.</div>
+<div class="list">•  By integrating a small, color CMOS camera<sup>*1</sup> with the control module, lightness and size reduction have been achieved.</div>
+<div class="list">•  The forward sensing camera (FSC) communicates with other modules via CAN.</div>
+<div class="deflist">*1  :Camera equipped with high sensitivity CMOS (Complementary Metal-Oxide Semiconductor) image sensor</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002915.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002915</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If there is damage or cracking in the windshield glass repair prohibited area, replace the windshield. If the damage or cracking in the windshield glass repair prohibited area is repaired, it could affect the recognition of the Forward Sensing Camera (FSC) and the system may not operate normally.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00004892.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00004892</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id09220002930011"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id09220002930012"></a><p class="topic-title"><span class="topic-head"></span>Camera range</p>
+<dl>
+<dd>
+<div class="list">•  The forward sensing camera (FSC) shoots in the following range.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Depending on the surrounding conditions (ascending roads, winding roads, walls), the forward sensing camera (FSC) may be unable to pickup an object in front of the vehicle within the camera range and not recognize it as a controlled target object.</div>
+</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00003694.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00003694</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09220002930013"></a><p class="topic-title"><span class="topic-head"></span>Position calculation</p>
+<dl>
+<dd>
+<div class="list">•  When an object appears on the screen, the forward sensing camera (FSC) determines the position coordinates and calculates the direction and distance to the object.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002916.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002916</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09220002930014"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  Refer to fail-safe for [HIGH BEAM CONTROL (HBC) SYSTEM]. Fail-safe is not applicable for the lane departure warning system (LDWS). (See <font class="extxref-label"><a href="id091800005000.html">HIGH BEAM CONTROL (HBC) SYSTEM</a></font>.)</div>
+</body>
+</html>

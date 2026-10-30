@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>HEADLIGHT AUTO LEVELING SYSTEM</title>
+</head>
+<body><a name="id091800010900"></a><p class="servinfo-title"><span class="servinfo-head"></span>HEADLIGHT AUTO LEVELING SYSTEM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091800010900</p><br clear="all"><a name="id09180001090001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The headlight auto leveling system automatically adjusts the headlight LO optical axis in response to changes in load and passenger conditions to prevent blinding of oncoming vehicles from headlight glare and to assure a range of visibility.</div><br clear="all"><a name="id09180001090002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The headlight auto leveling system is controlled by the auto leveling control module.</div><br clear="all"><p><a name="id09180001090003"></a><p class="topic-title"><span class="topic-head"></span>Optical axis adjustment function</p>
+<dl>
+<dd>
+<div class="list">•  If there is a vehicle height change with the ignition switched ON (engine on or off) and the headlights LO turned on, the auto leveling control module automatically adjusts the headlight LO optical axis.</div>
+<div class="list">•  The auto leveling control module controls the optical axis adjustment function based on the following signals.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Signal name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Sending module/part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Communication method</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle speed signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM</div>
+</td>
+<td id="" align="left" rowspan="3">
+<div class="tbody">HS-CAN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Ignition switch position signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Headlight LO on condition signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BCM</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><a name="id09180001090004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001715.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001715</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180001090005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001716.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001716</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180001090006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id09180001090007"></a><p class="topic-title"><span class="topic-head"></span>Vehicle height changes while vehicle is stopped</p>
+<dl>
+<dd>
+<div class="list-title">Operation conditions</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Operates when all of the following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle speed is <span>0 km/h {0 mph}</span> (<span>0 km/h {0 mph}</span> vehicle speed signal is received)</div>
+<div class="list">―  Ignition is switched ON (engine off or on) (ignition switch status signal (ON) is received)</div>
+<div class="list">―  Headlights LO on (headlight LO on condition signal reception)</div>
+<div class="list">―  Detects change in vehicle height amount<sup>*</sup> at specified value or more</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Operation</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">1.  When the ignition is switched ON (engine off or on), the auto leveling sensor sends (1) a vehicle height signal to the auto leveling control module.</div>
+<div class="list">2.  When the auto leveling control module receives (2) a headlight LO on condition signal from the BCM via CAN communication, it calculates (3) the amount of change in the vehicle height<sup>*</sup> based on the vehicle height signal.</div>
+<div class="list">3.  When the auto leveling control module detects (4) the amount of change in the vehicle height<sup>*</sup> at the specified value or more, it calculates the target optical axis (5) based on the calculated amount of change in the vehicle height<sup>*</sup>.</div>
+<div class="list">4.  The auto leveling control module sends (6) the calculated target optical axis signal to the headlight leveling actuator.</div>
+<div class="list">5.  When the target optical axis signal is received, the headlight leveling actuator drives (7) the motor.</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001717.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001717</div>
+</td>
+</tr>
+</table>
+</p>
+<div class="deflist">*  :The change in the amount of vehicle height is the calculated <span>1 s</span> average value of the vehicle height signal which the auto leveling control module detects every <span>0.1 s</span>.</div><br clear="all"><p><a name="id09180001090008"></a><p class="topic-title"><span class="topic-head"></span>Vehicle height changes while vehicle is moving</p>
+<dl>
+<dd>
+<div class="list-title">Operation conditions</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Operates when all of the following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle speed is <span>30 km/h {19 mph} or more</span> (vehicle speed signal of <span>30 km/h {19 mph} or more</span> is received)</div>
+<div class="list">―  Headlight LO on (headlight LO on condition signal reception)</div>
+<div class="list">―  Detects change in vehicle speed of <span>3 km/h {2 mph} or less</span> for continuous period of <span>25 s</span></div>
+<div class="list">―  Detects change in vehicle height amount<sup>*</sup> at specified value or more</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Operation</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">1.  The auto leveling sensor sends (1) a vehicle height signal to the auto leveling control module while the vehicle is being driven.</div>
+<div class="list">2.  When the auto leveling control module receives (2) a headlight LO on condition signal from the BCM via CAN communication, it calculates (3) the amount of change in the vehicle height<sup>*</sup> based on the vehicle height signal.</div>
+<div class="list">3.  When the auto leveling control module detects (4) the vehicle speed of <span>30 km/h {19 mph} or more</span>, change in vehicle speed of <span>3 km/h {2 mph} or less</span> for a continuous <span>25 s</span>, and the change in the amount of vehicle height<sup>*</sup> at the specified value or more, it calculates (5) the target optical axis based on the calculated change in the amount of vehicle height<sup>*</sup>.</div>
+<div class="list">4.  The auto leveling control module sends (6) the calculated target optical axis signal to the headlight leveling actuator.</div>
+<div class="list">5.  When the target optical axis signal is received, the headlight leveling actuator drives (7) the motor.</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001718.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001718</div>
+</td>
+</tr>
+</table>
+</p>
+<div class="deflist">*  :The change in the amount of vehicle height is the calculated <span>1 s</span> average value of the vehicle height signal which the auto leveling control module detects every <span>0.1 s</span>.</div>
+</body>
+</html>

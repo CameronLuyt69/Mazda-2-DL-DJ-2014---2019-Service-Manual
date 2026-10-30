@@ -1,0 +1,574 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>THEFT-DETERRENT SYSTEM</title>
+</head>
+<body><a name="id091400003700"></a><p class="servinfo-title"><span class="servinfo-head"></span>THEFT-DETERRENT SYSTEM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091400003700</p><br clear="all"><a name="id09140000370001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The theft-deterrent system operates the theft-deterrent siren or theft-deterrent horn and hazard warning lights if a door, liftgate/trunk lid or the bonnet is improperly opened.</div>
+<div class="list">•  An answer-back function has been adopted which allows visual verification of the theft-deterrent system operation.</div>
+<div class="list">•  Signal input/output of the theft-deterrent system is controlled by the BCM.</div><br clear="all"><a name="id09140000370002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p><br clear="all"><p><a name="id09140000370003"></a><p class="topic-title"><span class="topic-head"></span>With intruder sensor</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002313.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002313</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09140000370004"></a><p class="topic-title"><span class="topic-head"></span>Without intruder sensor</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002314.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002314</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><a name="id09140000370005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p><br clear="all"><p><a name="id09140000370006"></a><p class="topic-title"><span class="topic-head"></span>With intruder sensor</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001877.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001877</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09140000370007"></a><p class="topic-title"><span class="topic-head"></span>Without intruder sensor</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001878.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001878</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><a name="id09140000370008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p><br clear="all"><p><a name="id09140000370009"></a><p class="topic-title"><span class="topic-head"></span>Answer back function</p>
+<dl>
+<dd>
+<div class="list">•  When a locking operation is performed using the remote transmitter is in stand-by preparation mode, stand-by mode, the hazard warning lights flash once.</div>
+<div class="list">•  When a unlocking operation is performed using the remote transmitter is in initial mode, the hazard warning lights flash twice.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140000370010"></a><p class="topic-title"><span class="topic-head"></span>Intruder sensor cancel function</p>
+<dl>
+<dd>
+<div class="list">•  An intruder sensor cancel button has been installed on the remote transmitter. If the intruder sensor cancel button is on while the theft-deterrent system is stand-by preparatory mode, intruder sensor ultrasonic wave output is cut, and movement detection is stopped.</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09140000370011"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation (With Intruder Sensor)</p><br clear="all"><p><a name="id09140000370012"></a><p class="topic-title"><span class="topic-head"></span>Mode transition</p>
+<dl>
+<dd>
+<div class="list">•  The BCM switches the theft-deterrent system mode based on the ignition switch and door conditions.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001879.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001879</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140000370013"></a><p class="topic-title"><span class="topic-head"></span>Operation stop mode</p>
+<dl>
+<dd>
+<div class="list">•  In this mode, all theft-deterrent system operations are stopped.</div>
+<div class="list">•  The system changes to the operation stop mode when any of the following conditions are met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Switch the ignition to ACC or ON (engine off).</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140000370014"></a><p class="topic-title"><span class="topic-head"></span>Initial mode</p>
+<dl>
+<dd>
+<div class="list">•  This mode is the preparatory mode before changing to the stand-by mode. The system does not change directly to the alert mode from this mode.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Transition condition to the initial mode</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The system changes from the operation stop mode to the initial mode if all of the following conditions are met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Switch the ignition off</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The system transitions from stand-by preparatory mode, stand-by mode, alert mode, and alert preparatory mode to the initial mode if the cancel conditions in each mode are met.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Transition condition to the stand-by preparatory mode</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The system changes to the stand-by preparatory mode if any of the following conditions are met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  A lock operation was performed using the remote transmitter lock button with all the doors, liftgate, and bonnet closed.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140000370015"></a><p class="topic-title"><span class="topic-head"></span>Stand-by preparatory mode</p>
+<dl>
+<dd>
+<div class="list">•  This is mode prior to the stand-by mode.</div>
+<div class="list">•  If the cancel conditions are met, the system changes to the initial mode.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Transition condition to the stand-by mode</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If the stand-by preparatory mode continues for <span>approx. 20 s</span>, the system changes to the stand-by mode.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Cancel conditions</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If any of the following conditions are met, the stand-by preparatory mode is canceled and the system changes to the initial mode.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Any door latch switch on (door is open), or liftgate latch switch on (liftgate is open), or bonnet latch switch off (bonnet is open)</div>
+<div class="list">―  Any door lock-link switch UNLOCK</div>
+<div class="list">―  Switch the ignition to ACC or ON (engine off).</div>
+<div class="list">―  Unlock operation using remote transmitter</div>
+<div class="list">―  Open the liftgate using the liftgate opener switch (With advanced keyless entry system)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140000370016"></a><p class="topic-title"><span class="topic-head"></span>Stand-by mode</p>
+<dl>
+<dd>
+<div class="list">•  The mode monitors for unauthorized door opening/closing <span>approx. 20 s</span> after the doors are locked. If any unauthorized operation is detected, the system changes to alert mode.</div>
+<div class="list">•  If the cancel conditions are met, the system changes to the initial mode.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Transition condition to the alert mode</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If any of the following conditions are met, the system changes to the alert mode.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Forced ignition ON or ignition is switched ON without transmitter authorization</div>
+<div class="list">―  Door latch switch on (door is open)</div>
+<div class="list">―  Liftgate latch switch on (liftgate is open)</div>
+<div class="list">―  Bonnet latch switch off (bonnet is open)</div>
+<div class="list">―  Door lock-link switch UNLOCK</div>
+<div class="list">―  Intrusion into vehicle is detected by intruder sensor</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Cancel condition</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If any of the following conditions are met, the stand-by mode is canceled and the system changes to the initial mode.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Unlock operation using remote transmitter</div>
+<div class="list">―  Switch the ignition to ON (engine off), and engine start</div>
+<div class="list">―  Open the liftgate using the liftgate opener switch (With advanced keyless entry system)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140000370017"></a><p class="topic-title"><span class="topic-head"></span>Alert mode</p>
+<dl>
+<dd>
+<div class="list">•  In this mode, the theft-deterrent siren and hazard warning lights are operated to alert the surrounding area.</div>
+<div class="list">•  When the alarm period (approx. 30 s) has elapsed, the system changes to the alert preparatory mode.</div>
+<div class="list">•  If the cancel conditions are met, the system changes to the initial mode.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002693.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002693</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Transition condition to the alert preparatory mode</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When the alarm period (<span>approx. 30 s</span>) has elapsed, the system changes to the alert preparatory mode.</div>
+<div class="list">•  The alarm period is not extended even if a transition condition to alert mode is met again during an alarm period.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Cancel condition</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If any of the following conditions are met, the alert mode is canceled, and the system changes to the initial mode.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Unlock operation using remote transmitter</div>
+<div class="list">―  Switch the ignition to ON (engine off), and engine start</div>
+<div class="list">―  Open the liftgate using the liftgate opener switch (With advanced keyless entry system)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140000370018"></a><p class="topic-title"><span class="topic-head"></span>Alert preparatory mode</p>
+<dl>
+<dd>
+<div class="list">•  In the alert preparatory mode, the theft-deterrent siren and hazard warning light are not operated, however, the alarm triggers immediately if the condition is changed.</div>
+<div class="list">•  If the cancel conditions are met, the system changes to the initial mode.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Transition condition to alert mode</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The system changes to the alert mode if any of the following conditions are met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Forced ignition ON or ignition is switched ON without transmitter authorization</div>
+<div class="list">―  Door latch switch on (door is open)</div>
+<div class="list">―  Liftgate latch switch on (liftgate is open)</div>
+<div class="list">―  Bonnet latch switch off (bonnet is open)</div>
+<div class="list">―  Door lock-link switch UNLOCK</div>
+<div class="list">―  Intrusion into vehicle is detected by intruder sensor</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Transition condition to the stand-by mode</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If there is no transition to cancel or alert mode for a period of 5 s after warning stand-by mode is established, the system switches to stand-by mode.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Cancel condition</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If any of the following conditions are met, the alert preparatory mode is canceled and the system changes to the initial mode.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Unlock operation using remote transmitter</div>
+<div class="list">―  Switch the ignition ON (engine off), and engine start</div>
+<div class="list">―  Open the liftgate using the liftgate opener switch (With advanced keyless entry system)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09140000370019"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation (Without Intruder Sensor)</p><br clear="all"><p><a name="id09140000370020"></a><p class="topic-title"><span class="topic-head"></span>Mode transition</p>
+<dl>
+<dd>
+<div class="list">•  The BCM switches the theft-deterrent system mode based on the ignition switch and door conditions.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am6zzn00002134.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am6zzn00002134</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140000370021"></a><p class="topic-title"><span class="topic-head"></span>Operation stop mode</p>
+<dl>
+<dd>
+<div class="list">•  In this mode, all theft-deterrent system operations are stopped.</div>
+<div class="list">•  The system changes to the operation stop mode when any of the following conditions are met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Switch the ignition to ACC or ON (engine off).</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140000370022"></a><p class="topic-title"><span class="topic-head"></span>Initial mode</p>
+<dl>
+<dd>
+<div class="list">•  This mode is the preparatory mode before changing to the stand-by mode. The system does not change directly to the alert mode from this mode.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Transition condition to the initial mode</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The system changes from the operation stop mode to the initial mode if all of the following conditions are met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Switch the ignition off</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The system transitions from stand-by preparatory mode, stand-by mode, alert mode, and alert preparatory mode to the initial mode if the cancel conditions in each mode are met.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Transition condition to the stand-by preparatory mode</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The system changes to the stand-by preparatory mode if any of the following conditions are met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  A lock operation was performed using the remote transmitter lock button or key with all the doors, liftgate/trunk lid, and bonnet closed.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140000370023"></a><p class="topic-title"><span class="topic-head"></span>Stand-by preparatory mode</p>
+<dl>
+<dd>
+<div class="list">•  This is mode prior to the stand-by mode.</div>
+<div class="list">•  If the cancel conditions are met, the system changes to the initial mode.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Transition condition to the stand-by mode</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If the stand-by preparatory mode continues for <span>approx. 20 s</span>, the system changes to the stand-by mode.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Cancel conditions</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If any of the following conditions are met, the stand-by preparation mode is canceled and the system changes to the initial mode.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Any front door latch switch on (door is open), or any rear door latch switch on (rear door is open), or liftgate/trunk lid latch switch on (liftgate/trunk lid is open), or bonnet latch switch off (bonnet is open)</div>
+<div class="list">―  Any door lock-link switch UNLOCK</div>
+<div class="list">―  Switch the ignition to ACC or ON (engine off)</div>
+<div class="list">―  Unlock operation using remote transmitter</div>
+<div class="list">―  Open the liftgate/trunk lid using the liftgate/trunk lid opener switch (With advanced keyless entry system)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140000370024"></a><p class="topic-title"><span class="topic-head"></span>Stand-by mode</p>
+<dl>
+<dd>
+<div class="list">•  The system starts monitoring <span>approx. 20 s</span> after the doors are locked for unauthorized door opening/closing. If any unauthorized operation is detected, the system changes to the alert mode.</div>
+<div class="list">•  If the cancel conditions are met, the system changes to the initial mode.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Transition condition to the alert mode</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If any of the following conditions are met, the system changes to the alert mode.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Switch the ignition ON (engine off)</div>
+<div class="list">―  Door latch switch on (door is open)</div>
+<div class="list">―  Liftgate/trunk lid latch switch on (liftgate/trunk lid is open)</div>
+<div class="list">―  Bonnet latch switch off (bonnet is open)</div>
+<div class="list">―  Door lock-link switch UNLOCK</div>
+<div class="list">―  Unlock operation using front door key cylinder</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Cancel condition</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If any of the following conditions are met, the stand-by mode is canceled and the system changes to the initial mode.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Unlock operation using remote transmitter</div>
+<div class="list">―  Switch the ignition to ACC or ON (engine off).</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140000370025"></a><p class="topic-title"><span class="topic-head"></span>Alert mode</p>
+<dl>
+<dd>
+<div class="list">•  In this mode, the theft-deterrent horn and hazard warning lights are operated to alert the surrounding area.</div>
+<div class="list">•  When the alarm period (<span>approx. 30 s</span>) has elapsed, the system changes to the alert preparatory mode. </div>
+<div class="list">•  If the cancel conditions are met, the system changes to the initial mode.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002694.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002694</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Transition condition to the alert preparatory mode</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When the alarm period (<span>approx. 30 s</span>) has elapsed, the system changes to the alert preparatory mode.</div>
+<div class="list">•  The alarm period is not extended even if a transition condition to alert mode is met again during an alarm period.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Cancel condition</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If any of the following conditions are met, the alert mode is canceled, and the system changes to the initial mode.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Unlock operation using remote transmitter</div>
+<div class="list">―  Switch the ignition ON (engine off), and engine start</div>
+<div class="list">―  Open the liftgate/trunk lid using the liftgate/trunk lid opener switch (With advanced keyless entry system)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140000370026"></a><p class="topic-title"><span class="topic-head"></span>Alert preparatory mode</p>
+<dl>
+<dd>
+<div class="list">•  In the alert preparatory mode, the theft-deterrent horn and hazard warning light are not operated, however, the alarm triggers immediately if the condition is changed.</div>
+<div class="list">•  If the cancel conditions are met, the system changes to the initial mode.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Transition condition to alert mode</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The system changes to the alert mode if any of the following conditions are met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  The ignition is switched from ON to off, or from off to ON</div>
+<div class="list">―  The door latch switch is turned from on (door is open) to off (door is closed), or from off (door is closed) to on (door is open)</div>
+<div class="list">―  The liftgate/trunk lid latch switch is turned from on (liftgate/trunk lid is open) to off (liftgate/trunk lid is closed), or from off (liftgate/trunk lid is closed) to on (liftgate/trunk lid is open)</div>
+<div class="list">―  The bonnet latch switch is turned from off (bonnet is open) to on (bonnet is closed) or from on (bonnet is closed) to off (bonnet is open)</div>
+<div class="list">―  The door lock-link switch is locked from unlock, or unlocked from lock</div>
+<div class="list">―  The front door key cylinder is locked from unlock, or unlocked from lock</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Cancel condition</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If any of the following conditions are met, the alert preparatory mode is canceled and the system changes to the initial mode.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Unlock operation using remote transmitter</div>
+<div class="list">―  Switch the ignition ON, and engine start</div>
+<div class="list">―  Open the liftgate/trunk lid using the liftgate/trunk lid opener switch (With advanced keyless entry system)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</body>
+</html>

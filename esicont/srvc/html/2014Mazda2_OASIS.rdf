@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY core 'http://www.autorepaire.eu.com/2003/05/core#'>
+  <!ENTITY vid 'http://www.autorepair.eu.com/2003/05/vid#'>
+  <!ENTITY component 'http://www.autorepair.eu.com/2003/05/components#'>
+  <!ENTITY training 'http://www.autorepair.eu.com/2003/05/training#'>
+  <!ENTITY tool 'http://www.autorepair.eu.com/2003/05/toolInfo#'>
+  <!ENTITY access 'http://www.autorepaire.eu.com/2003/05/access#'>
+  <!ENTITY manufacturer 'http://www.autorepair.eu.com/2003/05/manufacturer#'>
+  <!ENTITY measure 'http://www.autorepair.eu.com/2003/05/measure#'>
+  <!ENTITY fordLex 'http://www.autorepair.eu.com/2003/05/fordLexicon#'>
+]>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:ubl="urn:oasis:names:tc:ubl:CommonAggregateTypes:1.0:0.70" xmlns:core="http://www.autorepair.eu.com/2003/05/core#" xmlns:access="http://www.autorepair.eu.com/2003/05/access#" xmlns:vid="http://www.autorepair.eu.com/2003/05/vid#" xmlns:component="http://www.autorepair.eu.com/2003/05/components#" xmlns:training="http://www.autorepair.eu.com/2003/05/training#" xmlns:tool="http://www.autorepair.eu.com/2003/05/toolInfo#" xmlns:diagnostic="http://www.autorepair.eu.com/2003/05/diagnostic#" xmlns:manufacturer="http://www.autorepair.eu.com/2003/05/manufacturer#" xmlns:measure="http://www.autorepair.eu.com/2003/05/measure#" xmlns:fordLex="http://www.autorepair.eu.com/2003/05/fordLexicon#">
+	<rdf:Description rdf:about="MESI">
+		<dc:language>EN</dc:language>
+		<dc:subject>MESI</dc:subject>
+		<dc:title>MESI</dc:title>
+		<dc:description>Mazda Electronic Service Information </dc:description>
+		<core:Info rdf:resource="#CORINF1_Mazda2"/>
+		<vid:Vehicle rdf:resource="#VIDVEH1_Mazda2"/>
+		<access:Channel rdf:resource="#ACCCHA1_Mazda2"/>
+		<component:Component rdf:resource="#COMCOM1_Mazda2"/>
+		<training:CourseInfo rdf:resource="#TRACOU1_Mazda2"/>
+		<tool:ToolInfo rdf:resource="#TOOTOO1_Mazda2"/>
+		<diagnostic:DiagTest rdf:resource="#DIADIA1_Mazda2"/>
+	</rdf:Description>
+	<core:Info rdf:ID="CORINF1_Mazda2">
+		<core:infoType rdf:resource="Service"/>
+		<core:textFormat rdf:resource="HTML"/>
+		<core:graphicFormat rdf:resource="PNG"/>
+		<core:validFrom>2010</core:validFrom>
+		<core:validTo></core:validTo>
+		<core:version></core:version>
+		<core:numberOfPages></core:numberOfPages>
+		<core:fileSize rdf:parseType="Resource">
+			<rdf:value></rdf:value>
+			<measure:unit rdf:resource=""/>
+		</core:fileSize>
+		<core:plugInType>
+			<core:PlugIn>
+				<dc:source>Flash</dc:source>
+				<dc:format>Flash</dc:format>
+			</core:PlugIn>
+		</core:plugInType>
+		<core:level></core:level>
+	</core:Info>
+	<vid:Vehicle rdf:ID="VIDVEH1_Mazda2">
+		<vid:vinStart>JM*KE************</vid:vinStart>
+		<vid:vinEnd></vid:vinEnd>
+		<vid:manufacturerID>JM</vid:manufacturerID>
+		<vid:modelType rdf:resource="#VIDMOD1_Mazda2"/>
+		<vid:Body rdf:resource="#VIDBOD1_Mazda2"/>
+		<vid:Engine rdf:resource="#VIDENG1_Mazda2"/>
+	</vid:Vehicle>
+	<vid:Model rdf:ID="VIDMOD1_Mazda2">
+		<vid:derivative></vid:derivative>
+		<vid:modelYearStart>2014</vid:modelYearStart>
+		<vid:modelYearEnd></vid:modelYearEnd>
+		<vid:landOfHomologation>EU</vid:landOfHomologation>
+		<vid:optionalEquipment></vid:optionalEquipment>
+		<vid:manufacturerType rdf:resource=""/>
+		<vid:vehicleMake rdf:resource=""/>
+	</vid:Model>
+	<vid:Body rdf:ID="VIDBOD1_Mazda2">
+		<vid:bodyStyle rdf:resource="5-door hatchback"/>
+		<vid:numberOfDoors>5</vid:numberOfDoors>
+		<vid:wheelBase rdf:parseType="Resource">
+			<rdf:value>2570</rdf:value>
+			<measure:unit rdf:resource=""/>
+		</vid:wheelBase>
+		<vid:axleRatio></vid:axleRatio>
+		<vid:grossVehicleWeight>1500, 1505, 1535, 1510, 1575, 1590, 1485, 1520, 1530</vid:grossVehicleWeight>
+	</vid:Body>
+	<vid:Engine rdf:ID="VIDENG1_Mazda2">
+		<vid:engineCapacity rdf:parseType="Resource">
+			<rdf:value>1496, 1498</rdf:value>
+			<measure:unit rdf:resource=""/>
+		</vid:engineCapacity>
+		<vid:engineCode>P5, S5</vid:engineCode>
+		<vid:engineType>Petrol, Diesel</vid:engineType>
+		<vid:horsePower rdf:parseType="Resource">
+			<rdf:value>55kW, 66kW, 85kW, 77kW, 82kW</rdf:value>
+			<measure:unit rdf:resource=""/>
+		</vid:horsePower>
+		<vid:cylinders>4</vid:cylinders>
+		<vid:valvesPerCylinder>4</vid:valvesPerCylinder>
+		<vid:camshaft rdf:resource="2"/>
+		<vid:fuelType rdf:resource="Petrol, Diesel"/>
+		<vid:aspiration rdf:resource="Turbo, NA"/>
+		<vid:catalyst>Yes</vid:catalyst>
+		<vid:transmissionType rdf:resource="Auto, Manual"/>
+		<vid:driveType rdf:resource="FWD"/>
+		<vid:numberOfGears></vid:numberOfGears>
+	</vid:Engine>
+	<access:Channel rdf:ID="ACCCHA1_Mazda2">
+		<access:channelMedium rdf:resource="Internet"/>
+		<access:chargingModel rdf:resource=""/>
+		<access:SubscriptionInfo rdf:resource="#ACCSUB1_Mazda2"/>
+	</access:Channel>
+	<access:SubscriptionInfo rdf:ID="ACCSUB1_Mazda2">
+		<access:subscriptionPeriod rdf:parseType="Resource">
+			<rdf:value>Anytime</rdf:value>
+			<measure:unit rdf:resource=""/>
+		</access:subscriptionPeriod>
+		<access:costingType rdf:resource="#ACCCOS1_Mazda2"/>
+	</access:SubscriptionInfo>
+	<access:Cost rdf:ID="ACCCOS1_Mazda2">
+		<ubl:CostInfo parseType="Resource">
+			<ubl:PriceAmount></ubl:PriceAmount>
+			<ubl:CurrencyID></ubl:CurrencyID>
+			<ubl:ID>1</ubl:ID>
+		</ubl:CostInfo>
+	</access:Cost>
+	<component:Component rdf:ID="COMCOM1_Mazda2">
+		<component:majorFunctions>Maintenance</component:majorFunctions>
+		<component:auxiliaryFunctions></component:auxiliaryFunctions>
+		<component:manPartNumber></component:manPartNumber>
+		<component:manPartName></component:manPartName>
+		<component:isoPartName>Service Information</component:isoPartName>
+		<component:componentInfoIncluded rdf:resource=""/>
+		<component:testInfoIncluded rdf:resource=""/>
+		<component:testInfoIncluded rdf:resource="0"/>
+	</component:Component>
+	<training:CourseInfo rdf:ID="TRACOU1_Mazda2">
+		<training:courseType rdf:resource=""/>
+		<training:organiser></training:organiser>
+		<dc:subject></dc:subject>
+		<training:costingType rdf:resource="#TRACOS1_Mazda2"/>
+		<training:targetAudience></training:targetAudience>
+		<training:qualification></training:qualification>
+		<training:certification></training:certification>
+		<training:attendCertification></training:attendCertification>
+	</training:CourseInfo>
+	<training:Cost rdf:ID="TRACOS1_Mazda2">
+		<ubl:CostInfo parseType="Resource">
+			<ubl:PriceAmount></ubl:PriceAmount>
+			<ubl:CurrencyID></ubl:CurrencyID>
+			<ubl:ID>0</ubl:ID>
+		</ubl:CostInfo>
+	</training:Cost>
+	<tool:ToolInfo rdf:ID="TOOTOO1_Mazda2">
+		<tool:toolType rdf:resource=""/>
+		<tool:purpose></tool:purpose>
+		<tool:cost rdf:resource="#TOOCOS1_Mazda2"/>
+		<tool:orderInfo></tool:orderInfo>
+		<tool:delTimescale></tool:delTimescale>
+		<tool:instructions></tool:instructions>
+		<tool:manPartNumber></tool:manPartNumber>
+		<tool:manPartName></tool:manPartName>
+	</tool:ToolInfo>
+	<tool:Cost rdf:ID="TOOCOS1_Mazda2">
+		<ubl:CostInfo rdf:parseType="Resource">
+			<ubl:PriceAmount></ubl:PriceAmount>
+			<ubl:CurrencyID></ubl:CurrencyID>
+			<ubl:ID>1</ubl:ID>
+		</ubl:CostInfo>
+	</tool:Cost>
+	<diagnostic:DiagTest rdf:ID="DIADIA1_Mazda2">
+		<diagnostic:J2012Code></diagnostic:J2012Code>
+		<diagnostic:manufacturerCode>Service Information</diagnostic:manufacturerCode>
+		<diagnostic:testDescription>Service Information</diagnostic:testDescription>
+		<diagnostic:connectionDetails>Service Information</diagnostic:connectionDetails>
+		<diagnostic:Symptom rdf:resource="#DIASYM1_Mazda2"/>
+		<diagnostic:JobInfo rdf:resource="#DIAJOB1_Mazda2"/>
+	</diagnostic:DiagTest>
+	<diagnostic:Symptom rdf:ID="DIASYM1_Mazda2">
+		<diagnostic:symDesc>Service Information</diagnostic:symDesc>
+		<diagnostic:symName>Service Information</diagnostic:symName>
+		<diagnostic:hintsTips>Service Information</diagnostic:hintsTips>
+	</diagnostic:Symptom>
+	<diagnostic:JobInfo rdf:ID="DIAJOB1_Mazda2">
+		<diagnostic:jobDescription></diagnostic:jobDescription>
+		<diagnostic:jobTime></diagnostic:jobTime>
+	</diagnostic:JobInfo>
+</rdf:RDF>

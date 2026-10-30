@@ -1,0 +1,200 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>SEAT BELT WARNING LIGHT</title>
+</head>
+<body><a name="id092200022900"></a><p class="servinfo-title"><span class="servinfo-head"></span>SEAT BELT WARNING LIGHT</p>
+<hr>
+<p class="servinfo-title-id" align="right">id092200022900</p><br clear="all"><a name="id09220002290001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The seat belt warning light warns the driver that a seat belt is not fastened.</div><br clear="all"><a name="id09220002290002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The instrument cluster flashes/turns on the seat belt warning light based on the following signals:</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Signal name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Sending module/part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Communication method</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle speed signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">HS-CAN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driver's side/passenger's side buckle switch signal</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">SAS control module</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Occupancy sensor signal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Rear seat buckle switch signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BCM</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><p><a name="id09220002290003"></a><p class="topic-title"><span class="topic-head"></span>Driver's side/passenger's side seat belt warning light display function</p>
+<dl>
+<dd>
+<div class="list">•  The driver's side/passenger's side seat belt warning light has a warning for when the vehicle is stopped, while the vehicle is being driven, and subsequent warnings while the vehicle is being driven.</div>
+<dl>
+<div class="list-title">Warning while vehicle is stopped</div>
+<dd class="list">
+<div class="list">•  When all of the following conditions are met, the light turns on.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition is switched ON (engine off or on)</div>
+<div class="list">―  Driver's side/passenger's side buckle switch on signal (seat belt unfastened) is detected</div>
+<div class="list">―  Occupancy sensor on signal (occupant in passenger seat) is detected (passenger's side seat belt warning light only)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Warning while vehicle is driven</div>
+<dd class="list">
+<div class="list">•  When all of the following conditions are met, the light flashes/turns on.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle speed is <span>20 km/h {12 mph} or more</span></div>
+<div class="list">―  Driver's side/passenger's side buckle switch on signal (seat belt unfastened) is detected</div>
+<div class="list">―  Occupancy sensor on signal (occupant in passenger seat) is detected (passenger's side seat belt warning light only)</div>
+</dd>
+</dl>
+<div class="list">•  The warning while vehicle is driven flashes/turns on in the pattern shown in the figure.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003007.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003007</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Subsequent warning while vehicle is driven</div>
+<dd class="list">
+<div class="list">•  When all of the following conditions are met, the light flashes/turns on.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle speed is <span>20 km/h {12 mph} or more</span></div>
+<div class="list">―  Occupancy sensor on signal (occupant in passenger seat) is detected (passenger's side seat belt warning light only)</div>
+<div class="list">―  After warning while vehicle is being driven operates, buckle switch off signal (seat belt fastened) to on signal (seat belt unfastened) is detected</div>
+</dd>
+</dl>
+<div class="list">•  The subsequent warning while vehicle is driven flashes/turns on in the pattern shown in the figure.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003008.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003008</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220002290004"></a><p class="topic-title"><span class="topic-head"></span>Rear seat belt warning light display function (With rear seat belt reminder system)</p>
+<dl>
+<dd>
+<div class="list">•  The rear seat belt warning light illuminates in green to indicate seat belts are fastened, and it illuminates in red to indicate a seat belt is not fastened.</div>
+<div class="list">•  The rear seat belt warning light has an initial warning and a subsequent warnings.</div>
+<dl>
+<div class="list-title">Initial warning</div>
+<dd class="list">
+<div class="list">―  When the ignition is switched ON (engine off or on), it illuminates for <span>approx. 33 s</span>.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Subsequent warning</div>
+<dd class="list">
+<div class="list">―  After the initial warning operates, if a buckle switch signal change (on to off, or off to on), illuminates for <span>approx. 33 s</span>.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09220002290005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The driver's side seat belt warning light is built into the instrument cluster.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003009.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003009</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The passenger's side seat belt warning light and rear seat belt warning light are built into the indicator unit. For details on the passenger's side seat belt warning light and rear seat belt warning light, refer to [INDICATOR UNIT]. (See <font class="extxref-label"><a href="id092200037400.html">INDICATOR UNIT</a></font>.)</div><br clear="all"><a name="id09220002290006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id09220002290007"></a><p class="topic-title"><span class="topic-head"></span>Driver's side seat belt warning light</p>
+<p class="list">1.  When the ignition is switched ON (engine off or on), the instrument cluster receives (1) a vehicle speed signal from the PCM, driver's side buckle switch signal from the SAS control module via CAN communication.</p>
+<p class="list"></p>
+<p class="list">2.  The instrument cluster turns the transistor on (2) intermittently for flashing and continuously for illumination based on each signal.</p>
+<p class="list"></p>
+<p class="list">3.  When the transistor turns on intermittently, the driver's side seat belt warning light flashes (3), when it turns on continuously, the driver's side seat belt warning light turns on (3).</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003010.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003010</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09220002290008"></a><p class="topic-title"><span class="topic-head"></span>Passenger's side seat belt warning light</p>
+<dl>
+<dd>
+<div class="list">•  For the passenger's side seat belt warning light operation, refer to [INDICATOR UNIT]. (See <font class="extxref-label"><a href="id092200037400.html">INDICATOR UNIT</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220002290009"></a><p class="topic-title"><span class="topic-head"></span>Rear seat belt warning light (With rear seat belt reminder system)</p>
+<dl>
+<dd>
+<div class="list">•  For the rear seat belt warning light operation, refer to [INDICATOR UNIT]. (See <font class="extxref-label"><a href="id092200037400.html">INDICATOR UNIT</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09220002290010"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  Not applicable</div>
+</body>
+</html>

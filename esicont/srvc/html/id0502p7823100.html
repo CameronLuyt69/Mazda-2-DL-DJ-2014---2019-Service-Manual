@@ -1,0 +1,365 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P0882:00 [TCM (EW6A-EL)]</title>
+</head>
+<body><a name="id0502p7823100"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P0882:00 [TCM (EW6A-EL)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0502p7823100</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC P0882:00</p>
+</th>
+<th id="" align="left">
+<p class="thead">TCM power supply voltage low</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions, the TCM power supply voltage is <span>8—10.5 V or less</span> (varies with ATF temperature):</div>
+<dl>
+<dd class="list">
+<div class="list">―  <span>5 s or more</span> has elapsed or battery voltage exceeds <span>11 V or more</span> for <span>0.2 s</span> since engine speed increases <span>−200 rpm or more</span> of target idle speed.</div>
+<div class="list">―  Selector lever position is D or R position.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Set to emergency mode.</div>
+<div class="list">•  Inhibits learning control.</div>
+<div class="list">•  Inhibits manual mode.</div>
+<div class="list">•  Inhibits neutral idle control.</div>
+<div class="list">•  Inhibits i-stop control.</div>
+<div class="list">•  Inhibits AAS.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM DTC is stored.</div>
+<div class="list">•  Looseness of battery terminals</div>
+<div class="list">•  Battery malfunction</div>
+<div class="list">•  Generator malfunction</div>
+<div class="list">•  TCM connector or terminals malfunction</div>
+<div class="list">•  TCM power supply circuit malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  Short to ground in wiring harness between AT 15 A fuse and TCM terminal A</div>
+<div class="list">―  AT 15 A fuse malfunction</div>
+<div class="list">―  Open circuit in wiring harness between battery positive terminal and TCM terminal A</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2"><img src="images/am3uuw00012045.png"></td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">RECORD VEHICLE STATUS WHEN DTC WAS DETECTED TO UTILIZE WITH REPEATABILITY VERIFICATION</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Recording can be facilitated using the screen capture of the PC function.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Record the freeze frame data/snap shot data.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY PCM DTC</div>
+<div class="list">•  Perform the PCM DTC inspection using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT BATTERY</div>
+<div class="list">•  Inspect the battery terminals for looseness.</div>
+<div class="list">•  Inspect the battery.<div>(See <font class="extxref-label"><a href="id011700800600.html">BATTERY INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Connect the battery terminals securely, and recharge or replace the battery, then go to Step 8.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id011700800700.html">BATTERY RECHARGING</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0117008005q6.html">BATTERY REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT GENERATOR</div>
+<div class="list">•  Inspect the generator.<div>(See <font class="extxref-label"><a href="id0117008003j8.html">GENERATOR INSPECTION [WITHOUT i-ELOOP (SKYACTIV-D 1.5)]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the generator, then go to Step 8.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0117008002j8.html">GENERATOR REMOVAL/INSTALLATION [WITHOUT i-ELOOP (SKYACTIV-D 1.5)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT TCM CONNECTOR AND TERMINALS</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Disconnect the TCM connector.</div>
+<div class="list">•  Visually inspect the TCM connector and terminals.</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector and/or terminals, then go to Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT TCM POWER SUPPLY CIRCUIT</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Access the PID VPWR using the M-MDS.<div>(See <font class="extxref-label"><a href="id0502p7290300.html">ON-BOARD DIAGNOSTIC SYSTEM PID/DATA MONITOR INSPECTION [TCM (EW6A-EL)]</a></font>.)</div>
+</div>
+<div class="list">•  Is the PID value <span>B+</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect the AT 15 A fuse.</div>
+<div class="list">•  If the fuse is blown:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Refer to the wiring diagram and verify whether or not there is a common connector between AT 15 A fuse and TCM terminal A.</div>
+<dl>
+<div class="list-title">If there is a common connector:</div>
+<dd class="list">
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for a short to ground.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">If there is no common connector:</div>
+<dd class="list">
+<div class="list">•  Repair or replace the wiring harness which has a short to ground.</div>
+<div class="list">•  Replace the fuse.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  If the fuse is deteriorated:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Replace the malfunctioning fuse.</div>
+</dd>
+</dl>
+<div class="list">•  If the fuse is normal:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Refer to the wiring diagram and verify whether or not there is a common connector between battery positive terminal and TCM terminal A.</div>
+<dl>
+<div class="list-title">If there is a common connector:</div>
+<dd class="list">
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for an open circuit.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">If there is no common connector:</div>
+<dd class="list">
+<div class="list">•  Repair or replace the wiring harness which has an open circuit.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY DTC TROUBLESHOOTING COMPLETED</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC using the M-MDS.<div>(See <font class="extxref-label"><a href="id0502p7290100.html">ON-BOARD DIAGNOSTIC SYSTEM DTC INSPECTION [TCM (EW6A-EL)]</a></font>.)</div>
+</div>
+<div class="list">•  Perform the following procedure to ensure that the DTC has been resolved:</div>
+<dl>
+<dd class="list">
+<div class="list">1.  Drive the vehicle for <span>5 s or more</span> under the following condition:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Selector lever position: D or R position</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  Perform the DTC inspection using the M-MDS.<div>(See <font class="extxref-label"><a href="id0502p7290100.html">ON-BOARD DIAGNOSTIC SYSTEM DTC INSPECTION [TCM (EW6A-EL)]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0502p7290200.html">ON-BOARD DIAGNOSTIC SYSTEM DTC TABLE [TCM (EW6A-EL)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

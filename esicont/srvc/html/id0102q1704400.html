@@ -1,0 +1,722 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P0421:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0102q1704400"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P0421:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q1704400</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  To determine the malfunctioning part, proceed with the diagnostics from "Function Inspection Using M-MDS".</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0102q170440001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Details On DTCs</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DESCRIPTION</p>
+</th>
+<th id="" align="left" colspan="2">
+<p class="thead">Catalytic converter system</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="5">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Determination conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM detects that the HO2S output fluctuates from lean to rich in a short amount of time at specified times continuously after recovery from fuel cut control.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Preconditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Catalytic converter is activated sufficiently.</div>
+<div class="list">•  A/F sensor is activated sufficiently.</div>
+<div class="list">•  HO2S is activated sufficiently.</div>
+<div class="list">•  The following DTCs are not detected:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Misfire: P0300:00, P0301:00, P0302:00, P0303:00, P0304:00</div>
+<div class="list">―  Fuel injection correction: P0171:00, P0172:00, P2096:00, P2097:00</div>
+<div class="list">―  A/F sensor: P0130:00, P0131:00, P0132:00, P0133:00, P0134:00, P064D:00, P2237:00, P2243:00, P2251:00</div>
+<div class="list">―  HO2S: P0137:00, P0138:00, P013A:00, P0140:00</div>
+<div class="list">―  A/F sensor heater: P0031:00, P0032:00</div>
+<div class="list">―  HO2S heater: P0037:00, P0038:00</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Drive cycle</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>2</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Self test type</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CMDTC self test</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Sensor used</div>
+</td>
+<td id="" align="left">
+<div class="list">•  A/F sensor, HO2S</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>VEHICLE STATUS WHEN DTCs ARE OUTPUT</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Illuminates check engine light.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  HO2S malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  HO2S loose</div>
+</dd>
+</dl>
+<div class="list">•  A/F sensor malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  A/F sensor loose</div>
+<div class="list">―  Exhaust system leakage</div>
+<div class="list">―  A/F sensor deterioration</div>
+</dd>
+</dl>
+<div class="list">•  WU-TWC deterioration or malfunction</div>
+<div class="list">•  PCM malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q170440002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<div class="list">•  Not applicable</div><br clear="all"><a name="id0102q170440003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Explanation (DTC Detection Outline)</p>
+<div class="list">•  The PCM monitors the oxygen storage amount proportional to the catalytic converter purification characteristic.</div>
+<div class="list">•  The PCM starts to monitor after recovery (fuel injection starts) from fuel cut control during deceleration.</div>
+<div class="list">•  The PCM temporarily changes the target air/fuel ratio to rich at recovery from fuel cut control, and detects the response time until the HO2S output signal outputs the voltage on the rich side.</div>
+<div class="list">•  If the catalytic converter purification characteristic deteriorates, the amount of time until the HO2S detects the voltage on the rich side is shorter compared to the normal purification characteristic as shown in the figure.</div>
+<div class="list">•  The PCM detects a catalytic converter malfunction using this characteristic.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzw00014455.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzw00014455</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0102q170440004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Repeatability Verification Procedure</p>
+<div class="list">1.  Start the engine and leave it idling for <span>1 min</span>.</div>
+<div class="list">2.  Drive the vehicle normally for <span>15 min</span>. After that, shift to 3rd gear and maintain the vehicle speed at <span>approx. 40 km/h {25 mph}</span>.</div>
+<div class="list">3.  Accelerate the vehicle to <span>60 km/h {37 mph}</span> while in 3rd gear.</div>
+<div class="list">4.  Release the accelerator pedal and decelerate the vehicle to <span>40 km/h {25 mph}</span>.</div>
+<div class="list">5.  Accelerate the vehicle to <span>60 km/h {37 mph}</span> again while in 3rd gear.</div>
+<div class="list">6.  Drive the vehicle for <span>20 s</span> at a speed of <span>50 km/h {31 mph}</span> while in 3rd gear.</div>
+<div class="list">7.  Repeat Step 4 to 6 operations above <span>20 times</span>.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Match the engine coolant temperature in the recorded FREEZE FRAME DATA/snapshot data, the vehicle speed, and engine speed values to the best extent possible while driving the vehicle.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">8.  Try to reproduce the malfunction by driving the vehicle for <span>5 min</span> based on the values in the FREEZE FRAME DATA/snapshot data.</div><br clear="all"><a name="id0102q170440005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID Item/Simulation Item Used In Diagnosis</p>
+<p clear="all">
+<p class="table-title">PID/DATA monitor item table</p>
+<p>
+<div></div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Condition/Specification</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">O2S11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor current</div>
+</td>
+<td id="" align="center">
+<div class="tbody">µA</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Idle (after warm up): 0—50 µA</div>
+<div class="list">•  Deceleration fuel cut (accelerator pedal released from engine speed of 4,000 rpm or more): Approx. 3.84 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">O2S12</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Idle (after warm up): 0—1.0 V</div>
+<div class="list">•  Deceleration fuel cut (accelerator pedal released from engine speed of 4,000 rpm or more): Approx. 0 V</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q170440006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Inspection Using M-MDS</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: IDENTIFY TRIGGER DTC FOR FREEZE FRAME DATA</div>
+<div class="list">•  Is the DTC P0421:00 on FREEZE FRAME DATA?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure for DTC on FREEZE FRAME DATA.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">PURPOSE: RECORD FREEZE FRAME DATA/SNAPSHOT DATA AND DIAGNOSTIC MONITORING TEST RESULTS TO UTILIZE WITH REPEATABILITY VERIFICATION</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Recording can be facilitated using the screen capture function of the PC.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Record the FREEZE FRAME DATA/snapshot data and DIAGNOSTIC MONITORING TEST RESULTS (catalyst related) on the repair order.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY RELATED PENDING CODE AND/OR DTC</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure and DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any other PENDING CODEs and/or DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable PENDING CODE or DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY A/F SENSOR AND HO2S INPUT SIGNAL</div>
+<div class="list">•  Start the engine and warm it up completely.</div>
+<div class="list">•  Access the following PIDs using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  O2S11</div>
+<div class="list">―  O2S12</div>
+</dd>
+</dl>
+<div class="list">•  Drive the vehicle under the following conditions.<dl>
+<dd>
+<div class="attention1-label">Warning</div>
+</dd>
+<dd>
+<div class="attention1">
+<div class="list">•  When the M-MDS is used to observe monitor system status while driving, be sure to have another technician with you, or record the data in the M-MDS using the PID/DATA MONITOR AND RECORD capturing function and inspect later.</div>
+<div class="list">•  While performing this step, always operate the vehicle in a safe and lawful manner.</div>
+</div>
+</dd>
+</dl>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  After increasing the engine speed to <span>3,000 rpm</span>, decelerate using engine braking.</div>
+</dd>
+</dl>
+<div class="list">•  Is the displayed PID value as follows?</div>
+<dl>
+<dd class="list">
+<div class="list">―  O2S11: <span>0.25 mA or more</span></div>
+<div class="list">―  O2S12: <span>0.3 V or less</span></div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 3.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT RELATED SENSOR WIRING HARNESS AND CONNECTOR</div>
+<div class="list">•  Access the following PIDs using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  O2S11</div>
+<div class="list">―  O2S12</div>
+</dd>
+</dl>
+<div class="list">•  When the PCM, A/F sensor and HO2S are shaken, does the PID value include a PID item which has changed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect the related wiring harness and connector.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q170440007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Troubleshooting Diagnostic Procedure</p>
+<div class="list-title">Intention of troubleshooting procedure</div>
+<div class="list">•  Step 1—2</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform inspection of HO2S and A/F sensor signal related parts.</div>
+</dd>
+</dl>
+<div class="list">•  Step 3—7</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform inspection of each separate part.</div>
+</dd>
+</dl>
+<div class="list">•  Step 8—9</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verify that the primary malfunction is resolved and there are no other malfunctions.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT INSTALLATION OF HO2S</div>
+<div class="list">•  Inspect installation of HO2S.</div>
+<div class="list">•  Is the HO2S installed securely?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Retighten the HO2S, then go to Step 8.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q1804000.html">HEATED OXYGEN SENSOR (HO2S) REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT INSTALLATION OF A/F SENSOR</div>
+<div class="list">•  Inspect installation of A/F sensor.</div>
+<div class="list">•  Is the A/F sensor installed securely?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the A/F sensor and/or HO2S, then go to Step 8.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q1899700.html">AIR FUEL RATIO (A/F) SENSOR REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q1804000.html">HEATED OXYGEN SENSOR (HO2S) REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Retighten the A/F sensor, then go to Step 8.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q1899700.html">AIR FUEL RATIO (A/F) SENSOR REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT INSTALLATION OF HO2S</div>
+<div class="list">•  Inspect installation of HO2S.</div>
+<div class="list">•  Is the HO2S installed securely?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Retighten the HO2S, then go to Step 8.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q1804000.html">HEATED OXYGEN SENSOR (HO2S) REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT INSTALLATION OF A/F SENSOR</div>
+<div class="list">•  Inspect installation of A/F sensor.</div>
+<div class="list">•  Is the A/F sensor installed securely?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Retighten the A/F sensor, then go to Step 8.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q1899700.html">AIR FUEL RATIO (A/F) SENSOR REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT EXHAUST SYSTEM FOR LEAKAGE</div>
+<div class="list">•  Visually inspect for exhaust gas leakage from the exhaust system.</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF OTHER DTCs ARE DISPLAYED</div>
+<div class="list">•  Reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1865400.html">CLEARING DTC [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id0102q170440004">Repeatability Verification Procedure</a></font>.)</div>
+</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any other PENDING CODEs and/or DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable PENDING CODE or DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY CATALYTIC CONVERTER MALFUNCTION</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1865400.html">CLEARING DTC [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id0102q170440004">Repeatability Verification Procedure</a></font>.)</div>
+</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the PENDING CODE for this DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the exhaust manifold, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0115q1800200.html">EXHAUST SYSTEM REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFICATION OF VEHICLE REPAIR COMPLETION</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1865400.html">CLEARING DTC [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id0102q170440004">Repeatability Verification Procedure</a></font>.)</div>
+</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the PENDING CODE for this DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q1802400.html">PCM REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF THERE IS ANY OTHER MALFUNCTION</div>
+<div class="list">•  Is any other DTC or pending code stored?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

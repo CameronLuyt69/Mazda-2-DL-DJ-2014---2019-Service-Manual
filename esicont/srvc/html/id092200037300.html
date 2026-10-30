@@ -1,0 +1,353 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ACTIVE DRIVING DISPLAY</title>
+</head>
+<body><a name="id092200037300"></a><p class="servinfo-title"><span class="servinfo-head"></span>ACTIVE DRIVING DISPLAY</p>
+<hr>
+<p class="servinfo-title-id" align="right">id092200037300</p><br clear="all"><a name="id09220003730001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The active driving display displays the vehicle information in the display which is set within the forward visual range of the driver, allowing verification of the vehicle information with only the slightest change in the line of vision.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00003717.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00003717</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id09220003730002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The active driving display displays the following vehicle information.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Current vehicle speed</div>
+<div class="list">―  Cruise control set vehicle speed (With cruise control system)</div>
+<div class="list">―  Adjustable speed limiter set vehicle speed (With adjustable speed limiter)</div>
+<div class="list">―  Smart city brake support (SCBS) warning display (With smart city brake support (SCBS))</div>
+<div class="list">―  Lane departure warning system (LDWS) operation status or warning display (With lane departure warning system (LDWS))</div>
+<div class="list">―  Travel direction (turn by turn (TBT)) display (With car navigation system)</div>
+</dd>
+</dl>
+<div class="list">•  When the engine is started, the instrument cluster displays the following content on the active driving display based on the following CAN signals. For details on each display content, refer to each reference.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">CAN signal sending module</p>
+</th>
+<th id="" align="center">
+<p class="thead">Signal name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Display content</p>
+</th>
+<th id="" align="center">
+<p class="thead">Display example</p>
+</th>
+<th id="" align="center">
+<p class="thead">Reference</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="3">
+<div class="tbody">PCM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Current vehicle speed</div>
+</td>
+<td id="" align="center"><img src="images/am3zzn00004197.png"></td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id092200032500.html">SPEEDOMETER</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Cruise control set vehicle speed display signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cruise control set vehicle speed</div>
+</td>
+<td id="" align="center"><img src="images/am3zzn00004198.png"></td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0120q1903400.html">CRUISE CONTROL SYSTEM [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0120r1903400.html">CRUISE CONTROL SYSTEM [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Adjustable speed limiter set vehicle speed display signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Adjustable speed limiter set vehicle speed</div>
+</td>
+<td id="" align="center"><img src="images/am3zzn00004199.png"></td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q1300200.html">ADJUSTABLE SPEED LIMITER [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5300200.html">ADJUSTABLE SPEED LIMITER [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Laser sensor</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Warning display request signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Warning screen</div>
+</td>
+<td id="" align="center"><img src="images/am3zzn00004210.png"></td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id041500200000.html">SMART CITY BRAKE SUPPORT (SCBS)</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Forward sensing camera (FSC)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Operation display request signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle lane display</div>
+</td>
+<td id="" align="center"><img src="images/am3zzn00004211.png"></td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">(See <font class="extxref-label"><a href="id092200029200.html">LANE DEPARTURE WARNING SYSTEM (LDWS)</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Warning display request signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Warning screen</div>
+</td>
+<td id="" align="center"><img src="images/am3uun00003520.png"></td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Connectivity master unit (CMU)</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Turn-by-turn (TBT) display request signal</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Travel direction display</div>
+</td>
+<td id="" align="center"><img src="images/am3zzn00004212.png"></td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">(See <font class="extxref-label"><a href="id0920zz010000.html">ENTERTAINMENT SYSTEM [WITH CENTER DISPLAY]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center"><img src="images/am3zzn00004213.png"></td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><p><a name="id09220003730003"></a><p class="topic-title"><span class="topic-head"></span>Setting function</p>
+<dl>
+<dd>
+<div class="list">•  The following items for the active driving display can be set on the [Settings] screen of the center display.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Setting contents</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Height</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The display open/close angle can be adjusted.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brightness Control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Adjustment of the display brightness can be switched between automatic and manual.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Calibration</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The display's automatic dimness adjustment level can be switched.</div>
+<div class="tbody">(Brightness adjustment must be set to automatic.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brightness</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The brightness of the display can be adjusted.</div>
+<div class="tbody">(Brightness adjustment must be set to manual.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Navigation</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The turn-by-turn (TBT) display can be switched on/off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Active Driving Display</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Display/non-display of the active driving display can be switched.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Reset</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The active driving display settings can be reset to the initial settings.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id09220003730004"></a><p class="topic-title"><span class="topic-head"></span>Demonstration function</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The demonstration function force-displays the active driving display without the engine being started, such as on an indoor exhibition vehicle, so that customers can verify the display status.</div>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The demonstration function launches the active driving display with the ignition switched ON (engine off) to display the vehicle information in the display.</div>
+<dl>
+<div class="list-title">Demonstration function on/off setting procedure</div>
+<dd class="list">
+<div class="list">1.  With the tripmeter switch in the instrument cluster pressed, switch the ignition as follows.</div>
+<dl>
+<dd class="list">
+<div class="list">•  Ignition off→Ignition ON (engine off)→Ignition off→Ignition ON (engine off)</div>
+</dd>
+</dl>
+<div class="list">2.  Release the tripmeter switch when [test] is displayed in the instrument cluster.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  When the tripmeter switch is released with [test] displayed in the instrument cluster, the entire instrument cluster is turned on.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">3.  Press the tripmeter switch and display [06 on] or [06 off] in the instrument cluster.</div>
+<dl>
+<dd class="list">
+<div class="list">•  Select [06 on] to turn on the demonstration function.</div>
+<div class="list">•  Select [06 off] to turn off the demonstration function.</div>
+</dd>
+</dl>
+<div class="list">4.  Switch the ignition off.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If the ignition is switched off with [06 on] displayed in the instrument cluster (demonstration function on), the demonstration function will operate the next time the ignition is switched ON (engine off).</div>
+<div class="list">•  If the following is performed with the demonstration function on, the demonstration function turns off.</div>
+<dl>
+<dd class="list">
+<div class="list">―  The battery power is interrupted or the ROOM fuse is removed.</div>
+<div class="list">―  The vehicle is driven at <span>20 km/h {12 mph} or more</span>.</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09220003730005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The active driving display is assembled to the instrument cluster.</div>
+<div class="list">•  The active driving display consists of a display device which produces the display content and emits the content over a light beam, a reflector which reflects the light beam emitted from the display device, a combiner which reflects the light beam from the reflector and displays the screen, a motor which opens/closes the combiner, and a photo sensor which detects the brightness surrounding the display device.</div>
+<div class="list">•  The combiner is a semi-transparent acrylic board processed for reflecting the light beam from the display device.</div>
+<div class="list">•  The combiner opens at the top of the meter hood and displays vehicle information in the forward visual range of the driver. As a result, the time has been shortened in which the driver's line of vision changes from the view at the front of the vehicle to the view of the vehicle information reflected in the combiner.</div>
+<div class="list">•  By using a concave shaped display, the image reflected in the display is positioned virtually <span>approx. 1.5 m {59 in} forward</span> of the eye point. As a result, the eye point adjustment time has been reduced in which the driver's line of vision changes from the view at the front of the vehicle to the view of the vehicle information reflected in the display.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00003725.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00003725</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id09220003730006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">1.  When the ignition is switched ON (engine on), the instrument cluster opens the combiner (1) based on the following CAN signals.</div>
+<dl>
+<dd class="list">
+<div class="list">―  ROOM fuse status signal from BCM</div>
+<div class="list">―  Combiner target angle signal from connectivity master unit (CMU)</div>
+</dd>
+</dl>
+<div class="list">2.  When the combiner opens, the instrument cluster displays the opening screen (vehicle name) for <span>approx. 2 s</span>. In addition, it sends an active driving display execute signal and combiner current position signal (2) to the connectivity master unit (CMU).<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The connectivity master unit (CMU) records the current position of the combiner based on the combiner current position signal from the instrument cluster. When the ignition is switched from off to ON (engine on), it sends the target angle signal based on the recorded current position.</div>
+<div class="list">•  The combiner current position recorded by the connectivity master unit (CMU) is not cleared even if the battery power is disconnected.</div>
+<div class="list">•  If the connectivity master unit (CMU) has not recorded the combiner current position, it sends the target angle signal of the initial value.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">3.  After the opening screen is turned off, the instrument cluster displays the current vehicle speed based on the vehicle speed signal (3) from the PCM, and displays the warning or other screens based on request signals (4) from related modules.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002940.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002940</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id09220003730007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  If the instrument cluster detects a malfunction in the combiner drive motor, it turns off the active driving display images and stops the display at the current position.</div>
+</body>
+</html>

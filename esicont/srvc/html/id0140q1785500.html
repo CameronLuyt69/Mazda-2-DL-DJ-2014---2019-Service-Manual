@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>AIR FUEL RATIO (A/F) SENSOR HEATER CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0140q1785500"></a><p class="servinfo-title"><span class="servinfo-head"></span>AIR FUEL RATIO (A/F) SENSOR HEATER CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140q1785500</p><br clear="all"><a name="id0140q178550001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  Based on the control of the A/F sensor heater, a stabilized oxygen concentration is detected (even at low exhaust temperatures), and feedback control of fuel injection (even at cold engine start) is made possible for improved cold temperature exhaust emission performance.</div>
+<div class="list">•  Both emission performance and sensor protection have been improved by duty control of the heater (according to engine operation conditions (exhaust gas temperature)).</div>
+<div class="list">•  A pre-heat has been adopted to prevent water, (produced from the exhaust system when the engine is started), from adhering to the sensor and damaging it.</div><br clear="all"><a name="id0140q178550002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003448.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003448</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140q178550003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id0140q178550004"></a><p class="topic-title"><span class="topic-head"></span>Pre-heat control</p>
+<dl>
+<dd>
+<div class="list">•  The A/F sensor heater is operated at a duty ratio of approx. 15% within the specified time directly after the engine is started.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q178550005"></a><p class="topic-title"><span class="topic-head"></span>Normal control</p>
+<dl>
+<dd>
+<div class="list">•  The PCM operates the A/F sensor heater based on the following control conditions:</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Output duty ratio</p>
+</th>
+<th id="" align="center">
+<p class="thead">Control condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">0%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Ignition switched off</div>
+<div class="list">•  Engine stopped (excludes engine stop by i-stop control)</div>
+<div class="list">•  Engine start (cranking)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">0―100%</div>
+<div class="tbody">(Duty ratio determined by measuring the element temperature by the A/F sensor heater element impedance)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  After engine warm-up (such as value fluctuates by battery condition)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P0729:00 [TCM (EW6A-EL)]</title>
+</head>
+<body><a name="id0502p7822000"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P0729:00 [TCM (EW6A-EL)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0502p7822000</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC P0729:00</p>
+</th>
+<th id="" align="left">
+<p class="thead">6GR incorrect ratio</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  In D position, 6GR, the following phenomenon occurs:</div>
+<dl>
+<dd class="list">
+<div class="list">―  There is difference between turbine/input shaft speed and output shaft speed sensor speed for <span>230 to 1,980 ms</span> (varies with ATF temperature and ECT) during shift-up.</div>
+<div class="list">―  There is difference between turbine/input shaft speed and output shaft speed sensor speed for<span> 1,500 to 3,900 ms</span> (varies with ATF temperature) while driving without shifting.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Inhibits malfunctioning gear.</div>
+<div class="list">•  Limits engine torque.</div>
+<div class="list">•  Inhibits learning control.</div>
+<div class="list">•  Inhibits manual mode.</div>
+<div class="list">•  Inhibits neutral idle control.</div>
+<div class="list">•  Inhibits i-stop control.</div>
+<div class="list">•  Inhibits AAS.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  ATF is less than specified value</div>
+<div class="list">•  Clutch burnt</div>
+<div class="list">•  Shift solenoid malfunction</div>
+<div class="list">•  ATF leakage from clutch circuit</div>
+<div class="list">•  Control valve body malfunction</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>SYSTEM WIRING DIAGRAM</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY DTC OUTPUT STATUS</div>
+<div class="list">•  Are any the following DTCs displayed?</div>
+<dl>
+<dd class="list">
+<div class="list">―  P0746:00, P0751:00, P0752:00, P0756:00, P0757:00, P0761:00, P0762:00, P0766:00, P0767:00, P0771:00, P0772:00, P0842:00, P0843:00, P0847:00, P0848:00, P0872:00, P0873:00, P0877:00, P0878:00, P1784:00</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0502p7290200.html">ON-BOARD DIAGNOSTIC SYSTEM DTC TABLE [TCM (EW6A-EL)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT ATF LEVEL</div>
+<div class="list">•  Inspect the ATF level.<div>(See <font class="extxref-label"><a href="id0517l2118500.html">AUTOMATIC TRANSAXLE FLUID (ATF) INSPECTION [EW6A-EL]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Adjust the ATF level to the specification, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0517l2119300.html">AUTOMATIC TRANSAXLE FLUID (ATF) ADJUSTMENT [EW6A-EL]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PERFORM ON-BOARD DIAGNOSTIC TEST TO SPECIFY MALFUNCTIONING PART</div>
+<div class="list">•  Perform the on-board diagnostic test.<div>(See <font class="extxref-label"><a href="id0502p7950000.html">ON-BOARD DIAGNOSTIC TEST MODE [TCM (EW6A-EL)]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0502p7290200.html">ON-BOARD DIAGNOSTIC SYSTEM DTC TABLE [TCM (EW6A-EL)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ATF amount in Step 2 is correct:</div>
+<div class="list">•  Replace the automatic transaxle.<div>(See <font class="extxref-label"><a href="id0517l2117200.html">AUTOMATIC TRANSAXLE REMOVAL/INSTALLATION [EW6A-EL]</a></font>.)</div>
+</div>
+<div class="tbody">ATF amount adjusted in Step 2:</div>
+<div class="list">•  Drive the vehicle to check it, and if there is no problem then the DTC troubleshooting is complete.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>SECONDARY COLLISION REDUCTION (SCR)</title>
+</head>
+<body><a name="id041500200100"></a><p class="servinfo-title"><span class="servinfo-head"></span>SECONDARY COLLISION REDUCTION (SCR)</p>
+<hr>
+<p class="servinfo-title-id" align="right">id041500200100</p><br clear="all"><a name="id04150020010001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The Secondary Collision Reduction (SCR) is a part of the DSC system functions which operates the automatic brakes and flashes the hazard warning lights when the vehicle is hit while it is stopped and moved by the impact to avoid the occurrence of a secondary collision.</div>
+<dl>
+<dd>
+<div class="attention1-label">Warning</div>
+</dd>
+<dd>
+<div class="attention1">
+<div class="list">•  The Secondary Collision Reduction (SCR) performs the brake control (SCR brake), however, it is not a system which guarantees collision prevention under all conditions. Because deceleration by the brake control (SCR brake) is limited.</div>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The Secondary Collision Reduction (SCR) is a system for assisting driver operations. Accordingly, if the conditions for the Secondary Collision Reduction (SCR) are met, or even when the Secondary Collision Reduction (SCR) is operating, if the driver operates the accelerator pedal, the driver’s operations take precedence and the Secondary Collision Reduction (SCR) operation is canceled.</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id04150020010002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The Secondary Collision Reduction (SCR) functions are categorized as follows:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Hazard warning (SCR hazard) which flashes the hazard warning lights to warn surrounding vehicles when the vehicle is collision.</div>
+<dl>
+<dd class="list">
+<div class="list">•  The hazard warning (SCR hazard) is equipped as standard.</div>
+</dd>
+</dl>
+<div class="list">―  Brake control (SCR brake) which operates the automatic brakes when the vehicle is hit while it is stopped and moved by the impact.</div>
+</dd>
+</dl><br clear="all"><a name="id04150020010003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<p clear="all">
+<p class="table-title">Solenoid valve operation table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="2">
+<p class="thead">Traction control solenoid valve</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Stability control solenoid valve</p>
+</th>
+<th id="" align="center" colspan="4">
+<p class="thead">Inlet solenoid valve</p>
+</th>
+<th id="" align="center" colspan="4">
+<p class="thead">Outlet solenoid valve</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Pump motor, pump</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">LF—RR</p>
+</th>
+<th id="" align="center">
+<p class="thead">RF—LR</p>
+</th>
+<th id="" align="center">
+<p class="thead">LF—RR</p>
+</th>
+<th id="" align="center">
+<p class="thead">RF—LR</p>
+</th>
+<th id="" align="center">
+<p class="thead">LF</p>
+</th>
+<th id="" align="center">
+<p class="thead">RF</p>
+</th>
+<th id="" align="center">
+<p class="thead">LR</p>
+</th>
+<th id="" align="center">
+<p class="thead">RR</p>
+</th>
+<th id="" align="center">
+<p class="thead">LF</p>
+</th>
+<th id="" align="center">
+<p class="thead">RF</p>
+</th>
+<th id="" align="center">
+<p class="thead">LR</p>
+</th>
+<th id="" align="center">
+<p class="thead">RR</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody">ON (close)</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">ON (open)</div>
+</td>
+<td id="" align="center" colspan="4">
+<div class="tbody">OFF (open)</div>
+</td>
+<td id="" align="center" colspan="4">
+<div class="tbody">OFF (close)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Operating</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p class="figure-title">Hydraulic circuit diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzn00004456.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzn00004456</div>
+</td>
+</tr>
+</table>
+<p class="figure-title">Block diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002590.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002590</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id04150020010004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id04150020010005"></a><p class="topic-title"><span class="topic-head"></span>Hazard warning (SCR hazard) operation</p>
+<dl>
+<dd>
+<div class="list">•  The SAS control module detects a collision with another vehicle, it outputs a hazard warning (SCR hazard) request signal (1) to the Body Control Module (BCM). The Body Control Module (BCM) flashes the turn light (2) during a collision to caution the vehicles surrounding vehicle when it detects a certain amount of impact.</div>
+<div class="list">•  While the hazard warning (SCR hazard) is operating, all the turn lights are flashed automatically. The system can be turned off by pressing the hazard warning light switch two times.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id04150020010006"></a><p class="topic-title"><span class="topic-head"></span>Brake control (SCR brake) operation</p>
+<dl>
+<dd>
+<div class="list">•  Operation conditions (any of the following conditions must be met):</div>
+<dl>
+<dd class="list">
+<div class="list">―  The selector lever is in the P position. (ATX)</div>
+<div class="list">―  The parking brake is applied.</div>
+<div class="list">―  The brake pedal is depressed.</div>
+</dd>
+</dl>
+<div class="list">•  When any of the operation conditions is met and the SAS control module detects a collision with another vehicle, it outputs a brake control (SCR brake) request signal (3) to the DSC HU/CM. (At the same time, it also outputs a hazard warning (SCR hazard) request signal to the Body Control Module (BCM)).</div>
+<div class="list">•  The DSC HU/CM energizes the traction control and stability control solenoid valves to switch the hydraulic circuits, and at the same time, it operates the pump motor to activate the pump so that the brake fluid pressure is lead to the caliper piston and the automatic brakes are operated (4). At the same time, the DSC HU/CM outputs a brake light signal to the Body Control module (BCM) (5).</div>
+<div class="list">•  While the brake control (SCR brake) is operating, turns on the brake lights automatically (6), and at the same time the brake light unit outputs a brake light operation signal to the DSC HU/CM (7).</div>
+<div class="list">•  Cancel condition (any of the following conditions must be met):</div>
+<dl>
+<dd class="list">
+<div class="list">―  The engine is stopped (the ignition is switched off).</div>
+<div class="list">―  Approx. 1.5 s has elapsed since the vehicle was stopped by the brake control (SCR brake).</div>
+<div class="list">―  The accelerator pedal opening angle exceeds approx. 20%.</div>
+<div class="list">―  Brake force greater than that generated by the brake control (SCR brake) is input via the brake pedal.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00000065.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00000065</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  The Secondary Collision Reduction (SCR) does not operate if the DSC system has a malfunction and the DSC control is inhibited.</div>
+<div class="list">•  The Secondary Collision Reduction (SCR) may not operate in the case of a low-speed collision in which the air bags do not deploy.</div>
+<div class="list">•  The Secondary Collision Reduction (SCR) may not operate if the vehicle speed exceeds approx. 50 km/h because of the first collision.</div>
+<div class="list">•  The Secondary Collision Reduction (SCR) does not operate if the components of the SAS control module and the DSC system are significantly damaged by the first collision.</div>
+</div>
+</dd>
+</dl>
+</body>
+</html>

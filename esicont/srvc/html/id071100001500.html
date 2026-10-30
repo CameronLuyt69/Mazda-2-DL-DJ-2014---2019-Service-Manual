@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>BLOWER FAN CONTROLLER</title>
+</head>
+<body><a name="id071100001500"></a><p class="servinfo-title"><span class="servinfo-head"></span>BLOWER FAN CONTROLLER</p>
+<hr>
+<p class="servinfo-title-id" align="right">id071100001500</p><br clear="all"><a name="id07110000150001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The blower fan controller controls the blower motor rotation speed.</div><br clear="all"><a name="id07110000150002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The blower fan controller controls the built-in power MOS FET using pulse signals and changes the blower motor operational voltage.</div>
+<div class="list">•  By placing the fan in the upper part of the blower fan controller, temperature increase in the internal circuit is suppressed.</div>
+<div class="list">•  The blower fan controller is equipped with a fail-safe function for the purpose of protecting the internal circuits.</div><br clear="all"><a name="id07110000150003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The blower fan controller is positioned in the A/C unit.</div>
+<div class="list">•  The blower fan controller is integrated with the PWM circuit.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00002804.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00002804</div>
+</td>
+</tr>
+</table><br clear="all"><p><a name="id07110000150004"></a><p class="topic-title"><span class="topic-head"></span>PWM (pulse width modulation) circuit</p>
+<dl>
+<dd>
+<div class="list">•  The PWM circuit controls the blower motor rotation speed using pulse.</div>
+<div class="list">•  The PWM circuit determines the duty ratio (pulse ON time) and turns the power MOS FET on/off at high speed.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002102.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002102</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  When voltage of the threshold or more is applied to the gate, a large amount of electricity flows between the drain and source and the power MOS FET turns on.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002103.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002103</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The rotation of the blower motor is fast when the power MOS FET ON period is long (duty ratio is high), and it is slow when the period is short (duty ratio is low).</div>
+<div class="list">•  The PWM circuit performs duty control using the power MOS FET ON or OFF operation to reduce electric power loss and suppress heat generation in the circuit.</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id07110000150005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  For the blower fan controller operation, refer to the BLOWER SYSTEM. (See <font class="extxref-label"><a href="id071100001200.html">BLOWER SYSTEM</a></font>.)</div><br clear="all"><a name="id07110000150006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  The blower fan controller stops output for a certain period of time when it detects the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Motor lock</div>
+<dl>
+<dd class="list">
+<div class="list">•  The blower motor locks and over-current flows.</div>
+</dd>
+</dl>
+<div class="list">―  Abnormal temperature</div>
+<dl>
+<dd class="list">
+<div class="list">•  The power MOS FET increases temperature abnormally due to half-lock (over-current of a level such that motor-lock is not detected) of the blower motor.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</body>
+</html>

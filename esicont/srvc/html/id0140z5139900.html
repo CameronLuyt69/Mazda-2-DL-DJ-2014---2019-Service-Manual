@@ -1,0 +1,3830 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ENGINE CONTROL SYSTEM [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5139900"></a><p class="servinfo-title"><span class="servinfo-head"></span>ENGINE CONTROL SYSTEM [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5139900</p><br clear="all"><a name="id0140z513990001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  Glow control has been adopted to improve engine startability and diesel particulate filter regeneration performance.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Glow control module adopted</div>
+</dd>
+</dl>
+<div class="list">•  Engine hydraulic pressure switching control has been adopted reducing engine load.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine oil solenoid valve adopted</div>
+</dd>
+</dl>
+<div class="list">•  Coolant control valve control has been adopted for improved fuel economy.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Coolant control valve adopted</div>
+</dd>
+</dl>
+<div class="list">•  Exhaust gas recirculation (EGR) system has been adopted which achieves cleaner exhaust emissions and improved fuel efficiency.</div>
+<div class="list">•  Boost control has been adopted for improved vehicle acceleration performance, fuel economy, and environmental performance.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Variable geometry turbocharger adopted</div>
+<div class="list">―  Speed sensor assy (turbocharger with variable turbine geometry) adopted</div>
+</dd>
+</dl>
+<div class="list">•  Generator output control adopted, fuel economy/idling stability improved.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Current sensor adopted</div>
+</dd>
+</dl>
+<div class="list">•  LIN communication has been adopted to the current sensor for simplified wiring harnesses.</div>
+<div class="list">•  i-stop control has been adopted for improved fuel economy and reduce exhaust gas and idling noise.</div>
+<div class="list">•  DC-DC converter control has been adopted for improved power supply stability. (without i-ELOOP)</div>
+<dl>
+<dd class="list">
+<div class="list">―  DC-DC converter adopted</div>
+</dd>
+</dl>
+<div class="list">•  i-ELOOP has been adopted for improved electrical power generation during deceleration. (with i-ELOOP) (See <font class="extxref-label"><a href="id131704500000.html">i-ELOOP [i-ELOOP]</a></font>.)</div>
+<dl>
+<dd class="list">
+<div class="list">―  DC-DC converter (i-ELOOP) adopted</div>
+</dd>
+</dl><br clear="all"><a name="id0140z513990002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p><br clear="all"><p><a name="id0140z513990003"></a><p class="topic-title"><span class="topic-head"></span>Input device</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00004153.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00004153</div>
+</td>
+</tr>
+</table>
+<div class="deflist">*1  :Check connector, IG1 relay</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003650.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003650</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0140z513990004"></a><p class="topic-title"><span class="topic-head"></span>Output device</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00004155.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00004155</div>
+</td>
+</tr>
+</table>
+<div class="deflist">*1  :Main relay, cooling fan relay, A/C relay, starter relay, blow-by heater relay</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003651.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003651</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><a name="id0140z513990005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Diagram</p><br clear="all"><p><a name="id0140z513990006"></a><p class="topic-title"><span class="topic-head"></span>Input device</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00004887.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00004887</div>
+</td>
+</tr>
+</table>
+<div class="deflist">*1  :With engine oil level sensor</div>
+</p><br clear="all"><p><a name="id0140z513990007"></a><p class="topic-title"><span class="topic-head"></span>Output device</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00004888.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00004888</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><a name="id0140z513990008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00004159.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00004159</div>
+</td>
+</tr>
+</table>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003654.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003654</div>
+</td>
+</tr>
+</table>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003655.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003655</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z513990009"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00004162.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00004162</div>
+</td>
+</tr>
+</table>
+<div class="deflist">*1  :DSC HU/CM, TCM (ATX), EPS control module, SAS control module, instrument cluster, BCM, start stop unit</div>
+<div class="deflist">*2  :Glow control module, engine oil level sensor</div>
+<div class="deflist">*3  :Instrument cluster (charging system warning light, master warning light, glow indicator light, diesel particulate filter indicator light, i-stop warning light (amber)/i-stop indicator light (green), i-stop indicator alarm/i-stop warning alarm)</div><br clear="all"><a name="id0140z513990010"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Relation Chart</p>
+<div class="list">•  Each control system and their related input and output parts are as follows.</div>
+<p clear="all">
+<p>
+<div>×: Applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">MAIN RELAY CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">IDLE SPEED CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">BOOST CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">FUEL INJECTION AMOUNT CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">MULTIPLE FUEL INJECTION CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">FUEL INJECTION TIMING CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">FUEL PRESSURE CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">INTAKE SHUTTER VALVE CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">EXHAUST SHUTTER VALVE CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">COOLANT CONTROL VALVE CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">ELECTRIC WATER PUMP CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">GLOW CONTROL</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" colspan="13">
+<div class="tbody">Input device</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Check connector</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IG1 relay</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brake switch (No.1 signal)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brake switch (No.2 signal)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAP sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Boost air temperature sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAF sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.1</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.2</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ECT sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel temperature sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">APP sensor No.1, No.2</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel pressure sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Intake shutter valve position sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust shutter valve position sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Coolant control valve position sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">HP-EGR control valve position sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LP-EGR control valve position sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust gas pressure sensor No.1</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust gas pressure sensor No.2</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BARO sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Battery</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Refrigerant pressure sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature sensor No.1</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature sensor No.2</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature sensor No.3</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature sensor No.4</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine oil temperature sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine oil pressure sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Actuator position sensor (turbocharger with variable turbine geometry)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Speed sensor assy (turbocharger with variable turbine geometry)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Ambient temperature sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/F sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Power brake unit vacuum sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CKP sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CMP sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Back-up light switch (MTX)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Neutral switch No.1 (MTX)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CPP switch (MTX)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Starter interlock switch (MTX)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Neutral switch No.2 (MTX)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Clutch stroke sensor (MTX)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Generator (stator coil) (without i-ELOOP)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAN<sup>*1</sup></div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LIN<sup>*2</sup></div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="13">
+<div class="tbody">Output device</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Intake shutter valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust shutter valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">HP-EGR control valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LP-EGR control valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel pressure relief valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Main relay</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Turbocharger solenoid valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/F sensor heater</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Starter relay</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DC-DC converter (without i-ELOOP)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Generator (Field coil) (without i-ELOOP)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/C relay</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fan control module </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Cooling fan relay</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine oil solenoid valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Suction control valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel injector No.1—No.4</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Blow-by heater relay</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Electric water pump</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Coolant control valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LIN<sup>*2</sup></div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAN<sup>*3</sup></div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :DSC HU/CM, TCM (ATX), EPS control module, SAS control module, instrument cluster, BCM, start stop unit</div>
+<div class="deflist">*2  :Glow control module, engine oil level sensor</div>
+<div class="deflist">*3  :Instrument cluster (charging system warning light, master warning light, glow indicator light, diesel particulate filter indicator light, i-stop warning light (amber)/i-stop indicator light (green), i-stop indicator alarm/i-stop warning alarm)</div>
+<p clear="all">
+<p>
+<div>×: Applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">EGR CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">AIR FUEL RATIO (A/F) SENSOR HEATER CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">DIESEL PARTICULATE FILTER REGENERATION CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">A/C CUT-OFF CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">ELECTRICAL FAN CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">STARTER CUT-OFF CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">GENERATOR CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">RUN DRY PREVENTION (RDP) CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">BLOW-BY HEATER CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">i-stop CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">DC-DC CONVERTER CONTROL</p>
+</th>
+<th id="" align="center">
+<p class="thead">ENGINE OIL CONTROL</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" colspan="13">
+<div class="tbody">Input device</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Check connector</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IG1 relay</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brake switch (No.1 signal)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brake switch (No.2 signal)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAP sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Boost air temperature sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAF sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ECT sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel temperature sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">APP sensor No.1, No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel pressure sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Intake shutter valve position sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust shutter valve position sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Coolant control valve position sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">HP-EGR control valve position sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LP-EGR control valve position sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust gas pressure sensor No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust gas pressure sensor No.2</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BARO sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Battery</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Refrigerant pressure sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature sensor No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature sensor No.2</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature sensor No.3</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature sensor No.4</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine oil temperature sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine oil pressure sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Actuator position sensor (turbocharger with variable turbine geometry)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Speed sensor assy (turbocharger with variable turbine geometry)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Ambient temperature sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/F sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Power brake unit vacuum sensor</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CKP sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CMP sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Back-up light switch (MTX)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Neutral switch No.1 (MTX)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CPP switch (MTX)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Starter interlock switch (MTX)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Neutral switch No.2 (MTX)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Clutch stroke sensor (MTX)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Generator (stator coil) (without i-ELOOP)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAN<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LIN<sup>*2</sup></div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left" colspan="13">
+<div class="tbody">Output device</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Intake shutter valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust shutter valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">HP-EGR control valve</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LP-EGR control valve</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel pressure relief valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Main relay</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Turbocharger solenoid valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/F sensor heater</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Starter relay</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DC-DC converter (without i-ELOOP)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Generator (Field coil) (without i-ELOOP)</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/C relay</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fan control module </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Cooling fan relay</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine oil solenoid valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Suction control valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel injector No.1—No.4</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Blow-by heater relay</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Electric water pump</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Coolant control valve</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LIN<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAN<sup>*3</sup></div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center"> </td>
+<td id="" align="center"> </td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :DSC HU/CM, TCM (ATX), EPS control module, SAS control module, instrument cluster, BCM, start stop unit</div>
+<div class="deflist">*2  :Glow control module, engine oil level sensor</div>
+<div class="deflist">*3  :Instrument cluster (charging system warning light, master warning light, glow indicator light, diesel particulate filter indicator light, i-stop warning light (amber)/i-stop indicator light (green), i-stop indicator alarm/i-stop warning alarm)</div>
+</body>
+</html>

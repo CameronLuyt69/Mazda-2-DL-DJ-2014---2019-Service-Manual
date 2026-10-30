@@ -1,0 +1,751 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSIS SYSTEM [ADVANCED KEYLESS ENTRY SYSTEM]</title>
+</head>
+<body><a name="id091400111233"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSIS SYSTEM [ADVANCED KEYLESS ENTRY SYSTEM]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091400111233</p><br clear="all"><a name="id09140011123301"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The on-board diagnostic function consists of the following functions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  A malfunction detection function, which detects overall malfunctions in the advanced keyless entry system-related parts.</div>
+<div class="list">―  A memory function, which stores detected DTCs.</div>
+<div class="list">―  A display function, which indicates malfunction locations and status via DTC output.</div>
+<div class="list">―  A PID/data monitoring function, which reads out specific input/output signals and verifies the input/output condition.</div>
+</dd>
+</dl>
+<div class="list">•  Using the Mazda Modular Diagnostic System (M-MDS), DTCs can be read out and deleted, and the PID/data monitoring function can be activated.</div><br clear="all"><p><a name="id09140011123302"></a><p class="topic-title"><span class="topic-head"></span>Malfunction detection function</p>
+<dl>
+<dd>
+<div class="list">•  Detects malfunctions in input/output signals.</div>
+<div class="list">•  If a malfunction occurs, the start stop unit records the malfunction as a DTC. A recorded DTC can be read by the Mazda Modular Diagnostic System (M-MDS).</div>
+</dd>
+</dl>
+</p>
+<p clear="all">
+<p class="table-title">DTC table</p>
+<p>
+<div>×: Applicable</div>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">KEY warning light (red)</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe</p>
+</th>
+<th id="" align="center">
+<p class="thead">Drive cycle</p>
+</th>
+<th id="" align="center">
+<p class="thead">Self test type<sup>*1</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">Memory function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10C6:1F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (exterior, rear) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10C7:1F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (interior, rear) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10C9:1F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (interior, front) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10D1:23</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request switch (LF) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10D3:23</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request switch (RF) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11FD:1F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (exterior, LF) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1210:1F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (exterior, RF) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13C3:04</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF control unit internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13C3:09</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF control unit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13C3:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF control unit power supply voltage low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13C3:29</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error between start stop unit and LF control unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :C: CMDTC self test, D: ODDTC self test</div><br clear="all"><a name="id09140011123303"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>DTC 7-digit code definition</p>
+<div class="list">•  When related systems or components have failed, the CM stores the DTC of the malfunctioning part in the CM memory, and allows for the retrieval of the store data using scanning tool when necessary. The DTCs are indicated using seven digits. Each digit indicates the following.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5uun00001109.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5uun00001109</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id09140011123304"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Status byte for DTC</p>
+<div class="list">•  The two digits (two digits after hyphen (-)) after the seven-digit DTC.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00002015.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00002015</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  A code which indicates the pending code, current/past malfunction status, or warning illumination status.</div>
+<div class="list">•  Can be read by performing a CMDTC self-test using the Mazda Modular Diagnostic System (M-MDS).</div>
+<div class="list">•  For details on the status byte, refer to the explanation on the Mazda Modular Diagnostic System (M-MDS) when reading the DTC.</div><br clear="all"><a name="id09140011123305"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Detection condition for the applicable DTC</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Detection condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10C6:1F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (exterior, rear) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects an open circuit or short to ground in the keyless antenna (exterior, rear) circuit with the ignition switched off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10C7:1F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (interior, rear) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects an open circuit or short to ground in the keyless antenna (interior, rear) circuit with the ignition switched off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10C9:1F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (interior, front) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects an open circuit or short to ground in the keyless antenna (interior, front) circuit with the ignition switched off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10D1:23</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request switch (LF) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detected any of the following conditions at a vehicle speed of <span>5 km/h {3 mph} or more</span>.</div>
+<dl>
+<dd class="list">
+<div class="list">―  The request switch (LF) is continuously ON for <span>2 min or more</span>.</div>
+<div class="list">―  The request switch (LF) was ON <span>7 times</span> before the vehicle speed decreased to <span>less than 5 km/h {3 mph}</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10D3:23</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request switch (RF) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detected any of the following conditions at a vehicle speed of <span>5 km/h {3 mph} or more</span>.</div>
+<dl>
+<dd class="list">
+<div class="list">―  The request switch (RF) is continuously ON for <span>2 min or more</span>.</div>
+<div class="list">―  The request switch (RF) was ON <span>7 times</span> before the vehicle speed decreased to <span>less than 5 km/h {3 mph}</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11FD:1F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (exterior, LF) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects an open circuit or short to ground in the keyless antenna (exterior, LF) circuit with the ignition switched off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1210:1F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless antenna (exterior, RF) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects an open circuit or short to ground in the keyless antenna (exterior, RF) circuit with the ignition switched off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13C3:04</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF control unit internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects the LF control unit internal malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13C3:09</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF control unit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When any of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Start stop unit detects that the LF state signal of the LF control unit is low for <span>5 s or more</span>.</div>
+<div class="list">―  With the communication between the start stop unit and LF control unit being performed normally, there is no response from the LF control unit even though there is the signal transmission request from the start stop unit to the LF control unit, and the LF state signal becomes low.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13C3:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF control unit power supply voltage low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit power supply circuit voltage of <span>8.5 V or more or less than 16.5 V</span> and LF control unit power supply circuit voltage of <span>5 V or more or less than 8.5 V</span> are detected for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13C3:29</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error between start stop unit and LF control unit</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects the communication error with the LF control unit <span>10 times</span>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id09140011123306"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Data monitor function</p>
+<div class="list">•  With the PID/data monitor function, the input/output signal monitor items set in the start stop unit can be selected and read out in real-time.</div>
+<div class="list">•  The items which can be selected are as follows.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">PID</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Operation</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Module control terminal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">LG/T_LK_SW<sup></sup><sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request switch (liftgate) operation condition</div>
+<div class="list">•  Off: Request switch (liftgate) is off.</div>
+<div class="list">•  On: Request switch (liftgate) is on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The request switch (liftgate) input is an input signal to the start stop unit through the LF control unit.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2F (LF control unit communication)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RQ_SW_LF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request switch (LF) operation condition</div>
+<div class="list">•  Off: Request switch (LF) is off.</div>
+<div class="list">•  On: Request switch (LF) is on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The signal is input to the start stop unit through the LF control unit of the request switch (LF).</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2F (LF control unit communication)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RQ_SW_RF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request switch (RF) operation condition</div>
+<div class="list">•  Off: Request switch (RF) is off.</div>
+<div class="list">•  On: Request switch (RF) is on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The signal is input to the start stop unit through the LF control unit of the request switch (RF).</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2F (LF control unit communication)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">T_SEN_LF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Displays in the Mazda Modular Diagnostic System (M-MDS) but it does not operate.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">T_SEN_RF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Displays in the Mazda Modular Diagnostic System (M-MDS) but it does not operate.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :5HB</div><br clear="all"><a name="id09140011123307"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Simulation function</p>
+<div class="list">•  The simulation function drives the output parts set in the start stop unit regardless of the start stop unit control condition.</div>
+<div class="list">•  The items which can be selected are as follows.</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Simulation items on parts which are not equipped to the vehicle do not operate.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Simulation item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Operation</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Output part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Operation condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">BZR_OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Keyless beeper does not sound.</div>
+<div class="list">•  On: Keyless beeper sounds.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the simulation item BZR_OUT is turned on, a force override signal is sent to the LF control unit from the start stop unit, and the LF control unit drives (sounds) the keyless beeper.</div>
+<div class="list">•  With adoption of a separate excitation buzzer to the keyless beeper, buzzer does not sound normally even if the voltage is applied to the buzzer unit because there is no oscillation circuit. The integrity of the keyless beeper is determined using the simulation item BZR_OUT.</div>
+<div class="list">•  If the keyless buzzer does not sound even though the simulation function BZR_OUT is on, perform diagnosis using the following procedure.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Press the remote transmitter lock/unlock button repeatedly and measure the terminal voltage of the keyless buzzer when the button is pressed.</div>
+<dl>
+<div class="list-title">Voltage is output</div>
+<dd class="list">
+<div class="list">•  Keyless buzzer malfunction may have occurred.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Voltage is not output</div>
+<dd class="list">
+<div class="list">•  Related wiring harness, or LF control unit malfunction may have occurred.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">Keyless beeper</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">T_SEN_P_LF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Displayed on Mazda Modular Diagnostic System (M-MDS) but does not function.</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">T_SEN_P_RF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Displayed on Mazda Modular Diagnostic System (M-MDS) but does not function.</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

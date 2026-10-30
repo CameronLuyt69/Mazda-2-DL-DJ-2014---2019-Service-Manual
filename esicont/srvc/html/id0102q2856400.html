@@ -1,0 +1,838 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P049B:00 [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0102q2856400"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P049B:00 [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q2856400</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  To determine the malfunctioning part, proceed with the diagnostics from “Function Inspection Using M-MDS”.</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0102q285640001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Details On DTCs</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DESCRIPTION</p>
+</th>
+<th id="" align="left" colspan="2">
+<p class="thead">LP-EGR flow insufficient detected</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="5">
+<div class="tbody">DETECTION CONDITION</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Determination conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the following condition is met, the LP-EGR volume is lower than the specification for the target value for a continuous specified time.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Preconditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  During LP-EGR control</div>
+<div class="list">•  During HP-EGR control</div>
+<div class="list">•  Fuel injection amount:<span>15—50 mm<sup>3</sup>/stoke</span></div>
+<div class="list">•  Engine speed: <span>1,300—2,500 rpm</span></div>
+<div class="list">•  Engine torque: <span>70—240 N·m</span></div>
+<div class="list">•  The following DTCs are not detected:</div>
+<dl>
+<dd class="list">
+<div class="list">―  MAP sensor: P0107:00, P0108:00</div>
+<div class="list">―  MAF sensor: P0102:00, P0103:00</div>
+<div class="list">―  Exhaust gas pressure sensor No.1: P0472:00, P0473:00</div>
+<div class="list">―  Exhaust gas temperature sensor No.1: P0546:00</div>
+<div class="list">―  Intake shutter valve control: P2101:00, P2118:00, P1589:00</div>
+<div class="list">―  Intake shutter valve position sensor: P0122:00, P0123:00</div>
+<div class="list">―  HP-EGR control valve DC motor control system: P0404:00, P0488:00</div>
+<div class="list">―  HP-EGR control valve position sensor: P0405:00, P0406:00</div>
+<div class="list">―  LP-EGR control valve DC motor control system: P045B:00, P213B:00</div>
+<div class="list">―  LP-EGR control valve position sensor: P0407:00, P0408:00</div>
+<div class="list">―  Exhaust shutter valve DC motor control system: P0475:00, P0476:00</div>
+<div class="list">―  Exhaust shutter valve position sensor: P048D:00, P048E:00</div>
+<div class="list">―  Internal PCM malfunction: P062B:00</div>
+<div class="list">―  Fuel injector: P0201:00, P0202:00, P0203:00, P0204:00, P02EE:00, P02EF:00, P02F0:00, P02F1:00, P1378:00, P1379:00, P2146:00, P2147:00, P2148:00, P2149:00, P2150:00, P2151:00</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Drive cycle</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>2</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Self test type</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CMDTC self test</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Sensor used</div>
+</td>
+<td id="" align="left">
+<div class="list">•  LP-EGR control valve</div>
+<div class="list">•  HP-EGR control valve</div>
+<div class="list">•  Intake shutter valve</div>
+<div class="list">•  Exhaust shutter valve</div>
+<div class="list">•  MAF sensor</div>
+<div class="list">•  MAP sensor</div>
+<div class="list">•  Boost air temperature sensor</div>
+<div class="list">•  Exhaust gas pressure sensor No.1</div>
+<div class="list">•  Exhaust gas temperature sensor No.1 etc.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  PCM restricts engine torque. </div>
+<div class="list">•  Inhibits the EGR control. </div>
+<div class="list">•  Inhibits engine-stop by operating the i-stop function.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>VEHICLE STATUS WHEN DTCs ARE OUTPUT</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Check engine light is illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Erratic signal to PCM</div>
+<dl>
+<dd class="list">
+<div class="list">―  MAF sensor signal malfunction</div>
+<div class="list">―  MAP sensor signal malfunction</div>
+<div class="list">―  Boost air temperature sensor signal malfunction</div>
+<div class="list">―  Exhaust gas pressure sensor signal malfunction</div>
+<div class="list">―  Exhaust gas temperature sensor No.1 signal malfunction</div>
+<div class="list">―  Input signal part connector or terminals malfunction</div>
+<div class="list">―  Input signal part related circuit malfunction</div>
+</dd>
+</dl>
+<div class="list">•  HP-EGR system malfunction</div>
+<div class="list">•  Exhaust shutter valve malfunction</div>
+<div class="list">•  LP-EGR control valve malfunction (stuck close)</div>
+<div class="list">•  Exhaust shutter valve position sensor (built-into exhaust shutter valve) malfunction</div>
+<div class="list">•  LP-EGR valve position sensor (built-into LP-EGR control valve) malfunction </div>
+<div class="list">•  EGR cooler clogged </div>
+<div class="list">•  EGR filter clogged </div>
+<div class="list">•  Catalytic converter or diesel particulate filter malfunction (deformation, damage)</div>
+<div class="list">•  Exhaust gas leakage from LP-EGR system</div>
+<div class="list">•  LP-EGR system passage malfunction (restriction)</div>
+<div class="list">•  Air suction in intake air system between turbocharger and intake manifold</div>
+<div class="list">•  PCM malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q285640002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<div class="list">•  Not applicable</div><br clear="all"><a name="id0102q285640003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Explanation (DTC Detection Outline)</p>
+<div class="list">•  The PCM performs diagnosis of the LP-EGR system by comparing the target EGR volume with the actual.</div>
+<div class="list">•  The PCM monitors the flow volume during LP-EGR implementation.</div>
+<div class="list">•  The PCM calculates the difference between the target EGR flow volume and the actual EGR flow volume during LP-EGR implementation. If the monitored, actual flow volume is lower than the specification for the target flow volume, the PCM determines that there is inadequate flow volume.</div>
+<div class="list">•  The PCM performs diagnosis when each of the preconditions during drive cycle is met. If a malfunction is detected, the malfunction detection counter begins counting up. The value of the malfunction detection counter is maintained while the preconditions are not being met. If the cumulative value of the malfunction detection counter exceeds the threshold during the first drive cycle, a malfunction is determined and a pending code is stored.</div>
+<div class="list">•  If the calculated value of the malfunction detection counter during one drive cycle exceeds the threshold, the PCM determines a malfunction, stores a DTC and turns on the check engine light.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00012620.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00012620</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0102q285640004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Repeatability Verification Procedure</p>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  When the M-MDS is used to observe monitor system status while driving, be sure to have another technician with you, or record the data in the M-MDS using the PID/DATA MONITOR AND RECORD capturing function and inspect later.</div>
+<div class="list">•  While performing this step, always operate the vehicle in a safe and lawful manner.</div>
+</div>
+</dd>
+</dl>
+<div class="list">1.  Start the engine and warm it up completely.</div>
+<div class="list">2.  Drive the vehicle for 1 min at a speed of 100 km/h {62.2 mph}<sup>*1</sup>, 50 km/h {32 mph}<sup>*2</sup> or more.</div>
+<div class="list">3.  Repeat Step 2 operation above 2 times.</div>
+<div class="deflist">*1  :European (L.H.D.) specs.</div>
+<div class="deflist">*2  :Except european (L.H.D.) specs.</div><br clear="all"><a name="id0102q285640005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID Item/Simulation Item Used In Diagnosis</p>
+<p clear="all">
+<p class="table-title">PID/DATA monitor item table</p>
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Item</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>Definition</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>Unit</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>Condition/Specification</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EXHPRES1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust gas pressure (No.1)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa, Bar, psi</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Idle (after warm up): Approx. 100 kPa {1 bar, 14.5 psi}</div>
+<div class="list">•  Racing (engine speed above 2,000 rpm): Approx. 125 kPa {1.27 kgf/cm<sup>2</sup>, 18.1 psi}</div>
+<div class="list">•  Racing (engine speed above 4,000 rpm): Approx. 245 kPa {2.50 kgf/cm<sup>2</sup>, 35.5 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EXHTEMP1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature (No.1)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the exhaust gas temperature</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CACT11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Boost air temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the boost air temperature</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Mass air flow</div>
+</td>
+<td id="" align="center">
+<div class="tbody">g/sec</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Switch ignition ON (engine off): Approx. 0.4 g/sec {0.13 Ib/min}</div>
+<div class="list">•  Idle (after warm up): Approx. 3.2 g/sec {0.42 Ib/min }</div>
+<div class="list">•  Racing (engine speed above 2,000 rpm): Approx. 9.2 g/sec {1.12 Ib/min}</div>
+<div class="list">•  Racing (engine speed above 4,000 rpm): Approx. 70 g/sec {9.3 Ib/min}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manifold absolute pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa, Bar, psi</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Switch ignition ON (engine off): Approx. 100 kPa {1 bar, 14.5 psi}</div>
+<div class="list">•  Idle: Approx. 80 kPa {0.8 bar, 12 psi}</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Function Inspection Using M-MDS</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: IDENTIFY TRIGGER DTC FOR FREEZE FRAME DATA</div>
+<div class="list">•  Is the DTC P049B:00 on FREEZE FRAME DATA?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure for DTC on FREEZE FRAME DATA.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">PURPOSE: RECORD FREEZE FRAME DATA/SNAPSHOT DATA AND DIAGNOSTIC MONITORING TEST RESULTS TO UTILIZE WITH REPEATABILITY VERIFICATION</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Recording can be facilitated using the screen capture function of the PC.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Record the FREEZE FRAME DATA/snapshot data and DIAGNOSTIC MONITORING TEST RESULTS (misfire related) on the repair order.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF DIAGNOSTIC RESULT IS AFFECTED BY OTHER RELATED DTCs OCCURRING</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure and DTC Reading Procedure. <div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the other PENDING CODE/DTC also present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF THERE IS PID ITEM CAUSING DRASTIC CHANGES OF ACCELERATION FLUCTUATION BY INPUT SIGNAL TO PCM</div>
+<div class="list">•  Access the following PIDs using the M-MDS: <div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<dl>
+<div class="list-title">PCM:</div>
+<dd class="list">
+<div class="list">―  EXHPRES1</div>
+<div class="list">―  EXHTEMP1</div>
+<div class="list">―  CACT11</div>
+<div class="list">―  MAF</div>
+<div class="list">―  MAP</div>
+</dd>
+</dl>
+<div class="list">•  Is there any signal that is far out of specification?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY CONNECTOR CONNECTIONS</div>
+<div class="list">•  Access the following PIDs using the M-MDS: <div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<dl>
+<div class="list-title">PCM:</div>
+<dd class="list">
+<div class="list">―  EXHPRES1</div>
+<div class="list">―  EXHTEMP1</div>
+<div class="list">―  CACT11</div>
+<div class="list">―  MAF</div>
+<div class="list">―  MAP</div>
+</dd>
+</dl>
+<div class="list">•  When the following parts are shaken, does the PID value include a PID item which has changed?</div>
+<dl>
+<dd class="list">
+<div class="list">―  Exhaust gas pressure sensor No.1</div>
+<div class="list">―  Exhaust gas temperature sensor No.1</div>
+<div class="list">―  Charge air temperature sensor</div>
+<div class="list">―  MAF sensor</div>
+<div class="list">―  MAP sensor</div>
+<div class="list">―  PCM</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the applicable connector parts.</div>
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 10.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q285640006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Troubleshooting Diagnostic Procedure</p>
+<div class="list-title">Intention of troubleshooting procedure</div>
+<div class="list">•  Step 1—3</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform inspection of each separate part.</div>
+</dd>
+</dl>
+<div class="list">•  Step 4—9</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform inspection of HP-EGR and LP-EGR passage</div>
+</dd>
+</dl>
+<div class="list">•  Step 10—11</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verify that the primary malfunction is resolved and there are no other malfunctions.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT EXHAUST SHUTTER VALVE POSITION SENSOR</div>
+<div class="list">•  Inspect the exhaust shutter valve position sensor.<div>(See <font class="extxref-label"><a href="id0140q2538300.html">EXHAUST SHUTTER VALVE POSITION SENSOR INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect the exhaust shutter valve, then go to Step 10.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0116q2812200.html">EXHAUST SHUTTER VALVE INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT LP-EGR VALVE CONTROL VALVE CONTROL SYSTEM OPERATION</div>
+<div class="list">•  Perform the LP-EGR Control Valve Operation Inspection.<div>(See <font class="extxref-label"><a href="id0103q2803700.html">ENGINE CONTROL SYSTEM OPERATION INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to Step 10.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT LP-EGR CONTROL VALVE POSITION SENSOR</div>
+<div class="list">•  Inspect the LP-EGR control valve position sensor.<div>(See <font class="extxref-label"><a href="id0140q2497700.html">LP-EGR CONTROL VALVE POSITION SENSOR INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the LP-EGR control valve position sensor, then go to Step 10.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q2498200.html">LP-EGR CONTROL VALVE POSITION SENSOR REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT INTAKE AIR SYSTEM FOR AIR SUCTION</div>
+<div class="list">•  Inspect for air leakage at the following:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Around connection of turbocharger and intake manifold</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Engine speed may change when rust penetrating agent is sprayed on the air suction area.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to Step 10.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT FOR RESTRICTION OR CLOGGED IN HP-EGR PASSAGE</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Remove the HP-EGR valve.<div>(See <font class="extxref-label"><a href="id0116q2702800.html">HP-EGR CONTROL VALVE REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Visually inspect the HP-EGR passage for clogging and the gasket correctly installed.</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to the next step.</div>
+<div class="tbody">(If there is clogging caused by soot in the HP-EGR valve, inspect around the HP-EGR piping and clean or replace it.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT EGR COOLER</div>
+<div class="list">•  Inspect the EGR cooler for clogging.<div>(See <font class="extxref-label"><a href="id0116q2099800.html">EGR COOLER INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to Step 10.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0116q2099000.html">EGR COOLER REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT EGR FILTER</div>
+<div class="list">•  Inspect the EGR filter for clogging.</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Clean or replace EGR filter, then go to Step 10.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0115q2800200.html">EXHAUST SYSTEM REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT LP-EGR SYSTEM FOR LEAKAGE</div>
+<div class="list">•  Visually inspect for exhaust gas leakage from the LP-EGR system.<div>(See <font class="extxref-label"><a href="id0116q2803700.html">EMISSION SYSTEM LOCATION INDEX [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any leakage?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to Step 10.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT FOR RESTRICTION IN LP-EGR SYSTEM PASSAGE</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Remove the LP-EGR valve.<div>(See <font class="extxref-label"><a href="id0116q2702900.html">LP-EGR CONTROL VALVE REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Visually inspect the LP-EGR passage for restriction and the gasket correctly installed.</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to the next step.</div>
+<div class="tbody">(If there is restriction caused by soot in the LP-EGR valve, inspect around the LP-EGR piping and clean or replace it.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">10</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: PERFORM DTC INSPECTION AND VERIFY IF MALFUNCTIONING PART IS PCM</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2865400.html">CLEARING DTC [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id0102q285640004">Repeatability Verification Procedure</a></font>.)</div>
+</div>
+<div class="list">•  Perform the DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q2113800.html">PCM REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY AFTER REPAIR PROCEDURE</div>
+<div class="list">•  Perform the “AFTER REPAIR PROCEDURE”.<div>(See <font class="extxref-label"><a href="id0102q2801100.html">AFTER REPAIR PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

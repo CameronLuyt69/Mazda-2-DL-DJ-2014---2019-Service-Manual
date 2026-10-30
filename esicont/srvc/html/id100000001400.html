@@ -1,0 +1,8824 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>MULTIPLEX COMMUNICATION SYSTEM</title>
+</head>
+<body><a name="id100000001400"></a><p class="servinfo-title"><span class="servinfo-head"></span>MULTIPLEX COMMUNICATION SYSTEM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id100000001400</p><br clear="all"><a name="id10000000140001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  A control area network (CAN) system has been adopted in which the multiple control modules send/receive signals using two common communication lines.</div>
+<div class="list">•  Local CAN, ISO communication, or LIN communication has been adopted for the individual communication between control modules in consideration of the communication speed and the cost.</div><br clear="all"><a name="id10000000140002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The following figure shows the CAN/LIM communication/ISO communication/local CAN connection conditions. Availability depends on the vehicle specification.</div>
+</div>
+</dd>
+</dl>
+<p class="figure-title">CAN/LIN communication/ISO communication/local CAN (L.H.D. (SKYACTIV-G 1.5))</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001862.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001862</div>
+</td>
+</tr>
+</table>
+<p class="figure-title">CAN/LIN communication/ISO communication/local CAN (R.H.D. (SKYACTIV-G 1.3, SKYACTIV-G 1.5))</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001625.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001625</div>
+</td>
+</tr>
+</table>
+<p class="figure-title">CAN/LIN communication/ISO communication/local CAN (SKYACTIV-D 1.5)</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001863.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001863</div>
+</td>
+</tr>
+</table>
+<p class="figure-title">Local CAN</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001627.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001627</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id10000000140003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural view</p>
+<p class="figure-title">L.H.D.</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001864.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001864</div>
+</td>
+</tr>
+</table>
+<p class="figure-title">R.H.D.</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001865.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001865</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id10000000140004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p><br clear="all"><p><a name="id10000000140005"></a><p class="topic-title"><span class="topic-head"></span>CAN (controller area network) system</p>
+<dl>
+<dd>
+<div class="list">•  HS-CAN (high-speed controller area network) is used for communication between the following modules:</div>
+<dl>
+<dd class="list">
+<div class="list">―  PCM</div>
+<div class="list">―  DSC HU/CM (with DSC system)</div>
+<div class="list">―  ABS HU/CM (without DSC system)</div>
+<div class="list">―  DC-DC converter (i-ELOOP) (With i-ELOOP system)</div>
+<div class="list">―  TCM (ATX)</div>
+<div class="list">―  Auto leveling control module (with headlight auto leveling system)</div>
+<div class="list">―  BCM</div>
+<div class="list">―  Laser sensor (with smart city brake support (SCBS))</div>
+<div class="list">―  Forward sensing camera (FSC) (with forward sensing camera (FSC))</div>
+<div class="list">―  EPS control module</div>
+<div class="list">―  Start stop unit</div>
+<div class="list">―  Connectivity master unit (CMU) (with center display)</div>
+<div class="list">―  SAS control module</div>
+<div class="list">―  Instrument cluster</div>
+</dd>
+</dl>
+<div class="list">•  MS-CAN (mid-speed controller area network) is used for communication between the following modules:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Instrument cluster</div>
+<div class="list">―  Blind spot monitoring (BSM) control module (LH)</div>
+<div class="list">―  Climate control unit (full-auto air conditioner)</div>
+<div class="list">―  Climate control unit (Manual air conditioner)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="deflist">*1  :The climate control unit for the vehicles equipped with the manual air conditioner system only uses the terminal resistance located on the substrate, therefore it does not use the CAN system.</div>
+<dl>
+<dd>
+<div class="list">•  Signals transmitted using the CAN system are as follows:</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">HS-CAN communication table</p>
+<p>
+<div>OUT: Output (sends signal)</div>
+<div>IN: Input (receives signal)</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" rowspan="2">
+<p class="thead">Signal</p>
+</th>
+<th id="" align="center" colspan="14">
+<p class="thead">CAN system related module</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">PCM</p>
+</th>
+<th id="" align="center">
+<p class="thead">TCM</p>
+</th>
+<th id="" align="center">
+<p class="thead">Auto leveling control module</p>
+</th>
+<th id="" align="center">
+<p class="thead">Laser sensor</p>
+</th>
+<th id="" align="center">
+<p class="thead">DSC HU/CM<sup>*2</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">ABS HU/CM<sup>*3</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">EPS control module</p>
+</th>
+<th id="" align="center">
+<p class="thead">BCM</p>
+</th>
+<th id="" align="center">
+<p class="thead">FSC</p>
+</th>
+<th id="" align="center">
+<p class="thead">Instrument cluster</p>
+</th>
+<th id="" align="center">
+<p class="thead">Start stop unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">SAS control module</p>
+</th>
+<th id="" align="left">
+<p class="thead">DC-DC converter (i-ELOOP)</p>
+</th>
+<th id="" align="left">
+<p class="thead">Connectivity master unit</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Acceleration status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal opening angle information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/C operation request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Air bag/front seat belt pre-tensioner system warning light on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Air bag system-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Air bag system warning buzzer status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Ambient temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Back-up lights ON (MTX)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Back-up light on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Battery discharge suppression status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Battery regeneration status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">BCM personalization-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Blind spot monitoring (BSM) system personalization-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Blind spot monitoring (BSM) system-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Blower relay status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Blower speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brake fluid level</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brake light status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brake switch malfunction determination</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brake switch (No.1)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brake switch (No.2)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Charging system warning light on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Check engine light on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Cluster switch status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Clutch status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Collision detection (front, side, roll over)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Combiner auto-dimming level</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Combiner dimming switching</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Combiner manual-dimming level</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Combiner open/close angle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Cranking</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Cranking time</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="3">
+<div class="tbody">Cruise control switch</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DC-DC converter status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Dimmer cancel</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Door lock/unlock status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Door opening/closing condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DPF indicator light on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driver's buckle switch status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">DSC system-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DSC OFF switch status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump-related (i-stop)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine displacement</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine rotation speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine stop request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Engine switch status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine torque</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EPS status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Forward sensing camera (FSC) personalization-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Front fog light information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Front fog light switch position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel cut request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel economy information reset request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel injection amount</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel-level sensor-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel tank level</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Gear position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Global central configuration</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Global central configuration error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Glow indicator light on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Glow indicator light voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Hazard warning switch information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Headlight high-beam indicator light</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Headlight status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Headlight warning request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">High-beam control system personalization-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">High-beam on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Horn sound request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">i-ELOOP-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Immobilizer system-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="5">
+<div class="tbody">Instrument cluster personalization-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">i-stop OFF switch status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="3">
+<div class="tbody">i-stop-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">i-stop warning light (amber)/i-stop indicator light (green) on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Keyless warning alarm activation request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">KEY warning light (amber)/KEY indicator light (green) on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Laser sensor-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LED headlight warning light on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Light switch information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Maintenance monitor-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Master warning light indication request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Manual shift control</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Manual shift inhibit flash command</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Neutral switch</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Oil level warning</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Oil level warning limit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Oil warning light on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Panel light</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Panel light on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Parking brake status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Passenger's buckle switch status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Passing switch information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Power consumption</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Prevention of brake override system unnecessary operation</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Priority recirculate request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Rear fog indicator light information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Rear fog light switch position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Rear washer switch position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Rear window defogger information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Rear window defogger operation request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Rear wiper low speed status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Rear wiper switch position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Rolling counter</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">ROOM fuse status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Seat belt status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Security indicator light on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Selector lever position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Shift indicator light</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Smart City Brake Support (SCBS)-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Starter relay status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Start stop unit personalization-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering angle (absolute steering angle)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Steering angle condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering angle (estimated absolute steering angle)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering lock-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering shift switch</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Supply voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Target gear position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Temperature control dial status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TNS condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Transmission information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Traveled distance</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Tuner and amplifier unit (TAU) communication status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Turn signal/hazard warning light on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Turn switch position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle specification information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Warning guidance-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Washer level sensor status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Wheel speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Windshield washer switch position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Windshield wiper (INT) volume position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Windshield wiper operation request for rain light sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Windshield wiper operation status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Windshield wiper switch position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Yaw rate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :SKYACTIV-D 1.5</div>
+<div class="deflist">*2  :With DSC system</div>
+<div class="deflist">*3  :Without DSC system</div>
+<p clear="all">
+<p class="table-title">MS-CAN communication table</p>
+<p>
+<div>OUT: Output (sends signal)</div>
+<div>IN: Input (receives signal)</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" rowspan="2">
+<p class="thead">Signal</p>
+</th>
+<th id="" align="center" colspan="3">
+<p class="thead">CAN system related module</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">Climate control unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Instrument cluster</p>
+</th>
+<th id="" align="center">
+<p class="thead">Blind spot monitoring (BSM) control module (LH)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/C operation request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Air bag/front seat belt pre-tensioner system warning light on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Ambient temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Back-up light on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Blind spot monitoring (BSM) system personalization-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Blind spot monitoring (BSM) system-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Blower relay status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Blower speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Cluster switch status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Cranking</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Dimmer cancel</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driver information system information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driving condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine displacement</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine rotation speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine stop request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine switch condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Gear position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Global central configuration</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Instrument cluster personalization-related information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Panel light</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Panel light on request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Priority recirculate request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Rear window defogger information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Rear window defogger operation request</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ROOM fuse status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering angle condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering angle (estimated absolute steering angle)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Supply voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Temperature control dial status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Traveled distance</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Turn switch status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle specification information</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Windshield defroster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Windshield wiper operation status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Yaw rate</div>
+</td>
+<td id="" align="center">
+<div class="tbody">–</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OUT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IN</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id10000000140006"></a><p class="topic-title"><span class="topic-head"></span>Malfunction diagnosis procedure</p>
+<dl>
+<dd>
+<div class="list">•  If a vehicle with a malfunction in a system controlled by a CAN system related module is brought in, verify the repair order form and the malfunctioning symptom first, then perform CAN malfunction diagnosis to determine if the malfunction cause is in the CAN system or not.</div>
+<div class="list">•  For CAN malfunction diagnosis, the voltage at the CAN connection terminal on the DLC-2 is measured, and based on the measured value, the CAN circuit can be examined or the malfunction symptom can be determined.</div>
+<div class="list">•  If the malfunction symptom is not an open circuit, inspect the voltage or continuity at the CAN circuit and determine the malfunctioning location.</div>
+<div class="list">•  If the malfunction symptom is an open circuit, determine the area of the open circuit by using the displayed communication error DTC and the module in which communication has failed.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10000000140007"></a><p class="topic-title"><span class="topic-head"></span>Ex.) Open circuit location determination procedure</p>
+<p class="list">1.  Verify the CAN system-related module DTCs and the failed module using the Mazda Modular Diagnostic System (M-MDS).</p>
+<p class="list">
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC output module</p>
+</th>
+<th id="" align="center">
+<p class="thead">Mazda Modular Diagnostic System (M-MDS) display</p>
+</th>
+<th id="" align="center">
+<p class="thead">Output DTC</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Laser sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SCBS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Forward sensing camera (FSC)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FSC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Connectivity master unit (CMU)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CMU</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EPS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EPS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Start stop unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SSU</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Module</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail display</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">DSC HU/CM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+<p class="list">2.  As a result of DTC verification, only DTCs related to DSC HU/CM and communication errors are output and the DSC HU/CM is indicated as failed, therefore there could be a malfunction in the DSC HU/CM or in the wiring harness between connector C-26, C-27 and DSC HU/CM.</p>
+<p class="list">
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002176.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002176</div>
+</td>
+</tr>
+</table>
+</p>
+</p><br clear="all"><p><a name="id10000000140008"></a><p class="topic-title"><span class="topic-head"></span>Local CAN</p>
+<dl>
+<dd>
+<div class="list">•  Local CAN is used for communication between the following modules:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between PCM and TCM (ATX)</div>
+<div class="list">―  Between connectivity master unit (CMU), DVD/CD player, CD player, and tuner and amp unit (with center display) </div>
+<div class="list">―  Between audio unit, Bluetooth<sup>®</sup> unit, and CD player (without center display)</div>
+<div class="list">―  Between blind spot monitoring (BSM) control module (LH) and blind spot monitoring (BSM) control module (RH) (with blind spot monitoring (BSM) system)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10000000140009"></a><p class="topic-title"><span class="topic-head"></span>LIN communication</p>
+<dl>
+<dd>
+<div class="list">•  LIN communication is used for communication between the following modules:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between PCM and glow control module (SKYACTIVE-D 1.5)</div>
+<div class="list">―  Between PCM and engine oil level sensor (SKYACTIVE-D 1.5)</div>
+<div class="list">―  Between BCM and auto light sensor / rain sensor</div>
+<div class="list">―  Between BCM and DC-DC converter</div>
+<div class="list">―  Between BCM and current sensor</div>
+<div class="list">―  Between BCM and electrical supply unit</div>
+<div class="list">―  Between connectivity master unit (CMU) and commander switch</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10000000140010"></a><p class="topic-title"><span class="topic-head"></span>ISO communication</p>
+<dl>
+<dd>
+<div class="list">•  ISO communication is used for communication between the following modules:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between rear BCM and start stop unit</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><a name="id10000000140011"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p><br clear="all"><p><a name="id10000000140012"></a><p class="topic-title"><span class="topic-head"></span>CAN</p>
+<dl>
+<dd>
+<div class="list">•  The HS-CAN has terminator resistors built into the following units which form the CAN lines.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between PCM (SKYACTIV-G 1.3, SKYACTIV-G 1.5) terminals 2AK (CAN_H) and 2AL (CAN_L), resistance value: <span>124 ohms</span></div>
+<div class="list">―  Between PCM (SKYACTIV-D 1.5) terminals 2C (CAN_H) and 2D (CAN_L), resistance value: <span>124 ohms</span></div>
+<div class="list">―  Between instrument cluster terminals 1B (CAN_H) and 1D (CAN_L), resistance value: <span>120 ohms</span></div>
+</dd>
+</dl>
+<div class="list">•  The MS-CAN has terminal resistors built into the following units which form the CAN lines.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between climate control unit terminals D (CAN_H) and B (CAN_L), resistance value: <span>120 ohms</span> (with full-auto air conditioner)</div>
+<div class="list">―  Between climate control unit terminals W (CAN_H) and X (CAN_L), resistance value: <span>120 ohms</span> (with manual air conditioner)</div>
+<div class="list">―  Between instrument cluster terminals 1C (CAN_H) and 1E (CAN_L), resistance value: <span>120 ohms</span></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10000000140013"></a><p class="topic-title"><span class="topic-head"></span>Local CAN</p>
+<dl>
+<dd>
+<div class="list">•  The local CAN has terminator resistors built into the following units which form the CAN lines.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between connectivity master unit (CMU) terminals 2I (CAN_H) and 2J (CAN_L), resistance value: <span>124 ohms</span> (with center display)</div>
+<div class="list">―  Between tuner and amp unit terminals 2O (CAN_H) and 2Q (CAN_L), resistance value: <span>120 ohms</span> (with center display)</div>
+<div class="list">―  Between audio unit terminals 1O (CAN_H) and 1Q (CAN_L), resistance value: <span>120 ohms</span> (without center display)</div>
+<div class="list">―  Between CD player terminals G (CAN_H) and H (CAN_L), resistance value: <span>120 ohms</span> (without center display)</div>
+<div class="list">―  Between blind spot monitoring (BSM) control module (LH) terminals G (CAN_H) and J (CAN_L), resistance value: <span>120 ohms</span> (with blind spot monitoring (BSM) system)</div>
+<div class="list">―  Between blind spot monitoring (BSM) control module (RH) terminals G (CAN_H) and J (CAN_L), resistance value: <span>120 ohms</span> (with blind spot monitoring (BSM) system)</div>
+<div class="list">―  Between PCM (SKYACTIV-G 1.3, SKYACTIV-G 1.5) terminals 1A (CAN_H) and 1B (CAN_L), resistance value: <span>120 ohms</span></div>
+<div class="list">―  Between PCM (SKYACTIV-D 1.5) terminals 1G (CAN_H) and 1C (CAN_L), resistance value: <span>120 ohms</span></div>
+<div class="list">―  Between TCM terminals G (CAN_H) and H (CAN_L), resistance value: <span>120 ohms</span></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10000000140014"></a><p class="topic-title"><span class="topic-head"></span>LIN communication</p>
+<dl>
+<dd>
+<div class="list">•  The LIN communication has drivers built into the following units which form the LIN communication lines.</div>
+<dl>
+<dd class="list">
+<div class="list">―  PCM (SKYACTIV-D 1.5)</div>
+<div class="list">―  Glow control module (SKYACTIV-D 1.5)</div>
+<div class="list">―  Engine oil level sensor (SKYACTIV-D 1.5)</div>
+<div class="list">―  BCM<span></span></div>
+<div class="list">―  Auto light sensor / rain sensor<span></span></div>
+<div class="list">―  Electrical supply unit (ESU)<span></span></div>
+<div class="list">―  DC-DC converter<span></span></div>
+<div class="list">―  Current sensor<span></span></div>
+<div class="list">―  Connectivity master unit (CMU)<span></span></div>
+<div class="list">―  Commander switch<span></span></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id10000000140015"></a><p class="topic-title"><span class="topic-head"></span>ISO communication</p>
+<dl>
+<dd>
+<div class="list">•  The ISO communication has drivers built into the following units which form the ISO communication lines.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Start stop unit</div>
+<div class="list">―  BCM</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</body>
+</html>

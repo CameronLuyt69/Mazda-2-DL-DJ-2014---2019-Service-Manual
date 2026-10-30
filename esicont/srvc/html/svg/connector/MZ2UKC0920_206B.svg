@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "../../../../../../../../../ns.adobe.com/Extensibility/1.0/default.htm">
+	<!ENTITY ns_ai "../../../../../../../../../ns.adobe.com/AdobeIllustrator/10.0/default.htm">
+	<!ENTITY ns_graphs "../../../../../../../../../ns.adobe.com/Graphs/1.0/default.htm">
+	<!ENTITY ns_vars "../../../../../../../../../ns.adobe.com/Variables/1.0/default.htm">
+	<!ENTITY ns_imrep "../../../../../../../../../ns.adobe.com/ImageReplacement/1.0/default.htm">
+	<!ENTITY ns_sfw "../../../../../../../../../ns.adobe.com/SaveForWeb/1.0/default.htm">
+	<!ENTITY ns_custom "../../../../../../../../../ns.adobe.com/GenericCustomNamespace/1.0/default.htm">
+	<!ENTITY ns_adobe_xpath "../../../../../../../../../ns.adobe.com/XPath/1.0/default.htm">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="83.916px" height="81.3px"
+	 viewBox="0 0 83.916 81.3" enable-background="new 0 0 83.916 81.3" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="SEN">
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="40.02" y1="78.465" x2="42.033" y2="78.465"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="25.932" y1="63.44" x2="58.134" y2="63.44"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="25.932" y1="51.365" x2="58.134" y2="51.365"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="27.945" y1="51.365" x2="27.945" y2="47.327"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="27.945" y1="47.327" x2="25.932" y2="47.327"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="42.033" y1="75.516" x2="42.033" y2="51.365"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="25.932" y1="51.365" x2="25.932" y2="47.327"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				58.134,51.365 58.134,75.516 25.932,75.516 25.932,51.365 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="40.02" y1="75.516" x2="40.02" y2="78.465"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="42.033" y1="75.516" x2="42.033" y2="78.465"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				40.428,51.365 40.428,47.416 43.441,47.416 43.441,51.365 			"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				37.02,51.365 37.02,45.864 47.033,45.864 47.033,51.365 			"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M47.033,47.416h9.926
+				c0,0,1.176-0.029,1.176,0.91v3.039"/>
+		</g>
+		<g id="TEXT">
+			<text transform="matrix(1 0 0 1 2.8467 19.1997)" font-family="'Arial'" font-size="8">AUXILIARY JACK / </text>
+			<text transform="matrix(1 0 0 1 2.8467 28.6997)" font-family="'Arial'" font-size="8">USB PORT / </text>
+			<text transform="matrix(1 0 0 1 2.8467 38.1997)" font-family="'Arial'" font-size="8">SD CARD SLOT HUB</text>
+			<text transform="matrix(1 0 0 1 2.8467 9.6997)" font-family="'Arial'" font-size="8">0920-206B</text>
+			<text transform="matrix(1 0 0 1 46.4585 71.8926)" font-family="'Arial'" font-size="6">2B</text>
+			<text transform="matrix(1 0 0 1 46.4585 59.3931)" font-family="'Arial'" font-size="6">2A</text>
+			<text transform="matrix(1 0 0 1 29.8203 71.8926)" font-family="'Arial'" font-size="6">2D</text>
+			<text transform="matrix(1 0 0 1 29.8203 59.3931)" font-family="'Arial'" font-size="6">2C</text>
+		</g>
+	</g>
+</switch>
+</svg>

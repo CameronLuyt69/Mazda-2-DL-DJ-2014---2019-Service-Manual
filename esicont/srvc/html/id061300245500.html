@@ -1,0 +1,407 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ELECTRIC POWER STEERING (EPS) CONTROL MODULE</title>
+</head>
+<body><a name="id061300245500"></a><p class="servinfo-title"><span class="servinfo-head"></span>ELECTRIC POWER STEERING (EPS) CONTROL MODULE</p>
+<hr>
+<p class="servinfo-title-id" align="right">id061300245500</p><br clear="all"><a name="id06130024550001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose/ Function</p>
+<div class="list">•  The EPS control module (CM) calculates the optimum assist current based on the steering torque signal from the torque sensor installed to the steering column and the vehicle speed signal sent via CAN transmission from the PCM.</div>
+<div class="list">•  The following steering angle signals are output via CAN communication.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Steering angle (relative angle) signal</div>
+<dl>
+<dd class="list">
+<div class="list">•  Set the steering position to 0 degrees when the ignition is switched ON (engine off or on) to output the steering angle when steering from that position.</div>
+</dd>
+</dl>
+<div class="list">―  Steering angle (estimated absolute angle) signal</div>
+<dl>
+<dd class="list">
+<div class="list">•  The EPS CM outputs the calculated steering angle value to the CAN as a steering angle (estimated absolute angle) signal for other systems requiring steering angle information.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The steering angle sensor signal is not used for the steering angle (estimated absolute angle) signal calculation.</div>
+<div class="list">•  Before the steering wheel angle neutral position auto learning is completed, the EPS CM receives a steering angle (absolute angle) signal from the steering angle sensor via the start stop unit and outputs the signal to the other modules through the CAN communication (with Smart City Brake Support (SCBS)).</div>
+<div class="list">•  After the steering angle neutral position auto learning is completed, the EPS CM outputs an EPS status signal, which is calculated by EPS CM itself, through the CAN communication.</div>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  The EPS CM controls the following functions:</div>
+<p clear="all">
+<p class="table-title">Function Table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="left">
+<p class="thead">Control item</p>
+</th>
+<th id="" align="left">
+<p class="thead">Function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">EPS motor current control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Normal control</div>
+<dl>
+<dd class="list">
+<div class="list">―  Calculates the proper assist current based on the steering torque, and the vehicle and engine speeds, and outputs a target current to the EPS motor.</div>
+</dd>
+</dl>
+<div class="list">•  System overheating protection control</div>
+<dl>
+<dd class="list">
+<div class="list">―  Monitors the temperature of the motherboard in the EPS CM and controls the motor current gradually to prevent overheating of the system.</div>
+</dd>
+</dl>
+<div class="list">•  EPS motor backup control</div>
+<dl>
+<dd class="list">
+<div class="list">―  Even if a phase 1 open circuit malfunction in the EPS motor occurs, output current to the EPS motor is controlled so that steering assist is maintained.</div>
+</dd>
+</dl>
+<div class="list">•  Motor rotation angle sensor backup control</div>
+<dl>
+<dd class="list">
+<div class="list">―  Even if an open circuit malfunction occurs in the motor rotation angle sensor, the motor rotation angle sensor backup control performs control to maintain steering assist to the extent possible.</div>
+<div class="list">―  Monitors the temperature of the motherboard in the EPS CM and controls the motor current in steps to prevent overheating of the system.</div>
+</dd>
+</dl>
+<div class="list">•  EPS i-stop control</div>
+<dl>
+<dd class="list">
+<div class="list">―  Control current to the EPS motor is increased or decreased according to the operation status of the i-stop system.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">On-board diagnostic function</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The main part of the system control includes the self-diagnosis function. In case a malfunction occurs, the power steering malfunction indicator light illuminates or flashes to alert the driver, and a DTC is stored in the EPS CM at the same time.</div>
+<div class="list">•  As a result of the on-board diagnosis, when a malfunction is determined, system control is suspended or limited to assure safety while driving.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAN communication function</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Outputs the EPS status signal and the power steering malfunction indicator light illuminates on request via CAN lines.</div>
+<div class="list">•  Outputs the steering angle (absolute angle) signal, steering angle (relative angle) signal and steering angle (estimated absolute angle) signal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Automatic configuration function</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the ignition is switched to ON or the engine is started after the EPS CM have been replaced, the EPS CM reads data from the instrument cluster via CAN communication to perform automatic configuration.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering wheel angle neutral position automatic learning function</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the ignition is switched from off to ON (engine on) and the vehicle is driven normally, the steering wheel angle neutral position is learned automatically based on the wheel speed signal, lateral-G signal, and yaw rate signal.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p class="figure-title">Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002010.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002010</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id06130024550002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The EPS CM is installed to the steering column and integrated with the EPS motor.</div>
+<div class="list">•  For vehicles equipped with a system requiring steering angle information directly after the vehicle starts to be driven, a steering angle sensor is equipped.</div><br clear="all"><a name="id06130024550003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The EPS CM calculates the required assist torque based on the steering torque signal from the torque sensor. When the vehicle starts to be driven, the required assist torque is calculated based on the vehicle speed signal sent from the PCM via CAN in addition to the steering torque signal.</div>
+<div class="list">•  When the required assist torque is determined, the EPS CM outputs the control current to the EPS motor and the EPS motor generates the assist torque.</div>
+<div class="list">•  The EPS system control uses the steering angle (estimated absolute angle) signal.</div>
+<dl>
+<div class="list-title">Ignition is switched ON (engine off or on)</div>
+<dd class="list">
+<div class="list">―  For vehicles with a steering angle sensor, the EPS CM receives the steering angle sensor signal via the start stop unit. The EPS CM outputs the steering angle value as a steering angle (absolute angle) signal.</div>
+<div class="list">―  The following systems perform control using a steering angle (absolute angle) signal until the EPS CM completes steering wheel angle neutral position determination after the vehicle starts to be driven.</div>
+<dl>
+<dd class="list">
+<div class="list">•  Smart City Brake Support (SCBS)</div>
+</dd>
+</dl>
+<div class="list">―  The EPS CM regards the steering position when the ignition is switched ON (engine off or on) as 0 degrees, and outputs the steering angle value steered from that position as a steering angle (absolute angle) signal.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Vehicle driving</div>
+<dd class="list">
+<div class="list">―  When the vehicle starts to be driven, the EPS CM performs steering wheel angle neutral position determination based on the following signals:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Wheel speed signal: Determines straight-driving if there is no rotation speed difference between the left/right wheels.</div>
+</dd>
+</dl>
+<div class="list">―  If the EPS CM completes steering wheel angle neutral position determination, the steering angle neutral position is set. The EPS CM regards the steering wheel angle neutral position as 0 degrees, calculates the estimated absolute steering angle, and outputs the steering angle (estimated absolute angle) signal to CAN.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Ignition is switched off</div>
+<dd class="list">
+<div class="list">―  The steering angle neutral position which the EPS CM determined automatically is cleared when <span>5 min or more </span>have elapsed after disconnecting the battery.</div>
+</dd>
+</dl><br clear="all"><p><a name="id06130024550004"></a><p class="topic-title"><span class="topic-head"></span>EPS Motor Current Control</p>
+<dl>
+<dd>
+<div class="list-title">Normal control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The optimum assist current is calculated based on the steering force signal from the torque sensor and the vehicle and the engine speed signal from the PCM, and then the control current is output to the EPS motor.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">System overheating protection control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The system overheating protection control lowers the current output to the EPS motor if the steering mechanism is turned from lock to lock continuously or the steering rack turning limit is reached repeatedly.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  During system overheating protection control, the assist force will feel weaker due to a decrease in the control current. This is normal for the EPS CM to prevent the EPS motor from burning or seizure, and it does not indicate a malfunction.</div>
+<div class="list">•  While the assist force weakens during this period of time, steering operation can be performed.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">•  The system overheating protection control has middle and complete steps, and it can verify current conditions and the history using the PID/data monitor function and snap shot data.</div>
+<dl>
+<dd class="list">
+<div class="list">―  System overheating protection control (middle): Motor output is 40 % or less (reference)</div>
+<div class="list">―  System overheating protection control (complete): Motor output is 20 % or less (reference)</div>
+</dd>
+</dl>
+<div class="list">•  The current output returns to normal if the temperature in the system decreases to the normal operation temperature.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00000268.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00000268</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">EPS motor backup control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Even if an open circuit malfunction occurs in 1 out of the 3 phases in the EPS motor line, the EPS motor backup control performs control to maintain steering assist.</div>
+<div class="list">•  If the EPS CM detects a phase 1 open circuit malfunction in the EPS motor, the EPS CM controls output current to the EPS motor using a calculation method different than during normal EPS CM control. As a result, even with a phase 1 open circuit malfunction, the steering assist can be maintained.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If the steering wheel is operated during EPS motor backup control, the steering wheel operation may feel heavier (resistance).</div>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Motor rotation angle sensor backup control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Even if an open circuit malfunction occurs in the motor rotation angle sensor, the motor rotation angle sensor backup control performs control to maintain steering assist.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">EPS i-stop control</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If it is detected that the engine is stopped by the i-stop control based on the i-stop condition signal from the PCM, the EPS motor control current is stopped.</div>
+<div class="list">•  If it is detected that the engine is restarted by the i-stop control, the EPS motor control current is increased and the system returns to normal control.</div>
+<div class="list">•  If the steering wheel is operated during EPS i-stop control, assist is performed (normal control) according to that steering.</div>
+<div class="list">•   If a malfunction is detected in the i-stop condition signal from the PCM, EPS i-stop control is not operated, and normal control is performed.</div>
+<div class="list">•  Refer to [i-stop CONTROL] for a detailed explanation of the i-stop. (See <font class="extxref-label"><a href="id0140q1008900.html">i-stop CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.) (See <font class="extxref-label"><a href="id0140z5008900.html">i-stop CONTROL [SKYACTIV-D 1.5]</a></font>.)<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002011.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002011</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id06130024550005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:54</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Control enabled</div>
+<div class="list">•  Power steering malfunction indicator light: Not illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:55</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Control enabled</div>
+<div class="list">•  Power steering malfunction indicator light: Illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:56</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Control enabled</div>
+<div class="list">•  Power steering malfunction indicator light: Not illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:05</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="list">•  Control disabled</div>
+<div class="list">•  Power steering malfunction indicator light: Illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:41</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:43</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Control enabled</div>
+<div class="list">•  Power steering malfunction indicator light: Not illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:46</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="list">•  Control disabled</div>
+<div class="list">•  Power steering malfunction indicator light: Illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:49</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:61</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:96</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Control is maintained by gradually decreasing the motor control current</div>
+<dl>
+<dd class="list">
+<div class="list">―  However, control is inhibited if the power supply voltage is the specified value of less</div>
+</dd>
+</dl>
+<div class="list">•  Power steering malfunction indicator light: Illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:17</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="list">•  Control disabled</div>
+<div class="list">•  Power steering malfunction indicator light: Illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3004:49</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

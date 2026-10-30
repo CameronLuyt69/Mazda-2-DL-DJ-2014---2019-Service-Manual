@@ -1,0 +1,679 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSIS SYSTEM [IMMOBILIZER SYSTEM]</title>
+</head>
+<body><a name="id0914001112c3"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSIS SYSTEM [IMMOBILIZER SYSTEM]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0914001112c3</p><br clear="all"><a name="id0914001112c301"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The immobilizer system has an on-board diagnostic function to facilitate system diagnosis.</div><br clear="all"><a name="id0914001112c302"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The on-board diagnostic function consists of the following functions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  A malfunction detection function, which detects overall malfunctions in the immobilizer system-related parts.</div>
+<div class="list">―  A memory function, which stores detected DTCs.</div>
+<div class="list">―  A display function, which indicates system malfunctions via DTC display.</div>
+<div class="list">―  A PID/data monitoring function, which reads out specific input/output signals.</div>
+</dd>
+</dl>
+<div class="list">•  Using the Mazda Modular Diagnostic System (M-MDS), DTCs can be read out and deleted, and PID/data monitoring can be performed.</div><br clear="all"><p><a name="id0914001112c303"></a><p class="topic-title"><span class="topic-head"></span>On-board Diagnostic Function</p>
+<dl>
+<dd>
+<div class="list-title">Malfunction detection function</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Detects overall malfunctions in the immobilizer system-related parts.</div>
+<div class="list">•  Malfunction diagnosis of the immobilizer system is automatically performed every time the engine is switched from off (ACC) to ON (START).</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Memory Function</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Malfunctions detected by the malfunction detection function are all recorded as DTCs in the following modules.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Start stop unit</div>
+<div class="list">―  PCM</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  Recorded immobilizer system DTCs are cleared when the ignition is switched ON from off/ACC.</div>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Display Function</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If there is a malfunction in the immobilizer system, the security indicator light in the instrument cluster is illuminated to notify the driver. In addition, DTCs are displayed by the number of times that the security indicator light flashes.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If two or more malfunctions are detected as a result of malfunction diagnosis, only the DTC with the lowest number of those detected will be indicated by the security indicator light.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">•  In the <span>approx. 1 min</span> after detecting a malfunction and before displaying the DTC, the security indicator light turns on, flashes, or turns off in the following patterns:</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Security indicator light flash pattern</p>
+<p class="thead">(before displaying DTC)</p>
+</th>
+<th id="" align="center">
+<p class="thead">DTC</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center"><img src="images/ac5uun00000760.png"></td>
+<td id="" align="left">
+<div class="tbody">09, 11, 13, 15, 16</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center"><img src="images/am2zzw00009051.png"></td>
+<td id="" align="left">
+<div class="tbody">21</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center"><img src="images/ac5uun00000761.png"></td>
+<td id="" align="left">
+<div class="tbody">22, 23</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="list">•  Using the Mazda Modular Diagnostic System (M-MDS), DTCs can be read out and deleted.<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  If the security indicator light itself has a malfunction, it is possible that a DTC may not be indicated properly.</div>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0914001112c304"></a><p class="topic-title"><span class="topic-head"></span>DTC table</p>
+<p clear="all">
+<p>
+<div>×: Applicable</div>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="4">
+<p class="thead">DTC</p>
+</th>
+<th id="" align="center" rowspan="3">
+<p class="thead">KEY warning light (red)</p>
+</th>
+<th id="" align="center" rowspan="3">
+<p class="thead">Push button start indicator light (amber)</p>
+</th>
+<th id="" align="center" rowspan="3">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center" rowspan="3">
+<p class="thead">Fail-safe</p>
+</th>
+<th id="" align="center" rowspan="3">
+<p class="thead">Drive cycle</p>
+</th>
+<th id="" align="center" rowspan="3">
+<p class="thead">Self test type<sup>*2</sup></p>
+</th>
+<th id="" align="center" rowspan="3">
+<p class="thead">Memory function</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center" colspan="2">
+<p class="thead">Mazda Modular Diagnostic System (M-MDS) display<sup>*1</sup></p>
+</th>
+<th id="" align="center" colspan="2" rowspan="2">
+<p class="thead">Security indicator light flash pattern</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">Start stop unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">PCM</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:96</div>
+</td>
+<td id="" align="left">
+<div class="tbody">P1260:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">09</div>
+</td>
+<td id="" align="left"><img src="images/ac5wzw00002409.png"></td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10D9:87</div>
+</td>
+<td id="" align="left">
+<div class="tbody">P1260:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left"><img src="images/ac5wzw00002410.png"></td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Coil antenna (built into push button start) error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D3:05</div>
+</td>
+<td id="" align="left">
+<div class="tbody">P1260:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">13</div>
+</td>
+<td id="" align="left" rowspan="2"><img src="images/ac5wzw00002411.png"></td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Remote transmitter program error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D3:94</div>
+</td>
+<td id="" align="left">
+<div class="tbody">P1260:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with remote transmitter</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D3:51</div>
+</td>
+<td id="" align="left">
+<div class="tbody">P1260:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">15</div>
+</td>
+<td id="" align="left"><img src="images/ac5wzw00002412.png"></td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Unregistered remote transmitter is detected</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:87</div>
+</td>
+<td id="" align="left">
+<div class="tbody">P1260:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">16</div>
+</td>
+<td id="" align="left"><img src="images/ac5wzw00002413.png"></td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM (no response or data mis-match)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D4:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">P1260:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">21</div>
+</td>
+<td id="" align="left"><img src="images/ac5wzw00002414.png"></td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Insufficient remote transmitter programming number</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10DA:51</div>
+</td>
+<td id="" align="left">
+<div class="tbody">P1260:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">22</div>
+</td>
+<td id="" align="left"><img src="images/ac5wzw00002415.png"></td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM (data received failure)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10DA:62</div>
+</td>
+<td id="" align="left">
+<div class="tbody">P1260:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">23</div>
+</td>
+<td id="" align="left"><img src="images/ac5wzw00002416.png"></td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM (code mis-matched)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :The letters at the beginning of each DTC are only displayed when using the Mazda Modular Diagnostic System (M-MDS), and refer to the following: B= Body system, P= Powertrain system, U= Network communication system.</div>
+<div class="deflist">*2  :C: CMDTC self test, D: ODDTC self test</div>
+</p><br clear="all"><a name="id0914001112c305"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>DTC 7-digit code definition</p>
+<div class="list">•  When related systems or components have failed, the CM stores the DTC of the malfunctioning part in the CM memory, and allows for the retrieval of the store data using scanning tool when necessary. The DTCs are indicated using seven digits. Each digit indicates the following.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5uun00001110.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5uun00001110</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id0914001112c306"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Status byte for DTC</p>
+<div class="list">•  The two digits (two digits after hyphen (-)) after the seven-digit DTC.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00002017.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00002017</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  A code which indicates the pending code, current/past malfunction status, or warning illumination status.</div>
+<div class="list">•  Can be read by performing a CMDTC self-test using the Mazda Modular Diagnostic System (M-MDS).</div>
+<div class="list">•  For details on the status byte, refer to the explanation on the Mazda Modular Diagnostic System (M-MDS) when reading the DTC.</div><br clear="all"><a name="id0914001112c307"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Detection condition for the applicable DTC</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC</p>
+</th>
+<th id="" align="center">
+<p class="thead">System malfunction location</p>
+</th>
+<th id="" align="center">
+<p class="thead">Detection condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:96/P1260:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit malfunction detected.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10D9:87/P1260:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Coil antenna (built into push button start) error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detected a malfunction in the coil antenna, and remote transmitter communication is not possible.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D3:05/P1260:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Remote transmitter program error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects a remote transmitter program error.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D3:94/P1260:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with remote transmitter</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit could not detect the remote transmitter communication or communication error was detected.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D3:51/P1260:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Unregistered remote transmitter is detected</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the remote transmitter has not been programmed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:87/P1260:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM (no response or data mis-match)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects a communication error (no response or immobilizer system cancel not possible) with the PCM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B13D4:00/P1260:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Insufficient remote transmitter programming number</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects that the number of programmed remote transmitters is <span>less than 2</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10DA:51/P1260:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM (data received failure)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects a communication error (data received failure) with PCM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B10DA:62/P1260:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM (code mis-matched)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit detects a communication error (code mis-matched) with the PCM.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0914001112c308"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID/data Monitor Function</p>
+<div class="list">•  With the PID/data monitor function, the input/output signal monitor items set in the start stop unit can be selected and read out in real-time.</div>
+<div class="list">•  The items which can be selected are as follows.</div>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">PID</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Operation</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Module control terminal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">NUM_TRNSMIT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays number of the remote transmitters programmed to the start stop unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

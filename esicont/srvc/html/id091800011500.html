@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ESS (EMERGENCY STOP SIGNAL SYSTEM)</title>
+</head>
+<body><a name="id091800011500"></a><p class="servinfo-title"><span class="servinfo-head"></span>ESS (EMERGENCY STOP SIGNAL SYSTEM)</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091800011500</p><br clear="all"><a name="id09180001150001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The emergency signal system (ESS) warns the driver of a vehicle following behind of an emergency braking situation by automatically and rapidly flashing the hazard warning lights when the vehicle decelerates suddenly while traveling at high speeds.</div><br clear="all"><a name="id09180001150002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The BCM gives priority to the emergency signal system (ESS) operation even if the turn switch signal is received during the emergency signal system (ESS) operation.</div>
+<div class="list">•  When the BCM receives a hazard warning switch on signal during the emergency signal system (ESS) operation, it stops the emergency signal system (ESS) operation and gives priority to the hazard warning light flashing operation.</div>
+<div class="list">•  The BCM controls the emergency signal system (ESS) based on the following signals:</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Signal name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Sending module/part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Communication method</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle speed signal</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">PCM</div>
+</td>
+<td id="" align="left" rowspan="7">
+<div class="tbody">HS-CAN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brake switch condition signal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Wheel speed (LF, RF, LR, RR) signal</div>
+</td>
+<td id="" align="left" rowspan="3">
+<div class="tbody">DSC HU/CM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ABS operation condition signal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle acceleration speed signal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Turn switch signal</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Start stop unit</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Hazard warning switch signal</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="list">•  The emergency signal system (ESS) has two warning modes; the sudden deceleration hazard warning mode in which the hazard warning lights flash rapidly, and the emergency stop hazard warning mode in which the hazard warning lights flash normally.</div><br clear="all"><p><a name="id09180001150003"></a><p class="topic-title"><span class="topic-head"></span>Sudden deceleration hazard warning mode</p>
+<dl>
+<dd>
+<div class="list">•  The sudden deceleration hazard warning mode operates when the brake pedal is depressed while driving at a vehicle speed of <span>60 km/h {37 mph} or more</span> and emergency braking is determined based on the vehicle's deceleration.</div>
+<div class="list">•  When the sudden deceleration hazard warning mode operates the hazard warning lights flash at <span>3.5 Hz</span>.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003783.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003783</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09180001150004"></a><p class="topic-title"><span class="topic-head"></span>Emergency stop hazard warning mode</p>
+<dl>
+<dd>
+<div class="list">•  When the brake pedal is depressed at a vehicle speed of <span>10 km/h {6.2 mph} or less</span> after the sudden deceleration hazard warning mode operates, the modes switches to the emergency stop hazard warning mode.</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09180001150005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003784.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003784</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180001150006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003785.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003785</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180001150007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<p class="list">1.  If the brake pedal is depressed and the vehicle is decelerated while the vehicle is driven, the BCM calculates (1) the vehicle deceleration speed based on the wheel speed signal and the vehicle acceleration speed signal.</p>
+<p class="list"></p>
+<p class="list">2.  If the vehicle speed is <span>approx. 60 km/h {37 mph} or more</span> when the calculation is finished, and the calculated deceleration speed is the set value or more for the sudden deceleration hazard warning mode (2), the BCM controls (3) the flashing of the hazard warning lights at <span>3.5 Hz</span> (sudden deceleration hazard warning mode) and sends (4) a turn signal to the instrument cluster simultaneously.</p>
+<p class="list"></p>
+<p class="list">3.  The BCM stops (6) the operation of the sudden deceleration hazard warning mode if it receives (5) a brake switch off (brake pedal not depressed) signal or if the estimated deceleration value is the set value or less for stopping the sudden deceleration hazard warning mode.</p>
+<p class="list"></p>
+<p class="list">4.  When the BCM receives (7) a brake switch on (brake pedal depressed) signal at a vehicle speed of <span>10 km/h {6.2 mph} or less</span> after the sudden deceleration hazard warning mode operates, it controls (8) the flashing of the hazard warning lights at <span>1.5 Hz</span> (same as normal flashing) (emergency stop hazard warning mode).</p>
+<p class="list"></p>
+<p class="list">5.  When the BCM receives the brake switch off (brake pedal not depressed) signal and vehicle speed signal and determines that the vehicle has started, it stops the operation of the emergency stop hazard warning mode and turns the hazard warning lights off.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003786.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003786</div>
+</td>
+</tr>
+</table><br clear="all"><p><a name="id09180001150008"></a><p class="topic-title"><span class="topic-head"></span>Prevention of emergency signal system (ESS) unnecessary operation</p>
+<dl>
+<dd>
+<div class="list">•  If the braking force inspection is performed, unnecessary operation of the emergency signal system (ESS) can be prevented if necessary.</div>
+<div class="list">•  The operation of the emergency signal system (ESS) can be canceled by performing the procedure for preventing unnecessary operation of the brake override system. For the procedure to prevent unnecessary operation of the brake override system, refer to the [DRIVE-BY-WIRE CONTROL]/[FUEL INJECTION AMOUNT CONTROL]. (See <font class="extxref-label"><a href="id0140q1188400.html">DRIVE-BY-WIRE CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.) (See <font class="extxref-label"><a href="id0140z5987900.html">FUEL INJECTION AMOUNT CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

@@ -1,0 +1,2245 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>i-stop CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5008900"></a><p class="servinfo-title"><span class="servinfo-head"></span>i-stop CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5008900</p><br clear="all"><a name="id0140z500890001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  When the vehicle is stopped such as at a stop light, the i-stop control stops/starts the engine automatically to improve fuel economy and reduce exhaust gas and idling noise.</div>
+<div class="list">•  The PCM determines whether to permit/inhibit i-stop control based on the signal from each input part and CAN communication.</div>
+<div class="list">•  The i-stop control includes the engine stop control, engine restart control, electric AT oil pump driver control, and hill launch assist functions.</div>
+<p clear="all">
+<p class="table-title">Control Table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Control name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Control outline</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine stop control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The engine is stopped when the i-stop (engine stop control) conditions are met.<div>(See <font class="intxref-label"><a href="#id0140z500890004">Engine stop control</a></font>.)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine restart control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The engine restarts when the i-stop (engine restart control) conditions are met.<div>(See <font class="intxref-label"><a href="#id0140z500890005">Engine restart control </a></font>.)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump driver control (ATX)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Drives the electric AT oil pump to assure line pressure during an engine stop by the i-stop control.<div>(See <font class="extxref-label"><a href="id0517l2355200.html">ELECTRIC AT OIL PUMP [EW6A-EL]</a></font>.)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle roll prevention function (ATX)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Controls the traction control solenoid valve in the DSC HU/CM to maintain or decrease brake fluid pressure.<div>(See <font class="extxref-label"><a href="id041500104400.html">VEHICLE ROLL PREVENTION FUNCTION</a></font>.)</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0140z500890002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003644.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003644</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z500890003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id0140z500890004"></a><p class="topic-title"><span class="topic-head"></span>Engine stop control</p>
+<dl>
+<dd>
+<div class="list-title">i-stop (engine-stop control) permit condition</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The conditions to stop the engine by the i-stop control are as follows:</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" rowspan="2">
+<p class="thead">Determination module</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Determination item</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Determination condition</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Applicable PID</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">ATX</p>
+</th>
+<th id="" align="center">
+<p class="thead">MTX</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="26">
+<div class="tbody">PCM</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">0 km/h {0 mph}</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">3 km/h {2 mph} or less</div>
+</td>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_LF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_RF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_LR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_RR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Brake pedal</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Brake pedal is depressed while in D or M position</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BOO, BPA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Brake fluid pressure</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Brake fluid pressure is 1.7 MPa {17 kgf/cm<sup>2</sup>, 247 psi} or more while in D or M position (perform correction according to vehicle inclination angle)</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BRK_F_P_C</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Released</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">APP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Clutch pedal</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Released</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CPP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MTX gear position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Neutral</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CPP/PNP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle conditions</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle is stopped in D or M position<sup>*1, *8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering speed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">15 deg/s or less</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">STR_ROT_SPD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering angle</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Within 65° of center to left and right</div>
+<div class="tbody">(After EPS control module learns center value)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">STR_AB_EST</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering torque</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1.1 N·m {11 kgf·cm, 9.7 in·lbf} or less</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">STR_TRQ_S_M</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">i-stop OFF switch</div>
+</td>
+<td id="" align="left">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">I-Stop_OFF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle speed history</div>
+<div class="tbody">(After engine started and driven once)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">3 km/h {2 mph} or more</div>
+</td>
+<td id="" align="left">
+<div class="tbody">4 km/h {2.5 mph} or more</div>
+</td>
+<td id="" align="center">
+<div class="tbody">I-Stop_VSP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">i-ELOOP bypass mode operation condition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Bypass mode is not operated (BYPS_STAT: Bypass Off)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BYPS_STAT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Capacitor (i-ELOOP) voltage</div>
+</td>
+<td id="" align="left">
+<div class="tbody">14 V or more</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">DCDC_IN_V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Battery charge condition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">65.7 % or more</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BATT_SOC</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Battery fluid temperature</div>
+</td>
+<td id="" align="left">
+<div class="tbody">0—70 °C {32—158 °F}</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BATT_TEMP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Battery voltage</div>
+</td>
+<td id="" align="left">
+<div class="tbody">11.2 V or more</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BATT_V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Power brake unit vacuum</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">−45 kPa {−0.46 kgf/cm<sup>2</sup>, −6.5 psi} or less</div>
+<div class="tbody">(value calculated by subtracting BARO from BBP)</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BBP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BARO</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Door (driver's side)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Closed<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">DOOR_D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Bonnet</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Closed<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">HOOD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="10">
+<div class="tbody">PCM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle inclination angle</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Within ±7° when level (LON_ACCL_C: within ±0.121 G)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LON_ACCL_C</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Seat belt (driver's side)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fastened<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SEAT_B_D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel injection amount learning</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not implemented<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Diesel particulate filter regeneration</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not implemented</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Battery condition setting</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Completed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering angle sensor initial setting</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Completed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature</div>
+</td>
+<td id="" align="left">
+<div class="tbody">30—110 °C {86—230 °F}</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Intake air temperature</div>
+</td>
+<td id="" align="left">
+<div class="tbody">100 °C {212 °F} or less</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IAT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Altitude</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1,800 m or less (BARO: 81.5 kPa {0.831 kgf/cm<sup>2</sup>, 11.8 psi} or more)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BARO</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">System condition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">i-stop related part DTCs are not recorded</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="13">
+<div class="tbody">Start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="tbody">+B (ROOM fuse) input</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR_B1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IG1 input</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR_IG1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ACC input</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR_ACC</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IG1 output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RELAY_IG1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ACC output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RELAY_ACC</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Push button</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Not pressed</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SSB_1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SSB_2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Door (all)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Closed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">DOOR_ALL</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Trunk (4SD)/Liftgate (5HB)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Closed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TRUNK</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Seat belt (driver's side)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fastened<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SEAT_B_D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine start</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine was started by operating push button with key inside cabin (engine started first time)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine rotation speed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">300 rpm or more is maintained after engine started</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">System condition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">i-stop related part DTCs are not recorded</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="5">
+<div class="tbody">TCM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCM detection condition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">All met (I-Stop_EST: On)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">I-Stop_EST</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Panic stop</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake pedal was not depressed suddenly within 4 s</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TFT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">20―117 °C {68—242 °F}</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TFT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Gear position</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not in 2nd gear fixed mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">System condition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">i-stop related part DTCs are not recorded</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="9">
+<div class="tbody">Climate control unit</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cabin temperature (with full-auto air conditioner system)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Difference between target cabin temperature and actual cabin temperature is a certain value or less</div>
+<div class="tbody">(Cabin temperature control by A/C is normally performed)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/C temperature (with full-auto air conditioner system)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Setting other than MIN<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Ambient temperature</div>
+</td>
+<td id="" align="left">
+<div class="tbody">−10―50 °C {14—122 °F}</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Warm-up operation condition (with manual air conditioner system)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient temperature is 10 °C {50 °F} or more or engine coolant temperature is 60 °C {140 °F} or more</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Cold condition (with manual air conditioner system)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient temperature is 20 °C {68 °F} or less or evaporator temperature is specified value or less</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Cold condition (with full-auto air conditioner system)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient temperature is 4 °C {39 °F} or more or evaporator temperature is 12 °C {54 °F} or less</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MODE dial</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Except DEFROSTER</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Airflow volume control dial (with full-auto air conditioner system)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">OFF<sup>*7</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">System condition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">i-stop related part DTCs are not recorded</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="9">
+<div class="tbody">DSC HU/CM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Operation request from PCM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Hill Launch Assist (HLA) control request signal from PCM is received</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Wheel speed (4 wheels)</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">0 km/h {0 mph}</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_LF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_RF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_LR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_RR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brake pedal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake pedal is depressed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BRAKE_SW</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brake fluid pressure</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Approx. 0.45 MPa {4.6 kgf/cm<sup>2</sup>, 65 psi} or more</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BRK_F_P_C</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Released</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">APP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">System condition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">i-stop related part DTCs are not recorded</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :After the vehicle is stopped, the engine stops if the gear is shifted to N position. In addition, if the gear is shifted to P position after the vehicle is stopped in D position, the engine stop condition by the i-stop control is maintained.</div>
+<div class="deflist">*2  :If a door is opened while the vehicle is stopped, i-stop is inhibited until a vehicle speed record is input once..</div>
+<div class="deflist">*3  :If the engine is started with the bonnet open, i-stop is inhibited until the engine is stopped.</div>
+<div class="deflist">*4  :If the seat belt is unfastened while the vehicle is stopped, i-stop is inhibited until a vehicle speed record is input once.</div>
+<div class="deflist">*5  :If the fuel injection amount learning, which is periodically performed automatically, is not completed, the PCM turns the i-stop indicator light (green) off and inhibits i-stop when the vehicle speed is approx. 10 km/h {6.2 mph} or less before the vehicle stops.</div>
+<div class="deflist">*6  :When the A/C set temperature is set to MAX, the PCM may inhibit the i-stop control.</div>
+<div class="deflist">*7  :When all of the other i-stop permit conditions related to the climate control unit are met even if the airflow volume control dial is on, the i-stop control is permitted.</div>
+<div class="deflist">*8  :When shifting to the R position and driving the vehicle, the i-stop function is inhibited until the vehicle is driven at 5 km/h {3.0 mph} or more for 1 min or more after shifting to the D or M position.</div>
+<dl>
+<dd>
+<div class="list-title">i-stop (engine stop control)</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When the i-stop (engine stop control) permit conditions are met, the PCM stops the engine based on the following controls:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Fuel injection control (fuel cut)</div>
+<dl>
+<dd class="list">
+<div class="list">•  Engine speed is reduced by the fuel cut.</div>
+</dd>
+</dl>
+<div class="list">―  Intake shutter valve control (intake shutter valve open/closed)</div>
+<dl>
+<dd class="list">
+<div class="list">•  By adjusting the intake shutter opening angle, the engine speed is reduced and the pumping loss is used to stop the engine.</div>
+</dd>
+</dl>
+<div class="list">―  Generator output control (generator load)</div>
+<dl>
+<dd class="list">
+<div class="list">•  Engine speed is reduced by lowering the generator load.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003645.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003645</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0140z500890005"></a><p class="topic-title"><span class="topic-head"></span>Engine restart control </p>
+<dl>
+<dd>
+<div class="list-title">i-stop (engine restart control) conditions</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Conditions for restarting the engine during i-stop control (engine stopped) are as follows:</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" rowspan="2">
+<p class="thead">Detection module</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Detection item</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Determination conditions</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">PID</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">ATX</p>
+</th>
+<th id="" align="center">
+<p class="thead">MTX</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="26">
+<div class="tbody">PCM</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">1 km/h {0.6 mph} or more</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">4 km/h {2.5 mph} or more</div>
+</td>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_LF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_RF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_LR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_RR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Brake pedal</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Brake pedal is released → depressed while in P or N position</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BPA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Brake fluid pressure</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Brake fluid pressure is 0.35 MPa {3.6 kgf/cm<sup>2</sup>, 51 psi} or less while in D or M position</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BRK_F_P_C</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Accelerator pedal</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Accelerator pedal is depressed while in D or M position</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Clutch pedal</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Depressed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CPP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering torque</div>
+</td>
+<td id="" align="left">
+<div class="tbody">4.0 N·m {41 kgf·cm, 35 in·lbf} or more while in D or M position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">STR_TRQ_S_M</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering angle</div>
+</td>
+<td id="" align="left">
+<div class="tbody">70° or more from center while in D or M position</div>
+<div class="tbody">(After EPS control module learns center value)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">STR_AB_EST</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Shift operation</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Operated from P or N position to D, M, or R position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">i-stop OFF switch</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">I-Stop_OFF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Battery charge condition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">65.7% or less</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BATT_SOC</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Power brake unit vacuum</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">−43 kPa {−0.44 kgf/cm<sup>2</sup>, −6.2 psi} or more</div>
+<div class="tbody">(value calculated by subtracting BARO from BBP)</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BBP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BARO</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Driver not seated (except for European (L.H.D U.K.) specs.)</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="list">•  All the following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Seat belt (driver's side): Not fastened</div>
+<div class="list">―  Door (driver's side): Open</div>
+<div class="list">―  P or N position</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="list">•  All the following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Seat belt (driver's side): Not fastened</div>
+<div class="list">―  Door (driver's side): Open</div>
+<div class="list">―  Neutral</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">SEAT_B_D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DOOR_D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CPP/PNP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine stop period by i-stop</div>
+</td>
+<td id="" align="left">
+<div class="tbody">120 s or more</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature</div>
+</td>
+<td id="" align="left">
+<div class="tbody">23.5 °C {74.3 °F} or less</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel pressure</div>
+</td>
+<td id="" align="left">
+<div class="tbody">15 MPa {153 kgf/cm<sup>2</sup>, 2176 psi} or less</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FRP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">System condition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">An i-stop related part DTC is recorded</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="3">
+<div class="tbody">Start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="tbody">+B (ROOM fuse) input</div>
+</td>
+<td id="" align="left">
+<div class="tbody">No</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR_B1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Remote transmitter authorization</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When engine restart by remote transmitter authorization is requested</div>
+<div class="list">•  Any door is open without remote transmitter left in vehicle</div>
+<div class="list">•  Remote transmitter is outside of vehicle after any door is opened</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">System condition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">An i-stop related part DTC is recorded</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="7">
+<div class="tbody">TCM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Gear position</div>
+</td>
+<td id="" align="left">
+<div class="tbody">In 2nd gear fixed mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TFT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">20 °C {68 °F} or less, or 117°C {243 °F} or more</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TFT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">3 km/h {2 mph} or more</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_LF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_RF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_LR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_RR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">System condition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">An i-stop related part DTC is recorded</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Climate control unit</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/C request (with full-auto air conditioner system)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">STOP_ST</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/C set temperature (with full-auto air conditioner system)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Set to MIN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MODE dial</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DEFROSTER</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">System condition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">An i-stop related part DTC is recorded</div>
+</td>
+<td id="" align="center">
+<div class="tbody">←</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DSC HU/CM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">System condition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">An i-stop related part DTC is recorded</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="list-title">i-stop (engine restart control)</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When the i-stop (engine restart control) conditions are met, the PCM restarts the engine by the following controls: </div>
+<dl>
+<dd class="list">
+<div class="list">―  Fuel injection control (from first time, fuel injection to specific cylinders (expansion stroke)</div>
+<dl>
+<dd class="list">
+<div class="list">•  Fuel is injected to cylinders which are determined to be stopped at the expansion stroke. During i-stop control (engine stop), cylinders are identified based on the signal from the CKP sensor and fuel injection is enabled to those cylinders which are identified first as being stopped in the expansion stroke.</div>
+</dd>
+</dl>
+<div class="list">―  DC-DC converter control (without i-ELOOP)</div>
+<dl>
+<dd class="list">
+<div class="list">•  When the engine is restarted by the i-stop control, the battery voltage is decreased to operate the starter by supplying power from the battery. When the starter operates, the supply voltage for electronic devices is increased by the DC-DC converter.</div>
+</dd>
+</dl>
+<div class="list">―  i-ELOOP control (i-stop mode) (with i-ELOOP)</div>
+<dl>
+<dd class="list">
+<div class="list">•  During engine restarting by i-stop, the power supply source is divided between the battery and capacitor (i-ELOOP) to assure a supply of power to the vehicle’s electrical devices.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003646.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003646</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0140z500890006"></a><p class="topic-title"><span class="topic-head"></span>Indicator illumination request</p>
+<dl>
+<dd>
+<div class="list">•  The PCM sends an i-stop indicator light (green)/i-stop warning light (amber) illumination or flash request to the instrument cluster according to the vehicle conditions.</div>
+<div class="list">•  The i-stop indicator light (green)/i-stop warning light (amber) illumination/flash request conditions are as follows:</div>
+</dd>
+</dl>
+<p clear="all">
+<p>
+<div>     IS: Engine stop by i-stop control</div>
+<div>IR: Engine restart by i-stop control</div>
+<div>×: Applicable</div>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="3" rowspan="2">
+<p class="thead">Vehicle condition</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Vehicle condition</p>
+</th>
+<th id="" align="center" colspan="3">
+<p class="thead">i-stop indicator light (green)/i-stop warning light (amber) display</p>
+</th>
+<th id="" align="center">
+<p class="thead">Indicator (other)</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Buzzer</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">Illumination on</p>
+</th>
+<th id="" align="center">
+<p class="thead">Flash (0.5 s)</p>
+</th>
+<th id="" align="center">
+<p class="thead">Illumination off</p>
+</th>
+<th id="" align="center">
+<p class="thead">Illumination on/ Flash</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Driving</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">IS conditions not met</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody">IS conditions met<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Green</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Vehicle parked</div>
+</td>
+<td id="" align="center" colspan="2" rowspan="2">
+<div class="tbody">IS conditions not met<sup>*6</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Idle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Green<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody">IS conditions met<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">IS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Green</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="3">
+<div class="tbody">During IS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">IS conditions met<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">IS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Green</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">IS continues normally</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">ATX</div>
+<div class="tbody">When the following conditions are met:</div>
+<div class="list">•  Brake depressed</div>
+<div class="list">•  D or M position (except 2nd gear fixed mode)</div>
+<div class="list">•  Steering angle <span>less than 70°</span> and steering torque <span>less than 4.0 N·m {11 kgf·cm, 9.7 in·lbf}</span></div>
+<div class="tbody">When the following conditions are met:</div>
+<div class="list">•  Brake released</div>
+<div class="list">•  D or M position (except 2nd gear fixed mode) →N position</div>
+<div class="list">•  D or M position (except 2nd gear fixed mode) →N position →P position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IS continues</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Green</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="entry-title">MTX</div>
+<div class="tbody">Clutch pedal depressed→Clutch pedal is released while engine is cranking to restart by i-stop control</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IS continues<sup>*9</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="4">
+<div class="tbody">During IS</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">IR request (driver's operation)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine start by key operation</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">IR</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">×<sup>*2</sup></div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="entry-title">ATX</div>
+<div class="list">•  Brake pedal released → depressed while in P or N position</div>
+<div class="list">•  Brake pedal released while in D position or M position</div>
+<div class="list">•   Brake fluid pressure is <span>0.35 MPa {3.6 kgf/cm<sup>2</sup>, 51 psi} or less</span> in D position or M position</div>
+<div class="list">•  Accelerator pedal depressed while in D position or M position</div>
+<div class="list">•  Steering torque is <span>4.0 N·m {41 kgf·cm, 35 in·lbf}</span> or more in D or M position</div>
+<div class="list">•  Steering angle (D position or M position (except 2nd gear fixed mode)): <span>-70° or less or 70° or more</span></div>
+<div class="list">•  Shift operation</div>
+<dl>
+<dd class="list">
+<div class="list">―  When changed to the M position (except 2nd gear fixed mode)</div>
+<div class="list">―  P or N position →D or M or R position</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="entry-title">MTX<span class="entry-title"></span></div>
+<div class="list">•  Clutch pedal depressed</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">When the following conditions are met:</div>
+<div class="list">•  Seat belt (driver): Not fastened</div>
+<div class="list">•  Door (driver): Open</div>
+<div class="list">•  P or N position (ATX)</div>
+<div class="list">•  Neutral position (MTX)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="8">
+<div class="tbody">During IS</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">Switches to unsafe condition (driver’s operation)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Door (driver) open</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IS continues</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Green</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>0.25 s</span> intervals</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">When the following conditions are met:</div>
+<div class="list">•  Seat belt (driver): Not fastened</div>
+<div class="list">•  Door (driver): Open</div>
+<div class="list">•  D or M position (except 2nd gear fixed mode) (ATX)</div>
+<div class="list">•  In gear (MTX)</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Engine stall</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Amber</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Same illumination as normal engine stall condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>0.25 s</span> intervals for <span>3 s</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Bonnet open</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="entry-title">MTX</div>
+<div class="tbody">In gear</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IS continues</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Green (<span>0.25 s</span>)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="3">
+<div class="tbody">IR request (vehicle request)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Any of the following conditions are met:</div>
+<div class="list">•  A/C request</div>
+<div class="list">•  Battery charge <span>65.7% or less</span></div>
+<div class="list">•  Engine stop time by the i-stop control: <span>120 s or more</span></div>
+<div class="list">•  Engine coolant temperature: <span>23.5 °C {74.3 °F} or less</span></div>
+<div class="list">•  Fuel pressure: 15 MPa {153 kgf/cm<sup>2</sup>, 2176 psi} or less</div>
+<div class="list">•  System condition: An i-stop related part DTC is recorded </div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">IR</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">×<sup>*2</sup></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Any of the following conditions are met:</div>
+<div class="list">•  Vehicle speed: <span>1 km/h {0.6 mph} or more</span> (ATX)</div>
+<div class="list">•  Vehicle speed: <span>4 km/h {2.5 mph} or more</span> (MTX)</div>
+<div class="list">•  Power brake unit vacuum reduced</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="list">•  Remote transmitter out of vehicle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IR<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">KEY warning light (red) flashing</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Start stop unit normal buzzer</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IR not functional</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Cranking for <span>3 s or more</span> when engine is restarted</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Engine stall</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Amber</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Same illumination as normal engine stall condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2" rowspan="2">
+<div class="tbody">IS permit/inhibit implement</div>
+</td>
+<td id="" align="left">
+<div class="list">•  i-stop OFF switch on (long pressed for 0.5 s or more)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IS not authorized<sup>*7</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Amber<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Beep sound</div>
+<div class="tbody">1 time</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="list">•  i-stop OFF switch off (long pressed for 0.5 s or more)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IS authorized</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Beep sound</div>
+<div class="tbody">1 time</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="3">
+<div class="tbody">System malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IS not authorized</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Amber<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :Changes illumination to IS when the conditions are met for driver operation (brake pedal force).</div>
+<div class="deflist">*2  :No flashing, turns off when the engine restarts.</div>
+<div class="deflist">*3  :Illuminates according to the i-stop OFF switch operation (long-press for 0.5 s or longer).</div>
+<div class="deflist">*4  :Turns off according to the i-stop OFF switch operation (long-press for 0.5 s or longer).</div>
+<div class="deflist">*5  :It may illuminate in amber when communication between PCM is cut.</div>
+<div class="deflist">*6  :The i-stop (engine-stop control) permit conditions differ depending on the driving condition. (See <font class="extxref-label"><a href="id0140z5008600.html">i-stop INDICATOR LIGHT (GREEN) [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="deflist">*7  :If during engine stop by i-stop control, engine restarted by i-stop control.</div>
+<div class="deflist">*8  :If there is a battery related malfunction, the master warning light illuminates.</div>
+<div class="deflist">*9  :If the clutch pedal depressed and then it is released while the engine is cranking to restart by the i-stop control, engine stop by the i-stop control continues. If the same operation is repeated several times, the engine will stall.</div>
+</p>
+</body>
+</html>

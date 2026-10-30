@@ -1,0 +1,623 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>FUEL INJECTION CONTROL SYSTEM [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0140q1138600"></a><p class="servinfo-title"><span class="servinfo-head"></span>FUEL INJECTION CONTROL SYSTEM [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140q1138600</p><br clear="all"><a name="id0140q113860001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  Performs optimum fuel injection according to engine operation conditions.</div>
+<div class="list">•  The PCM determines the engine operation conditions based on the signals from each input device and drives the fuel injectors at the optimal fuel injection time (fuel injection amount) and the fuel injection timing to inject fuel.</div>
+<div class="list">•  Optimally controls combustion based on fuel injection amount, fuel injection timing, number of fuel injections, and the fuel pressure to achieve emission performance improvement and higher engine output.</div><br clear="all"><a name="id0140q113860002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003406.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003406</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140q113860003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id0140q113860004"></a><p class="topic-title"><span class="topic-head"></span>Injection timing</p>
+<dl>
+<dd>
+<div class="list">•  Fuel injection timing is switched according to the engine operation conditions.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Fuel injection is performed at the appropriate injection timing and amount based on the following sensor input signals synchronized with the crankshaft rotation during the intake or compression stroke at each cylinder.</div>
+<dl>
+<dd class="list">
+<div class="list">―  MAF sensor</div>
+<div class="list">―  MAP sensor</div>
+<div class="list">―  IAT sensor No.1</div>
+<div class="list">―  IAT sensor No.2</div>
+<div class="list">―  BARO sensor</div>
+<div class="list">―  CKP sensor</div>
+<div class="list">―  ECT sensor</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q113860005"></a><p class="topic-title"><span class="topic-head"></span>Injection time</p>
+<dl>
+<dd>
+<div class="list">•  The PCM calculates the fuel injection amount according to the engine operation conditions as the fuel injection time and energizes the fuel injectors.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Fuel injector energization time and operation conditions</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The fuel injectors cause an operation delay with the start of energization from the PCM. The PCM calculates the fuel injection time by adding the non-injection time (ineffective injection time) due to the operation delay to the actual injection time (effective injection time), and energizes the fuel injectors for this time.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzn00003627.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzn00003627</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The fuel injection time is based on the following formula:<div><span>Fuel injection time = effective injection time + ineffective injection time</span></div>
+</div>
+<dl>
+<div class="list-title">Ineffective injection time</div>
+<dd class="list">
+<div class="list">―  The fuel injectors cause an operation delay with the start of energization due to a delay in the rise of operation current by coil inductance, mass of the needle valve and plunger, and spring resistance. This delay is the ineffective injection time.</div>
+<div class="list">―  The non-injection time is affected by the change in fuel pressure and the battery voltage. Accordingly, the PCM sets the non-injection time according to the fuel pressure and the battery voltage.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Effective injection time</div>
+<dd class="list">
+<div class="list">―  The time when the fuel injector valve is open, which is the actual fuel injection time, is called the effective injection time.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q113860006"></a><p class="topic-title"><span class="topic-head"></span>Determination of effective injection time</p>
+<dl>
+<dd>
+<div class="list">•  The PCM divides the engine operation conditions into control zones according to engine speed and intake air amount, and determines the effective injection time at each control zone to perform optimum air/fuel ratio control in all engine driving ranges.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzn00003628.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzn00003628</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">Control zone table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Control name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Control outline</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Start zone</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  Improved startability</div>
+<div class="list-title">Control condition</div>
+<div class="list">•  When engine speed is <span>less than 500 rpm</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Feedback zone (λ= 1)</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  Improved fuel economy</div>
+<div class="list">•  Improved exhaust gas purification</div>
+<div class="list-title">Control condition</div>
+<div class="list">•  During engine operation condition except for engine start zone and feedback zone (λ rich) and fuel cut zone</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Feedback zone (λ rich)</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  Improved driveability</div>
+<div class="list-title">Control condition</div>
+<div class="list">•  The accelerator pedal opening angle is the specified value or more</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  Protection of catalytic converter and exhaust system components (suppression of gas temperature)</div>
+<div class="list-title">Control condition</div>
+<div class="list">•  The estimated exhaust temperature and estimated catalytic converter temperature are the specified value or more.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Excessive speed fuel cut zone</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  Engine protection</div>
+<div class="list-title">Control condition</div>
+<div class="list">•  When engine speed is <span>6,500 rpm or more</span><sup>*</sup> (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</div>
+<div class="list">•  When engine speed is <span>6,800 rpm or more</span><sup>*</sup> (ATX (SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system)))</div>
+<div class="list">•  When engine speed is <span>6,750 rpm or more</span><sup>*</sup> (MTX (SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system)))</div>
+<dl>
+<dd class="list">
+<div class="list"><sup>*</sup>: If the PCM stores DTC P0089:00, an engine speed of <span>2,500 rpm or more</span> becomes the control condition.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Deceleration fuel cut zone</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  Improved fuel economy</div>
+<div class="list-title">Control condition</div>
+<div class="list">•  If all of the following conditions are met while the vehicle is decelerating</div>
+<dl>
+<dd class="list">
+<div class="list">―  Accelerator pedal is fully closed</div>
+<div class="list">―  Engine speed is specified value or more</div>
+<div class="list">―  Vehicle speed is specified value or more</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id0140q113860007"></a><p class="topic-title"><span class="topic-head"></span>Fuel injection time calculation method table</p>
+<p clear="all">
+<p>
+<div>(A: Fuel injection time base, B: Correction for fuel injection time)</div>
+</p>
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="center" colspan="3" rowspan="2">
+<div class="tbody"><span>Contents</span></div>
+<div class="tbody"><span>(Calculation or determination method for fuel injection time and correction)</span></div>
+</td>
+<td id="" align="center" colspan="5">
+<div class="tbody"><span>Control zone</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center"><img src="images/am3zzn00003449.png"></td>
+<td id="" align="center"><img src="images/am6zzn00002916.png"></td>
+<td id="" align="center"><img src="images/am6zzn00002917.png"></td>
+<td id="" align="center"><img src="images/ac5wzn00002022.png"></td>
+<td id="" align="center"><img src="images/am3zzn00003629.png"></td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody">Ineffective injection time</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Set time according to fuel injector performance</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Effective injection time</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Injection time at engine start</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Set value according to engine coolant temperature (low engine coolant temperature→long injection time)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Basic injection time</div>
+</td>
+<td id="" align="left">
+<div class="tbody"><span>Basic injection time = charging efficiency<sup>*1</sup>× fuel flow coefficient<sup>*2</sup></span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody">Fuel cut</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injection time = 0</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="6">
+<div class="tbody">Correction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Volume increase correction at engine start</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purpose: Ensures engine speed stability just after engine start</div>
+<div class="list-title">Correction condition</div>
+<div class="list">•  Specified time according to engine coolant temperature directly after engine start</div>
+<div class="list-title">Correction amount</div>
+<div class="list">•  Low engine coolant temperature→large correction</div>
+<div class="list">•  Low intake air temperature→large correction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Feedback correction (A/F sensor)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purpose: Controls air/fuel ratio to theoretical air/fuel ratio</div>
+<div class="list-title">Correction amount</div>
+<div class="list">•  A/F sensor output current is <span>0 mA or less</span>→volume decrease correction</div>
+<div class="list">•  A/F sensor output current is <span>0 mA or more</span>→volume increase correction</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Feedback correction (HO2S)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purpose: Controls air/fuel ratio to theoretical air/fuel ratio</div>
+<div class="list-title">Correction amount</div>
+<div class="list">•  HO2S output voltage is <span>approx. 0.7 V or more</span>→volume decrease correction</div>
+<div class="list">•  HO2S output voltage is <span>approx. 0.7 V or less</span>→volume increase correction</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Warm-up volume increase correction</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purpose: Ensures combustion stability when engine coolant temperature is low</div>
+<div class="list-title">Correction condition</div>
+<div class="list">•  When engine coolant temperature is at set value</div>
+<div class="list-title">Correction amount</div>
+<div class="list">•  High charging efficiency, low engine coolant temperature→large correction</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Learning correction</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purpose: Corrects deviation in air/fuel ratio from deterioration over time of mechanical devices</div>
+<div class="list-title">Correction amount</div>
+<div class="list">•  Learned value based on average value of A/F deviation amount (feedback amount)</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Heavy load volume increase correction</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purpose: Improved engine output, decrease of exhaust gas temperature</div>
+<div class="list-title">Correction condition</div>
+<div class="list">•  Based on the fixed value when the accelerator pedal opening angle is a certain value or more, otherwise, based on engine speed and charging efficiency.</div>
+<div class="list-title">Correction amount</div>
+<div class="list">•  High engine speed, high charging efficiency→large correction</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :Charging efficiency is the ratio of the actual amount of intake air to the maximum air charging amount (mass volume) of the cylinder. The value increases as the engine load increases.</div>
+<div class="deflist">*2  :Fuel flow coefficient is a coefficient to calculate a fuel injection time from a fuel injection amount required for an intake air amount.</div>
+</p><br clear="all"><p><a name="id0140q113860008"></a><p class="topic-title"><span class="topic-head"></span>Fuel cut</p>
+<dl>
+<dd>
+<div class="list">•  Includes fuel cut under the following conditions, except fuel cut at excessive engine speed and deceleration fuel cut according to engine operation.</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">Fuel cut table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Control name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Control outline</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel cut during selector lever shifting in D position (ATX)</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  ATX protection</div>
+<div class="list-title">Control conditions</div>
+<div class="list">•  When shifting while vehicle is stopped and engine raced</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Sensor malfunction fuel cut</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  To prevent engine damage from abnormal ignition due to a malfunction input of a cylinder identification or the engine speed signal.</div>
+<div class="list-title">Control conditions</div>
+<div class="list">•  When a malfunction in the CKP sensor or exhaust CMP sensor (SKYACTIV-G 1.5 (with 4-2-1 exhaust system)) is detected</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Dechoke control</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  To improve engine startability when spark plugs are flooded (scavenging)</div>
+<div class="list-title">Control conditions</div>
+<div class="list">•  When cranking close to fully-open throttle valve</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Theft prevention</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  To prevent theft</div>
+<div class="list-title">Control conditions</div>
+<div class="list">•  Immobilizer system related information (engine start prohibited) received from start stop unit</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel-cut at time of collision</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Purpose</div>
+<div class="list">•  For safety assurance</div>
+<div class="list-title">Control conditions</div>
+<div class="list">•  Fuel-cut on-request signal from SAS control module is received</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id0140q113860009"></a><p class="topic-title"><span class="topic-head"></span>Boost Circuit</p>
+<dl>
+<dd>
+<div class="list">•  The battery positive voltage input via the fuel injector relay is boosted up to <span>40 V</span>.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q113860010"></a><p class="topic-title"><span class="topic-head"></span>Output Circuit</p>
+<dl>
+<dd>
+<div class="list">•  To improve fuel injection response, the plunger pulling force is strengthened by providing high current (over excitation current) when the fuel injector is open.</div>
+<div class="list">•  To reduce fuel injector heat generation, the opening of the fuel injector is kept open using low current after it opens.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Fuel injector status</p>
+</th>
+<th id="" align="center">
+<p class="thead">PCM operation</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Opening starts</div>
+</td>
+<td id="" align="left">
+<div class="list">1.  Provides specified value, boosted by the boost circuit, to the opening transistor.</div>
+<div class="list">2.  Voltage is provided to the fuel injector, the ground transistor is turned on and grounded, and the fuel injector opens.</div>
+<div class="list">3.  After the fuel injector is opened, the opening transistor is turned off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Opening held</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Controls the on/off of the holding transistor (<span>12 V</span> output) so that the hold current of the fuel injector is constant.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Closing</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Turns off the holding and ground transistors at the same time the fuel injection signal from the PCM is stopped, and cuts the current.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+</body>
+</html>

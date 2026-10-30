@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>TURN LIGHT SYSTEM</title>
+</head>
+<body><a name="id091800111900"></a><p class="servinfo-title"><span class="servinfo-head"></span>TURN LIGHT SYSTEM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091800111900</p><br clear="all"><a name="id09180011190001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The turn light system controls the turn lights to flash according to the turn switch operation.</div><br clear="all"><a name="id09180011190002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The BCM performs control as follows based on the turn light RH or LH signal sent from the start stop unit via CAN communication.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Period of time turn switch on signal is received is <span>less than 0.7 s</span>: Controls the turn lights to flash <span>three times</span> automatically</div>
+<div class="list">―  Period of time turn switch on signal is received is <span>0.7 s or more</span>: Controls the turn lights to flash according to the reception period</div>
+</dd>
+</dl><br clear="all"><a name="id09180011190003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003787.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003787</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180011190004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003788.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003788</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180011190005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">1.  When the turn switch is moved to the LH or RH position with the ignition switched ON (engine off or on), the start stop unit detects (1) a turn switch LH or RH signal.</div>
+<div class="list">2.  The start stop unit sends (2) the turn switch LH or RH signal to the BCM via CAN communication as a turn light LH or RH signal.</div>
+<div class="list">3.  When the BCM receives the turn light LH or RH signal, it flashes (3) the front turn light (LH) or (RH).<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003789.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003789</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">4.  When the BCM receives the turn light LH or RH signal from the start stop unit <span>for less than 0.7 s</span>, it flashes the turn light (LH) or (RH) <span>three times</span> automatically.</div>
+<div class="list">5.  When the BCM receives a turn light signal for the opposite side while the turn light (RH) or (LH) is flashing <span>three times</span> automatically, it cancels the current automatic flashing. However, when the BCM receives the turn light signal for the opposite side for <span>0.2 s or more</span>, it flashes the turn light while the turn light signal is being received.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003790.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003790</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

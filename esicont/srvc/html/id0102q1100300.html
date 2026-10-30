@@ -1,0 +1,2176 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC DETECTION LOGIC AND CONDITIONS [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0102q1100300"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC DETECTION LOGIC AND CONDITIONS [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q1100300</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Detection condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">B10A2:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle collision</div>
+</td>
+<td id="" align="left">
+<div class="list">•  A collision signal from the SAS control module is received.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0010:00<sup>*8</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric variable valve timing control circuit range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  A malfunction is detected in the results of the on-board diagnostic test received from the electric variable valve timing driver.</div>
+<div class="list">―  The motor speed signal received from the electric variable valve timing driver is in error.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0011:00</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electric variable valve timing control system: over-advanced<sup>*8</sup></div>
+<div class="list">•  Hydraulic variable valve timing control system: over-advanced<sup>*9</sup></div>
+</td>
+<td id="" align="left">
+<div class="list">•  For the advance amount from the maximum intake valve retard position, a condition in which the actual advance amount is larger than the target value continues for a specified period of time.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0012:00</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electric variable valve timing control system: over-retarded<sup>*8</sup></div>
+<div class="list">•  Hydraulic variable valve timing control system:over-retarded<sup>*9</sup></div>
+</td>
+<td id="" align="left">
+<div class="list">•  For the advance amount from the maximum intake valve retard position, a condition in which the actual advance amount is smaller than the target value continues for a specified period of time.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0014:00<sup>*8</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Hydraulic variable valve timing control system: over-advanced</div>
+</td>
+<td id="" align="left">
+<div class="list">•  For the advance amount from the maximum exhaust valve retard position, a condition in which the actual advance amount is larger than the target value continues for a specified period of time.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0015:00<sup>*8</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Hydraulic variable valve timing control system: over-retarded</div>
+</td>
+<td id="" align="left">
+<div class="list">•  For the advance amount from the maximum exhaust valve retard position, a condition in which the actual advance amount is smaller than the target value continues for a specified period of time.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0031:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor heater control circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the PCM controls the A/F sensor heater, the voltage input to the PCM is too low.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0032:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor heater control circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the PCM controls the A/F sensor heater, the voltage input to the PCM is too high.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0037:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S heater control circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the PCM controls the HO2S heater, the voltage input to the PCM is too low.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0038:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S heater control circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the PCM controls the HO2S heater, the voltage input to the PCM is too high.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0069:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manifold absolute pressure/atmospheric pressure correlation problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the difference between the intake manifold vacuum and the atmospheric pressure. If the difference is <span>below −12 kPa {−0.12 kgf/cm<sup>2</sup>, −1.7 psi}</span> or <span>above 12 kPa {0.12 kgf/cm<sup>2</sup>, 1.7 psi}</span> when the following conditions are met, the PCM determines that there is a MAP sensor performance problem.</div>
+<dl>
+<div class="list-title">MONITORING CONDITIONS</div>
+<dd class="list">
+<div class="list">―  <span>12—15 s</span> from when ignition is switched off.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0072:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient temperature sensor circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the input signal from the ambient temperature sensor. If the voltage from the ambient temperature sensor is <span>below 0.18 V</span>, the PCM determines that the ambient temperature sensor circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0073:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient temperature sensor circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the input signal from the ambient temperature sensor. If the voltage from the ambient temperature sensor is <span>above 4.88 V</span>, the PCM determines that the ambient temperature sensor circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0087:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure sensor circuit range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The actual fuel pressure is lower than the target fuel pressure by <span>1.2 MPa {12 kgf/cm<sup>2</sup>, 174 psi}</span> or more even though the fuel pressure feedback amount is maintained high.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0088:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure sensor circuit range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The actual fuel pressure becomes higher than the target fuel pressure by <span>1.2 MPa {12 kgf/cm<sup>2</sup>, 174 psi}</span> while the fuel pressure feedback amount is maintained high.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0089:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Spill valve control solenoid valve control circuit range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The average fuel pressure on the high pressure side, measured by the fuel pressure sensor, exceeds the specified value.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0091:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure regulator control circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the PCM turns the spill valve control solenoid valve off but the spill valve control solenoid valve control circuit voltage is low for <span>5 s</span>, the PCM determines that the spill valve control solenoid valve control circuit has a malfunction.</div>
+<dl>
+<div class="list-title">MONITORING CONDITIONS</div>
+<dd class="list">
+<div class="list">―  The following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Engine speed:<span> 5,700 rpm or less</span></div>
+<div class="list">•  Battery voltage:<span> 10.5 V or more</span></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0092:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure regulator control circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the PCM turns the spill valve control solenoid valve on but the spill valve control solenoid valve circuit voltage is high for <span>5 s</span>, the PCM determines that the spill valve control solenoid valve control circuit has a malfunction.</div>
+<dl>
+<div class="list-title">MONITORING CONDITIONS</div>
+<dd class="list">
+<div class="list">―  The following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Engine speed:<span> 5,700 rpm or less</span></div>
+<div class="list">•  Battery voltage:<span> 10.5 V or more</span></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0097:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.2 circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the PCM detects that the IAT sensor No.2 voltage at the PCM terminal 1CE is <span>0.33 V or less</span> for <span>5 s</span>, the PCM determines that the IAT sensor No.2 circuit voltage is low.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0098:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.2 circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the PCM detects that the IAT sensor No.2 voltage at the PCM terminal 1CE is <span>4.96 V or more</span> for <span>5 s</span>, the PCM determines that the IAT sensor No.2 circuit voltage is high.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0101:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">MAF sensor circuit range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The difference between the intake air amount measured by the MAF sensor and the estimated intake air amount estimated by the MAP sensor is outside of the specified value.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0102:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">MAF sensor circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors input voltage from the MAF sensor. If the input voltage at the PCM terminal 2BC is <span>below 0.2 V</span> for <span>5 s</span>, the PCM determines that the MAF sensor circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0103:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">MAF sensor circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the input voltage from the MAF sensor. If the input voltage at the PCM terminal 2BC is <span>above 4.94 V</span> for <span>5 s</span>, the PCM determines that the MAF sensor circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0107:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">MAP sensor circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the input voltage from the MAP sensor. If the input voltage at the PCM terminal 1BW is <span>below 0.08 V</span> for <span>5 s</span>, the PCM determines that the MAP sensor circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0108:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">MAP sensor circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the input voltage from the MAP sensor. If the input voltage at the PCM terminal 1BW is <span>above 4.89 V</span> for <span>5 s</span>, the PCM determines that the MAP sensor circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0112:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.1 circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the IAT sensor No.1 signal. If the PCM detects that the IAT sensor No.1 voltage at the PCM terminal 2U is <span>below 0.19 V</span> for <span>5 s</span>, the PCM determines that the IAT sensor No.1 circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0113:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.1 circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the IAT sensor No.1 signal. If the PCM detects that the IAT sensor No.1 voltage at the PCM terminal 2U is <span>above 4.62 V</span> for <span>5 s</span>, the PCM determines that the IAT sensor No.1 circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0116:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECT sensor circuit range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  During the <span>5 min</span> after the engine is started, the engine coolant temperature does not increase <span>above 6 °C {11 °F}</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0117:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECT sensor circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the ECT sensor signal. If the PCM detects that the ECT sensor voltage at the PCM terminal 1AK is <span>below 0.2 V</span> for <span>5 s</span>, the PCM determines that the ECT sensor circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0118:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECT sensor circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the ECT sensor signal. If the PCM detects that the ECT sensor voltage at the PCM terminal 1AK is <span>above 4.9 V</span> for <span>5 s</span>, the PCM determines that the ECT sensor circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0122:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TP sensor No.1 circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the PCM detects that the TP sensor No.1 voltage at the PCM terminal 1BP is <span>below 0.1 V</span>, the PCM determines that the TP sensor No.1 circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0123:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TP sensor No.1 circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the PCM detects that the TP sensor No.1 voltage at the PCM terminal 1BP is <span>above 4.9 V</span>, the PCM determines that the TP sensor No.1 circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0130:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Voltage problem between PCM terminal 1AB and PCM terminal 1AG</div>
+</td>
+<td id="" align="left">
+<div class="list">•  A condition in which the voltage between PCM terminals 1AB and 1AG exceeds the specified range continues for the specified period or more.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0131:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Voltage of A/F sensor terminal F is less than specified value</div>
+<div class="list">―  Voltage of A/F sensor terminal D is less than specified value</div>
+<div class="list">―  Voltage of A/F sensor terminal B is less than specified value</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0132:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Voltage of A/F sensor terminal F is more than specified value</div>
+<div class="list">―  Voltage of A/F sensor terminal D is more than specified value</div>
+<div class="list">―  Voltage of A/F sensor terminal B is more than specified value</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0133:00<sup>*10</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor circuit slow response</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The response speed of the A/F sensor input signal when the air/fuel ratio is fluctuated is slow.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0134:00<sup>*8</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor circuit no activity detected</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The condition in which the A/F sensor element impedance is the specified value or more continues for <span>35 s</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0137:00<sup>*10</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  A condition in which the HO2S input voltage is less than the specified value continues for the specified period.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0138:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  A condition in which the HO2S input voltage exceeds the specified value continues for the specified period.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P013A:00<sup>*10</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S: Slow response (during transition from rich to lean)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The response speed of the HO2S input signal when the air/fuel ratio is fluctuated from rich to lean is slow.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0140:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S circuit no activity detected</div>
+</td>
+<td id="" align="left">
+<div class="list">•  With the estimated temperature of the HO2S element exceeding the specified value, a condition in which the HO2S signal voltage is less than the specified value continues for the specified period.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0171:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel trim system too lean</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  The sum of the fuel feedback correction amount (SHRTFT1) and the fuel learning correction amount (LONGFT1) is the specified value (<span>30 %</span>) or more, and <span>10 s or more</span> have elapsed with the fuel learning correction amount (LONGFT1) at the specified value (<span>15 %</span>) or more.</div>
+<div class="list">―  While the engine is idling or the vehicle is driven, the fuel feedback correction amount reaches the upper limit (<span>25 % or more</span>) for <span>20 s or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0172:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel trim system too rich</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  The sum of the fuel feedback correction amount (SHRTFT1) and the fuel learning correction amount (LONGFT1) is the specified value (<span>−25 %</span>) or less, and <span>10 s or more</span> have elapsed with the fuel learning correction amount (LONGFT1) at the specified value (<span>−15 %</span>) or less.</div>
+<div class="list">―  While the engine is idling or the vehicle is driven, the fuel feedback correction amount reaches the lower limit (<span>−25 % or less</span>) for <span>20 s or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0192:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure sensor circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the input voltage at the PCM terminal 1CA is <span>less than 0.16 V</span> for <span>5 s</span>, the PCM determines that the fuel pressure sensor circuit is low.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0193:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure sensor circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the input voltage at the PCM terminal 1CA is <span>more than 4.86 V</span> for <span>5 s</span>, the PCM determines that the fuel pressure sensor circuit is high.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0201:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector circuit/open cylinder No.1</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the fuel injection verification signal is not input at <span>25 times</span> continuously even though the PCM drives the fuel injector No.1, the PCM determines that there is an open circuit in the fuel injector No.1 control circuit.</div>
+<dl>
+<div class="list-title">MONITORING CONDITIONS</div>
+<dd class="list">
+<div class="list">―  The following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Battery voltage: <span>10.5 V or more</span></div>
+<div class="list">•  Fuel injection control: except during fuel cut</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0202:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector circuit/open cylinder No.2</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the fuel injection verification signal is not input at <span>25 times</span> continuously even though the PCM drives the fuel injector No.2, the PCM determines that there is an open circuit in the fuel injector No.2 control circuit.</div>
+<dl>
+<div class="list-title">MONITORING CONDITIONS</div>
+<dd class="list">
+<div class="list">―  The following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Battery voltage: <span>10.5 V or more</span></div>
+<div class="list">•  Fuel injection control: except during fuel cut</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0203:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector circuit/open cylinder No.3</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the fuel injection verification signal is not input at <span>25 times</span> continuously even though the PCM drives the fuel injector No.3, the PCM determines that there is an open circuit in the fuel injector No.3 control circuit.</div>
+<dl>
+<div class="list-title">MONITORING CONDITIONS</div>
+<dd class="list">
+<div class="list">―  The following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Battery voltage:<span> 10.5 V or more</span></div>
+<div class="list">•  Fuel injection control: except during fuel cut</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0204:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector circuit/open cylinder No.4</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the fuel injection verification signal is not input at <span>25 times</span> continuously even though the PCM drives the fuel injector No.4, the PCM determines that there is an open circuit in the fuel injector No.4 control circuit.</div>
+<dl>
+<div class="list-title">MONITORING CONDITIONS</div>
+<dd class="list">
+<div class="list">―  The following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Battery voltage: <span>10.5 V or more</span></div>
+<div class="list">•  Fuel injection control: except during fuel cut</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0222:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TP sensor No.2 circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the PCM detects that the TP sensor No.2 voltage at the PCM terminal 1BU is <span>below 0.1 V</span>, the PCM determines that the TP sensor No.2 circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0223:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TP sensor No.2 circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the PCM detects that the TP sensor No.2 voltage at the PCM terminal 1BU is <span>above 4.9 V</span>, the PCM determines that the TP sensor No.2 circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P025B:00<sup>*11</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pump control module circuit range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When any of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  The temperature in the fuel pump control module is too high.</div>
+<div class="list">―  Output duty ratio signal received from PCM is in error.</div>
+<div class="list">―  Output signal from fuel pump control module is erratic (noise overlap).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P025C:00<sup>*11</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pump control module result of on-board diagnostic test low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Result of on-board test cannot be received from fuel pump control module (voltage is too low).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P025D:00<sup>*11</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pump control module result of on-board diagnostic test high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Result of on-board test cannot be received from fuel pump control module (voltage is too high).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0300:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Random misfire detected</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  The misfire rate for <span>every 200 rotations</span> of the crankshaft exceeds the specified value (misfire which may damage catalytic converter).</div>
+<div class="list">―  The misfire rate for <span>every 1,000 rotations</span> of the crankshaft exceeds the specified value (misfire going against emission regulations).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0301:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cylinder No.1 misfire detected</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  The misfire rate of specific cylinders for <span>every 200 rotations</span> of the crankshaft exceeds the specified value (misfire which may damage catalytic converter).</div>
+<div class="list">―  The misfire rate of specific cylinders for <span>every 1,000 rotations</span> of the crankshaft exceeds the specified value (misfire going against emission regulations).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0302:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cylinder No.2 misfire detected</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0303:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cylinder No.3 misfire detected</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0304:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cylinder No.4 misfire detected</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0327:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">KS circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors input signal from the KS. If the input voltage is low for <span>5 s</span>, the PCM determines that the KS circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0328:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">KS circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors input signal from the KS. If the input voltage is high for <span>5 s</span>, the PCM determines that the KS circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0335:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CKP sensor circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  There is no CKP sensor signal input while the exhaust camshaft rotates <span>5 times</span>.</div>
+<div class="list">•  The CKP sensor input signal pattern, received while the crankshaft rotates <span>10 times</span>, is incorrect.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0340:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake CMP sensor circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The intake CMP sensor input signal pattern, received while the crankshaft rotates <span>24 times</span>, is incorrect.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0365:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust CMP sensor circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The exhaust CMP sensor input signal pattern, received while the crankshaft rotates <span>24 times</span>, is incorrect.</div>
+<div class="list">•  Cylinder identification is not completed while the crankshaft rotates <span>15 times</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0421:00<sup>*10</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Catalytic converter system</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM detects that the HO2S output fluctuates from lean to rich in a short amount of time at specified times continuously after recovery from fuel cut control.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0443:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purge solenoid valve circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The purge control voltage at the PCM terminal 1AI is low or high relative to the PCM control condition.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0461:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel gauge sender unit circuit range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The change in the remaining fuel quantity in the fuel tank is <span>less than 5 %</span> when the amount of fuel consumption by fuel injection reaches <span>25 L {26 US qt, 22 Imp qt}</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0462:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel gauge sender unit circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the fuel level signal and fuel gauge sender unit output voltage from the instrument cluster. If the PCM detects a fuel level or fuel gauge sender unit output voltage that is too low, the PCM determines that the fuel gauge sender unit circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0463:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel gauge sender unit circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the fuel level signal and fuel gauge sender unit output voltage from the instrument cluster. If the PCM detects a fuel level or fuel gauge sender unit output voltage that is too high, the PCM determines that the fuel gauge sender unit circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0480:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cooling fan relay No.2 control circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The cooling fan relay No.2 control voltage at the PCM terminal 2AU is low or cooling fan relay No.2 control current is high for a continuous <span>5 s</span> relative to the PCM control signal.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0482:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cooling fan relay No.1 control circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The cooling fan relay No.1 control voltage at the PCM terminal 2AV is low or cooling fan relay No.1 control current is high for a continuous <span>5 s</span> relative to the PCM control signal.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0500:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">VSS circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  An error in the wheel speed signal from the ABS HU/CM or DSC HU/CM is detected by CAN when the following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Neutral switch No.1, neutral switch No.2 and CPP switch: OFF (MTX)</div>
+<div class="list">―  Shift position: except P or N position (ATX)</div>
+<div class="list">―  Absolute load: <span>above 40 %</span></div>
+<div class="list">―  Engine speed: <span>above 2,000 rpm</span></div>
+<div class="list">―  Brake switch: OFF</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0504:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake switch circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The condition in which the brake switch No.1 and No.2 signals are both on or off for <span>3 s or more</span> is repeated five times when performing the brake operation.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0520:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The oil pressure switch is off for a continuous <span>5 s</span> even though the engine is stopped.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0524:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine oil pressure too low</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The oil pressure switch is on for a continuous <span>5 s</span> with the following condition met: (engine oil warning light illuminates when <span>1 s</span> has elapsed)</div>
+<dl>
+<dd class="list">
+<div class="list">―  When engine speed is <span>above 650 rpm</span> and engine coolant temperature is <span>30 °C {86 °F} or less</span></div>
+<div class="list">―  When engine speed is <span>above 1,500 rpm</span> and engine coolant temperature is <span>68 °C {154 °F} or less</span></div>
+<div class="list">―  When engine speed is <span>above 2,500 rpm</span> and engine coolant temperature is <span>68 °C {154 °F} or more</span></div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0532:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refrigerant pressure sensor circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors input voltage from the refrigerant pressure sensor. If the input voltage at the PCM terminal 2AX is <span>below 0.1 V</span> for <span>5 s</span>, the PCM determines that the refrigerant pressure sensor circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0533:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refrigerant pressure sensor circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors input voltage from the refrigerant pressure sensor. If the input voltage at the PCM terminal 2AX is <span>above 4.9 V</span> for <span>5 s</span>, the PCM determines that the refrigerant pressure sensor circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0555:00<sup>*5</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Power brake unit vacuum sensor circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the power brake unit vacuum sensor signal voltage while the ignition switch is ON. If the PCM detects the power brake unit vacuum sensor voltage is <span>below 0.15 V</span> or <span>above 4.8 V</span> for <span>5 s</span>, the PCM determines that the power brake unit vacuum sensor circuit has problem.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P057F:00<sup>*7</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Power system: Battery deterioration</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The battery charge/discharge flow exceeds the specification.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P058A:00<sup>*7</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Current sensor: Function malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Error signal from the current sensor is received.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0600:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Serial communication link</div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM internal malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0601:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM memory check sum error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM internal memory check sum error.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0602:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM programming error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  No configuration data in the PCM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0604:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM RAM error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM internal RAM malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0606:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM processor error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM internal CPU malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0607:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control module performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM internal malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0610:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM vehicle configuration error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM data configuration error.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0615:00<sup>*5</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter/starter relay operation amount</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM records DTCs when the number of times the engine has been started reaches the warrantied performance frequency for the starter or starter relay.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P061B:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Internal control module torque calculation performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Indicates an error occurred in the PCM.</div>
+<div class="list">•  There is a malfunction in the sensor input signal to the PCM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P061D:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Internal control module engine air mass performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Indicates an error occurred in the PCM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P061F:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Internal control module throttle valve actuator controller performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When any of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Start stop unit internal malfunction</div>
+<div class="list">―  CAN communication line malfunction between start stop unit and PCM</div>
+<div class="list">―  PCM internal malfunction</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0628:00<sup>*11</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pump control module circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the PCM outputs a duty signal to the fuel pump control module, the difference in voltage between fuel pump unit terminals A and B is <span>less than 1.5 V</span> for a continuous <span>5 s</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0629:00<sup>*11</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pump control module circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM detects over-current during the fuel pump control module control.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0638:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve actuator control range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM compares the actual TP with the target TP. If the difference is more than the threshold value, the PCM determines that there is a throttle valve actuator control range/performance problem.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P064D:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Internal control module A/F sensor processor performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Malfunction in A/F sensor signal circuit in PCM occurs.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0685:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Main relay control circuit open</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The period of time in which the PCM power supply remains on after the ignition is switched off is not within the specified time.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P06B8:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Internal control module non-volatile RAM error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM internal EEPROM malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P06DA:00<sup>*8</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine oil solenoid valve circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The engine oil solenoid valve control current is high or the control voltage at the PCM terminal 1AS is low relative to the PCM control condition.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0703:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake switch input circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The brake switch does not switch even though the vehicle is stopped <span>8 times</span> repeatedly from a vehicle speed of <span>30 km/h {19 mph} or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0704:00<sup>*1</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">CPP switch input circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors changes in input voltage from the CPP switch. If the PCM does not detect a voltage change while the vehicle runs with vehicle speed <span>above 30 km/h {19 mph}</span> and stops<span> 8 times</span> alternately, the PCM determines that the CPP switch circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P07BE:00<sup>*6</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transmission indeterminate failure (failed to neutral)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Correlation malfunction between neutral switches No.1 and No.2.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0850:00<sup>*1</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Neutral switch No.1 input circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors changes in input voltage from the neutral switch No.1. If the PCM does not detect a voltage change while driving the vehicle at a vehicle speed <span>above 30 km/h {19 mph}</span> and the clutch pedal is pressed and released <span>10 times</span> repeatedly, the PCM determines that the neutral switch No.1 circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0A0F:00<sup>*5</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine failed to restart</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Any of following conditions occurs:</div>
+<dl>
+<dd class="list">
+<div class="list">―  When the engine should restart after it is stopped by the i-stop control, it does not start even though it is cranked for <span>3 s or more</span>.</div>
+<div class="list">―  When the engine should restart after it is stopped by the i-stop control, it does not cranked.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0A8D:00<sup>*7</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Power supply system circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Without i-ELOOP</div>
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>7.25 V or less</span> when engine restarts from i-stop.</div>
+<div class="list">―  DC-DC converter terminal voltage is <span>6 V or less</span> when engine restarts from i-stop.</div>
+<div class="list">―  PCM terminal voltage is <span>6.2 V or less</span> when engine starts.</div>
+<div class="list">―  Battery internal resistance is specified value or more.</div>
+<div class="list">―  Battery voltage is <span>11 V or less</span> when engine is switched off.</div>
+</dd>
+</dl>
+<div class="list-title">With i-ELOOP</div>
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  PCM terminal voltage is <span>6.2 V or less</span> when engine starts.</div>
+<div class="list">―  Battery internal resistance is specified value or more.</div>
+<div class="list">―  Battery voltage is <span>11 V or less</span> after 30 s since system began switch to relay mode</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0A8F:00<sup>*7</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Power system: Low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>11 V or less</span> when ignition is switched off after leaving vehicle for <span>30 days or more</span>.</div>
+<div class="list">―  Battery voltage is <span>11 V or less</span> for a continuous <span>5 days</span> when ignition is switched off.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0A94:00<sup>*7</sup></div>
+</td>
+<td id="" align="left">
+<div class="list">•  DC-DC converter: control circuit signal error<sup>*4</sup></div>
+<div class="list">•  DC-DC converter (i-ELOOP): control circuit signal error<sup>*3</sup></div>
+</td>
+<td id="" align="left">
+<div class="list-title">Without i-ELOOP</div>
+<div class="list">•  Internal malfunction signal from DC-DC converter via BCM is received. (CAN/LIN communication).</div>
+<div class="list">•  Input signal from the DC-DC converter limits the pressure increase time.</div>
+<div class="list">•  Input signal from the DC-DC converter does not implement pressure increase after a pressure increase command to the DC-DC converter.</div>
+<div class="list-title">With i-ELOOP</div>
+<div class="list">•  The PCM receives a response signal from the DC-DC converter (i-ELOOP) which differs from the relay operation command voltage of the PCM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P111A:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature is high</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The engine coolant temperature is <span>122 °C {252 °F} or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P117A:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine oil temperature is high</div>
+</td>
+<td id="" align="left">
+<div class="list">•  With the transmission in 5th gear or lower gear, an engine speed of <span>6,100 rpm or more</span> continues for <span>6 min</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P1260:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Immobilizer system problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The start stop unit detects an immobilizer system malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P1380:00<sup>*8</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric variable valve timing control circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  A malfunction is detected in the results of the on-board diagnostic test received from the electric variable valve timing driver.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P151B:00<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">IAC system problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM cannot control the idle speed toward the target idle speed during the KOER self test.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P176E:00<sup>*6</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Clutch stroke sensor/Starter interlock switch correlation problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Correlation malfunction between clutch stroke sensor and starter interlock switch.</div>
+<dl>
+<dd class="list">
+<div class="list">―  If the clutch stroke sensor circuit voltage <span>above 4.9 V</span> or <span>below 0.1 V</span> for <span>10 s</span>, the PCM determines that the clutch stroke sensor circuit has a malfunction.</div>
+<div class="list">―  CPP switch stuck ON or OFF.</div>
+<div class="list">―  Starter interlock switch stuck ON.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2088:00<sup>*9</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">OCV circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The OCV control voltage relative to the PCM control is too low.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2089:00<sup>*9</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">OCV circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The OCV control voltage relative to the PCM control is too high.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2090:00<sup>*8</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">OCV circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The OCV control voltage relative to the PCM control is too low.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2091:00<sup>*8</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">OCV circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The OCV control voltage relative to the PCM control is too high.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2096:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S fuel injection control system: air fuel too lean</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Depending on the correction deviation of the A/F sensor, a condition in which the fuel feedback correction amount (SHRTFT12) for the HO2S is the specified value (<span>2 %</span>) or more and the sum (SHRTFT12+LONGFT12) of the fuel feedback correction amount and the fuel learning correction amount is the specified value (<span>2.3—2.5 %</span>) or more continues for a period of <span>25 s</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2097:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S fuel injection control system: air fuel too rich</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Depending on the correction deviation of the A/F sensor, a condition in which the fuel feedback correction amount (SHRTFT12) for the HO2S is the specified value (<span>−2 %</span>) or less and the sum (SHRTFT12+LONGFT12) of the fuel feedback correction amount and the fuel learning correction amount is the specified value (<span>−2.5—−2.3 %</span>) or less continues for a period of <span>25 s</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2101:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve actuator control motor circuit range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM turns the main relay on, but if the input voltage is <span>6.0 V or less</span>, then the PCM determines that the main relay control circuit voltage is low.</div>
+<div class="list">•  There is a system error in the electrical throttle control system of the PCM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2107:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve actuator control module processor error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM internal malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2109:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TP sensor minimum stop range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the fully-close throttle position is <span>5.1 ° or lower</span>, or <span>15.9 ° or more</span> (even though fully-closed throttle position learning is finished), the PCM determines there is a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2110:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve actuator control system-forced limited RPM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM internal malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2112:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve actuator motor current range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The throttle valve actuator control duty ratio is <span>95 % or more</span> with the ignition switched ON (engine on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2119:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve actuator control throttle body range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM compares the actual TP with initial setting TP when the ignition is switched off. If the actual TP is higher than the initial setting TP, the PCM determines that there is a throttle valve return spring malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2122:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">APP sensor No.1 circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the input voltage from APP sensor No.1. If the input voltage at the PCM terminal 2AN is <span>less than 0.1 V</span>, the PCM determines that the APP sensor No.1 circuit input voltage is low.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2123:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">APP sensor No.1 circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the input voltage from APP sensor No.1. If the input voltage at the PCM terminal 2AN is <span>above 4.9 V</span>, the PCM determines that the APP sensor No.1 circuit input voltage is high.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2127:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">APP sensor No.2 circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the input voltage from APP sensor No.2. If the input voltage at the PCM terminal 2AS is <span>less than 0.1 V</span>, the PCM determines that the APP sensor No.2 circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2128:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">APP sensor No.2 circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the input voltage from APP sensor No.2. If the input voltage at the PCM terminal 2AS is <span>more than 4.9 V</span>, the PCM determines that the APP sensor No.2 circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2135:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TP sensor No.1/No.2 voltage correlation problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM compares the input voltage from TP sensor No.1 with the input voltage from TP sensor No.2. If the difference is more than the specification, the PCM determines that there is a TP sensor No.1/No.2 voltage correlation problem.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2138:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">APP sensor No.1/No.2 voltage correlation problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM compares the input voltage from APP sensor No.1 with the input voltage from APP sensor No.2. If the difference is more than the specification, the PCM determines that there is an APP sensor No.1/No.2 angle correlation problem.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2199:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.2 correlation problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  IAT sensor No.1 and IAT sensor No.2 are compared and correlation error occurs.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2226:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BARO sensor range/performance problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Communication error between BARO sensor and PCM</div>
+<div class="list">•  Non-volatile memory error in BARO sensor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2228:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BARO sensor circuit low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors input voltage from the BARO sensor. If the input voltage is low for <span>5 s</span>, the PCM determines that the BARO sensor circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2229:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BARO sensor circuit high input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors input voltage from the BARO sensor. If the input voltage is high for <span>5 s</span>, the PCM determines that the BARO sensor circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2237:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Open circuit between A/F sensor terminal B and PCM terminal 1AG</div>
+</td>
+<td id="" align="left">
+<div class="list">•  After A/F sensor activation, a condition in which PCM terminal 1AB voltage is within the specified range continues for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2243:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor reference voltage circuit open</div>
+</td>
+<td id="" align="left">
+<div class="list">•  A condition in which the PCM terminal 1W voltage is the specified value or more continues for <span>30 s</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2251:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Open circuit between A/F sensor terminal D and PCM terminal 1AB</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The following conditions are met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  A/F sensor element impedance is specified value or more</div>
+<div class="list">―  A/F sensor terminal F voltage (B+ terminal) is less than specified value or unstable.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2299:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal: spring back malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When under the following conditions it is detected that the brake pedal is depressed during driving for the specified time<sup>*</sup>.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Racing</div>
+<div class="list">―  Engine speed: <span>875 rpm or more</span></div>
+</dd>
+</dl>
+<div class="list"><sup>*</sup>: Specified time is <span>0.6—10 s</span> according to braking force calculated in PCM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2302:00<sup>*8</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ion sensor No.1 circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  After the engine is started, when the engine speed is <span>2,000 rpm or less</span>, the signal input to the PCM from ion sensor No.1 is in error.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2305:00<sup>*8</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ion sensor No.2 circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  After the engine is started, when the engine speed is <span>2,000 rpm or less</span>, the signal input to the PCM from ion sensor No.2 is in error.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2308:00<sup>*8</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ion sensor No.3 circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  After the engine is started, when the engine speed is <span>2,000 rpm or less</span>, the signal input to the PCM from ion sensor No.3 is in error.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2311:00<sup>*8</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ion sensor No.4 circuit problem</div>
+</td>
+<td id="" align="left">
+<div class="list">•  After the engine is started, when the engine speed is <span>2,000 rpm or less</span>, the signal input to the PCM from ion sensor No.4 is in error.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2502:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Generator system: Malfunction in voltage generated by generator</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Without i-ELOOP</div>
+<div class="list">•  The voltage generated by the generator is <span>17 V or higher</span> and the battery voltage is <span>11 V or less</span> for a continuous specified time.</div>
+<div class="list-title">With i-ELOOP</div>
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Battery voltage is <span>11 V or less</span> and condition in which current sensor detects battery charging for specified period continues</div>
+<div class="list">―  Pre-charge mode is implemented and pre-charge mode is not completed even though specified period has elapsed.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2503:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Generator system: Voltage generated by generator is low</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Without i-ELOOP</div>
+<div class="list">•  A condition continues for a specified period of time in which the target generator output current calculated by the PCM is <span>20 A or more</span> and the generator output voltage is <span>8.5 V or less</span>.</div>
+<div class="list-title">With i-ELOOP</div>
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Field current demand output to generator is normal range and condition in which field current returned from generator is in non-power generation range continues for specified period</div>
+<div class="list">―  Condition in which malfunction status signal from generator is in returned condition continues for specified period</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2504:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Generator system: Voltage generated by generator is high</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Without i-ELOOP</div>
+<div class="list">•  The voltage generated by the generator is <span>18.5 V or higher</span> or the battery voltage is <span>16 V or higher</span> for a continuous specified time.</div>
+<div class="list-title">With i-ELOOP</div>
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Field current value returned by generator is abnormally larger than field current value demanded of generator, or condition in which battery voltage is <span>15.9 V or more</span> continues for specified period</div>
+<div class="list">―  Capacitor (i-ELOOP) voltage is <span>27.5 V or more</span>, or condition in which over-voltage notification signal from generator continues for specified period.</div>
+<div class="list">―  Condition in which overheating detection signal output from generator continues for specified period.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2507:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM battery voltage low input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM monitors the voltage of backup battery positive terminal. If the PCM detects that the battery positive terminal voltage is <span>below 6 V</span> for <span>5 s</span>, the PCM determines that the backup voltage circuit has a malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2610:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Malfunction in instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Malfunction detected in instrument cluster.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0073:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN system communication error (HS CAN)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Malfunction in CAN bus communication line.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0074:00<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN system communication error (local CAN between PCM and TCM)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Malfunction in CAN bus communication line.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0101:00<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to TCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Communication error between the PCM and TCM continues for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to ABS HU/CM or DSC HU/CM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Communication error between the PCM and DSC HU/CM continues for <span>5 s or more</span>. (with DSC)</div>
+<div class="list">•  Communication error between the PCM and ABS HU/CM continues for <span>5 s or more</span>. (without DSC)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to EPS control module</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Communication error between the PCM and EPS control module continues for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to BCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Communication error between the PCM and BCM continues for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to SAS control module</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Communication error between the PCM and SAS control module continues for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Communication error between the PCM and instrument cluster continues for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Communication error between the PCM and start stop unit continues for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0235:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to laser sensor</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Communication error between the PCM and laser sensor continues for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0298:00<sup>*7</sup></div>
+</td>
+<td id="" align="left">
+<div class="list">•  CAN/LIN communication system: DC-DC converter information communication error with BCM<sup>*4</sup></div>
+<div class="list">•  CAN communication: communication error to DC-DC converter (i-ELOOP)<sup>*3</sup></div>
+</td>
+<td id="" align="left">
+<div class="list-title">Without i-ELOOP</div>
+<div class="list">•  PCM detects a DC-DC converter information communication error from BCM.</div>
+<div class="list-title">With i-ELOOP</div>
+<div class="list">•  PCM detects a communication error between the PCM and DC-DC converter (i-ELOOP).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0302:00<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCM processor error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When any of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  CAN communication line malfunction between TCM and PCM</div>
+<div class="list">―  TCM internal malfunction</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0315:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ABS HU/CM or DSC HU/CM error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When any of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  CAN communication line malfunction between DSC HU/CM and PCM (with DSC)</div>
+<div class="list">―  CAN communication line malfunction between ABS HU/CM and PCM (without DSC)</div>
+<div class="list">―  DSC HU/CM internal malfunction (with DSC)</div>
+<div class="list">―  ABS HU/CM internal malfunction (without DSC)</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0320:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">EPS control module error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When any of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  CAN communication line malfunction between EPS control module and PCM</div>
+<div class="list">―  EPS control module internal malfunction</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0323:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When any of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  CAN communication line malfunction between instrument cluster and PCM</div>
+<div class="list">―  Instrument cluster internal malfunction</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0336:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">SAS control module error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When any of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  CAN communication line malfunction between SAS control module and PCM</div>
+<div class="list">―  SAS control module internal malfunction</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0338:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When any of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  CAN communication line malfunction between start stop unit and PCM</div>
+<div class="list">―  Start stop unit internal malfunction</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0433:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Abnormal message from laser sensor</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Correct data cannot be received from laser sensor.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U1007:00<sup>*10</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN/LIN communication system: current sensor information communication error with BCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM detects a current sensor information communication error from BCM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U2300:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Global central configuration error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Any of following conditions occurs:</div>
+<dl>
+<dd class="list">
+<div class="list">―  No configuration of the instrument cluster.</div>
+<div class="list">―  The configuration signal with the estimated CAN ID is not sent from the instrument cluster.</div>
+<div class="list">―  The configuration signal value sent via CAN from the instrument cluster is unknown or invalid.</div>
+<div class="list">―  The configuration signal value sent via CAN from the instrument cluster is a value other than the estimated value.</div>
+<div class="list">―  The configuration signal value sent via CAN from the instrument cluster does not match the PCM value.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U3000:41</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM processor error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Communication error in the PCM.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :MTX</div>
+<div class="deflist">*2  :ATX</div>
+<div class="deflist">*3  :Vehicles with i-ELOOP</div>
+<div class="deflist">*4  :Vehicles without i-ELOOP</div>
+<div class="deflist">*5  :Vehicles with i-stop system</div>
+<div class="deflist">*6  :Vehicles with i-stop system (MTX)</div>
+<div class="deflist">*7  :Vehicles with i-stop or i-ELOOP</div>
+<div class="deflist">*8  :SKYACTIV-G 1.5 (with 4-2-1 exhaust system)</div>
+<div class="deflist">*9  :Except SKYACTIV-G 1.5 (with 4-2-1 exhaust system)</div>
+<div class="deflist">*10  :If equipped</div>
+<div class="deflist">*11  :Fuel pump control module</div>
+</body>
+</html>

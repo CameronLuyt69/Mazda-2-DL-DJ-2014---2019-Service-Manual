@@ -1,0 +1,1387 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>PID/DATA MONITOR TABLE [START STOP UNIT]</title>
+</head>
+<body><a name="id0902p6025500"></a><p class="servinfo-title"><span class="servinfo-head"></span>PID/DATA MONITOR TABLE [START STOP UNIT]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0902p6025500</p>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">PID</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Operation</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Module control terminal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">BRAKE_SW1<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake switch (No.1 signal) signal input status</div>
+<div class="list">•  Off: Brake switch (No.1 signal) is off.</div>
+<div class="list">•  On: Brake switch (No.1 signal) is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1C (Brake switch)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CLUT_CUT_SW<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter interlock switch input status</div>
+<div class="list">•  Off: Starter interlock switch is off.</div>
+<div class="list">•  On: Starter interlock switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1F (Starter interlock switch)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CLUTCH_SW<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Clutch switch input status</div>
+<div class="list">•  Off: CPP switch is off.</div>
+<div class="list">•  On: CPP switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2E (Clutch pedal position switch)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">COMM_ST_TSP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays operation condition of the immobilizer system key code read function</div>
+<div class="list">•  Off: Key code read function not performed</div>
+<div class="list">•  On: Code read function is performed and coil antenna reads key code from remote transmitter transponder.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Key code reading function of immobilizer system is performed and when a brake switch, clutch switch, or push button start signal is input, the coil antenna reads the key code from the transponder of the remote transmitter, and displays On while the key code is being sent to the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  1AC (PATS+)</div>
+<div class="list">•  1AE (PATS-)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CRU_CON_SW<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not_Pressed/On/Off/On/Off/Cancel/Resume/Fault/Set (+)/Set (-)/Distance (+)<sup></sup>/Distance (-)<sup></sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cruise control switch operation condition</div>
+<div class="list">•  Not_Pressed: Each switch of cruise control switch is not pressed or speed limiter switch is pressed.</div>
+<div class="list">•  On: Cruise ON switch is pressed.</div>
+<div class="list">•  Off: Cruise OFF switch is pressed.</div>
+<div class="list">•  On/Off: —</div>
+<div class="list">•  Cancel: CANCEL switch is pressed.</div>
+<div class="list">•  Resume: RESUME (RES) switch is pressed.</div>
+<div class="list">•  Fault: Cruise control switch has a malfunction.</div>
+<div class="list">•  Set (+): SET (+) switch is pressed.</div>
+<div class="list">•  Set (-): SET (-) switch is pressed.</div>
+<div class="list">•  Distance (+): —</div>
+<div class="list">•  Distance (-): —</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1Y (Cruise control switch signal)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ES_UL_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not_Unlock/Unlock</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering lock unlock switch condition</div>
+<div class="list">•  Not_Unlock: Steering lock unlock switch is off.</div>
+<div class="list">•  Unlock: Steering lock unlock switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ES_UL_SW_M</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not_Unlock/Unlock</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Memory value of steering lock unlock switch</div>
+<div class="list">•  Not_Unlock: Memory value of steering lock unlock switch is not unlocked.</div>
+<div class="list">•  Unlock: Memory value of steering lock unlock switch is unlocked.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ES_ULL_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering lock unlock/lock switch condition</div>
+<div class="list">•  Off: Steering lock unlock/lock switch is off.</div>
+<div class="list">•  On: Steering lock unlock/lock switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ES_ULL_SW_M</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Memory value of steering lock unlock/lock switch</div>
+<div class="list">•  Off: Memory value of steering lock unlock/lock switch is off.</div>
+<div class="list">•  On: Memory value of steering lock unlock/lock switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">F_FOG_SW<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front fog light switch operation condition</div>
+<div class="list">•  Off: Fog light switch is not in F.FOG position.</div>
+<div class="list">•  On: Fog light switch is in F.FOG position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_SW_HI</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight switch (HI) operation condition</div>
+<div class="list">•  Off: Light switch is not in HI position.</div>
+<div class="list">•  On: Light switch is in HI position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_SW_LOW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays dimmer switch position of the light switch that is being input to the start stop unit</div>
+<div class="list">•  Off: Dimmer switch of light switch is not in LO position</div>
+<div class="list">•  On: Dimmer switch of light switch is in LO position</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Verify if the monitor value switches when the dimmer switch of the light switch is switched between LO and HI positions. If the dimmer switch operation and monitor values do not match, inspect the light switch.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_SW_OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight light switch (OFF) operation condition</div>
+<div class="list">•  Off: Light switch is not in OFF position.</div>
+<div class="list">•  On: Light switch is in OFF position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_SW_PASS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight switch (PASS) operation condition</div>
+<div class="list">•  Off: Light switch is not in passing position.</div>
+<div class="list">•  On: Light switch is in passing position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">H/L_SW_TNS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Headlight switch (TNS) operation condition</div>
+<div class="list">•  Off: Light switch is not in TNS position.</div>
+<div class="list">•  On: Light switch is in TNS position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">HAZARD_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays condition of hazard warning switch input to start stop unit</div>
+<div class="list">•  Off: Hazard warning switch is off.</div>
+<div class="list">•  On: Hazard warning switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1G (Hazard warning switch signal)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IG_POSITION</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF/ACC/ON/CRANK</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays power status controlled by the start stop unit</div>
+<div class="list">•  OFF: Start stop unit controls ignition switch off</div>
+<div class="list">•  ACC: Start stop unit controls ignition switch ACC</div>
+<div class="list">•  ON: Start stop unit controls ignition switch ON (engine off)</div>
+<div class="list">•  CRANK: Start stop unit controls cranking at ignition switch ON</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the push button start is operated, the start stop unit performs power source switching and displays the PID value of the power source position in which control was performed.</div>
+<div class="list">•  If the push button start operation and PID value do not match, and a power source status of another unit differs from the PID value, inspect the input power source of the other unit because the power source control of the start stop unit is normal.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">INFO_SW<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/SW1_On/SW2_On/SW3_On/Unknown/Invalid</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering switch operation condition</div>
+<div class="list">•  Off: Steering switch UP/DOWN/INFO switch is not pressed.</div>
+<div class="list">•  SW1_On: UP switch is pressed.</div>
+<div class="list">•  SW2_On: DOWN switch is pressed.</div>
+<div class="list">•  SW3_On: INFO switch is pressed.</div>
+<div class="list">•  Unknown: Steering switch UP/DOWN/INFO switch signal is not determined.</div>
+<div class="list">•  Invalid: Steering switch malfunction is received.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays INFO switch position of steering switch input to start stop unit. Steering switch signal is input to start stop unit via clock spring.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  1AA (Steering switch signal)</div>
+<div class="list">•  1AB (Steering switch ground)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">INHIBIT_SW<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transaxle range switch input status</div>
+<div class="list">•  Off: Selector lever is not in P and N positions.</div>
+<div class="list">•  On: Selector lever is in P or N position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1F (Selector lever position switch)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LG/T_LK_SW<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request switch (liftgate) operation condition</div>
+<div class="list">•  Off: Request switch (liftgate) is off.</div>
+<div class="list">•  On: Request switch (liftgate) is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2F (LF control unit communication)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LG/T_UNL_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list-title">4SD</div>
+<div class="list">•  Trunk lid opener switch operation condition</div>
+<dl>
+<dd class="list">
+<div class="list">―  Off: Trunk lid opener switch is off.</div>
+<div class="list">―  On: Trunk lid opener switch is on.</div>
+</dd>
+</dl>
+<div class="list-title">5HB</div>
+<div class="list">•  Liftgate opener switch operation condition</div>
+<dl>
+<dd class="list">
+<div class="list">―  Off: Liftgate opener switch is off.</div>
+<div class="list">―  On: Liftgate opener switch is on.</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1Q (BCM communication)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LL_SW_D_LK</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Driver's door lock link switch (lock side) operation condition</div>
+<div class="list">•  Off: Front door lock-link switch (driver's side) is in unlock.</div>
+<div class="list">•  On: Front door lock-link switch (driver's side) is in lock.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1P (Lock input)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">NUM_TRNSMIT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays number of the remote transmitters programmed to the start stop unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P_RANGE_SW<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not P position switch condition</div>
+<div class="list">•  Off: NOT P position switch is off.</div>
+<div class="list">•  On: NOT P position switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1J (Not P position switch)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PAD_DOWN_SW<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering shift switch (DOWN) condition</div>
+<div class="list">•  Off: DOWN switch of steering shift switch is off.</div>
+<div class="list">•  On: DOWN switch of steering shift switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1N (Steering shift switch (down))</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PAD_UP_SW<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering shift switch (UP) condition</div>
+<div class="list">•  Off: UP switch of steering shift switch is off.</div>
+<div class="list">•  On: UP switch of steering shift switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1L (Steering shift switch (up))</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R_FOG_SW<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear fog light switch condition</div>
+<div class="list">•  Off: Fog light switch is not in R.FOG position.</div>
+<div class="list">•  On: Fog light switch is in R.FOG position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RELAY_ACC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ACC relay operation condition</div>
+<div class="list">•  Off: ACC relay drive is off.</div>
+<div class="list">•  On: ACC relay drive is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2C (ACC relay control)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RELAY_IG1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IG1 relay operation condition</div>
+<div class="list">•  Off: IG1 relay drive is off.</div>
+<div class="list">•  On: IG1 relay drive is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2S (IG1 relay control)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RELAY_IG2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IG2 relay operation condition</div>
+<div class="list">•  Off: IG2 relay drive is off.</div>
+<div class="list">•  On: IG2 relay drive is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2D (IG2 relay control)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RF_RECEP_ST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Initial/Transmitter/RF_Response</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays radio reception status from the remote transmitter</div>
+<div class="list">•  Initial: Signal from remote transmitter is not received by start stop unit</div>
+<div class="list">•  Transmitter: Signal by button operation on remote transmitter is received by start stop unit</div>
+<div class="list">•  RF_Response: During remote transmitter authorization, response signal from remote transmitter is received by start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When verifying the PID value while operating the remote transmitter buttons, if “Transmitter” is displayed it can be determined that the transmission between the remote transmitter, keyless receiver, and start stop unit is normal.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2R (Keyless receiver communication)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RF_TRNS_NUM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Initial/No.1/No.2/No.3/No.4/No.5/No.6</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When pressing the unlock button of the remote transmitter, the registration number of the remote transmitter sending radio waves to the start stop unit is displayed.</div>
+<div class="list">•  Initial: Registration number of remote transmitter cannot be received</div>
+<div class="list">•  No.1: Registration number No.1 remote transmitter is received</div>
+<div class="list">•  No.2: Registration number No.2 remote transmitter is received</div>
+<div class="list">•  No.3: Registration number No.3 remote transmitter is received</div>
+<div class="list">•  No.4: Registration number No.4 remote transmitter is received</div>
+<div class="list">•  No.5: Registration number No.5 remote transmitter is received</div>
+<div class="list">•  No.6: Registration number No.6 remote transmitter is received</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When DTC B13D3:16 (Low remote transmitter battery voltage) is detected, the registration number of the remote transmitter in which the battery voltage has decreased is displayed in the snapshot data item TRNS_NUM_L. Display the registration number of the remote transmitter using the PID, verify the remote transmitter with the low battery voltage, and inspect the battery condition of the target remote transmitter.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2R (Keyless receiver communication)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RQ_SW_LF<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request switch (LF) operation condition</div>
+<div class="list">•  Off: Request switch (LF) is off.</div>
+<div class="list">•  On: Request switch (LF) is on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The signal is input to the start stop unit through the LF control unit of the request switch (LF).</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2F (LF control unit communication)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RQ_SW_RF<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request switch (RF) operation condition</div>
+<div class="list">•  Off: Request switch (RF) is off.</div>
+<div class="list">•  On: Request switch (RF) is on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The signal is input to the start stop unit through the LF control unit of the request switch (RF).</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2F (LF control unit communication)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SECURITY_I</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output condition of security indicator</div>
+<div class="list">•  Off: Security indicator light is turned off.</div>
+<div class="list">•  On: Security indicator light is illuminated.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Security indicator on request to instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2M, 2O (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SFT_LK_SOL<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off (Lock)/On (Unlock)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift lock solenoid operation condition</div>
+<div class="list">•  Off (Lock): Shift-lock is operated.</div>
+<div class="list">•  On (Unlock): Shift-lock is released.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2G (Shift lock)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SPD_LIM_SW<sup>*7</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On/Unknown</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Speed limiter switch input status</div>
+<div class="list">•  Off: Speed limiter switch is off.</div>
+<div class="list">•  On: Speed limiter switch is on.</div>
+<div class="list">•  Unknown: Speed limiter switch signal is not determined.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1Y (Cruise control switch signal)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SSB_1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start switch 1 input signal</div>
+<div class="list">•  Off: Push button start switch 1 is off.</div>
+<div class="list">•  On: Push button start switch 1 is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1H (Push button start 1)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SSB_2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start switch 2 input signal</div>
+<div class="list">•  Off: Push button start switch 2 is off.</div>
+<div class="list">•  On: Push button start switch 2 is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2J (Push button start 2)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SSB_AMBER</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start indicator light (amber) illumination request</div>
+<div class="list">•  Off: Push button start indicator light (amber) is turned off.</div>
+<div class="list">•  On: Push button start indicator light (amber) is illuminated.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1M (Push button illumination (amber))</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SSB_GREEN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start indicator light (green) illumination request</div>
+<div class="list">•  Off: Push button start indicator light (green) is turned off.</div>
+<div class="list">•  On: Push button start indicator light (green) is illuminated.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1K (Push button illumination (green))</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SSB_ILLMI</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Push button start illumination request</div>
+<div class="list">•  Off: START/STOP/ENGINE indicator light is turned off.</div>
+<div class="list">•  On: START/STOP/ENGINE indicator light is illuminated.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1I (Push button illumination)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">START_RLY_1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays voltage at start stop unit terminal 2V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2V (Starter relay)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">START_RLY_2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays voltage at start stop unit terminal 1D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1D (Starter monitor)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_A_ANG_A<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">° (deg)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays steering angle sensor A signal aiming angle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_A_ANG_B<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">° (deg)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays steering angle sensor B signal aiming angle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_AB_ANG<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">° (deg)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays steering angle signal (absolute angle)</div>
+<div class="list">•  Steering wheel in neutral position: Near <span>0 degrees</span></div>
+<div class="list">•  Steering wheel turned to left: Changes from <span>0 degrees</span> to positive</div>
+<div class="list">•  Steering wheel turned to right: Changes from <span>0 degrees</span> to negative</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_ANG_S<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Without/With</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle with/without steering angle sensor</div>
+<div class="list">•  Without: Steering angle sensor is not equipped.</div>
+<div class="list">•  With: Steering angle sensor is equipped.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_ANG_S_A<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays voltage at the steering angle sensor A signal</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1U (Steering angle sensor (signal A/D1))</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  (See <font class="extxref-label"><a href="id091800813400.html">STEERING ANGLE SENSOR INSPECTION</a></font>.)</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_ANG_S_B<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays voltage at the steering angle sensor B signal</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1W (Steering angle sensor (signal A/D1))</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  (See <font class="extxref-label"><a href="id091800813400.html">STEERING ANGLE SENSOR INSPECTION</a></font>.)</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STR_ANG_S_V<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays steering angle sensor power supply voltage</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  “5 V” is displayed even if the voltage is <span>5 V or more</span>.</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1S (Steering angle sensor power supply)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">T_SEN_LF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Displays in the M-MDS but it does not operate.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">T_SEN_RF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Displays in the M-MDS but it does not operate.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TURN_SW_L</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn switch (LH) input</div>
+<div class="list">•  Off: Turn switch is in position other than LH.</div>
+<div class="list">•  On: Turn switch is in LH position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TURN_SW_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turn switch (RH) input</div>
+<div class="list">•  Off: Turn switch is in position other than RH.</div>
+<div class="list">•  On: Turn switch is in RH position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_ACC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays ACC power supply voltage input to start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If there is a malfunction in the ACC power supply voltage input to the start stop unit, the keyless entry system and push button start system do not operate normally because PID item VPWR_ACC is used for ACC power on/off determination.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1E (ACC monitor)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_B1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays B+ power supply (ROOM fuse) voltage input to start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If there is a malfunction in the B+ power supply (ROOM fuse) voltage input to the start stop unit, the keyless entry system does not operate normally because PID item VPWR_B1 is used for determining whether or not there is a ROOM fuse inserted.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1A (Power supply)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_B2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays B+ power supply (AT fuse) voltage input to start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When the ROOM fuse is removed, the B+ power supply (AT fuse) is the start stop unit power supply. If there is a malfunction in the B+ power supply (AT fuse) voltage input to the start stop unit when the ROOM fuse is removed, the push button start system does not operate normally.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2W (Power supply)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_B3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays B+ power supply (SRS2/ESCL fuse) input to start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If there is a malfunction in the B+ power supply (SRS2/ESCL fuse) voltage input to the start stop unit, the steering lock and the push button start system do not operate normally because PID item VPWR_B3 is used as the steering lock power supply built into the start stop unit.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2X (Power supply)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_IG1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays IG1 power supply voltage input to start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If there is a malfunction in the IG1 power supply voltage input to the start stop unit, the keyless entry system and the push button start system do not operate normally because PID item VPWR_IG1 is used for IG1 power on/off determination.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1B (Power supply)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WASHER_F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Windshield washer switch signal input status</div>
+<div class="list">•  Off: Windshield washer switch is in OFF position.</div>
+<div class="list">•  On: Windshield washer switch is in ON position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WASHER_R<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear washer switch signal input status</div>
+<div class="list">•  Off: Rear washer switch is not in ON position.</div>
+<div class="list">•  On: Rear washer switch is in ON position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_F_INT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Windshield wiper switch (INT) signal input status</div>
+<div class="list">•  Off: Windshield wiper switch is in  MIST, OFF or LO position.</div>
+<div class="list">•  On: Windshield wiper switch is in AUTO<sup>*9</sup>/INT<sup>*10</sup> or HI position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_F_LOW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Windshield wiper switch (LO) signal input status</div>
+<div class="list">•  Off: Windshield wiper switch is in OFF or AUTO<sup>*9</sup>/INT<sup>*10</sup> position.</div>
+<div class="list">•  On: Windshield wiper switch is in MIST, LO or HI position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_INT_E_A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Low/High</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Wiper INT encoder A signal input status</div>
+<div class="list">•  Low: Windshield wiper switch INT encoder A value is low.</div>
+<div class="list">•  High: Windshield wiper switch INT encoder A value is high.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_INT_E_B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Low/High</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Wiper INT encoder B signal input status</div>
+<div class="list">•  Low: Windshield wiper switch INT encoder B value is low.</div>
+<div class="list">•  High: Windshield wiper switch INT encoder B value is high.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_INT_E_C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Low/High</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Wiper INT encoder C signal input status</div>
+<div class="list">•  Low: Windshield wiper switch INT encoder C value is low.</div>
+<div class="list">•  High: Windshield wiper switch INT encoder C value is high.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_R_INT<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear wiper switch (INT) signal input status</div>
+<div class="list">•  Off: Rear wiper switch is not in INT position.</div>
+<div class="list">•  On: Rear wiper switch is in INT position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WIP_R_ON<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Rear wiper switch (ON) signal input status</div>
+<div class="list">•  Off: Rear wiper switch is not in ON position.</div>
+<div class="list">•  On: Rear wiper switch is in ON position.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :ATX</div>
+<div class="deflist">*2  :MTX</div>
+<div class="deflist">*3  :With cruise control system</div>
+<div class="deflist">*4  :With steering switch</div>
+<div class="deflist">*5  :With advanced keyless entry system</div>
+<div class="deflist">*6  :With steering shift switch</div>
+<div class="deflist">*7  :With adjustable speed limiter (ASL)</div>
+<div class="deflist">*8  :With smart city brake support (SCBS)</div>
+<div class="deflist">*9  :With auto wiper system</div>
+<div class="deflist">*10  :Without auto wiper system </div>
+</body>
+</html>

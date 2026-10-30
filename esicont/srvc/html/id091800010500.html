@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>AUTO LIGHT SYSTEM</title>
+</head>
+<body><a name="id091800010500"></a><p class="servinfo-title"><span class="servinfo-head"></span>AUTO LIGHT SYSTEM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091800010500</p><br clear="all"><a name="id09180001050001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The auto light system automatically turns the TNS, headlight LO, and panel light on/off according to the illumination level above and in front of the vehicle.</div><br clear="all"><a name="id09180001050002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The BCM sends each light on/off request signal to the electrical supply unit (ESU) based on the signal from the auto light sensor and the electrical supply unit (ESU) turns each light on/off.</div><br clear="all"><a name="id09180001050003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003770.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003770</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180001050004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003771.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003771</div>
+</td>
+</tr>
+</table>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003772.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003772</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180001050005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  When the ignition is switched ON (engine on or off), the auto light sensor detects the illumination level above and in front of the vehicle regardless of the light switch position.</div>
+<div class="list">•  The auto light system operates when the ignition is switched ON (engine on or off) and the light switch is in the AUTO position.</div>
+<div class="list">•  The following illumination level is a reference. The illumination level varies depending on the surrounding conditions (weather, reflection off buildings).</div>
+<div class="list">•  The illumination level sensitivity of the auto light sensor can be changed. The illumination level in the explanation for the following operations is the value when setting to [Standard (All Others)]. (See <font class="extxref-label"><a href="id091800013300.html">LIGHTING SYSTEM PERSONALIZATION</a></font>.)</div>
+</div>
+</dd>
+</dl><br clear="all"><p><a name="id09180001050006"></a><p class="topic-title"><span class="topic-head"></span>Panel light on operation</p>
+<p class="list">1.  When the light switch is moved to the AUTO position with the ignition switched ON (engine off or on), the start stop unit detects (1) an auto light signal.</p>
+<p class="list"></p>
+<p class="list">2.  The start stop unit sends (2) the auto light signal to the BCM via CAN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the auto light sensor detects (3) the average <span>700 lux or less</span> per <span>1 min</span> for upward illumination, it sends (4) a panel light illumination request signal to the BCM via LIN communication.</p>
+<p class="list"></p>
+<p class="list">4.  When the BCM receives the auto light signal and panel light illumination request signal, it sends (5) the panel light illumination request signal to the instrument cluster via CAN communication.</p>
+<p class="list"></p>
+<p class="list">5.  When the instrument cluster receives the panel light illumination request signal, it turns the panel light on (6).</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003773.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003773</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09180001050007"></a><p class="topic-title"><span class="topic-head"></span>Panel light off operation</p>
+<p class="list">1.  When the light switch is moved to the AUTO position with the ignition switched ON (engine off or on), the start stop unit detects (1) an auto light signal.</p>
+<p class="list"></p>
+<p class="list">2.  The start stop unit sends (2) the auto light signal to the BCM via CAN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the auto light sensor detects (3) the average <span>1,400 lux or more</span> per <span>1 min</span> for upward illumination, it sends (4) a panel light off request signal to the BCM via LIN communication.</p>
+<p class="list"></p>
+<p class="list">4.  When the BCM receives the auto light signal and panel light off request signal, it sends (5) the panel light off request signal to the instrument cluster via CAN communication.</p>
+<p class="list"></p>
+<p class="list">5.  When the instrument cluster receives the panel light off request signal, it turns the panel light off (6).</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003774.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003774</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09180001050008"></a><p class="topic-title"><span class="topic-head"></span>Headlight LO on operation</p>
+<p class="list">1.  When the light switch is moved to the AUTO position with the ignition switched ON (engine off or on), the start stop unit detects (1) an auto light signal.</p>
+<p class="list"></p>
+<p class="list">2.  The start stop unit sends (2) the auto light signal to the BCM via CAN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the auto light sensor detects (3) the average <span>2,000 lux or less</span> per <span>1 min</span> for upward illumination, it sends (4) a TNS and headlight LO illumination request signal to the BCM via LIN communication.</p>
+<p class="list"></p>
+<p class="list">4.  When the BCM receives the auto light signal, TNS and headlight LO illumination request signal, it sends (5) the TNS and headlight LO illumination request signal to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">5.  When the electrical supply unit (ESU) receives the TNS and headlight LO illumination request signal, it turns the TNS and headlights LO on (6).</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003775.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003775</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09180001050009"></a><p class="topic-title"><span class="topic-head"></span>Headlight LO off operation</p>
+<p class="list">1.  When the light switch is moved to the AUTO position with the ignition switched ON (engine off or on), the start stop unit detects (1) an auto light signal.</p>
+<p class="list"></p>
+<p class="list">2.  The start stop unit sends (2) the auto light signal to the BCM via CAN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the auto light sensor detects (3) the average <span>4,000 lux or more</span> per <span>1 min</span> for upward illumination, it sends (4) a TNS and headlight LO off request signal to the BCM via LIN communication.</p>
+<p class="list"></p>
+<p class="list">4.  When the BCM receives the auto light signal, TNS and headlight LO off request signal, it sends (5) the TNS and headlight LO off request signal to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">5.  When the electrical supply unit (ESU) receives the TNS and headlight LO off request signal, it turns the TNS and headlights LO off (6).</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003776.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003776</div>
+</td>
+</tr>
+</table>
+</p>
+</body>
+</html>

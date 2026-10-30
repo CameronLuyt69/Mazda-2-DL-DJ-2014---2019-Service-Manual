@@ -1,0 +1,522 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>NO.3 BRAKE SYSTEM WARNING LIGHT REMAINS ILLUMINATED [DYNAMIC STABILITY CONTROL (DSC)]</title>
+</head>
+<body><a name="id0403b2897100"></a><p class="servinfo-title"><span class="servinfo-head"></span>NO.3 BRAKE SYSTEM WARNING LIGHT REMAINS ILLUMINATED [DYNAMIC STABILITY CONTROL (DSC)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0403b2897100</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">3</p>
+</th>
+<th id="" align="left">
+<p class="thead">Brake system warning light remains illuminated</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Brake fluid amount is low.</div>
+<div class="list">•  Parking brake does not release.</div>
+<div class="list">•  Parking brake switch signal error input to instrument cluster.</div>
+<div class="list">•  Brake fluid level sensor signal error input to body control module (BCM).</div>
+<div class="list">•  DSC HU/CM detected malfunction. (Input and output device malfunction)</div>
+<div class="list">•  No connection at DSC HU/CM connector (When DSC HU/CM connector is removed, ABS warning light, brake system warning light, DSC indicator light, and DSC OFF indicator light are illuminated.)</div>
+<div class="list">•  DSC HU/CM detects low voltage in power supply.</div>
+<div class="list">•  DSC HU/CM ground malfunction (When DSC HU/CM ground is not securely connected, ABS warning light, brake system warning light, DSC indicator light, and DSC OFF indicator light are illuminated but DTCs are not display.)</div>
+<div class="list">•  Instrument cluster internal malfunction</div>
+<div class="list">•  DSC HU/CM does not operate.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT BRAKE FLUID AMOUNT AND VERIFY THAT PARKING BRAKE IS RELEASED</div>
+<div class="list">•  Inspect the brake fluid amount and verify that the parking brake is released.</div>
+<div class="list">•  Is the brake fluid amount normal?</div>
+<div class="list">•  Is the parking brake lever released?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Add the brake fluid or release the parking brake lever.</div>
+<div class="tbody">If the brake fluid amount is less than specification:</div>
+<div class="list">•  Inspect and repair the brake line for leakage.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">CONFIRM DSC HU/CM DTC</div>
+<div class="list">•  Retrieve the DSC HU/CM DTC using the M-MDS.<div>(See <font class="extxref-label"><a href="id040262985000.html">DTC INSPECTION [DSC HU/CM]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id040262985200.html">DTC TABLE [DSC HU/CM]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">CONFIRM INSTRUMENT CLUSTER OPERATION RECORD</div>
+<div class="list">•  Retrieve the warning system operation history using the M-MDS.<div>(See <font class="extxref-label"><a href="id092200033200.html">INSTRUMENT CLUSTER OPERATION RECORD</a></font>.)</div>
+</div>
+<div class="list">•  Is the brake system warning light illumination history recorded?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If the Brake Warning Lamp is recorded:</div>
+<div class="list">•  Go to the next step.</div>
+<div class="tbody">If the Brake Warning Lamp (Brake fluid low) is recorded:</div>
+<div class="list">•  Go to Step 5.</div>
+<div class="tbody">If the Brake Warning Lamp (Parking Brake ON over 20 km/h or 12.4 mile/h) is recorded:</div>
+<div class="list">•  Go to Step 7.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 9.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF MALFUNCTION IS IN INSTRUMENT CLUSTER OR ELSEWHERE</div>
+<div class="list">•  Perform Warning/Indicator Light Illumination Inspection.<div>(See <font class="extxref-label"><a href="id092200010600.html">INSTRUMENT CLUSTER INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Does the brake system warning light illumination?.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 9.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the instrument cluster.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id092200010300.html">INSTRUMENT CLUSTER REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF MALFUNCTION IS IN BRAKE FLUID LEVEL SENSOR OR ELSEWHERE</div>
+<div class="list">•  Inspect the brake fluid level sensor.<div>(See <font class="extxref-label"><a href="id041100801400.html">BRAKE FLUID LEVEL SENSOR INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is the brake fluid level sensor normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the master cylinder assembly.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id041100801350.html">MASTER CYLINDER REMOVAL/INSTALLATION [L.H.D.]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id041100801352.html">MASTER CYLINDER REMOVAL/INSTALLATION [R.H.D.]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody"><sup>*</sup>6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND IN WIRING HARNESS BETWEEN BODY CONTROL MODULE (BCM) AND BRAKE FLUID LEVEL SENSOR</div>
+<div class="list">•  Inspect for short to ground in the following circuit:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between brake fluid level sensor and body control module (BCM) terminal 3R</div>
+</dd>
+</dl>
+<div class="list">•  Is a short to ground detected? </div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness for a possible short to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Retrieve the body control module (BCM) DTC using the M-MDS.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id09021o064100.html">DTC INSPECTION [BLIND SPOT MONITORING (BSM) SYSTEM]</a></font>.)</div>
+<div class="tbody">If the DTC remains:</div>
+<div class="list">•  Go to the applicable DTC inspection.<div>(See <font class="extxref-label"><a href="id09021o064300.html">DTC TABLE [BLIND SPOT MONITORING (BSM) SYSTEM]</a></font>.)</div>
+</div>
+<div class="tbody">If the DTC does not remain:</div>
+<div class="list">•  Replace the body control module (BCM).<div>(See <font class="extxref-label"><a href="id094000003800.html">BODY CONTROL MODULE (BCM) REMOVAL/INSTALLATION</a></font>.)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT WHETHER MALFUNCTION IS IN PARKING BRAKE SWITCH OR ELSEWHERE</div>
+<div class="list">•  Inspect the following parts for continuity:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Parking brake switch<div>(See <font class="extxref-label"><a href="id041200800700.html">PARKING BRAKE SWITCH INSPECTION</a></font>.)</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Is the continuity condition normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the parking brake.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id041200801600.html">PARKING BRAKE LEVER REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody"><sup>*</sup>8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND IN WIRING HARNESS BETWEEN INSTRUMENT CLUSTER AND PARKING BRAKE SWITCH</div>
+<div class="list">•  Inspect for short to ground in the following circuit:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between parking brake switch and instrument cluster terminal 1X</div>
+</dd>
+</dl>
+<div class="list">•  Is the short to ground detected?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness for a possible short to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Retrieve the instrument cluster DTC using the M-MDS.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0902e8960300.html">DTC INSPECTION [INSTRUMENT CLUSTER]</a></font>.)</div>
+<div class="tbody">If the DTC remains:</div>
+<div class="list">•  Go to the applicable DTC inspection.<div>(See <font class="extxref-label"><a href="id0902e8960500.html">DTC TABLE [INSTRUMENT CLUSTER]</a></font>.)</div>
+</div>
+<div class="tbody">If the DTC does not remain:</div>
+<div class="list">•  Replace the instrument cluster.<div>(See <font class="extxref-label"><a href="id092200010300.html">INSTRUMENT CLUSTER REMOVAL/INSTALLATION</a></font>.)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF MALFUNCTION IS IN DSC HU/CM CONNECTOR FOR POOR CONNECTION OR ELSEWHERE </div>
+<div class="list">•  Switch the ignition ON.</div>
+<div class="list">•  Does the ABS warning light, brake warning light, TCS/DSC indicator light, and DSC OFF indicator light turn off after 2 to 4 s?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect the DSC HU/CM connector or terminal. (poor connection intermittently)</div>
+<div class="list">•  If there is a malfunction, repair or replace any malfunctioning parts according to the inspection result.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">10</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT BATTERY VOLTAGE</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Inspect the battery voltage. <div>(See <font class="extxref-label"><a href="id011700800600.html">BATTERY INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is the battery voltage normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Recharge the battery and inspect the charging system.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id011700800600.html">BATTERY INSPECTION</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0117008003q8.html">GENERATOR INSPECTION [WITHOUT i-ELOOP (SKYACTIV-G 1.3, SKYACTIV-G 1.5)]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0117008002q8.html">GENERATOR REMOVAL/INSTALLATION [WITHOUT i-ELOOP (SKYACTIV-G 1.3, SKYACTIV-G 1.5)]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0117008003j8.html">GENERATOR INSPECTION [WITHOUT i-ELOOP (SKYACTIV-D 1.5)]</a></font>.)</div>
+<div class="list">•  If there is a malfunction, repair or replace any malfunctioning parts according to the inspection result.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF MALFUNCTION IS IN CHARGING SYSTEM OR ELSEWHERE</div>
+<div class="list">•  Measure the battery voltage with electrical loads (such as A/C, headlight) applied while idling.</div>
+<div class="list">•  Is the battery voltage normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect the charging system (drive belt, generator).</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0110q3801500.html">DRIVE BELT INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0110q2801500.html">DRIVE BELT INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0117008002q8.html">GENERATOR REMOVAL/INSTALLATION [WITHOUT i-ELOOP (SKYACTIV-G 1.3, SKYACTIV-G 1.5)]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0117008003q8.html">GENERATOR INSPECTION [WITHOUT i-ELOOP (SKYACTIV-G 1.3, SKYACTIV-G 1.5)]</a></font>.)</div>
+<div class="list">•  If there is a malfunction, repair or replace any malfunctioning parts according to the inspection result.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">12</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CONNECTION OF DSC HU/CM CONNECTOR</div>
+<div class="list">•  Inspect connection of the DSC HU/CM connector.</div>
+<div class="list">•  Is the DSC HU/CM connector connected securely?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Connect the DSC HU/CM connector securely, then go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">13</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">INSPECT CONNECTION OF CONNECTOR TERMINAL</div>
+<div class="list">•  Is there a poor connection in the DSC HU/CM, instrument cluster, or related-connector terminal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair the poor connection location of the terminal.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center"><img src="images/am2zzw00012010.png"></td>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">14</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF MALFUNCTION IS IN WIRING HARNESS (BETWEEN DSC HU/CM POWER SUPPLY AND DSC HU/CM FOR CONTINUITY) OR ELSEWHERE</div>
+<div class="list">•  Switch the ignition ON.</div>
+<div class="list">•  Measure the voltage at the DSC HU/CM terminal Q (wiring harness-side).</div>
+<div class="list">•  Is the voltage approx. 12 V?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refer to the wiring diagram and verify whether or not there is a common connector between DSC HU/CM terminal Q (wiring harness-side) and ignition switch.</div>
+<div class="list-title">If there is a common connector:</div>
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for an open circuit.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+<div class="list-title">If there is no common connector:</div>
+<div class="list">•  Repair or replace the wiring harness which has an open circuit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">15</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF MALFUNCTION IS IN WIRING HARNESS (BETWEEN DSC HU/CM AND GROUND FOR CONTINUITY) OR ELSEWHERE</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Disconnect the DSC HU/CM connector.</div>
+<div class="list">•  Inspect for continuity between DSC HU/CM terminal AL (wiring harness-side) and body ground.</div>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the DSC HU/CM. (open circuit in the DSC HU/CM)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0415008010b1.html">DSC HU/CM REMOVAL/INSTALLATION [L.H.D.]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0415008010b5.html">DSC HU/CM REMOVAL/INSTALLATION [R.H.D.]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the wiring harness for a possible open circuit and poor contact at the ground point.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">16</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">CONFIRM INSTRUMENT CLUSTER DTC</div>
+<div class="list">•  Retrieve the instrument cluster DTC using the M-MDS. <div>(See <font class="extxref-label"><a href="id0902e8960300.html">DTC INSPECTION [INSTRUMENT CLUSTER]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0902e8960500.html">DTC TABLE [INSTRUMENT CLUSTER]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the instrument cluster.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id092200010300.html">INSTRUMENT CLUSTER REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="list">•  When performing an asterisked (*) troubleshooting inspection, shake the wiring harness and connectors while doing the inspection to discover whether poor contact points are the cause of any intermittent malfunctions. If there is a problem, verify that connectors, terminals and wiring harnesses are connected correctly and undamaged.</div>
+</body>
+</html>

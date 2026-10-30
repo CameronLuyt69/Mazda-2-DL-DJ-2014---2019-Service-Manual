@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>LIGHTS-ON REMINDER WARNING ALARM</title>
+</head>
+<body><a name="id092200019200"></a><p class="servinfo-title"><span class="servinfo-head"></span>LIGHTS-ON REMINDER WARNING ALARM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id092200019200</p><br clear="all"><a name="id09220001920001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The lights-on reminder warning alarm warns the driver that the TNS and headlights are not turned off.</div><br clear="all"><a name="id09220001920002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The instrument cluster controls the lights-on reminder warning alarm based on the following signals:</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Signal name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Sending module/part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Communication method</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">TNS signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">HS-CAN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Driver's side front door latch switch on (door open) signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BCM</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="list">•  If the ignition is switched off or ACC when all the above vehicle condition signals are received, the instrument cluster operates the lights-on reminder warning alarm.</div>
+<div class="list">•  The lights-on reminder warning alarm operates in the pattern shown in the figure.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002865.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002865</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id09220001920003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The lights-on reminder warning alarm sounds using the buzzer built into the instrument cluster.</div><br clear="all"><a name="id09220001920004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<p class="list">1.  The instrument cluster receives (1) a TNS signal from the start stop unit and a driver's side front door latch switch on (door open) signal from the BCM via CAN communication.</p>
+<p class="list"></p>
+<p class="list">2.  When the ignition is switched ACC or off, the instrument cluster turns the transistor on (2) based on each signal.</p>
+<p class="list"></p>
+<p class="list">3.  When the transistor is turned on, the ground circuit with the lights-on reminder warning alarm is established and the lights-on reminder warning alarm operates (3).</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002866.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002866</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09220001920005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  Not applicable</div>
+</body>
+</html>

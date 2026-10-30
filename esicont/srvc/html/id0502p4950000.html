@@ -1,0 +1,218 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC TEST MODE [TCM (CW6A-EL)]</title>
+</head>
+<body><a name="id0502p4950000"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC TEST MODE [TCM (CW6A-EL)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0502p4950000</p><br clear="all"><a name="id0502p495000001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Foreword</p>
+<div class="list">•  The on-board diagnostic mode is used to diagnose a malfunction in the automatic transaxle based on the sensor signal obtained at that time by forcibly operating each solenoid and selecting each gear.</div>
+<div class="list">•  If a problem with the automatic transaxle is identified, perform the on-board diagnostic.</div>
+<div class="list">•  When DTCs are displayed by the on-board diagnosis test, perform the instructions in the applicable DTC troubleshooting.</div>
+<dl>
+<dd>
+<div class="attention1-label">Warning</div>
+</dd>
+<dd>
+<div class="attention1">
+<div class="list">•  The on-board diagnosis test forcibly changes gears within the driving shift range while the engine is running. Before implementing the on-board diagnosis test, securely apply the parking brake and set the wheel blocks for both the front and rear wheels. Otherwise, the vehicle will move which could cause injury or property damage.</div>
+<div class="list">•  Perform the DTC inspection using the M-MDS before performing on-board diagnostic because the DTC is cleared by performing the on-board diagnostic.</div>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The time required to perform the diagnostic is <span>2 to 3 min</span>.</div>
+<div class="list">•  If unsafe actions such as shift operation and brake pedal release are detected before the shift position indication flashes, the on-board diagnostic test mode is canceled and the shift position indication flashes 5 times.</div>
+</div>
+</dd>
+</dl>
+<p class="list">1.  Apply the parking brake firmly, and set the wheel blocks for both the front and rear wheels.</p>
+<p class="list"></p>
+<p class="list">2.  Inspect the ATF level. (See <font class="extxref-label"><a href="id0517l1118500.html">AUTOMATIC TRANSAXLE FLUID (ATF) INSPECTION [CW6A-EL]</a></font>.)</p>
+<p class="list"></p>
+<p class="list">3.  Connect the M-MDS to the DLC-2.</p>
+<p class="list"></p>
+<p class="list">4.  Perform vehicle identification using the M-MDS.</p>
+<p class="list"></p>
+<p class="list">5.  Start the engine.</p>
+<p class="list"></p>
+<p class="list">6.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “Data Logger”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “Modules”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(3)  Select “TCM”.</dd>
+<dd></dd>
+</dl>
+</p>
+<p class="list">7.  While checking the PID TFT (ATF temperature), warm-up the engine completely and allow the ATF temperature to reach <span>55 °C {131 °F} or more</span>.</p>
+<p class="list"></p>
+<p class="list">8.  Select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “Self Test”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “Modules”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(3)  Select “TCM”.</dd>
+<dd></dd>
+</dl>
+<dl class="list">
+<dd>(4)  Select “Retrieve CMDTCs”.</dd>
+<dd></dd>
+</dl>
+</p>
+<p class="list">9.  Perform the following steps (1) to (5) with the brake pedal depressed.</p>
+<p class="list">
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzw00004044.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzw00004044</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If the on-board diagnosis test is shut down (shift position indication flashes 5 times), resume the procedure from Step 1.</div>
+</div>
+</dd>
+</dl>
+<dl class="list">
+<dd>(1)  Shift the selector lever to the R position.</dd>
+<dd>
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am6zzw00012115.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am6zzw00012115</div>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+<dl class="list">
+<dd>(2)  Clear DTCs using the M-MDS and verify that the shift position indication flashes 2 times. (See <font class="extxref-label"><a href="id0502p4290100.html">ON-BOARD DIAGNOSTIC SYSTEM DTC INSPECTION [TCM (CW6A-EL)]</a></font>.)</dd>
+<dd>
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00008666.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00008666</div>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+<dl class="list">
+<dd>(3)  Within <span>5 s</span> after the shift position indication flashes 2 times, shift the selector lever to the N position and verify that the shift position indication flashes 2 times.</dd>
+<dd>
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00008667.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00008667</div>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+<dl class="list">
+<dd>(4)  Within <span>5 s</span> after the shift position indication flashes 2 times, shift the selector lever to the D position and verify that the shift position indication flashes 3 times.</dd>
+<dd>
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00008668.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00008668</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  <span>Approx. 30 s</span> is required until the shift position indication flashes. In addition, shift shock occurs a few times during stand-by.</div>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="list">
+<dd>(5)  After the shift position indication flashes 3 times, shift the selector lever to the P position.</dd>
+<dd>
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am6zzw00012118.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am6zzw00012118</div>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+</p>
+<p class="list">10.  Release the brake pedal.</p>
+<p class="list"></p>
+<p class="list">11.  Perform the DTC inspection using the M-MDS. (See <font class="extxref-label"><a href="id0502p4290100.html">ON-BOARD DIAGNOSTIC SYSTEM DTC INSPECTION [TCM (CW6A-EL)]</a></font>.)</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">•  If any DTCs are displayed, perform troubleshooting according to the corresponding DTC inspection. (See <font class="extxref-label"><a href="id0502p4290200.html">ON-BOARD DIAGNOSTIC SYSTEM DTC TABLE [TCM (CW6A-EL)]</a></font>.)</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

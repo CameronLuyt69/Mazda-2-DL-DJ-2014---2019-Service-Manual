@@ -1,0 +1,383 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ROOM LIGHT CONTROL SYSTEM</title>
+</head>
+<body><a name="id091800012300"></a><p class="servinfo-title"><span class="servinfo-head"></span>ROOM LIGHT CONTROL SYSTEM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091800012300</p><br clear="all"><a name="id09180001230001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The room light control system changes the illumination condition and illumination level of the interior lights (door position) according to whether the doors are opened/closed and locked/unlocked.</div><br clear="all"><a name="id09180001230002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The BCM changes the illumination condition of the map light and trunk compartment light (4SD)/cargo compartment light (5HB) and illumination level of the map light based on the following signals:</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Signal name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Sending module/part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Communication method</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Door latch switch signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Door latch switch</div>
+</td>
+<td id="" align="left" rowspan="5">
+<div class="tbody">Hard wire</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Door lock-link switch signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Front door lock-link switch (driver-side)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Trunk lid latch switch signal (4SD)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Trunk lid latch switch</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Liftgate latch switch signal (5HB)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Liftgate latch switch</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Ignition switch position signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IG1 relay</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HS-CAN</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="list">•  The electrical supply unit (ESU) turns the map light and trunk compartment light (4SD)/cargo compartment light (5HB) on/off based on the following signals:</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Signal name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Sending module/part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Communication method</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Map light on request signal</div>
+</td>
+<td id="" align="left" rowspan="3">
+<div class="tbody">BCM</div>
+</td>
+<td id="" align="left" rowspan="3">
+<div class="tbody">LIN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Trunk compartment light on request signal (4SD)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Cargo compartment light on request signal (5HB)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id09180001230003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003803.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003803</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180001230004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003804.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003804</div>
+</td>
+</tr>
+</table>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003805.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003805</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180001230005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" rowspan="2">
+<p class="thead">Operation Conditions</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Interior light</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Lights off condition</p>
+<p class="thead">(Any of the following conditions is met)</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">Illumination period</p>
+</th>
+<th id="" align="center">
+<p class="thead">Brightness level</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">With ignition switched off or ACC and all doors closed (all door latch switches are off), a condition is detected when any door is opened (any door latch switch is on)</div>
+</td>
+<td id="" align="left">
+<div class="tbody"><span>Approx. 30 min</span><sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">100 %</div>
+</td>
+<td id="" align="left">
+<div class="list">•  After illumination time elapses<sup>*2</sup></div>
+<div class="list">•  All doors other than trunk lid (4SD)/liftgate (5HB) closed (all door latch switches off)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">With any door opened (any door latch switch is on) while ignition is switched off or ACC, a condition is detected when all doors are closed (all door latch switches are off)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>Approx. 5 s</span><sup>*3</sup></div>
+<div class="list">•  <span>Approx. 15 s</span><sup>*1</sup><sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">60 %</div>
+</td>
+<td id="" align="left">
+<div class="list">•  After illumination time elapses</div>
+<div class="list">•  Driver's door lock knob locked (door lock-link switch at LOCK position)</div>
+<div class="list">•  Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">With all doors closed (all door latch switches are off) while ignition is switched off or ACC, the driver’s door lock knob is switched from lock to unlock</div>
+</td>
+<td id="" align="left">
+<div class="tbody"><span>Approx. 30 s</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody">100 %</div>
+</td>
+<td id="" align="left">
+<div class="list">•  After illumination time elapses</div>
+<div class="list">•  Driver's door lock knob locked (door lock-link switch at LOCK position)</div>
+<div class="list">•  Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">With all doors closed (all door latch switches are off) while ignition is switched ACC or ON (engine off or on), the ignition switched off condition is detected</div>
+</td>
+<td id="" align="left">
+<div class="tbody"><span>Approx. 15 s</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody">100 %</div>
+</td>
+<td id="" align="left">
+<div class="list">•  After illumination time elapses</div>
+<div class="list">•  Driver's door lock knob locked (door lock-link switch at LOCK position)</div>
+<div class="list">•  Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="list">•  Trunk lid is open (4SD)</div>
+<div class="list">•  Liftgate is open with cargo compartment light switch on (5HB)</div>
+</td>
+<td id="" align="left">
+<div class="tbody"><span>Approx. 30 min</span><sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">100 %</div>
+</td>
+<td id="" align="left">
+<div class="list">•  After illumination time elapses<sup>*5</sup></div>
+<div class="list">•  Trunk lid (4SD)/liftgate (5HB) closed</div>
+<div class="list">•  Cargo compartment light switch turned off (5HB)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :Illumination time can be changed using the Mazda Modular Diagnostic System (M-MDS) or center display (with center display). (See <font class="extxref-label"><a href="id091800013300.html">LIGHTING SYSTEM PERSONALIZATION</a></font>.)</div>
+<div class="deflist">*2  :When any of the following conditions is met after the interior lights turn off according to the off conditions, the lights turn on again.</div>
+<div class="list">―  The ignition is switched ON (engine off or on).</div>
+<div class="list">―  After closing all doors, any door is opened again. (All door latch switches off, then any door latch switch is on)</div>
+<div class="deflist">*3  :No remote transmitter inside vehicle</div>
+<div class="deflist">*4  :Remote transmitter inside vehicle</div>
+<div class="deflist">*5  :When any of the following conditions is met after the trunk compartment light (4SD)/cargo compartment light (5HB) turns off according to the off conditions, the light turns on again.</div>
+<div class="list">―  The ignition is switched ON (engine off or on).</div>
+<div class="list">―  After trunk lid is closed, and then opened again. (Trunk lid latch switch off, then switch on) (4SD)</div>
+<div class="list">―  After liftgate is closed, and then opened again. (Liftgate latch switch off, then switch on) (5HB)</div>
+<div class="list">―  Any door is opened/closed. (Any door latch switch on, then switch off)</div>
+<div class="list">―  Door is locked/unlocked. (Door lock-link switch locked, then switch unlocked)</div>
+<p clear="all">
+<p>
+<div>×: With room light control system</div>
+<div>—: No system</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="3">
+<p class="thead">Type</p>
+</th>
+<th id="" align="center">
+<p class="thead">Installation position</p>
+</th>
+<th id="" align="center">
+<p class="thead">Room light control system</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="3">
+<div class="tbody">Front map light</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Single light type</div>
+</td>
+<td id="" align="center"><img src="images/am2zzn00003806.png"></td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">Front area of roof</div>
+</td>
+<td id="" align="center" rowspan="3">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Dual light type</div>
+<div class="tbody">(without sunglasses holder)</div>
+</td>
+<td id="" align="center"><img src="images/am2zzn00003807.png"></td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Dual light type</div>
+<div class="tbody">(with sunglasses holder)</div>
+</td>
+<td id="" align="center"><img src="images/am2zzn00003808.png"></td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Rear map light (with rear map light)</div>
+</td>
+<td id="" align="center"><img src="images/am2zzn00003809.png"></td>
+<td id="" align="center">
+<div class="tbody">Center area of roof</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Trunk compartment light (4SD)</div>
+</td>
+<td id="" align="center"><img src="images/am2zzn00003810.png"></td>
+<td id="" align="center">
+<div class="tbody">Trunk compartment</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Cargo compartment light (5HB)</div>
+</td>
+<td id="" align="center"><img src="images/am2zzn00003811.png"></td>
+<td id="" align="center">
+<div class="tbody">Cargo compartment</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×<sup>*1</sup></div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :Cargo compartment light switch is on</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003812.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003812</div>
+</td>
+</tr>
+</table>
+<div class="deflist">*1  :Illumination time can be changed using the Mazda Modular Diagnostic System (M-MDS) or center display (with center display). (See <font class="extxref-label"><a href="id091800013300.html">LIGHTING SYSTEM PERSONALIZATION</a></font>.)</div>
+</body>
+</html>

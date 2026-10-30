@@ -1,0 +1,2307 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0102q2801000"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q2801000</p><br clear="all"><a name="id0102q280100001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>DTC Reading Procedure</p>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list">
+</p>
+<p class="list">2.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “Self Test”.</dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “Modules”.</dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(3)  Select “PCM”.</dd>
+<dd>
+</dd>
+</dl>
+</p>
+<p class="list">3.  Then, select the “Retrieve CMDTCs” and perform procedures according to directions on the M-MDS screen.</p>
+<p class="list">
+</p>
+<p class="list">4.  Verify the DTC according to the directions on the M-MDS screen.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">•  If any DTCs are displayed, perform troubleshooting according to the corresponding DTC inspection.</div>
+</dd>
+</dl>
+</p>
+<p class="list">5.  After completion of repairs, clear all DTCs stored in the PCM, while referring to “AFTER REPAIR PROCEDURE”.</p>
+<p class="list">
+</p><br clear="all"><a name="id0102q280100002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Pending Trouble Code Access Procedure</p>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list">
+</p>
+<p class="list">2.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “Self Test”.</dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “Modules”.</dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(3)  Select “PCM”.</dd>
+<dd>
+</dd>
+</dl>
+</p>
+<p class="list">3.  Then, select the “Retrieve CMDTCs” and perform procedures according to directions on the M-MDS screen.</p>
+<p class="list">
+</p>
+<p class="list">4.  Retrieve the pending trouble codes according to the directions on the M-MDS screen.</p>
+<p class="list">
+</p><br clear="all"><a name="id0102q280100003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Freeze Frame PID Data Access Procedure</p>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list">
+</p>
+<p class="list">2.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “Self Test”.</dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “Modules”.</dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(3)  Select “PCM”.</dd>
+<dd>
+</dd>
+</dl>
+</p>
+<p class="list">3.  Then, select the “Retrieve CMDTCs” and perform procedures according to directions on the M-MDS screen.</p>
+<p class="list">
+</p>
+<p class="list">4.  Retrieve the freeze frame PID data according to the directions on the M-MDS screen.</p>
+<p class="list">
+</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Freeze frame data/snapshot data appears at the top of the help screen when the displayed DTC is selected.</div>
+<div class="list-title">Freeze frame data</div>
+<div class="list">•  The freeze frame data consists of data for vehicle and engine control system operation conditions when malfunctions in the engine control system are detected and stored in the PCM.</div>
+<div class="list">•  Freeze frame data is stored at the instant the check engine light illuminates, and only a part of the DTC data is stored.</div>
+<div class="list">•  For the freeze frame data, if there are several malfunctions in the engine control system, the data for the malfunction which occurred initially is stored. Thereafter, if a misfire or fuel injection control malfunction occurs, data from the misfire or fuel injection control malfunction is written over the initially stored data. However, if the initially stored freeze frame data is a misfire or fuel injection control malfunction, it is not overwritten.</div>
+<div class="list-title">Snapshot data</div>
+<div class="list">•  The snapshot data stores the currently detected DTC data.</div>
+<div class="list">•  The recording timing for the freeze frame data/snapshot data differs depending on the number of DTC drive cycles.</div>
+<dl>
+<dd class="list">
+<div class="list">―  For a DTC with a drive cycle number 1, only the malfunction determination data is recorded.</div>
+<div class="list">―  For a DTC with a drive cycle number 2, both the malfunction determination and undetermined data is recorded.</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl><br clear="all"><p><a name="id0102q280100004"></a><p class="topic-title"><span class="topic-head"></span>Freeze frame data table</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Refer to PID monitor table for confirm the engine control system operation status while the PCM does not store the DTC. (See <font class="extxref-label"><a href="id0140q2113900.html">PCM INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="list">•  Freeze frame data items are not displayed, according to detected DTC.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Freeze frame data item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding PID data monitor item</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">LOAD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine load</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LOAD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manifold absolute pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VS</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VSS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake shutter valve position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ISV_POS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FRP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure at common rail</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FRP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CLRDIST</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Mileage after DTC cleared</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km, ft, mi</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CLR_DIST</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BARO</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Barometric pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BARO</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module supply voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TP_REL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake shutter valve opening angle (relative value)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">AAT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient air temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IAT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP_D</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">APP1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP_E</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">APP2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TAC_PCT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake shutter valve control desired value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ISV_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FUEL_TYP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel type</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EOT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine oil temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EOT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAF_A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Mass air flow</div>
+</td>
+<td id="" align="center">
+<div class="tbody">g/sec</div>
+</td>
+<td id="" align="center">
+<div class="tbody">MAF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EGR_A_CMD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HP-EGR control valve desired value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">HPEGR_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EGR_A_ACT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HP-EGR control valve actual value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">HPEGR_ACT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EGR_B_ERR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Commanded EGR and EGR Error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FRP_A_CMD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Commanded fuel pressure at common rail</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FRP_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FRT_A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel temperature at common rail</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FRT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BP_A_CMD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Commanded boost air pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">MAP_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BP_A_ACT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Actual measured boost air pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">MAP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BP_A_ST</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Boost air pressure status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Open Loop/Closed Loop/Fault present</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VGT_A_CMD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turbocharger with variable turbine geometry position desired value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VGTURB_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VGT_A_ACT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turbocharger with variable turbine geometry position actual value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VGTURB_ACT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EP_1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust gas pressure sensor No.1 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EXHPRES1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TCA_RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turbocharger with variable turbine geometry turbine speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VGTURB_RPM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EGT11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature sensor No.1 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EXHTEMP1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EGT12</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature sensor No.2 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EXHTEMP2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EGT13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature sensor No.3 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EXHTEMP3</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EGT14</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature sensor No.4 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EXHTEMP4</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DPF1_DP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust gas pressure sensor No.2 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EXHPRESS_DIF</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id0102q280100005"></a><p class="topic-title"><span class="topic-head"></span>Snapshot data table</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Refer to PID monitor table for confirm the engine control system operation status while the PCM does not store the DTC. (See <font class="extxref-label"><a href="id0140q2113900.html">PCM INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="list">•  Snapshot data items are not displayed, according to detected DTC.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Snapshot data item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding PID data monitor item</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">ALTT_V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Generator output voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ALTT V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Check engine light illumination status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="center">
+<div class="tbody">MIL</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">APP1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.1 voltage</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">APP1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">APP2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.2 voltage</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">APP2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ALT_CUR_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Generator target generated current</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BATT_RES</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Battery internal resistance (estimated)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ohm</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BATT_RES</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TOTAL_TIME</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Total energization time for module</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The elapsed time when the start stop unit detected a DTC can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the PID item TOTAL_TIME of the instrument cluster.</div>
+<div class="list">2.  Verify the snapshot data item TOTAL_TIME.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">hh:mm:ss</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TOTAL_DIST</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Total distance</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The distance traveled when the start stop unit detected a DTC can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the odometer value in the instrument cluster.</div>
+<div class="list">2.  Verify the snapshot data item TOTAL_DIST.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km, ft, mi</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FUELSYS</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel system status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OL/CL/OL-Drive/OL-Fault/CL-Fault</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LOAD_C</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Calculated engine load</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LOAD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VSS</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VSS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Mass airflow</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">g/sec</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TP1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake shutter valve position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ISV_POS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EG_RUN_TIME</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Time from engine start</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">hh:mm:ss</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FUEL_PRES</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FRP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SEGRP_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Target EGR valve position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EVAPCP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purge solenoid valve controlled value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FLI</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel level in fuel tank</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CLR_CNT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of warm-up cycle after DTC cleared</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CLR_DIST</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Mileage after DTC cleared</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km, ft, mi</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CLR_DIST</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FTP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel tank pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BARO</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Barometric pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BARO</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CATT11_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Estimated catalytic converter temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module supply voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EQ_RAT11_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Target equivalence ratio (lambda)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TP_REL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Relative throttle position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">AAT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient air temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IAT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TP2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve position No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ETC_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake shutter valve control desired value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ISV_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FUEL_TYP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Type of fuel currently being utilized by the vehicle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">NONE/Gas/METH/ETH/DSL/ELEC</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SHRTFT12</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Short term fuel trim (HO2S)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LONGFT12</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Long term fuel trim (HO2S)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FRP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure at common rail (absolute)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP_R</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Relative accelerator pedal position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EOT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine oil temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EOT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FUEL_TIMING</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Main fuel injection timing related to top dead center</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°(deg)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FUEL_RATE</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Percentage of fuel consumption</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">l/min</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TQ_DD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine torque requested by driver</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TQ_ACT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Actual engine torque value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAF_A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">MAF sensor value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">g/sec</div>
+</td>
+<td id="" align="center">
+<div class="tbody">MAF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT1_SUP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature No.1 support</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No/Yes</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT2_SUP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature No.2 support</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No/Yes</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature No.1 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT12</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature No.2 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature No.3 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EGRP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">EGR valve position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">HPEGR_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EGRP_ACT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">EGR valve actual opening angle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">HPEGR_ACT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EGR_ERR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Percentage of abnormal EGR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LPEGRP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Low pressure EGR valve position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LPEGRP_ACT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Low pressure EGR valve actual opening angle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LPEGR_ERR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Percentage of abnormal low pressure side EGR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EGRT11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust gas recirculation temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EGRT12</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Low pressure side exhaust gas recirculation temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TAC_A_CMD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Commanded throttle valve actuator control</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TP_A_REL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Relative throttle valve position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FRP_A_CMD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Commanded fuel pressure at common rail</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FRP_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FRP_A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure at common rail</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FRT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel temperature at common rail</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FRT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TCA_CINP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manifold absolute pressure No.1 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TCB_CINP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manifold absolute pressure No.1 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BP_A_CMD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Commanded manifold absolute pressure No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">MAP_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BP_A_ACT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manifold absolute pressure No.2 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">MAP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BP_A_ST</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manifold absolute pressure No.2 control status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Open Loop/Closed Loop/Fault present</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VGT_A_CMD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turbocharger with variable turbine geometry position desired value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VGTURB_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VGT_A_ACT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turbocharger with variable turbine geometry position actual value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VGTURB_ACT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">REGVP_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Regulating valve position desired value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">REGRP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Regulating valve position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EP_1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust gas pressure sensor No.1 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EXHPRES1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TCA_RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turbocharger with variable turbine geometry turbine speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VGTURB_RPM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CACT11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Boost air temperature sensor No.1 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CACT11</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EXHTEMP1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature sensor No.1 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EXHTEMP1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EXHTEMP2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature sensor No.2 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EXHTEMP2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EXHTEMP3</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust gas temperature sensor No.3 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EXHTEMP3</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EXHPRESS_DIF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust gas pressure sensor No.2 value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EXHPRESS_DIF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">NOX_ADS_DESULF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Desulfuration condition of NOx adsorbent</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No/Yes</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">NOX_ADS_REGEN</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Regeneration condition of NOx adsorbent</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No/Yes</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DPF_REGN_TYP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Diesel particulate filter regeneration type</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Passive/Active</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DPF_REGN_STAT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Diesel particulate filter regeneration condition</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No/Yes</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DPF_REGEN_PCT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Specified value for performing diesel particulate filter regeneration</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DPF_REGN_AVGD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Average of drive distance from previous diesel particulate filter regeneration to next diesel particulate filter regeneration</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km, ft, mi</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><a name="id0102q280100006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>On-Board System Readiness Tests Access Procedure</p>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list">
+</p>
+<p class="list">2.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “Powertrain”.</dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “OBD Test Modes”.</dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(3)  Select “Mode 1 Powertrain Data”.</dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(4)  Select “PCM”.</dd>
+<dd>
+</dd>
+</dl>
+</p>
+<p class="list">3.  Then, select the “***SUP” and “**EVAL” PIDs in the PID selection screen.</p>
+<p class="list">
+</p>
+<p class="list">4.  Monitor those PIDs and check it system monitor is completed.</p>
+<p class="list">
+</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If the on-board system readiness tests are not completed the PCM stores DTC P1000.</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0102q280100007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID/DATA Monitor and Record Procedure</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The PID data screen function is used for monitoring the calculated value of input/output signals in the module. Therefore, if the monitored value of the output parts is not within specification, it is necessary to inspect the monitored value of input parts corresponding to the applicable output part control. In addition, because the system does not display an output part malfunction as an abnormality in the monitored value, it is necessary to inspect the output parts individually.</div>
+<div class="list">•  When detecting DTCs, PIDs related to a malfunctioning system may not display even if the module is normal. Therefore, if a PID is not displayed, it is necessary to verify the DTC, perform malfunction diagnosis of the DTC that was detected, and do repairs.</div>
+</div>
+</dd>
+</dl>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list">
+</p>
+<p class="list">2.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “DataLogger”.</dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “Modules”.</dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(3)  Select “PCM”.</dd>
+<dd>
+</dd>
+</dl>
+</p>
+<p class="list">3.  Select the applicable PID from the PID table.</p>
+<p class="list">
+</p>
+<p class="list">4.  Verify the PID data according to the detections on the screen.</p>
+<p class="list">
+</p><br clear="all"><a name="id0102q280100008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Diagnostic Monitoring Test Results Access Procedure</p>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list">
+</p>
+<p class="list">2.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “Powertrain”.</dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “OBD Test Modes”.</dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(3)  Select “Mode 6 On-Board Test Results”.</dd>
+<dd>
+</dd>
+</dl>
+</p>
+<p class="list">3.  Verify the diagnostic monitoring test result according to the directions on the M-MDS screen.</p>
+<p class="list">
+</p><br clear="all"><a name="id0102q280100009"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Active Command Modes Procedure</p>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list">
+</p>
+<p class="list">2.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “DataLogger”.</dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “Modules”.</dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(3)  Select “PCM”.</dd>
+<dd>
+</dd>
+</dl>
+</p>
+<p class="list">3.  Select the simulation items from the PID table.</p>
+<p class="list">
+</p>
+<p class="list">4.  Using the active command modes function, inspect the operations for each parts.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">•  If the operation of output parts cannot be verified after the active command mode inspection is performed, this could indicate the possibility of an open or short circuit, sticking, or operation malfunction in the output parts.</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

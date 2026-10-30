@@ -1,0 +1,8758 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC SYSTEM TEST MODE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0102q1142500"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC SYSTEM TEST MODE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q1142500</p><br clear="all"><a name="id0102q114250001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Diagnostic Test Mode</p>
+<div class="list">•  To match the OBD regulations, the following diagnostic test modes have been supported.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Diagnostic test mode</p>
+</th>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Mode 01</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Sending diagnostic data (PID data monitor/On-board system readiness test)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Mode 02</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Sending freeze frame data</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Mode 03</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Sending emission-related malfunction code (Diagnostic trouble code: DTC)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Mode 04</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Clearing/resetting emission-related malfunction information</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Mode 07</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Sending continuous monitoring system test results (Pending code)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Mode 08</div>
+</td>
+<td id="" align="left">
+<div class="tbody">On-board device control (Simulation test, active command mode)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Mode 09</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Request vehicle information</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q114250002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Sending Diagnostic Data (Mode 01)</p><br clear="all"><p><a name="id0102q114250003"></a><p class="topic-title"><span class="topic-head"></span>PID data monitor</p>
+<dl>
+<dd>
+<div class="list">•  The PID data monitor items are shown below.</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">PID data monitor table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Full names</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Monitor status since DTCs cleared</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No unit</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel system loop status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Refer to list below.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LOAD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ECT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Short term fuel trim</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Long term fuel trim</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">rpm</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km/h, mph</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Spark advance</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">g/s</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Absolute TP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/F sensor and HO2S location</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No unit</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Input voltage from HO2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">OBD requirement according to vehicle design</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No unit</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Time since engine start</div>
+</td>
+<td id="" align="center">
+<div class="tbody">s</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Distance travelled while check engine light is activated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km, miles</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Purge solenoid valve control signal</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Number of warm-up since DTCs cleared</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No unit</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Distance travelled since DTCs cleared</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km, miles</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Barometric pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/F sensor output current</div>
+</td>
+<td id="" align="center">
+<div class="tbody">mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Estimated catalyst converter temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Monitor status this driving cycle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PCM voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Absolute load value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Theoretical air/fuel ratio coefficient to calculate target air/fuel ratio</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No unit</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Relative TP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TP from TP sensor No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">APP from APP sensor No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">APP from APP sensor No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Throttle valve actuator control signal</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Short term fuel trim (HO2S)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Long term fuel trim (HO2S)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="list-title">Meaning of fuel system loop status</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The following information is displayed on the tester</div>
+<dl>
+<dd class="list">
+<div class="list">―  Feedback stops: ECT is lower than the determined feedback zone</div>
+<div class="list">―  Feedback operating: A/F sensor, HO2S being used for feedback is normal</div>
+<div class="list">―  Feedback stops: Open loop due to driving condition</div>
+<div class="list">―  Feedback stops: Open loop due to detected system fault</div>
+<div class="list">―  Feedback operating: Malfunction occurred in HO2S system</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><a name="id0102q114250004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Sending Freeze Frame Data (Mode 02)</p>
+<div class="list-title">Freeze frame data</div>
+<div class="list">•  The freeze frame data consists of data for vehicle and engine control system operation conditions when malfunctions in the engine control system are detected and stored in the PCM.</div>
+<div class="list">•  Freeze frame data is stored at the instant the check engine light illuminates, and only a part of the DTC data is stored.</div>
+<div class="list">•  For the freeze frame data, if there are several malfunctions in the engine control system, the data for the malfunction which occurred initially is stored. Thereafter, if a misfire or fuel injection control malfunction occurs, data from the misfire or fuel injection control malfunction is written over the initially stored data. However, if the initially stored freeze frame data is a misfire or fuel injection control malfunction, it is not overwritten.</div>
+<div class="list-title">Snapshot data</div>
+<div class="list">•  The snapshot data stores the currently detected DTC data.</div>
+<div class="list">•  The recording timing for the freeze frame data/snapshot data differs depending on the number of DTC drive cycles.</div>
+<dl>
+<dd class="list">
+<div class="list">―  For a DTC with a drive cycle number 1, only the malfunction determination data is recorded.</div>
+<div class="list">―  For a DTC with a drive cycle number 2, both the malfunction determination and undetermined data is recorded.</div>
+</dd>
+</dl><br clear="all"><p><a name="id0102q114250005"></a><p class="topic-title"><span class="topic-head"></span>Freeze frame data table</p>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Freeze frame data item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding PID data monitor item</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">FUELSYS1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Open Loop/Closed Loop/OL-Drive/OL-Fault/CL-Fault</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel system status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FUELSYS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LOAD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Calculated engine load</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SFT1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Short term fuel trim</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SHRTFT1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LFT1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Long term fuel trim</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LONGFT1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manifold absolute pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">MAP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VSS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SPARKADV</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition timing</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SPARKADV</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IAT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">g/sec</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Mass airflow</div>
+</td>
+<td id="" align="center">
+<div class="tbody">MAF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve position No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TP1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RUNTM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">hh:mm:ss</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Time from engine start</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EVAPPCT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purge solenoid valve controlled value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FLI</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel level in fuel tank</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FLI</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WARMUPS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of warm-up cycle after DTC cleared</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CLRDIST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km, ft, mi</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Mileage after DTC cleared</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BARO</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Barometric pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BARO</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CATTEMP11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Estimated catalytic converter temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CATT11_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module supply voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ALV</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine load</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LOAD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EQ_RAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Target equivalence ratio (lambda)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EQ_RAT11_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TP_REL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Relative throttle position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TP_REL</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TP_B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve position No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TP2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP_D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">APP1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP_E</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">APP2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TAC_PCT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Target throttle valve position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ETC_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FUEL_TYP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">NONE/Gas/METH/ETH/DSL/ELEC</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Type of fuel currently being utilized by the vehicle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">STSO2FT1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Short term fuel trim (HO2S)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SHRTFT12</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LGSO2FT1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Long term fuel trim (HO2S)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LONGFT12</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FRP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure (absolute)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FUEL_PRES</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT11_SUP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No/Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature No.1 support</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT12_SUP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No/Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature No.2 support</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT12</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IAT2</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id0102q114250006"></a><p class="topic-title"><span class="topic-head"></span>Snapshot data table</p>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Snapshot data item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding PID data monitor item</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">ALTT_V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Generator output voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ALTT V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MIL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Check engine light illumination status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">MIL</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">APP1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Accelerator pedal position No.1</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">APP1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">APP2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Accelerator pedal position No.2</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">APP2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">TP1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Throttle valve position No.1</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">TP1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">TP2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Throttle valve position No.2</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">TP2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ALT_CUR_DSD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Generator current desired</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BATT_RES</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ohm</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Battery inferred internal resistance</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BATT_RES</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TOTAL_TIME</div>
+</td>
+<td id="" align="center">
+<div class="tbody">hh:mm:ss</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Total time</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The elapsed time when the PCM detected a DTC can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the instrument cluster PID item TOTAL_TIME.</div>
+<div class="list">2.  Verify the snapshot data item TOTAL_TIME.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TOTAL_DIST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km, ft, mi</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Total distance</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The distance traveled when the PCM detected a DTC can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the odometer value in the instrument cluster.</div>
+<div class="list">2.  Verify the snapshot data item TOTAL_DIST.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FUELSYS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OL/CL/OL-Drive/OL-Fault/CL-Fault</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel system status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FUELSYS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LOAD_C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Calculated engine load</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SHRTFT1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Short term fuel trim</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SHRTFT1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LONGFT1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Long term fuel trim</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LONGFT1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manifold absolute pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">MAP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VSS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VSS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SPARKADV</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition timing</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SPARKADV</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IAT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">MAF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">g/sec</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Mass airflow</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">MAF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">O2S12</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">O2S12</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EG_RUN_TIME</div>
+</td>
+<td id="" align="center">
+<div class="tbody">hh:mm:ss</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Time from engine start</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FUEL_PRES</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FUEL_PRES</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SEGRP_DSD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Target EGR valve position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EVAPCP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purge solenoid valve controlled value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FLI</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel level in fuel tank</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FLI</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CLR_CNT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Number of warm-up cycle after DTC cleared</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CLR_DIST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km, ft, mi</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Mileage after DTC cleared</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FTP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel tank pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">BARO</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Barometric pressure</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BARO</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CATT11_DSD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Estimated catalytic converter temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CATT11_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module supply voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LOAD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine load</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LOAD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EQ_RAT11_DSD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Target equivalence ratio (lambda)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">EQ_RAT11_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TP_REL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Relative throttle position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TP_REL</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">AAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient air temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ETC_DSD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Target throttle valve position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ETC_DSD</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FUEL_TYP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">NONE/Gas/METH/ETH/DSL/ELEC</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Type of fuel currently being utilized by the vehicle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SHRTFT12</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Short term fuel trim (HO2S)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SHRTFT12</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LONGFT12</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Long term fuel trim (HO2S)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LONGFT12</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FRP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure (absolute)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FUEL_PRES</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT2_SUP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No/Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature No.2 support</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT12</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">IAT2</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><a name="id0102q114250007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Status Byte for DTC</p>
+<div class="list">•  The two digits (two digits after hyphen (-)) after the 7-digit DTC.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am6zzn00002907.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am6zzn00002907</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  A code which indicates the pending code, current/past malfunction status, or warning illumination status.</div>
+<div class="list">•  Can be read by performing a CMDTC self-test using the Mazda Modular Diagnostic System (M-MDS).</div>
+<div class="list">•  For details on the status byte, refer to the explanation on the Mazda Modular Diagnostic System (M-MDS) when reading the DTC.</div><br clear="all"><a name="id0102q114250008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Sending Emission-related Malfunction Code (DTC) (Mode 03)</p>
+<div class="list">•  The DTCs are shown below.</div>
+<p clear="all">
+<p>
+<div>×: Applicable</div>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Check engine light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Master warning light</p>
+</th>
+<th id="" align="center">
+<p class="thead">i-stop warning light (amber)</p>
+</th>
+<th id="" align="center">
+<p class="thead">Charging system warning light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Engine oil warning light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Wrench warning indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe function</p>
+</th>
+<th id="" align="center">
+<p class="thead">Drive cycle</p>
+</th>
+<th id="" align="center">
+<p class="thead">Monitor item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Self test type<sup>*1</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">Memory function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">B10A2:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle collision</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0010:00<sup>*13</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric variable valve timing control circuit range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0011:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electric variable valve timing control system: over-advanced<sup>*13</sup></div>
+<div class="list">•  Hydraulic variable valve timing control system: over-advanced<sup>*14</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0012:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electric variable valve timing control system: over-retarded<sup>*13</sup></div>
+<div class="list">•  Hydraulic variable valve timing control system:over-retarded<sup>*14</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0014:00<sup>*13</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Hydraulic variable valve timing control system: over-advanced</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0015:00<sup>*13</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Hydraulic variable valve timing control system: over-retarded</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0031:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor heater control circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor heater, HO2S heater</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0032:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor heater control circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor heater, HO2S heater</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0037:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S heater control circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor heater, HO2S heater</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0038:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S heater control circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor heater, HO2S heater</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0069:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manifold absolute pressure/atmospheric pressure correlation problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0072:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient temperature sensor circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0073:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient temperature sensor circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0087:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure sensor circuit range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0088:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure sensor circuit range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0089:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Spill valve control solenoid valve control circuit range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0091:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure regulator control circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0092:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure regulator control circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0097:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.2 circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0098:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.2 circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0101:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">MAF sensor circuit range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0102:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">MAF sensor circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0103:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">MAF sensor circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0107:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">MAP sensor circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0108:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">MAP sensor circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0112:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.1 circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0113:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.1 circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0116:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON<sup>*16</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECT sensor circuit range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Engine cooling system</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0117:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECT sensor circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Engine cooling system</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0118:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECT sensor circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Engine cooling system</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0122:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TP sensor No.1 circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0123:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TP sensor No.1 circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0130:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Voltage problem between PCM terminal 1AB and PCM terminal 1AG</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor, HO2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0131:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor, HO2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0132:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor, HO2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0133:00<sup>*15</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor circuit slow response</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor, HO2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0134:00<sup>*13</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor circuit no activity detected</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor, HO2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0137:00<sup>*15</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor, HO2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0138:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor, HO2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P013A:00<sup>*15</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S: Slow response (during transition from rich to lean)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor, HO2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0140:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S circuit no activity detected</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor, HO2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0171:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel trim system too lean</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Fuel system</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0172:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel trim system too rich</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Fuel system</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0192:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure sensor circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0193:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure sensor circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0201:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector circuit/open cylinder No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0202:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector circuit/open cylinder No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0203:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector circuit/open cylinder No.3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0204:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector circuit/open cylinder No.4</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0222:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TP sensor No.2 circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0223:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TP sensor No.2 circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P025B:00<sup>*17</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pump control module circuit range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P025C:00<sup>*17</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pump control module result of on-board diagnostic test low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P025D:00<sup>*17</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pump control module result of on-board diagnostic test high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0300:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash/ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Random misfire detected</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Misfire</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0301:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash/ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cylinder No.1 misfire detected</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Misfire</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0302:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash/ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cylinder No.2 misfire detected</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Misfire</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0303:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash/ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cylinder No.3 misfire detected</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Misfire</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0304:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash/ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cylinder No.4 misfire detected</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Misfire</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0327:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">KS circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0328:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">KS circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0335:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CKP sensor circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0340:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake CMP sensor circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0365:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust CMP sensor circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0421:00<sup>*15</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Catalytic converter system</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Catalyst</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0443:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purge solenoid valve circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0461:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel gauge sender unit circuit range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0462:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel gauge sender unit circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0463:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel gauge sender unit circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0480:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cooling fan relay No.2 control circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0482:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cooling fan relay No.1 control circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0500:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">VSS circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0504:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake switch circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0520:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0524:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON<sup>*10</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine oil pressure too low</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0532:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refrigerant pressure sensor circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0533:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refrigerant pressure sensor circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0555:00<sup>*7</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Power brake unit vacuum sensor circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P057F:00<sup>*9</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Power system: Battery deterioration</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P058A:00<sup>*9</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON<sup>*11</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Current sensor: Function malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0600:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Serial communication link</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0601:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM memory check sum error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0602:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM programming error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0604:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM RAM error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0606:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM processor error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0607:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Control module performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0610:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM vehicle configuration error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0615:00<sup>*7</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Starter/starter relay operation amount</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P061B:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Internal control module torque calculation performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P061D:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Internal control module engine air mass performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P061F:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Internal control module throttle valve actuator controller performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0628:00<sup>*17</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pump control module circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0629:00<sup>*17</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pump control module circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0638:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve actuator control range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P064D:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Internal control module A/F sensor processor performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor, HO2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0685:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Main relay control circuit open</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P06B8:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Internal control module non-volatile RAM error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P06DA:00<sup>*13</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine oil solenoid valve circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0703:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake switch input circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0704:00<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CPP switch input circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P07BE:00<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Transmission indeterminate failure (failed to neutral)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0850:00<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Neutral switch No.1 input circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0A0F:00<sup>*7</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine failed to restart</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0A8D:00<sup>*9</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Power supply system circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0A8F:00<sup>*9</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Power system: Low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P0A94:00<sup>*9</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON<sup>*5</sup>/OFF<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON<sup>*5</sup>/OFF<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="list">•  DC-DC converter: control circuit signal error<sup>*6</sup></div>
+<div class="list">•  DC-DC converter (i-ELOOP): control circuit signal error<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P111A:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature is high</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P117A:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine oil temperature is high</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P1260:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Immobilizer system problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P1380:00<sup>*13</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric variable valve timing control circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P151B:00<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IAC system problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P176E:00<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Clutch stroke sensor/Starter interlock switch correlation problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2088:00<sup>*14</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">OCV circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2089:00<sup>*14</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">OCV circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2090:00<sup>*13</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">OCV circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2091:00<sup>*13</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">OCV circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2096:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S fuel injection control system: air fuel too lean</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Fuel system</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2097:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HO2S fuel injection control system: air fuel too rich</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Fuel system</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2101:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve actuator control motor circuit range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2107:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve actuator control module processor error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2109:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TP sensor minimum stop range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2110:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve actuator control system-forced limited RPM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2112:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve actuator motor current range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2119:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve actuator control throttle body range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2122:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">APP sensor No.1 circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2123:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">APP sensor No.1 circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2127:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">APP sensor No.2 circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2128:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">APP sensor No.2 circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2135:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TP sensor No.1/No.2 voltage correlation problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2138:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">APP sensor No.1/No.2 voltage correlation problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2199:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.2 correlation problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2226:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BARO sensor range/performance problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2228:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BARO sensor circuit low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2229:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BARO sensor circuit high input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2237:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Open circuit between A/F sensor terminal B and PCM terminal 1AG</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor, HO2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2243:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor reference voltage circuit open</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor, HO2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2251:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Open circuit between A/F sensor terminal D and PCM terminal 1AB</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A/F sensor, HO2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2299:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal: spring back malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2302:00<sup>*13</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ion sensor No.1 circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2305:00<sup>*13</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ion sensor No.2 circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2308:00<sup>*13</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ion sensor No.3 circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2311:00<sup>*13</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ion sensor No.4 circuit problem</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2502:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON<sup>*11</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Generator system: Malfunction in voltage generated by generator</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2503:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON<sup>*11</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Generator system: Voltage generated by generator is low</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2504:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON<sup>*11</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Generator system: Voltage generated by generator is high</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2507:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM battery voltage low input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P2610:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON<sup>*16</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Malfunction in instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0073:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN system communication error (HS CAN)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0074:00<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN system communication error (local CAN between PCM and TCM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0101:00<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to TCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to ABS HU/CM or DSC HU/CM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to EPS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to SAS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to start stop unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0235:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN communication: communication error to laser sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0298:00<sup>*9</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON<sup>*5</sup>/OFF<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CAN/LIN communication system: DC-DC converter information communication error with BCM<sup>*6</sup></div>
+<div class="list">•  CAN communication: communication error to DC-DC converter (i-ELOOP)<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0302:00<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCM processor error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0315:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ABS HU/CM or DSC HU/CM error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0320:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">EPS control module error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0323:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0336:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">SAS control module error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0338:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0433:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Abnormal message from laser sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U1007:00<sup>*15</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON<sup>*11</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">CAN/LIN communication system: current sensor information communication error with BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U2300:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON<sup>*12</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Global central configuration error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U3000:41</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">PCM processor error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Other</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :C: CMDTC self test, O: KOEO self test, R: KOER self test</div>
+<div class="deflist">*2  :KOER self test only</div>
+<div class="deflist">*3  :MTX</div>
+<div class="deflist">*4  :ATX</div>
+<div class="deflist">*5  :Vehicles with i-ELOOP</div>
+<div class="deflist">*6  :Vehicles without i-ELOOP</div>
+<div class="deflist">*7  :Vehicles with i-stop system</div>
+<div class="deflist">*8  :Vehicles with i-stop system (MTX)</div>
+<div class="deflist">*9  :Vehicles with i-stop or i-ELOOP</div>
+<div class="deflist">*10  :Displays a message related to an engine hydraulic pressure malfunction in the display. (With center display)</div>
+<div class="deflist">*11  :Displays a message related to a charge system malfunction in the display. (With center display)</div>
+<div class="deflist">*12  :Displays a message related to a vehicle system malfunction in the display. (With center display)</div>
+<div class="deflist">*13  :SKYACTIV-G 1.5 (with 4-2-1 exhaust system)</div>
+<div class="deflist">*14  :Except SKYACTIV-G 1.5 (with 4-2-1 exhaust system)</div>
+<div class="deflist">*15  :If equipped</div>
+<div class="deflist">*16  :The check engine light may be illuminated depending on the condition.</div>
+<div class="deflist">*17  :Vehicles with fuel pump control module</div><br clear="all"><a name="id0102q114250009"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Sending Continuous Monitoring System Test Results (pending code) (Mode 07)</p>
+<div class="list">•  These appear when a problem is detected in a monitored system.</div><br clear="all"><p><a name="id0102q114250010"></a><p class="topic-title"><span class="topic-head"></span>1-drive cycle type</p>
+<dl>
+<dd>
+<div class="list">•  If any problems are detected in the first drive cycle, pending codes will be stored in the PCM memory, as well as DTCs.</div>
+<div class="list">•  After pending codes are stored, if the PCM determines that the system is normal in any future drive cycle, the PCM deletes the pending codes.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0102q114250011"></a><p class="topic-title"><span class="topic-head"></span>2-drive cycle type</p>
+<dl>
+<dd>
+<div class="list">•  The code for a failed system is stored in the PCM memory in the first drive cycle. If the PCM determines that the system returned to normal or the problem was mistakenly detected, and deletes the pending code. If the problem is found in the second drive cycle too, the PCM determines that the system has failed, and stores the pending codes, and the DTCs.</div>
+<div class="list">•  After pending codes are stored, if the PCM determines that the system is normal in any future drive cycle, the PCM deletes the pending codes.</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

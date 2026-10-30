@@ -1,0 +1,18 @@
+﻿var currentflowMAP = {
+'MZ2UKS0918_9.svg':'MZ2UKS0918_9_flow.html',
+'MZ2UKS0919_1a.svg':'MZ2UKS0919_1a_flow.html',
+'MZ2UKS0919_2.svg':'MZ2UKS0919_2_flow.html',
+'MZ2UKS0921_2.svg':'MZ2UKS0921_2_flow.html',
+'MZ2UKS0912_1.svg':'MZ2UKS0912_1_flow.html',
+'MZ2UKS0918_1a.svg':'MZ2UKS0918_1a_flow.html',
+'MZ2UKS0918_5F2a.svg':'MZ2UKS0918_5F2a_flow.html',
+'MZ2UKS0918_5F3a.svg':'MZ2UKS0918_5F3a_flow.html',
+'MZ2UKS0918_4.svg':'MZ2UKS0918_4_flow.html',
+'MZ2UKS0918_5a.svg':'MZ2UKS0918_5a_flow.html',
+'MZ2UKS0119_1.svg':'MZ2UKS0119_1_flow.html',
+'MZ2UKS0112_2.svg':'MZ2UKS0112_2_flow.html',
+'MZ2UKS0112_1.svg':'MZ2UKS0112_1_flow.html',
+'MZ2UKS0922_2.svg':'MZ2UKS0922_2_flow.html',
+'MZ2UKS0918_6.svg':'MZ2UKS0918_6_flow.html',
+'MZ2UKS0918_7a.svg':'MZ2UKS0918_7a_flow.html',
+};

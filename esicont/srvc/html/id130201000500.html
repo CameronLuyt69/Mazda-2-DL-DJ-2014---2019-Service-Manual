@@ -1,0 +1,686 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>PID/DATA MONITOR INSPECTION [i-ELOOP]</title>
+</head>
+<body><a name="id130201000500"></a><p class="servinfo-title"><span class="servinfo-head"></span>PID/DATA MONITOR INSPECTION [i-ELOOP]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id130201000500</p>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list">
+</p>
+<p class="list">2.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS.</p>
+<p class="list">
+<dl class="list">
+<dd>(1)  Select “DataLogger”. </dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(2)  Select “Modules”. </dd>
+<dd>
+</dd>
+</dl>
+<dl class="list">
+<dd>(3)  Select “DCDC”. </dd>
+<dd>
+</dd>
+</dl>
+</p>
+<p class="list">3.  Select the applicable PID from the PID table.</p>
+<p class="list">
+</p>
+<p class="list">4.  Verify the PID data according to the directions on the screen.</p>
+<p class="list">
+</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The PID data screen function is used for monitoring the calculated value of input/output signals in the module. Therefore, if the monitored value of the output component is not within the specification, it is necessary to inspect the monitored value of input component corresponding to the applicable output part control. In addition, because the system does not display an output part malfunction as an abnormality in the monitored value, it is necessary to inspect the output component individually.</div>
+<div class="list">•  When detecting DTCs, PIDs related to a malfunctioning system may not display even if the module is normal. Therefore, if a PID is not displayed, it is necessary to verify the DTC, perform malfunction diagnosis of the DTC that was detected, and do repairs.</div>
+<div class="list">•  The [Type] in the PID/data monitor table is indicated as follows.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Input: Value input to module</div>
+<div class="list">―  Conversion: Value converted into value input to module</div>
+<div class="list">―  Calculation: Value calculated for several input values in module</div>
+<div class="list">―  Output: Value output by module</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Type</p>
+</th>
+<th id="" align="center">
+<p class="thead">description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Condition/Specification (Reference)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">ALT_STOP_REQ</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On/Off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the generator output stop request send status. The DC-DC converter (i-ELOOP) sends the generator output stop request to the PCM via CAN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  On: Generator output stop request is sent</div>
+<div class="list">•  Off: Generator output stop request is not sent</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BYPS_RLY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Open/Close</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Input</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the bypass relay connection request reception status. The DC-DC convertor (i-ELOOP) receives a bypass relay connection request from the PCM via CAN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Open: Bypass relay connection request is received</div>
+<div class="list">•  Close: Bypass relay connection is not received</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BYPS_RLY_TEMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the bypass relay temperature.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays the bypass relay temperature.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BYPS_STAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Bypass Off/Bypass On/Bypass Off fault/Bypass On fault</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the bypass relay status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Bypass OFF: Bypass relay OFF</div>
+<div class="list">•  Bypass On: Bypass relay ON</div>
+<div class="list">•  Bypass Off fault: Bypass relay OFF (Fail)</div>
+<div class="list">•  Bypass On fault: Bypass relay ON (Fail)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAP_DIS_RLY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Connect (On)/Disconnect (Off)/Fault (On)/Fault (Off)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the capacitor (i-ELOOP) relay status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Connect (On): Capacitor (i-ELOOP) relay ON</div>
+<div class="list">•  Disconnect (Off):  Capacitor (i-ELOOP) relay OFF</div>
+<div class="list">•  Fault (On): Capacitor (i-ELOOP) relay ON (Fail)</div>
+<div class="list">•  Fault (Off): Capacitor (i-ELOOP) relay OFF (Fail)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAP_SYS10</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On/Off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the open ciucuit condition of the capacitor circuit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  On: Capacitor (i-ELOOP) open cuircuit</div>
+<div class="list">•  Off: Capacitor circuit is normal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAP_SYS 14</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On/Off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the deterioration condition of the capacitor capacitance.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  On: Capacitor (i-ELOOP) capacitance status deteriorates</div>
+<div class="list">•  Off: Capacitor (i-ELOOP) capacitance status is normal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAP_SYS 16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On/Off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the deterioration condition of the capacitor internal resistance.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  On: Internal resistance status in capacitor (i-ELOOP) is not normal</div>
+<div class="list">•  Off: Internal resistance status in capacitor (i-ELOOP) is normal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAP_SYS 17</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On/Off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the short to ground condition of the capacitor internal circuit. </div>
+</td>
+<td id="" align="left">
+<div class="list">•  On: Capacitor internal circuit is shorted to ground</div>
+<div class="list">•  Off: Capacitor internal circuit is normal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAP_V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Input</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the capacitor (i-ELOOP) output voltage.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Switch ignition ON (engine off): Approx. 13.96 V</div>
+<div class="list">•  Idle: Approx. 13.78 V</div>
+<div class="list">•   Racing (engine speed above 2,000 rpm): Approx. 14.25 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CAPA_TEMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the capacitor (i-ELOOP) temperature.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays the capacitor (i-ELOOP) temperature.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CHARGE_FLG</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On/Off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Quick charge function set condition when replacing the capacitor is displayed.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  On: Quick charge function request when replacing capacitor is sent</div>
+<div class="list">•  Off: Quick charge function request when replacing capacitor is not sent</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CHG_WARN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On/Off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the charge warning request send status. The DC-DC convertor (i-ELOOP) sends a charge warning request to the PCM via CAN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  On: Charge warning request is sent</div>
+<div class="list">•  Off: Charge warning request is not sent</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CONV_OUT_V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Input</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the output voltage in voltage reduction circuit.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Switch ignition ON (engine off): Approx. 12.54 V</div>
+<div class="list">•  Idle: Approx. 14.46 V</div>
+<div class="list">•   Racing (engine speed above 2,000 rpm): Approx. 14.48 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CONV_STAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Ready/Power Output(Idle)/Power Output(Normal)/Power Output(Limit)/Safe Mode//Power Output(Stop)/Error/Default Mode</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the voltage reduction circuit operation status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Ready: Preparation for voltage reduction completed </div>
+<div class="list">•  Power Output (Idle): Output stopped</div>
+<div class="list">•  Power Output (Normal): During output</div>
+<div class="list">•  Power Output (Limit): Target output value not achieved due to limit</div>
+<div class="list">•  Safe Mode: Self-protection status (voltage reduction circuit inoperable)</div>
+<div class="list">•  Power Output (Stop): When a voltage reduction circuit malfunction occurs, output from the voltage reduction circuit stops</div>
+<div class="list">•  Error: Voltage reduction circuit is malfunctioning</div>
+<div class="list">•  Default Mode: Voltage reduction circuit outputs a fixed voltage (13.5 V)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DCDC_IN_V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Input</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the DC-DC converter (i-ELOOP) input voltage.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Switch ignition ON (engine off): Approx. 13.92 V</div>
+<div class="list">•  Idle: Approx. 14.48 V</div>
+<div class="list">•   Racing (engine speed above 2,000 rpm): Approx. 14.48 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DCDC_OUT_A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Input</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the DC-DC converter (i-ELOOP) output current.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Switch ignition ON (engine off): Approx. 600 mA</div>
+<div class="list">•  Idle: Approx. 400 mA</div>
+<div class="list">•   Racing (engine speed above 2,000 rpm): Approx. 400 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DCDC_OUT_V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Input</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the DC-DC converter (i-ELOOP) output voltage.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Switch ignition ON (engine off): Approx. 12.54 V</div>
+<div class="list">•  Idle: Approx. 14.46 V</div>
+<div class="list">•   Racing (engine speed above 2,000 rpm): Approx. 14.46 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DCDC_TEMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Conversion</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the DC-DC converter (i-ELOOP) temperature</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays the DC-DC converter (i-ELOOP) temperature</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DEGEN_COUNT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the number of times the system switches to safe mode due to high temperature in the DC-DC converter (i-ELOOP).</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays the number of times the system switches to safe mode due to high temperature in the DC-DC converter (i-ELOOP).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DEGEN_WARN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Ok/Degeneration warning/Degeneration</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the control status due to high temperature in the DC-DC converter (i-ELOOP).</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays the control status due to high temperature in the DC-DC converter (i-ELOOP).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DIODE_STAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">O.K./FAULT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the diode circuit status.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  O.K.: Diode circuit status in DC-DC converter (i-ELOOP) is normal</div>
+<div class="list">•  FAULT: Diode circuit status in DC-DC converter (i-ELOOP) is not normal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IR_REQ</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On/Off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays i-stop restart request send status. The DC-DC convertor (i-ELOOP) sends an i-stop restart request to the PCM via CAN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  On: i-stop restart request is sent</div>
+<div class="list">•  Off: i-stop restart request is not sent</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IR_SW_STAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Connect (On)/Disconnect (Off)/Fault (On)/Fault (Off)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">State of IR relay within DC-DC Converter (i-ELOOP)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Connect (On): IR relay ON </div>
+<div class="list">•  Disconnect (Off): IR relay OFF</div>
+<div class="list">•  Fault (On): IR relay ON (Fail)</div>
+<div class="list">•  Fault (Off): IR relay OFF (Fail)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">I-STOP_REQ</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On/Off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the i-stop inhibit request send status. The DC-DC convertor (i-ELOOP) sends an i-stop inhibit request to the PCM via CAN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  On: i-stop inhibit request is sent</div>
+<div class="list">•  Off: i-stop inhibit request is not sent</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAS_WARN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On/Off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the master warning light illumination request send status. The DC-DC convertor (i-ELOOP) sends a master warning light illumination request to the instrument cluster via CAN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  On: Master warning light illumination request is sent</div>
+<div class="list">•  Off: Master warning light illumination request is not sent</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">OUT_M_CUR1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Calculation</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output Mean Current in IG On (last time)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays the average value of the DC-DC converter (i-ELOOP) output current from the previous time the ignition was switched ON.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">OUT_M_CUR2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Calculation</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output Mean Current in IG On (2 times before)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays the average value of the DC-DC converter (i-ELOOP) output current from the previous 2 times that the ignition was switched ON.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">OUT_M_CUR3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Calculation</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output Mean Current in IG On (3 times before)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays the average value of the DC-DC converter (i-ELOOP) output current from the previous 3 times that the ignition was switched ON.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">OUT_M_CUR4</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Calculation</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output Mean Current in IG On (4 times before)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays the average value of the DC-DC converter (i-ELOOP) output current from the previous 4 times that the ignition was switched ON.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">OUT_M_CUR5</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Calculation</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output Mean Current in IG On (5 times before)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays the average value of the DC-DC converter (i-ELOOP) output current from the previous 5 times that the ignition was switched ON.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PRECHG_WARN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On/Off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the pre-charge warning indication request send status. The DC-DC convertor (i-ELOOP) sends a pre-charge warning indication request to the instrument cluster via CAN communication.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  On: Pre-charge warning indication request is sent</div>
+<div class="list">•  Off: Pre-charge warning indication request is not sent</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">PURGE_RESLT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Charged/Purged/Fault</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Output</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Result of charge purge on capacitor (i-ELOOP) after IG Off</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays the purge result of the capacitor (i-ELOOP) electrical charge after the ignition is switched off.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

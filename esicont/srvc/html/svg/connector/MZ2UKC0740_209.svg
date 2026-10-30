@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "../../../../../../../../../ns.adobe.com/Extensibility/1.0/default.htm">
+	<!ENTITY ns_ai "../../../../../../../../../ns.adobe.com/AdobeIllustrator/10.0/default.htm">
+	<!ENTITY ns_graphs "../../../../../../../../../ns.adobe.com/Graphs/1.0/default.htm">
+	<!ENTITY ns_vars "../../../../../../../../../ns.adobe.com/Variables/1.0/default.htm">
+	<!ENTITY ns_imrep "../../../../../../../../../ns.adobe.com/ImageReplacement/1.0/default.htm">
+	<!ENTITY ns_sfw "../../../../../../../../../ns.adobe.com/SaveForWeb/1.0/default.htm">
+	<!ENTITY ns_custom "../../../../../../../../../ns.adobe.com/GenericCustomNamespace/1.0/default.htm">
+	<!ENTITY ns_adobe_xpath "../../../../../../../../../ns.adobe.com/XPath/1.0/default.htm">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="145.247px"
+	 height="95.204px" viewBox="0 0 145.247 95.204" enable-background="new 0 0 145.247 95.204" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="SEN">
+			<rect x="58.857" y="52.688" fill="#007FFF" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			<rect x="42.756" y="52.688" fill="#7F1AFF" stroke="#000000" stroke-width="0.1" width="16.053" height="11.946"/>
+			<rect x="74.958" y="52.688" fill="#FFB3FF" stroke="#000000" stroke-width="0.1" width="16.054" height="11.947"/>
+			<polygon fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				58.809,42.929 58.809,49.967 74.911,42.929 74.911,49.967 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="58.809" y1="42.929" x2="74.911" y2="42.929"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="74.911" y1="52.559" x2="74.911" y2="64.635"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="58.809" y1="52.559" x2="58.809" y2="64.635"/>
+			
+				<rect x="42.708" y="52.559" fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" width="48.303" height="12.076"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M93.291,62.725
+				c0,2.201-1.799,4-4,4H44.428c-2.2,0-4-1.799-4-4v-8.258c0-2.2,1.8-4,4-4h44.863c2.201,0,4,1.8,4,4V62.725z"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M39.509,50.437
+				c0.917-1.177,2.346-1.938,3.945-1.938h15.336"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				38.455,52.59 33.955,52.59 33.955,50.424 39.455,50.424 			"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M75.006,48.499h15.258
+				c1.628,0,3.081,0.788,3.995,2.001l0.004-0.077h5.5v2.167h-4.5l-0.079,0.015c0.054,0.29,0.08,0.589,0.08,0.894v3.922l-0.001,0.003
+				h4.5v2.166h-4.5l0.001,0.008v4.096c0,2.75-2.25,5-5,5h-46.81c-2.75,0-5-2.25-5-5V59.59h-4.5v-2.166h4.5v-3.925
+				c0-0.301,0.026-0.597,0.079-0.884"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M39.589,70.284
+				c0.691,0.855,2.158,1.555,3.258,1.555h48.025c1.1,0,2.566-0.699,3.258-1.555"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M42.653,73.762
+				c0.662,0.879,2.104,1.598,3.204,1.598h42.006c1.101,0,2.542-0.719,3.204-1.598l9.684-10.045c0.455-0.228,0.829-1.314,0.829-2.414
+				V49.579c0-1.1-0.899-2-2-2h-0.837c-1.101,0-2.755-0.492-3.676-1.093l-7.739-4.896c-0.921-0.601-2.575-1.093-3.675-1.093H50.067
+				c-1.1,0-2.754,0.492-3.675,1.093l-7.739,4.896c-0.922,0.601-2.575,1.093-3.675,1.093H34.14c-1.1,0-2,0.9-2,2v11.724
+				c0,1.1,0.373,2.187,0.829,2.414L42.653,73.762z"/>
+			<rect x="42.334" y="22.808" fill="#999999" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			
+				<line fill="none" stroke="#FF0000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" x1="55.773" y1="58.704" x2="55.773" y2="34.755"/>
+			<circle fill="none" stroke="#FF0000" stroke-width="0.5" cx="55.772" cy="58.704" r="1.12"/>
+			<line fill="none" stroke="#FF0000" stroke-width="0.5" x1="56.351" y1="59.628" x2="55.164" y2="59.628"/>
+			<line fill="none" stroke="#FF0000" stroke-width="0.5" x1="56.507" y1="57.862" x2="55.06" y2="57.862"/>
+			<line fill="none" stroke="#FF0000" stroke-width="0.5" x1="56.707" y1="59.331" x2="54.845" y2="59.331"/>
+			<line fill="none" stroke="#FF0000" stroke-width="0.5" x1="56.839" y1="59.003" x2="54.699" y2="59.003"/>
+			<line fill="none" stroke="#FF0000" stroke-width="0.5" x1="56.777" y1="58.237" x2="54.757" y2="58.237"/>
+			<line fill="none" stroke="#FF0000" stroke-width="0.5" x1="56.861" y1="58.659" x2="54.652" y2="58.659"/>
+			<rect x="42.334" y="22.809" fill="none" stroke="#000000" stroke-width="0.7" width="16.053" height="11.946"/>
+		</g>
+		<g id="TEXT">
+			<text transform="matrix(1 0 0 1 65.5288 60.4678)" font-family="'Arial'" font-size="5">L</text>
+			<text transform="matrix(1 0 0 1 49.1274 60.4678)" font-family="'Arial'" font-size="5">V</text>
+			<text transform="matrix(1 0 0 1 81.3296 60.4678)" font-family="'Arial'" font-size="5">P</text>
+			<text transform="matrix(1 0 0 1 46.6865 30.5879)" font-family="'Arial'" font-size="5">GY</text>
+			<text transform="matrix(1 0 0 1 2.8345 19.1997)" font-family="'Arial'" font-size="8">REFRIGERANT PRESSURE SENSOR</text>
+			<text transform="matrix(1 0 0 1 2.8345 9.6997)" font-family="'Arial'" font-size="8">0740-209</text>
+			<text transform="matrix(1 0 0 1 81.0073 81.3828)" font-family="'Arial'" font-size="6">A</text>
+			<text transform="matrix(1 0 0 1 65.1519 81.3828)" font-family="'Arial'" font-size="6">B</text>
+			<text transform="matrix(1 0 0 1 49.0913 81.3828)" font-family="'Arial'" font-size="6">C</text>
+			<text transform="matrix(1 0 0 1 55.7495 90.4209)" font-family="'Arial'" font-size="6">[BLACK]</text>
+			<text transform="matrix(1 0 0 1 60.3755 30.8413)" font-family="'Arial'" font-size="6">: SKYACTIV-D 1.5</text>
+		</g>
+	</g>
+</switch>
+</svg>

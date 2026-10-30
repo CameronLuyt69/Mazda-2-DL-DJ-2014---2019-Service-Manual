@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>FUEL PRESSURE CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5988200"></a><p class="servinfo-title"><span class="servinfo-head"></span>FUEL PRESSURE CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5988200</p><br clear="all"><a name="id0140z598820001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The PCM performs feedback control of the fuel pressure in the common rail to gain optimum fuel injection pressure according to engine operation conditions.</div>
+<div class="list">•  Because the fuel pressure can be controlled regardless of the engine operation conditions, high pressure fuel injection even at low engine speeds is possible. As a result, generation of NOx and PM can be reduced.</div><br clear="all"><a name="id0140z598820002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003745.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003745</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z598820003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The PCM controls the fuel pressure in the common rail by controlling the suction control valve and fuel pressure relief valve to maintain a constant, appropriate fuel injection pressure (target fuel pressure).</div>
+<div class="list">•  The PCM calculates the target fuel pressure based on the engine speed and fuel injection amount.</div>
+<dl>
+<div class="list-title">Target fuel pressure</div>
+<dd class="list">
+<div class="list">At engine start: <span>approx. 35—50 MPa {357—509 kgf/cm<sup>2</sup>, 5,077—7,251 psi}</span></div>
+<div class="list">At engine restart by i-stop control: <span>approx. 46 MPa {469 kgf/cm<sup>2</sup>, 6,672 psi}</span></div>
+<div class="list">During fuel injection amount learning: <span>approx. 35—160 MPa {357—1,631 kgf/cm<sup>2</sup>, 5,077—23,206 psi}</span></div>
+</dd>
+</dl>
+<div class="list-title">Suction control valve learning</div>
+<div class="list">•  The PCM increases/decreases the fuel pressure from the supply pump by sending a duty signal to the suction control valve.</div>
+<div class="list">•  The PCM adjusts the percentage of valve open/close time, which is controlled by the fuel pressure feed amount, by changing the duty ratio of the duty signal and the energization time for <span>1 cycle</span>.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003746.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003746</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  If the PCM receives an immobilizer system related signal from the start-stop unit (engine starting refused), it stops the suction control valve to interrupt fuel supply to the common rail.</div>
+<div class="list-title">Fuel pressure relief valve control</div>
+<div class="list">•  If the fuel pressure in the common rail is higher than the target fuel pressure, the PCM opens the fuel pressure valve and shuttles fuel pressure in the common rail to the lower case side.</div>
+<div class="list">•  By shuttling fuel pressure in the common rail to the lower case side, the actual fuel pressure is adjusted more closely to the target fuel pressure.</div>
+</body>
+</html>

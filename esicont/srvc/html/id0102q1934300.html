@@ -1,0 +1,1625 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P0172:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0102q1934300"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P0172:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q1934300</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  To determine the malfunctioning part, proceed with the diagnostics from "Function Inspection Using M-MDS".</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0102q193430001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Details On DTCs</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DESCRIPTION</p>
+</th>
+<th id="" align="left" colspan="2">
+<p class="thead">Fuel trim system too rich</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="6">
+<div class="tbody">DETECTION CONDITION</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Determination conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  The sum of the fuel feedback correction amount (SHRTFT1) and the fuel learning correction amount (LONGFT1) is the specified value (<span>−25 %</span>) or less, and <span>10 s or more</span> have elapsed with the fuel learning correction amount (LONGFT1) at the specified value (<span>−15 %</span>) or less.</div>
+<div class="list">―  While the engine is idling or the vehicle is driven, the fuel feedback correction amount reaches the lower limit (<span>−25 % or less</span>) for <span>20 s or more</span>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Preconditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Engine coolant temperature: <span>0—45 °C {32—113 °F}</span>, <span>60 °C {140 °F} or more</span><sup>*1</sup></div>
+<div class="list"><sup>*1</sup>: Value can be verified by displaying PIDs using M-MDS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Malfunction determination period</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>10 s</span> or <span>20 s</span> period</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Drive cycle</div>
+</td>
+<td id="" align="left">
+<div class="list">•  2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Self test type</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CMDTC self test</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Sensor used</div>
+</td>
+<td id="" align="left">
+<div class="list">•  A/F sensor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FAIL-SAFE FUNCTION</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VEHICLE STATUS WHEN DTCs ARE OUTPUT</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Illuminates check engine light.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">POSSIBLE CAUSE</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Erratic signal to PCM</div>
+<dl>
+<dd class="list">
+<div class="list">―  ECT sensor signal malfunction</div>
+<div class="list">―  MAF sensor signal malfunction</div>
+<div class="list">―  MAP sensor signal malfunction</div>
+<div class="list">―  IAT sensor No.2 signal malfunction</div>
+<div class="list">―  Related connector or terminals malfunction</div>
+<div class="list">―  Related wiring harness malfunction</div>
+</dd>
+</dl>
+<div class="list">•  High-pressure side fuel delivery system malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  Fuel pressure sensor malfunction</div>
+<div class="list">―  Relief valve (built-into high pressure fuel pump) malfunction</div>
+<div class="list">―  Spill valve control solenoid valve control circuit malfunction (damage to driver in PCM caused by short circuit to ground system)</div>
+<div class="list">―  Spill valve control solenoid valve (built-into high pressure fuel pump) malfunction</div>
+<div class="list">―  High pressure fuel pump malfunction</div>
+</dd>
+</dl>
+<div class="list">•  Low-pressure side fuel delivery system malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  Fuel filter clogged (built-into fuel pump unit)</div>
+<div class="list">―  Low pressure side fuel line restriction (between fuel pump unit and high pressure fuel pump)</div>
+<div class="list">―  Fuel pump unit malfunction</div>
+<div class="list">―  Pressure regulator (built-into fuel pump unit) malfunction</div>
+<div class="list">―  Fuel pump control module malfunction</div>
+</dd>
+</dl>
+<div class="list">•  Fuel injector malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  Improper operation of fuel injector</div>
+<div class="list">―  Fuel injector related wiring harness malfunction</div>
+</dd>
+</dl>
+<div class="list">•  Improper operation of purge control system</div>
+<dl>
+<dd class="list">
+<div class="list">―  Purge solenoid valve malfunction</div>
+<div class="list">―  Purge solenoid hoses improper connection</div>
+</dd>
+</dl>
+<div class="list">•  MAF sensor malfunction</div>
+<div class="list">•  MAP sensor malfunction</div>
+<div class="list">•  Improper operation of electric variable valve timing control system</div>
+<dl>
+<dd class="list">
+<div class="list">―  Electric variable valve timing driver malfunction</div>
+<div class="list">―  Electric variable valve timing motor malfunction</div>
+<div class="list">―  Electric variable valve timing actuator malfunction</div>
+</dd>
+</dl>
+<div class="list">•  Improper operation of hydraulic variable valve timing control system</div>
+<div class="list">•  A/F sensor malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  A/F sensor loose</div>
+</dd>
+</dl>
+<div class="list">•  PCM malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q193430002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<div class="list">•  Not applicable</div><br clear="all"><a name="id0102q193430003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Explanation (DTC Detection Outline)</p>
+<div class="list">•  The PCM detects the oxygen concentration in the exhaust gas from the A/F sensor signal and performs fuel injection amount feedback to maintain the optimum air/fuel ratio. If a condition in which the feedback correction amount is small (fuel injection amount being decreased) continues for the specified time, a feedback correction amount malfunction is determined, and a DTC is stored. The feedback correction amount has a “Fuel feedback correction amount” for the air/fuel ratio and a “Fuel learning correction amount” for fuel injector deterioration over time.</div>
+<div class="list">•  “Fuel feedback correction amount (SHRTFT1)” and “Fuel learning correction amount (LONGFT1)” can be verified from the M-MDS PID item.</div>
+<div class="list">1.  The sum of the fuel feedback correction amount (SHRTFT1) and the fuel learning correction amount (LONGFT1) is the specified value (<span>−25 %</span>) or less, and <span>10 s or more</span> have elapsed with the fuel learning correction amount (LONGFT1) at the specified value (<span>−15 %</span>) or less.<div>Engine coolant temperature: <span>0—45 °C {32—113 °F}</span>, <span>60 °C {140 °F} or more</span></div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzw00017023.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzw00017023</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">2.  Fuel learning correction amount (LONGFT1) at the specified value (<span>−25%</span>) or less.<div>Engine coolant temperature: <span>0—45 °C {32—113 °F}</span>, <span>60 °C {140 °F} or more</span></div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am6zzw00011820.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am6zzw00011820</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id0102q193430004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Repeatability Verification Procedure</p>
+<div class="list">1.  Warm up the engine to allow the engine coolant temperature to reach <span>80 °C {176 °F} or more</span>.</div>
+<div class="list">2.  Start the engine and leave it idling for <span>1 min</span>.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Match the engine coolant temperature in the recorded FREEZE FRAME DATA/snapshot data, the vehicle speed, and engine speed values to the best extent possible while driving the vehicle.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">3.  Try to reproduce the malfunction by driving the vehicle for <span>5 min</span> based on the values in the FREEZE FRAME DATA/snapshot data.</div><br clear="all"><a name="id0102q193430005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID Item/Simulation Item Used In Diagnosis</p>
+<p clear="all">
+<p class="table-title">PID/DATA monitor item table</p>
+<p>
+<div>
+</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Condition/Specification</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">APP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal opening angle (relative value) with the fully released status as 0% and fully depressed status as 100%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Accelerator pedal released: Approx. 0%</div>
+<div class="list">•  Accelerator pedal fully depressed: Approx. 100%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">ECT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature input from ECT sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays ECT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ECT sensor voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Ignition switched ON (engine off)</div>
+<div class="list">•  ECT is 29 °C {84 °F}: Approx. 2.65 V</div>
+<div class="list-title">Idle (after warm up)</div>
+<div class="list">•  ECT is 88 °C {190 °F}: Approx. 0.71 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EVAPCP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Purge solenoid valve control duty value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Idle (after warm up): 0% (ECT 59 °C {140 °F} or less)</div>
+<div class="list">•  Racing (Engine speed 2,000 rpm): 33—35% (ECT is 94 °C {201 °F})</div>
+<div class="list">•  Racing (Engine speed 4,000 rpm): 53—55% (ECT is 94 °C {201 °F})</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pump relay operation status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Ignition switched ON (engine off): Off</div>
+<div class="list">•  Cranking: On</div>
+<div class="list">•  Idle (after warm up): On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">FUEL_PRES</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure input from fuel pressure sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays fuel pressure</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel pressure sensor voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="list-title">Ignition switched ON (engine off)</div>
+<div class="list">•  Fuel pressure is approx. 16.91 MPa {172.4 kgf/cm<sup>2</sup>, 2453 psi}: Approx. 2.91 V</div>
+<div class="list-title">Idle (after warm up)</div>
+<div class="list">•  Fuel pressure is 3.44—3.95 MPa {35.1—40.2 kgf/cm<sup>2</sup>, 499—572 psi}: 0.98—1.05 V (ECT is 90 °C {194 °F})</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">IAT2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">IAT sensor No.2 voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="list">•  IAT2 is 20 °C {68 °F}: Approx. 3.57 V</div>
+<div class="list">•  IAT2 is 40 °C {104 °F}: Approx. 2.70 V</div>
+<div class="list">•  IAT2 is 60 °C {140 °F}: Approx. 1.87 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">MAF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Mass air flow input from MAF sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">g/Sec</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays MAF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAF sensor voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Ignition switched ON (engine off) (MAF: 0.59 g/s {0.078 lb/min}): Approx. 0.72 V</div>
+<div class="list">•  Idle (after warm up) (MAF: 2.17 g/s {0.287 lb/min}): Approx. 0.97 V</div>
+<div class="list">•  Racing (engine speed is 2,000 rpm) (MAF: 4.73 g/s {0.626 lb/min}): Approx. 1.26 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Manifold absolute pressure input from MAP sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays MAP</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAP_V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">MAP sensor voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Ignition switched ON (engine off) (MAP:101 kPa {1.03 kgf/cm<sup>2</sup>, 14.6 psi}): Approx. 4.12 V</div>
+<div class="list">•  Idle (after warm up) (MAP: 33 kPa {0.34 kgf/cm<sup>2</sup>, 4.8 psi}): Approx. 1.9 V</div>
+<div class="list">•  Racing (engine speed is 2,000 rpm) (MAP: 26 kPa {0.27 kgf/cm<sup>2</sup>, 3.8 psi}): Approx. 1.23 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">O2S11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/F sensor current</div>
+</td>
+<td id="" align="center">
+<div class="tbody">µA</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Idle (after warm up): 0—50 µA</div>
+<div class="list">•  Deceleration fuel cut (accelerator pedal released from engine speed of 4,000 rpm or more): Approx. 3.84 mA</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TP_REL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle valve opening angle (relative value) with value at throttle valve fully close timing as the start point</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Accelerator pedal released: Approx. 12%</div>
+<div class="list">•  Accelerator pedal fully depressed: Approx. 82%</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VT_EX_ACT</div>
+</td>
+<td id="" align="left">
+<div class="list-title">SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system)</div>
+<div class="list">•  Actual intake valve timing</div>
+<div class="list-title">SKYACTIV-G 1.5 (with 4-2-1 exhaust system)</div>
+<div class="list">•  Actual exhaust valve timing</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+<td id="" align="left">
+<div class="list-title">SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system)</div>
+<div class="list">•  Displays actual intake valve timing</div>
+<dl>
+<div class="list-title">Idle (after warm up)</div>
+<dd class="list">
+<div class="list">―  Below 1 °</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Racing (engine speed is 2,000 rpm)</div>
+<dd class="list">
+<div class="list">―  Approx. 26 °</div>
+</dd>
+</dl>
+<div class="list-title">SKYACTIV-G 1.5 (with 4-2-1 exhaust system)</div>
+<div class="list">•  Displays actual exhaust valve timing</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VT_EX_DES</div>
+</td>
+<td id="" align="left">
+<div class="list-title">SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system)</div>
+<div class="list">•  Desired intake valve timing</div>
+<div class="list-title">SKYACTIV-G 1.5 (with 4-2-1 exhaust system)</div>
+<div class="list">•  Desired exhaust valve timing</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+<td id="" align="left">
+<div class="list-title">SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system)</div>
+<div class="list">•  Displays desired intake valve timing</div>
+<dl>
+<div class="list-title">Idle (after warm up)</div>
+<dd class="list">
+<div class="list">―  Approx. 0 °</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Racing (engine speed is 2,000 rpm)</div>
+<dd class="list">
+<div class="list">―  Approx. 26 °</div>
+</dd>
+</dl>
+<div class="list-title">SKYACTIV-G 1.5 (with 4-2-1 exhaust system)</div>
+<div class="list">•  Displays desired exhaust valve timing</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VT_IN_ACT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Actual intake valve timing</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+<td id="" align="left">
+<div class="list-title">SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system)</div>
+<div class="list">•  Displays in the M-MDS but it does not operate.</div>
+<div class="list-title">SKYACTIV-G 1.5 (with 4-2-1 exhaust system)</div>
+<div class="list">•  Displays actual intake valve timing</div>
+<dl>
+<div class="list-title">Idle (after warm up)</div>
+<dd class="list">
+<div class="list">―  Approx. 57 °</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Racing (engine speed is 2,000 rpm)</div>
+<dd class="list">
+<div class="list">―  Approx. 84 °</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VT_IN_DES</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Desired intake valve timing</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+<td id="" align="left">
+<div class="list-title">SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system)</div>
+<div class="list">•  Displays in the M-MDS but it does not operate.</div>
+<div class="list-title">SKYACTIV-G 1.5 (with 4-2-1 exhaust system)</div>
+<div class="list">•  Displays desired intake valve timing</div>
+<dl>
+<div class="list-title">Idle (after warm up)</div>
+<dd class="list">
+<div class="list">―  Approx. 0 °</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Racing (engine speed is 2,000 rpm)</div>
+<dd class="list">
+<div class="list">―  Approx. 29 °</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Simulation item table</p>
+<p>
+<div>
+</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Operation</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">INJ_1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Select OFF to forcibly stop fuel injector No.1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">INJ_2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Select OFF to forcibly stop fuel injector No.2.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">INJ_3</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector No.3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Select OFF to forcibly stop fuel injector No.3.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">INJ_4</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector No.4</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Select OFF to forcibly stop fuel injector No.4.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q193430006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Inspection Using M-MDS</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: IDENTIFY TRIGGER DTC FOR FREEZE FRAME DATA</div>
+<div class="list">•  Is the DTC P0172:00 on FREEZE FRAME DATA?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure for DTC on FREEZE FRAME DATA.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">RECORD FREEZE FRAME DATA/SNAPSHOT DATA AND DIAGNOSTIC MONITORING TEST RESULTS TO UTILIZE WITH REPEATABILITY VERIFICATION</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Recording can be facilitated using the screen capture function of the PC.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Record the FREEZE FRAME DATA/snapshot data and DIAGNOSTIC MONITORING TEST RESULTS (fuel system related) on the repair order.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF INPUT SIGNAL TO PCM AFFECTS FUEL INJECTION</div>
+<div class="list">•  Start the engine.</div>
+<div class="list">•  Access the following PIDs using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  ECT</div>
+<div class="list">―  APP</div>
+<div class="list">―  TP_REL</div>
+</dd>
+</dl>
+<div class="list">•  Is there any signal that is far out of specification?<div>(See <font class="extxref-label"><a href="id0140q1802500.html">PCM INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect the suspected sensor and related wiring harness.</div>
+<div class="list">•  If there is any malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Repair or replace the malfunctioning part.</div>
+<div class="list">―  Go to the troubleshooting procedure to perform the procedure from Step 13.</div>
+</dd>
+</dl>
+<div class="list">•  If there is no malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Go to the next step.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY CONNECTOR CONNECTIONS</div>
+<div class="list">•  Start the engine.</div>
+<div class="list">•  Access the following PIDs using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  FUEL_PRES</div>
+<div class="list">―  FP</div>
+<div class="list">―  EVAPCP</div>
+<div class="list">―  MAF</div>
+<div class="list">―  MAP</div>
+<div class="list">―  MAP_V</div>
+<div class="list">―  IAT2</div>
+<div class="list">―  VT_EX_ACT</div>
+<div class="list">―  VT_IN_ACT (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</div>
+</dd>
+</dl>
+<div class="list">•  When the following parts are shaken, does the PID value include a PID item which has changed?</div>
+<dl>
+<dd class="list">
+<div class="list">―  Fuel pressure sensor</div>
+<div class="list">―  Fuel pump control module</div>
+<div class="list">―  Purge solenoid valve</div>
+<div class="list">―  MAF sensor</div>
+<div class="list">―  MAP sensor/IAT sensor No.2</div>
+<div class="list">―  OCV</div>
+<div class="list">―  Electric variable valve timing motor/driver (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</div>
+<div class="list">―  PCM</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the applicable connector parts.</div>
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY FUEL PRESSURE (HIGH-SIDE) MALFUNCTION</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Reconnect all disconnected connectors.</div>
+<div class="list">•  Start the engine and idle it.</div>
+<div class="list">•  Access the FUEL_PRES PID using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the FUEL_PRES PID value <span>approx. 3 MPa {31 kgf/cm<sup>2</sup>, 435 psi}</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">FUEL_PRES PID value is lower than <span>3 MPa {31 kgf/cm<sup>2</sup>, 435 psi}</span>:</div>
+<div class="list">•  Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+<div class="tbody">FUEL_PRES PID value is higher than <span>3 MPa {31 kgf/cm<sup>2</sup>, 435 psi}</span>:</div>
+<div class="list">•  Go to Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY FUEL PRESSURE (LOW-SIDE) MALFUNCTION</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Verify the fuel pressure on the low pressure side with the operation of the high pressure fuel pump turned off.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Bleed the remaining pressure in the fuel line using the following procedure.</div>
+<dl>
+<dd class="list">
+<div class="list">1.  Switch the ignition off.</div>
+<div class="list">2.  Disconnect the high pressure fuel pump connector.</div>
+<div class="list">3.  Disconnect the fuel pump relay.</div>
+<div class="list">4.  Start the engine and wait until the engine stalls.</div>
+</dd>
+</dl>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Install the fuel pump relay.</div>
+<div class="list">•  Switch the ignition ON (engine off).</div>
+<div class="list">•  Display PID FUEL_PRES and simulation item FP using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Turn simulation item FP on.</div>
+<div class="list">•  Is the FUEL_PRES PID value <span>430 kPa {4.38 kgf/cm<sup>2</sup>, 62.4 psi} or more</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF MALFUNCTION CAUSED BY FUEL INJECTOR IMPROPER OPERATION</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Reconnect all disconnected connectors.</div>
+<div class="list">•  Start the engine and idle it.</div>
+<div class="list">•  Access the following simulation items using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  INJ_1</div>
+<div class="list">―  INJ_2</div>
+<div class="list">―  INJ_3</div>
+<div class="list">―  INJ_4</div>
+</dd>
+</dl>
+<div class="list">•  Turn each fuel injector from on to off using the simulation items.</div>
+<div class="list">•  Does the vibration during idling worsen?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 3.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF MALFUNCTION CAUSED BY PURGE SOLENOID VALVE IMPROPER OPERATION</div>
+<div class="list">•  Start the engine and idle it.</div>
+<div class="list">•  Access the EVAPCP PID using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the EVAPCP PID value normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 4.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">10</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY MAF SENSOR</div>
+<div class="list">•  Start the engine and idle it.</div>
+<div class="list">•  Access the MAF PID using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the MAF PID value normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 5.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY MAP SENSOR</div>
+<div class="list">•  Start the engine and idle it.</div>
+<div class="list">•  Access the following PIDs using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  MAP</div>
+<div class="list">―  MAP_V</div>
+</dd>
+</dl>
+<div class="list">•  Are all items normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 7.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">12</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY INTAKE VALVE TIMING</div>
+<div class="list">•  Start the engine and idle it.</div>
+<div class="list">•  Access the following PIDs using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  SKYACTIV-G 1.5 (with 4-2-1 exhaust system):</div>
+<dl>
+<dd class="list">
+<div class="list">•  VT_IN_ACT</div>
+<div class="list">•  VT_IN_DES</div>
+</dd>
+</dl>
+<div class="list">―  SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system):</div>
+<dl>
+<dd class="list">
+<div class="list">•  VT_EX_ACT</div>
+<div class="list">•  VT_EX_DES</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  Depress the accelerator pedal to increase the engine speed.</div>
+<div class="list">•  Does the monitor value of the PID item VT_IN_ACT conform to the VT_IN_DES PID value? (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</div>
+<div class="list">•  Does the monitor value of the PID item VT_EX_ACT conform to the VT_EX_DES PID value? (SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system))</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">SKYACTIV-G 1.5 (with 4-2-1 exhaust system):</div>
+<div class="list">•  Go to the next step.</div>
+<div class="tbody">SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system):</div>
+<div class="list">•  Go to Step 14.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">SKYACTIV-G 1.5 (with 4-2-1 exhaust system):</div>
+<div class="list">•  Go to the troubleshooting procedure to perform the procedure from Step 8.</div>
+<div class="tbody">SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system):</div>
+<div class="list">•  Go to the troubleshooting procedure to perform the procedure from Step 11.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">13</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY EXHAUST VALVE TIMING</div>
+<div class="list">•  Start the engine and idle it.</div>
+<div class="list">•  Access the following PIDs using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  VT_EX_ACT</div>
+<div class="list">―  VT_EX_DES</div>
+</dd>
+</dl>
+<div class="list">•  Perform the following:</div>
+<dl>
+<dd class="list">
+<div class="list">1.  Warm up the engine to allow the engine coolant temperature to reach <span>80 °C {176 °F} or more</span>.</div>
+<div class="list">2.  Shift to 2nd gear (MTX)/D position (ATX) and rapidly accelerate the vehicle to <span>50 km/h {31 mph}</span> (to operate hydraulic variable valve timing control).</div>
+<div class="list">3.  Decelerate to idling.</div>
+<div class="list">4.  Shift to 2nd gear (MTX)/D position (ATX) and rapidly accelerate the vehicle to <span>50 km/h {31 mph}</span> again.</div>
+</dd>
+</dl>
+<div class="list">•  Does the monitor value of the PID item VT_EX_ACT conform to the VT_EX_DES PID value?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 11.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">14</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY A/F SENSOR</div>
+<div class="list">•  Access the O2S11 PID using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the O2S11 PID value normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 12.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">15</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY DTC</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Retrieve the PCM DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q193430007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Troubleshooting Diagnostic Procedure</p>
+<div class="list-title">Intention of troubleshooting procedure</div>
+<div class="list">•  Step 1—3</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform a fuel injector control system inspection.</div>
+</dd>
+</dl>
+<div class="list">•  Step 4</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform an emission system parts inspection.</div>
+</dd>
+</dl>
+<div class="list">•  Step 5—7</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform an intake air system parts inspection.</div>
+</dd>
+</dl>
+<div class="list">•  Step 8—11</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform a valve timing inspection.</div>
+</dd>
+</dl>
+<div class="list">•  Step 12</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform an exhaust system parts inspection.</div>
+</dd>
+</dl>
+<div class="list">•  Step 13</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verify that the primary malfunction is resolved and there are no other malfunctions.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF FUEL PUMP CONTROL MODULE</div>
+<div class="list">•  Inspect the fuel pump control module.<div>(See <font class="extxref-label"><a href="id0114q1175100.html">FUEL PUMP CONTROL MODULE INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the fuel pump control module, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0114q1175000.html">FUEL PUMP CONTROL MODULE REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF FUEL PUMP UNIT</div>
+<div class="list">•  Inspect the fuel pump unit.<div>(See <font class="extxref-label"><a href="id0114q1801100.html">FUEL PUMP UNIT INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the fuel pump unit, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0114q1800900.html">FUEL PUMP UNIT REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF FUEL INJECTOR</div>
+<div class="list">•  Inspect the fuel injector.<div>(See <font class="extxref-label"><a href="id0114q1800700.html">FUEL INJECTOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the fuel injector, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0114q1800600.html">FUEL INJECTOR REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF PURGE SOLENOID VALVE</div>
+<div class="list">•  Inspect the purge solenoid valve.<div>(See <font class="extxref-label"><a href="id0116q1800900.html">PURGE SOLENOID VALVE INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the purge solenoid valve, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0116q1804300.html">PURGE SOLENOID VALVE REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF MAF SENSOR</div>
+<div class="list">•  Inspect the MAF sensor.<div>(See <font class="extxref-label"><a href="id0140q1800700.html">MASS AIR FLOW (MAF) SENSOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the MAF sensor/IAT sensor No.1, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q1900300.html">MASS AIR FLOW (MAF) SENSOR/INTAKE AIR TEMPERATURE (IAT) SENSOR NO.1 REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: AIR CLEANER ELEMENT</div>
+<div class="list">•  Remove the air cleaner element with the engine is running.<div>(See <font class="extxref-label"><a href="id0113q1800200.html">AIR CLEANER ELEMENT REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Does the engine speed increase?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect the air cleaner element.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0113q1800800.html">AIR CLEANER ELEMENT INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="list">•  If there is any malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Clean or replace the air cleaner element, then go to Step 13.<div>(See <font class="extxref-label"><a href="id0113q1800200.html">AIR CLEANER ELEMENT REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  If there is no malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Go to the next step.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF MAP SENSOR</div>
+<div class="list">•  Reconnect all disconnected connectors.</div>
+<div class="list">•  Inspect the MAP sensor.<div>(See <font class="extxref-label"><a href="id0140q1800900.html">MANIFOLD ABSOLUTE PRESSURE (MAP) SENSOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the MAP sensor/IAT sensor No.2, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q1900400.html">MANIFOLD ABSOLUTE PRESSURE (MAP) SENSOR/INTAKE AIR TEMPERATURE (IAT) SENSOR NO.2 REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">SKYACTIV-G 1.5 (with 4-2-1 exhaust system):</div>
+<div class="list">•  Go to the next step.</div>
+<div class="tbody">SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system):</div>
+<div class="list">•  Go to Step 11.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF ELECTRIC VARIABLE VALVE TIMING DRIVER</div>
+<div class="list">•  Inspect the electric variable valve timing driver.<div>(See <font class="extxref-label"><a href="id0110q3828100.html">ELECTRIC VARIABLE VALVE TIMING MOTOR/DRIVER INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the electric variable valve timing motor/driver, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0110q3808100.html">ELECTRIC VARIABLE VALVE TIMING MOTOR/DRIVER REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF ELECTRIC VARIABLE VALVE TIMING MOTOR</div>
+<div class="list">•  Inspect the electric variable valve timing motor.<div>(See <font class="extxref-label"><a href="id0110q3828100.html">ELECTRIC VARIABLE VALVE TIMING MOTOR/DRIVER INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the electric variable valve timing motor/driver, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0110q3808100.html">ELECTRIC VARIABLE VALVE TIMING MOTOR/DRIVER REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">10</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF ELECTRIC VARIABLE VALVE TIMING ACTUATOR</div>
+<div class="list">•  Inspect the electric variable valve timing actuator.<div>(See <font class="extxref-label"><a href="id0110q3555500.html">ELECTRIC VARIABLE VALVE TIMING ACTUATOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the electric variable valve timing actuator, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0110q3126900.html">ELECTRIC VARIABLE VALVE TIMING ACTUATOR, HYDRAULIC VARIABLE VALVE TIMING ACTUATOR REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF OCV</div>
+<div class="list">•  Inspect the OCV.<div>(See <font class="extxref-label"><a href="id0110q3801400.html">OIL CONTROL VALVE (OCV) INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the OCV, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0110q3801300.html">OIL CONTROL VALVE (OCV) REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">12</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF A/F SENSOR</div>
+<div class="list">•  Inspect the A/F sensor.<div>(See <font class="extxref-label"><a href="id0140q1899600.html">AIR FUEL RATIO (A/F) SENSOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the A/F sensor, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q1899700.html">AIR FUEL RATIO (A/F) SENSOR REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">13</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFICATION OF VEHICLE REPAIR COMPLETION</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1865400.html">CLEARING DTC [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id0102q193430004">Repeatability Verification Procedure</a></font>.)</div>
+</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the PENDING CODE for this DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q1802400.html">PCM REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

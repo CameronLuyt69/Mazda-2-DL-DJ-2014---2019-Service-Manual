@@ -1,0 +1,306 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>TRIP COMPUTER INFORMATION SYSTEM</title>
+</head>
+<body><a name="id092200018000"></a><p class="servinfo-title"><span class="servinfo-head"></span>TRIP COMPUTER INFORMATION SYSTEM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id092200018000</p><br clear="all"><a name="id09220001800001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The trip computer system displays instantaneous fuel economy, average fuel economy (with tachometer), remaining travel distance, average vehicle speed (with tachometer), and vehicle speed alarm (vehicle speed alarm).</div><br clear="all"><a name="id09220001800002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The instrument cluster controls the trip computer system based on the following signals.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Signal name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Sending module/part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Communication method</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle speed signal</div>
+</td>
+<td id="" align="left" rowspan="3">
+<div class="tbody">PCM</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="tbody">HS-CAN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel injection amount signal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Traveled distance signal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering switch operation signal (with tachometer)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Start stop unit</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><p><a name="id09220001800003"></a><p class="topic-title"><span class="topic-head"></span>Instantaneous fuel economy calculation function</p>
+<dl>
+<dd>
+<div class="list">•  The instrument cluster calculates the instantaneous fuel economy based on the fuel injection amount and traveled distance over the past <span>2 s</span> when the vehicle speed is at the set value or more. In addition, the calculation results are updated <span>every 2 s</span>.<p class="figure-title">Instantaneous fuel economy formula</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002974.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002974</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  When there is no fuel consumption, such as during engine braking, &lt;0.0 L/100 km&gt; or &lt;99.9 mpg&gt; is displayed.</div>
+<div class="list">•  The instantaneous fuel economy is displayed when the vehicle speed reaches <span>7.06 km/h {4.39 mph} or more</span>, and &lt;--- L/100 km&gt; or &lt;--- mpg&gt; is displayed when the vehicle speed decreases to <span>4.24 km/h {2.63 mph} or less</span>.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002975.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002975</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220001800004"></a><p class="topic-title"><span class="topic-head"></span>Average fuel economy calculation function (With tachometer)</p>
+<dl>
+<dd>
+<div class="list">•  The instrument cluster calculates the average fuel economy based on the traveled distance and fuel consumption from connecting the battery or resetting the average fuel economy. In addition, the calculation results are updated every minute.<p class="figure-title">Average fuel economy formula</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002976.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002976</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  When the cumulative traveled distance is <span>0 km {0 mile}</span>, &lt;99.9 L/100 km&gt; or &lt;0.0 mpg&gt; is displayed.</div>
+<div class="list">•  If the INFO button is pressed for <span>1.5 s or more</span> while the average fuel economy is displayed, the cumulative fuel economy and cumulative traveled distance data are reset.</div>
+<div class="list">•  If tripmeter A is reset, the average fuel economy is also reset.</div>
+<div class="list">•  During the <span>1 min period</span> after the data has been reset, &lt;--- L/100 km&gt; or &lt;--- mpg&gt; is displayed.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220001800005"></a><p class="topic-title"><span class="topic-head"></span>Remaining travel distance calculation function</p>
+<dl>
+<dd>
+<div class="list">•  The instrument cluster calculates the remaining travel distance based on the instantaneous fuel economy at <span>0.1 km {0.06 mile}</span> prior, cumulative fuel economy, and the fuel tank level. In addition, the calculation results are updated <span>every 1 s</span>.<p class="figure-title">Remaining travel distance formula</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002977.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002977</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The instrument cluster displays &lt;0 km&gt; or &lt;0 miles&gt; when the fuel tank level is <span>6 L {2 US gal, 1 Imp gal}</span>.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220001800006"></a><p class="topic-title"><span class="topic-head"></span>Average vehicle speed calculation function (With tachometer)</p>
+<dl>
+<dd>
+<div class="list">•  The instrument cluster calculates the average vehicle speed based on the cumulative traveled distance and cumulative traveled time from connecting the battery or resetting the average vehicle speed. In addition, the calculation results are updated <span>every 10 s</span>.<p class="figure-title">Average vehicle speed formula</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002978.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002978</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  If the INFO button is pressed for <span>1.5 s or more</span> while the average vehicle speed is displayed, the average vehicle speed (cumulative traveled distance and cumulative traveled time data) is reset.</div>
+<div class="list">•  During the <span>1 min period</span> after the data has been reset, &lt;--- km/h&gt; or &lt;--- mph&gt; is displayed.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220001800007"></a><p class="topic-title"><span class="topic-head"></span>Vehicle speed alarm function (With vehicle speed alarm)</p>
+<dl>
+<dd>
+<div class="list">•  The instrument cluster compares the current vehicle speed with the speed set by the user and if the current vehicle speed exceeds the set vehicle speed, the alarm is triggered.</div>
+<div class="list">•  The set vehicle speed can be set in <span>10 km/h</span> or <span>10 mph</span> increments between <span>30 km/h—250 km/h</span> or <span>20 mph—150 mph</span>.</div>
+<div class="list">•  If the vehicle speed alarm is not set, &lt;--- km/h&gt; or &lt;--- mph&gt; is displayed.</div>
+<div class="list">•  The instrument cluster outputs a warning display and warning sound when the current vehicle speed is the same as the set vehicle speed.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002979.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002979</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The instrument cluster switches the warning display back to the screen prior to the warning display when the current vehicle speed is <span>-5 km/h {-3 mph} or less</span> than the set vehicle speed.</div>
+<div class="list">•  The alarm sound pattern is as shown in the figure.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002980.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002980</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09220001800008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002981.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002981</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09220001800009"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002982.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002982</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09220001800010"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">1.  When the ignition is switched ON (engine on), the instrument cluster receives (1) the vehicle speed signal, fuel injection amount signal, and traveled distance signal from the PCM, and the steering switch operation signal (with tachometer) from the start stop unit via CAN communication.</div>
+<div class="list">2.  The instrument cluster calculates (2) the instantaneous fuel economy and others based on the received data.</div>
+<div class="list">3.  The instrument cluster displays (3) the calculated results in the LCD.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002983.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002983</div>
+</td>
+</tr>
+</table><br clear="all"><p><a name="id09220001800011"></a><p class="topic-title"><span class="topic-head"></span>Trip computer display switching operation</p>
+<dl>
+<dd>
+<div class="list-title">Vehicles with tachometer</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The instrument cluster switches the trip computer display content as follows based on the steering switch operation signal from the start stop unit.</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002984.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002984</div>
+</td>
+</tr>
+</table>
+<p class="figure-title">Display screen table</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002985.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002985</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="list-title">Vehicles without tachometer</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When the tripmeter switch is pressed, the instrument cluster switches the tripmeter display content as follows:</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002986.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002986</div>
+</td>
+</tr>
+</table>
+<p class="figure-title">Display screen table</p>
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002987.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002987</div>
+</td>
+</tr>
+</table>
+</p>
+</body>
+</html>

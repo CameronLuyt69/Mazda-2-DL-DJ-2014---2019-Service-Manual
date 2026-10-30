@@ -1,0 +1,206 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>HILL LAUNCH ASSIST (HLA)</title>
+</head>
+<body><a name="id041500104700"></a><p class="servinfo-title"><span class="servinfo-head"></span>HILL LAUNCH ASSIST (HLA)</p>
+<hr>
+<p class="servinfo-title-id" align="right">id041500104700</p><br clear="all"><a name="id04150010470001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose/Function</p>
+<div class="list">•  Hill Launch Assist (HLA) functions to assist in accelerating the vehicle from a stop on uphill slopes. When the vehicle is held at a stop by depressing the brake pedal on a slope with a grade of 3 % (MTX vehicle), or 6 % or more (ATX vehicle), the brake fluid pressure is maintained to prevent the vehicle from rolling backwards even after the driver’s foot is released from the brake pedal.</div>
+<div class="list">•  Hill Launch Assist (HLA) operates when the selector lever is in the D/M position and the R position. For MTX vehicles, it operates when the shift lever is in a forward drive position and the R position.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002580.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002580</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id04150010470002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structure</p>
+<p class="figure-title">Block diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3uun00002662.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3uun00002662</div>
+</td>
+</tr>
+</table>
+<p class="figure-title">Hydraulic circuit diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3uun00003502.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3uun00003502</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id04150010470003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  Hill Launch Assist (HLA) is controlled by the DSC HU/CM. When the input signals from each module meet the operation conditions, the DSC HU/CM maintains the brake fluid pressure when the driver depressed the brake pedal (hold control). When the engine torque increases to the point of enabling the vehicle to move forward by depressing the accelerator pedal (ATX vehicles) or depressing the clutch (MTX vehicles), the brake fluid pressure is released (release control) according to the engine torque value.</div>
+<div class="list">•  In the event that a malfunction occurs in the DSC system during hold control, the DSC HU/CM releases the brake fluid pressure. When the brake fluid is released due to a DSC system malfunction, slow release control or fast release control is performed according to the nature of the malfunction.</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Hill Launch Assist (HLA) operates during forward and reverse travel (grade on which system operates changes slightly depending on vehicle conditions such as load, tire wear, tire air pressure).</div>
+<div class="list">•  Hill Launch Assist (HLA) operates continuously regardless of the DSC OFF switch operation effect.</div>
+<div class="list">•  If a malfunction occurs in the parking brake switch or there is an error in the parking brake signal from the instrument cluster, Hill Launch Assist (HLA) does not operate. In this case, the TCS/DSC indicator light are illuminated simultaneously.</div>
+<div class="list">•  If a malfunction occurs in the DSC system, Hill Launch Assist (HLA) does not operate.</div>
+</div>
+</dd>
+</dl><br clear="all"><p><a name="id04150010470004"></a><p class="topic-title"><span class="topic-head"></span>Hold control</p>
+<dl>
+<dd>
+<div class="list">•  Control conditions (all of the following conditions met):</div>
+<dl>
+<dd class="list">
+<div class="list">―  Slope of approx. 3 % or more (MTX)</div>
+<div class="list">―  Slope of approx. 6 % or more (ATX)</div>
+<div class="list">―  Wheel speed is 0 km/h {0 mph}</div>
+<div class="list">―  Parking brake not operated</div>
+<div class="list">―  Accelerator pedal not depressed</div>
+<div class="list">―  No fail-safe mode is present</div>
+<div class="list">―  Upslope: The selector lever position is in the D/M position (ATX)</div>
+<div class="list">―  Upslope: The shift lever position is in the position other than R (MTX)</div>
+<div class="list">―  Downslope: The selector/shift lever position is in the R position</div>
+<div class="list">―  Brake pedal is depressed</div>
+<div class="list">―  Clutch pedal depressed (MTX)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If the parking brake is operated during hold control, slow release control is executed and the brake fluid pressure is released. After this, if the brake pedal is depressed again and the parking brake is released, the system transitions to hold control again.</div>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Control description</div>
+<dl>
+<dd class="list">
+<div class="list">―  If all of the control conditions are met, the DSC HU/CM controls the traction control solenoid valves and maintains brake fluid pressure (driver can depress brake pedal more at this time).<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3uun00003507.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3uun00003507</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">―  If the brake pedal is released, brake fluid pressure (hold-pressure stored in memory) is maintained for a maximum of 1.5 s (MTX) or 2.0 s (ATX).</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id04150010470005"></a><p class="topic-title"><span class="topic-head"></span>Release control</p>
+<dl>
+<dd>
+<div class="list">•  Control condition</div>
+<dl>
+<dd class="list">
+<div class="list">―  After the accelerator pedal is depressed, the required engine torque for accelerating the vehicle on a slope is produced</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Control description</div>
+<dl>
+<dd class="list">
+<div class="list">―  Brake fluid pressure being maintained is lowered depending on produced engine torque.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am6xun00001621.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am6xun00001621</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id04150010470006"></a><p class="topic-title"><span class="topic-head"></span>Slow release control</p>
+<dl>
+<dd>
+<div class="list">•  Control condition (one or more of following conditions are met):</div>
+<dl>
+<dd class="list">
+<div class="list">―  Parking brake applied</div>
+<div class="list">―  Clutch pedal released (MTX)</div>
+<div class="list">―  DSC HU/CM has malfunction (performs slow release control only if solenoid valve control is available)</div>
+<div class="list">―  1.5 s have elapsed with brake pedal released (MTX)</div>
+<div class="list">―  2.0 s have elapsed with brake pedal released (ATX)</div>
+</dd>
+</dl>
+<div class="list">•  Control description</div>
+<dl>
+<dd class="list">
+<div class="list">―  Brake fluid pressure being maintained is lowered within 1.5 s<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3uun00003508.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3uun00003508</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id04150010470007"></a><p class="topic-title"><span class="topic-head"></span>Fast release control</p>
+<dl>
+<dd>
+<div class="list">•  Control condition</div>
+<dl>
+<dd class="list">
+<div class="list">―  DSC HU/CM has malfunction and solenoid valve control is not available</div>
+</dd>
+</dl>
+<div class="list">•  Control description</div>
+<dl>
+<dd class="list">
+<div class="list">―  Brake fluid pressure being maintained is reduced to 0 kPa {0 mmHg, 0 inHg} immediately</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</body>
+</html>

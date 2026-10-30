@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>MASTER WARNING LIGHT</title>
+</head>
+<body><a name="id092200032400"></a><p class="servinfo-title"><span class="servinfo-head"></span>MASTER WARNING LIGHT</p>
+<hr>
+<p class="servinfo-title-id" align="right">id092200032400</p><br clear="all"><a name="id09220003240001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The master warning light warns the driver that any of the following malfunctions is occurring.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Brake switch malfunction</div>
+<div class="list">―  Oil pressure switch malfunction (SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system))</div>
+<div class="list">―  Engine oil solenoid valve malfunction (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</div>
+<div class="list">―  Engine oil pressure sensor malfunction (SKYACTIV-D 1.5)</div>
+<div class="list">―  Engine oil level sensor malfunction (SKYACTIV-D 1.5)</div>
+<div class="list">―  Power supply system malfunction</div>
+<div class="list">―  Current sensor malfunction (With i-stop or i-ELOOP)</div>
+<div class="list">―  Global central configuration error</div>
+<div class="list">―  Timing chain malfunction (SKYACTIV-D 1.5)</div>
+<div class="list">―  Blow-by heater malfunction (SKYACTIV-D 1.5)</div>
+<div class="list">―  i-ELOOP system malfunction (With i-ELOOP)</div>
+</dd>
+</dl><br clear="all"><a name="id09220003240002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The instrument cluster turns the master warning light on based on the following CAN signals sent from the PCM.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Brake switch No.1 error signal</div>
+<div class="list">―  Brake switch No.2 error signal</div>
+<div class="list">―  Oil pressure switch error signal (SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system))</div>
+<div class="list">―  Engine oil solenoid valve error signal (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</div>
+<div class="list">―  Engine oil pressure sensor error signal (SKYACTIV-D 1.5)</div>
+<div class="list">―  Engine oil level sensor error signal (SKYACTIV-D 1.5)</div>
+<div class="list">―  Power supply system error signal</div>
+<div class="list">―  Current sensor error signal (With i-stop or i-ELOOP)</div>
+<div class="list">―  Global central configuration error signal</div>
+<div class="list">―  Timing chain error signal (SKYACTIV-D 1.5)</div>
+<div class="list">―  Blow-by heater error signal (SKYACTIV-D 1.5)</div>
+<div class="list">―  i-ELOOP system error signal (With i-ELOOP)</div>
+</dd>
+</dl>
+<div class="list">•  If the cancel procedure for preventing unnecessary operation of the brake override system is implemented, the PCM sends a master warning light flash request signal to the instrument cluster via CAN communication. The instrument cluster flashes the master warning light based on the master warning light flash request signal from the PCM. For the cancel procedure to prevent unnecessary operation of the brake override system, refer to [DRIVE-BY-WIRE CONTROL][FUEL INJECTION AMOUNT CONTROL]. (See <font class="extxref-label"><a href="id0140q1188400.html">DRIVE-BY-WIRE CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.) (See <font class="extxref-label"><a href="id0140z5987900.html">FUEL INJECTION AMOUNT CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="list">•  The master warning light flashes in the pattern shown in the figure.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002921.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002921</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id09220003240003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  Turning on/flashing/turning off of the master warning light is controlled by the instrument cluster microcomputer based on each error signal or master warning light flash request signal sent from the PCM.</div>
+<div class="list">•  The master warning light is built into the instrument cluster.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002922.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002922</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id09220003240004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">1.  When the ignition is switched ON (engine off or on), the instrument cluster receives (1) each error signal or a master warning light flash request signal from the PCM via the CAN communication.</div>
+<div class="list">2.  The instrument cluster turns the transistor on (2) intermittently for flashing and continuously for illumination based on each signal.</div>
+<div class="list">3.  The master warning light flashes (3) when the transistor is turned on intermittently, and it turns on (3) when the transistor is turned on continuously.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003898.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003898</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09220003240005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  Not applicable</div>
+</body>
+</html>

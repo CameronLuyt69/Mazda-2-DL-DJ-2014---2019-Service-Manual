@@ -1,0 +1,403 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC SYSTEM ACTIVE COMMAND MODES FUNCTION [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0102q2105400"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC SYSTEM ACTIVE COMMAND MODES FUNCTION [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q2105400</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Simulation items on parts which are not equipped to the vehicle do not operate.</div>
+<div class="list">•  When the engine conditions and the other conditions have been met, the simulation item can be operated.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  The simulation items are shown below.</div>
+<p clear="all">
+<p class="table-title">Simulation item table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Applicable component</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Engine condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Other condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">ACCS</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/C relay</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition is switched ON (engine off)</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ARPMDES</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Target engine speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Idle</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EWP*<sup>3</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric water pump</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition is switched ON (engine off)</div>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">―  Idle</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CCV_DSD*<sup>2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Desired coolant control valve</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition is switched ON (engine off)</div>
+<div class="list">―  Idle</div>
+<div class="list">―  Racing (not idle)</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EXHSHUT_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Exhaust shutter valve desired</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition is switched ON (engine off)</div>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">―  Idle</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FAN_DUTY*<sup>4</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fan control module duty cycle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition is switched ON (engine off)</div>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">―  Idle</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">HPEGR_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">HP-EGR control valve desired</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition is switched ON (engine off)</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">INJ_1*<sup>1</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Idle</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle stopped</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">INJ_2*<sup>1</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector No.2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Idle</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle stopped</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">INJ_3*<sup>1</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector No.3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Idle</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle stopped</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">INJ_4*<sup>1</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel injector No.4</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Idle</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle stopped</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ISV_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake shutter valve control desired value</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition is switched ON (engine off)</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LPEGR_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LP-EGR control valve desired</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition is switched ON (engine off)</div>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">―  Idle</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VGTURB_DSD</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turbocharger with variable turbine geometry position desired</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Under the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Idle</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :By using these items, freeze frame data may be overwritten when a DTC is detected. Obtain the freeze frame data before using these items. In addition, clear the DTC if a DTC is detected.</div>
+<div class="deflist">*2  :Changes in 10 steps from 10 degrees up to 215 degrees.</div>
+<div class="deflist">*3  :Changes in 2 steps of 0 percent and 95 percent.</div>
+<div class="deflist">*4  :Changes in 10 % increments up to 80 % from 0 %.</div>
+</body>
+</html>

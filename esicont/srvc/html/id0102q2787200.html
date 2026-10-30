@@ -1,0 +1,688 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P250A:00 [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0102q2787200"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P250A:00 [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q2787200</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  To determine the malfunctioning part, proceed with the diagnostics from “Function Inspection Using M-MDS”.</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0102q278720001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Details On DTCs</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DESCRIPTION</p>
+</th>
+<th id="" align="left" colspan="2">
+<p class="thead">Engine oil level signal: engine oil level sensor malfunction</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="5">
+<div class="tbody">DETECTION CONDITION</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Determination conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  PCM receives error signal from engine oil level sensor.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Preconditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Battery voltage: <span>10—16 V</span></div>
+<div class="list">•  The following DTC is not detected:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Communication error between engine oil level sensor and PCM: U1100:00</div>
+<div class="list">―  Engine oil temperature sensor: P0196:00, P0197:00, P0198:00</div>
+</dd>
+</dl>
+<div class="list">•  Low-G sensor signal is normal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Drive cycle</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>1</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Self test type</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CMDTC self test</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Sensor used</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Engine oil level sensor</div>
+<div class="list">•  Engine oil temperature sensor</div>
+<div class="list">•  Low-G sensor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>VEHICLE STATUS WHEN DTCs ARE OUTPUT</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Master warning light is illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Excessive engine oil level (oil level exceeds measurable upper limit range of engine oil level sensor)</div>
+<dl>
+<dd class="list">
+<div class="list">―  Poor drainage during engine oil replacement</div>
+<div class="list">―  Excessive engine oil resupplying</div>
+<div class="list">―  Poor oil level adjustment</div>
+<div class="list">―  Engine oil dilution</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If a condition in which the engine oil temperature does not increase sufficiently is repeated, such as when driving short distances, the fuel does not vaporize, engine oil dilution continues, and then the oil level increases.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Engine oil level sensor malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  Clogging of oil passage to engine oil level sensor detection area</div>
+<div class="list">―  Engine oil level sensor internal application specific integrated circuit malfunction</div>
+</dd>
+</dl>
+<div class="list">•  Erratic signal to PCM</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine oil level sensor connector or terminals malfunction</div>
+<div class="list">―  Open or short circuit in wiring harness between engine oil level sensor terminal C and PCM terminal 1Q</div>
+</dd>
+</dl>
+<div class="list">•  PCM malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q278720002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00016972.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00016972</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0102q278720003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Explanation (DTC Detection Outline)</p>
+<div class="list">•  The PCM receives the signal from the engine oil level sensor and diagnoses the following malfunctions.</div>
+<dl>
+<dd class="list">
+<div class="list">―  With an engine oil temperature of <span>−35 °C {−31 °F} or more</span>, the PCM receives an error signal related to the engine oil temperature from the engine oil level sensor continuously for the specified time or more.</div>
+<div class="list">―  The PCM receives an error signal from the engine oil level sensor continuously for the specified time or more.</div>
+<div class="list">―  The oil level signal of the engine oil level sensor received by the PCM does not change for the specified time or more under the following certain diagnostic conditions.</div>
+</dd>
+</dl>
+<div class="list">•  The PCM performs diagnosis when each of the preconditions is met during a drive cycle. If any of the above malfunctions is detected, a malfunction is determined, DTCs are stored and the master warning light is turned on.</div><br clear="all"><a name="id0102q278720004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Repeatability Verification Procedure</p>
+<div class="list">1.  Start the engine and run it at idle.</div><br clear="all"><a name="id0102q278720005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID Item/Simulation Item Used In Diagnosis</p>
+<p clear="all">
+<p class="table-title">PID/DATA monitor item table</p>
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Item</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>Definition</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>Unit</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>Condition/Specification</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EOL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine oil level</div>
+</td>
+<td id="" align="center">
+<div class="tbody">mm, in</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays the engine oil level.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EOT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine oil temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays engine oil temperature</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Function Inspection Using M-MDS</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: IDENTIFY TRIGGER DTC FOR FREEZE FRAME DATA</div>
+<div class="list">•  Is the DTC P250A:00 on FREEZE FRAME DATA?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure for DTC on FREEZE FRAME DATA.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">PURPOSE: RECORD FREEZE FRAME DATA/SNAPSHOT DATA AND DIAGNOSTIC MONITORING TEST RESULTS TO UTILIZE WITH REPEATABILITY VERIFICATION</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Recording can be facilitated using the screen capture function of the PC.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Record the FREEZE FRAME DATA/snapshot data and DIAGNOSTIC MONITORING TEST RESULTS (misfire related) on the repair order.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF DIAGNOSTIC RESULT IS AFFECTED BY OTHER RELATED DTCs OCCURRING</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure and DTC Reading Procedure. <div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the other PENDING CODE/DTC also present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE IF CAUSE IS ERROR SIGNAL FROM ENGINE OIL LEVEL SENSOR</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2865400.html">CLEARING DTC [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Access the following PID using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<dl>
+<div class="list-title">PCM:</div>
+<dd class="list">
+<div class="list">―  EOT</div>
+</dd>
+</dl>
+<div class="list">•  Start the engine and warm up until the value of PID EOT is <span>60 °C {140 °F} or more</span>.</div>
+<div class="list">•  After engine warm-up, perform the DTC inspection for the PCM.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY ACTUAL ENGINE OIL LEVEL</div>
+<div class="list">•  Switch the ignition ON (engine off) and leave for <span>5 min</span>.</div>
+<div class="list">•  Pull out the dipstick.<div>(See <font class="extxref-label"><a href="id0111q2800500.html">ENGINE OIL LEVEL INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Verify if the engine oil level is <span>8 mm {0.3 in} or more</span> from the upper limit position of the dipstick.</div>
+<div class="list">•  Is it <span>8 mm {0.3 in} or more</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF CAUSE IS ENGINE OIL LEVEL SENSOR STICKING MALFUNCTION</div>
+<div class="list">•  Access the following PID using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<dl>
+<div class="list-title">PCM:</div>
+<dd class="list">
+<div class="list">―  EOL</div>
+</dd>
+</dl>
+<div class="list">•  Start the engine while verifying the monitor value with the ignition switched ON (engine off).</div>
+<div class="list">•  Leave for <span>30 s or more</span>.</div>
+<div class="list">•  Does the monitor value decrease by <span>7 mm {0.3 in} or more</span> compared to the value with the ignition switched ON (engine off)?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A temporary malfunction can be considered.</div>
+<div class="list">•  Perform the [ACTION FOR NON-REPEATABLE MALFUNCTIONS].<div>(See <font class="extxref-label"><a href="id0102q2800300.html">FOREWORD [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF CAUSE IS EXCESSIVE ENGINE OIL LEVEL</div>
+<div class="list">•  Switch the ignition ON (engine off).</div>
+<div class="list">•  Access the following PID using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<dl>
+<div class="list-title">PCM:</div>
+<dd class="list">
+<div class="list">―  EOL</div>
+</dd>
+</dl>
+<div class="list">•  Verify the monitor value with the ignition switched ON (engine off).</div>
+<div class="list">•  Is the monitor value <span>95.8 mm {3.77 in} or more</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Adjust the engine oil level near the middle of the upper and lower limit position on the dipstick.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0111q2800500.html">ENGINE OIL LEVEL INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF CAUSE IS ENGINE OIL LEVEL SENSOR STICKING MALFUNCTION</div>
+<div class="list">•  Access the following PID using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<dl>
+<div class="list-title">PCM:</div>
+<dd class="list">
+<div class="list">―  EOL</div>
+</dd>
+</dl>
+<div class="list">•  Start the engine while verifying the monitor value with the ignition switched ON (engine off).</div>
+<div class="list">•  Leave for <span>30 s or more</span>.</div>
+<div class="list">•  Does the monitor value decrease by <span>7 mm {0.3 in} or more</span> compared to the value with the ignition switched ON (engine off)?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The cause is an excessive engine oil amount exceeding the measurable range of the engine oil level sensor. Replace the engine oil because there is the possibility that the engine oil is diluted.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0111q2800400.html">ENGINE OIL REPLACEMENT [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 4.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q278720006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Troubleshooting Diagnostic Procedure</p>
+<div class="list-title">Intention of troubleshooting procedure</div>
+<div class="list">•  Step 1—3</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform the LIN communication line inspection.</div>
+</dd>
+</dl>
+<div class="list">•  Step 4—5</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verify that the primary malfunction is resolved and there are no other malfunctions.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT ENGINE OIL LEVEL SENSOR CONNECTOR CONDITION</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Disconnect the engine oil level sensor connector.</div>
+<div class="list">•  Inspect for poor connection (such as damaged/pulled-out pins, corrosion).</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector and/or terminals, then go to Step 4.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT ENGINE OIL LEVEL SENSOR CONTROL CIRCUIT FOR SHORT TO GROUND</div>
+<div class="list">•  Disconnect the PCM connector.</div>
+<div class="list">•  Verify that the engine oil level sensor and PCM connectors are disconnected.</div>
+<div class="list">•  Inspect for continuity between engine oil level sensor terminal C (wiring harness-side) and body ground.</div>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refer to the wiring diagram and verify whether or not there is a common connector between engine oil level sensor terminal C and PCM terminal 1Q.</div>
+<div class="list-title">If there is a common connector:</div>
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for a short to ground.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+<div class="list-title">If there is no common connector:</div>
+<div class="list">•  Repair or replace the wiring harness which has a short to ground.</div>
+<div class="tbody">Go to Step 4.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT ENGINE OIL LEVEL SENSOR CIRCUIT FOR OPEN CIRCUIT</div>
+<div class="list">•  Verify that the engine oil level sensor and PCM connectors are disconnected.</div>
+<div class="list">•  Inspect for continuity between engine oil level sensor terminal C (wiring harness-side) and PCM terminal 1Q (wiring harness-side).</div>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the engine oil level sensor, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q2538100.html">ENGINE OIL LEVEL SENSOR REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refer to the wiring diagram and verify whether or not there is a common connector between engine oil level sensor terminal C and PCM terminal 1Q.</div>
+<div class="list-title">If there is a common connector:</div>
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for an open circuit.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+<div class="list-title">If there is no common connector:</div>
+<div class="list">•  Repair or replace the wiring harness which has an open circuit.</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: PERFORM DTC INSPECTION AND VERIFY IF MALFUNCTIONING PART IS PCM</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2865400.html">CLEARING DTC [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id0102q278720004">Repeatability Verification Procedure</a></font>.)</div>
+</div>
+<div class="list">•  Perform the DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q2113800.html">PCM REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY AFTER REPAIR PROCEDURE</div>
+<div class="list">•  Perform the “AFTER REPAIR PROCEDURE”.<div>(See <font class="extxref-label"><a href="id0102q2801100.html">AFTER REPAIR PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

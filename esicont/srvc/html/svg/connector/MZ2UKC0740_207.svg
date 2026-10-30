@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "../../../../../../../../../ns.adobe.com/Extensibility/1.0/default.htm">
+	<!ENTITY ns_ai "../../../../../../../../../ns.adobe.com/AdobeIllustrator/10.0/default.htm">
+	<!ENTITY ns_graphs "../../../../../../../../../ns.adobe.com/Graphs/1.0/default.htm">
+	<!ENTITY ns_vars "../../../../../../../../../ns.adobe.com/Variables/1.0/default.htm">
+	<!ENTITY ns_imrep "../../../../../../../../../ns.adobe.com/ImageReplacement/1.0/default.htm">
+	<!ENTITY ns_sfw "../../../../../../../../../ns.adobe.com/SaveForWeb/1.0/default.htm">
+	<!ENTITY ns_custom "../../../../../../../../../ns.adobe.com/GenericCustomNamespace/1.0/default.htm">
+	<!ENTITY ns_adobe_xpath "../../../../../../../../../ns.adobe.com/XPath/1.0/default.htm">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="114.573px"
+	 height="72.069px" viewBox="0 0 114.573 72.069" enable-background="new 0 0 114.573 72.069" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="SEN">
+			<rect x="49.667" y="44.439" fill="#007FFF" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			<rect x="81.868" y="44.439" fill="#FFB3FF" stroke="#000000" stroke-width="0.1" width="16.054" height="11.947"/>
+			<rect x="17.466" y="44.439" fill="#999999" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			<rect x="33.568" y="44.439" fill="#CCFFFF" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			<rect x="65.766" y="44.439" fill="#CB7F2E" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="81.819" y1="56.386" x2="81.819" y2="44.309"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="49.621" y1="56.386" x2="49.621" y2="44.309"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="33.52" y1="56.386" x2="33.52" y2="44.309"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="65.721" y1="56.386" x2="65.721" y2="44.309"/>
+			<polygon fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="17.417,44.31 
+				17.418,44.309 17.417,56.386 97.921,56.386 97.921,44.309 			"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M38.17,40.5V28.31
+				c0-1.1,0.9-2,2-2h35.001c1.1,0,2,0.9,2,2V40.5"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M45.02,36.96
+				c-0.826,0-1.5,0.675-1.5,1.5V39c0,0.825-0.676,1.5-1.5,1.5H21.841c-0.825,0-1.5-0.675-1.5-1.5V36.81c0-0.825-0.675-1.5-1.5-1.5
+				h-4.167c-0.824,0-1.5,0.675-1.5,1.5V58.96c0,0.825,0.676,1.5,1.5,1.5h86.108c0.827,0,1.5-0.674,1.5-1.5V36.81
+				c0-0.825-0.673-1.5-1.5-1.5h-4.166c-0.824,0-1.5,0.675-1.5,1.5V39c0,0.825-0.674,1.5-1.5,1.5H73.319c-0.824,0-1.5-0.675-1.5-1.5
+				v-0.54c0-0.825-0.674-1.5-1.5-1.5"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M73.17,28.81
+				c0.825,0,1.5,0.675,1.5,1.5v5.151c0,0.826,0.158,1.5-2,1.5h-30.5c-0.825,0-1.5-0.675-1.5-1.5V30.31c0-0.825,0.675-1.5,1.5-1.5
+				H73.17z"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="51.57" y1="31.91" x2="63.77" y2="31.91"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="51.57" y1="36.96" x2="51.57" y2="31.91"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="63.77" y1="36.96" x2="63.77" y2="31.91"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="51.57" y1="31.91" x2="63.77" y2="36.96"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="63.77" y1="31.91" x2="51.57" y2="36.96"/>
+		</g>
+		<g id="TEXT">
+			<text transform="matrix(1 0 0 1 56.3389 52.2188)" font-family="'Arial'" font-size="5">L</text>
+			<text transform="matrix(1 0 0 1 88.2388 52.2188)" font-family="'Arial'" font-size="5">P</text>
+			<text transform="matrix(1 0 0 1 21.8188 52.2188)" font-family="'Arial'" font-size="5">GY</text>
+			<text transform="matrix(1 0 0 1 38.1982 52.2188)" font-family="'Arial'" font-size="5">SB</text>
+			<text transform="matrix(1 0 0 1 72.2378 52.2188)" font-family="'Arial'" font-size="5">T</text>
+			<text transform="matrix(1 0 0 1 2.8467 19.1997)" font-family="'Arial'" font-size="8">AIRFLOW MODE ACTUATOR</text>
+			<text transform="matrix(1 0 0 1 2.8467 9.6997)" font-family="'Arial'" font-size="8">0740-207</text>
+			<text transform="matrix(1 0 0 1 88.0278 67.2861)" font-family="'Arial'" font-size="6">A</text>
+			<text transform="matrix(1 0 0 1 72.2402 67.2861)" font-family="'Arial'" font-size="6">B</text>
+			<text transform="matrix(1 0 0 1 55.6484 67.2861)" font-family="'Arial'" font-size="6">C</text>
+			<text transform="matrix(1 0 0 1 39.5557 67.2861)" font-family="'Arial'" font-size="6">D</text>
+			<text transform="matrix(1 0 0 1 23.6709 67.2861)" font-family="'Arial'" font-size="6">E</text>
+		</g>
+	</g>
+</switch>
+</svg>

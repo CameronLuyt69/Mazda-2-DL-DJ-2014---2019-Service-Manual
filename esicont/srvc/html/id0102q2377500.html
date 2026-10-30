@@ -1,0 +1,759 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P1056:00 [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0102q2377500"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P1056:00 [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q2377500</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  To determine the malfunctioning part, proceed with the diagnostics from “Function Inspection Using M-MDS”.</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0102q237750001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Details On DTCs</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DESCRIPTION</p>
+</th>
+<th id="" align="left" colspan="2">
+<p class="thead">Injection quantity too high cylinder No.3</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="5">
+<div class="tbody">DETECTION CONDITION</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Determination conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Large torque fluctuation condition continues in No.3 cylinder while main injection is performed 40 times in cylinder No.3 by fuel injector No.3</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Preconditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Vehicle speed: <span>2 km/h {2 mph}</span> or more</div>
+<div class="list">•  APP: <span>0.1% or less</span></div>
+<div class="list">•  Engine speed: <span>850rpm or less</span></div>
+<div class="list">•  ECT: <span>40 °C {104 °F} or more</span></div>
+<div class="list">•  IAT (IAT sensor No.1): <span>-10 °C {14 °F} or more</span></div>
+<div class="list">•  Fuel pressure at common rail: <span>35 MPa {357 kgf/cm<sup>2</sup>, 5077 psi} or more</span></div>
+<div class="list">•  During fuel injection</div>
+<div class="list">•  Diesel particulate filter regeneration control is not performed</div>
+<div class="list">•  Other than moment clutch is engaged or released (MTX)</div>
+<div class="list">•  Other than moment gear is shifted (ATX)</div>
+<div class="list">•  The following DTC is not detected:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Fuel injector or related circuit malfunction: P0201:00, P0202:00, P0203:00, P0204:00, P02EE:00, P02EF:00, P02F0:00, P02F1:00, P1378:00, P1379:00, P2146:00, P2147:00, P2148:00, P2149:00, P2150:00, P2151:00</div>
+<div class="list">―  Internal PCM malfunction: P062B:00</div>
+<div class="list">―  ECT sensor or related circuit malfunction: P0116:00, P0117:00, P0118:00</div>
+<div class="list">―  IAT sensor or related circuit malfunction: P0111:00, P0112:00, P0113:00</div>
+<div class="list">―  BARO sensor or related circuit malfunction: P2227:00, P2228:00, P2229:00</div>
+<div class="list">―  CKP sensor or related circuit malfunction: P0336:00, P0337:00</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Drive cycle</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>2</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Self test type</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CMDTC self test</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Sensor used</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CKP sensor</div>
+<div class="list">•  ABS wheel speed sensor</div>
+<div class="list">•  DSC HU/CM</div>
+<div class="list">•  APP sensor</div>
+<div class="list">•  ECT sensor</div>
+<div class="list">•  IAT sensor No.1</div>
+<div class="list">•  Fuel pressure sensor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>VEHICLE STATUS WHEN DTCs ARE OUTPUT</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Check engine light is illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Erratic signal to PCM</div>
+<dl>
+<dd class="list">
+<div class="list">―  ECT sensor signal malfunction</div>
+<div class="list">―  IAT sensor No.1 signal malfunction</div>
+<div class="list">―  CKP sensor signal malfunction</div>
+<div class="list">―  APP sensor signal malfunction</div>
+<div class="list">―  VSS signal malfunction</div>
+<div class="list">―  Fuel pressure sensor malfunction</div>
+<div class="list">―  Input signal part connector or terminals malfunction</div>
+<div class="list">―  Input signal part related circuit malfunction</div>
+</dd>
+</dl>
+<div class="list">•  CKP sensor malfunction</div>
+<div class="list">•  Fuel injector No.3 malfunction</div>
+<div class="list">•  Mechanical (engine) malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  Insufficient engine compression</div>
+<div class="list">―  Engine coolant leakage to combustion chamber</div>
+</dd>
+</dl>
+<div class="list">•  Poor fuel quality</div>
+<div class="list">•  PCM malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q237750002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<div class="list">•  Not applicable</div><br clear="all"><a name="id0102q237750003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Explanation (DTC Detection Outline)</p>
+<div class="list">•  The PCM performs diagnosis of the fuel injector amounts by comparing the engine torque fluctuation occurring at the engine stroke between each cylinder.</div>
+<div class="list">•  The PCM calculates the engine torque fluctuation by the change in the angular speed of the crankshaft from TDC to BDC of the expansion stroke of each cylinder.</div>
+<div class="list">•  When the monitoring conditions are met, the PCM compares the engine torque fluctuation between each cylinder and the torque fluctuation (crankshaft angular speed) of No cylinder No. 3 is higher than the specified value, it determines that the injection amount of fuel injector No. 3 has increased.</div>
+<div class="list">•  The PCM performs diagnosis when each of the preconditions during drive cycle is met. If a malfunction is detected, the malfunction detection counter begins counting up. The value of the malfunction detection counter is maintained while the preconditions are not being met. If the cumulative value of the malfunction detection counter exceeds the threshold during the first drive cycle, a malfunction is determined and a pending code is stored.</div>
+<div class="list">•  If the PCM determines that the malfunction recurs from the next drive cycle and thereafter, it stores a DTC and turns on the check engine light.</div><br clear="all"><a name="id0102q237750004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Repeatability Verification Procedure</p>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  When the M-MDS is used to observe monitor system status while driving, be sure to have another technician with you, or record the data in the M-MDS using the PID/DATA MONITOR AND RECORD capturing function and inspect later.</div>
+<div class="list">•  While performing this step, always operate the vehicle in a safe and lawful manner.</div>
+</div>
+</dd>
+</dl>
+<div class="list">1.  Start the engine and warm it up until the engine coolant temperature is 40 °C {104 °F} or more. </div>
+<div class="list">2.  Accelerate to 40 km/h {25 mph}.</div>
+<div class="list">3.  Release the clutch while staying in gear and decelerate (MTX).  Decelerate without shifting from the D position to another position (ATX).</div>
+<div class="list">4.  Continue to maintain the engine speed at 850 rpm or less for a cumulative 10 s or more at a speed of 2 km/h {2 mph} or more during deceleration. </div><br clear="all"><a name="id0102q237750005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID Item/Simulation Item Used In Diagnosis</p>
+<p clear="all">
+<p class="table-title">PID/DATA monitor item table</p>
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Item</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>Definition</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>Unit</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>Condition/Specification</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.1 voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Switch ignition ON (engine off)</div>
+<div class="list">•  Accelerator pedal released: Approx. 0.79 V</div>
+<div class="list">•  Accelerator pedal depressed: Approx. 4.54 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position No.2 voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Switch ignition ON (engine off)</div>
+<div class="list">•  Accelerator pedal released: Approx. 0.38 V</div>
+<div class="list">•  Accelerator pedal depressed: Approx. 2.27 V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays ECT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IAT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Intake air temperature No.1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the intake air temperature (No.1)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">FRP</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel pressure at common rail</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPa {MPa}, mBar {Bar}, psi, in H20</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Idle: Approx. 40 MPa {408 kgf/cm<sup>2</sup>, 5802 psi}</div>
+<div class="list">•  Racing (engine speed above 4,000 rpm): 90 MPa {918 kgf/cm<sup>2</sup>, 13053 psi}</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VSS</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+<td id="" align="left">
+<div class="tbody">This PID indicates vehicle speed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_LF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LF ABS wheel speed sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+<td id="" align="left">
+<div class="tbody">This PID indicates vehicle speed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_LR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LR ABS wheel speed sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+<td id="" align="left">
+<div class="tbody">This PID indicates vehicle speed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_RF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RF ABS wheel speed sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+<td id="" align="left">
+<div class="tbody">This PID indicates vehicle speed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">WSPD_SEN_RR</div>
+</td>
+<td id="" align="left">
+<div class="tbody">RR ABS wheel speed sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+<td id="" align="left">
+<div class="tbody">This PID indicates vehicle speed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Function Inspection Using M-MDS</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: IDENTIFY TRIGGER DTC FOR FREEZE FRAME DATA</div>
+<div class="list">•  Is the DTC P1056:00 on FREEZE FRAME DATA?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure for DTC on FREEZE FRAME DATA.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">PURPOSE: RECORD FREEZE FRAME DATA/SNAPSHOT DATA AND DIAGNOSTIC MONITORING TEST RESULTS TO UTILIZE WITH REPEATABILITY VERIFICATION</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Recording can be facilitated using the screen capture function of the PC.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Record the FREEZE FRAME DATA/snapshot data and DIAGNOSTIC MONITORING TEST RESULTS (misfire related) on the repair order.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF DIAGNOSTIC RESULT IS AFFECTED BY OTHER RELATED DTCs OCCURRING</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure and DTC Reading Procedure. <div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the other PENDING CODE/DTC also present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF THERE IS PID ITEM CAUSING DRASTIC CHANGES OF ACCELERATION FLUCTUATION BY INPUT SIGNAL TO PCM AND DSC HU/CM</div>
+<div class="list">•  Access the following PIDs using the M-MDS: <div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id040262886300.html">PID/DATA MONITOR INSPECTION [DSC HU/CM]</a></font>.)</div>
+</div>
+<dl>
+<div class="list-title">PCM:</div>
+<dd class="list">
+<div class="list">―  APP1</div>
+<div class="list">―  APP2</div>
+<div class="list">―  IAT</div>
+<div class="list">―  ECT</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">DSC:</div>
+<dd class="list">
+<div class="list">―  WSPD_SEN_LF</div>
+<div class="list">―  WSPD_SEN_LR</div>
+<div class="list">―  WSPD_SEN_RF</div>
+<div class="list">―  WSPD_SEN_RR</div>
+</dd>
+</dl>
+<div class="list">•  Is there any signal that is far out of specification?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect the suspected sensor and related wiring harness.</div>
+<div class="list">•  If there is any malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Repair or replace the malfunctioning part.</div>
+<div class="list">―  Go to the troubleshooting procedure to perform the procedure from Step 4.</div>
+</dd>
+</dl>
+<div class="list">•  If there is no malfunction:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Go to the next step.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY CONNECTOR CONNECTIONS</div>
+<div class="list">•  Access the following PIDs using the M-MDS: <div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id040262886300.html">PID/DATA MONITOR INSPECTION [DSC HU/CM]</a></font>.)</div>
+</div>
+<dl>
+<div class="list-title">PCM:</div>
+<dd class="list">
+<div class="list">―  APP1</div>
+<div class="list">―  APP2</div>
+<div class="list">―  IAT</div>
+<div class="list">―  ECT</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">DSC:</div>
+<dd class="list">
+<div class="list">―  WSPD_SEN_LF</div>
+<div class="list">―  WSPD_SEN_LR</div>
+<div class="list">―  WSPD_SEN_RF</div>
+<div class="list">―  WSPD_SEN_RR</div>
+</dd>
+</dl>
+<div class="list">•  When the following parts are shaken, does the PID value include a PID item which has changed?</div>
+<dl>
+<dd class="list">
+<div class="list">―  APP sensor</div>
+<div class="list">―  IAT sensor No.1</div>
+<div class="list">―  ECT sensor</div>
+<div class="list">―  LF ABS wheel speed sensor</div>
+<div class="list">―  LR ABS wheel speed sensor</div>
+<div class="list">―  RF ABS wheel speed sensor</div>
+<div class="list">―  RR ABS wheel speed sensor</div>
+<div class="list">―  PCM</div>
+<div class="list">―  DSC HU/CM</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the applicable connector parts.</div>
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 4.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q237750006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Troubleshooting Diagnostic Procedure</p>
+<div class="list-title">Intention of troubleshooting procedure</div>
+<div class="list">•  Step 1—2</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform inspection of each separate part.</div>
+</dd>
+</dl>
+<div class="list">•  Step 3</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform inspection of engine.</div>
+</dd>
+</dl>
+<div class="list">•  Step 4—5</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verify that the primary malfunction is resolved and there are no other malfunctions.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT CKP SENSOR</div>
+<div class="list">•  Inspect the CKP sensor. <div>(See <font class="extxref-label"><a href="id0140q2109500.html">CRANKSHAFT POSITION (CKP) SENSOR INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the CKP sensor, then go to Step 5.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q2109600.html">CRANKSHAFT POSITION (CKP) SENSOR REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT FUEL INJECTOR NO.3</div>
+<div class="list">•  Inspect the fuel injector No.3. <div>(See <font class="extxref-label"><a href="id0114q2800700.html">FUEL INJECTOR INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the fuel injector No.3, then go to Step 4.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0114q2800600.html">FUEL INJECTOR REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT FOR MALFUNCTION DUE TO ENGINE</div>
+<div class="list">•  Inspect the engine for followings:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Engine compression<div>(See <font class="extxref-label"><a href="id0110q2800300.html">COMPRESSION INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">―  Engine coolant leakage<div>(See <font class="extxref-label"><a href="id0112q2800500.html">ENGINE COOLANT LEAKAGE INSPECTION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results, then go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A malfunction caused by the use of inferior fuel can be considered.</div>
+<div class="tbody">Replace the fuel, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0114q2853500.html">FUEL DRAINING PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: PERFORM DTC INSPECTION AND VERIFY IF MALFUNCTIONING PART IS PCM</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q2865400.html">CLEARING DTC [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id0102q237750004">Repeatability Verification Procedure</a></font>.)</div>
+</div>
+<div class="list">•  Perform the DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q2801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q2113800.html">PCM REMOVAL/INSTALLATION [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY AFTER REPAIR PROCEDURE</div>
+<div class="list">•  Perform the “AFTER REPAIR PROCEDURE”.<div>(See <font class="extxref-label"><a href="id0102q2801100.html">AFTER REPAIR PROCEDURE [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q2801500.html">DTC TABLE [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

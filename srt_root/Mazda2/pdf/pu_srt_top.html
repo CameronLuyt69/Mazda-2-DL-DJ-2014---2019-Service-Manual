@@ -1,0 +1,64 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<script type="text/javascript" src="../../../../../esicont/srt/js/CommonUtilities.js"></script>
+<script type="text/javascript" src="../../../../../esicont/srt/js/HttpUtilities.js"></script>
+<script type="text/javascript" src="../../../../../esicont/srt/js/XmlUtilities.js"></script>
+<script type="text/javascript" src="../../../../../esicont/srt/js/PublicUtilities.js"></script>
+<script type="text/javascript" src="../../../../../esicont/srt/js/CustomPublicUtilities.js"></script>
+<script type="text/javascript" src="../../../../../esicont/srt/js/UserInfo.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+    // Cookieから言語を取得する
+    var cookiesrtpubliclanguage = "strlang";
+    var lang = getCookie(cookiesrtpubliclanguage);
+    var langdiv = "";
+    if(lang == null)
+    {
+    	// デフォルトは英語をセット
+    	lang = "en";
+    }
+    switch(lang)
+    {
+    	case "en":
+    	case "fr":
+    	case "ge":
+    	case "ru":
+    		langdiv = "EGF/";
+    		break;
+    	case "it":
+    	case "sp":
+    		langdiv = "EIS/";
+    		break;
+		default:
+			window.close();
+    }
+    
+    //パラメータ解析
+    var param = splitParameter(document.location.search);
+    if (param.vingroup != null && param.vingroup.length > 0) {
+        var vingroup = param.vingroup;
+        var handle = function(parent, xml) {
+            var url = null;
+            if (xml != null) {
+                var node = xml.selectSingleNode('/content[@type="PDF"]/source/startup');
+                if (node != null && typeof node.text != "undefained" ) {
+                    url = './' + langdiv + node.text;
+                }
+            }
+            if (url != null) document.location.replace(url);
+        }
+        getXmlObjectAsync('../content.xml', handle);
+    }
+    else {
+        window.close();
+    }
+
+
+//]]>
+</script>
+</head>
+<body></body>
+</html>

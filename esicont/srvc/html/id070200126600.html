@@ -1,0 +1,1917 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC</title>
+</head>
+<body><a name="id070200126600"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC</p>
+<hr>
+<p class="servinfo-title-id" align="right">id070200126600</p><br clear="all"><a name="id07020012660001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The on-board diagnostic system has on-board diagnostic, PID/data monitor, and A/C operation check functions.</div>
+<div class="list">•  The on-board diagnostic function has the following functions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Malfunction detection function</div>
+<dl>
+<dd class="list">
+<div class="list">•  Detects errors in input and output signals</div>
+</dd>
+</dl>
+<div class="list">―  Memory function</div>
+<dl>
+<dd class="list">
+<div class="list">•  Stores detected malfunctions</div>
+</dd>
+</dl>
+<div class="list">―  Malfunction indication function</div>
+<dl>
+<dd class="list">
+<div class="list">•  Displays detected malfunctions</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  The malfunction indication function, PID/data monitor, and A/C operation check functions can be performed by connecting the Mazda Modular Diagnostic System (M-MDS) to the DLC-2.</div><br clear="all"><a name="id07020012660002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003516.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003516</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id07020012660003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p><br clear="all"><p><a name="id07020012660004"></a><p class="topic-title"><span class="topic-head"></span>Malfunction detection function</p>
+<dl>
+<dd>
+<div class="list">•  The malfunction detection function detects errors in the input and output signals. (Ignition is switched ON (engine off or on))</div>
+<div class="list">•  If a malfunction is detected, a DTC is output to the DLC-2 through the malfunction indication function.</div>
+<div class="list">•  At the same time, malfunction detection results are sent to the fail-safe and memory functions.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id07020012660005"></a><p class="topic-title"><span class="topic-head"></span>Memory function</p>
+<dl>
+<dd>
+<div class="list">•  The memory function stores malfunctioning signal systems which are detected to be malfunctioning by the malfunction detection function.</div>
+<div class="list">•  The stored malfunction information is not cleared even when the ignition is switched off or the malfunction is repaired.</div>
+<div class="list">•  The stored malfunction information can be cleared by connecting the Mazda Modular Diagnostic System (M-MDS) to the DLC-2 and operating it.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id07020012660006"></a><p class="topic-title"><span class="topic-head"></span>Malfunction indication function</p>
+<dl>
+<dd>
+<div class="list">•  The malfunction indication function outputs present or past malfunctions to the DLC-2 as DTCs.</div>
+<div class="list">•  The DTCs can be read by connecting the Mazda Modular Diagnostic System (M-MDS) to the DLC-2 and operating it.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Malfunction display mode</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The climate control unit detects present and past malfunctions in the control system circuits (open/short circuits) and indicates the DTCs shown in the table on the Mazda Modular Diagnostic System (M-MDS).</div>
+<div class="list">•  Clear past malfunctions after completing repairs because once a past malfunction is stored, it will remain stored even after the malfunction has been repaired.</div>
+<div class="list">•  The stored past malfunction can be cleared by connecting the Mazda Modular Diagnostic System (M-MDS) to the DLC-2 and operating it.</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">DTC table</p>
+<p>
+<div>X: Applicable</div>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Warning/indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">System malfunction location</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe function</p>
+</th>
+<th id="" align="center">
+<p class="thead">Drive cycle</p>
+</th>
+<th id="" align="center">
+<p class="thead">Self test type<sup>*1</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">Memory function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">B1086:71</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Airflow mode actuator motor lock</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">B10BE:12</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Solar radiation sensor circuit short to power supply</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">B10BE:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Solar radiation sensor circuit open</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">B13AA:71<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Air mix actuator motor lock</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">B13AB:12<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Air mix actuator (potentiometer) circuit short to power supply</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">B13AB:13<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Air mix actuator (potentiometer) circuit short to power supply</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">B1A61:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cabin temperature sensor circuit short to ground</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">B1A61:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cabin temperature sensor circuit open</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">B1B71:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Evaporator temperature sensor circuit short to ground</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">B1B71:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Evaporator temperature sensor circuit open</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">B1C1C:12<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Airflow mode actuator (potentiometer) circuit short to power supply</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">B1C1C:13<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Airflow mode actuator (potentiometer) circuit open</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0010:88</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Unit communication error (MS-CAN)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U0423:68</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Invalid data received from Instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U200D:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Climate control unit circuit voltage (<span>+5V</span>) circuit short to ground</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U2300:54</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration error (data not received)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U2300:55</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration error (not configured)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U2300:56</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration error (ineffective/non-interchangeable data read)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U2300:64</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration error (error value read)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Climate control unit power supply circuit voltage below threshold (<span>10 V or less</span>) </div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U3003:17</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Climate control unit power supply circuit voltage above threshold (<span>17.3 V or more</span>) </div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">U300E:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Climate control unit power supply circuit open (IG1) </div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">X</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :C: CMDTC self test, D: ODDTC self test</div>
+<dl>
+<dd>
+<div class="list-title">DTC 7-digit code definition</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When related systems or components have failed, the CM stores the DTC of the malfunctioning part in the CM memory, and allows for the retrieval of the stored data using the scanning tool when necessary. The DTCs are indicated using seven digits. Each digit indicates the following.</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00001320.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00001320</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="list-title">Status byte for DTC</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The two digits (after hyphen) after the 7-digit DTC.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00001326.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00001326</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  A code which indicates the pending code, current/past malfunction status, or warning illumination status.</div>
+<div class="list">•  Can be read by performing a CMDTC self-test using the Mazda Modular Diagnostic System (M-MDS).</div>
+<div class="list">•  For details on the status byte, refer to the explanation on the Mazda Modular Diagnostic System (M-MDS) when reading the DTC.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id07020012660007"></a><p class="topic-title"><span class="topic-head"></span>PID/data monitor</p>
+<dl>
+<dd>
+<div class="list">•  The PID/data monitor function is used for optionally selecting input signal monitor items preset in the climate control unit and reading them out in real-time.</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">PID/data monitor table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">PID</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Climate control unit terminal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/C_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: A/C switch is off.</div>
+<div class="list">•  On: A/C switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">B_MT_RLY_CS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Blower relay is off.</div>
+<div class="list">•  On: Blower relay is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1S, 1U (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ENG_C_TMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature is displayed.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1S, 1U (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EVA_TMP_SEN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Evaporator temperature is displayed.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1L</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">F_REC_CS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Forced recirculate control is off.</div>
+<div class="list">•  On: Forced recirculate control is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">INC_TMP_SEN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cabin temperature is displayed.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1H</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">OUT_CAR_TMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient temperature is displayed.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R/DEF_CS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Rear window defroster is turned off.</div>
+<div class="list">•  On: Rear window defroster is turned on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R/DEF_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Rear window defroster switch is off.</div>
+<div class="list">•  On: Rear window defroster switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">REC_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: RECIRCULATE switch is off.</div>
+<div class="list">•  On: RECIRCULATE switch is on.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SLR_R_SEN</div>
+</td>
+<td id="" align="center">
+<div class="tbody">W/m<sup>2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Solar radiation amount is displayed.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">K</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">STOP_ST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Available/</div>
+<div class="tbody">Not Available/</div>
+<div class="tbody">Error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Available: i-stop permit request signal is sent.</div>
+<div class="list">•  Not Available: i-stop inhibit request is sent.</div>
+<div class="list">•  Error: i-stop signal error is sent.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">K</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><a name="id07020012660008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>A/C Operation Check Mode</p>
+<div class="list">•  The A/C operation check mode forcibly operates the output devices as shown in the operation check table regardless of the signals input to the climate control unit.</div>
+<div class="list">•  During an A/C operation check mode operation, indication in the display panel and the illumination of the indicator light on the switches are automatically controlled.</div>
+<div class="list">•  Determine the malfunctioning part by visual inspection, listening to the operation sound, placing a hand on the air vents, or checking that each transition is as indicated in the operation check table.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Mazda Modular Diagnostic System (M-MDS) display</p>
+</th>
+<th id="" align="center">
+<p class="thead">Target part</p>
+</th>
+<th id="" align="center">
+<p class="thead">Reference</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Air Mix Actuator</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Air mix actuator</div>
+<div class="tbody">Air mix door</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="intxref-label"><a href="#id07020012660009">Air mix actuator</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Air conditioning compressor</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A/C compressor</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="intxref-label"><a href="#id07020012660010">A/C compressor</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Air Intake Actuator</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Air intake actuator</div>
+<div class="tbody">Air intake door</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="intxref-label"><a href="#id07020012660011">Air intake actuator</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Blower Motor Speed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blower motor</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="intxref-label"><a href="#id07020012660012">Blower motor</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Airflow Mode Actuator</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Airflow mode actuator</div>
+<div class="tbody">Airflow mode door</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="intxref-label"><a href="#id07020012660013">Airflow mode actuator</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Illumination Of All Indicator Lights</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Climate control unit</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="intxref-label"><a href="#id07020012660014">Indicator light</a></font>.)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><p><a name="id07020012660009"></a><p class="topic-title"><span class="topic-head"></span>Air mix actuator</p>
+<p clear="all">
+<p class="table-title">Operation</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center">
+<p class="thead">Air mix actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Airflow mode actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Blower speed</p>
+</th>
+<th id="" align="center">
+<p class="thead">Magnet clutch</p>
+</th>
+<th id="" align="center">
+<p class="thead">Air intake actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Rear window defroste</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>0 %</span></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">VENT</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5th</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">FRESH</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">OFF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>100 %</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Indicator light</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center">
+<p class="thead">Recirculate switch indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Rear window defroster switch indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">A/C switch indicator light</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Not illuminated</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody"> Not illuminated</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  After <span>approx. 4 s</span> have elapsed, the operation step moves to the next step.</div>
+<div class="list">•  When the last step is finished, the operation is repeated from Step 1.</div>
+<div class="list">•  To prevent super-cooling, the magnetic clutch turns off despite the A/C forced override.</div>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id07020012660010"></a><p class="topic-title"><span class="topic-head"></span>A/C compressor</p>
+<p clear="all">
+<p class="table-title">Operation</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center">
+<p class="thead">Air mix actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Airflow mode actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Blower speed</p>
+</th>
+<th id="" align="center">
+<p class="thead">Magnet clutch</p>
+</th>
+<th id="" align="center">
+<p class="thead">Air intake actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Rear window defroster</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>0 %</span></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">VENT</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5th</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">FRESH</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">OFF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>100 %</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Indicator light</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center">
+<p class="thead">Recirculate switch indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Rear window defroster switch indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">A/C switch indicator light</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody"> Not illuminated</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody"> Not illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> Not illuminated</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  After the following times have elapsed, the operation step moves to the next step.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Step 1: <span>Approx. 5 s</span></div>
+<div class="list">―  Step 2: <span>Approx. 25 s</span></div>
+</dd>
+</dl>
+<div class="list">•  When the last step is finished, the operation is repeated from Step 1.</div>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id07020012660011"></a><p class="topic-title"><span class="topic-head"></span>Air intake actuator</p>
+<p clear="all">
+<p class="table-title">Operation</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center">
+<p class="thead">Air mix actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Airflow mode actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Blower speed</p>
+</th>
+<th id="" align="center">
+<p class="thead">Magnet clutch</p>
+</th>
+<th id="" align="center">
+<p class="thead">Air intake actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Rear window defroster</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody"><span>0 %</span></div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">VENT</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">5th</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FRESH</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">OFF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RECIRCULATE</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FRESH</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RECIRCULATE</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Indicator light</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center">
+<p class="thead">Recirculate switch indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Rear window defroster switch indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">A/C switch indicator light</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> Not illuminated</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody"> Not illuminated</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> Not illuminated</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody"> Not illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  After <span>approx. 4 s</span> have elapsed, the operation step moves to the next step.</div>
+<div class="list">•  When the last step is finished, the operation is repeated from Step 1.</div>
+<div class="list">•  To prevent super-cooling, the magnetic clutch turns off despite the A/C forced override.</div>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id07020012660012"></a><p class="topic-title"><span class="topic-head"></span>Blower motor</p>
+<p clear="all">
+<p class="table-title">Operation</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center">
+<p class="thead">Air mix actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Airflow mode actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Blower speed</p>
+</th>
+<th id="" align="center">
+<p class="thead">Magnet clutch</p>
+</th>
+<th id="" align="center">
+<p class="thead">Air intake actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Rear window defroster</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody"><span>50 %</span></div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody">VENT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody">FRESH</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody">OFF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1st</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">ON</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">3rd</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4</div>
+</td>
+<td id="" align="center">
+<div class="tbody">5th</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">5</div>
+</td>
+<td id="" align="center">
+<div class="tbody">7th</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Indicator light</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center">
+<p class="thead">Recirculate switch indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Rear window defroster switch indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">A/C switch indicator light</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody"> Not illuminated</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody"> Not illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> Not illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center" rowspan="4">
+<div class="tbody">Illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">5</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  After <span>approx. 4 s</span> have elapsed, the operation step moves to the next step.</div>
+<div class="list">•  When the last step is finished, the operation is repeated from Step 1.</div>
+<div class="list">•  To prevent super-cooling, the magnetic clutch turns off despite the A/C forced override.</div>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id07020012660013"></a><p class="topic-title"><span class="topic-head"></span>Airflow mode actuator</p>
+<p clear="all">
+<p class="table-title">Operation</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center">
+<p class="thead">Air mix actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Airflow mode actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Blower speed</p>
+</th>
+<th id="" align="center">
+<p class="thead">Magnet clutch</p>
+</th>
+<th id="" align="center">
+<p class="thead">Air intake actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Rear window defroster </p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody"><span>50 %</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody">VENT</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody">5th</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody">FRESH</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody">OFF</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">BI-LEVEL</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">HEAT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4</div>
+</td>
+<td id="" align="center">
+<div class="tbody">DEF/HEAT</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">5</div>
+</td>
+<td id="" align="center">
+<div class="tbody">DEFROSTER</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Indicator light</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center">
+<p class="thead">Recirculate switch indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Rear window defroster switch indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">A/C switch indicator light</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody"> Not illuminated</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody"> Not illuminated</div>
+</td>
+<td id="" align="center" rowspan="5">
+<div class="tbody">Illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">5</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  After <span>approx. 4 s</span> have elapsed, the operation step moves to the next step.</div>
+<div class="list">•  When the last step is finished, the operation is repeated from Step 1.</div>
+<div class="list">•  To prevent super-cooling, the magnetic clutch turns off despite the A/C forced override.</div>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id07020012660014"></a><p class="topic-title"><span class="topic-head"></span>Indicator light</p>
+<p clear="all">
+<p class="table-title">Operation</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center">
+<p class="thead">Air mix actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Airflow mode actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Blower speed</p>
+</th>
+<th id="" align="center">
+<p class="thead">Magnet clutch</p>
+</th>
+<th id="" align="center">
+<p class="thead">Air intake actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Rear window defroster</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>50 %</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody">VENT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FRESH</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Indicator light</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center">
+<p class="thead">Recirculate switch indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Rear window defroster switch indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">A/C switch indicator light</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id07020012660015"></a><p class="topic-title"><span class="topic-head"></span>A/C operation check stop</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If “Stop” is selected while the A/C operation check is operating, the A/C stops at the conditions shown in the table.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">Operation</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center">
+<p class="thead">Air mix actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Airflow mode actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Blower speed</p>
+</th>
+<th id="" align="center">
+<p class="thead">Magnet clutch</p>
+</th>
+<th id="" align="center">
+<p class="thead">Air intake actuator</p>
+</th>
+<th id="" align="center">
+<p class="thead">Rear window defroster </p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>50 %</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody">VENT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">FRESH</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Indicator light</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center">
+<p class="thead">Recirculate switch indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Rear window defroster switch indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">A/C switch indicator light</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> Not illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> Not illuminated</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> Not illuminated</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+</body>
+</html>

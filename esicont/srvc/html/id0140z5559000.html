@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>GEAR SHIFT INDICATOR [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5559000"></a><p class="servinfo-title"><span class="servinfo-head"></span>GEAR SHIFT INDICATOR [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5559000</p><br clear="all"><a name="id0140z555900001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose/Function</p>
+<div class="list">•  The gear shift indicator, built into the instrument cluster, informs the driver that a gear position or shift up/down operation is recommended according to the driving conditions.</div>
+<div class="list">•  The PCM sends a gear shift indicator illumination request to the instrument cluster via CAN communication.</div><br clear="all"><a name="id0140z555900002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The gear shift indicator is built into the instrument cluster.</div>
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00003943.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00003943</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z555900003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The PCM compares the target gear speed (calculated from each signal) and the actual gear speed to determine a gear shift indicator illumination request.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003727.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003727</div>
+</td>
+</tr>
+</table>
+</div>
+<dl>
+<div class="list-title">Target gear speed (recommended gear position)</div>
+<dd class="list">
+<div class="list">―  The target gear speed is determined by the vehicle speed, accelerator pedal opening angle, ascent rate, altitude, and steering angle.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Actual gear speed (current gear position)</div>
+<dd class="list">
+<div class="list">The actual gear speed is determined by the vehicle speed, engine speed, tire diameter, final gear ratio, and gear engagement.</div>
+</dd>
+</dl>
+<div class="list">•  The gear shift indicator illumination/off conditions are as follows:</div><br clear="all"><p><a name="id0140z555900004"></a><p class="topic-title"><span class="topic-head"></span>Gear shift indicator illumination condition</p>
+<dl>
+<dd>
+<div class="list">•  There are three gear shift indicator illumination patterns; normal operation, shift-down recommended operation, and shift-up recommended operation.</div>
+<dl>
+<div class="list-title">Normal operation</div>
+<dd class="list">
+<div class="list">―  When the following condition is met, the currently selected gear position is indicated.</div>
+<dl>
+<dd class="list">
+<div class="list">•  Target gear speed and actual gear speed are equal</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">
+<p class="figure-title">Example: the following figure indicates that the currently selected gear position is 5th gear.</p>
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003728.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003728</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Shift-down recommended operation</div>
+<dd class="list">
+<div class="list">―  If a shift-down operation is recommended when the following condition is met (determines smooth driveability is difficult), the recommended gear position is indicated at the same time.</div>
+<dl>
+<dd class="list">
+<div class="list">•  Target gear speed is lower than actual gear speed</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">
+<p class="figure-title">Example: The following figure indicates that a shift-down operation to 4th gear is recommended.</p>
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003729.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003729</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Shift-up recommended operation</div>
+<dd class="list">
+<div class="list">―  If a shift-up operation is recommended when the following condition is met (determines fuel economy worsens), the recommended gear position is indicated at the same time.</div>
+<dl>
+<dd class="list">
+<div class="list">•  Target gear speed is higher than actual gear speed</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd class="list">
+<div class="list">
+<p class="figure-title">Example: The following figure indicates that a shift-up operation to 6th gear is recommended.</p>
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003730.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003730</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140z555900005"></a><p class="topic-title"><span class="topic-head"></span>Gear shift indicator off condition</p>
+<dl>
+<dd>
+<div class="list">•  When any one of the following conditions is met, the gear shift indicator turns off.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle is stopped</div>
+<div class="list">―  Gear is in neutral position or reverse position</div>
+<div class="list">―  Until clutch is completely engaged when vehicle is started</div>
+<div class="list">―  Clutch pedal is depressed for <span>2 s or more</span> while driven</div>
+</dd>
+</dl>
+<div class="list">•  If the vehicle is driven with the gear not changed when a shift-down/up operation is recommended, the gear shift indicator may temporarily turn off.</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id0140z555900006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  Not applicable</div>
+</body>
+</html>

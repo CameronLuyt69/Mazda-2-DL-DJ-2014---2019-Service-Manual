@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>COMING HOME LIGHT SYSTEM</title>
+</head>
+<body><a name="id091800006300"></a><p class="servinfo-title"><span class="servinfo-head"></span>COMING HOME LIGHT SYSTEM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091800006300</p><br clear="all"><a name="id09180000630001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  When the FLASH-TO-PASS operation is performed with the ignition switched off or ACC, the coming home light system turns on the headlights LO for a specified time after leaving the vehicle.</div>
+<div class="list">•  When leaving the vehicle in a parking lot where the area surrounding the vehicle is dark, the system is used for assuring visibility at the front of the vehicle by turning the headlights LO on.</div><br clear="all"><a name="id09180000630002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The coming home light system controls the headlights LO using the following two functions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Coming home light stand-by function: Turns on the headlights LO until the user gets out of the vehicle after operating the FLASH-TO-PASS.</div>
+<div class="list">―  Coming home light off timer function: Operates when the user gets out of the vehicle and closes all of the doors while the coming-home-light stand-by function is operating.</div>
+</dd>
+</dl><br clear="all"><p><a name="id09180000630003"></a><p class="topic-title"><span class="topic-head"></span>Coming home light stand-by function</p>
+<dl>
+<dd>
+<div class="list">•  When the BCM receives a FLASH-TO-PASS signal with the ignition switched off or ACC, it turns the headlights LO on. After <span>3 min</span> have elapsed since going on coming home light stand-by or a FLASH-TO-PASS signal is received during stand-by, the BCM turns the headlights LO off.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09180000630004"></a><p class="topic-title"><span class="topic-head"></span>Coming home light off timer function</p>
+<dl>
+<dd>
+<div class="list">•  The BCM operates the coming home light off timer at the point in time the following conditions occur:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Off signals for all door latch switches (doors closed) are detected after detecting any on signal for the door latch switches (door open) while on coming home light stand-by.</div>
+<div class="list">―  When any on signal for the door latch switches (door open) is detected, it goes on coming home light stand-by, and then off signals for all door latch switches (doors closed) are detected.</div>
+</dd>
+</dl>
+<div class="list">•  After the coming home light off timer has elapsed, the BCM turns the headlights LO off.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09180000630005"></a><p class="topic-title"><span class="topic-head"></span>Personalization features</p>
+<dl>
+<dd>
+<div class="list">•  The coming home light off timer setting for the coming home light system can be changed (initial setting is <span>30 s</span>). For details on the personalization features, refer to the [LIGHTING SYSTEM PERSONALIZATION]. (See <font class="extxref-label"><a href="id091800013300.html">LIGHTING SYSTEM PERSONALIZATION</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09180000630006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001683.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001683</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180000630007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001684.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001684</div>
+</td>
+</tr>
+</table>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001685.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001685</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180000630008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Timing chart</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001686.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001686</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09180000630009"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id09180000630010"></a><p class="topic-title"><span class="topic-head"></span>Coming home light stand-by operation</p>
+<dl>
+<dd>
+<div class="list">•  When a FLASH-TO-PASS signal (light switch signal) is received with all of the following conditions met, it goes on coming home light stand-by.</div>
+<dl>
+<div class="list-title">Coming home light stand-by operation conditions</div>
+<dd class="list">
+<div class="list">―  IG1 relay is off (ignition is switched off or ACC)</div>
+<div class="list">―  Coming home light off timer (personalization setting) not set at <span>0 s</span> (OFF)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="list">1.  When the light switch is moved to the FLASH-TO-PASS position, the start stop unit detects (1) a FLASH-TO-PASS signal.</p>
+<p class="list"></p>
+<p class="list">2.  The start stop unit sends (2) the FLASH-TO-PASS signal to the BCM via CAN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the BCM receives the FLASH-TO-PASS signal with all operation conditions met, it sends (3) a headlight LO on request signal to the electrical supply unit (ESU).</p>
+<p class="list"></p>
+<p class="list">4.  When the electrical supply unit (ESU) receives the headlight LO on request signal, it turns the headlights LO on (4) and goes on coming home light stand-by.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001687.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001687</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09180000630011"></a><p class="topic-title"><span class="topic-head"></span>Coming home light off timer operation</p>
+<dl>
+<dd>
+<div class="list">•  When the following condition is met while on coming home light stand-by, the coming home light off timer operates.</div>
+<dl>
+<div class="list-title">Coming home light off timer operation condition</div>
+<dd class="list">
+<div class="list">―  All off signals for the door latch switches (doors closed) are detected after detecting any on signal for the door latch switches (door open).</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="list">1.  When the BCM detects (1) all off signals for the door latch switches (doors closed) after detecting any on signal for the door latch switches (door open) during coming home light stand-by, it operates (2) the coming home light off timer.</p>
+<p class="list"></p>
+<p class="list">2.  After the coming home light off timer has elapsed, the BCM stops the headlight LO on request signal.</p>
+<p class="list"></p>
+<p class="list">3.  When the electrical supply unit (ESU) no longer receives the headlight LO on request signal, it turns the headlights LO off (3).</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001688.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001688</div>
+</td>
+</tr>
+</table>
+</p>
+</body>
+</html>

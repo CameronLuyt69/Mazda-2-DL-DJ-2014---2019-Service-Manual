@@ -1,0 +1,502 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DRIVE-BY-WIRE CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0140q1188400"></a><p class="servinfo-title"><span class="servinfo-head"></span>DRIVE-BY-WIRE CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140q1188400</p><br clear="all"><a name="id0140q118840001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  Calculates the optimum target throttle valve opening angle and controls the throttle valve actuator, which allows the driver to drive the vehicle at will.</div>
+<div class="list">•  The drive-by-wire control is composed of the idle air control, accelerator control, traction control, excess engine speed control, overspeed control, electric variable valve timing cooperation control, engine oil temperature control, cruise control system, and the brake override system.</div>
+<p clear="all">
+<p class="table-title">Control Table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Control name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Control outline</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Idle air control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  While idling, the throttle valve opening is controlled so that the idle speed is at the target idle speed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Accelerator control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The throttle valve opening angle is controlled according to the amount the accelerator pedal is depressed. In addition, there is a fully closed learning function for learning deterioration over time and constant correction of the optimum throttle opening angle.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Traction control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The throttle valve opening angle is controlled by the torque up/reduction request signal from the DSC HU/CM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Excess engine speed control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the engine reaches a high engine speed, the throttle valve opening angle is controlled to protect the engine.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Overspeed control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the vehicle reaches a high speed, the throttle valve is closed to keep the vehicle speed below the speed limit.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Electric variable valve timing cooperation control (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Pumping loss is reduced by controlling the throttle valve opening angle according to the phase of the intake valve timing.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine oil temperature control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the PCM determines that the engine oil temperature is too high, the throttle valve opening angle is decreased and the engine speed is reduced.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Cruise control system (with cruise control system)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Sets the vehicle speed by operation of the cruise control switch and controls the throttle valve opening angle so that it becomes close to the set vehicle speed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Brake override system</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the brake pedal is depressed with the accelerator pedal depressed, the vehicle can be stopped safely by closing the throttle valve. As a result, the brake operation takes priority over the accelerator pedal operation.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0140q118840002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003418.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003418</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140q118840003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id0140q118840004"></a><p class="topic-title"><span class="topic-head"></span>Idle air control</p>
+<dl>
+<dd>
+<div class="list">•  The idle speed control controls the throttle valve opening angle according to the engine torque to achieve the target idle speed.</div>
+<div class="list">•  The PCM drives the throttle valve actuator so that the actual idle speed approaches the target idle speed.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Target idle speed calculation</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Calculates the target idle speed according to the purpose of use such as the basic idle speed and fast idle up<sup>*</sup>.</div>
+<dl>
+<dd class="list">
+<div class="list">*: The catalytic converter is activated quickly after cold-engine starts. (Engine speed increases up to <span>approx. 2,000 rpm</span>)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Engine torque calculation to realize target idle speed</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The engine torque is controlled in consideration of the following factors to realize the target idle speed.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Feedback: The torque difference is added so that the actual idle speed approaches the target idle speed.</div>
+<div class="list">―  Engine mechanical resistance: Changes according to the engine coolant temperature.</div>
+<div class="list">―  Pumping loss: Changes based on the valve timing and intake air pressure.</div>
+<div class="list">―  External electric load: Changes depending on the A/C ON/OFF, generator power generation amount.</div>
+<div class="list">―  D position torque: Adds load torque from torque converter. (ATX)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q118840005"></a><p class="topic-title"><span class="topic-head"></span>Accelerator control</p>
+<dl>
+<dd>
+<div class="list">•  The accelerator control controls the throttle valve opening angle according to the accelerator pedal depression amount.</div>
+<div class="list">•  The PCM controls the throttle valve actuator so that the actual throttle valve opening angle approaches the final target throttle valve opening angle.</div>
+<div class="list">•  The target throttle valve opening angle is determined by the transmission gear position, accelerator pedal depression amount, and vehicle speed.</div>
+<div class="list">•  Because deviation in the throttle valve opening angle due to deterioration over time is corrected when the ignition is switched off, the PCM operates the fully-closed learning function. The fully-closed learning function is a function for learning the fully-closed throttle valve position.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q118840006"></a><p class="topic-title"><span class="topic-head"></span>Traction control</p>
+<dl>
+<dd>
+<div class="list">•  The PCM calculates the target throttle valve opening angle based on torque up/reduction request signal and engine speed from the DSC HU/CM.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q118840007"></a><p class="topic-title"><span class="topic-head"></span>Excess engine speed control</p>
+<dl>
+<dd>
+<div class="list">•  If the engine reaches high-speed rotation*, the throttle valve is closed to maintain the engine speed at the limit speed or less to protect the engine.</div>
+</dd>
+</dl>
+<div class="deflist">*  :Value fluctuates depending on various conditions.</div>
+</p><br clear="all"><p><a name="id0140q118840008"></a><p class="topic-title"><span class="topic-head"></span>Overspeed control</p>
+<dl>
+<dd>
+<div class="list">•  If the vehicle reaches a high speed, the throttle valve is closed to keep the vehicle speed below the speed limit.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q118840009"></a><p class="topic-title"><span class="topic-head"></span>Electric variable valve timing cooperation control (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</p>
+<dl>
+<dd>
+<div class="list">•  The PCM calculates the target throttle valve opening angle according to change in the phase of the intake valve timing due to electric variable valve timing control.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q118840010"></a><p class="topic-title"><span class="topic-head"></span>Engine oil temperature control</p>
+<dl>
+<dd>
+<div class="list">•  If <span>6 minutes</span> have elapsed with the following condition met, the engine speed is reduced by decreasing the throttle valve opening angle to protect the engine (determination of engine oil temperature is high). DTC P117A:00 is recorded simultaneously.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Transmission in 5th</div>
+<div class="list">―  Engine speed: <span>6,100 rpm or more</span></div>
+<div class="list">―  ECT: <span>88.5 °C {191 °F} or more</span></div>
+<div class="list">―  Engine oil temperature estimated value: <span>144 °C {291 °F} or more</span> (SKYACTIV-G 1.5)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140q118840011"></a><p class="topic-title"><span class="topic-head"></span>Cruise control system (with cruise control system)</p>
+<dl>
+<dd>
+<div class="list">•  Calculates the throttle valve opening angle based on the deviation of the actual vehicle speed from the set vehicle speed which was set with the cruise control switch and the throttle valve actuator.</div>
+<div class="list">•  The PCM controls the actual vehicle speed so that it is close to the set vehicle speed.</div>
+<div class="list">•  The cruise control includes the cruise control operation condition and the cruise control stop condition.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Cruise control operation condition</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When all of the following conditions are met, execution of the cruise control system is enabled (cruise control standby status).</div>
+<dl>
+<dd class="list">
+<div class="list">•  ON switch: ON</div>
+<div class="list">•  Vehicle speed: <span>Exceeds 25 km/h {16 mph}</span></div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Cruise control stop condition</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When any of the following conditions are met even while in cruise control, the PCM stops the cruise control and clears the set vehicle speed.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Ignition: OFF</div>
+<div class="list">―  ON switch: OFF</div>
+<div class="list">―  Cruise control related DTCs (P0504:00) detected</div>
+</dd>
+</dl>
+<div class="list">•  When any of the following conditions are met even while in cruise control, the PCM stops the cruise control while storing the set vehicle speed.</div>
+<dl>
+<dd class="list">
+<div class="list">―  CANCEL switch: ON</div>
+<div class="list">―  Transaxle range sensor: P/N position (ATX)</div>
+<div class="list">―  Clutch switch: ON (clutch pedal depressed for 5 s or more) (MTX)</div>
+<div class="list">―  Neutral switch: ON (neutral condition for 2 s or more) (MTX)</div>
+<div class="list">―  Vehicle speed: <span>Less than 20.5 km/h {12.7 mph}</span></div>
+<div class="list">―  Brake switch: ON (brake pedal depressed)</div>
+<div class="list">―  Actual vehicle speed is <span>15 km/h {9.3 mph} or more</span> lower than the set vehicle speed during cruise control (during ascent)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Cruise control function</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The cruise control includes accelerating, coasting, resume, tap-down, tap-up and downshift functions.</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">Function List</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Function</p>
+</th>
+<th id="" align="center">
+<p class="thead">Contents</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Accelerating</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the SET (+) switch is continuously pressed while driving in cruise control, the PCM gradually increases the set vehicle speed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Coasting</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the SET (−) switch is continuously pressed while driving in cruise control, the PCM gradually decreases the set vehicle speed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Resume</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the RESUME (RES) switch signal is send to the PCM during regular driving (cruise control is stopped) and the previously set vehicle speed is stored in the PCM, the PCM sets the set vehicle speed to the previously set vehicle speed and begins control.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Tap down</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When all of the following conditions are met while driving in cruise control, the PCM decreases the set vehicle speed by <span>1.6 km/h {1.0 mph}</span>.</div>
+<dl>
+<dd class="list">
+<div class="list">―  SET (+) switch off</div>
+<div class="list">―  The SET (−) switch switches from off to on</div>
+<div class="list">―  When actual vehicle speed is lower (set vehicle speed <span>+2 km/h {+1 mph}</span>)</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Tap-up</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When all of the following conditions are met, the PCM increases the set vehicle speed by <span>1.6 km/h {1.0 mph}</span> and the throttle valve actuator is controlled so that the vehicle speed is close to the set vehicle speed.</div>
+<dl>
+<dd class="list">
+<div class="list">―  During cruise control</div>
+<div class="list">―  The SET (+) switch switches from off to on</div>
+<div class="list">―  When actual vehicle speed is lower (set vehicle speed <span>+2 km/h {+1 mph}</span>)</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Downshift</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the following conditions are met, a downshift signal is sent to the TCM (ATX) via CAN.</div>
+<dl>
+<dd class="list">
+<div class="list">―  SET (+) switch on</div>
+<div class="list">―  Target vehicle acceleration is not reached</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id0140q118840012"></a><p class="topic-title"><span class="topic-head"></span>Brake override system</p>
+<dl>
+<dd>
+<div class="list-title">Brake override system operation conditions</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  It gives priority to the brake operation if a malfunction occurs with the accelerator pedal such as if the accelerator pedal is depressed and does not return. The throttle valve is closed if the brake pedal is depressed while the accelerator pedal is in a depressed condition until the vehicle is safely decelerated and comes to a complete stop.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">Operation start conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If either one of the following conditions is met with the brake pedal depressed for the specified time<sup>*1</sup> or more while the accelerator pedal is depressed, the PCM adjusts the throttle valve opening angle so that the engine speed is at specification<sup>*2</sup>.</div>
+<dl>
+<div class="list-title">While driving vehicle</div>
+<dd class="list">
+<div class="list">―  Accelerator pedal opening angle: <span>5% or more</span> from full-close</div>
+<div class="list">―  Vehicle speed: <span>10 km/h {6.2 mph} or more</span></div>
+<div class="list">―  Engine speed: <span>875 rpm or more</span></div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">While vehicle stopped</div>
+<dd class="list">
+<div class="list">―  Accelerator pedal opening angle: <span>5% or more</span> from full-close</div>
+<div class="list">―  Shift position: neutral (MTX)</div>
+<div class="list">―  Selector lever position: N position (ATX)</div>
+<div class="list">―  Engine speed: <span>875 rpm or more</span></div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Operation complete conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the following conditions are met while operating the brake override system, the PCM stops the operation of the brake override system and controls the throttle valve opening angle in accordance with the accelerator pedal opening angle.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Accelerator pedal not depressed</div>
+<div class="list">―  Brake pedal not depressed</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The brake override system operation stops by switching the ignition off.</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :Specified time is <span>0.6 to 10 s</span> according to braking force calculated in PCM.</div>
+<div class="deflist">*2  :Specification is <span>1,200 rpm</span> while vehicle is stopped and <span>1,100 rpm</span> while vehicle is driven.</div>
+<dl>
+<dd>
+<div class="list-title">Prevention of brake override system unnecessary operation</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If a servicing procedure requiring the brake pedal and the accelerator pedal to be depressed simultaneously is performed, unnecessary operation of the brake override system can be prevented, if necessary.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The operation of the emergency signal system (ESS) can be also canceled by performing the procedure for preventing unnecessary operation of the brake override system.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">Cancel conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the releasing procedure is implemented with the following conditions met within <span>30 s</span> after switching the ignition ON (KOEO), the brake override system does not operate until the recovery condition is met.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Shift position: neutral (MTX)</div>
+<div class="list">―  Selector lever position: N position (ATX)</div>
+<div class="list">―  Vehicle speed: <span>0 km/h {0 mph}</span></div>
+<dl>
+<div class="list-title">Releasing procedure</div>
+<dd class="list">
+<div class="list">1.  Depress the brake pedal for <span>10 s</span> with the accelerator pedal released.</div>
+<div class="list">2.  Repeatedly depress and release the accelerator pedal fully three times with the brake pedal depressed.</div>
+<div class="list">3.  Release the brake pedal.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Recovery condition</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The cancel conditions are reset when the ignition is switched off while the brake override system is canceled. As a result, the brake override system can operate.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="list-title">Master warning light illumination request</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If any of the following conditions is met, the PCM sends the master warning light illumination request signal to the instrument cluster. The master warning light illuminates to alert the driver that there is a malfunction in the brake system.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Brake switch (No.1 signal) has a malfunction</div>
+<div class="list">―  Brake switch (No.2 signal) has a malfunction</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Master warning light flash request</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If the cancel condition for preventing unnecessary operation of the brake override system is implemented, the PCM sends a brake override system cancel execution signal to the instrument cluster. The master warning light flashes to alert the driver that the brake override system is released.</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

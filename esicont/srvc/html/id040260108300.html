@@ -1,0 +1,206 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC C0061:54/C0062:54 [ABS HU/CM]</title>
+</head>
+<body><a name="id040260108300"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC C0061:54/C0062:54 [ABS HU/CM]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id040260108300</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody"><span>DTC</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody"><span>C0061:54</span></div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody"><span>ABS HU/CM (unperformed initialization procedure)</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>C0062:54</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  ABS HU/CM detects that the initialization procedure has not been performed</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refer to DTC TABLE. (See <font class="extxref-label"><a href="id040260985200.html">DTC TABLE [ABS HU/CM]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Initialization procedure for the ABS related parts sensor not performed</div>
+<dl>
+<dd class="list">
+<div class="list">―  Low-G sensor </div>
+<div class="list">―  Yaw rate sensor </div>
+</dd>
+</dl>
+<div class="list">•  SAS control module malfunction</div>
+<div class="list">•  ABS HU/CM malfunction</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" colspan="2">
+<div class="tbody"><span>SYSTEM WIRING DIAGRAM</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id04026010830001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Diagnostic Procedure</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Inspection</p>
+</th>
+<th id="" align="center">
+<p class="thead">Action</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY INITIALIZATION PROCEDURE</div>
+<div class="list">•  Was the following ABS related parts sensor initialization procedure performed?</div>
+<dl>
+<dd class="list">
+<div class="list">―  Lateral acceleration sensor (low-G sensor)</div>
+<div class="list">―  Longitudinal acceleration sensor (low-G sensor)</div>
+<div class="list">―  Yaw rate sensor </div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform the ABS related parts sensor initialization procedure, then go to Step3.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id041300803500.html">ABS RELATED PARTS SENSOR INITIALIZATION PROCEDURE</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY SAS CONTROL MODULE DTC</div>
+<div class="list">•  Using the M-MDS, perform the SAS control module DTC inspection.<div>(See <font class="extxref-label"><a href="id0802b1080500.html">DTC INSPECTION [STANDARD DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0802b2080500.html">DTC INSPECTION [TWO-STEP DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0802b1080700.html">DTC TABLE [STANDARD DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0802b2080700.html">DTC TABLE [TWO-STEP DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+<div class="tbody">DTC troubleshooting completed, then go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY DTC TROUBLESHOOTING COMPLETED</div>
+<div class="list">•  Using the M-MDS, clear the DTC from the ABS HU/CM.<div>(See <font class="extxref-label"><a href="id040260985100.html">CLEARING DTC [ABS HU/CM]</a></font>.)</div>
+</div>
+<div class="list">•  Using the M-MDS, perform the ABS HU/CM DTC inspection.<div>(See <font class="extxref-label"><a href="id040260985000.html">DTC INSPECTION [ABS HU/CM]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step1</div>
+<div class="tbody">If the malfunction recurs, replace the ABS HU/CM, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0413008014d1.html">ABS HU/CM REMOVAL/INSTALLATION [L.H.D.]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0413008014d2.html">ABS HU/CM REMOVAL/INSTALLATION [R.H.D.]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY NO DTC IS PRESENT</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id040260985200.html">DTC TABLE [ABS HU/CM]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>MULTIPLE FUEL INJECTION CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5988100"></a><p class="servinfo-title"><span class="servinfo-head"></span>MULTIPLE FUEL INJECTION CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5988100</p><br clear="all"><a name="id0140z598810001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  Multiple fuel injection control has been adopted in which the number of fuel injections is divided over several times for the purpose of noise and NOx reduction.</div>
+<dl>
+<dd class="list">
+<div class="list">―  For single injection, a greater amount of fuel is consumed to inject the necessary amount of fuel at one time. For this reason, the fuel is combusted rapidly at a high temperature and high pressure, resulting in increased noise and NOx.</div>
+<div class="list">―  In multiple injection, combustion is performed more slowly to divide the necessary fuel amount over several times, thus controlling noise and the occurrence of NOx.</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00004218.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00004218</div>
+</td>
+</tr>
+</table>
+<div class="list">•  The PCM injects fuel several times prior to the main injection according to the vehicle operation conditions. (Pilot injection)</div>
+<div class="list">•  During fast heating control and DPF regeneration control, fuel is injected after the main injection to increase the exhaust gas temperature. (Follow-up injection, post injection)</div><br clear="all"><a name="id0140z598810002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003742.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003742</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z598810003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The PCM determines the number of fuel injections based on the fuel injection amount and signals from each sensor.</div>
+<div class="list">•  When the engine is started, the number of fuel injections is determined by the engine coolant temperature and the engine speed.</div>
+<div class="list">•  In the multiple fuel injection control, there are various patterns from the combination of the number of fuel injections.</div>
+<div class="list">•  The PCM selects the optimum pattern based on the vehicle conditions and performs fuel injection for a maximum of 8 times.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003743.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003743</div>
+</td>
+</tr>
+</table>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="2">
+<p class="thead">Control range</p>
+</th>
+<th id="" align="center">
+<p class="thead">Control description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Normal injection</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Low engine speed, low load</div>
+</td>
+<td id="" align="left">
+<div class="tbody">For the purpose of reducing engine knock occurring during combustion and to assure ignitability, the number of fuel injections is increased to a maximum of 5 times.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">High engine speed, high load</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output and fuel consumption is improved by reducing the fuel injection time and injecting a higher amount of fuel over a fewer number of injections.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">FAST HEATING CONTROL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When the engine coolant temperature is low and the cabin heating performance is insufficient, 2 additional follow-up injections are performed to increase the exhaust temperature from the after-burn.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">DPF regeneration control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">During DPF regeneration, fuel injection is performed at a slower timing than normal to remove particulate matter (PM) accumulated in the diesel particulate filter.</div>
+<div class="list">1.  Follow-up injection is performed after the main injection. (increases exhaust pipe temperature)</div>
+<div class="list">2.  Post injection is performed 1—5 times<sup>*</sup> (increases exhaust temperature necessary for combustion and removal of particulate matter (PM))</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Fuel-cut</div>
+</td>
+<td id="" align="left">
+<div class="tbody">During fuel-cut operation, fuel is not injected by the fuel injection amount control.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5987900.html">FUEL INJECTION AMOUNT CONTROL [SKYACTIV-D 1.5]</a></font>)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*  :When the unburned fuel (HC) caused by the post injections reaches the oxidation catalytic converter, it is activated at the catalyst, and the exhaust gas temperature is increased. The division of the post injection into 1—5 times is for the purposes of reducing engine oil dilution and fuel adhesion to the cylinder walls. If fuel injection is performed at a slower timing than normal (timing in which no combustion occurs in cylinder), the fuel flows to the oil pan, and there is the possibility of the engine oil becoming diluted. In addition, by injecting small amounts of fuel in multiple stages, the penetration power of the atomized fuel is reduced and adhesion of fuel to the cylinder wall is prevented.</div><br clear="all"><p><a name="id0140z598810004"></a><p class="topic-title"><span class="topic-head"></span>Regarding engine oil dilution from post injection</p>
+<dl>
+<dd>
+<div class="list">•  Although post injection, in which fuel injection occurs after the combustion process, is effective for DPF regeneration control by after-burn, fuel adhesion to the inside of the cylinder wall occurs with the possibility of engine oil dilution.</div>
+<div class="list">•  As for the symptoms of engine oil dilution, use the guidelines indicated in the table below. (The engine oil level changes dramatically depending on the oil temperature and the amount of time elapsed since the engine was turned off, thus there may be differences in the actual engine oil level.)</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center" colspan="3">
+<p class="thead">Engine oil dilution</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">Engine oil dilution amount reference</div>
+</td>
+<td id="" align="center" colspan="3"><img src="images/am2zzn00003744.png"></td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Oil level gauge position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Center display</div>
+</td>
+<td id="" align="center" rowspan="9">
+<div class="tbody">No problem</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">“Engine Oil Pressure Inspection Required”</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Check engine light</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Engine oil warning light</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Illuminated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Wrench indicator light</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DTC recorded in PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">P253F:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">P252F:00<sup>*1</sup>, P253F:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DPF regeneration control range (auto DPF regeneration control)</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">DPF regeneration control range (auto DPF regeneration control)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">User action</div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody">Vehicle servicing at Authorized Mazda Dealer</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Vehicle servicing at Authorized Mazda Dealer</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Engine oil data reset after engine oil replacement</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Action taken by servicing at Authorized Mazda Dealer</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Action A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Action B</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :With engine oil level sensor</div>
+<dl>
+<dd>
+<div class="list-title">Action A</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  If DTC P253F:00 is stored in the PCM, replace the engine oil and reset the engine oil data using the Mazda Modular Diagnostic System (M-MDS) even if the engine oil level is lower than the X mark on the oil level gauge.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Action B</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  After verifying the engine oil level, replace the engine oil and implement the engine oil data reset using the Mazda Modular Diagnostic System (M-MDS).</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

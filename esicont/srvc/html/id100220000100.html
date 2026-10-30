@@ -1,0 +1,833 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>CONTROLLER AREA NETWORK (CAN) MALFUNCTION DIAGNOSIS FLOW [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</title>
+</head>
+<body><a name="id100220000100"></a><p class="servinfo-title"><span class="servinfo-head"></span>CONTROLLER AREA NETWORK (CAN) MALFUNCTION DIAGNOSIS FLOW [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id100220000100</p>
+<div class="list">•  If there is any vehicle malfunction complaint lodged by a customer, refer to "FOREWORD" and perform CAN malfunction diagnosis following the steps in the troubleshooting procedure. (See <font class="extxref-label"><a href="id100220000000.html">FOREWORD [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div><br clear="all"><a name="id10022000010001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>CAN malfunction diagnosis flow</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The flowchart and the diagnosis flow of the diagnosis procedure are the same thing, and the detailed procedure of the flowchart is the diagnosis procedure.</div>
+<div class="list">•  The step numbers in the flowchart indicate the step numbers of the diagnosis procedure.</div>
+</div>
+</dd>
+</dl><br clear="all"><p><a name="id10022000010002"></a><p class="topic-title"><span class="topic-head"></span>Flowchart</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00008224.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00008224</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id10022000010003"></a><p class="topic-title"><span class="topic-head"></span>Diagnostic procedure</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Inspection</p>
+</th>
+<th id="" align="center">
+<p class="thead">Action</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT IF COMMUNICATION BETWEEN M-MDS AND PCM IS POSSIBLE</div>
+<div class="list">•  Connect the M-MDS to the DLC-2.</div>
+<div class="list">•  Switch the ignition ON (engine off).</div>
+<div class="list">•  Perform vehicle identification.</div>
+<div class="list">•  Can the vehicle be identified?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 5 as a malfunction in the HS-CAN circuit has occurred.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT MODULE FOR INABILITY TO COMMUNICATE DUE TO CAN MALFUNCTION</div>
+<div class="list">•  Implement the network test using the M-MDS.<div>(See <font class="extxref-label"><a href="id100220000200.html">NETWORK TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+</div>
+<div class="list">•  Is there a module indicating a malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 12 as a malfunction in the CAN circuit has occurred.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO POWER SUPPLY IN CAN_H SIDE OF MS-CAN OR HS-CAN</div>
+<div class="list">•  Measure the voltage between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal F (CAN_H side of HS CAN) and body ground</div>
+<div class="list">―  Between DLC-2 terminal L (CAN_H side of MS CAN) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is B+ voltage measured between any of the terminals?<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If a short to power supply other than the B+ power supply has occurred, a constant voltage other than B+ can be measured.</div>
+</div>
+</dd>
+</dl>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A short to power supply in the CAN_H side of MS-CAN or HS-CAN.</div>
+<div class="tbody">Determine the location of the short to power supply according to the diagnosis procedure for determining the location of a short to power supply.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id100220000700.html">DETERMINING SHORT TO POWER SUPPLY LOCATION (HS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id100220001000.html">DETERMINING SHORT TO POWER SUPPLY LOCATION (MS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR SHORT TO GROUND IN CAN_L SIDE OF HS-CAN OR MS-CAN</div>
+<div class="list">•  Measure the voltage between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal E (CAN_L side of HS-CAN) and ground</div>
+<div class="list">―  Between DLC-2 terminal K (CAN_L side of MS-CAN) and ground</div>
+</dd>
+</dl>
+<div class="list">•  Is the voltage measured as <span>0 V</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A short to ground on the CAN_L side of the HS-CAN or MS-CAN has occurred.</div>
+<div class="tbody">Determine the location of the short to ground according to the diagnosis procedure for determining the location of a short to ground.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id100220000600.html">DETERMINING SHORT TO GROUND LOCATION (HS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id100220000900.html">DETERMINING SHORT TO GROUND LOCATION (MS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The current CAN circuit is normal, return to FOREWARD, and go to the next step of the CAN malfunction diagnosis in the troubleshooting procedure.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id100220000000.html">FOREWORD [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF PUSH BUTTON START SYSTEM HAS MALFUNCTION</div>
+<div class="list">•  Switch the ignition ON (engine off).</div>
+<div class="list">•  Can the ignition be switched ON?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A malfunction in the push button start system has occurred.</div>
+<div class="tbody">Perform diagnosis according to the symptom troubleshooting.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT FOR MALFUNCTION IN M-MDS</div>
+<div class="list">•  Connect the M-MDS to a normal vehicle and implement vehicle identification.</div>
+<div class="list">•  Can the vehicle be identified?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A malfunction in the M-MDS can be considered.</div>
+<div class="tbody">Repair the M-MDS.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT HS-CAN FOR SHORT TO POWER SUPPLY</div>
+<div class="list">•  Measure the voltage between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal F (CAN_H side) and body ground</div>
+<div class="list">―  Between DLC-2 terminal E (CAN_L side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is B+ voltage measured between any of the terminals?<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If a short to power supply other than the B+ power supply has occurred, a constant voltage other than B+ can be measured.</div>
+</div>
+</dd>
+</dl>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A short to power supply in the CAN_H side or CAN_L of HS-CAN has occurred.</div>
+<div class="tbody">Determine the location of the short to power supply according to the diagnosis procedure for determining the location of a short to power supply.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id100220000700.html">DETERMINING SHORT TO POWER SUPPLY LOCATION (HS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT HS-CAN FOR OPEN CIRCUIT</div>
+<div class="list">•  Measure the voltage between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal F (CAN_H side) and body ground</div>
+<div class="list">―  Between DLC-2 terminal E (CAN_L side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is the voltage between both terminals (CAN_H side and CAN_L side) equal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 11 as a short to ground or a short between circuits has occurred in the HS-CAN.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE IF OPEN CIRCUIT LOCATION IN HS-CAN CIRCUIT IS BETWEEN DLC AND CONNECTOR C-37 OR ELSEWHERE</div>
+<div class="list">•  Start the engine to verify that the immobilizer system operates normally.</div>
+<div class="list">•  Can the engine be started?<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If there is an open circuit in the wiring harness between the PCM and the start stop unit, the engine cannot be started because the key ID number verification for the immobilizer system is performed by CAN communication.</div>
+</div>
+</dd>
+</dl>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">An open circuit has occurred between the PCM and connector C-37 in the HS-CAN.</div>
+<div class="tbody">Determine the location of the open circuit according to the diagnosis procedure for determining the location of an open circuit.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id100220000400.html">DETERMINING OPEN CIRCUIT LOCATION (HS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">10</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE IF OPEN CIRCUIT LOCATION IN HS-CAN CIRCUIT IS BETWEEN DLC AND CONNECTOR C-37 OR ELSEWHERE</div>
+<div class="list">•  Switch the ignition ON (engine off).</div>
+<div class="list">•  Verify if the check engine light in the instrument cluster illuminates.</div>
+<div class="list">•  Start the engine.</div>
+<div class="list">•  Verify if the check engine light turns off.</div>
+<div class="list">•  Does the check engine light turn off?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">An open circuit between DLC-2 and connector C-37 has occurred.</div>
+<div class="tbody">Repair or replace the wiring harness for an open circuit, then return to Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">An open circuit has occurred between the PCM and connector C-37 in the HS-CAN.</div>
+<div class="tbody">Determine the location of the open circuit according to the diagnosis procedure for determining the location of an open circuit.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id100220000400.html">DETERMINING OPEN CIRCUIT LOCATION (HS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY MALFUNCTION OCCURRED IN HS-CAN CIRCUIT</div>
+<div class="list">•  Measure the voltage between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal F (CAN_H side) and body ground</div>
+<div class="list">―  Between DLC-2 terminal E (CAN_L side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is the voltage between both terminals (CAN_H side and CAN_L side) <span>0 V</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A short to ground in CAN_H side of HS-CAN has occurred.</div>
+<div class="tbody">Determine the location of the short to ground according to the diagnosis procedure for determining the location of a short to ground.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id100220000600.html">DETERMINING SHORT TO GROUND LOCATION (HS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A short between circuits in the CAN_H side and the CAN_L side of HS-CAN has occurred.</div>
+<div class="tbody">Determine the location of the short between circuits according to the diagnosis procedure for determining the location of a short between circuits.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id100220000800.html">DETERMINING SHORT BETWEEN CIRCUITS LOCATION (HS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">12</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE CAN COMMUNICATION SPECIFICATION IN WHICH MALFUNCTION OCCURS</div>
+<div class="list">•  Refer to the CAN communication specification quick reference table and verify the CAN communication specification (HS-CAN or MS-CAN) that is connected to the module which is indicating a malfunction.<div>(See <font class="intxref-label"><a href="#id10022000010004">CAN communication specification quick reference table</a></font>.)</div>
+</div>
+<div class="list">•  Is the module that is indicating a malfunction HS-CAN?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">An open circuit in the HS-CAN has occurred.</div>
+<div class="tbody">Determine the location of the open circuit according to the diagnosis procedure for determining the location of an open circuit.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id100220000400.html">DETERMINING OPEN CIRCUIT LOCATION (HS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">13</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT CAN_L SIDE OF MS-CAN FOR SHORT TO POWER SUPPLY</div>
+<div class="list">•  Measure voltage between DLC-2 terminal K (CAN_L side) and body ground.</div>
+<div class="list">•  Can B+ voltage be measured?<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If a short to power supply other than the B+ power supply has occurred, a constant voltage other than B+ can be measured.</div>
+</div>
+</dd>
+</dl>
+</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A short to power supply in the CAN_L side of the MS-CAN has occurred.</div>
+<div class="tbody">Determine the location of the short to power supply according to the diagnosis procedure for determining the location of a short to power supply.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id100220001000.html">DETERMINING SHORT TO POWER SUPPLY LOCATION (MS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">14</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT MS-CAN FOR OPEN CIRCUIT</div>
+<div class="list">•  Measure the voltage between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal L (CAN_H side) and body ground</div>
+<div class="list">―  Between DLC-2 terminal K (CAN_L side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is the voltage between both terminals (CAN_H side and CAN_L side) equal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Open circuit in MS-CAN has occurred.</div>
+<div class="tbody">Determine the location of the open circuit according to the diagnosis procedure for determining the location of an open circuit.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id100220000500.html">DETERMINING OPEN CIRCUIT LOCATION (MS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">15</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY MALFUNCTION OCCURRED IN MS-CAN</div>
+<div class="list">•  Measure the voltage between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Between DLC-2 terminal L (CAN_H side) and body ground</div>
+<div class="list">―  Between DLC-2 terminal K (CAN_L side) and body ground</div>
+</dd>
+</dl>
+<div class="list">•  Is the voltage between both terminals (CAN_H side and CAN_L side) <span>0 V</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A short to ground in the CAN_H side of the MS-CAN has occurred.</div>
+<div class="tbody">Determine the location of the short to ground according to the diagnosis procedure for determining the location of a short to ground.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id100220000900.html">DETERMINING SHORT TO GROUND LOCATION (MS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A short between circuits on the CAN_H side and CAN_L side of MS-CAN has occurred.</div>
+<div class="tbody">Determine the location of the short between circuits according to the diagnosis procedure for determining the location of a short between circuits.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id100220001100.html">DETERMINING SHORT BETWEEN CIRCUITS LOCATION (MS-CAN) [SKYACTIV-G 1.3, SKYACTIV-G 1.5 (R.H.D.)]</a></font>.)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id10022000010004"></a><p class="topic-title"><span class="topic-head"></span>CAN communication specification quick reference table</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="left" rowspan="2">
+<p class="thead">CAN communication related module</p>
+<p class="thead">(M-MDS display)</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">CAN communication specification</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">HS-CAN</p>
+</th>
+<th id="" align="center">
+<p class="thead">MS-CAN</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">PCM</div>
+<div class="tbody">(PCM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DSC HU/CM</div>
+<div class="tbody">(ABS)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ABS HU/CM</div>
+<div class="tbody">(ABS)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TCM</div>
+<div class="tbody">(TCM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Auto leveling control module</div>
+<div class="tbody">(ALM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DC-DC converter (i-ELOOP)</div>
+<div class="tbody">(DCDC)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BCM</div>
+<div class="tbody">(BCM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Laser sensor</div>
+<div class="tbody">(SCBS)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Forward sensing camera (FSC)</div>
+<div class="tbody">(FSC)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SAS control module</div>
+<div class="tbody">(RCM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Connectivity master unit (CMU)</div>
+<div class="tbody">(CMU)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EPS control module</div>
+<div class="tbody">(EPS)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Start stop unit</div>
+<div class="tbody">(SSU)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Instrument cluster</div>
+<div class="tbody">(IC)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Rear vehicle monitoring control module (LH)</div>
+<div class="tbody">(RVM)</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Climate control unit</div>
+<div class="tbody">(EATC)</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><a name="id10022000010005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>HS-CAN signal waveform</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">CAN circuit condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Signal waveform (reference)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Normal</div>
+</td>
+<td id="" align="center"><img src="images/ac5jjw00001577.png"></td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="list">•  CAN_H</div>
+<dl>
+<dd class="list">
+<div class="list">―  Connection terminal: DLC-2: terminal F (+) ↔ body ground ( — )</div>
+<div class="list">―  Oscilloscope setting: 0.5 V/DIV (Y), 200 µs/DIV (X), DC range</div>
+</dd>
+</dl>
+<div class="list">•  CAN_L</div>
+<dl>
+<dd class="list">
+<div class="list">―  Connection terminal: DLC-2: terminal E (+) ↔ Body ground ( — )</div>
+<div class="list">―  Oscilloscope setting: 0.5 V/DIV (Y), 200 µs/DIV (X), DC range</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id10022000010006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>MS-CAN signal waveform</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">CAN circuit condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Signal waveform (reference)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Normal</div>
+</td>
+<td id="" align="center"><img src="images/ac5jjw00001578.png"></td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="list">•  CAN_H</div>
+<dl>
+<dd class="list">
+<div class="list">―  Connection terminal: DLC-2: terminal L (+) ↔ Body ground ( — )</div>
+<div class="list">―  Oscilloscope setting: 0.5 V/DIV (Y), 1 ms/DIV (X), DC range</div>
+</dd>
+</dl>
+<div class="list">•  CAN_L</div>
+<dl>
+<dd class="list">
+<div class="list">―  Connection terminal: DLC-2: terminal K (+) ↔ Body ground ( — )</div>
+<div class="list">―  Oscilloscope setting: 0.5 V/DIV (Y), 1 ms/DIV (X), DC range</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

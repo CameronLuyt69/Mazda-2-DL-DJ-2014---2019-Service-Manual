@@ -1,0 +1,820 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC SYSTEM PID/DATA MONITOR FUNCTION [TCM (CW6A-EL)]</title>
+</head>
+<body><a name="id0502p4280600"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC SYSTEM PID/DATA MONITOR FUNCTION [TCM (CW6A-EL)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0502p4280600</p><br clear="all"><a name="id0502p428060001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose/Function</p>
+<div class="list">•  The PID/DATA monitor function can monitor control data such as input signals/internal calculation values/output signals using the M-MDS.</div>
+<div class="list">•  The module control condition can be verified in real-time by the PID/DATA monitor function.</div><br clear="all"><a name="id0502p428060002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction/Operation</p>
+<p clear="all">
+<p class="table-title">PID/DATA monitor item table</p>
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">APP sensor No.1</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DGP_DIS_1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km {mile}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Traveled distance after differential protection control operated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DGP_DIS_2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km {mile}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Traveled distance after DGP_MAX_DIF updated</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DGP_MAX_DIF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Maximum rotation difference after differential protection control operated due to excessive rotation difference between left/right drive wheels</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">DGP_SPD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH {MPH}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed with trailing wheels after differential protection control operated due to excessive rotation difference between left/right drive wheels</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECU_A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECU internal temperature A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECU_B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECU internal temperature B</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECU_C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ECU internal temperature C</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EOP_DUTY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump duty cycle</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">EOP_RLY</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Electric AT oil pump relay condition</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">GEAR_RA</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Ratio</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Gear ratio</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">GEAR_SEL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">1/2/3/4/5/6</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Gear shift position</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">HI_TEMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ATF high temperature mode determination amount</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">HTM_DIS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km {mile}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Travel distance since determination of ATF high temperature mode</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">I-Stop_EST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">i-stop enable state on TCM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LINEDES</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Target modifier pressure/Target pressure control solenoid pressure</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LN_C_CLUTCH</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Hydraulic control learning value (engaged)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LN_O_CLUTCH</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Hydraulic control learning value (released)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LN_OV_SCOPE</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Hydraulic control learning value (mis-learning)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LN_T_CLUTCH</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Hydraulic control learning value (torque converter)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LOCK_UP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">OFF/SLIP/ON</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Torque converter (TCC condition)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">LONGI_ACCEL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Longitudinal acceleration</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.1 condition</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW1_OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW1_ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.2 condition</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW2_OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW2_ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.3 condition</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW3_OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW3_ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW4</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Oil pressure switch No.4 condition</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW4_OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OP_SW4_ON</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">After performing on-board diagnostic test mode</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">OSS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Output shaft speed</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">PADDLE_DOWN<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Down switch condition (steering shift switch)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">PADDLE_UP<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Up switch condition (steering shift switch)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">PUMP_SPEED</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Motor pump unit actual speed</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed/min</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SC_STATE</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Not Active/Active</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift control execution condition</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SE_TYPE</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No valid data/Bf_1st Af_2nd/Bf_1st Af_3rd/Bf_1st Af_4th/Bf_1st Af_5th/Bf_1st Af_6th/Bf_2nd Af_1st/Bf_2nd Af_3rd/Bf_2nd Af_4th/Bf_2nd Af_5th/Bf_2nd Af_6th/Bf_3rd Af_1st/Bf_3rd Af_2nd/Bf_3rd Af_4th/Bf_3rd Af_5th/Bf_3rd Af_6th/Bf_4th Af_1st/Bf_4th Af_2nd/Bf_4th Af_3rd/Bf_4th Af_5th/Bf_4th Af_6th/Bf_5th Af_1st/Bf_5th Af_2nd/Bf_5th Af_3rd/Bf_5th Af_4th/Bf_5th Af_6th/Bf_6th Af_1st/Bf_6th Af_2nd/Bf_6th Af_3rd/Bf_6th Af_4th/Bf_6th
+Af_5th</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Gear shift position before shifting gears</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SHIFT_CTRL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">DEFAULT/MANUAL/C_CONTROL/HIGH_TEMP/D_MANUAL/FAIL_SAFE</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift control mode</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SS_ON-OFF</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">On/off solenoid condition</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SS1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.1 actual current</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SS1_C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.1 target current</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SS2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.2 actual current</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SS2_C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.2 target current</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SS3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.3 actual current</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SS3_C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.3 target current</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SS4</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.4 actual current</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SS4_C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift solenoid No.4 target current</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SSLU</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCC control solenoid actual current</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SSLU_C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCC control solenoid target current</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SSLU_PRES</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCC control solenoid target pressure</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SSP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Pressure control solenoid actual current</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SSP_C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Pressure control solenoid target current</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SSP_PRES</div>
+</td>
+<td id="" align="center">
+<div class="tbody">kPa {kgf/cm<sup>2</sup>, psi}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Pressure control solenoid target pressure</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TFT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C {°F}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ATF temperature</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">THOP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">%</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Throttle opening angle</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TORQUE_ACT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Nm</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Actual engine torque</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TORQUE_DES</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Nm</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Desired engine torque</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">P/SHIFT_DOWN/SHIFT_UP/M/D/N/R</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Range position</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TS_OD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km {mile}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Traveled distance when AT slip occurred</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TS_SE</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No valid data/Bf_1st Af_2nd/Bf_1st Af_3rd/Bf_1st Af_4th/Bf_1st Af_5th/Bf_1st Af_6th/Bf_2nd Af_1st/Bf_2nd Af_3rd/Bf_2nd Af_4th/Bf_2nd Af_5th/Bf_2nd Af_6th/Bf_3rd Af_1st/Bf_3rd Af_2nd/Bf_3rd Af_4th/Bf_3rd Af_5th/Bf_3rd Af_6th/Bf_4th Af_1st/Bf_4th Af_2nd/Bf_4th Af_3rd/Bf_4th Af_5th/Bf_4th Af_6th/Bf_5th Af_1st/Bf_5th Af_2nd/Bf_5th Af_3rd/Bf_5th Af_4th/Bf_5th Af_6th/Bf_6th Af_1st/Bf_6th Af_2nd/Bf_6th Af_3rd/Bf_6th Af_4th/Bf_6th
+Af_5th</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Gear position before/after shifting when AT slip occurred</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TS_VS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH {MPH}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed before/after shifting when AT slip occurred</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TSS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Turbine/input shaft speed</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">UPSHIFT_REV</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shift-up record due to engine request</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">TCM power supply voltage</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VSS</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH {MPH}</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :With steering shift switch</div>
+</body>
+</html>

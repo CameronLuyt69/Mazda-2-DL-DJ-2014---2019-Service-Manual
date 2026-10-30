@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ELECTRICAL FAN CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5205000"></a><p class="servinfo-title"><span class="servinfo-head"></span>ELECTRICAL FAN CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5205000</p><br clear="all"><a name="id0140z520500001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  Through cooling of the radiator and condenser by operation of the cooling fan according to vehicle conditions, engine reliability and cooling performance have been improved.</div>
+<div class="list">•  The PCM determines the engine operation conditions based on the signal from each sensor and performs duty-control of the fan control module to control the rotation speed of the cooling fan motor.</div><br clear="all"><a name="id0140z520500002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003755.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003755</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z520500003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id0140z520500004"></a><p class="topic-title"><span class="topic-head"></span>Engine coolant temperature conditions</p>
+<dl>
+<dd>
+<div class="list">•  Output duty ratio is controlled according to the engine coolant temperature as indicated in the graph.</div>
+<div class="list">•  While the engine coolant temperature is decreasing, it is controlled at a different temperature from that of when the engine coolant temperature is increasing.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003756.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003756</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140z520500005"></a><p class="topic-title"><span class="topic-head"></span>A/C conditions</p>
+<dl>
+<dd>
+<div class="list">•  Output duty ratio is controlled according to the refrigerant pressure when the A/C switch is on.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003908.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003908</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140z520500006"></a><p class="topic-title"><span class="topic-head"></span>Exhaust air temperature condition</p>
+<dl>
+<dd>
+<div class="list">•  If all of the following conditions are met to suppress temperature increase inside the engine compartment, the output duty is controlled at a ratio of 75%.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Exhaust gas temperature sensor No.3: 400 °C {221 °F} or more</div>
+<div class="list">―  Vehicle speed: 40 km/h {25 mph} or less</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140z520500007"></a><p class="topic-title"><span class="topic-head"></span>After cooling control</p>
+<dl>
+<dd>
+<div class="list">•  To suppress temperature increase inside the engine compartment, the cooling fan operates (output duty ratio: 50 %) for up to 9 min under the following condition.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Exhaust gas temperature sensor No.3: 400 °C {221 °F} or more</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140z520500008"></a><p class="topic-title"><span class="topic-head"></span>Condition during collision</p>
+<dl>
+<dd>
+<div class="list">•  If a collision signal from the SAS control module is received, the PCM stops the engine cooling fan to avoid use of battery voltage.</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

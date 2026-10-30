@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>REAR WIPER/WASHER SYSTEM</title>
+</head>
+<body><a name="id091900002000"></a><p class="servinfo-title"><span class="servinfo-head"></span>REAR WIPER/WASHER SYSTEM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091900002000</p><br clear="all"><a name="id09190000200001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The rear wiper and washer system is equipped with a continuous, auto-stop and intermittent wiper, and synchronized washer operation.</div><br clear="all"><a name="id09190000200002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001930.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001930</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09190000200003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001931.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001931</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09190000200004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id09190000200005"></a><p class="topic-title"><span class="topic-head"></span>Continuous operation</p>
+<p class="list">1.  When the rear wiper and washer switch is in the ON position (1) with the ignition switched ON (engine off or on), the rear wiper switch ON signal is detected (2).</p>
+<p class="list"></p>
+<p class="list">2.  When the start stop unit detects the rear wiper switch ON signal, the rear wiper operation request signal is sent (3) to the BCM by CAN communication.</p>
+<p class="list"></p>
+<p class="list">3.  The BCM sends (4) the rear wiper operation request signal to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">4.  When the electrical supply unit (ESU) receives the rear wiper operation request signal, it operates (5) the rear wiper continuously.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001932.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001932</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09190000200006"></a><p class="topic-title"><span class="topic-head"></span>Auto-stop operation</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The auto stop switch in the rear wiper motor operates as follows according to the operation position of the rear wiper.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Rear wiper in park position: Off</div>
+<div class="list">―  Rear wiper in position other than park: On</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<p class="list">1.  If the rear wiper and washer switch is switched to the OFF position (1) while the rear wiper is operating, the rear wiper is operated continuously because the auto stop switch is on.</p>
+<p class="list"></p>
+<p class="list">2.  The auto stop switch turns off (2) when the rear wiper operates to the park position.</p>
+<p class="list"></p>
+<p class="list">3.  If the auto stop switch off signal is detected (3), the electrical supply unit (ESU) stops the rear wiper motor.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001933.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001933</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09190000200007"></a><p class="topic-title"><span class="topic-head"></span>Intermittent wiper operation</p>
+<p class="list">1.  When the rear wiper and washer switch is in the INT position (1) with the ignition switched ON (engine off or on), the rear wiper switch INT signal is detected (2).</p>
+<p class="list"></p>
+<p class="list">2.  When the start stop unit detects the rear wiper switch INT signal, the rear wiper INT operation request signal is sent (3) to the BCM by CAN communication.</p>
+<p class="list"></p>
+<p class="list">3.  The BCM sends (4) the rear wiper INT operation request signal to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">4.  When the electrical supply unit (ESU) receives the rear wiper INT operation request signal, it operates (5) the rear wiper intermittently.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001934.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001934</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09190000200008"></a><p class="topic-title"><span class="topic-head"></span>Synchronized washer operation</p>
+<p class="list">1.  When the rear wiper and washer switch is in the rear washer position (1) with the ignition switched ON (engine off or on), the rear washer switch on signal is detected (2).</p>
+<p class="list"></p>
+<p class="list">2.  The start stop unit sends (3) the rear washer switch on signal to the BCM via CAN communication.</p>
+<p class="list"></p>
+<p class="list">3.  When the BCM receives the rear washer switch on signal, it sends (4) the rear washer operation request signal to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">4.  When the electrical supply unit (ESU) receives the rear washer operation request signal, the washer motor is driven (5) and washer fluid is sprayed from the rear washer nozzle.</p>
+<p class="list"></p>
+<p class="list">5.  When the BCM receives (6) the rear washer switch on signal for a certain period of time, it sends (7) the synchronized washer rear wiper operation request signal to the electrical supply unit (ESU).</p>
+<p class="list"></p>
+<p class="list">6.  When the electrical supply unit (ESU) receives a synchronized washer rear wiper operation request signal, the rear wiper is operated (8) from the park position <span>2 times</span>.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001935.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001935</div>
+</td>
+</tr>
+</table>
+</p>
+</body>
+</html>

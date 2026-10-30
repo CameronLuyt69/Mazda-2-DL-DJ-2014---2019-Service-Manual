@@ -1,0 +1,235 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>BOOST CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5988600"></a><p class="servinfo-title"><span class="servinfo-head"></span>BOOST CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5988600</p><br clear="all"><a name="id0140z598860001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The PCM controls the air charging pressure to improve the variable geometry turbocharger responsiveness, the acceleration performance and fuel economy of the vehicle.</div>
+<div class="list">•  To obtain optimum air charging pressure according to the driving conditions, the PCM drives and controls the turbocharger solenoid valve.</div><br clear="all"><a name="id0140z598860002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003748.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003748</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z598860003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The PCM controls the turbocharger solenoid valve according to the engine operation conditions (engine speed and fuel injection amount) so that optimum air charging pressure is obtained.</div>
+<div class="list">•  If driving conditions require increased air charging pressure, the duty value of the signal sent to the turbocharger solenoid valve is higher. At that time, the variable nozzle of the VG turbocharger moves in the closed direction.</div>
+<div class="list">•  If driving conditions require decreased air charging pressure, the duty value of the signal sent to the turbocharger solenoid valve is lower. At that time, the variable nozzle of the VG turbocharger moves in the open direction.</div>
+<div class="list">•  The PCM calculates the target air charging pressure of the variable nozzle based on the input signal and performs feedback control.</div>
+<dl>
+<div class="list-title">Target lift of variable nozzle</div>
+<dd class="list">
+<div class="list">―  Target lift of variable nozzle is calculated based on the engine speed and target torque.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Target air charging pressure</div>
+<dd class="list">
+<div class="list">―  Target boost pressure is calculated based on the engine speed and target torque.</div>
+</dd>
+</dl>
+<div class="list">•  The PCM adjusts the variable nozzle to the optimal opening angle in mainly 4 control ranges. In addition, the fuel injection amount is restricted according to the turbine speed to prevent the turbocharger with variable turbine geometry from operating in excess speed.<p class="figure-title">Control range (light load range to all ranges) image diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzn00006152.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzn00006152</div>
+</td>
+</tr>
+</table>
+</div>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="2">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Turbocharger solenoid valve drive condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Variable nozzle operation condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Control status</p>
+</th>
+<th id="" align="center">
+<p class="thead">Excess speed prevention control</p>
+<p class="thead">(fuel injection amount restriction)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="5">
+<div class="tbody"> </div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">(1) Light load range</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Duty 40—45%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Open</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Variable nozzle lift amount fixed at 4.0 mm {0.16 in}<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Duty 0—80%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Open <span class="Symbol">Û</span> Closed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Feedback control relative to target lift of variable nozzle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">(2) Light load, high speed range</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Duty 0—80%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Open <span class="Symbol">Û</span> Closed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Feedback control relative to target lift of variable nozzle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">(3) Mid to high load range</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Duty 0—80%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Open <span class="Symbol">Û</span> Closed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Feedback control relative to target lift of variable nozzle</div>
+</td>
+<td id="" align="left" rowspan="3">
+<div class="tbody">Fuel injection amount is controlled when the turbine speed is 255,000 rpm or more.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">Duty 0—80%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Open <span class="Symbol">Û</span> Closed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Feedback control relative to target air charging pressure<sup>*2</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody"> </div>
+</td>
+<td id="" align="left">
+<div class="tbody">(4) All ranges (DPF regeneration control operation)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Duty 0—80%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Open <span class="Symbol">Û</span> Closed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Feedback control relative to target air charging pressure</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Ignition is switched off</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Duty 95%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Closed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Performs output error learning for the turbocharger with the fully closed position detected by the actuator position sensor as standard.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">When engine is stopped by i-stop control</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Duty 60%<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Fully closed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Variable nozzle lift fixed at fully closed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">No-load racing</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Duty 0%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Fully open</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Variable nozzle lift fixed at fully open</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :Only when HP-EGR control valve is open</div>
+<div class="deflist">*2  :When the change in the accelerator opening angle is small and the difference between the target air charging pressure value and the actual is within the specification.</div>
+<div class="deflist">*3  :By applying approx. 60% or more duty ratio sent to the turbocharger solenoid valve, the variable nozzle lift of the variable geometry turbocharger is fixed at fully closed.</div>
+<div class="list">•  For details on the open/close of each valve in the air charging pressure control, refer to the “AIR CHARGING SYSTEM”. (See <font class="extxref-label"><a href="id0113q2706400.html">AIR CHARGING SYSTEM [SKYACTIV-D 1.5]</a></font>.)</div>
+</body>
+</html>

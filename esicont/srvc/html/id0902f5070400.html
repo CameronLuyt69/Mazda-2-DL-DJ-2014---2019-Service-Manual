@@ -1,0 +1,252 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC B1D35:86 [BCM]</title>
+</head>
+<body><a name="id0902f5070400"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC B1D35:86 [BCM]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0902f5070400</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="left">
+<p class="thead">Hazard warning switch error signal received</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Detection condition</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  BCM receives the error signals from the start stop unit for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Fail-safe</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Perform the control with hazard warning switch signal turned off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>Possible cause</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Start stop unit malfunction</div>
+<div class="list">•  Hazard warning switch malfunction</div>
+<div class="list">•  BCM malfunction</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>System wiring diagram</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic Procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Step</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Inspection</p>
+</th>
+<th id="" align="center">
+<p class="thead">Action</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY BCM DTCs AGAIN</div>
+<div class="list">•  Clear the DTC for the BCM using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902f5067400.html">CLEARING DTC [BCM]</a></font>.)</div>
+</div>
+<div class="list">•  Switch the ignition ON (engine off or on) and wait for <span>2 s or more</span>.</div>
+<div class="list">•  Retrieve the BCM DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902f5067300.html">DTC INSPECTION [BCM]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC displayed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 6.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE MALFUNCTIONING LOCATION BY PERFORMING PID/DATA MONITOR INSPECTION</div>
+<div class="list">•  Using the M-MDS, display the following PIDs for the start stop unit.<div>(See <font class="extxref-label"><a href="id0902p6025400.html">PID/DATA MONITOR INSPECTION [START STOP UNIT]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  HAZARD_SW</div>
+</dd>
+</dl>
+<div class="list">•  Does the PID monitoring value switch correctly according to the hazard warning switch operation?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 4. (Circuit between hazard warning switch and start stop unit is normal)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT HAZARD WARNING SWITCH</div>
+<div class="list">•  Inspect the hazard warning switch.<div>(See <font class="extxref-label"><a href="id091800803100.html">HAZARD WARNING SWITCH INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is the hazard warning switch normal?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the start stop unit, then go to Step 5.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091400110300.html">START STOP UNIT REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the hazard warning switch, then go to Step 5.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091800803000.html">HAZARD WARNING SWITCH REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE MALFUNCTIONING LOCATION BY PERFORMING PID/DATA MONITOR INSPECTION</div>
+<div class="list">•  Using the M-MDS, display the following PIDs for the BCM.<div>(See <font class="extxref-label"><a href="id0902f5996400.html">PID/DATA MONITOR INSPECTION [BCM]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  HAZARD_SW</div>
+</dd>
+</dl>
+<div class="list">•  Does the PID monitoring value switch correctly according to the hazard warning switch operation?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step. (Circuit between start stop unit and BCM is normal)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the start stop unit, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091400110300.html">START STOP UNIT REMOVAL/INSTALLATION</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY THAT REPAIRS HAVE BEEN COMPLETED</div>
+<div class="list">•  Clear the DTC for the BCM using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902f5067400.html">CLEARING DTC [BCM]</a></font>.)</div>
+</div>
+<div class="list">•  Switch the ignition ON (engine off or on) and wait for <span>2 s or more</span>.</div>
+<div class="list">•  Retrieve the BCM DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id0902f5067300.html">DTC INSPECTION [BCM]</a></font>.)</div>
+</div>
+<div class="list">•  Is the same DTC displayed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the BCM.<div>(See <font class="extxref-label"><a href="id094000003800.html">BODY CONTROL MODULE (BCM) REMOVAL/INSTALLATION</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY IF OTHER DTCs DISPLAYED</div>
+<div class="list">•  Are any other DTCs displayed?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the applicable DTC troubleshooting.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0902f5067500.html">DTC TABLE [BCM]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

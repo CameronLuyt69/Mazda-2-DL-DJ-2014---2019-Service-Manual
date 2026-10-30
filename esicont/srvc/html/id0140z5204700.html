@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>STARTER CUT-OFF CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5204700"></a><p class="servinfo-title"><span class="servinfo-head"></span>STARTER CUT-OFF CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5204700</p><br clear="all"><a name="id0140z520470001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The PCM controls energization to the starter relay according to an immobilizer system request to improve security.</div>
+<div class="list">•  While the selector lever is not in P or N position, starter relay energization using the push button start is inhibited. (ATX)</div>
+<div class="list">•  When the clutch pedal is not depressed, starter relay energization using the push button start is inhibited. (MTX)</div><br clear="all"><a name="id0140z520470002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003659.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003659</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140z520470003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list-title">When engine stop request signal received</div>
+<div class="list">•  The PCM does not establish a ground with the starter circuit. Therefore, even if the ignition is switched ON (START), the starter motor does not rotate because the starter relay is not energized, and the engine does not start.</div>
+<div class="list-title">When engine stop request signal not received</div>
+<div class="list">•  The PCM establishes a ground with the starter circuit. Therefore, when the ignition is switched ON (START), the starter relay is energized and the starter motor rotates. As a result, the engine starts normally.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/amxzzn00001256.png"></td>
+</tr>
+</table>
+<div class="figure-caption">amxzzn00001256</div>
+</td>
+</tr>
+</table>
+<div class="list">•  The PCM turns the starter relay off with the engine speed at the set value or more (value varies depending on engine coolant temperature).</div>
+<div class="list-title">Starter cut-off control during preheating</div>
+<div class="list">•  During the preheating timer operation by the glow control, energization to the starter relay is cut.</div>
+</body>
+</html>

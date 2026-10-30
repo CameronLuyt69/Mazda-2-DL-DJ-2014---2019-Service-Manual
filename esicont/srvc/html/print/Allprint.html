@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>PRINT PAGE</title>
+
+		<style type="text/css">
+
+			body {
+			margin: 0;
+			padding: 0;
+			overflow-x:hidden;overflow-y:hidden;
+			}
+
+			div {
+			margin: 0;
+			padding: 0;
+			}
+		</style>
+
+		<script>
+			window.onload = function()
+			{
+				moveTo(0,0);
+
+				//IEローカルだと画面サイズがおかしくなるので、強制的にリサイズする。
+				window.resizeTo(opener.screenWidth, opener.screenHeight);
+
+				var devElm = document.createElement('object');
+
+				var pdfFileName = opener.fileNameAll;
+
+				pdfFileName = pdfFileName + '_ALL.pdf';
+				devElm.setAttribute('data', 'pdf/' + pdfFileName + '#scrollbar=1');
+				devElm.setAttribute('target', '_blank');
+				devElm.setAttribute('type', 'application/pdf');
+
+				devElm.setAttribute('width', window.innerWidth);
+				devElm.setAttribute('height', window.innerHeight);
+
+				document.getElementById('pdfShow').appendChild(devElm);
+				
+				//Chromeの場合、リロードしないとスクロールバーが表示されない
+  				rCheck();
+			}
+
+			function rCheck()
+			{
+				if (window.name != "xyz")
+				{
+					location.reload();
+					window.name = "xyz";
+				}
+			}
+
+		</script>
+	</head>
+	<body>
+		<div id = "pdfShow">
+
+		</div>
+	</body>
+</html>
+

@@ -1,0 +1,580 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ADVANCED KEYLESS ENTRY SYSTEM</title>
+</head>
+<body><a name="id091400107400"></a><p class="servinfo-title"><span class="servinfo-head"></span>ADVANCED KEYLESS ENTRY SYSTEM</p>
+<hr>
+<p class="servinfo-title-id" align="right">id091400107400</p><br clear="all"><a name="id09140010740001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  An advanced keyless entry system has been adopted which performs automatic authorization of the remote transmitter that the customer carries and locking/unlocking of the doors.</div><br clear="all"><a name="id09140010740002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  Remote transmitter authorization is performed if any of the following operations is performed.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Locking/unlocking using a request switch on an outer handle</div>
+<div class="list">―  Locking/unlocking using a remote transmitter</div>
+<div class="list">―  Trunk lid opening using remote transmitter (4SD)</div>
+<div class="list">―  Opening the liftgate/trunk lid</div>
+</dd>
+</dl>
+<div class="list">•  Each turn light flashes to notify the user that the lock/unlock operation is completed.</div>
+<div class="list">•  The advanced keyless entry system has the following functions in the event that the user operates the system incorrectly or to prevent the user from leaving the vehicle without locking.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Auto re-lock function: After unlocking, if all doors or the liftgate/trunk lid are not opened and a period of time according to the personalized setting has elapsed, all doors are automatically locked.</div>
+<div class="list">―  Out-of-area (reception area) type auto lock function<sup>*</sup>: After closing all doors, when the remote transmitter is brought out of the reception area of the keyless antenna, all doors are automatically locked.</div>
+<div class="list">―  Remote transmitter pause function: If all doors are locked with a remote transmitter left in the vehicle, the functions of the remote transmitter inside the vehicle are paused.</div>
+<div class="list">―  Remote transmitter left-in-vehicle prevention function: If the liftgate/trunk lid is closed with a remote transmitter left in the vehicle, the liftgate/trunk lid can be opened by pressing the liftgate/trunk lid opener switch.</div>
+<div class="list">―  Warning function: Warns that there is a malfunction in the advanced keyless entry system or the system is operated incorrectly using any of the following:</div>
+<dl>
+<dd class="list">
+<div class="list">•  Keyless beeper</div>
+<div class="list">•  Keyless warning alarm</div>
+<div class="list">•  KEY warning light (red)</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="deflist">*  :The initial value for the personalization setting is off. When using the function, turn the personalization setting on.</div><br clear="all"><p><a name="id09140010740003"></a><p class="topic-title"><span class="topic-head"></span>Remote transmitter battery voltage low indication function</p>
+<dl>
+<dd>
+<div class="list">•  This function notifies the driver that the battery voltage of the remote transmitter is low by flashing the KEY indicator light (green).</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09140010740004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002269.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002269</div>
+</td>
+</tr>
+</table>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002350.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002350</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09140010740005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003592.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003592</div>
+</td>
+</tr>
+</table>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001810.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001810</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09140010740006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id09140010740007"></a><p class="topic-title"><span class="topic-head"></span>Lock/unlock operation using request switch on outer handle</p>
+<dl>
+<dd>
+<div class="list-title">Operation Conditions</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When the request switch is on with all the following conditions met, lock/unlock operation is performed.</div>
+<dl>
+<dd class="list">
+<div class="list">―  ACC relay and IG1 relay OFF (ignition switched OFF) detected</div>
+<div class="list">―  All door latch switch OFF (all doors closed condition) is detected</div>
+<div class="list">―  Liftgate latch switch OFF (liftgate closed condition) is detected (5HB)<sup>*1</sup></div>
+<div class="list">―  The remote transmitter is within the reception area outside keyless antenna.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="deflist">*1  :The operation conditions are included depending on the vehicle's period of manufacture.</div>
+<p class="list">1.  When the driver's or passenger's side request switch is pressed, a request switch on signal is input (1) to the start stop unit via the LF control unit.</p>
+<p class="list"></p>
+<p class="list">2.  Based on the request switch on signal, the start stop unit sends (2) a request output signal to the LF control unit to verify that the remote transmitter is inside the reception area.</p>
+<p class="list"></p>
+<p class="list">3.  The LF control unit outputs (3) the request signal from the outside keyless antenna of the door in which the request switch was pressed.</p>
+<p class="list"></p>
+<p class="list">4.  The remote transmitter receives the request signal from the outside keyless antenna, and sends (4) ID data to the keyless receiver.</p>
+<p class="list"></p>
+<p class="list">5.  The keyless receiver transmits (5) the received ID data to the start stop unit.</p>
+<p class="list"></p>
+<p class="list">6.  The start stop unit verifies the ID data, and if it determines a programmed remote transmitter is outside the vehicle, it sends a lock/unlock request signal to the BCM and at the same time, it sends (6) a beeper sound request signal to the LF control unit.</p>
+<p class="list"></p>
+<p class="list">7.  When the BCM receives the lock/unlock request signal, it sends (7) a lock/unlock signal to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">8.  When the electrical supply unit (ESU) receives the lock/unlock signal, it operates (8) the front/rear door lock actuator motor to lock/unlock the front/rear doors.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  It takes <span>approx. 1—2 s</span> from when a request switch is pressed until the lock/unlock operation is completed.</div>
+</div>
+</dd>
+</dl>
+</p>
+<p class="list">9.  When the LF control unit receives the beeper sound request signal, it operates (9) the keyless beeper for the following number of times:</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">―  Lock: Sounds once</div>
+<div class="list">―  Unlock: Sounds twice</div>
+</dd>
+</dl>
+</p>
+<p class="list">10.  The BCM flashes (10) each turn light as follows:</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">•  Lock: Each turn light flashes once</div>
+<div class="list">•  Unlock: Each turn light flashes twice</div>
+</dd>
+</dl>
+</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001811.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001811</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09140010740008"></a><p class="topic-title"><span class="topic-head"></span>Lock/unlock operation using remote transmitter</p>
+<dl>
+<dd>
+<div class="list-title">Operation Conditions</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When door locking is performed</div>
+<dl>
+<dd class="list">
+<div class="list">―  Lock operation is performed when the lock button of the remote transmitter is operated with all of the following conditions met.</div>
+<dl>
+<dd class="list">
+<div class="list">•  ACC relay and IG1 relay OFF (ignition switched OFF) detected</div>
+<div class="list">•  All door latch switch OFF (all doors closed condition) is detected</div>
+<div class="list">•  Liftgate latch switch OFF (liftgate closed condition) is detected (5HB)<sup>*1</sup></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="deflist">*1  :The operation conditions are included depending on the vehicle's period of manufacture.</div>
+<dl>
+<dd>
+<div class="list">•  When door unlocking is performed</div>
+<dl>
+<dd class="list">
+<div class="list">―  When the unlock button of the remote transmitter is operated with the ACC relay and IG1 relay OFF (ignition switched OFF) detected, unlock operation is performed.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="list">1.  When the lock or unlock button of the remote transmitter is pressed, the remote transmitter sends (1) ID data.</p>
+<p class="list"></p>
+<p class="list">2.  When the keyless receiver receives ID data, it transmits (2) the data to the start stop unit.</p>
+<p class="list"></p>
+<p class="list">3.  The start stop unit verifies the ID data, and if the ID data match, it sends (3) a lock/unlock request signal to the BCM and at the same time, it sends (3) a beeper sound request signal to the LF control unit.</p>
+<p class="list"></p>
+<p class="list">4.  When the BCM receives the lock/unlock request signal, it sends (4) a lock/unlock signal to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">5.  When the electrical supply unit (ESU) receives the lock/unlock signal, it operates (5) the front/rear door lock actuator motor to lock/unlock the front/rear doors.</p>
+<p class="list"></p>
+<p class="list">6.  When the LF control unit receives the beeper sound request signal, it operates (6) the keyless beeper for the following number of times:</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">―  Lock: Sounds once</div>
+<div class="list">―  Unlock: Sounds twice</div>
+</dd>
+</dl>
+</p>
+<p class="list">7.  The BCM flashes (7) each turn light as follows:</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">•  Lock: Each turn light flashes once</div>
+<div class="list">•  Unlock: Each turn light flashes twice</div>
+</dd>
+</dl>
+</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001812.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001812</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09140010740009"></a><p class="topic-title"><span class="topic-head"></span>Liftgate/Trunk lid open operation</p>
+<dl>
+<dd>
+<div class="list-title">Operation Conditions</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When the remote transmitter is in outside the keyless antenna reception area, the liftgate/trunk lid is opened by pressing the liftgate/trunk lid opener switch.</div>
+</dd>
+</dl>
+<p class="list">1.  When the liftgate/trunk lid opener switch is turned on, the liftgate/trunk lid opener signal is input (1) to the BCM.</p>
+<p class="list"></p>
+<p class="list">2.  The BCM sends (2) the liftgate/trunk lid open signal to the start stop unit.</p>
+<p class="list"></p>
+<p class="list">3.  Based on the liftgate/trunk lid open signal, the start stop unit sends (3) a request output signal to the LF control unit to verify that the remote transmitter is inside the reception area.</p>
+<p class="list"></p>
+<p class="list">4.  Based on the request output signal from the start stop unit, the LF control unit outputs (4) a request signal using the keyless antenna inside the rear bumper.</p>
+<p class="list"></p>
+<p class="list">5.  The remote transmitter receives the request signal from the antenna (outside, rear), and sends (5) ID data to the keyless receiver.</p>
+<p class="list"></p>
+<p class="list">6.  The keyless receiver transmits (6) the received ID data to the start stop unit.</p>
+<p class="list"></p>
+<p class="list">7.  The start stop unit verifies the ID data, and if the ID data matches, it sends (7) a liftgate/trunk lid release request signal to the BCM.</p>
+<p class="list"></p>
+<p class="list">8.  When the BCM receives the liftgate/trunk lid release request signal, it sends (8) a liftgate/trunk lid release signal to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">9.  When the electrical supply unit (ESU) receives the liftgate/trunk lid release signal, it operates (9) the liftgate/trunk lid lock actuator motor to open the liftgate/trunk lid.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00001813.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00001813</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09140010740010"></a><p class="topic-title"><span class="topic-head"></span>Trunk lid opening operation using remote transmitter</p>
+<dl>
+<dd>
+<div class="list-title">Operation Conditions</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The trunk lid opens when the trunk lid open button of the remote transmitter is operated with the ACC relay and IG1 relay off (ignition switched OFF condition).</div>
+</dd>
+</dl>
+<p class="list">1.  When the trunk lid open button is pressed for <span>approx. 0.5 s</span>, the remote transmitter sends (1) the ID data to the keyless receiver.</p>
+<p class="list"></p>
+<p class="list">2.  The keyless receiver transmits (2) the received ID data to the start stop unit.</p>
+<p class="list"></p>
+<p class="list">3.  The start stop unit verifies the ID data, and if the ID data matches, it sends (3) a trunk lid release request signal to the BCM.</p>
+<p class="list"></p>
+<p class="list">4.  When the BCM receives the trunk lid release request signal, it sends (4) a trunk lid release signal to the electrical supply unit (ESU) via LIN communication.</p>
+<p class="list"></p>
+<p class="list">5.  When the electrical supply unit (ESU) receives the trunk lid release signal, it operates (5) the trunk lid release actuator motor to open and opens the trunk lid.</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002376.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002376</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id09140010740011"></a><p class="topic-title"><span class="topic-head"></span>Auto re-lock function operation</p>
+<dl>
+<dd>
+<div class="list">1.  After the start stop unit sends an unlock request signal to the BCM, if any of the following conditions is not met <span>for 30 s</span><sup>*1</sup>, it sends a lock request signal to the BCM.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Any of door latch switch or liftgate/trunk lid latch switch on signals (any door or liftgate/trunk lid open) received</div>
+<div class="list">―  Front door lock-link switch lock (driver's door locked) detected</div>
+<div class="list">―  ACC relay or IG1 relay ON (ignition switched to ACC or ON) detected</div>
+</dd>
+</dl>
+<div class="list">2.  When the BCM receives the lock request signal, it sends a lock signal to the electrical supply unit (ESU) and locks the front/rear doors.</div>
+</dd>
+</dl>
+<div class="deflist">*1  :Personalization setting time (See <font class="extxref-label"><a href="id091400111100.html">SECURITY AND LOCKS PERSONALIZATION</a></font>.)</div>
+</p><br clear="all"><p><a name="id09140010740012"></a><p class="topic-title"><span class="topic-head"></span>Out-of-area (reception area) type auto lock function operation</p>
+<p class="list">1.  The start stop unit goes on auto lock stand-by and operates the keyless beeper once when all of the following conditions are met.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">•  ACC relay and IG1 relay OFF (ignition switched OFF) detected</div>
+<div class="list">•  Front door lock-link switch unlock (driver's door unlocked) detected</div>
+<div class="list">•  Remote transmitter is not within inside keyless antenna reception area</div>
+<div class="list">•  Remote transmitter is within outside keyless antenna reception area</div>
+<div class="list">•  All of door latch switches and liftgate latch switch off signals (all doors and liftgate closed) received from any of door latch switch or liftgate latch switch on signal (any door or liftgate open) received</div>
+</dd>
+</dl>
+</p>
+<p class="list">2.  After entering stand-by status, the start stop unit verifies that the remote transmitter is within the keyless antenna reception area. When the remote transmitter is moved out of the keyless antenna reception area or <span>approx. 30 s</span> have elapsed, it performs a lock operation on all of the lock actuators, and operates the keyless beeper once.</p>
+<p class="list"></p>
+</p><br clear="all"><p><a name="id09140010740013"></a><p class="topic-title"><span class="topic-head"></span>Remote transmitter pause function operation</p>
+<dl>
+<dd>
+<div class="list-title">When door locking is performed</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">1.  If a lock signal is input from the remote transmitter or the request switch while the start stop unit recognizes the remote transmitter inside the vehicle with all the following conditions met, the request signal is output using the inside keyless antenna. It also operates the keyless beeper <span>for 10 s</span>.</div>
+<dl>
+<dd class="list">
+<div class="list">―  ACC relay and IG1 relay OFF (ignition switched OFF) detected</div>
+<div class="list">―  All door latch switches and liftgate/trunk lid latch switch off signals (all doors, liftgate/trunk lid closed) received</div>
+</dd>
+</dl>
+<div class="list">2.  When the remote transmitter inside the vehicle sends the ID data to the keyless receiver, the keyless receiver transmits the received ID data to the start stop unit.</div>
+<div class="list">3.  The start stop unit receives the ID data, and <span>after approx. 32 s</span>, it suspends the functions of the transmitter inside the vehicle.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">When the liftgate/trunk lid is closed</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">1.  When the liftgate/trunk lid latch switch off signal (liftgate/trunk lid closed) is received with all the following conditions met, the request signal is output using the inside keyless antenna. It also operates the keyless beeper <span>for 10 s</span>.</div>
+<dl>
+<dd class="list">
+<div class="list">―  ACC relay and IG1 relay OFF (ignition switched OFF) detected</div>
+<div class="list">―  All door latch switch off signals (all doors closed) received</div>
+<div class="list">―  Front door lock-link switch lock (driver's door locked) detected</div>
+<div class="list">―  Liftgate/trunk lid latch switch on signal (liftgate/trunk lid open) received</div>
+</dd>
+</dl>
+<div class="list">2.  When the remote transmitter inside the vehicle sends the ID data to the keyless receiver, the keyless receiver transmits the received ID data to the start stop unit.</div>
+<div class="list">3.  The start stop unit receives the ID data, and <span>after approx. 32 s</span>, it suspends the functions of the remote transmitter inside the vehicle.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Remote transmitter pause cancel operation</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The functions of the paused remote transmitter are restored when any one of the following conditions is met:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Remote transmitter with which engine can be started is brought inside vehicle</div>
+<div class="list">―  Paused lock/unlock button of the remote transmitter is pressed</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140010740014"></a><p class="topic-title"><span class="topic-head"></span>Remote transmitter left-in-vehicle prevention function operation</p>
+<dl>
+<dd>
+<div class="list">1.  When the start stop unit receives the liftgate/trunk lid latch switch off signal (liftgate/trunk lid closed) with all the following conditions met, it operates the keyless beeper <span>for 10 s</span> and the remote transmitter left-in-vehicle prevention function operates.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Liftgate/Trunk lid latch switch on signal (liftgate/trunk lid open) received</div>
+<div class="list">―  All door latch switch off signals (all doors closed) received</div>
+<div class="list">―  Front door lock-link switch lock (driver's door locked) detected</div>
+</dd>
+</dl>
+<div class="list">2.  When the liftgate/trunk lid opener switch is pressed while the remove transmitter left-in-vehicle prevention function is operating, the start stop unit verifies the remote transmitter ID data and if it determines that the transmitter is inside the vehicle, it sends a liftgate/trunk lid release request signal to the BCM.</div>
+<div class="list">3.  When the BCM receives a liftgate/trunk lid release request signal, it sends a liftgate/trunk lid release signal to the electrical supply unit (ESU) to open the liftgate/trunk lid.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  When any of the following conditions is met while the remote transmitter left-in-vehicle prevention function is operating, the remote transmitter left-in-vehicle prevention function is canceled.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Lock/unlock operation using remote transmitter or request switch</div>
+<div class="list">―  Any door latch on signal (any door open) received</div>
+<div class="list">―  Vehicle speed of <span>10 km/h or more</span> received</div>
+<div class="list">―  Liftgate/Trunk lid latch switch on signal to off signal (liftgate/trunk lid open to closed) received</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09140010740015"></a><p class="topic-title"><span class="topic-head"></span>Alert function operation</p>
+<dl>
+<dd>
+<div class="list">•  Under the following conditions, the start stop unit sends a security warning request signal via CAN transmission to the instrument cluster. It also activates the keyless buzzer.</div>
+<div class="list">•  The instrument cluster turns on/flashes the KEY warning light (red) when it receives the security warning request signal.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" rowspan="2">
+<p class="thead">Condition</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Keyless beeper</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Instrument cluster</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">Keyless warning alarm</p>
+</th>
+<th id="" align="center">
+<p class="thead">KEY warning light (red)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">The advanced keyless entry system has a malfunction.<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">―</div>
+</td>
+<td id="" align="center">
+<div class="tbody">―</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">The driver's door is opened with the ignition in ACC.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">―</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Pattern A<sup>*2</sup>×Continuous</div>
+</td>
+<td id="" align="center">
+<div class="tbody">―</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">The remote transmitter cannot be detected inside the vehicle when all doors are closed with the ignition not switched off.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Sounds 2×6 times</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Pattern B<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A door lock operation is performed using a request switch with any door or the liftgate/trunk lid is open.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Sounds for<span> approx. 2 s</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody">―</div>
+</td>
+<td id="" align="center">
+<div class="tbody">―</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A door lock operation is performed using a request switch with ignition not switched off.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Sounds for<span> approx. 2 s</span></div>
+</td>
+<td id="" align="center">
+<div class="tbody">―</div>
+</td>
+<td id="" align="center">
+<div class="tbody">―</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :For vehicles with the center display, a warning message in the center display is displayed when the KEY warning light (red) is turned on. For the message content and verification method, refer to the [CENTER DISPLAY]. (See <font class="extxref-label"><a href="id0920zz113600.html">CENTER DISPLAY [WITH CENTER DISPLAY]</a></font>.)</div>
+<div class="deflist">*2  :For the keyless warning alarm sound pattern, refer to the [KEYLESS WARNING ALARM]. (See <font class="extxref-label"><a href="id091400006100.html">KEYLESS WARNING ALARM</a></font>.)</div>
+</p><br clear="all"><p><a name="id09140010740016"></a><p class="topic-title"><span class="topic-head"></span>Remote transmitter battery voltage low indication function operation</p>
+<dl>
+<dd>
+<div class="list">•  When the ignition is switched from ON (engine off or on) to ACC or OFF under the condition indicated in the table, the start stop unit sends a battery voltage low indication request signal to the instrument cluster as a CAN signal.</div>
+<div class="list">•  The instrument cluster flashes the KEY indicator light (green) when it receives the battery voltage low indication request signal.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" rowspan="2">
+<p class="thead">Condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Instrument cluster</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">KEY indicator light (green)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Start stop unit receives code for low remote transmitter battery voltage<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Flash (for<span> approx. 30 s</span> after ignition switched from ON to OFF or ACC)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :If the remote transmitter battery power is 0, the remote transmitter battery voltage low indication function does not operate.</div>
+<dl>
+<dd>
+<div class="list">•  For vehicles with the center display, a warning message in the center display is displayed when the KEY indicator light (green) flashes. For the message content and verification method, refer to the [CENTER DISPLAY]. (See <font class="extxref-label"><a href="id0920zz113600.html">CENTER DISPLAY [WITH CENTER DISPLAY]</a></font>.)</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "../../../../../../../../../ns.adobe.com/Extensibility/1.0/default.htm">
+	<!ENTITY ns_ai "../../../../../../../../../ns.adobe.com/AdobeIllustrator/10.0/default.htm">
+	<!ENTITY ns_graphs "../../../../../../../../../ns.adobe.com/Graphs/1.0/default.htm">
+	<!ENTITY ns_vars "../../../../../../../../../ns.adobe.com/Variables/1.0/default.htm">
+	<!ENTITY ns_imrep "../../../../../../../../../ns.adobe.com/ImageReplacement/1.0/default.htm">
+	<!ENTITY ns_sfw "../../../../../../../../../ns.adobe.com/SaveForWeb/1.0/default.htm">
+	<!ENTITY ns_custom "../../../../../../../../../ns.adobe.com/GenericCustomNamespace/1.0/default.htm">
+	<!ENTITY ns_adobe_xpath "../../../../../../../../../ns.adobe.com/XPath/1.0/default.htm">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="51.904px"
+	 height="74.891px" viewBox="0 0 51.904 74.891" enable-background="new 0 0 51.904 74.891" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="SEN">
+			
+				<circle fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" cx="26.604" cy="44.94" r="0.071"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="26.604" y1="32.866" x2="26.604" y2="57.018"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="42.704" y1="44.94" x2="10.503" y2="44.94"/>
+			
+				<rect x="10.503" y="32.866" fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" width="32.2" height="24.152"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				32.854,28.704 32.854,24.791 20.354,24.791 20.354,28.704 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="32.901" y1="28.704" x2="20.4" y2="24.791"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="32.901" y1="24.791" x2="20.4" y2="28.704"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				45.026,28.704 45.026,24.769 46.776,24.769 46.776,58.973 44.651,58.973 44.651,60.767 42.588,60.767 42.588,58.995 
+				40.526,58.995 40.526,60.767 12.588,60.767 12.588,58.995 10.525,58.995 10.525,60.767 8.463,60.767 8.463,58.973 6.338,58.973 
+				6.338,24.769 8.088,24.769 8.088,28.704 45.026,28.704 			"/>
+		</g>
+		<g id="TEXT">
+			<text transform="matrix(1 0 0 1 2.8467 19.1997)" font-family="'Arial'" font-size="8">AUDIO UNIT</text>
+			<text transform="matrix(1 0 0 1 2.8467 9.6997)" font-family="'Arial'" font-size="8">0920-101C</text>
+			<text transform="matrix(1 0 0 1 30.9585 53.3926)" font-family="'Arial'" font-size="6">3B</text>
+			<text transform="matrix(1 0 0 1 30.9585 40.8931)" font-family="'Arial'" font-size="6">3A</text>
+			<text transform="matrix(1 0 0 1 14.3203 53.3926)" font-family="'Arial'" font-size="6">3D</text>
+			<text transform="matrix(1 0 0 1 14.3203 40.8931)" font-family="'Arial'" font-size="6">3C</text>
+			<text transform="matrix(1 0 0 1 16.1499 70.1074)" font-family="'Arial'" font-size="6">[GRAY]</text>
+		</g>
+	</g>
+</switch>
+</svg>

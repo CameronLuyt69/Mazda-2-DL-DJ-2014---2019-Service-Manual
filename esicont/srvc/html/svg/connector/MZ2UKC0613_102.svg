@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "../../../../../../../../../ns.adobe.com/Extensibility/1.0/default.htm">
+	<!ENTITY ns_ai "../../../../../../../../../ns.adobe.com/AdobeIllustrator/10.0/default.htm">
+	<!ENTITY ns_graphs "../../../../../../../../../ns.adobe.com/Graphs/1.0/default.htm">
+	<!ENTITY ns_vars "../../../../../../../../../ns.adobe.com/Variables/1.0/default.htm">
+	<!ENTITY ns_imrep "../../../../../../../../../ns.adobe.com/ImageReplacement/1.0/default.htm">
+	<!ENTITY ns_sfw "../../../../../../../../../ns.adobe.com/SaveForWeb/1.0/default.htm">
+	<!ENTITY ns_custom "../../../../../../../../../ns.adobe.com/GenericCustomNamespace/1.0/default.htm">
+	<!ENTITY ns_adobe_xpath "../../../../../../../../../ns.adobe.com/XPath/1.0/default.htm">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="198.579px"
+	 height="75.391px" viewBox="0 0 198.579 75.391" enable-background="new 0 0 198.579 75.391" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="SEN">
+			<rect x="124.559" y="42.147" stroke="#000000" stroke-width="0.1" width="16.053" height="11.946"/>
+			<rect x="34.63" y="42.147" stroke="#000000" stroke-width="0.1" width="16.053" height="11.946"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="38.391" y1="34.493" x2="46.875" y2="34.493"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M35.561,42.019"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M36.379,40.519"/>
+			
+				<rect x="34.583" y="42.019" fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" width="16.101" height="12.075"/>
+			<polygon fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				38.391,34.493 46.875,40.519 46.875,34.493 38.391,40.519 			"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M49.669,42.019"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				49.141,40.519 49.141,34.451 52.183,34.451 52.183,35.876 53.201,35.876 53.201,38.572 52.183,38.572 52.183,55.594 
+				33.083,55.594 33.083,40.572 32.065,40.572 32.065,37.876 33.083,37.876 33.083,34.451 36.125,34.451 36.125,40.519 
+				49.141,40.519 			"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="128.818" y1="35.993" x2="136.302" y2="35.993"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M125.488,42.019"/>
+			
+				<rect x="124.51" y="42.019" fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" width="16.102" height="12.075"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				124.51,54.094 126.51,56.094 138.611,56.094 140.611,54.094 			"/>
+			<polygon fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				128.818,35.993 136.302,42.019 136.302,35.993 128.818,42.019 			"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				124.507,42.019 124.507,39.993 122.999,39.993 122.999,38.211 124.444,38.211 124.444,36.477 126.372,36.477 126.372,42.019 			
+				"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M139.597,42.019"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				140.578,42.019 140.578,39.993 142.086,39.993 142.086,38.211 140.641,38.211 140.641,36.477 138.714,36.477 138.714,42.019 			
+				"/>
+		</g>
+		<g id="TEXT">
+			<text transform="matrix(1 0 0 1 130.7295 49.9268)" fill="#FFFFFF" font-family="'Arial'" font-size="5">B</text>
+			<text transform="matrix(1 0 0 1 40.8013 49.9268)" fill="#FFFFFF" font-family="'Arial'" font-size="5">B</text>
+			<text transform="matrix(1 0 0 1 2.8345 19.1997)" font-family="'Arial'" font-size="8">FRONT HARNESS-INSTRUMENT PANEL HARNESS</text>
+			<text transform="matrix(1 0 0 1 2.8345 9.6997)" font-family="'Arial'" font-size="8">0613-102</text>
+			<text transform="matrix(1 0 0 1 40.6831 62.8711)" font-family="'Arial'" font-size="6">A</text>
+			<text transform="matrix(1 0 0 1 130.8721 62.8711)" font-family="'Arial'" font-size="6">A</text>
+			<text transform="matrix(1 0 0 1 17.6367 32.0913)" font-family="'Arial'" font-size="6">FRONT HARNESS</text>
+			<text transform="matrix(1 0 0 1 90.7852 32.0913)" font-family="'Arial'" font-size="6">INSTRUMENT PANEL HARNESS</text>
+			<text transform="matrix(1 0 0 1 70.3018 70.6074)" font-family="'Arial'" font-size="6">[BLACK]</text>
+		</g>
+	</g>
+</switch>
+</svg>

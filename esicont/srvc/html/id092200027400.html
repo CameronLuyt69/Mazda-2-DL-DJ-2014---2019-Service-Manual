@@ -1,0 +1,404 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>BLIND SPOT MONITORING (BSM) CONTROL MODULE</title>
+</head>
+<body><a name="id092200027400"></a><p class="servinfo-title"><span class="servinfo-head"></span>BLIND SPOT MONITORING (BSM) CONTROL MODULE</p>
+<hr>
+<p class="servinfo-title-id" align="right">id092200027400</p><br clear="all"><a name="id09220002740001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The blind spot monitoring (BSM) control module detects objects at the rear of the vehicle by emitting radar and it controls the blind spot monitoring (BSM) system.</div><br clear="all"><a name="id09220002740002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Functions</p><br clear="all"><p><a name="id09220002740003"></a><p class="topic-title"><span class="topic-head"></span>Object detection function</p>
+<dl>
+<dd>
+<div class="list">•  The blind spot monitoring (BSM) control module detects objects in the vehicle rear using radar which detects vehicles at wide angles. The detection range for each radar is as follows.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The detection ability of the blind spot monitoring (BSM) control module has limitations. In the following cases, the detection ability may lower and the system may not operate normally.</div>
+<dl>
+<dd class="list">
+<div class="list">―  The rear bumper near the blind spot monitoring (BSM) control module has become deformed.</div>
+<div class="list">―  Snow, ice or mud adheres to the blind spot monitoring (BSM) control module on the rear bumper.</div>
+<div class="list">―  Under bad weather conditions such as rain, snow and fog.</div>
+</dd>
+</dl>
+<div class="list">•  Under the following conditions, the blind spot monitoring (BSM) control module cannot detect target objects or it may be difficult to detect them.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Stationary objects on a road or a road side such as small, two-wheeled vehicles, bicycles, pedestrians, animals, and shopping carts. </div>
+<div class="list">―  Vehicle shapes which do not reflect radar waves well such as empty trailers with a low vehicle height and sports cars.</div>
+</dd>
+</dl>
+<div class="list">•  Turn off the system while pulling a trailer or while an accessory such as a bicycle carrier is installed to the rear of the vehicle. Otherwise, the radio waves emitted by the radar will be blocked causing the system to not operate normally.</div>
+</div>
+</dd>
+</dl>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00004885.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00004885</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The blind spot monitoring (BSM) control module emits short and long distance radar and based on the reflected microwaves and signals from related modules (vehicle speed signal, steering angle signal, yaw rate signal, vehicle wheel speed signal), it calculates the position and relative speed of the detected object and determines whether or not the object is an approaching vehicle.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220002740004"></a><p class="topic-title"><span class="topic-head"></span>Blind spot monitoring (BSM) indicator light brightness level change function</p>
+<dl>
+<dd>
+<div class="list">•  The blind spot monitoring (BSM) control module dims the blind spot monitoring (BSM) warning lights based on the panel light signal from the instrument cluster. In addition, it cancels the dimming operation using the brightness level change function based on the dimmer cancel signal from the instrument cluster, and it turns on the blind spot monitoring (BSM) warning lights at the normal brightness.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If the blind spot monitoring (BSM) warning lights are turned on using the simulation function WRN_IND_R or WRN_IND_L for the blind spot monitoring (BSM) system, the indicator lights turn on at the normal brightness.</div>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220002740005"></a><p class="topic-title"><span class="topic-head"></span>Automatic configuration function</p>
+<dl>
+<dd>
+<div class="list">•  When the ignition is switched ON (engine off or on) for the first time after the blind spot monitoring (BSM) control module has been replaced, the blind spot monitoring (BSM) control module reads the specification information sent via CAN communication from the instrument cluster and it performs automatic configuration. </div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220002740006"></a><p class="topic-title"><span class="topic-head"></span>Radar angle correction function</p>
+<dl>
+<dd>
+<div class="list">•  The blind spot monitoring (BSM) control module corrects deviations in the radar emission angles, caused by installation tolerances after related part replacement, by implementing the radar aiming procedure. For the radar aiming implementation timing and procedure, refer to the BLIND SPOT MONITORING (BSM) AIMING in the workshop manual.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220002740007"></a><p class="topic-title"><span class="topic-head"></span>System operation/non-operation recording function</p>
+<dl>
+<dd>
+<div class="list">•  The blind spot monitoring (BSM) control module records the system operation/non-operation status from the blind spot monitoring (BSM) switch. The system operation/non-operation status recorded by the blind spot monitoring (BSM) control module is not erased even if the battery power is disconnected.</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09220002740008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  One blind spot monitoring (BSM) control module each is located on the left and right of the rear end panel.</div>
+<div class="list">•  Weight reduction has been achieved using hard plastic for the cover of the blind spot monitoring (BSM) control module.</div>
+<div class="list">•  The blind spot monitoring (BSM) control module has one integrated transmitter which emits <span>24 GHz</span> radar and two receivers which receive reflected radio waves.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002259.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002259</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id09220002740009"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id09220002740010"></a><p class="topic-title"><span class="topic-head"></span>Object detection</p>
+<dl>
+<dd>
+<div class="list">•  The blind spot monitoring (BSM) control module calculates the position and relative vehicle speed of the object detected by radar based on the following signals. The blind spot monitoring (BSM) control module (LH) transmits the signals from related modules, received via the instrument cluster, to the blind spot monitoring (BSM) control module (RH) via CAN communication, and the signals from the BSM control module (RH) are transmitted to related modules via the instrument cluster.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002260.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002260</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The blind spot monitoring (BSM) control module emits <span>24 GHz</span> radar waves from the transmitter integrated in the module, and receives the reflected radar waves using the two built-in receivers. The blind spot monitoring (BSM) control module calculates the distance between the object and vehicle based on the time required to receive the reflected radar waves that were emitted, and it calculates the angle (horizontal angle) of the object with the vehicle based on the phase difference between the arriving reflected waves received by the two receivers.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002261.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002261</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  The blind spot monitoring (BSM) control module calculates the detected direction of travel and relative speed with the detecting vehicle based on the signals (vehicle speed signal, steering angle signal, yaw rate signal, vehicle wheel speed signal) received from the related modules, determines whether or not the object is an approaching vehicle, and monitors the approaching vehicle as a monitoring target.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00004542.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00004542</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><a name="id09220002740011"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC</p>
+</th>
+<th id="" align="center">
+<p class="thead">Blind spot monitoring (BSM) OFF indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11CB:11</div>
+</td>
+<td id="" align="center" rowspan="46">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left" rowspan="46">
+<div class="tbody">Stops the blind spot monitoring (BSM) system.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11CB:15</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11D3:11</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11D3:15</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11F2:23</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:88</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0028:87</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0401:68</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0415:68</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0423:68</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0515:68</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:16</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:17</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:43</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:44</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:45</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:46</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:47</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:48</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:49</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:54</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:96</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:97</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2100:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:54</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:55</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:56</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:64</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:42</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:43</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:44</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:45</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:46</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:47</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:48</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:49</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:4B</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:54</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:96</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:97</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:17</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

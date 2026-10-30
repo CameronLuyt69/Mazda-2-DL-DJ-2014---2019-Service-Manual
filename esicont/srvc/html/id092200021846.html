@@ -1,0 +1,2310 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC [BLIND SPOT MONITORING (BSM) SYSTEM]</title>
+</head>
+<body><a name="id092200021846"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC [BLIND SPOT MONITORING (BSM) SYSTEM]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id092200021846</p><br clear="all"><a name="id09220002184601"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The on-board diagnostic function consists of the following functions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  A malfunction detection function, which detects overall malfunctions in the blind spot monitoring (BSM) system-related parts.</div>
+<div class="list">―  A memory function, which stores detected DTCs. </div>
+<div class="list">―  A display function, which indicates malfunction locations and status via DTC output.</div>
+<div class="list">―  A PID/data monitoring function, which reads out specific input/output signals and verifies the input/output condition.</div>
+</dd>
+</dl>
+<div class="list">•  Using the Mazda Modular Diagnostic System (M-MDS), DTCs can be read out and deleted, and the PID/data monitoring function can be activated.</div><br clear="all"><a name="id09220002184602"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Malfunction detection function</p>
+<div class="list">•  Detects malfunctions in input/output signals.</div>
+<div class="list">•  If a malfunction occurs, the blind spot monitoring (BSM) control (LH) records the malfunction as a DTC. A recorded DTC can be read by the Mazda Modular Diagnostic System (M-MDS).</div>
+<p clear="all">
+<p class="table-title">DTC table</p>
+<p>
+<div>×: Applicable</div>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Blind spot monitoring (BSM) OFF indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe</p>
+</th>
+<th id="" align="center">
+<p class="thead">Drive cycle</p>
+</th>
+<th id="" align="center">
+<p class="thead">Self test type<sup>*1</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">Memory function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11CB:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) warning light (RH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11CB:15</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) warning light (RH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11D3:11</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) warning light (LH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11D3:15</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) warning light (LH) circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11F2:23</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:88</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Unit communication error (MS-CAN)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0028:87</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) and (RH) communication error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with DSC HU/CM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with start stop unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0401:68</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0415:68</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from DSC HU/CM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0423:68</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0515:68</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from start stop unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) low power supply voltage input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:17</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) high power supply voltage input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:43</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:44</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:45</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:46</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:47</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:48</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:49</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:54</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Radar aiming is not performed or radar sensor axis is deviated (Blind spot monitoring (BSM) control module (RH))</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:96</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:97</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Radar sensor sensitivity temporarily decreases depending on various external and environmental factors (Blind spot monitoring (BSM) control module (RH))</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:54</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration data not received from instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:55</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration not implemented</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:56</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration data unmatched with instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:64</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration error (signal error) detected.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:42</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:43</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:44</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:45</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:46</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:47</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:48</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:49</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:4B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Temperature temporarily increases depending on various external and environmental factors (Blind spot monitoring (BSM) control module (LH) or (RH))</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:54</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Radar aiming is not performed or radar sensor axis is deviated (Blind spot monitoring (BSM) control module (LH))</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:96</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:97</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Radar sensor sensitivity temporarily decreases depending on various external and environmental factors (Blind spot monitoring (BSM) control module (LH))</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) low power supply voltage input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:17</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) high power supply voltage input</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :C: CMDTC self test, D: ODDTC self test</div>
+<div class="deflist">*2  :With manual air conditioner system</div>
+<div class="deflist">*3  :With digital speedometer</div>
+<div class="deflist">*4  :ATX</div>
+<div class="deflist">*5  :With center display</div>
+<div class="deflist">*6  :With digital speedometer and full-auto air conditioner system</div>
+<div class="deflist">*7  :With headlight auto leveling system</div>
+<div class="deflist">*8  :With blind spot monitoring (BSM) system</div>
+<div class="deflist">*9  :With smart city brake support (SCBS)</div>
+<div class="deflist">*10  :With forward sensing camera (FSC)</div><br clear="all"><p><a name="id09220002184603"></a><p class="topic-title"><span class="topic-head"></span>DTC 7-digit code definition</p>
+<dl>
+<dd>
+<div class="list">•  When related systems or components have failed, the CM stores the DTC of the malfunctioning part in the CM memory, and allows for the retrieval of the store data using scanning tool when necessary. The DTCs are indicated using seven digits. Each digit indicates the following.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am6xun00000789.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am6xun00000789</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220002184604"></a><p class="topic-title"><span class="topic-head"></span>Status byte for DTC</p>
+<dl>
+<dd>
+<div class="list">•  The two digits (two digits after hyphen (-)) after the 7-digit DTC.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00002008.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00002008</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  A code which indicates the pending code, current/past malfunction status, or warning illumination status.</div>
+<div class="list">•  Can be read by performing a CMDTC self-test using the Mazda Modular Diagnostic System (M-MDS).</div>
+<div class="list">•  For details on the status byte, refer to the explanation on the Mazda Modular Diagnostic System (M-MDS) when reading the DTC.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220002184605"></a><p class="topic-title"><span class="topic-head"></span>Detection condition for the applicable DTC</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Detection condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11CB:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) warning light (RH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (RH) detects a short to ground in the blind spot monitoring (BSM) warning light (RH) circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11CB:15</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) warning light (RH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (RH) detects an open circuit or short to power supply in the blind spot monitoring (BSM) warning light (RH) circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11D3:11</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) warning light (LH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (RH) detects a short to ground in the blind spot monitoring (BSM) warning light (LH) circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11D3:15</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) warning light (LH) circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (RH) detects an open circuit or short to power supply in the blind spot monitoring (BSM) warning light (LH) circuit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">B11F2:23</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) receives the blind spot monitoring (BSM) switch ON signal from the instrument cluster for <span>2 min or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:88</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Unit communication error (MS-CAN)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) detects a CAN bus communication line (MS-CAN) malfunction with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0028:87</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) and (RH) communication error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  No communication between blind spot monitoring (BSM) control modules (LH) and (RH) for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) cannot receive the CAN signal from the PCM for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with DSC HU/CM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) cannot receive the CAN signal from the DSC HU/CM for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0155:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) cannot receive the CAN signal from the instrument cluster for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) cannot receive the CAN signal from the start stop unit for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0401:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from PCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) receives the error signal from the PCM for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0415:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from DSC HU/CM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) receives the error signal from the DSC HU/CM for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0423:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) receives the error signal from the instrument cluster for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0515:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) receives the error signal from the start stop unit for <span>2 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) low power supply voltage input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (RH) power supply circuit voltage of <span>9 V or less</span> is detected for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:17</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) high power supply voltage input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (RH) power supply circuit voltage of <span>16 V or more</span> is detected for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:43</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (RH) external RAM malfunction detected with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:44</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (RH) internal RAM malfunction detected with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:45</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (RH) ROM malfunction detected with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:46</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (RH) EEPROM malfunction detected with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:47</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (RH) monitoring system malfunction detected with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:48</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (RH) communication circuit malfunction detected with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:49</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (RH) voltage control circuit malfunction detected for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:54</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Radar aiming is not performed or radar sensor axis is deviated (Blind spot monitoring (BSM) control module (RH))</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Malfunction in radar aiming of the blind spot monitoring (BSM) control module (RH) detected for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:96</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (RH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (RH) internal circuit malfunction detected for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U1A4B:97</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Radar sensor sensitivity temporarily decreases depending on various external and environmental factors (Blind spot monitoring (BSM) control module (RH))</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Radar sensor sensitivity in blind spot monitoring (BSM) control module (RH) decreases for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:54</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration data not received from instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) cannot receive the configuration data from the instrument cluster with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:55</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration not implemented</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) received a signal which indicates the instrument cluster configuration is not performed with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:56</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Configuration data unmatched with instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Configuration data of the blind spot monitoring (BSM) control module and instrument cluster are not matched with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:64</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration error (signal error) detected.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster configuration error (signal error) detected with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:42</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) ROM malfunction detected with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:43</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) external RAM malfunction detected with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:44</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) internal RAM malfunction detected with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:45</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) ROM malfunction detected with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:46</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) EEPROM malfunction detected with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:47</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) monitoring system malfunction detected with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:48</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) communication circuit malfunction detected with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:49</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) voltage control circuit malfunction detected for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:4B</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Temperature temporarily increases depending on various external and environmental factors (Blind spot monitoring (BSM) control module (LH) or (RH))</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module internal temperature of <span>115 °C {239 °F} or more</span> detected for <span>10 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:54</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Radar aiming is not performed or radar sensor axis is deviated (Blind spot monitoring (BSM) control module (LH))</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Malfunction in radar aiming of blind spot monitoring (BSM) control module (LH) detected for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:96</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) internal circuit malfunction detected for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:97</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Radar sensor sensitivity temporarily decreases depending on various external and environmental factors (Blind spot monitoring (BSM) control module (LH))</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Radar sensor sensitivity in blind spot monitoring (BSM) control module (LH) decreases for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) low power supply voltage input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) power supply circuit voltage of <span>9 V or less</span> is detected for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:17</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) control module (LH) high power supply voltage input</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Blind spot monitoring (BSM) control module (LH) power supply circuit voltage of <span>16 V or more</span> is detected for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><a name="id09220002184606"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Snapshot Data</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The blind spot monitoring (BSM) control module (LH) stores the following two types of snapshot data (vehicle information) when a DTC is detected and displays them in the M-MDS.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Vehicle information detected by blind spot monitoring (BSM) control module (LH)</div>
+<div class="list">―  Vehicle information detected by instrument cluster and received by blind spot monitoring (BSM) control module (LH) via CAN communication</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<div class="list">•  The data for all DTCs currently detected is stored.</div>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Snapshot data item</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding data monitor items</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">AAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Accelerator Pedal Off/Under20%/Over20%/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CFG_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Config Complete/Not Configured/Config Error</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Under 0 degrees C/0 - Under 80 degrees C/Over 80 degrees C/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IC_VPWR</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster power supply voltage</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The blind spot monitoring (BSM) control module (LH) constantly receives the power supply voltage value of the instrument cluster sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the blind spot monitoring (BSM) control module (LH) records the power supply voltage of the instrument cluster when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IG-ON_TIMER</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">hh:mm:ss<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Elapsed time since ignition was switched ON (engine off or on)</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The instrument cluster records the elapsed time since the ignition was switched ON (engine off or on).</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="list">•  The blind spot monitoring (BSM) control module (LH) constantly receives the elapsed time since the ignition was switched ON (engine off or on) sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the blind spot monitoring (BSM) control module (LH) records the elapsed time since the ignition was switched ON (engine off or on) when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">PWR_MODE_KEY</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Key Out/Key Recently Out (Position 0)/Accessory (Position 1)/Post Ignition (Position 2)/Ignition On (Position 2)/Running (Position 2)/Running - Starting</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Key Out: Ignition switched off</div>
+<div class="list">•  Key Recently Out (Position 0): Elapsed time <span>within 3 s</span> since ignition was switched off</div>
+<div class="list">•  Accessory (Position 1): Ignition is switched to ACC</div>
+<div class="list">•  Post Ignition (Position 2): Elapsed time <span>within 3 s</span> since ignition was switched ON (engine off or on)</div>
+<div class="list">•  Ignition On (Position 2): Ignition switched ON (engine off)</div>
+<div class="list">•  Running (Position 2): Ignition switched ON (engine on)</div>
+<div class="list">•  Running - Starting: Cranking condition</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The blind spot monitoring (BSM) control module (LH) constantly receives the ignition switch status sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the blind spot monitoring (BSM) control module (LH) records the ignition switch status when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RPM_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Engine Stop/Under1500rpm/Over1500rpm/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The blind spot monitoring (BSM) control module (LH) constantly receives the engine speed sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the blind spot monitoring (BSM) control module (LH) records the engine speed when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TACHOMTR<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SHIFT_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">P/N/D/R/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Selector lever position status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The blind spot monitoring (BSM) control module (LH) constantly receives the selector lever position sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the blind spot monitoring (BSM) control module (LH) records the selector lever position when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TOTAL_DIST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Miles</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total traveled distance from completion of vehicle until blind spot monitoring (BSM) control module (LH) detects DTC (Odometer value in instrument cluster)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The total traveled distance from which the blind spot monitoring (BSM) control module (LH) detects DTCs to the present can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the odometer value in the instrument cluster.</div>
+<div class="list">2.  Verify the snapshot data item TOTAL_DIST.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TOTAL_TIME</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">hh:mm:ss<sup>*2</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total elapsed time since vehicle completion until blind spot monitoring (BSM) control module (LH) detects a DTC</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  When the ROOM fuse is removed, and the ignition is switched off, the time is not included in the elapsed time.</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">The elapsed time from which the blind spot monitoring (BSM) control module (LH) detects DTCs to the present can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the instrument cluster PID item TOTAL_TIME.</div>
+<div class="list">2.  Verify the snapshot data item TOTAL_TIME.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TOTAL_TIME<sup>*1</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring control module (LH) power supply voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR_L</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VSPD_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Stop/0-10km/h/Over10km/h/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed status</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The blind spot monitoring control module (LH) constantly receives the vehicle speed sent via CAN communication from the instrument cluster.</div>
+<div class="list">•  If a DTC is detected, the blind spot monitoring control module (LH) records the vehicle speed when the DTC was detected, and it is displayed in the M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SPEEDOMTR<sup>*1</sup></div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :Instrument cluster PID (See <font class="extxref-label"><a href="id092200021843.html">ON-BOARD DIAGNOSTIC [INSTRUMENT CLUSTER]</a></font>.)</div>
+<div class="deflist">*2  :The seconds may be indicated after the decimal point.</div><br clear="all"><a name="id09220002184607"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Data Monitor Function</p>
+<div class="list">•  With the PID/data monitor function, the input/output signal monitor items set in the blind spot monitoring (BSM) control module can be selected and read out in real-time.</div>
+<div class="list">•  The items which can be selected are as follows.</div>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">PID name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Status</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Module control terminal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Buzzer</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Blind spot monitoring (BSM) warning buzzer does not sound.</div>
+<div class="list">•  On: Blind spot monitoring (BSM) warning buzzer sounds.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">D,E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">INTNL_TMP_L</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays Blind spot monitoring (BSM) control module (LH) internal temperature.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">INTNL_TMP_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C, °F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays Blind spot monitoring (BSM) control module (RH) internal temperature.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">G, J (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MAIN_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Blind spot monitoring (BSM) switch not pressed</div>
+<div class="list">•  On: Blind spot monitoring (BSM) switch pressed</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A, D (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">OP_BRT_L</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the Blind spot monitoring (BSM) warning light (LH) output brightness.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">OP_BRT_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the Blind spot monitoring (BSM) warning light (RH) output brightness.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">G, J (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SYSTEM_ST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/Passive_On/Active_On/Failure</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Blind spot monitoring (BSM) system does not operate.</div>
+<div class="list">•  Passive_On: Blind spot monitoring (BSM) system is on standby.</div>
+<div class="list">•  Active_On: Blind spot monitoring (BSM) system operates.</div>
+<div class="list">•  Failure: Blind spot monitoring (BSM) system malfunction.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TURN_SW_L</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turn switch is in position other than LH.</div>
+<div class="list">•  On: Turn switch is in LH position.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">D, E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TURN_SW_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turn switch is in position other than RH.</div>
+<div class="list">•  On: Turn switch is in RH position.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">D, E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_L</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays Blind spot monitoring (BSM) control module (LH) power supply voltage.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">I</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays Blind spot monitoring (BSM) control module (RH) power supply voltage.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">G, J (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VSPD</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays the vehicle speed.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">D, E (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WRN_IND_L</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  On: Blind spot monitoring (BSM) warning indicator light (LH) turns off.</div>
+<div class="list">•  Off: Blind spot monitoring (BSM) warning indicator light (LH) turns on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">G, J (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WRN_IND_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  On: Blind spot monitoring (BSM) warning indicator light (RH) turns off.</div>
+<div class="list">•  Off: Blind spot monitoring (BSM) warning indicator light (RH) turns on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">G, J (CAN)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">YAW_RATE</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°/s</div>
+</td>
+<td id="" align="left">
+<div class="list">•  —: Vehicle is stopped or while moving straight ahead.</div>
+<div class="list">•  Exceeds 0°/s: Vehicle tilted left.</div>
+<div class="list">•  Less than 0°/s: Vehicle tilted right.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">D, E (CAN)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id09220002184608"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Simulation function</p>
+<div class="list">•  The simulation function drives the output parts set in the blind spot monitoring (BSM) control module regardless of the blind spot monitoring (BSM) control module control condition.</div>
+<div class="list">•  The items which can be selected are as follows.</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Simulation items on parts which are not equipped to the vehicle do not operate.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Simulation item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Operation</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Output part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Operation condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Buzzer</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Blind spot monitoring (BSM) warning buzzer does not sound.</div>
+<div class="list">•  On: Blind spot monitoring (BSM) warning buzzer sounds.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) warning buzzer (instrument cluster)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WRN_IND_L</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turns off the blind spot monitoring (BSM) warning  light (LH).</div>
+<div class="list">•  On: Illuminates the blind spot monitoring (BSM) warning  light (LH).</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) warning  light (LH)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WRN_IND_R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turns off the blind spot monitoring (BSM) warning  light (RH).</div>
+<div class="list">•  On: Illuminates the blind spot monitoring (BSM) warning  light (RH).</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Blind spot monitoring (BSM) warning  light (RH)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

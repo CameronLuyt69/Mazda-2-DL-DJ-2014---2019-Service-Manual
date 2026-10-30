@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>LOW FUEL WARNING LIGHT</title>
+</head>
+<body><a name="id092200023000"></a><p class="servinfo-title"><span class="servinfo-head"></span>LOW FUEL WARNING LIGHT</p>
+<hr>
+<p class="servinfo-title-id" align="right">id092200023000</p><br clear="all"><a name="id09220002300001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The low fuel warning light warns the driver that the remaining fuel level is low.</div><br clear="all"><a name="id09220002300002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p>
+<div class="list">•  The instrument cluster calculates the remaining fuel amount based on the following signals, and if the calculated remaining fuel amount is <span>approx. 9 L {2 US gal, 2 Imp gal}</span> (fuel gauge indicates remaining 2 segments), it turns the low fuel warning light on.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Signal name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Sending module/part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Communication method</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel gauge sender unit voltage signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">BCM</div>
+</td>
+<td id="" align="left" rowspan="3">
+<div class="tbody">HS-CAN</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel injection amount signal</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">PCM</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Vehicle speed signal</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The PCM performs run dry prevention (RDP) control according to the fuel consumption after the low fuel warning light turned on. For details on the run dry prevention (RDP) control, refer to [RUN DRY PREVENTION (RDP) CONTROL]. (SKYACTIV-D 1.5) (See <font class="extxref-label"><a href="id0140z5018400.html">RUN DRY PREVENTION (RDP) CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id09220002300003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The instrument cluster microcomputer controls the turning on/off of the low fuel warning light based on the remaining fuel amount calculation that is calculated by the instrument cluster.</div>
+<div class="list">•  The low fuel warning light is built into the instrument cluster.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002886.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002886</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id09220002300004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<p class="list">1.  When the ignition is switched ON (engine off or on), the instrument cluster receives (1) a fuel gauge sender unit voltage signal from the BCM, and a fuel injection amount and vehicle speed signals from the PCM via CAN communication.</p>
+<p class="list"></p>
+<p class="list">2.  The instrument cluster turn the transistor on (2) if the remaining fuel amount calculated based on each signal is <span>approx. 9 L {2 US gal, 2 Imp gal}</span>.</p>
+<p class="list"></p>
+<p class="list">3.  When the transistor turns on, a ground circuit with the low fuel warning light is established and the low fuel warning light turns on (3).</p>
+<p class="list"></p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002887.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002887</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id09220002300005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  Not applicable</div>
+</body>
+</html>

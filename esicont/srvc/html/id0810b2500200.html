@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>SAS CONTROL MODULE [STANDARD DEPLOYMENT CONTROL SYSTEM]</title>
+</head>
+<body><a name="id0810b2500200"></a><p class="servinfo-title"><span class="servinfo-head"></span>SAS CONTROL MODULE [STANDARD DEPLOYMENT CONTROL SYSTEM]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0810b2500200</p><br clear="all"><a name="id0810b250020001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose</p>
+<div class="list">•  The SAS control module controls the air bag system.</div><br clear="all"><a name="id0810b250020002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function</p><br clear="all"><p><a name="id0810b250020003"></a><p class="topic-title"><span class="topic-head"></span>Air bag system initialization diagnostics function</p>
+<dl>
+<dd>
+<div class="list">•  When the ignition is switched ON, the SAS control module turns on the air bag/seat belt pre-tensioner system warning light in the instrument cluster for approx. <span>6 s</span> to indicate that the air bag system is performing initialization diagnostics.</div>
+<div class="list">•  If there is no malfunction with the air bag system, the air bag/seat belt pre-tensioner system warning light turns off.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0810b250020004"></a><p class="topic-title"><span class="topic-head"></span>Backup power supply function</p>
+<dl>
+<dd>
+<div class="list">•  The condenser in the SAS control module discharges even if the power supply to the SAS control module has been cut off due to a collision, and the backup power supply function operates the air bag system for a specified period of time.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0810b250020005"></a><p class="topic-title"><span class="topic-head"></span>Vehicle travel conditions detection function</p>
+<dl>
+<dd>
+<div class="list">•  The SAS control module detects the signals from the following integrated sensors.</div>
+<div class="list">•  The SAS control module outputs the detection signals from the following sensors and outputs them to the DSC HU/CM via a CAN signal.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Sensor</p>
+</th>
+<th id="" align="center">
+<p class="thead">Signal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Low-G sensor</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Vehicle longitudinal acceleration speed signal</div>
+<div class="list">•  Vehicle lateral acceleration speed signal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Yaw rate sensor</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Vehicle steering angle speed signal</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id0810b250020006"></a><p class="topic-title"><span class="topic-head"></span>Collision detection signal output function</p>
+<dl>
+<dd>
+<div class="list">•  The SAS control module sends the following signal to the following units when it determines that it is necessary for the air bag system to operate (deploy).</div>
+<div class="list">•  When the signal is received, the each unit performs controls to mediate secondary injuries caused by the vehicle collision.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Related unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Signal</p>
+</th>
+<th id="" align="center">
+<p class="thead">Reference</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="list">•  Body control module (BCM)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Secondary collision reduction signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id091400108200.html">POWER DOOR LOCK SYSTEM</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id091800400500.html">EXTERIOR LIGHTING SYSTEM</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="list">•  PCM</div>
+<div class="list">•  Instrument cluster</div>
+<div class="list">•  Center display</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Fuel-cut request signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140q1138600.html">FUEL INJECTION CONTROL SYSTEM [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5987900.html">FUEL INJECTION AMOUNT CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0920zz010000.html">ENTERTAINMENT SYSTEM [WITH CENTER DISPLAY]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="list">•  Electrical supply unit (ESU)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Collision detection unlock signal</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id091400108200.html">POWER DOOR LOCK SYSTEM</a></font>.)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><a name="id0810b250020007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The SAS control module is located underneath the rear console.</div>
+<div class="list">•  The following sensors are integrated with the SAS control module.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Determination and safing circuit</div>
+<div class="list">―  Output control circuit</div>
+</dd>
+</dl>
+<div class="list">•  The following sensors are integrated with SAS control module.</div>
+<dl>
+<dd class="list">
+<div class="list">―  Crash sensor</div>
+<div class="list">―  Yaw rate sensor</div>
+<div class="list">―  Low-G sensor</div>
+</dd>
+</dl>
+<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002819.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002819</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0810b250020008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  For the SAS control module operation, refer to the AIR BAG SYSTEM. (See <font class="extxref-label"><a href="id0810b2500100.html">AIR BAG SYSTEM [STANDARD DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div><br clear="all"><a name="id0810b250020009"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  If a malfunction occurs in the air bag system and DTCs are detected, the SAS control module inhibits control of the air bag system so that they do not operate (deploy) accidentally, and it flashes the air bag/seat belt pre-tensioner system warning light.</div>
+</body>
+</html>

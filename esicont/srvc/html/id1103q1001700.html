@@ -1,0 +1,206 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>NO.10 VEHICLE MOVES WHEN ACCELERATING FROM STANDSTILL ON SLOPE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id1103q1001700"></a><p class="servinfo-title"><span class="servinfo-head"></span>NO.10 VEHICLE MOVES WHEN ACCELERATING FROM STANDSTILL ON SLOPE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id1103q1001700</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">10</p>
+</th>
+<th id="" align="left">
+<p class="thead">VEHICLE MOVES WHEN ACCELERATING FROM STANDSTILL ON SLOPE</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>DESCRIPTION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Vehicle slips backwards on inclined road surface when accelerating after i-stop operates.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  MTX vehicles do not have the Hill Launch Assist (HLA) function from i-stop because the driver controls the brake pressure.</div>
+<div class="list">•  i-stop (engine-stop control) continues operating when shifting the selector lever from D position to N or P position while i-stop (engine-stop control) is operating, however, if the slope of the road surface is <span>within ±4 %</span>, the Hill Launch Assist (HLA) function is canceled. (ATX)</div>
+</div>
+</dd>
+</dl>
+<div class="list-title">Hill launch assist function system (DSC) malfunction</div>
+<div class="list">•  False detection of inclination angle (cannot calculate correct road slope)</div>
+<dl>
+<dd class="list">
+<div class="list">―  Low-G (XY) sensor (built-into SAS control module) malfunction (In this case, the SAS control module records DTCs C0061:29 and C0062:29.)</div>
+<div class="list">―  Low-G (XY) sensor (built-into SAS control module) initialization malfunction (In this case, the SAS control module records DTC U2100:00.)</div>
+</dd>
+</dl>
+<div class="list">•  False detection of brake fluid pressure</div>
+<dl>
+<dd class="list">
+<div class="list">―  Brake fluid pressure sensor (built-into DSC HU/CM) malfunction</div>
+</dd>
+</dl>
+<div class="list">•  Cannot maintain brake fluid pressure</div>
+<dl>
+<dd class="list">
+<div class="list">―  DSC HU/CM malfunction</div>
+</dd>
+</dl>
+<div class="list">•  DC-DC converter system error (exceeds capacity of DC-DC converter output due to open or short circuit in wiring harness and after-market electrical part)</div>
+<div class="list-title">ATX system malfunction</div>
+<div class="list">•  Electric AT oil pump malfunction (operation malfunction, insufficient pressure)</div>
+<div class="list">•  ATX malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic Procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT EFFECT OF NON-GENUINE ELECTRICAL ACCESSORY FOR CAUSE OF MALFUNCTION</div>
+<div class="list">•  Remove any non-genuine electrical accessory.</div>
+<div class="list">•  Verify the malfunction symptom.</div>
+<div class="list">•  Does vehicle slip backwards on inclined road surface when accelerating after i-stop operates?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The system is normal.</div>
+<div class="list">•  Explain to the customer that the vehicle slips backwards on an inclined road surface when accelerating after i-stop operates due to the effect of the non-genuine electrical accessory installed.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY DTC</div>
+<div class="list">•  Retrieve the PCM, TCM, DSC HU/CM, SAS control module DTCs using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0502p4290100.html">ON-BOARD DIAGNOSTIC SYSTEM DTC INSPECTION [TCM (CW6A-EL)]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id040262985000.html">DTC INSPECTION [DSC HU/CM]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0802b1080500.html">DTC INSPECTION [STANDARD DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0802b2080500.html">DTC INSPECTION [TWO-STEP DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+</div>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0502p4290200.html">ON-BOARD DIAGNOSTIC SYSTEM DTC TABLE [TCM (CW6A-EL)]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id040262985200.html">DTC TABLE [DSC HU/CM]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0802b1080700.html">DTC TABLE [STANDARD DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0802b2080700.html">DTC TABLE [TWO-STEP DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">DETERMINE IF MALFUNCTION CAUSE IS HILL LAUNCH ASSIST FUNCTION OR ATX SYSTEM</div>
+<div class="list">•  Verify the malfunction symptom on a flat road surface.</div>
+<div class="list">•  Does the acceleration lag when accelerating?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform the symptom troubleshooting “NO.9 ACCELERATION MALFUNCTION”.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id1103q1001400.html">NO.9 ACCELERATION MALFUNCTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Brake fluid pressure sensor (built-into DSC HU/CM) or DSC HU/CM brake pressure hold function malfunction.</div>
+<div class="list">•  Replace the DSC HU/CM.<div>(See <font class="extxref-label"><a href="id0415008010b1.html">DSC HU/CM REMOVAL/INSTALLATION [L.H.D.]</a></font>.)</div>
+<div>(See <font class="extxref-label"><a href="id0415008010b5.html">DSC HU/CM REMOVAL/INSTALLATION [R.H.D.]</a></font>.)</div>
+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" colspan="3">
+<div class="tbody">Verify the test results.</div>
+<div class="list">•  If normal, return to the diagnostic index to service any additional symptoms.<div>(See <font class="extxref-label"><a href="id1103q1000300.html">SYMPTOM DIAGNOSTIC INDEX [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  If a malfunction remains, inspect the related Service Information and perform the repair or diagnosis.</div>
+<dl>
+<dd class="list">
+<div class="list">―  If the vehicle is repaired, troubleshooting is completed.</div>
+<div class="list">―  If the vehicle is not repaired or additional diagnostic information is not available, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q1802400.html">PCM REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

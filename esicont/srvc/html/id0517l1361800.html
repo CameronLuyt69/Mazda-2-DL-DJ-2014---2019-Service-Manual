@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>GEAR POSITION INDICATION [CW6A-EL]</title>
+</head>
+<body><a name="id0517l1361800"></a><p class="servinfo-title"><span class="servinfo-head"></span>GEAR POSITION INDICATION [CW6A-EL]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0517l1361800</p><br clear="all"><a name="id0517l136180001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose/Function</p>
+<div class="list">•  The gear position indication illuminates while under manual shift control and displays the gear number while driving.</div><br clear="all"><a name="id0517l136180002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The gear position indication is built into the instrument cluster.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003096.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003096</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id0517l136180003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  The TCM sends a gear position indication illumination/flash request signal to the instrument cluster based on the signal from the M position switch, the up switch and the down switch via the CAN.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002247.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002247</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  If the shift down operation is inhibited during manual shift control, the TCM flashes the gear position indication 2 times. As a result, the driver is notified that the shift down operation has been canceled.</div>
+<div class="list">•  If the ATF temperature is 132 °C {270 °F} or more while in manual shift control, the TCM turns the gear position indication off and switches to automatic shift control to reduce the transaxle load. When the ATF temperature is 122 °C {252 °F} or less for a specified time, manual shift control is enabled and the gear position indication is re-illuminated.</div>
+</body>
+</html>

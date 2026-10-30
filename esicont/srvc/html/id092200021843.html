@@ -1,0 +1,2092 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ON-BOARD DIAGNOSTIC [INSTRUMENT CLUSTER]</title>
+</head>
+<body><a name="id092200021843"></a><p class="servinfo-title"><span class="servinfo-head"></span>ON-BOARD DIAGNOSTIC [INSTRUMENT CLUSTER]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id092200021843</p><br clear="all"><a name="id09220002184301"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The on-board diagnostic function consists of the following functions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  A malfunction detection function, which detects overall malfunctions in the instrument cluster-related parts.</div>
+<div class="list">―  A memory function, which stores detected DTCs. </div>
+<div class="list">―  A display function, which indicates malfunction locations and status via DTC output.</div>
+<div class="list">―  A PID/data monitoring function, which reads out specific input/output signals and verifies the input/output condition.</div>
+</dd>
+</dl>
+<div class="list">•  Using the Mazda Modular Diagnostic System (M-MDS), DTCs can be read out and deleted, and the PID/data monitoring function can be activated.</div><br clear="all"><a name="id09220002184302"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Malfunction detection function</p>
+<div class="list">•  Detects malfunctions in input/output signals.</div>
+<div class="list">•  If a malfunction occurs, the instrument cluster records the malfunction as a DTC. A recorded DTC can be read by the Mazda Modular Diagnostic System (M-MDS).</div>
+<p clear="all">
+<p class="table-title">DTC table</p>
+<p>
+<div>×: Applicable</div>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Warning/indicator light</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead"><span>Fail-safe</span></p>
+</th>
+<th id="" align="center">
+<p class="thead">Drive cycle</p>
+</th>
+<th id="" align="center">
+<p class="thead">Self test type<sup>*1</sup></p>
+</th>
+<th id="" align="center">
+<p class="thead">Memory function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1B71:14<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Evaporator temperature sensor circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1132:41<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Malfunction inside instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:88</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module communication error (HS-CAN)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0010:88</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module communication error (MS-CAN)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated/Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0101:00<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with TCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated/Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with ABS HU/CM or DSC HU/CM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated/Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with EPS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated/Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated/Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with SAS control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0156:00<sup>*5</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated/Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with connectivity master unit (CMU)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0164:00<sup>*6</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with climate control unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0182:00<sup>*7</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated/Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with auto leveling control module</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated/Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with start stop unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0232:00<sup>*8</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated/Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with blind spot monitoring (BSM) control module (LH)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0235:00<sup>*9</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with laser sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U023A:00<sup>*10</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated/Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with forward sensing camera (FSC)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0300:00<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0401:68</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated/Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0402:68<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from transmission/transaxle</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0422:68</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated/Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from BCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0433:00<sup>*9</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from laser sensor</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0515:68</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated/Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from start stop unit</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U053B:00<sup>*10</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Illuminated/Flash</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from forward sensing camera (FSC)</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2005:86</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from PCM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2013:13</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cluster switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2100:00</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2105:02<sup>*11</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Drive selection switch circuit malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:41</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:51</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:56</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:57</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration error</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:41<sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster internal malfunction</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Low power supply voltage input to instrument cluster</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">C, D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">×</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :C: CMDTC self test, D: ODDTC self test</div>
+<div class="deflist">*2  :With manual air conditioner system</div>
+<div class="deflist">*3  :With digital speedometer</div>
+<div class="deflist">*4  :ATX</div>
+<div class="deflist">*5  :With center display</div>
+<div class="deflist">*6  :With digital speedometer and full-auto air conditioner system</div>
+<div class="deflist">*7  :With headlight auto leveling system</div>
+<div class="deflist">*8  :With blind spot monitoring (BSM) system</div>
+<div class="deflist">*9  :With smart city brake support (SCBS)</div>
+<div class="deflist">*10  :With forward sensing camera (FSC)</div>
+<div class="deflist">*11  :With drive selection switch</div><br clear="all"><p><a name="id09220002184303"></a><p class="topic-title"><span class="topic-head"></span>DTC 7-digit code definition</p>
+<dl>
+<dd>
+<div class="list">•  When related systems or components have failed, the CM stores the DTC of the malfunctioning part in the CM memory, and allows for the retrieval of the store data using scanning tool when necessary. The DTCs are indicated using seven digits. Each digit indicates the following.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am6xun00000789.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am6xun00000789</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220002184304"></a><p class="topic-title"><span class="topic-head"></span>Status byte for DTC</p>
+<dl>
+<dd>
+<div class="list">•  The two digits (two digits after hyphen (-)) after the 7-digit DTC.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00002008.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00002008</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  A code which indicates the pending code, current/past malfunction status, or warning illumination status.</div>
+<div class="list">•  Can be read by performing a CMDTC self-test using the Mazda Modular Diagnostic System (M-MDS).</div>
+<div class="list">•  For details on the status byte, refer to the explanation on the Mazda Modular Diagnostic System (M-MDS) when reading the DTC.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id09220002184305"></a><p class="topic-title"><span class="topic-head"></span>Detection condition for the applicable DTC</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+<th id="" align="center">
+<p class="thead">Detection condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">B1B71:14</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Evaporator temperature sensor circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The instrument cluster detected an open circuit or a short to ground in the evaporator temperature sensor circuit for <span>0.1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">C1132:41</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Malfunction inside instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The instrument cluster detects that there is an active driving display malfunction in the instrument cluster.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0001:88</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module communication error (HS-CAN)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster detects a CAN bus communication line (HS-CAN) malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0010:88</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Module communication error (MS-CAN)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster detects a CAN bus communication line (MS-CAN) malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0100:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with PCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster cannot receive the CAN signal from the PCM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0101:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with TCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster cannot receive the CAN signal from the TCM for <span>1 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0121:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with ABS HU/CM or DSC HU/CM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster cannot receive the CAN signal from the ABS HU/CM or DSC HU/CM for <span>1 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0131:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with EPS control module</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster cannot receive the CAN signal from the BCM for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0140:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with BCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster cannot receive the CAN signal from the BCM for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0151:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with SAS control module</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster cannot receive the CAN signal from the SAS control module for <span>2 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0156:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with connectivity master unit (CMU)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster cannot receive the CAN signal from the connectivity master unit (CMU) for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0164:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with climate control unit</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster cannot receive the CAN signal from the climate control unit for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0182:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with auto leveling control module</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster cannot receive the CAN signal from the auto leveling control module for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0214:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster cannot receive the CAN signal from the start stop unit for <span>5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0232:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with blind spot monitoring (BSM) control module (LH)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster cannot receive the CAN signal from the blind spot monitoring (BSM) control module (LH) for <span>1.5 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0235:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with laser sensor</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster cannot receive the CAN signal from the laser sensor for <span>1 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U023A:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Communication error with forward sensing camera (FSC)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster cannot receive the CAN signal from the forward sensing camera (FSC) for <span>1 s or more</span>.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0300:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster configuration error (incorrect value write) detected.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0401:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from PCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster receives the error signals from the PCM with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0402:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from transmission/transaxle</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster received the error signals from the transmission/transaxle for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0422:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from BCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster receives the error signals from the BCM for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0433:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from laser sensor</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster detects the following conditions:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Malfunction of laser sensor or smart city brake support related system (laser sensor, DSC HU/CM, PCM)</div>
+<div class="list">―  Laser sensor control is temporarily inhibited.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U0515:68</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from start stop unit</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster receives the error signals from the start stop unit with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U053B:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from forward sensing camera (FSC)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster receives the error signals from the forward sensing camera (FSC) for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2005:86</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Error signal received from PCM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster receives the vehicle speed signal error from the PCM for <span>1 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2013:13</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cluster switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster detects an open circuit in the cluster switch circuit for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2100:00</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster configuration error detected as follows:</div>
+<dl>
+<dd class="list">
+<div class="list">―  No configuration of instrument cluster</div>
+<div class="list">―  Instrument cluster configuration has not been correctly performed.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2105:02</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Drive selection switch circuit malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster detects an open circuit in the drive selection switch circuit for <span>5 s or more</span> with the ignition switched ON (engine off or on).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:41</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster configuration error (data error) detected.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:51</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster configuration error (no configuration) detected.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:56</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster configuration error (incorrect value write) detected.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U2300:57</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration error</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster configuration error (data size error) detected.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3000:41</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster internal malfunction</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster detects the internal malfunction.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">U3003:16</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Low power supply voltage input to instrument cluster</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Instrument cluster power supply circuit voltage of <span>less than 10 V</span> is detected.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><a name="id09220002184306"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Snapshot Data</p>
+<div class="list">•  The data for all DTCs currently detected is stored.</div>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Snapshot data item</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data read/use method</p>
+</th>
+<th id="" align="center">
+<p class="thead">Corresponding data monitor items</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">AAT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°F</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ambient temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">APP_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Accelerator Pedal Off/Under20%/Over20%/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accelerator pedal position status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">CFG_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Config Complete/Not Configured/Config Error</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster configuration status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">ECT_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Under 0 degrees C/0 - Under 80 degrees C/Over 80 degrees C/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature status</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IC_VPWR</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster power supply voltage</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When DTC is detected, instrument cluster displays power supply voltage value of instrument cluster in M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">IG-ON_TIMER</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">hh:mm:ss<sup>*1</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Elapsed time since ignition was switched ON (engine off or on)</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The instrument cluster records the elapsed time since the ignition was switched ON (engine off or on).</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">When DTC is detected, instrument cluster displays elapsed time since ignition was switched ON (engine off or on) in M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">PWR_MODE_KEY</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Key Out/Key Recently Out (Position 0)/Accessory (Position 1)/Post Ignition (Position 2)/Ignition On (Position 2)/Running (Position 2)/Running - Starting</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Key Out: Ignition switched off</div>
+<div class="list">•  Key Recently Out (Position 0): Elapsed time <span>within 3 s</span> since ignition was switched off</div>
+<div class="list">•  Accessory (Position 1): Ignition is switched to ACC</div>
+<div class="list">•  Post Ignition (Position 2): Elapsed time <span>within 3 s</span> since ignition was switched ON (engine off or on)</div>
+<div class="list">•  Ignition On (Position 2): Ignition switched ON (engine off)</div>
+<div class="list">•  Running (Position 2): Ignition switched ON (engine on)</div>
+<div class="list">•  Running - Starting: Cranking condition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When DTC is detected, instrument cluster displays ignition switch status in M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">RPM_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Engine Stop/Under1500rpm/Over1500rpm/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed status</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When DTC is detected, instrument cluster displays engine speed in M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TACHOMTR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">SHIFT_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">P/N/D/R/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Selector lever position status</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When DTC is detected, instrument cluster displays selector lever position in M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TOTAL_DIST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Miles</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total traveled distance from completion of vehicle until instrument cluster detects DTC (Odometer value in instrument cluster)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The total traveled distance from which the instrument cluster detects DTCs to the present can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the odometer value in the instrument cluster.</div>
+<div class="list">2.  Verify the snapshot data item TOTAL_DIST.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">TOTAL_TIME</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">hh:mm:ss<sup>*1</sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Accumulated total elapsed time since vehicle completion until instrument cluster detects a DTC</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  When the ROOM fuse is removed, and the ignition is switched off, the time is not included in the elapsed time.</div>
+</div>
+</dd>
+</dl>
+</td>
+<td id="" align="left">
+<div class="tbody">The elapsed time from which the instrument cluster detects DTCs to the present can be calculated by performing the following procedure.</div>
+<div class="list">1.  Verify the instrument cluster PID item TOTAL_TIME.</div>
+<div class="list">2.  Verify the snapshot data item TOTAL_TIME.</div>
+<div class="list">3.  Subtract 2 from 1.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">TOTAL_TIME</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Instrument cluster power supply voltage</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="center">
+<div class="tbody">VPWR</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">VSPD_STATUS</div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Stop/0-10km/h/Over10km/h/FAIL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicle speed status</div>
+</td>
+<td id="" align="left">
+<div class="tbody">When DTC is detected, instrument cluster displays vehicle speed in M-MDS.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">SPEEDOMTR</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :The seconds may be indicated after the decimal point.</div><br clear="all"><a name="id09220002184307"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Data Monitor Function</p>
+<div class="list">•  With the PID/data monitor function, the input/output signal monitor items set in the instrument cluster can be selected and read out in real-time.</div>
+<div class="list">•  The items which can be selected are as follows.</div>
+<p clear="all">
+<p>
+<div>—: Not applicable</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">PID</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Operation</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Module control terminal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">AFS_ST<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays in the Mazda Modular Diagnostic System (M-MDS) but it does not operate.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">AT_MAN_M_SW<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On/Reserved/ Unknown</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: M position switch is off.</div>
+<div class="list">•  On: M position switch is on.</div>
+<div class="list">•  Reserved: —</div>
+<div class="list">•  Unknown: M position switch signal is not determined.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1H</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">AT_S_DWN_SW<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On/Reserved/ Unknown</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Down switch is off.</div>
+<div class="list">•  On: Down switch is on.</div>
+<div class="list">•  Reserved: —</div>
+<div class="list">•  Unknown: Down switch signal is not determined.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1G</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">AT_S_UP_SW<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On/Reserved/ Unknown</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Up switch is off.</div>
+<div class="list">•  On: Up switch is on.</div>
+<div class="list">•  Reserved: —</div>
+<div class="list">•  Unknown: Up switch signal is not determined.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1F</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">BSM/RVM_SW<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Blind spot monitoring (BSM) OFF switch is off.</div>
+<div class="list">•  On: Blind spot monitoring (BSM) OFF switch is on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1A, 1V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DSC_OFF_SW<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: DSC OFF switch is off.</div>
+<div class="list">•  On: DSC OFF switch is on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1A, 1V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">FUEL_GAUGE</div>
+</td>
+<td id="" align="center">
+<div class="tbody">L</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays fuel level detected by the fuel gauge</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">FUEL_SEN_M</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ohm<sup></sup></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays fuel gauge sender unit resistance valve.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">V<sup></sup></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays in the Mazda Modular Diagnostic System (M-MDS) but it does not operate.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">FUEL_SEN_S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ohm<sup></sup></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays in the Mazda Modular Diagnostic System (M-MDS) but it does not operate.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">V<sup></sup></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="tbody">Displays in the Mazda Modular Diagnostic System (M-MDS) but it does not operate.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">I_ILLUMI_M</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off (Day)/On (Night)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off (Day): TNS switch is off.</div>
+<div class="list">•  On (Night): TNS switch is on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1B, 1D </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">I-ST_OFF_SW<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: i-stop OFF switch is off.</div>
+<div class="list">•  On: i-stop OFF switch is on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1A, 1V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LDWS_ON_SW<sup></sup><sup>*3</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: LDWS switch is off.</div>
+<div class="list">•  On: LDWS switch is on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1A, 1V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">MULTI_SW_ST</div>
+</td>
+<td id="" align="center">
+<div class="tbody">O.K./FAULT</div>
+</td>
+<td id="" align="left">
+<div class="list">•  O.K.: Cluster switch is normal.</div>
+<div class="list">•  FAULT: Cluster switch is malfunctioning.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1A, 1V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">ODO_CNT</div>
+</td>
+<td id="" align="center">
+<div class="tbody">km, ft, mi</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays rolling count of the odometer</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">P_BRAKE_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Parking brake not applied</div>
+<div class="list">•  On: Parking brake applied</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1X</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R_GEAR_SW</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list-title">ATX</div>
+<div class="list">•  Off: Selector lever is in other than R position.</div>
+<div class="list">•  On: Selector lever is in R position.</div>
+<div class="list-title">MTX</div>
+<div class="list">•  Off: Back-up light switch is off.</div>
+<div class="list">•  On: Back-up light switch is on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1B, 1D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">R_LMP</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On/Unknown/Fault</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Back-up light is turned off.</div>
+<div class="list">•  On: Back-up light is turned on.</div>
+<div class="list">•  Unknown: Back-up light signal is not determined.</div>
+<div class="list">•  Fault: Back-up light malfunction</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1B, 1D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SPEEDOMTR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">KPH, MPH</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays vehicle speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TACHOMTR<sup></sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">RPM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays engine speed</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TOTAL_TIME</div>
+</td>
+<td id="" align="center">
+<div class="tbody">hh:mm:ss</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays cumulative elapsed time since vehicle completion</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TPMS_CAL_SW<sup>*4</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Tire pressure monitoring system (TPMS) set switch is off.</div>
+<div class="list">•  On: Tire pressure monitoring system (TPMS) set switch is on.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1A, 1V</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VPWR</div>
+</td>
+<td id="" align="center">
+<div class="tbody">V</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Displays power supply voltage</div>
+</td>
+<td id="" align="left">
+<div class="tbody">1S, 1U</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :ATX</div>
+<div class="deflist">*2  :With blind spot monitoring (BSM) system</div>
+<div class="deflist">*3  :With lane departure warning system (LDWS)</div>
+<div class="deflist">*4  :With tire pressure monitoring system (TPMS)</div><br clear="all"><a name="id09220002184308"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Simulation function</p>
+<div class="list">•  The simulation function drives the output parts set in the instrument cluster regardless of the instrument cluster control condition.</div>
+<div class="list">•  The items which can be selected are as follows.</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Simulation items on parts which are not equipped to the vehicle do not operate.</div>
+</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Simulation item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit/Operation</p>
+</th>
+<th id="" align="center">
+<p class="thead">Data contents</p>
+</th>
+<th id="" align="center">
+<p class="thead">Output part name</p>
+</th>
+<th id="" align="center">
+<p class="thead">Operation condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">ALARM</div>
+</td>
+<td id="" align="center">
+<div class="tbody">On/Off</div>
+</td>
+<td id="" align="left">
+<div class="list">•  On: Warning alarm sounds.</div>
+<div class="list">•  Off: Warning alarm does not sound.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Warning alarm (instrument cluster)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">LCD_SEG</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turns off the LCD.</div>
+<div class="list">•  On: Fully displays LCD.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LCD (instrument cluster)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SPEEDOMTR<sup>*1</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/60 Km/h/120 Km/h</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Speedometer needle moves to the bottommost position.</div>
+<div class="list">•  60 Km/h: Speedometer needle moves to <span>approx. 61—67 km/h {38—42 mph}</span>.</div>
+<div class="list">•  120 Km/h: Speedometer needle moves to <span>approx. 122—130 km/h {75—81 mph}</span>.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Speedometer (instrument cluster)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">TACHOMTR<sup>*2</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/3000 RPM/6000 RPM</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Tachometer needle moves to bottommost position.</div>
+<div class="list">•  3000 RPM: Tachometer needle moves to <span>approx. 3,050 rpm</span>.</div>
+<div class="list">•  6000 RPM: Tachometer needle moves to <span>approx. 6,100 rpm</span>.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Tachometer (instrument cluster)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">WL+IL</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Off/On</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Off: Turns off all warning lights, indicator lights.</div>
+<div class="list">•  On: Illuminates all warning lights, indicator lights.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Warning lights, indicator lights (instrument cluster)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Ignition switched ON (engine off or on)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :Analog speedometer type</div>
+<div class="deflist">*2  :Analog tachometer type</div>
+</body>
+</html>

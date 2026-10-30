@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "../../../../../../../../../ns.adobe.com/Extensibility/1.0/default.htm">
+	<!ENTITY ns_ai "../../../../../../../../../ns.adobe.com/AdobeIllustrator/10.0/default.htm">
+	<!ENTITY ns_graphs "../../../../../../../../../ns.adobe.com/Graphs/1.0/default.htm">
+	<!ENTITY ns_vars "../../../../../../../../../ns.adobe.com/Variables/1.0/default.htm">
+	<!ENTITY ns_imrep "../../../../../../../../../ns.adobe.com/ImageReplacement/1.0/default.htm">
+	<!ENTITY ns_sfw "../../../../../../../../../ns.adobe.com/SaveForWeb/1.0/default.htm">
+	<!ENTITY ns_custom "../../../../../../../../../ns.adobe.com/GenericCustomNamespace/1.0/default.htm">
+	<!ENTITY ns_adobe_xpath "../../../../../../../../../ns.adobe.com/XPath/1.0/default.htm">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="87.462px"
+	 height="80.554px" viewBox="0 0 87.462 80.554" enable-background="new 0 0 87.462 80.554" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="SEN">
+			<rect x="26.414" y="42.354" fill="#33FF00" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			<rect x="42.516" y="42.225" fill="#FFFF00" stroke="#000000" stroke-width="0.1" width="16.053" height="11.947"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="58.569" y1="54.3" x2="58.569" y2="42.225"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="26.366" y1="54.3" x2="26.366" y2="42.225"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="42.467" y1="54.3" x2="42.467" y2="42.225"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="58.569" y1="42.225" x2="26.366" y2="42.225"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="58.569" y1="54.3" x2="26.366" y2="54.3"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M19.322,52.366v-13.16
+				c0,0-0.675-6.507,13.851-8.475"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M65.612,39.206
+				c0,0,0.674-6.507-13.85-8.474"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="65.612" y1="52.366" x2="65.612" y2="39.206"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="63.598" y1="53.3" x2="63.598" y2="49.275"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="63.598" y1="49.275" x2="61.586" y2="49.275"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="63.598" y1="53.3" x2="61.586" y2="53.3"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="61.586" y1="49.275" x2="61.586" y2="42.218"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M19.322,52.366
+				c0,1.258,0.983,2.654,2.144,3.527c0,0,1.691,5.69,21.001,5.69"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M65.612,52.366
+				c0,1.258-0.984,2.654-2.145,3.527c0,0-1.691,5.69-21,5.69"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M55.375,42.225
+				c0,0,1.148-2.539-12.912-2.539h0.008c-14.062,0-12.914,2.539-12.914,2.539"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M29.558,54.3
+				c0,0-1.148,2.54,12.914,2.54h-0.008c14.061,0,12.912-2.54,12.912-2.54"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M61.586,53.3v1.006
+				l0,0c0,0,0.439,5.214-19.119,5.214c-19.56,0-19.12-5.214-19.12-5.214V53.3h-2.013v-4.025h2.013v-7.057"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M23.348,42.218
+				c0,0-0.44-5.214,19.12-5.214c19.559,0,19.119,5.214,19.119,5.214"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="26.366" y1="57.31" x2="26.366" y2="59.446"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="58.569" y1="57.308" x2="58.569" y2="59.445"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="48.504" y1="30.175" x2="36.429" y2="30.175"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="48.504" y1="37.2" x2="48.504" y2="30.175"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="36.429" y1="37.2" x2="36.429" y2="30.175"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="36.429" y1="30.175" x2="48.504" y2="37.2"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="48.504" y1="30.175" x2="36.429" y2="37.2"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M19.322,47.541
+				c0,0,2.059-0.916,2.059-3.333s0.083-8.25,8-9.417c0,0,3.75-0.083,3.75-3.25s1.339-4.333,9.336-4.333"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M65.612,47.541
+				c0,0-2.059-0.916-2.059-3.333s-0.084-8.25-8-9.417c0,0-3.75-0.083-3.75-3.25s-1.34-4.333-9.336-4.333"/>
+		</g>
+		<g id="TEXT">
+			<text transform="matrix(1 0 0 1 48.3276 68.4424)" font-family="'Arial'" font-size="6">A</text>
+			<text transform="matrix(1 0 0 1 32.3423 68.4424)" font-family="'Arial'" font-size="6">B</text>
+			<text transform="matrix(1 0 0 1 2.8345 19.1997)" font-family="'Arial'" font-size="8">FUEL INJECTOR No.4</text>
+			<text transform="matrix(1 0 0 1 2.8345 9.6997)" font-family="'Arial'" font-size="8">0140-127</text>
+			<text transform="matrix(1 0 0 1 31.4858 75.7705)" font-family="'Arial'" font-size="6">[BLACK]</text>
+			<text transform="matrix(1 0 0 1 32.5854 50.1333)" font-family="'Arial'" font-size="5">G</text>
+			<text transform="matrix(1 0 0 1 49.0869 50.0049)" font-family="'Arial'" font-size="5">Y</text>
+		</g>
+	</g>
+</switch>
+</svg>

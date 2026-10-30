@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "../../../../../../../../../ns.adobe.com/Extensibility/1.0/default.htm">
+	<!ENTITY ns_ai "../../../../../../../../../ns.adobe.com/AdobeIllustrator/10.0/default.htm">
+	<!ENTITY ns_graphs "../../../../../../../../../ns.adobe.com/Graphs/1.0/default.htm">
+	<!ENTITY ns_vars "../../../../../../../../../ns.adobe.com/Variables/1.0/default.htm">
+	<!ENTITY ns_imrep "../../../../../../../../../ns.adobe.com/ImageReplacement/1.0/default.htm">
+	<!ENTITY ns_sfw "../../../../../../../../../ns.adobe.com/SaveForWeb/1.0/default.htm">
+	<!ENTITY ns_custom "../../../../../../../../../ns.adobe.com/GenericCustomNamespace/1.0/default.htm">
+	<!ENTITY ns_adobe_xpath "../../../../../../../../../ns.adobe.com/XPath/1.0/default.htm">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="111.017px"
+	 height="76.391px" viewBox="0 0 111.017 76.391" enable-background="new 0 0 111.017 76.391" xml:space="preserve">
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<g id="SEN">
+			<rect x="41.921" y="38.446" fill="#7F1AFF" stroke="#000000" stroke-width="0.1" width="16.053" height="11.946"/>
+			<rect x="58.022" y="38.446" fill="#FFB3FF" stroke="#000000" stroke-width="0.1" width="16.053" height="11.946"/>
+			
+				<rect x="41.873" y="38.317" fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" width="16.102" height="12.075"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				57.974,38.317 74.076,38.317 74.076,50.393 57.974,50.393 			"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				41.675,36.225 50.373,29.817 65.575,29.817 74.273,36.225 			"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M75.754,34.215
+				l0.002-0.003c-9.359-6.895-9.359-6.895-10.181-6.895H49.551l-9.359,6.895l0.002,0.003c-1.708,1.277-2.821,3.311-2.821,5.603
+				v9.075c0,3.859,3.14,7,7,7h27.203c3.86,0,7-3.141,7-7v-9.075C78.576,37.525,77.463,35.492,75.754,34.215z"/>
+			<path fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" d="M44.373,35.317
+				c-2.475,0-4.5,2.025-4.5,4.5v9.075c0,2.475,2.025,4.5,4.5,4.5h27.203c2.475,0,4.5-2.025,4.5-4.5v-9.075
+				c0-2.475-2.025-4.5-4.5-4.5H44.373z"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				76.076,45.354 78.076,45.354 78.076,43.354 76.076,43.354 			"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				39.873,45.354 37.873,45.354 37.873,43.354 39.873,43.354 			"/>
+			<polyline fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" points="
+				49.474,31.817 66.474,35.317 66.474,31.817 49.474,31.817 49.474,35.317 66.474,31.817 			"/>
+		</g>
+		<g id="TEXT">
+			<text transform="matrix(1 0 0 1 64.1938 46.2266)" font-family="'Arial'" font-size="5">P</text>
+			<text transform="matrix(1 0 0 1 48.2925 46.2256)" font-family="'Arial'" font-size="5">V</text>
+			<text transform="matrix(1 0 0 1 2.8345 19.1997)"><tspan x="0" y="0" font-family="'Arial'" font-size="8">ULTRASONIC SENSOR</tspan><tspan x="87.57" y="0" font-family="'Arial'" font-size="8"> (LH)</tspan></text>
+			<text transform="matrix(1 0 0 1 2.8345 9.6997)" font-family="'Arial'" font-size="8">0922-604</text>
+			<text transform="matrix(1 0 0 1 47.3018 71.6074)" font-family="'Arial'" font-size="6">[BLACK]</text>
+			<text transform="matrix(1 0 0 1 64.7578 62.3047)" font-family="'Arial'" font-size="6">A</text>
+			<text transform="matrix(1 0 0 1 48.6572 62.3047)" font-family="'Arial'" font-size="6">B</text>
+		</g>
+	</g>
+</switch>
+</svg>

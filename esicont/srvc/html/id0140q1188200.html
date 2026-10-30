@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>ELECTRONIC SPARK ADVANCE CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0140q1188200"></a><p class="servinfo-title"><span class="servinfo-head"></span>ELECTRONIC SPARK ADVANCE CONTROL [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140q1188200</p><br clear="all"><a name="id0140q118820001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  Controls ignition for optimum timing (according to engine operation conditions).</div>
+<div class="list">•  Serviceability has been improved by eliminating the necessity of ignition timing adjustment.</div>
+<div class="list">•  The PCM determines the engine operation conditions (based on input signals from each sensor) and blocks current to the ignition coils at the calculated ignition timing. This causes the spark plugs to discharge (ignite) by the effect of electromagnetic mutual induction.</div><br clear="all"><a name="id0140q118820002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003416.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003416</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0140q118820003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p><br clear="all"><p><a name="id0140q118820004"></a><p class="topic-title"><span class="topic-head"></span>Ignition method</p>
+<dl>
+<dd>
+<div class="list">•  The PCM energizes the ignition coils according to the ignition timing calculated from the engine operation conditions and the igniter energization time.</div>
+<div class="list">•  The igniter energization time (ignition coil energization time) is determined according to battery voltage and engine speed.</div>
+</dd>
+</dl>
+<p class="figure-title">Timing chart</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003417.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003417</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0140q118820005"></a><p class="topic-title"><span class="topic-head"></span>Determination of ignition timing</p>
+<dl>
+<dd>
+<div class="list-title">Division of control zones</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The PCM performs different ignition controls for engine starting and those other than engine starting to stabilize the engine starting.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Control zone</p>
+</th>
+<th id="" align="center">
+<p class="thead">Control condition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Ignition method</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine start zone</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine speed is <span>less than 500 rpm</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine starting</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Normal zone</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine operation except start zone</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cycle estimated ignition (Determines ignition timing adding each correction to basic spark advance)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Ignition timing calculation method table</p>
+<p>
+<div>A: Ignition timing base, B: Correction for ignition timing</div>
+</p>
+<table class="table-flame" border="1">
+<tbody>
+<tr>
+<td id="" align="center" colspan="2" rowspan="2">
+<div class="tbody"><span>Contents</span></div>
+</td>
+<td id="" align="center" rowspan="2">
+<div class="tbody"><span>Calculation method or determination method for ignition timing, spark advance, and correction</span></div>
+</td>
+<td id="" align="center" colspan="2">
+<div class="tbody">Control zone</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center"><img src="images/am3zzn00003455.png"></td>
+<td id="" align="center"><img src="images/am3zzn00003457.png"></td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Starting ignition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Determination based on engine coolant temperature</div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Cycle estimated ignition</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Basic spark advance</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Set value according to engine speed and charging efficiency<sup>*</sup></div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">A</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="6">
+<div class="tbody">Correction</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Engine coolant temperature spark advance correction</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">According to engine coolant temperature</div>
+<div class="tbody">Purpose: Ensures combustion stability when engine coolant temperature is low</div>
+<div class="list">•  High charging efficiency<sup>*</sup>, low engine coolant temperature→large correction</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Intake air temperature correction</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">According to engine intake air temperature and engine coolant temperature</div>
+<div class="tbody">Purpose: Suppresses knocking when engine intake air temperature is high</div>
+<div class="list">•  High engine intake air temperature, high engine intake air temperature→large correction</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Warm-up promotion spark retard correction</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">Maximum 50 s after engine start</div>
+<div class="tbody">Purpose: Activates the catalytic converter earlier</div>
+<div class="list">•  According to engine coolant temperature→correction</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Torque reduction correction</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">According to torque reduction request from TCM, or DSC HU/CM</div>
+<div class="tbody">Purpose: Such as reduction of shift shock, traction control, or suppression of vehicle vibration</div>
+<div class="list">•  Large torque reduction request→large correction</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Knocking spark retard correction</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">Acceleration when charging efficiency<sup>*</sup> volume increase (acceleration amount) is given value or more</div>
+<div class="tbody">Purpose: Knocking suppression</div>
+<div class="list">•  Large acceleration amount→large correction</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Valve timing correction</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">When phase difference changes due to electric variable valve timing control (SKYACTIV-G 1.5 (with 4-2-1 exhaust system)) and hydraulic variable valve timing control</div>
+<div class="tbody">Purpose: Ensures combustion stability</div>
+<div class="list">•  Correction according to change in phase difference</div>
+</td>
+<td id="" align="center">
+<div class="tbody"> </div>
+</td>
+<td id="" align="center">
+<div class="tbody">B</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*  :Charging efficiency is the ratio of the actual amount of intake air to the maximum air charging amount (mass volume) of the cylinder. This value increases proportionately to the increase in engine load.</div>
+<dl>
+<dd>
+<div class="list">•  If immobilizer system related information (engine start prohibited) is received from the start stop unit, the PCM stops ignition.</div>
+<div class="list">•  When a collision signal is received from the SAS control module, the PCM stops the ignition.</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>CRUISE CONTROL SYSTEM [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0120r1903400"></a><p class="servinfo-title"><span class="servinfo-head"></span>CRUISE CONTROL SYSTEM [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0120r1903400</p><br clear="all"><a name="id0120r190340001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  The cruise control system enables driving at a constant speed by setting the vehicle speed with the cruise control switch instead of operating the accelerator pedal.</div>
+<div class="list">•  The PCM controls the fuel injection amount to maintain the vehicle at a constant speed.</div>
+<p clear="all">
+<p class="table-title">Component and function</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="2">
+<p class="thead">Component</p>
+</th>
+<th id="" align="center">
+<p class="thead">Function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">DSC HU/CM</div>
+<div class="tbody">(CAN communication: Vehicle speed signal)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The vehicle speed signal is sent to the PCM from the DSC HU/CM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" rowspan="6">
+<div class="tbody">Cruise control switch</div>
+</td>
+<td id="" align="left">
+<div class="tbody">ON</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The cruise control system main switch. The cruise control system goes on standby with the operation of the switch.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">OFF</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The cruise control system main switch. The cruise control system is turned off with the operation of the switch.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SET (+)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the switch is pressed when the vehicle speed <span>exceeds 25 km/h {16 mph}</span> with the system on standby, the vehicle speed at the point when the switch is pressed is stored in the PCM and the system initiates the cruise control.</div>
+<div class="list">•  The PCM controls acceleration by the pressing of the switch or when the switch is continuously pressed during cruise control.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">SET (−)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  If the switch is pressed when the vehicle speed <span>exceeds 25 km/h {16 mph}</span> with the system on standby, the vehicle speed at the point when the switch is pressed is stored in the PCM and the system initiates the cruise control.</div>
+<div class="list">•  The PCM controls deceleration by the pressing of the switch or when the switch is continuously pressed during cruise control.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">RESUME</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If the switch is pressed when the vehicle speed <span>exceeds 25 km/h {16 mph}</span> with the system on standby and the previous pre-set vehicle speed is stored in the PCM, the system initiates the cruise control so that the vehicle speed is the pre-set vehicle speed stored in the PCM.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CANCEL</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If the switch is pressed during cruise control, the cruise control system goes on standby (pre-set vehicle speed is stored).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Brake switch</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Depressing the brake pedal during cruise control switches the cruise control system to standby mode (pre-set vehicle speed is stored).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">CPP switch (MTX)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Depressing the clutch pedal during cruise control switches the cruise control system to standby mode (pre-set vehicle speed is stored).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Neutral switch No.1 (MTX)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Shifting to neutral during cruise control switches the cruise control system to standby mode (pre-set vehicle speed is stored).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">TCM (ATX)</div>
+<div class="tbody">(CAN communication: gear signal)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If the following operation is performed during cruise control, the cruise control system goes on standby mode (pre-set vehicle speed is stored).</div>
+<div class="list">•  The selector lever is shifted from D position to N position.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">DSC HU/CM</div>
+<div class="tbody">(CAN communication: Brake pressure)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If the brake pressure <span>exceeds 0.3 MPa {3 kgf/cm<sup>2</sup>, 44 psi}</span>, the cruise control system goes on standby mode (pre-set vehicle speed is stored).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Parking brake switch</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If the parking brake is applied, the cruise control system goes on standby mode (pre-set vehicle speed is stored).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">TCM (ATX)</div>
+<div class="tbody">(CAN communication: diagnostic signal)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">If there is a malfunction with the ATX, the cruise control system goes on standby mode (pre-set vehicle speed is stored).</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">PCM</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The cruise control system is executed or stopped according to the cruise control switch signals.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Fuel injector</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The input signal sent from the PCM adjusts the fuel injection amount.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Cruise main indicator light (Amber)</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">(See <font class="extxref-label"><a href="id0120r1100500.html">CRUISE MAIN INDICATOR LIGHT (AMBER), CRUISE SET INDICATOR LIGHT (GREEN) [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Cruise set indicator light (Green)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0120r190340002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Structural View</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003578.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003578</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0120r190340003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003579.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003579</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

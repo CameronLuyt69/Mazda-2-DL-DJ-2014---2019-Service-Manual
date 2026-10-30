@@ -1,0 +1,565 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>PCM [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5008400"></a><p class="servinfo-title"><span class="servinfo-head"></span>PCM [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5008400</p><br clear="all"><a name="id0140z500840001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose/Function</p>
+<div class="list">•  High-level driveability and lower fuel consumption have been achieved by controlling the appropriate engine conditions (fuel injection timing) according to operation conditions.</div>
+<div class="list">•  Controls each output part based on the signal from each input part.</div>
+<div class="list">•  The control descriptions are as shown below.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Function</p>
+</th>
+<th id="" align="center">
+<p class="thead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Main relay control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Supplies power to each part by switching the main relay on/off at the optimal timing according to the vehicle conditions.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Idle speed control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM controls the fuel injection amount so that the target idle speed according to the engine operation conditions is obtained.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Boost control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM controls the air charging pressure to improve the variable geometry turbocharger responsiveness, the acceleration performance and fuel economy of the vehicle.</div>
+<div class="list">•  To obtain optimum air charging pressure according to the driving conditions, the PCM drives and controls the turbocharger solenoid valve.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel injection amount control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The fuel injection amount is controlled by the opening of the nozzle in the fuel injector based on the signal from the PCM.</div>
+<div class="list">•  The PCM learns and corrects the variation in the fuel injection amount of each cylinder.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Multiple fuel injection control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Multiple fuel injection control has been adopted in which the number of fuel injections is divided over several times for the purpose of noise and NOx reduction.</div>
+<dl>
+<dd class="list">
+<div class="list">―  For single injection, a greater amount of fuel is consumed to inject the necessary amount of fuel at one time. For this reason, the fuel is combusted rapidly at a high temperature and high pressure, resulting in increased noise and NOx.</div>
+<div class="list">―  In multiple injection, combustion is performed more slowly to divide the necessary fuel amount over several times, thus controlling noise and the occurrence of NOx.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel injection timing control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM determines and controls the optimum fuel injection timing according to engine operation conditions based on the signals from each input sensor.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel pressure control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM performs feedback control of the fuel pressure in the common rail to gain optimum fuel injection pressure according to engine operation conditions.</div>
+<div class="list">•  Because the fuel pressure can be controlled regardless of the engine operation conditions, high pressure fuel injection even at low engine speeds is possible. As a result, generation of NOx and PM can be reduced.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Intake shutter valve control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM controls the intake shutter valve when the following controls are performed.</div>
+<dl>
+<dd class="list">
+<div class="list">―  EGR control: Due to the difficulty in generating a pressure difference between the intake and exhaust during light engine-loads, the exhaust gas recirculation is corrected by the HP-EGR by closing the intake shutter valve and pressurizing the intake manifold.</div>
+<div class="list">―  DPF regeneration control: Intake air is reduced during DPF regeneration control to cause the exhaust gas temperature to increase more easily.</div>
+<div class="list">―  During deceleration: Intake air is reduced so that the catalyst temperature is not lowered by the incoming outside air.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust shutter valve control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM controls the exhaust shutter valve when the following controls are performed.</div>
+<dl>
+<dd class="list">
+<div class="list">―  EGR control: During LP-EGR control, the exhaust shutter valve is closed, and the exhaust gas recirculation is corrected by raising the exhaust gas pressure at the LP-EGR valve inlet.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Coolant control valve control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Depending on the engine operation conditions, the PCM controls the coolant control valve opening angle so that the appropriate amount of engine coolant can be sent to the appropriate coolant passage at the appropriate timing.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Electric water pump control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM sends a duty signal to the electric water pump according to the engine operation conditions to adjust the water-cooled charge air cooler performance.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Glow control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Heating of the glow plug is controlled by the PCM through the glow control module to improve engine startability and DPF regeneration performance.</div>
+<div class="list">•  Energization time to the glow plug is determined according to the engine coolant temperature and engine starting conditions.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EGR control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  To recirculate an optimum amount of exhaust gas to the combustion chamber according to engine operation conditions, the PCM performs duty control of the HP-EGR control valve and LP-EGR control valve to open/closed the valve.</div>
+<div class="list">•  During EGR control, the intake air temperature increases by the recirculated exhaust gas which affects the combustion temperature. To maintain an appropriate intake air temperature, the opening angle of the HP-EGR control valve and LP-EGR control valve is controlled according to the driving environment/engine conditions.</div>
+<div class="list">•  During fast idle increase and DPF regeneration control, the HP-EGR control valve is controlled so that it does not operate to prevent the post-injected fuel from circulating to the intake side.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Air fuel ratio (A/F) sensor heater control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  By activating the A/F sensor using the A/F sensor heater, stable detection of the oxygen concentration is possible even when the exhaust gas temperature is low.</div>
+<div class="list">•  When the exhaust gas temperature is high, enerzation to the A/F sensor heater is stopped to protect the A/F sensor from a rise in temperature.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Diesel particulate filter regeneration control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the amount of accumulated particulate matter (PM) in the diesel particulate filter exceeds a certain value, the PCM controls to combust and eliminate PM.</div>
+<div class="list">•  Two methods are available to combust and eliminate PM, one is automatic DPF regeneration control which is performed by the PCM automatically, and the other is compulsory DPF regeneration control which can be forcibly performed externally.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/C cut-off control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Controls the A/C operation by switching the A/C relay on/off at the optimal timing according to engine operation conditions. By controlling the A/C operation, acceleration performance and engine reliability have been improved.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Electrical fan control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Through cooling of the radiator and condenser by operation of the cooling fan according to vehicle conditions, engine reliability and cooling performance have been improved.</div>
+<div class="list">•  The PCM determines the engine operation conditions based on the signal from each sensor and performs duty-control of the fan control module to control the rotation speed of the cooling fan motor.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Starter cut-off control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM controls energization to the starter relay according to an immobilizer system request to improve security.</div>
+<div class="list">•  While the selector lever is not in P or N position, starter relay energization using the push button start is inhibited. (ATX)</div>
+<div class="list">•  When the clutch pedal is not depressed, starter relay energization using the push button start is inhibited. (MTX)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Generator control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Idling stability has been improved by optimum control of the generator voltage according to the engine operation and electrical load conditions.</div>
+<div class="list">•  The PCM determines the engine operation and electrical load conditions based on the input signals from each control part to control the energization time of the generator field coils.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Run dry prevention (RDP) control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  To prevent air from flowing into the fuel line when fuel in the fuel tank decreases, the output is intentionally controlled to warn the driver to supply fuel.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Blow-by heater control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Operates the blow-by heater at an extremely low temperature to prevent freezing of the moisture in the blow-by gas in the ventilation pipe and blocking the passage.</div>
+<div class="list">•  The PCM operates the blow-by heater by switching the blow-by heater relay on/off.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">i-stop control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  When the vehicle is stopped such as at a stop light, the i-stop control stops/starts the engine automatically to improve fuel economy and reduce exhaust gas and idling noise.</div>
+<div class="list">•  The PCM determines whether to permit/inhibit i-stop control based on the signal from each input part and CAN communication.</div>
+<div class="list">•  The i-stop control includes the engine stop control, engine restart control, electric AT oil pump driver control, and hill launch assist functions.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DC-DC converter control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Stability of the power supply to the cabin has been realized by preventing decreases in the power supply due to battery voltage decreases while the engine is restarted by the i-stop control.</div>
+<div class="list">•  When the engine is restarted by the i-stop control, the PCM sends a battery voltage (DC-DC converter downstream voltage) boost request signal to the DC-DC converter.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine oil control</div>
+</td>
+<td id="" align="left">
+<div class="list">•  The PCM reduces the oil pump load applied to the engine by controlling the appropriate engine hydraulic pressure according to the engine operation conditions.</div>
+<div class="list">•  The engine hydraulic pressure in two steps. When hydraulic pressure is not needed, the oil pump discharge amount is reduced by the operation of the engine oil solenoid valve.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0140z500840002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The PCM is installed in the engine room.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/adejjn00004141.png"></td>
+</tr>
+</table>
+<div class="figure-caption">adejjn00004141</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  A 200-pin (two-block) connector has been adopted.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5jjn00001399.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5jjn00001399</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list">•  BARO sensor is integrated.</div><br clear="all"><a name="id0140z500840003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  For operation content, refer to the following references:</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Function</p>
+</th>
+<th id="" align="center">
+<p class="thead">Page</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Main relay control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5168700.html">MAIN RELAY CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Idle speed control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5952300.html">IDLE SPEED CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Boost control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5988600.html">BOOST CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel injection amount control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5987900.html">FUEL INJECTION AMOUNT CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Multiple fuel injection control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5988100.html">MULTIPLE FUEL INJECTION CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel injection timing control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5988000.html">FUEL INJECTION TIMING CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Fuel pressure control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5988200.html">FUEL PRESSURE CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Intake shutter valve control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5988300.html">INTAKE SHUTTER VALVE CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Exhaust shutter valve control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5995100.html">EXHAUST SHUTTER VALVE CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Coolant control valve control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5988700.html">COOLANT CONTROL VALVE CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Electric water pump control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5988800.html">ELECTRIC WATER PUMP CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Glow control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5987700.html">GLOW CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">EGR control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5161400.html">EGR CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Air fuel ratio (A/F) sensor heater control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5785500.html">AIR FUEL RATIO (A/F) SENSOR HEATER CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Diesel particulate filter regeneration control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5993000.html">DIESEL PARTICULATE FILTER REGENERATION CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">A/C cut-off control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5206200.html">A/C CUT-OFF CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Electrical fan control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5205000.html">ELECTRICAL FAN CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Starter cut-off control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5204700.html">STARTER CUT-OFF CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Generator control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5208900.html">GENERATOR CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Run dry prevention (RDP) control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5018400.html">RUN DRY PREVENTION (RDP) CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Blow-by heater control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5028400.html">BLOW-BY HEATER CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">i-stop control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5008900.html">i-stop CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DC-DC converter control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5004300.html">DC-DC CONVERTER CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Engine oil control</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id0140z5004200.html">ENGINE OIL CONTROL [SKYACTIV-D 1.5]</a></font>.)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0140z500840004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC No.</p>
+</th>
+<th id="" align="center">
+<p class="thead">Fail-safe function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0602:00</div>
+</td>
+<td id="" align="left" rowspan="4">
+<div class="list">•  Inhibits engine-stop by operating the i-stop function.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0610:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P06B8:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P2507:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0605:00</div>
+</td>
+<td id="" align="left" rowspan="3">
+<div class="list">•  Limits the engine torque.</div>
+<div class="list">•  Inhibits the EGR control.</div>
+<div class="list">•  Fully open the intake shutter valve.</div>
+<div class="list">•  Inhibits the auto DPF regeneration control.</div>
+<div class="list">•  Inhibits the compulsory DPF regeneration control.</div>
+<div class="list">•  Inhibits engine-stop by operating the i-stop function.</div>
+<div class="list">•  PCM restricts engine-transaxle integration control. (ATX)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0606:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P0607:00</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">P062B:00</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Limits the engine torque.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DC-DC CONVERTER CONTROL [SKYACTIV-D 1.5]</title>
+</head>
+<body><a name="id0140z5004300"></a><p class="servinfo-title"><span class="servinfo-head"></span>DC-DC CONVERTER CONTROL [SKYACTIV-D 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0140z5004300</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  For the DC-DC converter control for vehicles with i-ELOOP, refer to the [i-ELOOP]. (See <font class="extxref-label"><a href="id131704500000.html">i-ELOOP [i-ELOOP]</a></font>.)</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0140z500430001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Without i-ELOOP</p><br clear="all"><p><a name="id0140z500430002"></a><p class="topic-title"><span class="topic-head"></span>Outline</p>
+<dl>
+<dd>
+<div class="list">•  Stability of the power supply to the cabin has been realized by preventing decreases in the power supply due to battery voltage decreases while the engine is restarted by the i-stop control.</div>
+<div class="list">•  When the engine is restarted by the i-stop control, the PCM sends a battery voltage (DC-DC converter downstream voltage) boost request signal to the DC-DC converter.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0140z500430003"></a><p class="topic-title"><span class="topic-head"></span>Block Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003595.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003595</div>
+</td>
+</tr>
+</table>
+</p><br clear="all"><p><a name="id0140z500430004"></a><p class="topic-title"><span class="topic-head"></span>Operation</p>
+<dl>
+<dd>
+<div class="list">•  When the engine is restarted by the i-stop control, the PCM sends a voltage boost request signal to the DC-DC converter so that the DC-DC converter downstream voltage is maintained at 11.5―12.5 V.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00003596.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00003596</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</p>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P0C2C:00 [TCM (CW6A-EL)]</title>
+</head>
+<body><a name="id0502p4832600"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P0C2C:00 [TCM (CW6A-EL)]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0502p4832600</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DTC P0C2C:00</p>
+</th>
+<th id="" align="left">
+<p class="thead">Electric AT oil pump mechanical malfunction</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  The actual electric AT oil pump rotation speed under the following conditions is <span>100 rpm or less</span> for a continuous <span>10 s</span>:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Electric AT oil pump rotation speed command value is <span>500 rpm or more</span>.</div>
+<div class="list">―  Electric AT oil pump relay is ON.</div>
+<div class="list">―  DTC P181F:00 and P0C2D:00 are not recorded.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Inhibits i-stop control.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left">
+<div class="list">•  Electric AT oil pump malfunction</div>
+<div class="list">•  Short to ground or open circuit in wiring harness between battery positive terminal and electric AT oil pump terminal D</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>SYSTEM WIRING DIAGRAM</span></div>
+</td>
+<td id="" align="left">
+<div class="tbody">Not applicable</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p clear="all">
+<p class="table-title">Diagnostic procedure</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">INSPECT ELECTRIC AT OIL PUMP POWER SUPPLY CIRCUIT FOR SHORT TO GROUND OR OPEN CIRCUIT</div>
+<div class="list">•  Verify that the electric AT oil pump connector is disconnected.</div>
+<div class="list">•  Switch the electric AT oil pump relay to ON using the simulation item EOP_RLY.<div>(See <font class="extxref-label"><a href="id0502p4290400.html">ON-BOARD DIAGNOSTIC SYSTEM SIMULATION INSPECTION [TCM (CW6A-EL)]</a></font>.)</div>
+</div>
+<div class="list">•  Measure the voltage at the electric AT oil pump terminal D (wiring harness-side).</div>
+<div class="list">•   Is the voltage 0 V?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refer to the wiring diagram and verify whether or not there is a common connector between battery positive terminal and electric AT oil pump terminal D.</div>
+<div class="list-title">If there is a common connector:</div>
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for a short to ground or open circuit.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+<div class="list-title">If there is no common connector:</div>
+<div class="list">•  Repair or replace the wiring harness which has a short to ground.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">REPLACE ELECTRIC AT OIL PUMP AND VERIFY THAT MALFUNCTION IS RESOLVED</div>
+<div class="list">•  Replace the electric AT oil pump.<div>(See <font class="extxref-label"><a href="id0517l1117600.html">ELECTRIC AT OIL PUMP REMOVAL/INSTALLATION [CW6A-EL]</a></font>.)</div>
+</div>
+<div class="list">•  Clear the DTC using the M-MDS.<div>(See <font class="extxref-label"><a href="id0502p4290100.html">ON-BOARD DIAGNOSTIC SYSTEM DTC INSPECTION [TCM (CW6A-EL)]</a></font>.)</div>
+</div>
+<div class="list">•  Perform the DTC inspection using the M-MDS. <div>(See <font class="extxref-label"><a href="id0502p4290100.html">ON-BOARD DIAGNOSTIC SYSTEM DTC INSPECTION [TCM (CW6A-EL)]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">1.  Operates the i-stop.</div>
+</dd>
+</dl>
+<div class="list">•  Are any DTCs present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0502p4290200.html">ON-BOARD DIAGNOSTIC SYSTEM DTC TABLE [TCM (CW6A-EL)]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>

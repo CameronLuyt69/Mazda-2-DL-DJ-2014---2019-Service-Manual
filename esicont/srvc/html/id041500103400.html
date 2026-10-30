@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>EBD CONTROL</title>
+</head>
+<body><a name="id041500103400"></a><p class="servinfo-title"><span class="servinfo-head"></span>EBD CONTROL</p>
+<hr>
+<p class="servinfo-title-id" align="right">id041500103400</p><br clear="all"><a name="id04150010340001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Outline</p>
+<div class="list">•  EBD control uses the ABS system to control brake fluid pressure distribution to the rear wheels so that they do not lock-up prior to the front wheels during braking, thereby preventing the loss of handling stability.</div><br clear="all"><a name="id04150010340002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Feature</p>
+<div class="list">•  EBD control has independent control systems for both the front and rear wheels.</div>
+<div class="list">•  EBD control constantly and properly distributes brake fluid pressure regardless of vehicle weight.</div><br clear="all"><a name="id04150010340003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<p class="figure-title">Block Diagram </p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am6zzn00002186.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am6zzn00002186</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id04150010340004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  EBD control detects the slip ratio between the estimated vehicle speed and rear wheels from the ABS wheel-speed sensor signals. If the slip ratio of the rear wheels as compared to the front wheels is larger than the fixed limit, the DSC HU/CM reduces brake pressure being distributed to the rear wheels. Due to this, brake pressure distribution is constantly controlled in the proper proportion and in relation to vehicle load, road surface conditions, and vehicle speed.</div>
+<div class="list">•  Determination of the rear wheel slip ratio, based on a comparison of the lowest front wheel speed and the estimated vehicle speed with the rear wheel speeds, is divided into conditions 0-3 shown in the table below.</div>
+<div class="list">•  The DSC HU outlet and inlet solenoid valves are operated and the brake fluid pressure controlled according to these conditions.</div>
+<div class="list">•  If ABS control conditions are met during EBD control, EBD control is stopped and ABS control is given priority.</div>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Status</p>
+</th>
+<th id="" align="center">
+<p class="thead">Rear wheel slip ratio determination</p>
+</th>
+<th id="" align="center">
+<p class="thead">EBD control</p>
+</th>
+<th id="" align="center">
+<p class="thead">Solenoid valve</p>
+</th>
+<th id="" align="center">
+<p class="thead">Comment</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center">
+<div class="tbody">0</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No slip</div>
+</td>
+<td id="" align="center">
+<div class="tbody">No control</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Pressure increase</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1</div>
+</td>
+<td id="" align="center">
+<div class="tbody">α%—β%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Control</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Pressure maintained</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="center">
+<div class="tbody">After EBD control, slip ratio is γ%</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Control</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Increase/maintain</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Front wheel slip ratio is δ% or more</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Control</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Pressure reduction/maintained/increase</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ABS control operates</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">α—δ  : Specified value</div>
+<p class="figure-title">Operating Condition Transition Diagram</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/ac5wzn00000234.png"></td>
+</tr>
+</table>
+<div class="figure-caption">ac5wzn00000234</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

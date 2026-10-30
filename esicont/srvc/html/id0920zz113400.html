@@ -1,0 +1,869 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>CONNECTIVITY MASTER UNIT [WITH CENTER DISPLAY]</title>
+</head>
+<body><a name="id0920zz113400"></a><p class="servinfo-title"><span class="servinfo-head"></span>CONNECTIVITY MASTER UNIT [WITH CENTER DISPLAY]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0920zz113400</p><br clear="all"><a name="id0920zz11340001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Purpose, Function</p>
+<div class="list">•  The connectivity master unit (CMU) controls the entire system such as communication between mobile devices and Bluetooth<sup>®</sup>, and the sending/receiving of video/audio signals from units related to the entertainment system.</div><br clear="all"><p><a name="id0920zz11340002"></a><p class="topic-title"><span class="topic-head"></span>Bluetooth<sup>®</sup> communication function</p>
+<dl>
+<dd>
+<div class="list">•  The CMU uses the integrated Bluetooth<sup>®</sup> driver and antenna to perform communication between Bluetooth<sup>®</sup>-enabled devices and Bluetooth<sup>®</sup>.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  To perform Bluetooth<sup>®</sup> communication, pairing of a Bluetooth<sup>®</sup>-enabled device with the CMU is required to specify the device. For the pairing method, refer to the Bluetooth<sup>®</sup> PAIRING PROCEDURE in the workshop manual.</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">Specification</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="2">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Content</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Compatible profiles</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A2DP 1.0/1.2 (Advanced audio distribution profile)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">A2DP is a profile for transmitting high quality audio data by means of a Bluetooth<sup>®</sup> device and wireless transmission technology.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">AVRCP 1.0/1.3/1.4 (Audio/video remote control profile)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">AVRCP is a profile which provides a standard interface which controls television and audio devices. The function differs depending on the version.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Maximum number of programmable devices</div>
+</td>
+<td id="" align="left">
+<div class="tbody">7</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Number of Bluetooth<sup>®</sup>-enabled devices which can be used simultaneously</div>
+</td>
+<td id="" align="left">
+<div class="tbody">2<sup>*1</sup></div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :A Hands-free call can be placed using another Bluetooth<sup>®</sup>-enabled device during audio playback using the other Bluetooth<sup>®</sup>-enabled device.</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The profile indicates the wireless communication standard. If the profile of the Bluetooth<sup>®</sup>-enabled device differs from the CMU, wireless transmission may not be possible. In addition, depending on the profile version, the corresponding functions differ.</div>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0920zz11340003"></a><p class="topic-title"><span class="topic-head"></span>Operation signal reception function</p>
+<dl>
+<dd>
+<div class="list">•  The CMU controls units related to the entertainment system based on the following operation signals which are sent in conjunction with the user operations from the operation signal output unit.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Operation signal output unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Operation signal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Center display</div>
+</td>
+<td id="" align="left">
+<div class="tbody">LVDS signal (touch position operation signal)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Commander switch</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Commander switch operation signal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Steering switch</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Steering switch operation signal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Voice recognition microphone</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Voice signal (voice command)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p><br clear="all"><p><a name="id0920zz11340004"></a><p class="topic-title"><span class="topic-head"></span>LVDS <sup>*2</sup> signal conversion function</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Communication between the CMU and the center display is performed via the LVDS communication line.</div>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The CMU converts signals sent from the following units to a LVDS signal and displays each type of information in the center display.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Output unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Video signal/display request signal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">Tuner and amplifier unit (TAU)</div>
+</td>
+<td id="" align="left">
+<div class="list">•  TA (traffic announcement) information</div>
+<div class="list">•  Radio broadcast logo, album art, song name</div>
+<div class="list">•  Traffic information such as location and length of traffic jams</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CD player</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Playback file information (artist/song name)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">DVD/CD player</div>
+</td>
+<td id="" align="left">
+<div class="list">•  DVD information (video) during playback</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Auxiliary jack/USB port/SD card slot hub.</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Information for file being played (artist/song name)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Devices such as Bluetooth<sup>®</sup>-enabled mobile phones and or mobile devices such as Smartphones/Bluetooth<sup>®</sup>-enabled devices</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Telephone book, incoming call record</div>
+<div class="list">•  Radio broadcast logo, album art, song name</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Rear mount camera</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Image at rear of vehicle</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">CMU</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Incoming call pop-up screen display</div>
+<div class="list">•  Fuel monitor screen</div>
+<div class="list">•  Warning guidance screen display</div>
+<div class="list">•  Navigation screen display</div>
+<div class="list">•  Temperature warning pop-up screen display</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="list">•  By converting the video signal to a LVDS signal, the CMU is able to display stable images in the center display virtually free from the effects of noise.</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The LVDS communication pathway between the CMU and the center display corresponds to HDCP<sup>*3</sup>.</div>
+</dd>
+</dl>
+<div class="deflist">*2  :The LVDS displays the electrical properties of the signal using low-voltage differential signaling. LVDS is a digital, wired transmission technology for the short range which adopts a differential interface having the characteristics of low voltage and low power consumption.</div>
+<div class="deflist">*3  :HDCP (High-bandwidth Digital Content Protection system) is a copyright protection technology which prevents content from being copied fraudulently. The pathway in a display device such as a display, which sends/receives digital signals from a video playback device such as a computer, is encrypted.</div>
+</p><br clear="all"><p><a name="id0920zz11340005"></a><p class="topic-title"><span class="topic-head"></span>Audio transmission signal function</p>
+<dl>
+<dd>
+<div class="list">•  The CMU transmits the audio signal received from a mobile device such as the following auxiliary jack/USB port/SD card slot hub and Smartphone devices to the TAU. The CMU receives audio signals from the voice recognition microphone and performs operations according to the commands.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0920zz11340006"></a><p class="topic-title"><span class="topic-head"></span>TA (traffic announcement) function</p>
+<dl>
+<dd>
+<div class="list">•  If the TAU receives a TA broadcast while listening to the following modes, the CMU switches the audio to the TA broadcast automatically. In addition, the traffic alert screen is displayed in the center display.</div>
+<dl>
+<dd class="list">
+<div class="list">―  FM radio</div>
+<div class="list">―  CD</div>
+<div class="list">―  USB</div>
+<div class="list">―  AUX</div>
+<div class="list">―  Bluetooth<sup>®</sup> audio</div>
+<div class="list">―  Aha<sup>™</sup> radio</div>
+<div class="list">―  Sticher<sup>™</sup> radio</div>
+</dd>
+</dl>
+<div class="list">•  When the TA broadcast has finished, the audio unit returns to the mode that was being listened to before the TA broadcast. In addition, the center display cancels the traffic alert screen display and displays the screen prior to the traffic alert screen.</div>
+</dd>
+</dl>
+<p clear="all">
+<p class="table-title">Traffic announcement screen</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="left">
+<p class="thead">Button</p>
+</th>
+<th id="" align="left">
+<p class="thead">Content</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">TA off</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Cancels the TA broadcast playback and traffic alert screen display, and displays the screen prior to the traffic alert screen.</div>
+<div class="list">•  Sets the TA (traffic announcement) function to OFF.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Cancel</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cancels the TA broadcast playback and traffic alert screen display, and displays the screen prior to the traffic alert screen.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Remove</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Cancels the traffic alert screen display and displays the screen prior to the traffic alert screen.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  If the TA (traffic announcement) function is set to OFF, the audio does not switch automatically to TA broadcasts even if a TA broadcast is received.</div>
+</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0920zz11340007"></a><p class="topic-title"><span class="topic-head"></span>Fuel economy function</p>
+<dl>
+<dd>
+<div class="list">•  The CMU receives the fuel consumption amount and travel distance information signal from the instrument cluster and displays it in the center display as the fuel economy monitor. For details, refer to the fuel economy monitor of the CENTER DISPLAY. (See <font class="extxref-label"><a href="id0920zz113600.html">CENTER DISPLAY [WITH CENTER DISPLAY]</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0920zz11340008"></a><p class="topic-title"><span class="topic-head"></span>Navigation function</p>
+<dl>
+<dd>
+<div class="list">•  The CMU performs map display and route guidance based on the position information received from the GPS antenna and the map information received from the auxiliary jack/USB port/SD card slot hub. For details, refer to the ENTERTAINMENT SYSTEM navigation function. (See <font class="extxref-label"><a href="id0920zz010000.html">ENTERTAINMENT SYSTEM [WITH CENTER DISPLAY]</a></font>.)</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">Turn-by-turn (TBT)</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  The turn-by-turn (TBT) function displays the travel direction of the route guidance in the active driving display. The turn-by-turn (TBT) operates when all of the following conditions have been met. For details, refer to the navigation function turn-by-turn (TBT) of the ENTERTAINMENT SYSTEM. (See <font class="extxref-label"><a href="id0920zz010000.html">ENTERTAINMENT SYSTEM [WITH CENTER DISPLAY]</a></font>.)</div>
+<dl>
+<dd class="list">
+<div class="list">―  Route guidance of navigation function is operating</div>
+<div class="list">―  Navigation guidance is set to ON using the personalization function for the active driving display</div>
+</dd>
+</dl>
+<div class="list">•  The CMU sends the turn-by-turn (TBT) display request signal to the instrument cluster to display the direction heading and distance in the active driving display. (See <font class="extxref-label"><a href="id092200037300.html">ACTIVE DRIVING DISPLAY</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0920zz11340009"></a><p class="topic-title"><span class="topic-head"></span>Automatic configuration function</p>
+<dl>
+<dd>
+<div class="list">•  When the ignition is switched ON (engine off or on) after the CMU is replaced, the CMU reads the vehicle specification information sent from the instrument cluster, and stores the vehicle specification information.</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0920zz11340010"></a><p class="topic-title"><span class="topic-head"></span>On-board diagnostic function</p>
+<dl>
+<dd>
+<div class="list">•  The CMU has an on-board diagnostic function to facilitate system diagnosis. DTCs are stored in the event of a malfunction occurring. For details, refer to the DIAGNOSTIC SYSTEM. (See <font class="extxref-label"><a href="id0920zz1101y8.html">ON-BOARD DIAGNOSTIC [ENTERTAINMENT SYSTEM (WITH CENTER DISPLAY)]</a></font>.)</div>
+</dd>
+</dl>
+</p><br clear="all"><p><a name="id0920zz11340011"></a><p class="topic-title"><span class="topic-head"></span>Diagnostic assist function</p>
+<dl>
+<dd>
+<div class="list">•  The CMU has a diagnostic assist function which can verify the following. For details, refer to the DIAGNOSTIC SYSTEM. (See <font class="extxref-label"><a href="id0920zz1101y8.html">ON-BOARD DIAGNOSTIC [ENTERTAINMENT SYSTEM (WITH CENTER DISPLAY)]</a></font>.)</div>
+<dl>
+<dd class="list">
+<div class="list">―  Connection status of related parts</div>
+<div class="list">―  Operation status of related parts</div>
+<div class="list">―  Related part specifications</div>
+</dd>
+</dl>
+</dd>
+</dl>
+</p><br clear="all"><a name="id0920zz11340012"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Construction</p>
+<div class="list">•  The CMU is located centrally inside the instrument cluster.</div>
+<div class="list">•  The CMU has an integrated Bluetooth<sup>®</sup> driver and antenna.</div>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzn00002774.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzn00002774</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0920zz11340013"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Input/output signal table</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="2">
+<p class="thead">Terminal</p>
+</th>
+<th id="" align="center">
+<p class="thead">Signal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="28"><img src="images/am2zzn00003518.png"></td>
+<td id="" align="center">
+<div class="tbody">1A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Rear mount camera power signal <sup>*4</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Rear mount camera signal ground<sup>*4</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Rear mount camera power supply <sup>*4</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Rear mount camera power supply ground<sup>*4</sup></div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1E</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1G</div>
+</td>
+<td id="" align="center">
+<div class="tbody">DVD video signal input</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1H</div>
+</td>
+<td id="" align="center">
+<div class="tbody">DVD video signal ground</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1I</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1J</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1K</div>
+</td>
+<td id="" align="center">
+<div class="tbody">iPod video signal</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1L</div>
+</td>
+<td id="" align="center">
+<div class="tbody">iPod video signal ground</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1M</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Steering1 switch input</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1N</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Steering2 switch ground input</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Steering3 switch input</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1P</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Microphone connection detection</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1Q</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Microphone power supply</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Microphone power supply ground</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Microphone voice input (+)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1T</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Microphone voice input (-)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1U</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1V</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1W</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1X</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1Y</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CMU audio output LH (+)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1Z</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CMU audio output LH (-)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1AA</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CMU audio output RH (+)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">1AB</div>
+</td>
+<td id="" align="center">
+<div class="tbody">CMU audio output RH (-)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="18"><img src="images/am2zzn00003519.png"></td>
+<td id="" align="center">
+<div class="tbody">2A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Ground</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Ground</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2E</div>
+</td>
+<td id="" align="center">
+<div class="tbody">HS-CAN (+)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2F</div>
+</td>
+<td id="" align="center">
+<div class="tbody">HS-CAN (-)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2G</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2I</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Local HS-CAN (+)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2J</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Local HS-CAN (-)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2K</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LIN communication</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2L</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Ground</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2M</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2O</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RS485 signal (+)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2P</div>
+</td>
+<td id="" align="center">
+<div class="tbody">RS485 signal (-)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2Q</div>
+</td>
+<td id="" align="center">
+<div class="tbody">ACC</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2R</div>
+</td>
+<td id="" align="center">
+<div class="tbody">B+</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2S</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2T</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="4"><img src="images/am2zzn00003520.png"></td>
+<td id="" align="center">
+<div class="tbody">3A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LVDS (+)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">3D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">LVDS (-)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="4"><img src="images/am2zzn00003521.png"></td>
+<td id="" align="center">
+<div class="tbody">4A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Ground</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4B</div>
+</td>
+<td id="" align="center">
+<div class="tbody">USB data (+)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4C</div>
+</td>
+<td id="" align="center">
+<div class="tbody">USB power supply</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">4D</div>
+</td>
+<td id="" align="center">
+<div class="tbody">USB data (-)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2"><img src="images/am2zzn00003522.png"></td>
+<td id="" align="center">
+<div class="tbody">5A</div>
+</td>
+<td id="" align="center">
+<div class="tbody">GPS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">5A'</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Ground</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*4  :With park assist system</div><br clear="all"><a name="id0920zz11340014"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Operation</p>
+<div class="list">•  For the CMU operation, refer to the ENTERTAINMENT SYSTEM. (See <font class="extxref-label"><a href="id0920zz010000.html">ENTERTAINMENT SYSTEM [WITH CENTER DISPLAY]</a></font>.)</div><br clear="all"><a name="id0920zz11340015"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Fail-safe</p>
+<div class="list">•  If the CMU receives an electrical signal (LVDS signal) of a temperature of <span>approx. 82</span> degrees C or more from the center display, it performs the following controls:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Sends a temperature warning pop-up screen display request signal to the center display and displays the temperature warning pop-up screen on the LCD.</div>
+<div class="list">―  Temporarily lowers the brightness of the center display LCD. This is to protect the center display LCD and the circuit.</div>
+</dd>
+</dl>
+</body>
+</html>

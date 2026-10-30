@@ -1,0 +1,341 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION</title>
+</head>
+<body><a name="id011700800800"></a><p class="servinfo-title"><span class="servinfo-head"></span>NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION</p>
+<hr>
+<p class="servinfo-title-id" align="right">id011700800800</p>
+<dl>
+<dd>
+<div class="attention1-label">Warning</div>
+</dd>
+<dd>
+<div class="attention1">
+<div class="list">•  Before removing the SRS air bag system-related parts, always disconnect the negative battery cable terminal and wait for 1 min. or more to allow the back-up power supply to deplete its stored power. (See <font class="extxref-label"><a href="id0810b1802400.html">AIR BAG SYSTEM SERVICE WARNINGS [TWO-STEP DEPLOYMENT CONTROL SYSTEM]</a></font>.)(See <font class="extxref-label"><a href="id0810b2802400.html">AIR BAG SYSTEM SERVICE WARNINGS [STANDARD DEPLOYMENT CONTROL SYSTEM]</a></font>.)</div>
+</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  With the battery connected and the ignition switched ON, or if servicing is performed for a long period (10 min or more) with the ignition switched off.</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id01170080080001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Required Procedure After Negative Battery Cable Terminal Disconnection/Connection</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center" colspan="2" rowspan="2">
+<p class="thead">System name</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Conditions after disconnecting the negative battery cable terminal</p>
+</th>
+<th id="" align="center" colspan="2">
+<p class="thead">Required procedure</p>
+</th>
+<th id="" align="center" rowspan="2">
+<p class="thead">Reference</p>
+</th>
+</tr>
+<tr>
+<th id="" align="center">
+<p class="thead">Before disconnecting negative battery cable terminal</p>
+</th>
+<th id="" align="center">
+<p class="thead">After connecting negative battery cable terminal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Power window system</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Reset to initial setting and auto-function is disabled.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform the power window system initial setting.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id091200004100.html">POWER WINDOW SYSTEM INITIALIZATION PROCEDURE</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Clock and audio</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Clock display and audio system memory are reset.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Verify the setting content.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Set the verified content before disconnecting negative battery cable terminal.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">i-stop system (With i-stop)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Specified information in the PCM cleared and the i-stop does not operate normally.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Verify PID “BATT_SOC” value and record. *1</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform battery condition initial setting (i-stop setting). *2</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id011700801000.html">BATTERY CONDITION INITIALIZATION SETTING (i-stop SETTING)</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left" colspan="2">
+<div class="tbody">Tire pressure monitoring system (TPMS)</div>
+</td>
+<td id="" align="left">
+<div class="tbody">The tire pressure monitoring system detection accuracy decreases.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform the tire pressure monitoring system initialization.</div>
+</td>
+<td id="" align="left">
+<div class="tbody">(See <font class="extxref-label"><a href="id021200204000.html">TIRE PRESSURE MONITORING SYSTEM INITIALIZATION PROCEDURE</a></font>.)</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<div class="deflist">*1  :Because the “BATT_SOC” value before disconnecting the negative battery cable terminal is required for the battery condition initial setting (i-stop setting), record the “BATT_SOC” value before disconnecting the negative battery cable terminal. (With i-stop only)</div>
+<div class="deflist">*2  :For vehicles with i-stop, if the negative battery cable terminal is disconnected and re-connected, battery condition initial setting (i-stop setting) must be performed.</div><br clear="all"><a name="id01170080080002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Vehicles with i-stop</p><br clear="all"><p><a name="id01170080080003"></a><p class="topic-title"><span class="topic-head"></span>Negative battery cable terminal disconnection</p>
+<p class="list">1.  Connect the M-MDS to the DLC-2.</p>
+<p class="list"></p>
+<p class="list">2.  Switch the ignition ON (engine off).</p>
+<p class="list"></p>
+<p class="list">3.  Verify the “BATT_SOC” value using the M-MDS data logger function. (See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</p>
+<p class="list"></p>
+<p class="list">4.  Record the “BATT_SOC” value.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list-title">“BATT_SOC” value is less than 75%</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Inspect the battery. (See <font class="extxref-label"><a href="id011700800600.html">BATTERY INSPECTION</a></font>.)</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list-title">“BATT_SOC” value is 75% or more</div>
+</dd>
+</dl>
+<dl>
+<dd>
+<div class="list">•  Go to the next step.</div>
+</dd>
+</dl>
+</p>
+<p class="list">5.  Switch the ignition off.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  If the nut for the current sensor is loosened with the negative battery cable terminal connected to the battery, excessive torque will be applied to the negative battery cable terminal and the battery terminal will be damaged. When removing the negative battery cable terminal and current sensor, be careful not to damage the battery terminal.</div>
+<div class="list">•  Be careful not to contact the positive battery cable terminal.</div>
+</div>
+</dd>
+</dl>
+</p>
+<p class="list">6.  Disconnect the current sensor connector.</p>
+<p class="list"></p>
+<p class="list">7.  Disconnect the negative battery cable terminal.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">•  When disconnecting the plastic deformed negative battery cable, expand the gap of the negative battery terminal using a flathead screwdriver, and remove the nut.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00012402.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00012402</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The negative battery cable nut cannot be removed to prevent it from falling off.</div>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+</p>
+</p><br clear="all"><p><a name="id01170080080004"></a><p class="topic-title"><span class="topic-head"></span>Negative battery cable terminal connection</p>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  Connect the negative battery cable before connecting the current sensor connector. If the current sensor connector is connected first, the PCM may mistakenly recognize a signal from the current sensor and learn the battery condition incorrectly.</div>
+<div class="list">•  Verifying the tightness while holding the current sensor may apply excessive force to the terminal and the terminal could loosen, causing poor engine starting. When verifying the tightness of the negative battery cable terminal, only hold the terminal area, not the current sensor.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00012403.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00012403</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</dd>
+</dl>
+<p class="list">1.  Perform battery condition initial setting (i-stop setting). (See <font class="extxref-label"><a href="id011700801000.html">BATTERY CONDITION INITIALIZATION SETTING (i-stop SETTING)</a></font>.)</p>
+<p class="list">
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Connection of the negative battery cable terminal and the current sensor connector will be done in the battery condition initial setting (i-stop setting) procedure.</div>
+</div>
+</dd>
+</dl>
+</p>
+<p class="list">2.  Perform services not related to i-stop control which are required after connecting the negative battery cable terminal. (See <font class="intxref-label"><a href="#id01170080080001">Required Procedure After Negative Battery Cable Terminal Disconnection/Connection</a></font>.)</p>
+<p class="list"></p>
+</p><br clear="all"><a name="id01170080080005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Vehicles with i-ELOOP, without i-stop</p><br clear="all"><p><a name="id01170080080006"></a><p class="topic-title"><span class="topic-head"></span>Negative battery cable terminal disconnection</p>
+<p class="list">1.  Switch the ignition off.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  If the nut for the current sensor is loosened with the negative battery cable terminal connected to the battery, excessive torque will be applied to the negative battery cable terminal and the battery terminal will be damaged. When removing the negative battery cable terminal and current sensor, be careful not to damage the battery terminal.</div>
+<div class="list">•  Be careful not to contact the positive battery cable terminal.</div>
+</div>
+</dd>
+</dl>
+</p>
+<p class="list">2.  Disconnect the current sensor connector.</p>
+<p class="list"></p>
+<p class="list">3.  Disconnect the negative battery cable terminal.</p>
+<p class="list">
+<dl>
+<dd>
+<div class="list">•  When disconnecting the plastic deformed negative battery cable, expand the gap of the negative battery terminal using a flathead screwdriver, and remove the nut.<table class="figure-flame">
+<tr>
+<td width="10mm"></td>
+<td>
+<table class="figure-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00012402.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00012402</div>
+</td>
+</tr>
+</table>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  The negative battery cable nut cannot be removed to prevent it from falling off.</div>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+</p>
+</p><br clear="all"><p><a name="id01170080080007"></a><p class="topic-title"><span class="topic-head"></span>Negative battery cable terminal connection</p>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  Connect the negative battery cable before connecting the current sensor connector. If the current sensor connector is connected first, the PCM may mistakenly recognize a signal from the current sensor and learn the battery condition incorrectly.</div>
+<div class="list">•  Verifying the tightness while holding the current sensor may apply excessive force to the terminal and the terminal could loosen, causing poor engine starting. When verifying the tightness of the negative battery cable terminal, only hold the terminal area, not the current sensor.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00012403.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00012403</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</dd>
+</dl>
+<p class="list">1.  Perform services which are required after connecting the negative battery cable terminal. (See <font class="intxref-label"><a href="#id01170080080001">Required Procedure After Negative Battery Cable Terminal Disconnection/Connection</a></font>.)</p>
+<p class="list"></p>
+</p><br clear="all"><a name="id01170080080008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Vehicles without i-stop and i-ELOOP</p><br clear="all"><p><a name="id01170080080009"></a><p class="topic-title"><span class="topic-head"></span>Negative battery cable terminal disconnection</p>
+<p class="list">1.  Switch the ignition to off.</p>
+<p class="list"></p>
+<p class="list">2.  Disconnect the negative battery cable.</p>
+<p class="list"></p>
+</p><br clear="all"><p><a name="id01170080080010"></a><p class="topic-title"><span class="topic-head"></span>Negative battery cable terminal connection</p>
+<dl>
+<dd>
+<div class="attention2-label">Caution</div>
+</dd>
+<dd>
+<div class="attention2">
+<div class="list">•  When tightening the negative battery cable, tighten it to the specified torque. If it is not tightened to the specified torque, the battery charging/discharging may be affected. (See <font class="extxref-label"><a href="id0117008005q7.html">BATTERY REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+</dd>
+</dl>
+<p class="list">1.  Connect the negative battery cable terminal.</p>
+<p class="list"></p>
+<p class="list">2.  Perform services which are required after connecting the negative battery cable terminal. (See <font class="intxref-label"><a href="#id01170080080001">Required Procedure After Negative Battery Cable Terminal Disconnection/Connection</a></font>.)</p>
+<p class="list"></p>
+</p>
+</body>
+</html>

@@ -1,0 +1,1740 @@
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="mazda-css-en.css" type="text/css">
+<title>DTC P0011:00, P0012:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</title>
+</head>
+<body><a name="id0102q1710100"></a><p class="servinfo-title"><span class="servinfo-head"></span>DTC P0011:00, P0012:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</p>
+<hr>
+<p class="servinfo-title-id" align="right">id0102q1710100</p>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  To determine the malfunctioning part, proceed with the diagnostics from "Function Inspection Using M-MDS".</div>
+</div>
+</dd>
+</dl><br clear="all"><a name="id0102q171010001"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Details On DTCs (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DESCRIPTION</p>
+</th>
+<th id="" align="left" colspan="2">
+<p class="thead">Electric variable valve timing control system:</p>
+<div class="list">•  P0011:00: Over-advanced</div>
+<div class="list">•  P0012:00: Over-retarded</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="7">
+<div class="tbody"><span>DETECTION CONDITION</span></div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Determination conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  P0011:00: For the advance amount from the maximum intake valve retard position, a condition in which the actual advance amount is larger than the target value continues for a specified period of time.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="list">•  P0012:00: For the advance amount from the maximum intake valve retard position, a condition in which the actual advance amount is smaller than the target value continues for a specified period of time.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Preconditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Battery voltage: <span>above 11 V</span><sup>*1</sup></div>
+<div class="list">•  Engine speed: <span>5,000 rpm or less<sup>*1</sup></span></div>
+<div class="list">•  Engine coolant temperature: <span>20 °C {68 °F} or more</span><sup>*1</sup></div>
+<div class="list">•  The following DTCs are not detected:</div>
+<dl>
+<dd class="list">
+<div class="list">―  P0010:00, P0335:00, P0340:00</div>
+</dd>
+</dl>
+<div class="list"><sup>*1</sup>: Value can be verified by displaying PIDs using M-MDS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Malfunction determination period</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>10 s</span> period</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Drive cycle</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>1</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Self test type</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CMDTC self test</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Sensor used</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CKP sensor</div>
+<div class="list">•  Intake CMP sensor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>VEHICLE STATUS WHEN DTCs ARE OUTPUT</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Illuminates check engine light.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Electric variable valve timing motor/driver connectors or terminals malfunction</div>
+<div class="list">•  Short to ground or open circuit in electric variable valve timing relay power supply circuit (without i-ELOOP)</div>
+<dl>
+<dd class="list">
+<div class="list">―  Short to ground in wiring harness between MAIN 200 A fuse and electric variable valve timing relay terminal D</div>
+<div class="list">―  MAIN 200 A fuse and/or EVVT 20 A fuse malfunction</div>
+<div class="list">―  Open circuit in wiring harness between battery positive terminal and electric variable valve timing relay terminal D</div>
+</dd>
+</dl>
+<div class="list">•  Short to ground or open circuit in electric variable valve timing relay power supply circuit (with i-ELOOP)</div>
+<dl>
+<dd class="list">
+<div class="list">―  Short to ground in wiring harness between DC-DC converter (i-ELOOP) terminal 4A and electric variable valve timing relay terminal D</div>
+<div class="list">―  EVVT 20 A fuse malfunction</div>
+<div class="list">―  Open circuit in wiring harness between DC-DC converter (i-ELOOP) terminal 4A and electric variable valve timing relay terminal D</div>
+</dd>
+</dl>
+<div class="list">•  Short to ground in wiring harness between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Electric variable valve timing relay terminal C—Electric variable valve timing motor/driver terminal 1E</div>
+<div class="list">―  Electric variable valve timing relay terminal C—Electric variable valve timing motor/driver terminal 2B</div>
+</dd>
+</dl>
+<div class="list">•  Open circuit in wiring harness between the following terminals:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Electric variable valve timing relay terminal C—Electric variable valve timing motor/driver terminal 1E</div>
+<div class="list">―  Electric variable valve timing relay terminal C—Electric variable valve timing motor/driver terminal 2B</div>
+</dd>
+</dl>
+<div class="list">•  PCM connector or terminals malfunction</div>
+<div class="list">•  Electric variable valve timing relay malfunction</div>
+<div class="list">•  Electric variable valve timing motor malfunction</div>
+<div class="list">•  Electric variable valve timing actuator malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  Electric variable valve timing actuator is stuck in advanced position</div>
+<div class="list">―  Electric variable valve timing actuator is stuck in retarded position</div>
+</dd>
+</dl>
+<div class="list">•  Timing chain malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  Poor assembly of timing chain</div>
+<div class="list">―  Looseness or jumping</div>
+</dd>
+</dl>
+<div class="list">•  Mis-detection of intake CMP sensor</div>
+<div class="list">•  Mis-detection of CKP sensor</div>
+<div class="list">•  PCM malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q171010002"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</p>
+<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00010493.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00010493</div>
+</td>
+</tr>
+</table><br clear="all"><a name="id0102q171010003"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Explanation (DTC Detection Outline) (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</p>
+<div class="list-title">P0011:00</div>
+<div class="list">•  With the preconditions met, the PCM verifies the conformity of the actual timing relative to the target valve timing. If it does not conform to the normal determination range (difference between target valve timing and actual valve timing is <span>15 degrees or less</span>) during the malfunction determination period (<span>approx. 10 s</span>), even if the target valve timing is set to the retard side, the PCM determines an excess advance malfunction condition and stores a DTC.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am6zzw00011803.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am6zzw00011803</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list-title">P0012:00</div>
+<div class="list">•  With the preconditions met, the PCM verifies the conformity of the actual timing relative to the target valve timing. If it does not conform to the normal determination range (difference between target valve timing and actual valve timing is <span>15 degrees or less</span>) during the malfunction determination period (<span>approx. 10 s</span>), even if the target valve timing is set to the advance side, the PCM determines an excess retard malfunction condition and stores a DTC.<table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am3zzw00014488.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am3zzw00014488</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id0102q171010004"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Repeatability Verification Procedure (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</p>
+<div class="list">1.  Warm up the engine to allow the engine coolant temperature to reach <span>80 °C {176 °F} or more</span>.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Match the engine coolant temperature in the recorded FREEZE FRAME DATA/snapshot data, the vehicle speed, and engine speed values to the best extent possible while driving the vehicle.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">2.  Try to reproduce the malfunction by driving the vehicle for <span>5 min</span> based on the values in the FREEZE FRAME DATA/snapshot data.</div><br clear="all"><a name="id0102q171010005"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID Item/Simulation Item Used In Diagnosis (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</p>
+<p clear="all">
+<p class="table-title">PID/DATA monitor item table</p>
+<p>
+<div>
+</div>
+</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Condition/Specification</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">VT_IN_ACT</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Actual exhaust variable valve timing control - Retard amount from max advance position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays actual exhaust variable valve timing - Retard amount from max advance position</div>
+<dl>
+<div class="list-title">Idle (after warm up)</div>
+<dd class="list">
+<div class="list">―  Approx. 57 °</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Racing (engine speed is 2,000 rpm)</div>
+<dd class="list">
+<div class="list">―  Approx. 84 °</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VT_IN_DES</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Target exhaust variable valve timing control - Retard amount from max advance position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays target exhaust variable valve timing - Retard amount from max advance position</div>
+<dl>
+<div class="list-title">Idle (after warm up)</div>
+<dd class="list">
+<div class="list">―  Approx. 0 °</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Racing (engine speed is 2,000 rpm)</div>
+<dd class="list">
+<div class="list">―  Approx. 29 °</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q171010006"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Inspection Using M-MDS (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">PURPOSE: RECORD VEHICLE STATUS AT TIME OF DTC DETECTION TO UTILIZE WITH REPEATABILITY VERIFICATION</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Recording can be facilitated using the screen capture function of the PC.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Record the FREEZE FRAME DATA/snapshot data on the repair order.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF DIAGNOSTIC RESULT IS AFFECTED BY OTHER RELATED DTCs OCCURRING</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure and DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the PENDING CODE/DTC P0010:00, P0335:00, P0340:00 or P1380:00 also present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1310700.html">DTC P0010:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1703600.html">DTC P0335:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1703700.html">DTC P0340:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1009700.html">DTC P1380:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY CONFORMITY OF ACTUAL INTAKE VALVE TIMING</div>
+<div class="list">•  Start the engine and idle it.</div>
+<div class="list">•  Access the following PIDs using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  VT_IN_ACT</div>
+<div class="list">―  VT_IN_DES</div>
+</dd>
+</dl>
+<div class="list">•  Perform the following:</div>
+<dl>
+<dd class="list">
+<div class="list">1.  Race the engine at an engine speed of <span>3,000 rpm or less</span>.</div>
+<div class="list">2.  Run it at idle.</div>
+<div class="list">3.  Repeat Step 1 and 2 operations above five times in succession.</div>
+</dd>
+</dl>
+<div class="list">•  Does the monitor value of the PID item VT_IN_ACT conform to the VT_IN_DES PID value?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicles with i-ELOOP:</div>
+<div class="list">•  Go to the troubleshooting procedure to perform the procedure from Step 2.</div>
+<div class="tbody">Vehicles without i-ELOOP:</div>
+<div class="list">•  Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY CONNECTOR CONNECTIONS</div>
+<div class="list">•  Start the engine.</div>
+<div class="list">•  Access the VT_IN_ACT PID using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Does the PID value fluctuate when the following connectors are shaken?</div>
+<dl>
+<dd class="list">
+<div class="list">―  Electric variable valve timing motor/driver</div>
+<div class="list">―  PCM</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the applicable wiring harness or connector parts.</div>
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Vehicles with i-ELOOP:</div>
+<div class="list">•  Go to the troubleshooting procedure to perform the procedure from Step 2.</div>
+<div class="tbody">Vehicles without i-ELOOP:</div>
+<div class="list">•  Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q171010007"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Troubleshooting Diagnostic Procedure (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</p>
+<div class="list-title">Intention of troubleshooting procedure</div>
+<div class="list">•  Step 1—6</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform an inspection of the connectors and wiring harnesses between the battery positive terminal and electric variable valve timing relay and the electric variable valve timing motor/driver.</div>
+</dd>
+</dl>
+<div class="list">•  Step 7</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform a unit inspection of the electric variable valve timing relay.</div>
+</dd>
+</dl>
+<div class="list">•  Step 8—10</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform an inspection of the electric variable valve timing drive parts.</div>
+</dd>
+</dl>
+<div class="list">•  Step 11—12</div>
+<dl>
+<dd class="list">
+<div class="list">―  Inspect the intake CMP sensor and CKP sensor detection areas for adhesion of foreign matter.</div>
+</dd>
+</dl>
+<div class="list">•  Step 13—14</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verify that the primary malfunction is resolved and there are no other malfunctions.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT ELECTRIC VARIABLE VALVE TIMING RELAY POWER SUPPLY CIRCUIT FOR SHORT TO GROUND OR OPEN CIRCUIT</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Remove the electric variable valve timing relay.<div>(See <font class="extxref-label"><a href="id092100800600.html">RELAY LOCATION</a></font>.)</div>
+</div>
+<div class="list">•  Measure the voltage at the electric variable valve timing relay terminal D (wiring harness-side).</div>
+<div class="list">•  Is the voltage <span>B+</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 3.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Inspect the MAIN 200 A fuse and EVVT 20 A fuse.</div>
+<div class="list">•  If the fuse is blown:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Refer to the wiring diagram and verify whether or not there is a common connector between battery positive terminal and electric variable valve timing relay terminal D.</div>
+<dl>
+<div class="list-title">If there is a common connector:</div>
+<dd class="list">
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for a short to ground.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">If there is no common connector:</div>
+<dd class="list">
+<div class="list">•  Repair or replace the wiring harness which has a short to ground.</div>
+<div class="list">•  Replace the malfunctioning fuse.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  If the fuse is damaged:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Replace the malfunctioning fuse.</div>
+</dd>
+</dl>
+<div class="list">•  If all fuses are normal:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Refer to the wiring diagram and verify whether or not there is a common connector between battery positive terminal and electric variable valve timing relay terminal D.</div>
+<dl>
+<div class="list-title">If there is a common connector:</div>
+<dd class="list">
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for an open circuit.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">If there is no common connector:</div>
+<dd class="list">
+<div class="list">•  Repair or replace the wiring harness which has an open circuit.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="tbody">Go to Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT ELECTRIC VARIABLE VALVE TIMING RELAY POWER SUPPLY CIRCUIT FOR SHORT TO GROUND OR OPEN CIRCUIT</div>
+<div class="list">•  Switch the ignition off.</div>
+<div class="list">•  Remove the electric variable valve timing relay.<div>(See <font class="extxref-label"><a href="id092100800600.html">RELAY LOCATION</a></font>.)</div>
+</div>
+<div class="list">•  Measure the voltage at the electric variable valve timing relay terminal D (wiring harness-side).</div>
+<div class="list">•  Is the voltage <span>B+</span>?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Remove the service plug.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id131704002000.html">SERVICE PLUG DISCONNECTION/CONNECTION [i-ELOOP]</a></font>.)</div>
+<div class="tbody">Inspect the EVVT 20 A fuse.</div>
+<div class="list">•  If the fuse is blown:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Refer to the wiring diagram and verify whether or not there is a common connector between EVVT 20 A fuse and electric variable valve timing relay terminal D.</div>
+<dl>
+<div class="list-title">If there is a common connector:</div>
+<dd class="list">
+<div class="list">•  Determine the malfunctioning location by inspecting the common connector and terminals for corrosion, damage, or disconnection and by inspecting the DC-DC converter (i-ELOOP) terminal 4A-related wiring harness for short to ground.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">If there is no common connector:</div>
+<dd class="list">
+<div class="list">•  Repair or replace the wiring harness which is shorted to ground, or the DC-DC converter (i-ELOOP) terminal 4A-related wiring harness.</div>
+<div class="list">•  Replace the fuse.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="list">•  If the fuse is damaged:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Replace the fuse.</div>
+</dd>
+</dl>
+<div class="list">•  If the fuse is normal:</div>
+<dl>
+<dd class="list">
+<div class="list">―  Refer to the wiring diagram and verify whether or not there is a common connector between DC-DC converter (i-ELOOP) terminal 4A and electric variable valve timing relay terminal D.</div>
+<dl>
+<div class="list-title">If there is a common connector:</div>
+<dd class="list">
+<div class="list">•  Determine the malfunctioning location by inspecting the common connector and terminals for corrosion, damage, or disconnection and by inspecting the DC-DC converter (i-ELOOP) terminal 4A-related wiring harness for an open circuit.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">If there is no common connector:</div>
+<dd class="list">
+<div class="list">•  Repair or replace the wiring harness which has an open circuit, or the DC-DC converter (i-ELOOP) terminal 4A-related wiring harness.</div>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="tbody">Reinstall the service plug.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id131704002000.html">SERVICE PLUG DISCONNECTION/CONNECTION [i-ELOOP]</a></font>.)</div>
+<div class="tbody">Go to Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT ELECTRIC VARIABLE VALVE TIMING MOTOR/DRIVER CONNECTOR CONDITION</div>
+<div class="list">•  Disconnect the electric variable valve timing motor/driver connector.</div>
+<div class="list">•  Inspect for poor connection (such as damaged/pulled-out pins, corrosion).</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector and/or terminals, then go to Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT ELECTRIC VARIABLE VALVE TIMING RELAY CONTROL CIRCUIT FOR SHORT TO GROUND</div>
+<div class="list">•  Electric variable valve timing relay is removed.</div>
+<div class="list">•  Verify that the electric variable valve timing motor/driver connector is disconnected.</div>
+<div class="list">•  Inspect for continuity between electric variable valve timing relay terminal C (wiring harness-side) and body ground.</div>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refer to the wiring diagram and verify whether or not there is a common connector between the following terminals:</div>
+<div class="list">•  Electric variable valve timing relay terminal C—Electric variable valve timing motor/driver terminal 1E</div>
+<div class="list">•  Electric variable valve timing relay terminal C—Electric variable valve timing motor/driver terminal 2B</div>
+<div class="list-title">If there is a common connector:</div>
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for a short to ground.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+<div class="list-title">If there is no common connector:</div>
+<div class="list">•  Repair or replace the wiring harness which has a short to ground.</div>
+<div class="tbody">Go to Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT ELECTRIC VARIABLE VALVE TIMING RELAY CONTROL CIRCUIT FOR OPEN CIRCUIT</div>
+<div class="list">•  Electric variable valve timing relay is removed.</div>
+<div class="list">•  Verify that the electric variable valve timing motor/driver connector is disconnected.</div>
+<div class="list">•  Inspect for continuity between the following terminals (wiring harness-side):</div>
+<dl>
+<dd class="list">
+<div class="list">―  Electric variable valve timing relay terminal C—Electric variable valve timing motor/driver terminal 1E</div>
+<div class="list">―  Electric variable valve timing relay terminal C—Electric variable valve timing motor/driver terminal 2B</div>
+</dd>
+</dl>
+<div class="list">•  Is there continuity?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Refer to the wiring diagram and verify whether or not there is a common connector between the following terminals:</div>
+<div class="list">•  Electric variable valve timing relay terminal C—Electric variable valve timing motor/driver terminal 1E</div>
+<div class="list">•  Electric variable valve timing relay terminal C—Electric variable valve timing motor/driver terminal 2B</div>
+<div class="list-title">If there is a common connector:</div>
+<div class="list">•  Determine the malfunctioning part by inspecting the common connector and the terminal for corrosion, damage, or pin disconnection, and the common wiring harness for an open circuit.</div>
+<div class="list">•  Repair or replace the malfunctioning part.</div>
+<div class="list-title">If there is no common connector:</div>
+<div class="list">•  Repair or replace the wiring harness which has an open circuit.</div>
+<div class="tbody">Go to Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT PCM CONNECTOR CONDITION</div>
+<div class="list">•  Disconnect the PCM connector.</div>
+<div class="list">•  Inspect for poor connection (such as damaged/pulled-out pins, corrosion).</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the connector and/or terminals, then go to Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF ELECTRIC VARIABLE VALVE TIMING RELAY</div>
+<div class="list">•  Inspect the electric variable valve timing relay.<div>(See <font class="extxref-label"><a href="id092100800300.html">RELAY INSPECTION</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the electric variable valve timing relay, then go to Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF ELECTRIC VARIABLE VALVE TIMING MOTOR</div>
+<div class="list">•  Inspect the electric variable valve timing motor.<div>(See <font class="extxref-label"><a href="id0110q3828100.html">ELECTRIC VARIABLE VALVE TIMING MOTOR/DRIVER INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the electric variable valve timing motor/driver, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0110q3808100.html">ELECTRIC VARIABLE VALVE TIMING MOTOR/DRIVER REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF ELECTRIC VARIABLE VALVE TIMING ACTUATOR</div>
+<div class="list">•  Inspect the electric variable valve timing actuator.<div>(See <font class="extxref-label"><a href="id0110q3555500.html">ELECTRIC VARIABLE VALVE TIMING ACTUATOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the electric variable valve timing actuator, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0110q3126900.html">ELECTRIC VARIABLE VALVE TIMING ACTUATOR, HYDRAULIC VARIABLE VALVE TIMING ACTUATOR REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">10</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY ASSEMBLY CONDITION OF TIMING CHAIN</div>
+<div class="list">•  Verify the condition of the timing chain assembly (intake valve timing, looseness, jumping).<div>(See <font class="extxref-label"><a href="id0110q3801000.html">TIMING CHAIN REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part.</div>
+<div class="tbody">Assemble the timing chain using the correct timing, then go to Step 13.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0110q3801000.html">TIMING CHAIN REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">11</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF FOREIGN MATTER ON INTAKE CMP SENSOR DETECTION AREA AFFECTS DIAGNOSTIC RESULTS</div>
+<div class="list">•  Visually inspect for intake CMP sensor.<div>(See <font class="extxref-label"><a href="id0140q1801400.html">CAMSHAFT POSITION (CMP) SENSOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there foreign matter such as metallic dust on the intake CMP sensor detection area?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Remove the foreign matter, then go to Step 13.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">12</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF FOREIGN MATTER ON CKP SENSOR DETECTION AREA AFFECTS DIAGNOSTIC RESULTS</div>
+<div class="list">•  Visually inspect for CKP sensor.<div>(See <font class="extxref-label"><a href="id0140q1800500.html">CRANKSHAFT POSITION (CKP) SENSOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there foreign matter such as metallic dust on the CKP sensor detection area?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Remove the foreign matter, then go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">13</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFICATION OF VEHICLE REPAIR COMPLETION</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1865400.html">CLEARING DTC [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id0102q171010004">Repeatability Verification Procedure (SKYACTIV-G 1.5 (with 4-2-1 exhaust system))</a></font>.)</div>
+</div>
+<div class="list">•  Perform the DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the DTC P0011:00 or P0012:00 also present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q1802400.html">PCM REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">14</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF THERE IS ANY OTHER MALFUNCTION</div>
+<div class="list">•  Is any other DTC or pending code stored?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q171010008"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Details On DTCs (SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system))</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">DESCRIPTION</p>
+</th>
+<th id="" align="left" colspan="2">
+<p class="thead">Hydraulic variable valve timing control system:</p>
+<div class="list">•  P0011:00: Over-advanced</div>
+<div class="list">•  P0012:00: Over-retarded</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="7">
+<div class="tbody">DETECTION CONDITION</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="tbody">Determination conditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  P0011:00: A condition in which the actual intake valve timing advances (excess advance) compared to the target intake valve timing continues for the specified period.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="list">•  P0012:00: A condition in which the actual intake valve timing retards (excess retard) compared to the target intake valve timing continues for the specified period.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Preconditions</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Battery voltage: <span>above 11 V</span><sup>*1</sup></div>
+<div class="list">•  Engine speed: <span>5,000 rpm or less<sup>*1</sup></span></div>
+<div class="list">•  Engine coolant temperature: <span>60 °C {140 °F} or more</span><sup>*1</sup></div>
+<div class="list">•  Hydraulic variable valve timing control: feedback mode</div>
+<div class="list">•  The following DTCs are not detected:</div>
+<dl>
+<dd class="list">
+<div class="list">―  P0335:00, P0340:00</div>
+</dd>
+</dl>
+<div class="list"><sup>*1</sup>: Value can be verified by displaying PIDs using M-MDS</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Malfunction determination period</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>5 s</span> period</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Drive cycle</div>
+</td>
+<td id="" align="left">
+<div class="list">•  <span>1</span></div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Self test type</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CMDTC self test</div>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">Sensor used</div>
+</td>
+<td id="" align="left">
+<div class="list">•  CKP sensor</div>
+<div class="list">•  Intake CMP sensor</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>FAIL-SAFE FUNCTION</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Not applicable</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>VEHICLE STATUS WHEN DTCs ARE OUTPUT</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  Illuminates check engine light.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody"><span>POSSIBLE CAUSE</span></div>
+</td>
+<td id="" align="left" colspan="2">
+<div class="list">•  OCV malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  Spool valve in OCV is stuck</div>
+</dd>
+</dl>
+<div class="list">•  Hydraulic variable valve timing actuator malfunction</div>
+<div class="list">•  Timing chain malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  Poor assembly of timing chain</div>
+<div class="list">―  Looseness or jumping</div>
+</dd>
+</dl>
+<div class="list">•  Mis-detection of intake CMP sensor</div>
+<div class="list">•  Mis-detection of CKP sensor</div>
+<div class="list">•  Engine oil malfunction</div>
+<dl>
+<dd class="list">
+<div class="list">―  Use of unspecified engine oil</div>
+<div class="list">―  Low engine oil level</div>
+<div class="list">―  Low engine oil pressure</div>
+<div class="list">―  Engine oil runners are clogged or have leakage</div>
+</dd>
+</dl>
+<div class="list">•  PCM malfunction</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q171010009"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>System Wiring Diagram (SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system))</p>
+<div class="list">•  Not applicable</div><br clear="all"><a name="id0102q171010010"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Explanation (DTC Detection Outline) (SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system))</p>
+<div class="list-title">P0011:00</div>
+<div class="list">•  With the preconditions met, the PCM verifies the conformity of the actual timing relative to the target valve timing. If it does not conform to the normal determination range (difference between target valve timing and actual valve timing is <span>20 degrees or less</span>) during the malfunction determination period (<span>approx. 5 s</span>), even if the target valve timing is set to the retard side, the PCM determines an excess advance malfunction condition and stores a DTC. <table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00010494.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00010494</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="list-title">P0012:00</div>
+<div class="list">•  With the preconditions met, the PCM verifies the conformity of the actual timing relative to the target valve timing. If it does not conform to the normal determination range (difference between target valve timing and actual valve timing is <span>20 degrees or less</span>) during the malfunction determination period (<span>approx. 5 s</span>), even if the target valve timing is set to the advance side, the PCM determines an excess retard malfunction condition and stores a DTC. <table class="figure-flame-non">
+<tr>
+<td>
+<table class="figure-non-float" cellspacing="0" bordercolor="black">
+<tr>
+<td align="center"><img src="images/am2zzw00010495.png"></td>
+</tr>
+</table>
+<div class="figure-caption">am2zzw00010495</div>
+</td>
+</tr>
+</table>
+</div><br clear="all"><a name="id0102q171010011"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Repeatability Verification Procedure (SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system))</p>
+<div class="list">1.  Warm up the engine to allow the engine coolant temperature to reach <span>80 °C {176 °F} or more</span>.<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Match the engine coolant temperature in the recorded FREEZE FRAME DATA/snapshot data, the vehicle speed, and engine speed values to the best extent possible while driving the vehicle.</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="list">2.  Try to reproduce the malfunction by driving the vehicle for <span>5 min</span> based on the values in the FREEZE FRAME DATA/snapshot data.</div><br clear="all"><a name="id0102q171010012"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>PID Item Used In Diagnosis (SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system))</p>
+<p clear="all">
+<p class="table-title">PID/DATA monitor item table</p>
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">Item</p>
+</th>
+<th id="" align="center">
+<p class="thead">Definition</p>
+</th>
+<th id="" align="center">
+<p class="thead">Unit</p>
+</th>
+<th id="" align="center">
+<p class="thead">Condition/Specification</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="left">
+<div class="tbody">VT_EX_ACT</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Actual intake variable valve timing control - Advance amount from max retard position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays actual intake variable valve timing - advance amount from max retard position</div>
+<dl>
+<div class="list-title">Idle (after warm up)</div>
+<dd class="list">
+<div class="list">―  Below 1 °</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Racing (engine speed is 2,000 rpm)</div>
+<dd class="list">
+<div class="list">―  Approx. 26 °</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td id="" align="left">
+<div class="tbody">VT_EX_DES</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Target intake variable valve timing control - Advance amount from max retard position</div>
+</td>
+<td id="" align="center">
+<div class="tbody">°</div>
+</td>
+<td id="" align="left">
+<div class="list">•  Displays target intake variable valve timing - advance amount from max retard position</div>
+<dl>
+<div class="list-title">Idle (after warm up)</div>
+<dd class="list">
+<div class="list">―  Approx. 0 °</div>
+</dd>
+</dl>
+<dl>
+<div class="list-title">Racing (engine speed is 2,000 rpm)</div>
+<dd class="list">
+<div class="list">―  Approx. 26 °</div>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q171010013"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Function Inspection Using M-MDS (SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system))</p>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY RELATED SERVICE INFORMATION AVAILABILITY</div>
+<div class="list">•  Verify related Service Information availability.</div>
+<div class="list">•  Is any related Service Information available?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Perform repair or diagnosis according to the available Service Information.</div>
+<div class="list">•  If the vehicle is not repaired, go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left">
+<div class="entry-title">PURPOSE: RECORD VEHICLE STATUS AT TIME OF DTC DETECTION TO UTILIZE WITH REPEATABILITY VERIFICATION</div>
+<dl>
+<dd>
+<div class="attention3-label">Note</div>
+</dd>
+<dd>
+<div class="attention3">
+<div class="list">•  Recording can be facilitated using the screen capture function of the PC.</div>
+</div>
+</dd>
+</dl>
+<div class="list">•  Record the FREEZE FRAME DATA/snapshot data on the repair order.</div>
+</td>
+<td id="" align="center">
+<div class="tbody">—</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF DIAGNOSTIC RESULT IS AFFECTED BY OTHER RELATED DTCs OCCURRING</div>
+<div class="list">•  Switch the ignition off, then ON (engine off).</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure and DTC Reading Procedure.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the PENDING CODE/DTC P0335:00, P0340:00, P2088:00 or P2089:00 also present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable PENDING CODE or DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1703600.html">DTC P0335:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1703700.html">DTC P0340:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1707300.html">DTC P2088:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1707400.html">DTC P2089:00 [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY CONFORMITY OF ACTUAL INTAKE VALVE TIMING AND DETERMINE IF MALFUNCTION IS CAUSED BY OCV OR CONNECTOR RELATED</div>
+<div class="list">•  Start the engine and idle it.</div>
+<div class="list">•  Access the following PIDs using the M-MDS:<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<dl>
+<dd class="list">
+<div class="list">―  VT_EX_ACT</div>
+<div class="list">―  VT_EX_DES</div>
+</dd>
+</dl>
+<div class="list">•  Perform the following:</div>
+<dl>
+<dd class="list">
+<div class="list">1.  Race the engine at an engine speed of <span>3,000 rpm or less</span>.</div>
+<div class="list">2.  Run it at idle.</div>
+<div class="list">3.  Repeat Step 1 and 2 operations above five times in succession.</div>
+</dd>
+</dl>
+<div class="list">•  Does the monitor value of the PID item VT_EX_ACT conform to the VT_EX_DES PID value?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY CONNECTOR CONNECTIONS</div>
+<div class="list">•  Start the engine.</div>
+<div class="list">•  Access the VT_EX_ACT PID using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Does the PID value fluctuate when the following connectors are shaken?</div>
+<dl>
+<dd class="list">
+<div class="list">―  OCV</div>
+<div class="list">―  PCM</div>
+</dd>
+</dl>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the applicable wiring harness or connector parts.</div>
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the troubleshooting procedure to perform the procedure from Step 1.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p><br clear="all"><a name="id0102q171010014"></a><p class="servinfosub-title"><span class="servinfosub-head"></span>Troubleshooting Diagnostic Procedure (SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system))</p>
+<div class="list-title">Intention of troubleshooting procedure</div>
+<div class="list">•  Step 1—2</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform an inspection of the hydraulic variable valve timing drive parts.</div>
+</dd>
+</dl>
+<div class="list">•  Step 3</div>
+<dl>
+<dd class="list">
+<div class="list">―  Inspect the intake CMP sensor detection areas for adhesion of foreign matter.</div>
+</dd>
+</dl>
+<div class="list">•  Step 4—7</div>
+<dl>
+<dd class="list">
+<div class="list">―  Perform an engine oil related inspection.</div>
+</dd>
+</dl>
+<div class="list">•  Step 8—9</div>
+<dl>
+<dd class="list">
+<div class="list">―  Verify that the primary malfunction is resolved and there are no other malfunctions.</div>
+</dd>
+</dl>
+<p clear="all">
+<table class="table-flame" border="1">
+<thead>
+<tr>
+<th id="" align="center">
+<p class="thead">STEP</p>
+</th>
+<th id="" align="center">
+<p class="thead">INSPECTION</p>
+</th>
+<th id="" align="center">
+<p class="thead">RESULTS</p>
+</th>
+<th id="" align="center">
+<p class="thead">ACTION</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">1</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: DETERMINE INTEGRITY OF HYDRAULIC VARIABLE VALVE TIMING ACTUATOR</div>
+<div class="list">•  Inspect the hydraulic variable valve timing actuator.<div>(See <font class="extxref-label"><a href="id0110q3126800.html">HYDRAULIC VARIABLE VALVE TIMING ACTUATOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the hydraulic variable valve timing actuator, then go to Step 8.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0110q3126900.html">ELECTRIC VARIABLE VALVE TIMING ACTUATOR, HYDRAULIC VARIABLE VALVE TIMING ACTUATOR REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">2</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY ASSEMBLY CONDITION OF TIMING CHAIN</div>
+<div class="list">•  Verify the condition of the timing chain assembly (intake valve timing, looseness, jumping).<div>(See <font class="extxref-label"><a href="id0110q3801000.html">TIMING CHAIN REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part.</div>
+<div class="tbody">Assemble the timing chain using the correct timing, then go to Step 8.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0110q3801000.html">TIMING CHAIN REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">3</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF FOREIGN MATTER ON INTAKE CMP SENSOR DETECTION AREA AFFECTS DIAGNOSTIC RESULTS</div>
+<div class="list">•  Visually inspect for intake CMP sensor.<div>(See <font class="extxref-label"><a href="id0140q1801400.html">CAMSHAFT POSITION (CMP) SENSOR INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there foreign matter such as metallic dust on the intake CMP sensor detection area?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Remove the foreign matter, then go to Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">4</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT IF INSUFFICIENT HYDRAULIC PRESSURE CAUSED BY USE OF UNSPECIFIED ENGINE OIL</div>
+<div class="list">•  Is the specified engine oil being used?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Replace the engine oil with genuine motor oil, then go to Step 8.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0111q3800400.html">ENGINE OIL REPLACEMENT [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">5</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT ENGINE OIL LEVEL</div>
+<div class="list">•  Inspect the engine oil level.<div>(See <font class="extxref-label"><a href="id0111q3800500.html">ENGINE OIL LEVEL INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the engine oil level sufficient?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Add genuine motor oil, then go to Step 8.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0111q3800400.html">ENGINE OIL REPLACEMENT [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">6</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: INSPECT ENGINE OIL PRESSURE</div>
+<div class="list">•  Inspect the engine oil pressure.<div>(See <font class="extxref-label"><a href="id0111q3800300.html">OIL PRESSURE INSPECTION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is there any malfunction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to Step 8.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">7</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF MALFUNCTION RELATED TO ENGINE OIL LEAK OR RESTRICTION AFFECTS DIAGNOSTIC RESULTS</div>
+<div class="list">•  Start the engine.</div>
+<div class="list">•  Verify if there is engine oil leakage in the oil passage or restriction.</div>
+<div class="list">•  Is there engine oil leakage in the oil passage or restriction?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repair or replace the malfunctioning part according to the inspection results.</div>
+<div class="tbody">Add genuine motor oil, then go to the next step.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0111q3800400.html">ENGINE OIL REPLACEMENT [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">8</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFICATION OF VEHICLE REPAIR COMPLETION</div>
+<div class="list">•  Always reconnect all disconnected connectors.</div>
+<div class="list">•  Clear the DTC from the PCM memory using the M-MDS.<div>(See <font class="extxref-label"><a href="id0102q1865400.html">CLEARING DTC [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Implement the repeatability verification procedure.<div>(See <font class="intxref-label"><a href="#id0102q171010011">Repeatability Verification Procedure (SKYACTIV-G 1.3, SKYACTIV-G 1.5 (with 4-1 exhaust system))</a></font>.)</div>
+</div>
+<div class="list">•  Perform the Pending Trouble Code Access Procedure.<div>(See <font class="extxref-label"><a href="id0102q1801000.html">ON-BOARD DIAGNOSTIC TEST [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="list">•  Is the DTC P0011:00 or P0012:00 also present?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Repeat the inspection from Step 1.</div>
+<div class="list">•  If the malfunction recurs, replace the PCM.<div>(See <font class="extxref-label"><a href="id0140q1802400.html">PCM REMOVAL/INSTALLATION [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</div>
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the next step.</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center" rowspan="2">
+<div class="tbody">9</div>
+</td>
+<td id="" align="left" rowspan="2">
+<div class="entry-title">PURPOSE: VERIFY IF THERE IS ANY OTHER MALFUNCTION</div>
+<div class="list">•  Is any other DTC or pending code stored?</div>
+</td>
+<td id="" align="center">
+<div class="tbody">Yes</div>
+</td>
+<td id="" align="left">
+<div class="tbody">Go to the applicable DTC inspection.</div>
+<div class="tbody">(See <font class="extxref-label"><a href="id0102q1801500.html">DTC TABLE [SKYACTIV-G 1.3, SKYACTIV-G 1.5]</a></font>.)</div>
+</td>
+</tr>
+<tr>
+<td id="" align="center">
+<div class="tbody">No</div>
+</td>
+<td id="" align="left">
+<div class="tbody">DTC troubleshooting completed.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</body>
+</html>
